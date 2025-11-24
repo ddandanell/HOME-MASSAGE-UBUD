@@ -14,6 +14,9 @@ import BlogNew from "@/pages/BlogNew";
 import Pricing from "@/pages/Pricing";
 import Testimonials from "@/pages/Testimonials";
 import NotFound from "@/pages/NotFound";
+import ServiceAreas from "@/pages/ServiceAreas";
+import Treatments from "@/pages/Treatments";
+import Sitemap from "@/pages/Sitemap";
 
 // Treatment Pages
 import TraditionalBalineseMassage from "@/pages/treatments/TraditionalBalineseMassage";
@@ -30,12 +33,35 @@ import DetoxWellnessMassage from "@/pages/treatments/DetoxWellnessMassage";
 import CouplesWellnessRitual from "@/pages/treatments/CouplesWellnessRitual";
 import HerbalBambooMassage from "@/pages/treatments/HerbalBambooMassage";
 
-// Area Pages
+// Area Pages - Ubud
 import UbudCentre from "@/pages/areas/UbudCentre";
 import UbudNorth from "@/pages/areas/UbudNorth";
 import UbudEast from "@/pages/areas/UbudEast";
 import UbudSouth from "@/pages/areas/UbudSouth";
 import UbudLuxuryVillas from "@/pages/areas/UbudLuxuryVillas";
+// NOTE: Tegallalang.tsx excluded - file has syntax errors and needs recreation from template
+import Sidemen from "@/pages/areas/Sidemen";
+
+// Area Pages - South Bali
+import Seminyak from "@/pages/areas/Seminyak";
+import Canggu from "@/pages/areas/Canggu";
+import Berawa from "@/pages/areas/Berawa";
+import Pererenan from "@/pages/areas/Pererenan";
+import Petitenget from "@/pages/areas/Petitenget";
+import Umalas from "@/pages/areas/Umalas";
+import Kerobokan from "@/pages/areas/Kerobokan";
+import Legian from "@/pages/areas/Legian";
+import Kuta from "@/pages/areas/Kuta";
+import Sanur from "@/pages/areas/Sanur";
+import NusaDua from "@/pages/areas/NusaDua";
+import Jimbaran from "@/pages/areas/Jimbaran";
+import Uluwatu from "@/pages/areas/Uluwatu";
+import Ungasan from "@/pages/areas/Ungasan";
+
+// Area Pages - North & East Bali
+import Lovina from "@/pages/areas/Lovina";
+import Amed from "@/pages/areas/Amed";
+import Candidasa from "@/pages/areas/Candidasa";
 
 function Router() {
   return (
@@ -43,6 +69,9 @@ function Router() {
       {/* Main Pages */}
       <Route path="/" component={Home} />
       <Route path="/services" component={Services} />
+      <Route path="/treatments" component={Treatments} />
+      <Route path="/service-areas" component={ServiceAreas} />
+      <Route path="/sitemap" component={Sitemap} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/pricing" component={Pricing} />
@@ -66,12 +95,35 @@ function Router() {
       <Route path="/ubud/couples-wellness-ritual" component={CouplesWellnessRitual} />
       <Route path="/ubud/herbal-bamboo-massage" component={HerbalBambooMassage} />
       
-      {/* Area Pages */}
+      {/* Area Pages - Ubud */}
       <Route path="/ubud-centre" component={UbudCentre} />
       <Route path="/ubud-north" component={UbudNorth} />
       <Route path="/ubud-east" component={UbudEast} />
       <Route path="/ubud-south" component={UbudSouth} />
       <Route path="/ubud-luxury-villas" component={UbudLuxuryVillas} />
+      {/* NOTE: Tegallalang route excluded - page file needs to be recreated */}
+      <Route path="/sidemen" component={Sidemen} />
+      
+      {/* Area Pages - South Bali */}
+      <Route path="/seminyak" component={Seminyak} />
+      <Route path="/canggu" component={Canggu} />
+      <Route path="/berawa" component={Berawa} />
+      <Route path="/pererenan" component={Pererenan} />
+      <Route path="/petitenget" component={Petitenget} />
+      <Route path="/umalas" component={Umalas} />
+      <Route path="/kerobokan" component={Kerobokan} />
+      <Route path="/legian" component={Legian} />
+      <Route path="/kuta" component={Kuta} />
+      <Route path="/sanur" component={Sanur} />
+      <Route path="/nusa-dua" component={NusaDua} />
+      <Route path="/jimbaran" component={Jimbaran} />
+      <Route path="/uluwatu" component={Uluwatu} />
+      <Route path="/ungasan" component={Ungasan} />
+      
+      {/* Area Pages - North & East Bali */}
+      <Route path="/lovina" component={Lovina} />
+      <Route path="/amed" component={Amed} />
+      <Route path="/candidasa" component={Candidasa} />
       
       {/* 404 */}
       <Route path="/:rest*" component={NotFound} />

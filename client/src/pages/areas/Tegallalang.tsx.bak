@@ -5,8 +5,8 @@ export default function Tegallalang() {
   const area = {
     name: 'Tegallalang',
     slug: 'tegallalang',
-    h1Title: 'Home Massage in Tegallalang – Professional In-Villa Spa Service',
-    metaTitle: 'Home Massage in Tegallalang, Bali | In-Villa Mobile Spa • 7 AM–10 PM',
+    h1Title: 'Home Massage in Tegallalang - Professional In-Villa Spa Service',
+    metaTitle: 'Home Massage in Tegallalang, Bali | In-Villa Mobile Spa • 7 AM-10 PM',
     metaDescription: 'Scenic home massage in Tegallalang delivered to your rice terrace villa. UNESCO rice paddies and artisan culture. Professional mobile spa. Book via WhatsApp. 7am-10pm daily.',
     heroSubtitle: 'Experience tranquil wellness with professional massage therapy delivered to your accommodation surrounded by Tegallalang's stunning terraced rice paddies',
     areaDescription: 'Mobile massage service in Tegallalang - Ubud's famous UNESCO rice terrace region',
