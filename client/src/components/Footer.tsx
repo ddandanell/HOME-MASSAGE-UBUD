@@ -139,6 +139,11 @@ export default function Footer() {
               <a href="https://homemassageubud.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline mx-1">Home Massage Ubud</a>
             </p>
           </div>
+          <div className="mb-4">
+            <Link href="/sitemap">
+              <span className="text-primary hover:underline text-sm">View Sitemap</span>
+            </Link>
+          </div>
           <p className="text-xs md:text-sm" data-testid="footer-copyright">
             &copy; 2024 Home Massage Ubud | homemassageubud.com | Licensed Spa Services Ubud, Bali
           </p>
