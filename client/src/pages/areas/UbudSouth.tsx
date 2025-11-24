@@ -42,37 +42,37 @@ export default function UbudSouth() {
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: '$35',
+        priceFrom: 'Rp 240,000',
         duration: '60-120 min'
       },
       {
         name: 'Deep Tissue Massage',
         slug: 'deep-tissue-massage',
-        priceFrom: '$45',
+        priceFrom: 'Rp 320,000',
         duration: '60-120 min'
       },
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: '$40',
+        priceFrom: 'Rp 280,000',
         duration: '60-120 min'
       },
       {
         name: 'Herbal & Bamboo Massage',
         slug: 'herbal-bamboo-massage',
-        priceFrom: '$55',
+        priceFrom: 'Rp 400,000',
         duration: '90-120 min'
       },
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: '$55',
+        priceFrom: 'Rp 400,000',
         duration: '60-120 min'
       },
       {
         name: 'Thai Massage',
         slug: 'thai-massage',
-        priceFrom: '$40',
+        priceFrom: 'Rp 280,000',
         duration: '60-120 min'
       }
     ],

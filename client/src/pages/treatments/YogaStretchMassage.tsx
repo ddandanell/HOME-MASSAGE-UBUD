@@ -11,8 +11,8 @@ export default function YogaStretchMassage() {
     metaDescription: 'Book Yoga Stretch & Massage in Ubud. Perfect for yoga practitioners. Delivered to your villa or hotel, 7 am–10 pm. ★★★★★ Flexibility boost',
     heroSubtitle: 'Specialized massage combining yoga stretching and therapeutic bodywork, perfect for Ubud\'s yoga community',
     duration: '60-90 minutes',
-    priceFrom: '$45',
-    priceFromIDR: '400,000',
+    priceFrom: 'Rp 320,000',
+    priceFromIDR: 'Rp 320,000',
     image: yogaImage,
     description: 'Yoga stretch massage Ubud - combining therapeutic massage with assisted yoga stretches',
     longDescription: 'Designed specifically for Ubud\'s thriving yoga community, our Yoga Stretch & Massage service combines therapeutic massage techniques with assisted yoga stretches to enhance flexibility, release deep tension, and support your yoga practice. Whether you\'re attending yoga retreats, daily classes, or simply maintaining your personal practice in Ubud, this treatment helps deepen your flexibility, prevent injuries, and accelerate recovery. Our therapists, trained in both massage therapy and yoga principles, bring this specialized wellness service directly to your villa.',
@@ -47,20 +47,20 @@ export default function YogaStretchMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: '$45',
-        priceIDR: 'IDR 400,000',
+        price: 'Rp 320,000',
+        priceIDR: 'Rp 320,000',
         description: 'Yoga-focused massage with assisted stretches targeting key muscle groups'
       },
       {
         duration: '90 Minutes',
-        price: '$65',
-        priceIDR: 'IDR 600,000',
+        price: 'Rp 480,000',
+        priceIDR: 'Rp 480,000',
         description: 'Extended session with deep stretching, massage, and fascial release work'
       },
       {
         duration: '120 Minutes',
-        price: '$85',
-        priceIDR: 'IDR 750,000',
+        price: 'Rp 600,000',
+        priceIDR: 'Rp 600,000',
         description: 'Complete yoga wellness package with bodywork, stretching, and meditation guidance'
       }
     ],

@@ -11,8 +11,8 @@ export default function HotStoneMassage() {
     metaDescription: 'Book a Hot Stone Massage in Ubud. Heated volcanic stones massage delivered to your villa or hotel, 7 am–10 pm. ★★★★★ Therapeutic relaxation',
     heroSubtitle: 'Therapeutic hot stone massage using smooth volcanic stones, delivered to your villa in Ubud for deep muscle relaxation',
     duration: '60-120 minutes',
-    priceFrom: '$55',
-    priceFromIDR: '500,000',
+    priceFrom: 'Rp 400,000',
+    priceFromIDR: 'Rp 400,000',
     image: hotStoneImage,
     description: 'Hot stone massage Ubud - therapeutic treatment using heated volcanic stones for deep muscle relaxation',
     longDescription: 'Experience the ancient healing power of hot stone massage in your Ubud villa. This luxurious treatment combines smooth, heated volcanic stones with therapeutic massage techniques to melt away tension, improve circulation, and promote profound relaxation. The warmth of the stones penetrates deep into muscles, making this ideal for chronic tension and stress relief. Our certified therapists bring this premium spa experience directly to your accommodation throughout Ubud.',
@@ -47,20 +47,20 @@ export default function HotStoneMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: '$55',
-        priceIDR: 'IDR 500,000',
+        price: 'Rp 400,000',
+        priceIDR: 'Rp 400,000',
         description: 'Hot stone massage focusing on back, shoulders, and legs with heated stone placement'
       },
       {
         duration: '90 Minutes',
-        price: '$75',
-        priceIDR: 'IDR 700,000',
+        price: 'Rp 560,000',
+        priceIDR: 'Rp 560,000',
         description: 'Full body hot stone massage with extended relaxation and aromatherapy enhancement'
       },
       {
         duration: '120 Minutes',
-        price: '$95',
-        priceIDR: 'IDR 900,000',
+        price: 'Rp 720,000',
+        priceIDR: 'Rp 720,000',
         description: 'Complete luxury ritual with body scrub, hot stone massage, and scalp treatment'
       }
     ],

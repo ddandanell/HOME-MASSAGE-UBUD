@@ -11,8 +11,8 @@ export default function PregnancyMassage() {
     metaDescription: 'Book a Pregnancy Massage in Ubud. Safe prenatal massage delivered to your villa by certified maternity therapists, 7 am–10 pm. ★★★★★',
     heroSubtitle: 'Safe, comfortable prenatal massage for expecting mothers, delivered to your Ubud villa by certified maternity therapists',
     duration: '60-90 minutes',
-    priceFrom: '$50',
-    priceFromIDR: '450,000',
+    priceFrom: 'Rp 360,000',
+    priceFromIDR: 'Rp 360,000',
     image: pregnancyImage,
     description: 'Safe pregnancy massage Ubud - specialized prenatal care delivered to your villa by certified maternity therapists',
     longDescription: 'Experience safe, nurturing pregnancy massage in the comfort of your Ubud villa. Our certified prenatal massage therapists specialize in techniques specifically designed for expecting mothers, providing relief from pregnancy discomforts while ensuring complete safety for you and your baby. Using side-lying positions and specially designed cushions, we bring this gentle, therapeutic treatment to your accommodation throughout Ubud, allowing you to relax and prepare for motherhood in paradise.',
@@ -47,20 +47,20 @@ export default function PregnancyMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: '$50',
-        priceIDR: 'IDR 450,000',
+        price: 'Rp 360,000',
+        priceIDR: 'Rp 360,000',
         description: 'Safe prenatal massage focusing on back, legs, and common pregnancy discomfort areas'
       },
       {
         duration: '90 Minutes',
-        price: '$70',
-        priceIDR: 'IDR 650,000',
+        price: 'Rp 520,000',
+        priceIDR: 'Rp 520,000',
         description: 'Extended session with foot reflexology and gentle stretching for expecting mothers'
       },
       {
         duration: '120 Minutes',
-        price: '$90',
-        priceIDR: 'IDR 850,000',
+        price: 'Rp 680,000',
+        priceIDR: 'Rp 680,000',
         description: 'Luxury babymoon package with gentle body massage, scalp treatment, and relaxation'
       }
     ],

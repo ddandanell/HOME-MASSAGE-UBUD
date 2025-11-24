@@ -11,8 +11,8 @@ export default function TraditionalBalineseMassage() {
     metaDescription: 'Book a Traditional Balinese Massage in Ubud. Expert therapists come to your villa or hotel, 7 am–10 pm, Ubud centre & surroundings. ★★★★★ Rated',
     heroSubtitle: 'Licensed Balinese therapists bring authentic traditional massage to your villa or hotel in Ubud area, 7am-10pm daily',
     duration: '60-120 minutes',
-    priceFrom: '$35',
-    priceFromIDR: 'IDR 300,000',
+    priceFrom: 'Rp 240,000',
+    priceFromIDR: 'Rp 240,000',
     image: balineseImage,
     description: 'Authentic Balinese massage Ubud - traditional healing treatment combining palm pressure, acupressure, and aromatic oils delivered to your villa',
     longDescription: 'Experience the authentic healing art of traditional Balinese massage in the comfort of your villa in Ubud. This ancient therapeutic practice combines gentle palm pressure, acupressure techniques, and aromatic oils to stimulate blood flow, ease muscle tension, and restore energy balance. Our certified therapists bring centuries-old Balinese healing traditions directly to your accommodation in Ubud centre, Penestanan, Sayan, and surrounding villages.',
@@ -47,20 +47,20 @@ export default function TraditionalBalineseMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: '$35',
-        priceIDR: 'IDR 300,000',
+        price: 'Rp 240,000',
+        priceIDR: 'Rp 240,000',
         description: 'Full body traditional Balinese massage focusing on major muscle groups and stress points'
       },
       {
         duration: '90 Minutes',
-        price: '$50',
-        priceIDR: 'IDR 450,000',
+        price: 'Rp 360,000',
+        priceIDR: 'Rp 360,000',
         description: 'Extended session with extra time for problem areas, includes foot reflexology'
       },
       {
         duration: '120 Minutes',
-        price: '$65',
-        priceIDR: 'IDR 600,000',
+        price: 'Rp 480,000',
+        priceIDR: 'Rp 480,000',
         description: 'Complete therapeutic experience with head massage, body scrub, and extended relaxation'
       }
     ],
