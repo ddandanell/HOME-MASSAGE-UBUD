@@ -9,7 +9,7 @@ export default function ThaiMassage() {
     h1Title: 'Thai Massage in Ubud – Villa Spa Delivered',
     metaTitle: 'Thai Massage in Ubud | In-Villa Massage Service',
     metaDescription: 'Book a Thai Massage in Ubud. Ancient stretching and acupressure therapy delivered to your villa or hotel, 7 am–10 pm. ★★★★★ Flexibility boost',
-    heroSubtitle: 'Ancient Thai healing art combining yoga stretches and acupressure, delivered to your Ubud villa by trained therapists',
+    heroSubtitle: 'Ancient Thai healing art combining acupressure and assisted yoga stretches, delivered to your Ubud villa by trained therapists',
     duration: '60-120 minutes',
     priceFrom: '$40',
     priceFromIDR: '350,000',
