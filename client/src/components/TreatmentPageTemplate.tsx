@@ -3,10 +3,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Clock, Users, Star, CheckCircle, MessageCircle, MapPin } from 'lucide-react';
+import { Clock, Users, Star, CheckCircle, MessageCircle, MapPin, Heart } from 'lucide-react';
 import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import SEOHead from '@/components/SEOHead';
+import { Link } from 'wouter';
 
 interface TreatmentPageProps {
   treatment: {
@@ -350,6 +351,45 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
             </div>
           </div>
         </section>
+
+        {/* Related Treatments */}
+        {treatment.relatedTreatments && treatment.relatedTreatments.length > 0 && (
+          <section className="py-16 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  Related Treatments
+                </h2>
+                <p className="text-lg text-gray-600">
+                  Explore other massage therapies you might enjoy
+                </p>
+              </div>
+              
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {treatment.relatedTreatments.map((related, index) => (
+                  <Link key={index} href={`/ubud/${related.slug}`}>
+                    <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all cursor-pointer border border-gray-100 hover:border-amber-300 h-full group">
+                      <div className="flex items-start gap-3">
+                        <Heart className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <h3 className="font-bold text-gray-900 text-lg group-hover:text-amber-600 transition-colors">
+                          {related.name}
+                        </h3>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              
+              <div className="text-center mt-8">
+                <Link href="/treatments">
+                  <Button size="lg" variant="outline" className="border-amber-600 text-amber-600 hover:bg-amber-50">
+                    View All Treatments
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Final CTA */}
         <section className="py-20 bg-gradient-to-r from-amber-600 to-orange-600">

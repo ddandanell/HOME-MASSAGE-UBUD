@@ -314,6 +314,26 @@ export default function AreaPageTemplate({ area }: AreaPageProps) {
           </div>
         </section>
 
+        {/* More Service Areas */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                We Also Serve Other Areas
+              </h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Professional in-villa massage service available throughout Bali
+              </p>
+              <Link href="/service-areas">
+                <Button size="lg" variant="outline" className="border-amber-600 text-amber-600 hover:bg-amber-50">
+                  <MapPin className="mr-2 h-5 w-5" />
+                  View All Service Areas
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-20 bg-gradient-to-r from-amber-600 to-orange-600">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
