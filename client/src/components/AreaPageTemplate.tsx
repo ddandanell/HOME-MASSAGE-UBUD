@@ -65,7 +65,7 @@ export default function AreaPageTemplate({ area }: AreaPageProps) {
           offers: area.treatments.slice(0, 3).map(treatment => ({
             name: treatment.name,
             description: `${treatment.duration} session`,
-            price: treatment.priceFrom.replace(/[^0-9]/g, ''),
+            price: treatment.priceFrom?.replace(/[^0-9]/g, '') || '0',
           }))
         }} 
       />

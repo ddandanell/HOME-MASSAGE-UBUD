@@ -72,7 +72,7 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
           offers: treatment.packages.map(pkg => ({
             name: pkg.duration,
             description: pkg.description,
-            price: pkg.priceIDR.replace(/[^0-9]/g, ''),
+            price: pkg.priceIDR?.replace(/[^0-9]/g, '') || '0',
           }))
         }} 
       />

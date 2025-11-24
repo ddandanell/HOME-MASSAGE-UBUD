@@ -146,7 +146,7 @@ export default function Testimonials() {
           type="review"
           data={{
             author: testimonial.name,
-            rating: testimonial.rating.toString(),
+            rating: testimonial.rating?.toString() || '5',
             reviewBody: testimonial.review,
             datePublished: testimonial.date
           }}
