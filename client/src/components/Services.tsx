@@ -18,9 +18,9 @@ const services = [
     link: '/ubud/traditional-balinese-massage',
     description: 'Authentic Balinese massage Ubud - traditional full-body massage combining palm pressure, acupressure, and stretching with aromatic oils. The most popular massage in Ubud for stress relief, muscle tension release, and deep relaxation at your villa.',
     pricing: [
-      { duration: '60 Min', price: 'IDR 350K' },
-      { duration: '90 Min', price: 'IDR 500K' },
-      { duration: '120 Min', price: 'IDR 650K' }
+      { duration: '60 Min', price: 'IDR 280K' },
+      { duration: '90 Min', price: 'IDR 400K' },
+      { duration: '120 Min', price: 'IDR 520K' }
     ]
   },
   {
@@ -30,9 +30,9 @@ const services = [
     link: '/ubud/deep-tissue-massage',
     description: 'Professional deep tissue massage Ubud - intensive treatment targeting chronic muscle tension and deep knots using firm pressure. Best therapeutic massage Ubud for sports recovery, chronic pain relief, and work-related tension at your villa.',
     pricing: [
-      { duration: '60 Min', price: 'IDR 400K' },
-      { duration: '90 Min', price: 'IDR 550K' },
-      { duration: '120 Min', price: 'IDR 700K' }
+      { duration: '60 Min', price: 'IDR 320K' },
+      { duration: '90 Min', price: 'IDR 460K' },
+      { duration: '120 Min', price: 'IDR 600K' }
     ]
   },
   {
@@ -42,9 +42,9 @@ const services = [
     link: '/ubud/aromatherapy-massage',
     description: 'Relaxing aromatherapy massage Ubud - full-body massage using premium essential oils like lavender, lemongrass, eucalyptus. Popular wellness massage in Ubud with light to medium pressure for deep relaxation and better sleep.',
     pricing: [
-      { duration: '60 Min', price: 'IDR 350K' },
-      { duration: '90 Min', price: 'IDR 500K' },
-      { duration: '120 Min', price: 'IDR 650K' }
+      { duration: '60 Min', price: 'IDR 304K' },
+      { duration: '90 Min', price: 'IDR 440K' },
+      { duration: '120 Min', price: 'IDR 560K' }
     ]
   },
   {
@@ -54,9 +54,9 @@ const services = [
     link: '/ubud/lymphatic-drainage-massage',
     description: 'Specialized lymphatic drainage massage Ubud - gentle rhythmic massage that stimulates lymphatic system to reduce swelling and boost immunity. Best detox massage in Ubud, perfect for post-flight recovery at your villa.',
     pricing: [
-      { duration: '60 Min', price: 'IDR 450K' },
-      { duration: '90 Min', price: 'IDR 650K' },
-      { duration: '120 Min', price: 'IDR 850K' }
+      { duration: '60 Min', price: 'IDR 384K' },
+      { duration: '90 Min', price: 'IDR 550K' },
+      { duration: '120 Min', price: 'IDR 720K' }
     ]
   },
   {
@@ -66,9 +66,9 @@ const services = [
     link: '/ubud/thai-massage',
     description: 'Authentic Thai massage Ubud - energizing treatment combining yoga-like stretches with pressure along energy lines. Traditional massage in Ubud performed fully clothed, improves flexibility and relieves stiffness. Great after hiking or yoga.',
     pricing: [
-      { duration: '60 Min', price: 'IDR 450K' },
-      { duration: '90 Min', price: 'IDR 650K' },
-      { duration: '120 Min', price: 'IDR 850K' }
+      { duration: '60 Min', price: 'IDR 360K' },
+      { duration: '90 Min', price: 'IDR 520K' },
+      { duration: '120 Min', price: 'IDR 680K' }
     ]
   },
   {
@@ -78,9 +78,9 @@ const services = [
     link: '/ubud/couples-wellness-ritual',
     description: 'Luxury four hands massage Ubud - premium couples massage with two synchronized therapists working together. Ultimate relaxation massage in Ubud for complete body coverage, perfect for special occasions or romantic couples massage Ubud experience.',
     pricing: [
-      { duration: '60 Min', price: 'IDR 600K' },
-      { duration: '90 Min', price: 'IDR 850K' },
-      { duration: '120 Min', price: 'IDR 1.100K' }
+      { duration: '60 Min', price: 'IDR 520K' },
+      { duration: '90 Min', price: 'IDR 740K' },
+      { duration: '120 Min', price: 'IDR 960K' }
     ]
   },
   {
@@ -90,9 +90,9 @@ const services = [
     link: '/ubud/hot-stone-massage',
     description: 'Healing hot stone massage Ubud - therapeutic massage using smooth heated volcanic stones placed on key points. The warmth penetrates deep into muscles for ultimate relaxation massage Ubud. Perfect for muscle stiffness and stress relief at your villa.',
     pricing: [
-      { duration: '60 Min', price: 'IDR 500K' },
-      { duration: '90 Min', price: 'IDR 700K' },
-      { duration: '120 Min', price: 'IDR 900K' }
+      { duration: '60 Min', price: 'IDR 360K' },
+      { duration: '90 Min', price: 'IDR 520K' },
+      { duration: '120 Min', price: 'IDR 680K' }
     ]
   }
 ];
