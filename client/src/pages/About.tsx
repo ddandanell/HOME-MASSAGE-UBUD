@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
+import SEOHead from '@/components/SEOHead';
 
 // Import images
 import massageImage from '../assets/woman-getting-bali-massage-with-all-the-benefits-of-bailnese-massage_1757329093079.jpg';
@@ -78,6 +79,12 @@ export default function About() {
 
   return (
     <>
+      <SEOHead
+        title="About Us | Expert Massage Therapists in Ubud Bali"
+        description="Meet our licensed massage therapists in Ubud. 8+ years experience in traditional Balinese healing. Professional in-villa spa service with 500+ 5-star reviews."
+        canonical="https://homemassageubud.com/about"
+        keywords="massage therapists ubud, about home massage ubud, professional massage ubud, licensed therapists bali, spa team ubud"
+      />
       <Header />
       
       {/* Hero Section - Mobile Optimized */}

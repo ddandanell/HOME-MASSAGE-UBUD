@@ -18,6 +18,7 @@ import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import SEOHead from "@/components/SEOHead";
 
 export default function Home() {
   const faqData = [
@@ -37,6 +38,14 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground antialiased">
+      {/* SEO Meta Tags */}
+      <SEOHead
+        title="Ubud Massage | #1 In-Villa Massage Ubud Bali"
+        description="★★★★★ Professional Ubud massage services to your villa. Traditional Balinese, deep tissue & aromatherapy. Mobile spa Ubud. Book now ☎ +62 811-2656-869"
+        canonical="https://homemassageubud.com"
+        keywords="ubud massage, massage ubud, in villa massage ubud, balinese massage ubud, home massage ubud, spa ubud, massage ubud bali"
+      />
+      
       {/* SEO Schema Markup */}
       <SchemaMarkup 
         type="organization" 

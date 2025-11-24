@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
+import SEOHead from '@/components/SEOHead';
 
 export default function Contact() {
   const contactInfo = [
@@ -52,6 +53,12 @@ export default function Contact() {
 
   return (
     <>
+      <SEOHead
+        title="Contact Us | Book Villa Massage Service in Ubud"
+        description="Contact Home Massage Ubud ☎ +62 811-2656-869. WhatsApp booking available 24/7. Professional massage to your villa. Fast response & easy booking."
+        canonical="https://homemassageubud.com/contact"
+        keywords="contact ubud massage, book massage ubud, whatsapp massage booking, massage appointment ubud, call massage ubud"
+      />
       <Header />
       
       {/* Hero Section - Mobile Optimized */}

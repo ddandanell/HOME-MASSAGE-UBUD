@@ -6,6 +6,7 @@ import { Calendar, Clock, User, ArrowRight, Heart, Leaf, Zap } from 'lucide-reac
 import SchemaMarkup from '../components/SchemaMarkup';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 
 const blogPosts = [
   {
@@ -101,6 +102,12 @@ export default function BlogNew() {
 
   return (
     <>
+      <SEOHead
+        title="Massage Blog | Wellness Tips & Healing Guides Ubud"
+        description="Expert massage & wellness insights from Ubud. Learn Balinese healing techniques, spa tips & therapeutic treatments. Professional advice from licensed therapists."
+        canonical="https://homemassageubud.com/blog"
+        keywords="massage blog ubud, wellness tips bali, balinese healing, spa guides ubud, therapeutic massage advice, wellness insights"
+      />
       <Header />
       <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-emerald-50">
       <SchemaMarkup type="organization" data={blogSchema} />

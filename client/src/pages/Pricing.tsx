@@ -7,6 +7,7 @@ import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SchemaMarkup from '@/components/SchemaMarkup';
+import SEOHead from '@/components/SEOHead';
 
 const massageTypes = [
   {
@@ -115,6 +116,12 @@ function formatPrice(price: number): string {
 export default function Pricing() {
   return (
     <>
+      <SEOHead
+        title="Massage Pricing Ubud | Fair & Transparent Rates"
+        description="Ubud massage pricing from 240k IDR. Professional in-villa massage rates. Traditional Balinese, deep tissue & more. Transparent pricing, no hidden fees."
+        canonical="https://homemassageubud.com/pricing"
+        keywords="ubud massage price, massage ubud cost, ubud massage rates, villa massage pricing, spa prices ubud, massage therapy cost ubud bali"
+      />
       <Header />
       <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-emerald-50">
         {/* Hero Section - Mobile Optimized */}

@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Clock, Users, Star, CheckCircle, MessageCircle, MapPin } from 'lucide-react';
 import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
+import SEOHead from '@/components/SEOHead';
 
 interface TreatmentPageProps {
   treatment: {
@@ -51,6 +52,14 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
 
   return (
     <div className="min-h-screen bg-background text-foreground antialiased">
+      {/* SEO Meta Tags */}
+      <SEOHead
+        title={treatment.metaTitle}
+        description={treatment.metaDescription}
+        canonical={`https://homemassageubud.com/ubud/${treatment.slug}`}
+        keywords={`${treatment.name.toLowerCase()}, ${treatment.slug}, massage ubud, spa service ubud, villa massage, in-home treatment ubud bali`}
+      />
+      
       {/* SEO Schema Markup */}
       <SchemaMarkup 
         type="service" 
