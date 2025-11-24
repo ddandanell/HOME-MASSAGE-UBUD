@@ -138,6 +138,21 @@ export default function Testimonials() {
         canonical="https://homemassageubud.com/testimonials"
         keywords="ubud massage reviews, massage testimonials ubud, customer reviews ubud spa, 5 star massage ubud, best rated massage bali"
       />
+      
+      {/* Review Schema for all testimonials */}
+      {testimonials.map((testimonial, index) => (
+        <SchemaMarkup
+          key={index}
+          type="review"
+          data={{
+            author: testimonial.name,
+            rating: testimonial.rating?.toString() || '5',
+            reviewBody: testimonial.review,
+            datePublished: testimonial.date
+          }}
+        />
+      ))}
+      
       <Header />
       <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-emerald-50">
       {/* Hero Section - Mobile Optimized */}
