@@ -39,7 +39,7 @@ import UbudNorth from "@/pages/areas/UbudNorth";
 import UbudEast from "@/pages/areas/UbudEast";
 import UbudSouth from "@/pages/areas/UbudSouth";
 import UbudLuxuryVillas from "@/pages/areas/UbudLuxuryVillas";
-// import Tegallalang from "@/pages/areas/Tegallalang"; // Temporarily disabled due to syntax error
+// NOTE: Tegallalang.tsx excluded - file has syntax errors and needs recreation from template
 import Sidemen from "@/pages/areas/Sidemen";
 
 // Area Pages - South Bali
@@ -101,7 +101,7 @@ function Router() {
       <Route path="/ubud-east" component={UbudEast} />
       <Route path="/ubud-south" component={UbudSouth} />
       <Route path="/ubud-luxury-villas" component={UbudLuxuryVillas} />
-      {/* <Route path="/tegallalang" component={Tegallalang} /> */}
+      {/* NOTE: Tegallalang route excluded - page file needs to be recreated */}
       <Route path="/sidemen" component={Sidemen} />
       
       {/* Area Pages - South Bali */}
