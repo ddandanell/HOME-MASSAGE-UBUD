@@ -46,12 +46,7 @@ export default function Home() {
         keywords="ubud massage, massage ubud, in villa massage ubud, balinese massage ubud, home massage ubud, spa ubud, massage ubud bali"
       />
       
-      {/* SEO Schema Markup */}
-      <SchemaMarkup 
-        type="organization" 
-        data={{}} 
-      />
-      
+      {/* FAQ Schema for homepage */}
       <SchemaMarkup 
         type="faq" 
         data={faqData} 

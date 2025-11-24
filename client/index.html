@@ -36,27 +36,30 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://homemassageubud.com",
-      "name": "Ubud Massage - Home Massage Ubud",
-      "alternateName": ["Home Massage Ubud", "Ubud Massage Services", "Massage Ubud", "In-Villa Massage Ubud"],
-      "description": "Professional Ubud massage services - Best in-villa massage Ubud offers. Mobile massage therapy delivered to your location in Ubud, Bali. Traditional Balinese massage, deep tissue massage, aromatherapy massage Ubud. Book your home massage Ubud today.",
+      "@type": "HealthAndBeautyBusiness",
+      "@id": "https://homemassageubud.com/#localbusiness",
+      "name": "Home Massage Ubud",
+      "alternateName": ["Ubud Massage", "Massage Ubud", "In-Villa Massage Ubud"],
+      "description": "Professional in-villa massage services in Ubud, Bali. Licensed therapists providing traditional Balinese, deep tissue, aromatherapy, and wellness treatments delivered to your accommodation.",
       "url": "https://homemassageubud.com",
-      "telephone": "+62 811-2656-869",
+      "image": "https://homemassageubud.com/logo.png",
+      "logo": "https://homemassageubud.com/logo.png",
+      "telephone": "+62-811-2656-869",
       "email": "hello@homemassageubud.com",
-      "priceRange": "IDR 300,000 - IDR 1,500,000",
-      "currenciesAccepted": ["IDR", "USD"],
-      "paymentAccepted": ["Cash", "Credit Card", "PayPal", "Wise Transfer"],
+      "priceRange": "$$",
+      "currenciesAccepted": "IDR",
+      "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ubud",
         "addressRegion": "Bali",
-        "addressCountry": "Indonesia"
+        "postalCode": "80571",
+        "addressCountry": "ID"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "-8.5069",
-        "longitude": "115.2625"
+        "latitude": -8.5069,
+        "longitude": 115.2625
       },
       "areaServed": [
         {
@@ -64,108 +67,48 @@
           "name": "Ubud",
           "addressRegion": "Bali",
           "addressCountry": "Indonesia"
+        },
+        {
+          "@type": "City",
+          "name": "Tegallalang",
+          "addressRegion": "Bali",
+          "addressCountry": "Indonesia"
+        },
+        {
+          "@type": "City",
+          "name": "Sanggingan",
+          "addressRegion": "Bali",
+          "addressCountry": "Indonesia"
+        },
+        {
+          "@type": "City",
+          "name": "Penestanan",
+          "addressRegion": "Bali",
+          "addressCountry": "Indonesia"
+        },
+        {
+          "@type": "City",
+          "name": "Campuhan",
+          "addressRegion": "Bali",
+          "addressCountry": "Indonesia"
         }
       ],
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": "-8.5069",
-          "longitude": "115.2625"
-        },
-        "geoRadius": "20000"
-      },
-      "openingHours": "Mo-Su 09:00-21:00",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Massage and Wellness Services",
-        "itemListElement": [
-          {
-            "@type": "Service",
-            "name": "Traditional Balinese Massage Ubud",
-            "description": "Authentic Balinese massage Ubud - traditional healing treatment combining palm pressure, acupressure, and aromatic oils delivered to your villa",
-            "serviceType": "Ubud Massage",
-            "url": "https://homemassageubud.com/ubud/traditional-balinese-massage",
-            "offers": {
-              "@type": "Offer",
-              "price": "300000",
-              "priceCurrency": "IDR"
-            }
-          },
-          {
-            "@type": "Service",
-            "name": "Deep Tissue Massage Ubud",
-            "description": "Professional deep tissue massage Ubud - intensive therapeutic bodywork targeting chronic tension and muscle knots in your accommodation",
-            "serviceType": "Massage Ubud",
-            "url": "https://homemassageubud.com/ubud/deep-tissue-massage",
-            "offers": {
-              "@type": "Offer",
-              "price": "400000",
-              "priceCurrency": "IDR"
-            }
-          },
-          {
-            "@type": "Service",
-            "name": "Aromatherapy Massage Ubud",
-            "description": "Relaxing aromatherapy massage Ubud - full-body treatment with premium essential oils at your villa",
-            "serviceType": "Ubud Massage Services",
-            "url": "https://homemassageubud.com/ubud/aromatherapy-massage",
-            "offers": {
-              "@type": "Offer",
-              "price": "350000",
-              "priceCurrency": "IDR"
-            }
-          },
-          {
-            "@type": "Service",
-            "name": "Hot Stone Massage Ubud",
-            "description": "Therapeutic hot stone massage using heated volcanic stones for deep muscle relaxation",
-            "serviceType": "Ubud Massage",
-            "url": "https://homemassageubud.com/ubud/hot-stone-massage",
-            "offers": {
-              "@type": "Offer",
-              "price": "500000",
-              "priceCurrency": "IDR"
-            }
-          },
-          {
-            "@type": "Service",
-            "name": "Thai Massage Ubud",
-            "description": "Ancient Thai healing combining acupressure and assisted yoga stretches for flexibility",
-            "serviceType": "Massage Ubud",
-            "url": "https://homemassageubud.com/ubud/thai-massage",
-            "offers": {
-              "@type": "Offer",
-              "price": "350000",
-              "priceCurrency": "IDR"
-            }
-          },
-          {
-            "@type": "Service",
-            "name": "Pregnancy Massage Ubud",
-            "description": "Safe prenatal massage for expecting mothers delivered to your villa",
-            "serviceType": "Ubud Massage",
-            "url": "https://homemassageubud.com/ubud/pregnancy-massage",
-            "offers": {
-              "@type": "Offer",
-              "price": "450000",
-              "priceCurrency": "IDR"
-            }
-          },
-          {
-            "@type": "Service",
-            "name": "Couples Wellness Ritual Ubud",
-            "description": "Romantic synchronized massage for couples in your private villa",
-            "serviceType": "Ubud Massage",
-            "url": "https://homemassageubud.com/ubud/couples-wellness-ritual",
-            "offers": {
-              "@type": "Offer",
-              "price": "850000",
-              "priceCurrency": "IDR"
-            }
-          }
-        ]
-      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "07:00",
+          "closes": "22:00"
+        }
+      ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
@@ -173,21 +116,6 @@
         "bestRating": "5",
         "worstRating": "1"
       },
-      "review": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sarah Mitchell"
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "The Traditional Balinese Royal Healing Ritual was absolutely transformative and exceeded all expectations. Professional service delivered to our villa."
-        }
-      ],
       "sameAs": [
         "https://www.instagram.com/homemassageubud",
         "https://www.facebook.com/homemassageubud"

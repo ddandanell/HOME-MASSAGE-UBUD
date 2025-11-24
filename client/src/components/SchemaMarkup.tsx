@@ -9,100 +9,75 @@ export default function SchemaMarkup({ type, data }: SchemaMarkupProps) {
   const generateSchema = () => {
     switch (type) {
       case 'organization':
-        return {
-          '@context': 'https://schema.org',
-          '@type': 'Organization',
-          name: 'Home Massage Ubud',
-          url: 'https://homemassageubud.com',
-          logo: 'https://homemassageubud.com/logo.png',
-          description: 'Professional in-villa massage services in Ubud, Bali. Licensed therapists providing traditional Balinese, deep tissue, and wellness treatments at your accommodation.',
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: 'Ubud',
-            addressRegion: 'Bali',
-            addressCountry: 'Indonesia'
-          },
-          contactPoint: {
-            '@type': 'ContactPoint',
-            telephone: '+62-811-2656-869',
-            contactType: 'customer service',
-            availableLanguage: ['English', 'Indonesian'],
-            areaServed: ['Ubud', 'Tegallalang', 'Sanggingan', 'Campuhan', 'Penestanan']
-          },
-          sameAs: [
-            'https://www.instagram.com/homemassageubud',
-            'https://www.facebook.com/homemassageubud'
-          ],
-          priceRange: 'IDR 350,000 - IDR 1,200,000',
-          hasOfferCatalog: {
-            '@type': 'OfferCatalog',
-            name: 'Massage Services',
-            itemListElement: [
-              {
-                '@type': 'Offer',
-                itemOffered: {
-                  '@type': 'Service',
-                  name: 'Traditional Balinese Massage',
-                  description: 'Ancient healing technique using acupressure and aromatherapy oils'
-                },
-                price: '350000',
-                priceCurrency: 'IDR'
-              },
-              {
-                '@type': 'Offer',
-                itemOffered: {
-                  '@type': 'Service',
-                  name: 'Deep Tissue Massage',
-                  description: 'Therapeutic massage for muscle tension and pain relief'
-                },
-                price: '400000',
-                priceCurrency: 'IDR'
-              }
-            ]
-          }
-        };
+        // This is now handled in index.html globally, so we skip it here
+        return null;
 
       case 'service':
-        return {
+        // Generate Service schema with proper provider reference to LocalBusiness
+        const serviceSchema: any = {
           '@context': 'https://schema.org',
           '@type': 'Service',
           name: data.name,
           description: data.description,
+          serviceType: data.serviceType || 'Massage Therapy',
           provider: {
-            '@type': 'Organization',
-            name: 'Home Massage Ubud',
-            url: 'https://homemassageubud.com'
-          },
-          areaServed: {
-            '@type': 'Place',
-            name: 'Ubud, Bali, Indonesia'
-          },
-          hasOfferCatalog: {
-            '@type': 'OfferCatalog',
-            name: data.name,
-            itemListElement: [{
-              '@type': 'Offer',
-              price: data.price,
-              priceCurrency: 'IDR',
-              availability: 'https://schema.org/InStock'
-            }]
-          },
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: '4.9',
-            reviewCount: '500',
-            bestRating: '5',
-            worstRating: '1'
+            '@id': 'https://homemassageubud.com/#localbusiness'
           }
         };
+
+        // Add area served if provided
+        if (data.areaServed) {
+          if (Array.isArray(data.areaServed)) {
+            serviceSchema.areaServed = data.areaServed.map((area: string) => ({
+              '@type': 'City',
+              name: area,
+              addressRegion: 'Bali',
+              addressCountry: 'Indonesia'
+            }));
+          } else {
+            serviceSchema.areaServed = {
+              '@type': 'City',
+              name: data.areaServed,
+              addressRegion: 'Bali',
+              addressCountry: 'Indonesia'
+            };
+          }
+        }
+
+        // Add offers if pricing is provided
+        if (data.offers && data.offers.length > 0) {
+          serviceSchema.offers = data.offers.map((offer: any) => ({
+            '@type': 'Offer',
+            name: offer.name || offer.duration,
+            description: offer.description,
+            price: offer.price,
+            priceCurrency: 'IDR',
+            availability: 'https://schema.org/InStock',
+            url: data.url
+          }));
+        } else if (data.price) {
+          serviceSchema.offers = {
+            '@type': 'Offer',
+            price: data.price,
+            priceCurrency: 'IDR',
+            availability: 'https://schema.org/InStock',
+            url: data.url
+          };
+        }
+
+        // Add URL if provided
+        if (data.url) {
+          serviceSchema.url = data.url;
+        }
+
+        return serviceSchema;
 
       case 'review':
         return {
           '@context': 'https://schema.org',
           '@type': 'Review',
           itemReviewed: {
-            '@type': 'Service',
-            name: 'Home Massage Ubud Services'
+            '@id': 'https://homemassageubud.com/#localbusiness'
           },
           reviewRating: {
             '@type': 'Rating',
@@ -113,8 +88,8 @@ export default function SchemaMarkup({ type, data }: SchemaMarkupProps) {
             '@type': 'Person',
             name: data.author
           },
-          reviewBody: data.review,
-          datePublished: data.date
+          reviewBody: data.reviewBody || data.review,
+          datePublished: data.datePublished || data.date
         };
 
       case 'faq':
@@ -144,11 +119,16 @@ export default function SchemaMarkup({ type, data }: SchemaMarkupProps) {
         };
 
       default:
-        return {};
+        return null;
     }
   };
 
   const schema = generateSchema();
+
+  // Don't render if schema is null
+  if (!schema) {
+    return null;
+  }
 
   return (
     <script

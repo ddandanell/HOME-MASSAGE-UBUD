@@ -66,12 +66,14 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
         data={{
           name: treatment.name,
           description: treatment.description,
-          serviceType: "Massage Therapy",
-          areaServed: "Ubud, Bali",
-          provider: {
-            "@type": "LocalBusiness",
-            "name": "Home Massage Ubud"
-          }
+          serviceType: "In-Villa Massage Therapy",
+          areaServed: ["Ubud", "Tegallalang", "Sanggingan", "Penestanan", "Campuhan"],
+          url: `https://homemassageubud.com/ubud/${treatment.slug}`,
+          offers: treatment.packages.map(pkg => ({
+            name: pkg.duration,
+            description: pkg.description,
+            price: pkg.priceIDR.replace(/[^0-9]/g, ''),
+          }))
         }} 
       />
       

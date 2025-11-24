@@ -57,14 +57,16 @@ export default function AreaPageTemplate({ area }: AreaPageProps) {
       <SchemaMarkup 
         type="service" 
         data={{
-          name: `Villa Massage ${area.name}`,
+          name: `In-Villa Massage Service - ${area.name}`,
           description: area.areaDescription,
-          serviceType: "Mobile Massage Service",
-          areaServed: `${area.name}, Ubud, Bali`,
-          provider: {
-            "@type": "LocalBusiness",
-            "name": "Home Massage Ubud"
-          }
+          serviceType: "Mobile In-Villa Massage Service",
+          areaServed: area.name,
+          url: `https://homemassageubud.com/${area.slug}`,
+          offers: area.treatments.slice(0, 3).map(treatment => ({
+            name: treatment.name,
+            description: `${treatment.duration} session`,
+            price: treatment.priceFrom.replace(/[^0-9]/g, ''),
+          }))
         }} 
       />
       
