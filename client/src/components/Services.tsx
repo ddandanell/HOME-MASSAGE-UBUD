@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { generateGeneralInquiryMessage, openWhatsApp } from "@/lib/whatsapp";
+import { Link } from "wouter";
 import balineseImage from "@assets/Balinese-Massage_1757317131191.jpg";
 import deepTissueImage from "@assets/Deep-Tissue-Massage_1757317131192.jpg";
 import aromatherapyImage from "@assets/Aromatherapy-Massage_1757317131192.jpg";
@@ -14,6 +15,7 @@ const services = [
     id: 'traditional-balinese',
     name: 'Traditional Balinese Massage Ubud',
     image: balineseImage,
+    link: '/ubud/traditional-balinese-massage',
     description: 'Authentic Balinese massage Ubud - traditional full-body massage combining palm pressure, acupressure, and stretching with aromatic oils. The most popular massage in Ubud for stress relief, muscle tension release, and deep relaxation at your villa.',
     pricing: [
       { duration: '60 Min', price: 'IDR 350K' },
@@ -25,6 +27,7 @@ const services = [
     id: 'deep-tissue',
     name: 'Deep Tissue Massage Ubud',
     image: deepTissueImage,
+    link: '/ubud/deep-tissue-massage',
     description: 'Professional deep tissue massage Ubud - intensive treatment targeting chronic muscle tension and deep knots using firm pressure. Best therapeutic massage Ubud for sports recovery, chronic pain relief, and work-related tension at your villa.',
     pricing: [
       { duration: '60 Min', price: 'IDR 400K' },
@@ -36,6 +39,7 @@ const services = [
     id: 'aromatherapy',
     name: 'Aromatherapy Massage Ubud',
     image: aromatherapyImage,
+    link: '/ubud/aromatherapy-massage',
     description: 'Relaxing aromatherapy massage Ubud - full-body massage using premium essential oils like lavender, lemongrass, eucalyptus. Popular wellness massage in Ubud with light to medium pressure for deep relaxation and better sleep.',
     pricing: [
       { duration: '60 Min', price: 'IDR 350K' },
@@ -47,6 +51,7 @@ const services = [
     id: 'lymphatic-drainage',
     name: 'Lymphatic Drainage Massage Ubud',
     image: lymphaticImage,
+    link: '/ubud/lymphatic-drainage-massage',
     description: 'Specialized lymphatic drainage massage Ubud - gentle rhythmic massage that stimulates lymphatic system to reduce swelling and boost immunity. Best detox massage in Ubud, perfect for post-flight recovery at your villa.',
     pricing: [
       { duration: '60 Min', price: 'IDR 450K' },
@@ -58,6 +63,7 @@ const services = [
     id: 'thai-massage',
     name: 'Thai Massage Ubud',
     image: thaiImage,
+    link: '/ubud/thai-massage',
     description: 'Authentic Thai massage Ubud - energizing treatment combining yoga-like stretches with pressure along energy lines. Traditional massage in Ubud performed fully clothed, improves flexibility and relieves stiffness. Great after hiking or yoga.',
     pricing: [
       { duration: '60 Min', price: 'IDR 450K' },
@@ -69,6 +75,7 @@ const services = [
     id: 'four-hands',
     name: 'Four Hands Massage Ubud',
     image: fourHandsImage,
+    link: '/ubud/couples-wellness-ritual',
     description: 'Luxury four hands massage Ubud - premium couples massage with two synchronized therapists working together. Ultimate relaxation massage in Ubud for complete body coverage, perfect for special occasions or romantic couples massage Ubud experience.',
     pricing: [
       { duration: '60 Min', price: 'IDR 600K' },
@@ -80,6 +87,7 @@ const services = [
     id: 'hot-stone',
     name: 'Hot Stone Massage Ubud',
     image: hotStoneImage,
+    link: '/ubud/hot-stone-massage',
     description: 'Healing hot stone massage Ubud - therapeutic massage using smooth heated volcanic stones placed on key points. The warmth penetrates deep into muscles for ultimate relaxation massage Ubud. Perfect for muscle stiffness and stress relief at your villa.',
     pricing: [
       { duration: '60 Min', price: 'IDR 500K' },
@@ -141,13 +149,23 @@ Discover the best massage Ubud offers with our professional mobile massage servi
                   </div>
                 </div>
                 
-                <Button 
-                  onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
-                  className="w-full bg-primary hover:bg-accent text-primary-foreground font-semibold text-sm sm:text-base py-2 sm:py-3"
-                  data-testid={`button-book-${service.id}`}
-                >
-                  Book Now
-                </Button>
+                <div className="flex gap-2">
+                  <Link href={service.link} className="flex-1">
+                    <Button 
+                      variant="outline"
+                      className="w-full text-sm sm:text-base py-2 sm:py-3"
+                    >
+                      Learn More
+                    </Button>
+                  </Link>
+                  <Button 
+                    onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
+                    className="flex-1 bg-primary hover:bg-accent text-primary-foreground font-semibold text-sm sm:text-base py-2 sm:py-3"
+                    data-testid={`button-book-${service.id}`}
+                  >
+                    Book Now
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}

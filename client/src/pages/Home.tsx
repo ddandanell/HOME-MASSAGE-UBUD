@@ -6,6 +6,7 @@ import HealthBenefits from "@/components/HealthBenefits";
 import ServiceAreas from "@/components/ServiceAreas";
 import SEOContent from "@/components/SEOContent";
 import UbudAreas from "@/components/UbudAreas";
+import AllTreatmentsAndAreas from "@/components/AllTreatmentsAndAreas";
 import About from "@/components/About";
 import BookingProcess from "@/components/BookingProcess";
 import WhatToExpect from "@/components/WhatToExpect";
@@ -86,6 +87,7 @@ export default function Home() {
         </section>
         <ServiceAreas />
         <UbudAreas />
+        <AllTreatmentsAndAreas />
         <SEOContent />
         <Contact />
       </main>
