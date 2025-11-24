@@ -21,7 +21,7 @@ export default function Services() {
       id: 1,
       name: 'Traditional Balinese Massage',
       duration: '60-90 minutes',
-      price: 'From $35',
+      price: 'From Rp 280,000',
       image: balineseImage,
       description: 'A traditional healing practice that combines gentle stretches, acupressure, and aromatherapy oils to stimulate blood circulation and ease tension.',
       benefits: [
@@ -36,7 +36,7 @@ export default function Services() {
       id: 2,
       name: 'Aromatherapy Massage',
       duration: '60-90 minutes',
-      price: 'From $40',
+      price: 'From Rp 304,000',
       image: aromatherapyImage,
       description: 'Relaxing massage using premium essential oils that penetrate deep into the skin, promoting healing and emotional balance.',
       benefits: [
@@ -50,7 +50,7 @@ export default function Services() {
       id: 3,
       name: 'Deep Tissue Massage',
       duration: '60-90 minutes',
-      price: 'From $45',
+      price: 'From Rp 320,000',
       image: deepTissueImage,
       description: 'Therapeutic massage targeting deep layers of muscle tissue to release chronic tension and knots.',
       benefits: [
@@ -64,7 +64,7 @@ export default function Services() {
       id: 4,
       name: 'Four Hands Massage',
       duration: '60-90 minutes',
-      price: 'From $70',
+      price: 'From Rp 520,000',
       image: fourHandsImage,
       description: 'Luxurious massage performed by two therapists simultaneously, creating a deeply relaxing and unique experience.',
       benefits: [
@@ -79,7 +79,7 @@ export default function Services() {
       id: 5,
       name: 'Thai Massage',
       duration: '60-90 minutes',
-      price: 'From $40',
+      price: 'From Rp 280,000',
       image: thaiImage,
       description: 'Ancient healing art combining acupressure, assisted yoga postures, and stretching techniques.',
       benefits: [
@@ -93,7 +93,7 @@ export default function Services() {
       id: 6,
       name: 'Lymphatic Drainage',
       duration: '60-90 minutes',
-      price: 'From $50',
+      price: 'From Rp 384,000',
       image: lymphaticImage,
       description: 'Gentle massage technique designed to stimulate lymphatic system and promote natural detoxification.',
       benefits: [
