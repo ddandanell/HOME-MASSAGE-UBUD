@@ -42,37 +42,37 @@ export default function UbudNorth() {
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: '$35',
+        priceFrom: 'Rp 240,000',
         duration: '60-120 min'
       },
       {
         name: 'Post-Hike Recovery Massage',
         slug: 'post-hike-recovery-massage',
-        priceFrom: '$45',
+        priceFrom: 'Rp 320,000',
         duration: '60-90 min'
       },
       {
         name: 'Yoga Stretch & Massage',
         slug: 'yoga-stretch-massage',
-        priceFrom: '$45',
+        priceFrom: 'Rp 320,000',
         duration: '60-90 min'
       },
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: '$55',
+        priceFrom: 'Rp 400,000',
         duration: '60-120 min'
       },
       {
         name: 'Couples Wellness Ritual',
         slug: 'couples-wellness-ritual',
-        priceFrom: '$90',
+        priceFrom: 'Rp 680,000',
         duration: '90-150 min'
       },
       {
         name: 'Detox & Wellness Massage',
         slug: 'detox-wellness-massage',
-        priceFrom: '$60',
+        priceFrom: 'Rp 440,000',
         duration: '90-120 min'
       }
     ],

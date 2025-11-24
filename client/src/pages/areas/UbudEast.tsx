@@ -42,37 +42,37 @@ export default function UbudEast() {
       {
         name: 'Post-Hike Recovery Massage',
         slug: 'post-hike-recovery-massage',
-        priceFrom: '$45',
+        priceFrom: 'Rp 320,000',
         duration: '60-90 min'
       },
       {
         name: 'Deep Tissue Massage',
         slug: 'deep-tissue-massage',
-        priceFrom: '$45',
+        priceFrom: 'Rp 320,000',
         duration: '60-120 min'
       },
       {
         name: 'Yoga Stretch & Massage',
         slug: 'yoga-stretch-massage',
-        priceFrom: '$45',
+        priceFrom: 'Rp 320,000',
         duration: '60-90 min'
       },
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: '$35',
+        priceFrom: 'Rp 240,000',
         duration: '60-120 min'
       },
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: '$40',
+        priceFrom: 'Rp 280,000',
         duration: '60-120 min'
       },
       {
         name: 'Detox & Wellness Massage',
         slug: 'detox-wellness-massage',
-        priceFrom: '$60',
+        priceFrom: 'Rp 440,000',
         duration: '90-120 min'
       }
     ],

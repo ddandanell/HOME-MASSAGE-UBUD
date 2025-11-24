@@ -11,8 +11,8 @@ export default function FootReflexology() {
     metaDescription: 'Book Foot Reflexology in Ubud. Perfect for jet-lag recovery, delivered to your villa or hotel, 7 am–10 pm. ★★★★★ Therapeutic pressure points',
     heroSubtitle: 'Therapeutic foot reflexology for jet-lag recovery and overall wellness, delivered to your Ubud villa',
     duration: '45-90 minutes',
-    priceFrom: '$30',
-    priceFromIDR: '250,000',
+    priceFrom: 'Rp 200,000',
+    priceFromIDR: 'Rp 200,000',
     image: reflexologyImage,
     description: 'Foot reflexology Ubud - therapeutic pressure point massage for jet-lag recovery and wellness',
     longDescription: 'Experience the healing power of foot reflexology in your Ubud villa. This ancient therapeutic practice applies targeted pressure to specific points on your feet that correspond to different organs and systems in your body. Perfect for jet-lag recovery, stress relief, and overall wellness, foot reflexology promotes healing, improves circulation, and restores balance. Our certified reflexology therapists bring this powerful treatment directly to your accommodation throughout Ubud, making it easy to recover from travel and enhance your wellbeing.',
@@ -47,20 +47,20 @@ export default function FootReflexology() {
     packages: [
       {
         duration: '45 Minutes',
-        price: '$30',
-        priceIDR: 'IDR 250,000',
+        price: 'Rp 200,000',
+        priceIDR: 'Rp 200,000',
         description: 'Focused foot reflexology session targeting key pressure points for wellness'
       },
       {
         duration: '60 Minutes',
-        price: '$40',
-        priceIDR: 'IDR 350,000',
+        price: 'Rp 280,000',
+        priceIDR: 'Rp 280,000',
         description: 'Extended reflexology with lower leg massage and hot towel treatment'
       },
       {
         duration: '90 Minutes',
-        price: '$55',
-        priceIDR: 'IDR 500,000',
+        price: 'Rp 400,000',
+        priceIDR: 'Rp 400,000',
         description: 'Complete wellness package with foot reflexology, head massage, and aromatherapy'
       }
     ],

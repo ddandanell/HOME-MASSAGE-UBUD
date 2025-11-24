@@ -234,8 +234,7 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
                     {pkg.duration}
                   </h4>
                   <div className="mb-4">
-                    <span className="text-3xl font-bold text-amber-600">{pkg.price}</span>
-                    <span className="text-gray-500 ml-2">/ {pkg.priceIDR}</span>
+                    <span className="text-3xl font-bold text-amber-600">{pkg.priceIDR}</span>
                   </div>
                   <p className="text-gray-600 mb-6">{pkg.description}</p>
                   <Button 

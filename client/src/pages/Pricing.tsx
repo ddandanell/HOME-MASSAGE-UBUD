@@ -14,8 +14,8 @@ const massageTypes = [
     description: 'Ancient healing technique using acupressure, gentle stretching, and aromatherapy oils',
     duration: '60-90 minutes',
     price: {
-      single: 350000,
-      couple: 650000
+      single: 280000,
+      couple: 520000
     },
     benefits: ['Stress relief', 'Improved circulation', 'Muscle tension release', 'Deep relaxation'],
     popular: true
@@ -25,8 +25,8 @@ const massageTypes = [
     description: 'Intensive therapeutic massage targeting chronic muscle tension and knots',
     duration: '60-90 minutes',
     price: {
-      single: 400000,
-      couple: 750000
+      single: 320000,
+      couple: 600000
     },
     benefits: ['Pain relief', 'Injury recovery', 'Improved mobility', 'Chronic tension release'],
     popular: false
@@ -36,8 +36,8 @@ const massageTypes = [
     description: 'Gentle relaxation massage with premium essential oils for mind-body wellness',
     duration: '60-90 minutes',
     price: {
-      single: 380000,
-      couple: 700000
+      single: 304000,
+      couple: 560000
     },
     benefits: ['Emotional balance', 'Stress reduction', 'Better sleep', 'Mental clarity'],
     popular: false
@@ -47,8 +47,8 @@ const massageTypes = [
     description: 'Volcanic stones and therapeutic massage for ultimate muscle relaxation',
     duration: '75-90 minutes',
     price: {
-      single: 450000,
-      couple: 850000
+      single: 360000,
+      couple: 680000
     },
     benefits: ['Deep muscle relaxation', 'Improved circulation', 'Pain relief', 'Stress reduction'],
     popular: false
@@ -58,7 +58,7 @@ const massageTypes = [
     description: 'Safe, specialized massage for expecting mothers (after 12 weeks)',
     duration: '60-75 minutes',
     price: {
-      single: 420000,
+      single: 336000,
       couple: null
     },
     benefits: ['Pregnancy comfort', 'Reduced swelling', 'Better sleep', 'Stress relief'],
@@ -69,8 +69,8 @@ const massageTypes = [
     description: 'Gentle therapeutic technique to boost immune system and reduce swelling',
     duration: '60-75 minutes',
     price: {
-      single: 480000,
-      couple: 900000
+      single: 384000,
+      couple: 720000
     },
     benefits: ['Detoxification', 'Reduced swelling', 'Immune boost', 'Improved circulation'],
     popular: false
@@ -82,7 +82,7 @@ const packages = [
     name: 'Wellness Couple Retreat',
     description: '2-hour romantic spa experience for couples',
     duration: '120 minutes',
-    price: 1200000,
+    price: 960000,
     includes: ['60min couples massage', 'Flower bath preparation', 'Herbal tea ceremony', 'Romantic setup'],
     popular: true
   },
@@ -90,7 +90,7 @@ const packages = [
     name: 'Ultimate Relaxation Package',
     description: 'Complete wellness experience with multiple treatments',
     duration: '150 minutes',
-    price: 850000,
+    price: 680000,
     includes: ['90min signature massage', 'Aromatherapy session', 'Reflexology treatment', 'Healthy refreshments'],
     popular: false
   },
@@ -98,7 +98,7 @@ const packages = [
     name: 'Monthly Wellness Subscription',
     description: '4 massages per month with exclusive benefits',
     duration: 'Monthly',
-    price: 1200000,
+    price: 960000,
     includes: ['4x 60min massages', 'Priority booking', '10% additional discount', 'Free consultation'],
     popular: false
   }

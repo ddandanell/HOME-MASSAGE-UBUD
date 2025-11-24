@@ -11,8 +11,8 @@ export default function DeepTissueMassage() {
     metaDescription: 'Book a Deep Tissue Massage in Ubud. Therapeutic muscle treatment delivered to your villa or hotel, 7 am–10 pm. ★★★★★ Professional therapists',
     heroSubtitle: 'Professional therapeutic deep tissue massage targeting chronic tension and muscle knots, delivered to your Ubud villa',
     duration: '60-120 minutes',
-    priceFrom: '$45',
-    priceFromIDR: '400,000',
+    priceFrom: 'Rp 320,000',
+    priceFromIDR: 'Rp 320,000',
     image: deepTissueImage,
     description: 'Professional deep tissue massage Ubud - intensive therapeutic bodywork targeting chronic tension and muscle knots in your accommodation',
     longDescription: 'Our deep tissue massage in Ubud focuses on the deeper layers of muscle tissue to release chronic tension, break down adhesions, and restore mobility. Ideal for active travelers, hikers, and those with persistent muscle pain, this intensive therapeutic treatment uses slow, deliberate strokes and deep finger pressure to reach problem areas. Our certified therapists bring professional deep tissue techniques directly to your villa anywhere in Ubud.',
@@ -47,20 +47,20 @@ export default function DeepTissueMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: '$45',
-        priceIDR: 'IDR 400,000',
+        price: 'Rp 320,000',
+        priceIDR: 'Rp 320,000',
         description: 'Targeted deep tissue work on major problem areas - back, shoulders, or legs'
       },
       {
         duration: '90 Minutes',
-        price: '$65',
-        priceIDR: 'IDR 550,000',
+        price: 'Rp 440,000',
+        priceIDR: 'Rp 440,000',
         description: 'Full body deep tissue massage with extended focus on multiple tension areas'
       },
       {
         duration: '120 Minutes',
-        price: '$80',
-        priceIDR: 'IDR 700,000',
+        price: 'Rp 560,000',
+        priceIDR: 'Rp 560,000',
         description: 'Comprehensive therapeutic session with hot stone enhancement and stretching'
       }
     ],

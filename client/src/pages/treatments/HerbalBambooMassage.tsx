@@ -11,8 +11,8 @@ export default function HerbalBambooMassage() {
     metaDescription: 'Book Herbal & Bamboo Massage in Ubud. Traditional Balinese healing with bamboo and herbs delivered to your villa, 7 am–10 pm. ★★★★★',
     heroSubtitle: 'Ancient Balinese healing using warm herbal compresses and bamboo sticks, delivered to your Ubud villa',
     duration: '90-120 minutes',
-    priceFrom: '$55',
-    priceFromIDR: '500,000',
+    priceFrom: 'Rp 400,000',
+    priceFromIDR: 'Rp 400,000',
     image: herbalImage,
     description: 'Herbal bamboo massage Ubud - traditional Balinese healing with warm herbal compresses and bamboo therapy',
     longDescription: 'Experience an authentic traditional Balinese healing ritual with our Herbal & Bamboo Massage. This unique treatment combines heated herbal compresses (boreh) filled with traditional Balinese healing herbs, and smooth bamboo sticks used for deep tissue work. The warmth of the herbal bundles penetrates muscles while releasing medicinal properties, and bamboo provides firm, even pressure that releases deep tension. This is authentic Balinese wellness tradition brought directly to your villa in Ubud.',
@@ -47,20 +47,20 @@ export default function HerbalBambooMassage() {
     packages: [
       {
         duration: '90 Minutes',
-        price: '$55',
-        priceIDR: 'IDR 500,000',
+        price: 'Rp 400,000',
+        priceIDR: 'Rp 400,000',
         description: 'Traditional herbal compress and bamboo massage focusing on tension areas'
       },
       {
         duration: '120 Minutes',
-        price: '$75',
-        priceIDR: 'IDR 700,000',
+        price: 'Rp 560,000',
+        priceIDR: 'Rp 560,000',
         description: 'Extended ritual with body scrub, herbal compress, and bamboo deep tissue work'
       },
       {
         duration: '150 Minutes',
-        price: '$95',
-        priceIDR: 'IDR 900,000',
+        price: 'Rp 720,000',
+        priceIDR: 'Rp 720,000',
         description: 'Complete traditional healing ceremony with all elements and extended relaxation'
       }
     ],

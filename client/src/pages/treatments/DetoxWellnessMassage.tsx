@@ -11,8 +11,8 @@ export default function DetoxWellnessMassage() {
     metaDescription: 'Book Detox & Wellness Massage in Ubud. Natural cleansing and rejuvenation delivered to your villa, 7 am–10 pm. ★★★★★ Holistic wellness',
     heroSubtitle: 'Comprehensive detoxification and wellness massage therapy in Ubud\'s premier wellness destination',
     duration: '90-120 minutes',
-    priceFrom: '$60',
-    priceFromIDR: '550,000',
+    priceFrom: 'Rp 440,000',
+    priceFromIDR: 'Rp 440,000',
     image: detoxImage,
     description: 'Detox wellness massage Ubud - comprehensive cleansing treatment for body purification and renewal',
     longDescription: 'Embrace Ubud\'s renowned wellness culture with our Detox & Wellness Massage, designed to support your body\'s natural cleansing processes. This comprehensive treatment combines lymphatic drainage, deep tissue work, and energy balancing techniques to promote detoxification, boost immunity, and restore vitality. Perfect for guests on wellness retreats or seeking deeper healing, our certified therapists bring this transformative treatment to your villa in Ubud, allowing you to experience authentic Balinese wellness traditions in complete privacy.',
@@ -47,20 +47,20 @@ export default function DetoxWellnessMassage() {
     packages: [
       {
         duration: '90 Minutes',
-        price: '$60',
-        priceIDR: 'IDR 550,000',
+        price: 'Rp 440,000',
+        priceIDR: 'Rp 440,000',
         description: 'Comprehensive detox massage with lymphatic drainage and energy balancing'
       },
       {
         duration: '120 Minutes',
-        price: '$80',
-        priceIDR: 'IDR 750,000',
+        price: 'Rp 600,000',
+        priceIDR: 'Rp 600,000',
         description: 'Extended wellness ritual with body scrub, detox massage, and aromatherapy'
       },
       {
         duration: '150 Minutes',
-        price: '$100',
-        priceIDR: 'IDR 950,000',
+        price: 'Rp 760,000',
+        priceIDR: 'Rp 760,000',
         description: 'Complete detox experience with body treatment, massage, and guided meditation'
       }
     ],

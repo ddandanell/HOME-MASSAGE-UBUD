@@ -42,37 +42,37 @@ export default function UbudLuxuryVillas() {
       {
         name: 'Couples Wellness Ritual',
         slug: 'couples-wellness-ritual',
-        priceFrom: '$90',
+        priceFrom: 'Rp 680,000',
         duration: '90-150 min'
       },
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: '$55',
+        priceFrom: 'Rp 400,000',
         duration: '60-120 min'
       },
       {
         name: 'Herbal & Bamboo Massage',
         slug: 'herbal-bamboo-massage',
-        priceFrom: '$55',
+        priceFrom: 'Rp 400,000',
         duration: '90-120 min'
       },
       {
         name: 'Detox & Wellness Massage',
         slug: 'detox-wellness-massage',
-        priceFrom: '$60',
+        priceFrom: 'Rp 440,000',
         duration: '90-120 min'
       },
       {
         name: 'Deep Tissue Massage',
         slug: 'deep-tissue-massage',
-        priceFrom: '$45',
+        priceFrom: 'Rp 320,000',
         duration: '60-120 min'
       },
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: '$35',
+        priceFrom: 'Rp 240,000',
         duration: '60-120 min'
       }
     ],

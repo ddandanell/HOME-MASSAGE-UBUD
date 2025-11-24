@@ -7,13 +7,13 @@ const pricingPackages = [
     id: 'signature-60min',
     title: '60 Minute Treatments',
     treatments: [
-      { name: 'Bali Massage (60 min)', price: 'Rp 300,000' },
-      { name: 'Aroma Therapy Massage (60 min)', price: 'Rp 350,000' },
-      { name: 'Deep Tissue Reset (60 min)', price: 'Rp 400,000' },
-      { name: 'Thai Massage (60 min)', price: 'Rp 400,000' },
-      { name: 'Lymphatic Drainage (60 min)', price: 'Rp 500,000' },
-      { name: 'Hot Stone Ritual (60 min)', price: 'Rp 500,000' },
-      { name: 'Massage with Hot Stones (60 min)', price: 'Rp 550,000' }
+      { name: 'Bali Massage (60 min)', price: 'Rp 240,000' },
+      { name: 'Aroma Therapy Massage (60 min)', price: 'Rp 280,000' },
+      { name: 'Deep Tissue Reset (60 min)', price: 'Rp 320,000' },
+      { name: 'Thai Massage (60 min)', price: 'Rp 320,000' },
+      { name: 'Lymphatic Drainage (60 min)', price: 'Rp 400,000' },
+      { name: 'Hot Stone Ritual (60 min)', price: 'Rp 400,000' },
+      { name: 'Massage with Hot Stones (60 min)', price: 'Rp 440,000' }
     ],
     buttonText: 'Book 60 Min',
     buttonVariant: 'secondary' as const,
@@ -23,14 +23,14 @@ const pricingPackages = [
     id: 'signature-90min',
     title: '90 Minute Treatments',
     treatments: [
-      { name: 'Bali Massage (90 min)', price: 'Rp 450,000' },
-      { name: 'Aroma Therapy Massage (90 min)', price: 'Rp 500,000' },
-      { name: 'Deep Tissue Reset (90 min)', price: 'Rp 600,000' },
-      { name: 'Thai Massage (90 min)', price: 'Rp 600,000' },
-      { name: 'Bali Glow (Massage + Scrub) (90 min)', price: 'Rp 600,000' },
-      { name: 'Lymphatic Drainage (90 min)', price: 'Rp 700,000' },
-      { name: 'Hot Stone Ritual (90 min)', price: 'Rp 700,000' },
-      { name: 'Massage with Hot Stones (90 min)', price: 'Rp 750,000' }
+      { name: 'Bali Massage (90 min)', price: 'Rp 360,000' },
+      { name: 'Aroma Therapy Massage (90 min)', price: 'Rp 400,000' },
+      { name: 'Deep Tissue Reset (90 min)', price: 'Rp 480,000' },
+      { name: 'Thai Massage (90 min)', price: 'Rp 480,000' },
+      { name: 'Bali Glow (Massage + Scrub) (90 min)', price: 'Rp 480,000' },
+      { name: 'Lymphatic Drainage (90 min)', price: 'Rp 560,000' },
+      { name: 'Hot Stone Ritual (90 min)', price: 'Rp 560,000' },
+      { name: 'Massage with Hot Stones (90 min)', price: 'Rp 600,000' }
     ],
     note: 'Extended sessions for deeper relaxation and complete rejuvenation',
     buttonText: 'Book 90 Min',
@@ -41,9 +41,9 @@ const pricingPackages = [
     id: 'specialty',
     title: 'Specialty Experiences',
     treatments: [
-      { name: 'Couples Bali Massage (60 min)', price: 'Rp 600,000' },
-      { name: 'Couples Hot Stone (90 min)', price: 'Rp 1,400,000' },
-      { name: 'Villa Wellness Day (3 treatments)', price: 'Rp 1,500,000' }
+      { name: 'Couples Bali Massage (60 min)', price: 'Rp 480,000' },
+      { name: 'Couples Hot Stone (90 min)', price: 'Rp 1,120,000' },
+      { name: 'Villa Wellness Day (3 treatments)', price: 'Rp 1,200,000' }
     ],
     note: 'Perfect for couples and extended wellness experiences',
     buttonText: 'Book Special',

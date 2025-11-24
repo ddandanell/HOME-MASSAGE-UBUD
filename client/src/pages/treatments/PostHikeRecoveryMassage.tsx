@@ -11,8 +11,8 @@ export default function PostHikeRecoveryMassage() {
     metaDescription: 'Book Post-Hike Recovery Massage in Ubud. Perfect after Campuhan Ridge or Tegallalang trek. Delivered to your villa, 7 am–10 pm. ★★★★★',
     heroSubtitle: 'Specialized recovery massage for hikers and trekkers, delivered to your Ubud villa after your adventures',
     duration: '60-90 minutes',
-    priceFrom: '$45',
-    priceFromIDR: '400,000',
+    priceFrom: 'Rp 320,000',
+    priceFromIDR: 'Rp 320,000',
     image: postHikeImage,
     description: 'Post-hike recovery massage Ubud - specialized treatment for muscle recovery after trekking',
     longDescription: 'After exploring Ubud\'s stunning rice terraces, ridge walks, and jungle trails, your body deserves expert care. Our post-hike recovery massage combines deep tissue techniques, stretching, and targeted muscle work to help your body recover from trekking adventures. Whether you\'ve hiked Campuhan Ridge, climbed through Tegallalang rice terraces, or trekked to waterfalls, our certified therapists bring specialized recovery treatment directly to your villa, helping you feel refreshed and ready for your next Ubud adventure.',
@@ -47,20 +47,20 @@ export default function PostHikeRecoveryMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: '$45',
-        priceIDR: 'IDR 400,000',
+        price: 'Rp 320,000',
+        priceIDR: 'Rp 320,000',
         description: 'Focused recovery massage on legs, feet, back, and shoulders after hiking'
       },
       {
         duration: '90 Minutes',
-        price: '$65',
-        priceIDR: 'IDR 600,000',
+        price: 'Rp 480,000',
+        priceIDR: 'Rp 480,000',
         description: 'Full body recovery session with deep tissue, stretching, and hot stone therapy'
       },
       {
         duration: '120 Minutes',
-        price: '$85',
-        priceIDR: 'IDR 750,000',
+        price: 'Rp 600,000',
+        priceIDR: 'Rp 600,000',
         description: 'Complete recovery package with body treatment, massage, and ice therapy for inflammation'
       }
     ],

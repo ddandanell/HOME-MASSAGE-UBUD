@@ -11,8 +11,8 @@ export default function AromatherapyMassage() {
     metaDescription: 'Book an Aromatherapy Massage in Ubud. Premium essential oils massage delivered to your villa, 7 am–10 pm. ★★★★★ Rated healing experience',
     heroSubtitle: 'Relaxing aromatherapy massage with premium essential oils delivered to your villa in the heart of Ubud wellness area',
     duration: '60-120 minutes',
-    priceFrom: '$40',
-    priceFromIDR: '350,000',
+    priceFrom: 'Rp 280,000',
+    priceFromIDR: 'Rp 280,000',
     image: aromatherapyImage,
     description: 'Relaxing aromatherapy massage Ubud - full-body treatment with premium essential oils at your villa',
     longDescription: 'Immerse yourself in the healing power of aromatherapy massage in Ubud. This sensory wellness experience combines therapeutic massage techniques with carefully selected essential oils to promote physical and emotional healing. Our certified therapists bring premium essential oils including lavender, frangipani, lemongrass, and Balinese botanicals directly to your villa, creating a spa sanctuary in your own space.',
@@ -47,20 +47,20 @@ export default function AromatherapyMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: '$40',
-        priceIDR: 'IDR 350,000',
+        price: 'Rp 280,000',
+        priceIDR: 'Rp 280,000',
         description: 'Full body aromatherapy massage with essential oil selection tailored to your needs'
       },
       {
         duration: '90 Minutes',
-        price: '$55',
-        priceIDR: 'IDR 500,000',
+        price: 'Rp 400,000',
+        priceIDR: 'Rp 400,000',
         description: 'Extended session with scalp massage and hot towel aromatherapy treatment'
       },
       {
         duration: '120 Minutes',
-        price: '$70',
-        priceIDR: 'IDR 650,000',
+        price: 'Rp 520,000',
+        priceIDR: 'Rp 520,000',
         description: 'Luxury aromatherapy ritual with body scrub, massage, and extended relaxation time'
       }
     ],
