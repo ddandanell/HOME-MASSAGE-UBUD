@@ -5,38 +5,39 @@ const footerSections = [
   {
     title: 'Our Services',
     links: [
-      { name: 'Traditional Balinese', href: '/services' },
-      { name: 'Deep Tissue', href: '/services' },
-      { name: 'Aromatherapy', href: '/services' },
-      { name: 'Four Hands', href: '/services' },
-      { name: 'Thai Massage', href: '/services' }
+      { name: 'All Treatments', href: '/treatments' },
+      { name: 'Traditional Balinese', href: '/ubud/traditional-balinese-massage' },
+      { name: 'Deep Tissue', href: '/ubud/deep-tissue-massage' },
+      { name: 'Aromatherapy', href: '/ubud/aromatherapy-massage' },
+      { name: 'Hot Stone', href: '/ubud/hot-stone-massage' }
+    ]
+  },
+  {
+    title: 'Service Areas',
+    links: [
+      { name: 'All Locations', href: '/service-areas' },
+      { name: 'Ubud Centre', href: '/ubud-centre' },
+      { name: 'Seminyak', href: '/seminyak' },
+      { name: 'Canggu', href: '/canggu' },
+      { name: 'Sanur', href: '/sanur' }
     ]
   },
   {
     title: 'Company',
     links: [
       { name: 'About Us', href: '/about' },
-      { name: 'Our Team', href: '/about' },
       { name: 'Testimonials', href: '/testimonials' },
-      { name: 'Blog', href: '/blog' }
+      { name: 'Blog', href: '/blog' },
+      { name: 'Sustainability', href: '/sustainability' }
     ]
   },
   {
     title: 'Booking',
     links: [
       { name: 'Pricing', href: '/pricing' },
-      { name: 'Service Areas', href: '/contact' },
       { name: 'Contact Us', href: '/contact' },
+      { name: 'Villa Partnerships', href: '/villa-partnerships' },
       { name: 'WhatsApp Book', href: 'https://wa.me/628112656869', external: true }
-    ]
-  },
-  {
-    title: 'Support',
-    links: [
-      { name: 'FAQ', href: '/#faq' },
-      { name: 'Booking Policy', href: '/blog' },
-      { name: 'Reviews', href: '/testimonials' },
-      { name: 'Villa Partnerships', href: '/villa-partnerships' }
     ]
   }
 ];

@@ -14,6 +14,8 @@ import BlogNew from "@/pages/BlogNew";
 import Pricing from "@/pages/Pricing";
 import Testimonials from "@/pages/Testimonials";
 import NotFound from "@/pages/NotFound";
+import ServiceAreas from "@/pages/ServiceAreas";
+import Treatments from "@/pages/Treatments";
 
 // Treatment Pages
 import TraditionalBalineseMassage from "@/pages/treatments/TraditionalBalineseMassage";
@@ -66,6 +68,8 @@ function Router() {
       {/* Main Pages */}
       <Route path="/" component={Home} />
       <Route path="/services" component={Services} />
+      <Route path="/treatments" component={Treatments} />
+      <Route path="/service-areas" component={ServiceAreas} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/pricing" component={Pricing} />
