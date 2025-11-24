@@ -110,7 +110,7 @@ export default function Services() {
     <>
       <SEOHead
         title="Massage Services Ubud | 12+ Treatments at Your Villa"
-        description="Expert massage services Ubud: Traditional Balinese, deep tissue, hot stone & more. Licensed therapists to your villa. Book professional treatments from 240k IDR."
+        description="Expert massage services Ubud: Traditional Balinese, deep tissue, hot stone & more. Licensed therapists to your villa. Professional treatments from 240k IDR."
         canonical="https://homemassageubud.com/services"
         keywords="massage services ubud, spa services ubud, balinese massage, deep tissue massage ubud, hot stone massage, thai massage ubud, pregnancy massage"
       />

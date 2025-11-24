@@ -7,7 +7,7 @@ export default function UbudLuxuryVillas() {
     slug: 'ubud-luxury-villas',
     h1Title: 'Luxury Villa Massage in Ubud – Premium In-Villa Spa',
     metaTitle: 'Luxury Villa Massage Ubud | Premium Spa Service',
-    metaDescription: 'Luxury villa massage Ubud for premium resorts & high-end villas. Exclusive spa service with professional therapists. From 300k IDR. Book 7am-10pm.',
+    metaDescription: 'Luxury villa massage Ubud for premium resorts & high-end villas. Exclusive spa service with professional therapists & premium products. From 300k IDR. Book now.',
     heroSubtitle: 'Premium massage therapy for luxury villas and high-end resorts throughout Ubud, delivered with excellence and discretion',
     areaDescription: 'Premium mobile massage service for luxury villas in Ubud - exclusive spa experiences',
     longDescription: 'Ubud is home to some of Bali\'s most exclusive luxury villas and resorts, offering unparalleled privacy, stunning views, and world-class amenities. From infinity pools overlooking rice terraces to jungle sanctuaries with private spas, these properties attract discerning travelers seeking the ultimate in comfort and wellness. Our premium massage service is specifically designed for luxury villa guests, bringing professional spa therapists with 5-star hotel experience directly to your private villa. We understand the high standards expected in luxury accommodations and deliver accordingly.',

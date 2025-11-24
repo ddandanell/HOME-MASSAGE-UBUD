@@ -8,7 +8,7 @@ export default function HerbalBambooMassage() {
     slug: 'herbal-bamboo-massage',
     h1Title: 'Herbal & Bamboo Massage in Ubud – Traditional Villa Spa',
     metaTitle: 'Bamboo Massage Ubud | Herbal Traditional Healing',
-    metaDescription: 'Herbal bamboo massage Ubud with traditional Balinese healing to your villa. Warm compresses & bamboo therapy. From 400k IDR. Book 7am-10pm daily.',
+    metaDescription: 'Herbal bamboo massage Ubud with traditional Balinese healing to your villa. Warm compresses & bamboo therapy for deep relaxation. From 400k IDR. Book 7am-10pm.',
     heroSubtitle: 'Ancient Balinese healing using warm herbal compresses and bamboo sticks, delivered to your Ubud villa',
     duration: '90-120 minutes',
     priceFrom: 'Rp 400,000',

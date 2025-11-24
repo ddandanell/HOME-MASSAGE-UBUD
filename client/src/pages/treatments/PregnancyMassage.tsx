@@ -8,7 +8,7 @@ export default function PregnancyMassage() {
     slug: 'pregnancy-massage',
     h1Title: 'Pregnancy Massage in Ubud – Safe In-Villa Spa',
     metaTitle: 'Pregnancy Massage Ubud | Safe Prenatal Treatment',
-    metaDescription: 'Pregnancy massage Ubud by certified maternity therapists to your villa. Safe prenatal care for expecting mothers. From 336k IDR. Book 7am-10pm daily.',
+    metaDescription: 'Pregnancy massage Ubud by certified maternity therapists to your villa. Safe prenatal care for expecting mothers. Relieve discomfort from 336k IDR. Book today.',
     heroSubtitle: 'Safe, comfortable prenatal massage for expecting mothers, delivered to your Ubud villa by certified maternity therapists',
     duration: '60-90 minutes',
     priceFrom: 'Rp 360,000',

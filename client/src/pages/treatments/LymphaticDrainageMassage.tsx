@@ -8,7 +8,7 @@ export default function LymphaticDrainageMassage() {
     slug: 'lymphatic-drainage-massage',
     h1Title: 'Lymphatic Drainage Massage in Ubud – Villa Spa Delivered',
     metaTitle: 'Lymphatic Drainage Ubud | Detox Massage Therapy',
-    metaDescription: 'Lymphatic drainage massage Ubud for detox & wellness to your villa. Reduce swelling, boost immunity. From 384k IDR. Certified therapists 7am-10pm.',
+    metaDescription: 'Lymphatic drainage massage Ubud for detox & wellness to your villa. Reduce swelling, boost immunity & improve circulation. From 384k IDR. Certified therapists.',
     heroSubtitle: 'Gentle lymphatic drainage massage for detoxification and wellness, delivered to your Ubud villa by certified therapists',
     duration: '60-90 minutes',
     priceFrom: 'Rp 360,000',

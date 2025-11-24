@@ -104,7 +104,7 @@ export default function BlogNew() {
     <>
       <SEOHead
         title="Massage Blog | Wellness Tips & Healing Guides Ubud"
-        description="Expert massage & wellness insights from Ubud. Learn Balinese healing techniques, spa tips & therapeutic treatments. Professional advice from licensed therapists."
+        description="Expert massage & wellness insights from Ubud therapists. Learn Balinese healing techniques, spa tips & treatments. Professional advice from licensed experts."
         canonical="https://homemassageubud.com/blog"
         keywords="massage blog ubud, wellness tips bali, balinese healing, spa guides ubud, therapeutic massage advice, wellness insights"
       />

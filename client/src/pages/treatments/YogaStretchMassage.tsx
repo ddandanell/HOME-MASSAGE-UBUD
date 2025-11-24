@@ -8,7 +8,7 @@ export default function YogaStretchMassage() {
     slug: 'yoga-stretch-massage',
     h1Title: 'Yoga Stretch & Massage in Ubud – Villa Wellness Service',
     metaTitle: 'Yoga Massage Ubud | Stretch & Flexibility Therapy',
-    metaDescription: 'Yoga stretch massage Ubud combining assisted stretching & bodywork to your villa. Perfect for yoga practitioners. From 300k IDR. Book 7am-10pm.',
+    metaDescription: 'Yoga massage Ubud combining assisted stretching & bodywork to your villa. Perfect for practitioners. Boost flexibility from 300k IDR. Book today 7am-10pm.',
     heroSubtitle: 'Specialized massage combining yoga stretching and therapeutic bodywork, perfect for Ubud\'s yoga community',
     duration: '60-90 minutes',
     priceFrom: 'Rp 320,000',

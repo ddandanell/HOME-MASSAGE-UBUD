@@ -55,7 +55,7 @@ export default function Contact() {
     <>
       <SEOHead
         title="Contact Us | Book Villa Massage Service in Ubud"
-        description="Contact Home Massage Ubud ☎ +62 811-2656-869. WhatsApp booking available 24/7. Professional massage to your villa. Fast response & easy booking."
+        description="Contact Home Massage Ubud ☎ +62 811-2656-869. WhatsApp booking available 24/7. Professional massage to your villa in Ubud. Fast response & easy booking."
         canonical="https://homemassageubud.com/contact"
         keywords="contact ubud massage, book massage ubud, whatsapp massage booking, massage appointment ubud, call massage ubud"
       />

@@ -7,7 +7,7 @@ export default function UbudCentre() {
     slug: 'ubud-centre',
     h1Title: 'Villa Massage in Ubud Centre – In-Villa Spa Service',
     metaTitle: 'Villa Massage Ubud Centre | Near Palace & Market',
-    metaDescription: 'Villa massage Ubud Centre near Palace & Monkey Forest. Professional spa service to hotels & villas. From 240k IDR. Licensed therapists 7am-10pm.',
+    metaDescription: 'Villa massage Ubud Centre near Palace & Monkey Forest. Professional spa service to hotels & villas in heart of cultural hub. From 240k IDR. Licensed therapists.',
     heroSubtitle: 'Professional massage therapy delivered to your villa or hotel in central Ubud, near Ubud Palace and main attractions',
     areaDescription: 'Mobile massage service in Ubud Centre - heart of Bali\'s cultural and wellness hub',
     longDescription: 'Ubud Centre is the vibrant heart of Bali\'s cultural and wellness scene. Home to Ubud Palace, traditional markets, art galleries, and countless restaurants, the centre is where culture meets wellness. Our mobile massage service brings professional spa treatments directly to your villa, hotel, or guesthouse in central Ubud. Whether you\'re staying near Ubud Palace, along Jalan Raya Ubud, or close to Monkey Forest, we provide premium in-villa massage services that let you enjoy Ubud\'s healing energy without leaving your accommodation.',

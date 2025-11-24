@@ -8,7 +8,7 @@ export default function TraditionalBalineseMassage() {
     slug: 'traditional-balinese-massage',
     h1Title: 'Traditional Balinese Massage in Ubud – Villa Spa Delivered',
     metaTitle: 'Balinese Massage Ubud | Traditional Villa Service',
-    metaDescription: 'Traditional Balinese massage Ubud to your villa. Authentic healing with acupressure & aromatic oils. From 240k IDR. Expert therapists 7am-10pm daily.',
+    metaDescription: 'Traditional Balinese massage Ubud to your villa. Authentic healing with acupressure & oils. Deep relaxation & stress relief. From 240k IDR. Book now 7am-10pm.',
     heroSubtitle: 'Licensed Balinese therapists bring authentic traditional massage to your villa or hotel in Ubud area, 7am-10pm daily',
     duration: '60-120 minutes',
     priceFrom: 'Rp 240,000',

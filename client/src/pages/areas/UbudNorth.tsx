@@ -7,7 +7,7 @@ export default function UbudNorth() {
     slug: 'ubud-north',
     h1Title: 'Villa Massage in Penestanan & Sayan – Ubud North Spa',
     metaTitle: 'Massage Penestanan & Sayan | Ubud North Villas',
-    metaDescription: 'Villa massage Penestanan & Sayan Valley, Ubud North. Jungle spa service with rice field views. From 240k IDR. Expert therapists 7am-10pm daily.',
+    metaDescription: 'Villa massage Penestanan & Sayan Valley, Ubud North. Jungle spa with rice field views & natural ambiance. From 240k IDR. Expert therapists available 7am-10pm.',
     heroSubtitle: 'Professional massage therapy delivered to your jungle villa in Penestanan, Sayan Valley, and north Ubud areas',
     areaDescription: 'Mobile massage service in Penestanan and Sayan - Ubud\'s peaceful jungle and rice field areas',
     longDescription: 'Penestanan and Sayan Valley represent the peaceful, artistic side of Ubud. These northern areas are known for stunning rice terraces, jungle villas, and tranquil atmosphere. Penestanan is an artist village with boutique accommodations overlooking rice fields, while Sayan Valley offers luxury resorts with dramatic gorge views. Our mobile massage service brings professional spa treatments to your jungle retreat, villa terrace, or poolside, allowing you to enjoy therapeutic healing while surrounded by Ubud\'s natural beauty.',

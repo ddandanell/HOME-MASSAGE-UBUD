@@ -8,7 +8,7 @@ export default function DetoxWellnessMassage() {
     slug: 'detox-wellness-massage',
     h1Title: 'Detox & Wellness Massage in Ubud – Villa Spa Service',
     metaTitle: 'Detox Massage Ubud | Wellness & Cleansing Therapy',
-    metaDescription: 'Detox wellness massage Ubud for natural cleansing & rejuvenation to your villa. Holistic wellness treatment. From 360k IDR. Book 7am-10pm daily.',
+    metaDescription: 'Detox wellness massage Ubud for natural cleansing & rejuvenation to your villa. Holistic wellness treatment with herbal oils. From 360k IDR. Book 7am-10pm.',
     heroSubtitle: 'Comprehensive detoxification and wellness massage therapy in Ubud\'s premier wellness destination',
     duration: '90-120 minutes',
     priceFrom: 'Rp 440,000',

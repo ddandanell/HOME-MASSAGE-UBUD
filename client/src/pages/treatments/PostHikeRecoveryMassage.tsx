@@ -8,7 +8,7 @@ export default function PostHikeRecoveryMassage() {
     slug: 'post-hike-recovery-massage',
     h1Title: 'Post-Hike Recovery Massage in Ubud – Villa Service',
     metaTitle: 'Post-Hike Massage Ubud | Recovery After Trekking',
-    metaDescription: 'Post-hike recovery massage Ubud after Campuhan or Tegallalang trek to your villa. Relieve sore muscles. From 320k IDR. Book 7am-10pm daily.',
+    metaDescription: 'Post-hike massage Ubud after Campuhan or Tegallalang trek to your villa. Relieve sore muscles & tired legs. From 320k IDR. Expert therapists 7am-10pm daily.',
     heroSubtitle: 'Specialized recovery massage for hikers and trekkers, delivered to your Ubud villa after your adventures',
     duration: '60-90 minutes',
     priceFrom: 'Rp 320,000',
