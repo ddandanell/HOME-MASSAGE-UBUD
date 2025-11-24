@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Clock, Users, Star, CheckCircle, MessageCircle } from 'lucide-react';
 import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
+import SEOHead from '@/components/SEOHead';
 
 // Import service images
 import balineseImage from '../assets/Balinese-Massage_1757317131191.jpg';
@@ -107,6 +108,12 @@ export default function Services() {
 
   return (
     <>
+      <SEOHead
+        title="Massage Services Ubud | 12+ Treatments at Your Villa"
+        description="Expert massage services Ubud: Traditional Balinese, deep tissue, hot stone & more. Licensed therapists to your villa. Professional treatments from 240k IDR."
+        canonical="https://homemassageubud.com/services"
+        keywords="massage services ubud, spa services ubud, balinese massage, deep tissue massage ubud, hot stone massage, thai massage ubud, pregnancy massage"
+      />
       <Header />
       
       {/* Hero Section */}

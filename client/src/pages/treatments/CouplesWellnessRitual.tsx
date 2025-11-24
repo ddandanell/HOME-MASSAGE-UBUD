@@ -8,7 +8,7 @@ export default function CouplesWellnessRitual() {
     slug: 'couples-wellness-ritual',
     h1Title: 'Couples Wellness Ritual in Ubud – Romantic Villa Spa',
     metaTitle: 'Couples Massage Ubud | Romantic Wellness Ritual',
-    metaDescription: 'Book Couples Wellness Ritual in Ubud. Romantic spa experience delivered to your villa, 7 am–10 pm. ★★★★★ Perfect for honeymooners',
+    metaDescription: 'Couples massage Ubud with romantic spa ritual to your villa. Perfect for honeymooners. Synchronized treatment from 850k IDR. Book romantic experience 7am-10pm.',
     heroSubtitle: 'Romantic synchronized massage experience for couples, delivered to your private villa in Ubud paradise',
     duration: '90-150 minutes',
     priceFrom: 'Rp 680,000',

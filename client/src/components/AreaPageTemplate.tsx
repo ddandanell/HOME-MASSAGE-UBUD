@@ -7,6 +7,7 @@ import { Clock, MapPin, Star, CheckCircle, MessageCircle, Phone } from 'lucide-r
 import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import { Link } from 'wouter';
+import SEOHead from '@/components/SEOHead';
 
 interface AreaPageProps {
   area: {
@@ -44,6 +45,14 @@ export default function AreaPageTemplate({ area }: AreaPageProps) {
 
   return (
     <div className="min-h-screen bg-background text-foreground antialiased">
+      {/* SEO Meta Tags */}
+      <SEOHead
+        title={area.metaTitle}
+        description={area.metaDescription}
+        canonical={`https://homemassageubud.com/${area.slug}`}
+        keywords={`villa massage ${area.name.toLowerCase()}, massage ${area.name.toLowerCase()}, spa service ${area.name.toLowerCase()}, in-villa treatment ubud`}
+      />
+      
       {/* SEO Schema Markup */}
       <SchemaMarkup 
         type="service" 

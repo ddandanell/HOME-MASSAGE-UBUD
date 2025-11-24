@@ -7,6 +7,7 @@ import WhatsAppBookingModal from '@/components/WhatsAppBookingModal';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SchemaMarkup from '@/components/SchemaMarkup';
+import SEOHead from '@/components/SEOHead';
 
 const testimonials = [
   {
@@ -131,6 +132,12 @@ export default function Testimonials() {
 
   return (
     <>
+      <SEOHead
+        title="Reviews | 500+ Five-Star Massage Testimonials Ubud"
+        description="Read 500+ verified reviews of Home Massage Ubud. ★★★★★ 5.0 rating. Real testimonials from villa guests. Professional, relaxing & transformative massage service."
+        canonical="https://homemassageubud.com/testimonials"
+        keywords="ubud massage reviews, massage testimonials ubud, customer reviews ubud spa, 5 star massage ubud, best rated massage bali"
+      />
       <Header />
       <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-emerald-50">
       {/* Hero Section - Mobile Optimized */}
