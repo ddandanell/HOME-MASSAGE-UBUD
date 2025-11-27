@@ -63,6 +63,30 @@ import Lovina from "@/pages/areas/Lovina";
 import Amed from "@/pages/areas/Amed";
 import Candidasa from "@/pages/areas/Candidasa";
 
+// Service Landing Pages (25 keyword-based pages)
+import Massage from "@/pages/services/Massage";
+import SpaMassage from "@/pages/services/SpaMassage";
+import FullBodyMassage from "@/pages/services/FullBodyMassage";
+import CouplesMassage from "@/pages/services/CouplesMassage";
+import TraditionalMassage from "@/pages/services/TraditionalMassage";
+import RelaxingMassage from "@/pages/services/RelaxingMassage";
+import BodyMassage from "@/pages/services/BodyMassage";
+import FootMassage from "@/pages/services/FootMassage";
+import Reflexology from "@/pages/services/Reflexology";
+import SportsMassage from "@/pages/services/SportsMassage";
+import PrenatalMassage from "@/pages/services/PrenatalMassage";
+import PregnancyMassagePage from "@/pages/services/PregnancyMassage";
+import PostnatalMassage from "@/pages/services/PostnatalMassage";
+import HomeMassage from "@/pages/services/HomeMassage";
+import MobileMassage from "@/pages/services/MobileMassage";
+import AtHomeMassage from "@/pages/services/AtHomeMassage";
+import ProfessionalMassage from "@/pages/services/ProfessionalMassage";
+import BodyTherapyMassage from "@/pages/services/BodyTherapyMassage";
+import WellnessMassage from "@/pages/services/WellnessMassage";
+import TherapeuticMassage from "@/pages/services/TherapeuticMassage";
+import LuxuryMassage from "@/pages/services/LuxuryMassage";
+import BestMassageServices from "@/pages/services/BestMassageServices";
+
 function Router() {
   return (
     <Switch>
@@ -124,6 +148,33 @@ function Router() {
       <Route path="/lovina" component={Lovina} />
       <Route path="/amed" component={Amed} />
       <Route path="/candidasa" component={Candidasa} />
+      
+      {/* Service Landing Pages (keyword-based) */}
+      <Route path="/services/massage" component={Massage} />
+      <Route path="/services/spa-massage" component={SpaMassage} />
+      <Route path="/services/deep-tissue-massage" component={DeepTissueMassage} />
+      <Route path="/services/full-body-massage" component={FullBodyMassage} />
+      <Route path="/services/couples-massage" component={CouplesMassage} />
+      <Route path="/services/traditional-massage" component={TraditionalMassage} />
+      <Route path="/services/aromatherapy-massage" component={AromatherapyMassage} />
+      <Route path="/services/hot-stone-massage" component={HotStoneMassage} />
+      <Route path="/services/relaxing-massage" component={RelaxingMassage} />
+      <Route path="/services/body-massage" component={BodyMassage} />
+      <Route path="/services/foot-massage" component={FootMassage} />
+      <Route path="/services/reflexology" component={Reflexology} />
+      <Route path="/services/sports-massage" component={SportsMassage} />
+      <Route path="/services/prenatal-massage" component={PrenatalMassage} />
+      <Route path="/services/pregnancy-massage" component={PregnancyMassagePage} />
+      <Route path="/services/postnatal-massage" component={PostnatalMassage} />
+      <Route path="/services/home-massage" component={HomeMassage} />
+      <Route path="/services/mobile-massage" component={MobileMassage} />
+      <Route path="/services/at-home-massage" component={AtHomeMassage} />
+      <Route path="/services/professional-massage" component={ProfessionalMassage} />
+      <Route path="/services/body-therapy-massage" component={BodyTherapyMassage} />
+      <Route path="/services/wellness-massage" component={WellnessMassage} />
+      <Route path="/services/therapeutic-massage" component={TherapeuticMassage} />
+      <Route path="/services/luxury-massage" component={LuxuryMassage} />
+      <Route path="/services/best-massage-services" component={BestMassageServices} />
       
       {/* 404 */}
       <Route path="/:rest*" component={NotFound} />

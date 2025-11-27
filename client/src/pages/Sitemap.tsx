@@ -333,6 +333,167 @@ export default function Sitemap() {
                 </li>
               </ul>
             </div>
+            
+            {/* Service Pages - Part 1 */}
+            <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl p-6 shadow-md border border-gray-200">
+              <div className="flex items-center gap-2 mb-4 pb-2 border-b-2 border-amber-600">
+                <Heart className="w-6 h-6 text-amber-600" />
+                <h2 className="text-2xl font-bold text-gray-900">
+                  Services (Part 1)
+                </h2>
+              </div>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/services/massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/spa-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Spa Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/deep-tissue-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Deep Tissue Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/full-body-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Full Body Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/couples-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Couples Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/traditional-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Traditional Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/aromatherapy-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Aromatherapy Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/hot-stone-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Hot Stone Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/relaxing-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Relaxing Massage</span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            
+            {/* Service Pages - Part 2 */}
+            <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl p-6 shadow-md border border-gray-200">
+              <div className="flex items-center gap-2 mb-4 pb-2 border-b-2 border-amber-600">
+                <Heart className="w-6 h-6 text-amber-600" />
+                <h2 className="text-2xl font-bold text-gray-900">
+                  Services (Part 2)
+                </h2>
+              </div>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/services/body-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Body Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/foot-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Foot Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/reflexology">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Reflexology</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/sports-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Sports Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/prenatal-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Prenatal Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/pregnancy-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Pregnancy Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/postnatal-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Postnatal Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/home-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Home Massage</span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            
+            {/* Service Pages - Part 3 */}
+            <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl p-6 shadow-md border border-gray-200">
+              <div className="flex items-center gap-2 mb-4 pb-2 border-b-2 border-amber-600">
+                <Heart className="w-6 h-6 text-amber-600" />
+                <h2 className="text-2xl font-bold text-gray-900">
+                  Services (Part 3)
+                </h2>
+              </div>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/services/mobile-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Mobile Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/at-home-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">At-Home Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/professional-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Professional Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/body-therapy-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Body Therapy Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/wellness-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Wellness Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/therapeutic-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Therapeutic Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/luxury-massage">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Luxury Massage</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/best-massage-services">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Best Massage Services</span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </main>
