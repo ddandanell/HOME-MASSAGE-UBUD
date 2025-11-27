@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Clock, MapPin, Star, CheckCircle, MessageCircle, Phone } from 'lucide-react';
-import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
+import { generateGeneralInquiryMessage, openWhatsApp, WHATSAPP_NUMBER } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import { Link } from 'wouter';
 import SEOHead from '@/components/SEOHead';
@@ -36,11 +36,9 @@ interface AreaPageProps {
 }
 
 export default function AreaPageTemplate({ area }: AreaPageProps) {
-  const whatsappNumber = "+62 811-2656-869";
-
   const handleBookNow = () => {
     const message = `Hi! I'd like to book a massage in ${area.name}. Can you provide more information?`;
-    openWhatsApp(whatsappNumber, message);
+    openWhatsApp(message);
   };
 
   return (
@@ -349,7 +347,7 @@ export default function AreaPageTemplate({ area }: AreaPageProps) {
               className="bg-white text-amber-600 hover:bg-gray-100"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
-              Book via WhatsApp: {whatsappNumber}
+              Book via WhatsApp: {WHATSAPP_NUMBER}
             </Button>
           </div>
         </section>

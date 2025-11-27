@@ -72,7 +72,7 @@ type HeroLayout = 'image-left' | 'image-right' | 'full-width' | 'testimonial-her
 type PricingLayout = 'cards' | 'horizontal' | 'badges' | 'minimalist-grid' | 'comparison-table';
 
 // Why choose us angle variants
-type WhyChooseAngle = 'trained-therapists' | 'certified-staff' | 'premium-oils' | 'trusted-partners' | 'support-24-7' | 'years-experience';
+type WhyChooseAngle = 'trained-therapists' | 'certified-staff' | 'premium-oils' | 'trusted-partners' | 'support-24-7' | 'years-experience' | 'largest-team';
 
 // How it works format variants
 type HowItWorksFormat = 'three-step' | 'four-step' | 'timeline' | 'icon-row';
@@ -748,6 +748,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                 {service.whyChooseAngle === 'trusted-partners' && 'Trusted by luxury villas, hotels, and Airbnb hosts across Bali'}
                 {service.whyChooseAngle === 'support-24-7' && '24/7 WhatsApp support for all your booking needs'}
                 {service.whyChooseAngle === 'years-experience' && '10+ years serving tourists and residents in Bali'}
+                {service.whyChooseAngle === 'largest-team' && 'Over 100 certified therapists - the largest massage team in Bali'}
               </p>
             </div>
             
