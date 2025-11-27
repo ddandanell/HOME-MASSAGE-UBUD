@@ -14,7 +14,7 @@ const serviceData: ServiceLandingPageData = {
   heroLayout: 'testimonial-hero',
   heroBadgeText: 'Holistic Wellness',
   heroTestimonial: {
-    text: 'This wasnt just a massage - it was a complete wellness experience. The therapist addressed my physical tension while creating space for mental relaxation. I felt balanced in a way I hadnt experienced before.',
+    text: 'This was not just a massage - it was a complete wellness experience. The therapist addressed my physical tension while creating space for mental relaxation. I felt balanced in a way I had not experienced before.',
     author: 'Dr. Sarah L.',
     location: 'Boston, USA'
   },
@@ -36,7 +36,7 @@ const serviceData: ServiceLandingPageData = {
     'Therapists trained in integrative wellness'
   ],
   whyChooseTestimonial: {
-    text: 'Coming from a high-stress job, I needed more than physical massage. Wellness massage provided exactly that - the therapist guided my breathing, released emotional tension I didnt know I was holding, and I left feeling restored at every level.',
+    text: 'Coming from a high-stress job, I needed more than physical massage. Wellness massage provided exactly that - the therapist guided my breathing, released emotional tension I did not know I was holding, and I left feeling restored at every level.',
     author: 'Michael K., Singapore',
     rating: 5
   },

@@ -824,17 +824,26 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {service.servicesOverview.map((svc, index) => (
-                <div key={index} className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{svc.name}</h3>
-                  <p className="text-gray-600 mb-4">{svc.description}</p>
-                  <Link href={`/ubud/${svc.slug}`}>
-                    <span className="text-amber-600 hover:text-amber-700 font-semibold cursor-pointer">
-                      {svc.linkText} →
-                    </span>
-                  </Link>
-                </div>
-              ))}
+              {service.servicesOverview.map((svc, index) => {
+                // Determine if this is a treatment page or a service page
+                const isUbudTreatment = ['traditional-balinese-massage', 'deep-tissue-massage', 'aromatherapy-massage', 
+                  'hot-stone-massage', 'thai-massage', 'lymphatic-drainage-massage', 'pregnancy-massage', 
+                  'foot-reflexology', 'post-hike-recovery-massage', 'yoga-stretch-massage', 
+                  'detox-wellness-massage', 'couples-wellness-ritual', 'herbal-bamboo-massage'].includes(svc.slug);
+                const href = isUbudTreatment ? `/ubud/${svc.slug}` : `/services/${svc.slug}`;
+                
+                return (
+                  <div key={index} className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition-shadow">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{svc.name}</h3>
+                    <p className="text-gray-600 mb-4">{svc.description}</p>
+                    <Link href={href}>
+                      <span className="text-amber-600 hover:text-amber-700 font-semibold cursor-pointer">
+                        {svc.linkText} →
+                      </span>
+                    </Link>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
