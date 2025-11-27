@@ -44,11 +44,9 @@ interface TreatmentPageProps {
 }
 
 export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps) {
-  const whatsappNumber = "+62 811-2656-869";
-
   const handleBookNow = () => {
     const message = `Hi! I'd like to book a ${treatment.name} in Ubud. Can you provide more information?`;
-    openWhatsApp(whatsappNumber, message);
+    openWhatsApp(message);
   };
 
   return (
