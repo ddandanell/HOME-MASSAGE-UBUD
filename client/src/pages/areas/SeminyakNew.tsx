@@ -60,11 +60,11 @@ export default function SeminyakMassage() {
   const seminyakFAQs = [
     {
       question: "Can you coordinate with my beachfront villa staff in Seminyak?",
-      answer: "Absolutely. We work seamlessly with villa managers, concierge teams, and security staff at Seminyak's luxury properties. Many beachfront villas along Jalan Kayu Aya and Jalan Oberoi already have us on their preferred provider list. We'll coordinate arrival timing and setup location directly with your villa team to ensure zero disruption to your schedule."
+      answer: "Absolutely. We work seamlessly with villa managers, concierge teams, and security staff at Seminyak's luxury properties. Our therapists are experienced with beachfront villas along Jalan Kayu Aya and Jalan Oberoi, and many properties recommend us to their guests. We'll coordinate arrival timing and setup location directly with your villa team to ensure zero disruption to your schedule."
     },
     {
       question: "What's the ideal time to book after a day at Potato Head or Ku De Ta?",
-      answer: "Most guests book for 7-8 PM, giving you time to return from beach clubs, rinse off the salt and sun, and relax. We've perfected the 'beach club recovery' treatment—combining lymphatic drainage to reduce sun-induced inflammation with aromatherapy for that evening glow-up before dinner. Book your evening slot by 4 PM for same-day availability."
+      answer: "Most guests book for 7-8 PM, giving you time to return from beach clubs, rinse off the salt and sun, and relax. Our 'beach club recovery' treatment combines lymphatic drainage to help with post-sun relaxation and aromatherapy for evening renewal before dinner. Book your evening slot by 4 PM for same-day availability."
     },
     {
       question: "Do your therapists understand the Seminyak lifestyle and pace?",
@@ -76,11 +76,11 @@ export default function SeminyakMassage() {
     },
     {
       question: "Is lymphatic drainage popular for Seminyak guests dealing with heat and humidity?",
-      answer: "Extremely popular. Seminyak's beachside humidity combined with late nights, ocean salt, and tropical sun creates perfect conditions for fluid retention and facial puffiness. Our lymphatic drainage specialists use gentle, rhythmic techniques to reduce swelling, improve skin radiance, and help you look refreshed for Seminyak's social scene. Many guests book this before big events or photo shoots."
+      answer: "Very popular. Seminyak's beachside humidity combined with late nights and tropical sun can contribute to fluid retention and puffiness. Our lymphatic drainage specialists use gentle, rhythmic techniques to promote circulation and help you feel refreshed for Seminyak's social scene. Many guests book this before big events or special occasions."
     },
     {
       question: "Can couples book synchronized massage in our hotel room near Seminyak Beach?",
-      answer: "Yes, and it's one of our most-booked services for Seminyak hotel guests. We send two therapists with dual massage tables for synchronized couples treatments. Perfect for hotel rooms at Alila, Anantara, The Legian, or any beachfront property. We coordinate with hotel staff for smooth room access and can arrange rose petals, candles, and champagne through your hotel concierge for special occasions."
+      answer: "Yes, and it's one of our most popular services for Seminyak hotel guests. We send two therapists with dual massage tables for synchronized couples treatments. Perfect for hotel rooms at beachfront properties throughout Seminyak. We coordinate with hotel staff for smooth room access. For special touches like flowers or candles, we recommend coordinating directly with your hotel's concierge service."
     },
     {
       question: "How do you handle Seminyak's notorious traffic when getting to my villa?",
@@ -183,7 +183,7 @@ export default function SeminyakMassage() {
             
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p>
-                Seminyak moves differently than the rest of Bali. Mornings start slow with acai bowls at Crate or flat whites at Revolver. Afternoons pulse with beach club energy—Potato Head's bassline, Ku De Ta's poolside glamour, Mrs Sippy's flamingo-pink Instagram moments. Evenings flow into multi-course dinners at Merah Putih or Metis, then late nights at Motel Mexicola where the DJ keeps you dancing past midnight.
+                Seminyak moves differently than the rest of Bali. Mornings start slow at cafes along Eat Street. Afternoons pulse with beach club energy—beachside venues, poolside lounging, and social scenes. Evenings flow into multi-course dinners at upscale restaurants, then late nights where the music keeps you dancing past midnight.
               </p>
               
               <p>
@@ -191,7 +191,7 @@ export default function SeminyakMassage() {
               </p>
               
               <p>
-                Your body accumulates more than memories here. Salt from ocean swims crystallizes on skin. UV exposure triggers inflammation no SPF fully prevents. Hours standing in beach club infinity pools tighten hip flexors. Late nights compress sleep cycles. The humid tropics cause fluid retention that puffs faces and swells ankles. Boutique shopping marathon along Jalan Oberoi strains feet in those new sandals from Magali Pascal.
+                Your body accumulates more than memories here. Salt from ocean swims affects skin. Hours standing in beach club infinity pools can tighten muscles. Late nights affect sleep patterns. The humid tropics can cause fluid retention. Long walks through boutique shopping areas strain feet and legs.
               </p>
               
               <p>
@@ -235,7 +235,7 @@ export default function SeminyakMassage() {
                   <span className="text-lg font-bold text-amber-600">Rp 384k</span>
                 </div>
                 <p className="text-gray-700 mb-4">
-                  Seminyak's signature treatment. Reduces sun-induced inflammation, drains excess fluids from tropical humidity and pool time, revitalizes dehydrated skin. Guests book this after full days at Potato Head or Finns Beach Club to look refreshed for evening plans.
+                  Seminyak's signature treatment. Helps with post-sun relaxation, promotes circulation after tropical humidity and pool time, and supports skin vitality. Guests often book this after full days at beach clubs to feel refreshed for evening plans.
                 </p>
                 <Button 
                   onClick={() => handleBooking('Beach Club Recovery Massage')}
@@ -254,7 +254,7 @@ export default function SeminyakMassage() {
                   <span className="text-lg font-bold text-amber-600">Rp 680k</span>
                 </div>
                 <p className="text-gray-700 mb-4">
-                  Perfect for honeymoons at The Legian or romantic stays in Petitenget. Two therapists, synchronized techniques, your villa's master bedroom or terrace. We coordinate with villa staff for flower petals, champagne, sunset timing. Seminyak's most-booked couples experience.
+                  Perfect for honeymoons or romantic stays in Seminyak. Two therapists, synchronized techniques, your villa's master bedroom or terrace. We work with your villa staff to coordinate timing and can help arrange special touches for your experience. A popular couples choice in Seminyak.
                 </p>
                 <Button 
                   onClick={() => handleBooking('Couples Villa Ritual')}
@@ -351,7 +351,7 @@ export default function SeminyakMassage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Villa Partnerships</h3>
                 <p className="text-gray-600">
-                  Regular provider for 40+ luxury villas and boutique hotels. Staff at Alila, Anantara, The Legian, and dozens of private estates know our therapists by name. Seamless coordination, zero hassle.
+                  Experienced provider for luxury villas and boutique hotels throughout Seminyak. Our therapists work regularly with villa staff and property managers across the area. Seamless coordination, zero hassle.
                 </p>
               </div>
             </div>
