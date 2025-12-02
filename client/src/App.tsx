@@ -18,6 +18,9 @@ import ServiceAreas from "@/pages/ServiceAreas";
 import Treatments from "@/pages/Treatments";
 import Sitemap from "@/pages/Sitemap";
 
+// Blog Articles
+import PremiumHomeMassageKuta from "@/pages/blog/PremiumHomeMassageKuta";
+
 // Treatment Pages
 import TraditionalBalineseMassage from "@/pages/treatments/TraditionalBalineseMassage";
 import DeepTissueMassage from "@/pages/treatments/DeepTissueMassage";
@@ -103,6 +106,9 @@ function Router() {
       <Route path="/villa-partnerships" component={VillaPartnerships} />
       <Route path="/sustainability" component={Sustainability} />
       <Route path="/blog" component={BlogNew} />
+      
+      {/* Blog Articles */}
+      <Route path="/blog/premium-home-massage-kuta" component={PremiumHomeMassageKuta} />
       
       {/* Treatment Pages */}
       <Route path="/ubud/traditional-balinese-massage" component={TraditionalBalineseMassage} />
