@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'wouter';
+import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
-import SchemaMarkup from '@/components/SchemaMarkup';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MessageCircle } from 'lucide-react';
@@ -41,7 +41,11 @@ export default function PremiumHomeMassageKuta() {
         canonical="https://homemassageubud.com/blog/premium-home-massage-kuta"
         keywords="home massage Kuta, Balinese massage at home, mobile spa Bali, in-villa massage Bali, Kuta massage service, professional therapist Bali, best home massage Kuta tourists, mobile massage therapist Kuta area"
       />
-      <SchemaMarkup type="article" data={blogSchema} />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(blogSchema)}
+        </script>
+      </Helmet>
       <Header />
       
       <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-emerald-50">
