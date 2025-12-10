@@ -1,13 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Cloud, Sun, Droplets, Wind, Sparkles, Heart } from "lucide-react";
+import { Cloud, Sun, Droplets, Wind, Sparkles, Heart, type LucideIcon } from "lucide-react";
 import { openWhatsApp } from "@/lib/whatsapp";
 
 interface SeasonalPackage {
   id: string;
   name: string;
   season: string;
-  icon: any;
+  icon: LucideIcon;
   description: string;
   includes: string[];
   benefits: string[];
@@ -304,14 +304,13 @@ export default function SeasonalPackages() {
           <p className="text-lg text-gray-700 mb-4">
             Book your seasonal massage package today and experience wellness aligned with Ubud's natural rhythms
           </p>
-          <a 
-            href="https://wa.me/628112656869?text=Book%20Ubud%20massage%20at%20my%20villa" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-xl shadow-lg transition-all transform hover:scale-105"
+          <Button 
+            size="lg"
+            className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            onClick={() => openWhatsApp("Book Ubud massage at my villa")}
           >
             View All Packages & Book Now
-          </a>
+          </Button>
         </div>
       </div>
     </section>

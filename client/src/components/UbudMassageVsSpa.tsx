@@ -1,11 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, X, Home, Building, Clock, MapPin, DollarSign, Users } from "lucide-react";
+import { Check, X, Home, Building, Clock, MapPin, DollarSign, Users, type LucideIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { openWhatsApp } from "@/lib/whatsapp";
 
 interface ComparisonFeature {
   feature: string;
   inVilla: boolean | string;
   traditionalSpa: boolean | string;
-  icon: any;
+  icon: LucideIcon;
 }
 
 const comparisonData: ComparisonFeature[] = [
@@ -259,14 +261,13 @@ export default function UbudMassageVsSpa() {
           <p className="text-lg text-gray-700 mb-4">
             Experience the convenience and luxury of in-villa massage in Ubud
           </p>
-          <a 
-            href="https://wa.me/628112656869?text=Book%20Ubud%20massage%20at%20my%20villa" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl shadow-lg transition-all transform hover:scale-105"
+          <Button 
+            size="lg"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            onClick={() => openWhatsApp("Book Ubud massage at my villa")}
           >
             Book Your In-Villa Massage Now
-          </a>
+          </Button>
         </div>
       </div>
     </section>
