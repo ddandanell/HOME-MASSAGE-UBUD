@@ -185,6 +185,7 @@ export default function Therapists() {
                 src={therapist.image}
                 alt={`Professional portrait of ${therapist.name}, Balinese massage therapist`} 
                 className="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-3 md:mb-4 object-cover object-center"
+                loading="lazy"
                 data-testid={`therapist-image-${therapist.id}`}
               />
               <h3 className="serif text-lg md:text-xl font-semibold mb-1 md:mb-2 text-primary" data-testid={`therapist-name-${therapist.id}`}>

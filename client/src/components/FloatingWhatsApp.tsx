@@ -17,7 +17,7 @@ export default function FloatingWhatsApp() {
 
   const phoneNumber = '628112656869';
   const message = encodeURIComponent(
-    'Hi! I would like to book some massages to my villa.'
+    'Book Ubud massage at my villa'
   );
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
@@ -70,7 +70,7 @@ export function FloatingWhatsAppDesktop() {
 
   const phoneNumber = '628112656869';
   const message = encodeURIComponent(
-    'Hi! I would like to book some massages to my villa.'
+    'Book Ubud massage at my villa'
   );
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 

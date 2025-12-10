@@ -19,6 +19,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
+import { FloatingWhatsAppDesktop } from "@/components/FloatingWhatsApp";
 
 export default function Home() {
   const faqData = [
@@ -98,6 +99,9 @@ export default function Home() {
 
       {/* Footer */}
       <Footer />
+      
+      {/* Floating WhatsApp Button */}
+      <FloatingWhatsAppDesktop />
     </div>
   );
 }

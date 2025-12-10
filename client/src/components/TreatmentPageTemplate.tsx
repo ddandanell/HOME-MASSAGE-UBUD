@@ -138,6 +138,7 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
                   src={treatment.image} 
                   alt={treatment.name}
                   className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>
