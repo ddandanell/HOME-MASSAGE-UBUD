@@ -20,6 +20,8 @@ import Footer from "@/components/Footer";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
 import { FloatingWhatsAppDesktop } from "@/components/FloatingWhatsApp";
+import UbudMassageVsSpa from "@/components/UbudMassageVsSpa";
+import SeasonalPackages from "@/components/SeasonalPackages";
 
 export default function Home() {
   const faqData = [
@@ -81,6 +83,8 @@ export default function Home() {
           <BookingProcess />
         </section>
         <WhatToExpect />
+        <UbudMassageVsSpa />
+        <SeasonalPackages />
         <SafetyHygiene />
         <Therapists />
         <Testimonials />
