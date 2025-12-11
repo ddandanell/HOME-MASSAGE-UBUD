@@ -122,7 +122,7 @@ export default function SeminyakMassage() {
           </div>
           
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-            <Badge className="mb-4 bg-blue-600 hover:bg-blue-700 text-white">
+            <Badge className="mb-4 bg-emerald-200 hover:bg-emerald-300 text-gray-900">
               <MapPin className="w-3 h-3 mr-1" />
               Seminyak Beach & Beyond
             </Badge>
@@ -239,7 +239,7 @@ export default function SeminyakMassage() {
                 </p>
                 <Button 
                   onClick={() => handleBooking('Beach Club Recovery Massage')}
-                  className="w-full bg-blue-600 hover:bg-blue-700"
+                  className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                 >
                   Book Recovery Session
                 </Button>
@@ -258,7 +258,7 @@ export default function SeminyakMassage() {
                 </p>
                 <Button 
                   onClick={() => handleBooking('Couples Villa Ritual')}
-                  className="w-full bg-amber-600 hover:bg-amber-700"
+                  className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                 >
                   Book Couples Treatment
                 </Button>
@@ -277,7 +277,7 @@ export default function SeminyakMassage() {
                 </p>
                 <Button 
                   onClick={() => handleBooking('Deep Tissue Massage')}
-                  className="w-full bg-green-600 hover:bg-green-700"
+                  className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                 >
                   Book Deep Tissue
                 </Button>

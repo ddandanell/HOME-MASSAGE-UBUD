@@ -351,7 +351,7 @@ export default function PremiumHomeMassageKuta() {
                     rel="noopener noreferrer"
                     className="inline-block"
                   >
-                    <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
+                    <Button size="lg" className="bg-emerald-200 hover:bg-emerald-300 text-gray-900">
                       <MessageCircle className="mr-2 h-5 w-5" />
                       Book via WhatsApp Now
                     </Button>

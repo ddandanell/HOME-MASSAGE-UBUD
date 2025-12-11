@@ -4,26 +4,26 @@
 @tailwind utilities;
 
 :root {
-  /* Home Massage Ubud Amber Theme Colors */
-  --background: hsl(32, 15%, 8%);
-  --foreground: hsl(32, 10%, 85%);
-  --card: hsl(32, 12%, 12%);
-  --card-foreground: hsl(32, 8%, 80%);
-  --popover: hsl(32, 12%, 12%);
-  --popover-foreground: hsl(32, 8%, 80%);
-  --primary: hsl(43, 96%, 56%);
-  --primary-foreground: hsl(32, 20%, 15%);
-  --secondary: hsl(32, 8%, 18%);
-  --secondary-foreground: hsl(32, 5%, 75%);
-  --muted: hsl(32, 8%, 22%);
-  --muted-foreground: hsl(32, 5%, 65%);
-  --accent: hsl(45, 100%, 51%);
-  --accent-foreground: hsl(32, 20%, 15%);
+  /* Home Massage Ubud Light/Happy Theme Colors */
+  --background: hsl(40, 30%, 98%); /* Creamy White */
+  --foreground: hsl(32, 20%, 20%); /* Dark Brown Text */
+  --card: hsl(0, 0%, 100%); /* White */
+  --card-foreground: hsl(32, 20%, 20%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(32, 20%, 20%);
+  --primary: hsl(152, 76%, 80%); /* Light Emerald Green */
+  --primary-foreground: hsl(152, 76%, 10%); /* Dark Green Text */
+  --secondary: hsl(35, 60%, 92%); /* Soft Amber/Beige */
+  --secondary-foreground: hsl(35, 80%, 20%);
+  --muted: hsl(35, 20%, 90%);
+  --muted-foreground: hsl(32, 10%, 40%);
+  --accent: hsl(35, 80%, 50%); /* Gold */
+  --accent-foreground: hsl(35, 80%, 10%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(32, 8%, 25%);
-  --input: hsl(32, 8%, 20%);
-  --ring: hsl(43, 96%, 56%);
+  --border: hsl(35, 20%, 85%);
+  --input: hsl(35, 20%, 90%);
+  --ring: hsl(152, 76%, 80%);
   
   /* Font families */
   --font-serif: 'Playfair Display', serif;
@@ -34,25 +34,26 @@
 }
 
 .dark {
-  --background: hsl(32, 15%, 8%);
-  --foreground: hsl(32, 10%, 85%);
-  --card: hsl(32, 12%, 12%);
-  --card-foreground: hsl(32, 8%, 80%);
-  --popover: hsl(32, 12%, 12%);
-  --popover-foreground: hsl(32, 8%, 80%);
-  --primary: hsl(43, 96%, 56%);
-  --primary-foreground: hsl(32, 20%, 15%);
-  --secondary: hsl(32, 8%, 18%);
-  --secondary-foreground: hsl(32, 5%, 75%);
-  --muted: hsl(32, 8%, 22%);
-  --muted-foreground: hsl(32, 5%, 65%);
-  --accent: hsl(45, 100%, 51%);
-  --accent-foreground: hsl(32, 20%, 15%);
+  /* Enforce light theme even in dark mode for now to ensure consistency */
+  --background: hsl(40, 30%, 98%);
+  --foreground: hsl(32, 20%, 20%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(32, 20%, 20%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(32, 20%, 20%);
+  --primary: hsl(152, 76%, 80%);
+  --primary-foreground: hsl(152, 76%, 10%);
+  --secondary: hsl(35, 60%, 92%);
+  --secondary-foreground: hsl(35, 80%, 20%);
+  --muted: hsl(35, 20%, 90%);
+  --muted-foreground: hsl(32, 10%, 40%);
+  --accent: hsl(35, 80%, 50%);
+  --accent-foreground: hsl(35, 80%, 10%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(32, 8%, 25%);
-  --input: hsl(32, 8%, 20%);
-  --ring: hsl(43, 96%, 56%);
+  --border: hsl(35, 20%, 85%);
+  --input: hsl(35, 20%, 90%);
+  --ring: hsl(152, 76%, 80%);
 }
 
 @layer base {

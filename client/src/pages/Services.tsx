@@ -136,7 +136,7 @@ export default function Services() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-lg mx-auto sm:max-w-none">
               <Button 
                 size="lg" 
-                className="bg-amber-600 hover:bg-amber-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto"
+                className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto"
                 onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
               >
                 <MessageCircle className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
@@ -221,7 +221,7 @@ export default function Services() {
 
                   {/* CTA Button */}
                   <Button 
-                    className="w-full bg-amber-600 hover:bg-amber-700 text-white"
+                    className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                     onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
                   >
                     Book This Treatment

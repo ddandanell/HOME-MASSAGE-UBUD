@@ -14,7 +14,7 @@ export default function WhatsAppFloat() {
     <div className="fixed bottom-6 right-6 z-50">
       <Button
         onClick={handleWhatsAppClick}
-        className="w-16 h-16 rounded-full bg-amber-500 hover:bg-amber-600 text-white shadow-2xl animate-bounce"
+        className="w-16 h-16 rounded-full bg-emerald-200 hover:bg-emerald-300 text-gray-900 shadow-2xl animate-bounce"
         data-testid="whatsapp-float-button"
       >
         <MessageCircle size={24} />

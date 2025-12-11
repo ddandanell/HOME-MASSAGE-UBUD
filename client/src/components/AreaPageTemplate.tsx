@@ -81,7 +81,7 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
         <section className="relative bg-gradient-to-br from-amber-50 via-white to-orange-50 py-20 md:py-32">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl">
-              <Badge className="mb-4 bg-amber-600 hover:bg-amber-700">
+              <Badge className="mb-4 bg-emerald-200 hover:bg-emerald-300 text-gray-900">
                 <MapPin className="w-4 h-4 mr-1" />
                 Service Area
               </Badge>
@@ -111,7 +111,7 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
                 <Button 
                   size="lg" 
                   onClick={handleBookNow}
-                  className="bg-amber-600 hover:bg-amber-700 text-white"
+                  className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Book via WhatsApp
@@ -208,7 +208,7 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
                     <Button 
                       size="sm" 
                       onClick={handleBookNow}
-                      className="flex-1 bg-amber-600 hover:bg-amber-700"
+                      className="flex-1 bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                     >
                       Book Now
                     </Button>

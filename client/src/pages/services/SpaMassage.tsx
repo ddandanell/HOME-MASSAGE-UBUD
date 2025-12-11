@@ -51,15 +51,15 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 450,000',
-      priceIDR: 'Rp 450,000',
+      price: 'Rp 480,000',
+      priceIDR: 'Rp 480,000',
       description: 'Extended spa session with scalp treatment and enhanced relaxation',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 580,000',
-      priceIDR: 'Rp 580,000',
+      price: 'Rp 640,000',
+      priceIDR: 'Rp 640,000',
       description: 'Luxury spa ritual including body scrub, massage, and refreshments'
     }
   ],

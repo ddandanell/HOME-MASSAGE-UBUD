@@ -233,7 +233,7 @@ export default function SeasonalPackages() {
 
                 {/* CTA Button */}
                 <Button 
-                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
+                  className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                   onClick={() => handleBooking(pkg.name)}
                 >
                   Book This Package
@@ -306,7 +306,7 @@ export default function SeasonalPackages() {
           </p>
           <Button 
             size="lg"
-            className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
             onClick={() => openWhatsApp("Book Ubud massage at my villa")}
           >
             View All Packages & Book Now

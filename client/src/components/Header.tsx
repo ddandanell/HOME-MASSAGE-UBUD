@@ -59,7 +59,7 @@ export default function Header() {
                     <Button 
                       key={item.name}
                       onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
-                      className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 text-sm"
+                      className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 px-4 py-2 text-sm"
                     >
                       {item.name}
                     </Button>
@@ -125,7 +125,7 @@ export default function Header() {
                         openWhatsApp(generateGeneralInquiryMessage());
                         setIsMenuOpen(false);
                       }}
-                      className="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 text-sm font-semibold rounded-lg"
+                      className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900 py-3 text-sm font-semibold rounded-lg"
                     >
                       {item.name}
                     </Button>
@@ -195,7 +195,7 @@ export default function Header() {
           <Button 
             onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
             size="lg"
-            className="bg-amber-600 hover:bg-amber-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
+            className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
           >
             <MapPin className="mr-2 h-5 w-5" />
             Quick Book

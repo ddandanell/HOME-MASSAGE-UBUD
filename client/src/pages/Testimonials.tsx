@@ -294,7 +294,7 @@ export default function Testimonials() {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <Button 
                   size="lg" 
-                  className="bg-amber-600 hover:bg-amber-700 w-full sm:w-auto px-4 sm:px-6 py-3 text-sm sm:text-base"
+                  className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 w-full sm:w-auto px-4 sm:px-6 py-3 text-sm sm:text-base"
                   onClick={() => setIsBookingModalOpen(true)}
                 >
                   Book Your Treatment

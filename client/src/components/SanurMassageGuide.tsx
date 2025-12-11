@@ -155,7 +155,7 @@ export default function SanurMassageGuide() {
         
         {/* Header */}
         <div className="text-center mb-12">
-          <Badge className="mb-4 bg-blue-600 text-white hover:bg-blue-700">
+          <Badge className="mb-4 bg-emerald-200 text-gray-900 hover:bg-emerald-300">
             <MapPin className="w-3 h-3 mr-1" />
             Ultimate Sanur Guide
           </Badge>

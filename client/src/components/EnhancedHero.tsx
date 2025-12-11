@@ -76,7 +76,7 @@ export default function EnhancedHero() {
             <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start">
               <Button 
                 size="lg" 
-                className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all"
+                className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all"
                 onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
               >
                 <MessageCircle className="mr-2 h-5 w-5" />

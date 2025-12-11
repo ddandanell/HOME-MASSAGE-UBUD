@@ -40,21 +40,21 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 280,000',
-      priceIDR: 'Rp 280,000',
+      price: 'Rp 240,000',
+      priceIDR: 'Rp 240,000',
       description: 'Essential mobile massage with full professional setup'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 400,000',
-      priceIDR: 'Rp 400,000',
+      price: 'Rp 360,000',
+      priceIDR: 'Rp 360,000',
       description: 'Extended mobile session with enhanced treatment time',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 520,000',
-      priceIDR: 'Rp 520,000',
+      price: 'Rp 480,000',
+      priceIDR: 'Rp 480,000',
       description: 'Complete mobile spa experience with additional techniques'
     }
   ],

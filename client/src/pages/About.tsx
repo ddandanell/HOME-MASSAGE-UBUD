@@ -111,7 +111,7 @@ export default function About() {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto"
+                  className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto"
                   onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
                 >
                   <MessageCircle className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />

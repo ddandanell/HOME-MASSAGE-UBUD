@@ -266,7 +266,7 @@ export default function WhatsAppBookingModal({ isOpen, onClose }: WhatsAppBookin
           {/* Send Button */}
           <Button
             onClick={handleSendWhatsApp}
-            className="w-full bg-green-600 hover:bg-green-700 text-white py-3 font-semibold"
+            className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900 py-3 font-semibold"
             data-testid="modal-send-whatsapp"
           >
             <MessageCircle className="w-5 h-5 mr-2" />
