@@ -354,7 +354,7 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
         </section>
 
         {/* Additional Content Section - For special area-specific guides */}
-        {additionalContent && additionalContent}
+        {additionalContent}
       </main>
 
       <Footer />

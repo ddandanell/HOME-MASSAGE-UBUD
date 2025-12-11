@@ -377,14 +377,14 @@ export default function SanurMassageGuide() {
                 Nusa Dua
               </Button>
             </Link>
-            <Link href="/denpasar">
+            <Link href="/canggu">
               <Button variant="outline" size="sm" className="border-blue-300 text-blue-700 hover:bg-blue-50">
-                Denpasar
+                Canggu
               </Button>
             </Link>
-            <Link href="/ubud">
+            <Link href="/ubud-centre">
               <Button variant="outline" size="sm" className="border-blue-300 text-blue-700 hover:bg-blue-50">
-                Ubud
+                Ubud Centre
               </Button>
             </Link>
             <Link href="/seminyak">
@@ -392,7 +392,7 @@ export default function SanurMassageGuide() {
                 Seminyak
               </Button>
             </Link>
-            <Link href="/">
+            <Link href="/service-areas">
               <Button variant="outline" size="sm" className="border-blue-300 text-blue-700 hover:bg-blue-50">
                 All Locations
               </Button>
