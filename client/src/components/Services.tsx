@@ -130,7 +130,7 @@ Discover the best massage Ubud offers with our professional mobile massage servi
                 height="300"
               />
               <CardContent className="p-3 sm:p-4 md:p-6">
-                <h3 className="serif text-base sm:text-lg md:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 text-primary leading-tight" data-testid={`service-name-${service.id}`}>
+                <h3 className="serif text-base sm:text-lg md:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 text-black leading-tight" data-testid={`service-name-${service.id}`}>
                   {service.name}
                 </h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 sm:mb-4 leading-relaxed" data-testid={`service-description-${service.id}`}>
