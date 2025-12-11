@@ -48,8 +48,8 @@ const massageTypes = [
     description: 'Volcanic stones and therapeutic massage for ultimate muscle relaxation',
     duration: '75-90 minutes',
     price: {
-      single: 360000,
-      couple: 680000
+      single: 400000,
+      couple: 720000
     },
     benefits: ['Deep muscle relaxation', 'Improved circulation', 'Pain relief', 'Stress reduction'],
     popular: false
