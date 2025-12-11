@@ -33,9 +33,10 @@ interface AreaPageProps {
       answer: string;
     }[];
   };
+  additionalContent?: React.ReactNode;
 }
 
-export default function AreaPageTemplate({ area }: AreaPageProps) {
+export default function AreaPageTemplate({ area, additionalContent }: AreaPageProps) {
   const handleBookNow = () => {
     const message = `Hi! I'd like to book a massage in ${area.name}. Can you provide more information?`;
     openWhatsApp(message);
@@ -351,6 +352,9 @@ export default function AreaPageTemplate({ area }: AreaPageProps) {
             </Button>
           </div>
         </section>
+
+        {/* Additional Content Section - For special area-specific guides */}
+        {additionalContent && additionalContent}
       </main>
 
       <Footer />
