@@ -1,5 +1,6 @@
 import React from 'react';
 import AreaPageTemplate from '@/components/AreaPageTemplate';
+import SanurMassageGuide from '@/components/SanurMassageGuide';
 
 export default function Sanur() {
   const area = {
@@ -143,5 +144,5 @@ export default function Sanur() {
     ]
   };
 
-  return <AreaPageTemplate area={area} />;
+  return <AreaPageTemplate area={area} additionalContent={<SanurMassageGuide />} />;
 }
