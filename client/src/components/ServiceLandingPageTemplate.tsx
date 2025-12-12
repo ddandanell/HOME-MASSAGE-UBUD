@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Clock, Users, Star, CheckCircle, MessageCircle, MapPin, Heart, Shield, Award, Phone, Sparkles, Leaf } from 'lucide-react';
-import { generateWhatsAppURL, WHATSAPP_NUMBER } from '@/lib/whatsapp';
+import { generateWhatsAppURL, WHATSAPP_NUMBER_FORMATTED, CTA_TEXT } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import SEOHead from '@/components/SEOHead';
 import { Link } from 'wouter';
@@ -303,10 +303,10 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                   <Button 
                     size="lg" 
                     onClick={handleBookNow}
-                    className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
+                    className="w-full"
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
-                    Book Now on WhatsApp
+                    {CTA_TEXT.WHATSAPP}
                   </Button>
                   <p className="text-center text-sm text-gray-500 mt-4">Available 8 AM – 10 PM daily</p>
                 </div>
@@ -339,7 +339,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
   const renderHeroContent = (centered = false) => (
     <div className={centered ? 'text-center' : ''}>
       <div className={`flex ${centered ? 'justify-center' : ''} gap-2 mb-4`}>
-        <Badge className="bg-emerald-200 hover:bg-emerald-300 text-gray-900">
+        <Badge>
           {service.heroBadgeText || 'Premium Villa Service'}
         </Badge>
         <Badge variant="outline" className="border-amber-600 text-amber-600">
@@ -376,10 +376,9 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
         <Button 
           size="lg" 
           onClick={handleBookNow}
-          className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
         >
           <MessageCircle className="mr-2 h-5 w-5" />
-          Book via WhatsApp
+          {CTA_TEXT.WHATSAPP}
         </Button>
         <Button 
           size="lg" 
@@ -410,10 +409,10 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                 <p className="text-gray-600 mb-6">{pkg.description}</p>
                 <Button 
                   onClick={handleBookNow}
-                  className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
+                  className="w-full"
                 >
                   <MessageCircle className="mr-2 h-4 w-4" />
-                  Book Now
+                  {CTA_TEXT.PRIMARY}
                 </Button>
               </div>
             ))}
@@ -433,9 +432,9 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                 </div>
                 <div className="flex items-center gap-6">
                   <span className="text-2xl font-bold text-amber-600">{pkg.priceIDR}</span>
-                  <Button onClick={handleBookNow} className="bg-emerald-200 hover:bg-emerald-300 text-gray-900">
+                  <Button onClick={handleBookNow}>
                     <MessageCircle className="mr-2 h-4 w-4" />
-                    Book
+                    {CTA_TEXT.PRIMARY}
                   </Button>
                 </div>
               </div>
@@ -455,9 +454,9 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-2">{pkg.duration} Session</h4>
                 <p className="text-gray-600 mb-4">{pkg.description}</p>
-                <Button onClick={handleBookNow} size="sm" className="bg-emerald-200 hover:bg-emerald-300 text-gray-900">
+                <Button onClick={handleBookNow} size="sm">
                   <MessageCircle className="mr-2 h-4 w-4" />
-                  Book Now
+                  {CTA_TEXT.PRIMARY}
                 </Button>
               </div>
             ))}
@@ -1093,7 +1092,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
               className="bg-white text-amber-600 hover:bg-gray-100"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
-              Book via WhatsApp: {WHATSAPP_NUMBER}
+              {CTA_TEXT.WHATSAPP}
             </Button>
           </div>
         </section>
