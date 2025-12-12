@@ -90,6 +90,7 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
                 <Badge className="mb-6 bg-amber-600 hover:bg-amber-700 text-base px-4 py-2">
+                <Badge className="mb-4 bg-emerald-200 hover:bg-emerald-300 text-gray-900">
                   Premium Villa Service
                 </Badge>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
@@ -119,6 +120,7 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
                     size="lg" 
                     onClick={handleBookNow}
                     className="bg-amber-600 hover:bg-amber-700 text-white min-w-[200px]"
+                    className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
                     Book via WhatsApp
@@ -251,7 +253,7 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
                   <p className="text-gray-600 mb-6">{pkg.description}</p>
                   <Button 
                     onClick={handleBookNow}
-                    className="w-full bg-amber-600 hover:bg-amber-700"
+                    className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                   >
                     Book Now
                   </Button>

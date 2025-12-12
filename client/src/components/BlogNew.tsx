@@ -259,7 +259,7 @@ export default function BlogNew() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-amber-600 hover:bg-amber-700">
+                <Button size="lg" className="bg-emerald-200 hover:bg-emerald-300 text-gray-900">
                   Book Treatment Now
                 </Button>
                 

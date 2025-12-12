@@ -30,7 +30,7 @@ export default function FloatingWhatsApp() {
         target="_blank"
         rel="noopener noreferrer"
         className={`
-          flex items-center bg-green-500 hover:bg-green-600 text-white rounded-full 
+          flex items-center bg-emerald-200 hover:bg-emerald-300 text-gray-900 rounded-full 
           shadow-lg hover:shadow-xl transition-all duration-300 transform 
           ${isHovered ? 'scale-105' : 'scale-100'}
           ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'}

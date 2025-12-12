@@ -40,8 +40,8 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 340,000',
-      priceIDR: 'Rp 340,000',
+      price: 'Rp 320,000',
+      priceIDR: 'Rp 320,000',
       description: 'Focused body therapy addressing primary concerns'
     },
     {
@@ -53,8 +53,8 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 620,000',
-      priceIDR: 'Rp 620,000',
+      price: 'Rp 640,000',
+      priceIDR: 'Rp 640,000',
       description: 'Full body therapy session with multiple techniques and guidance'
     }
   ],

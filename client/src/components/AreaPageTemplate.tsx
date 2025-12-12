@@ -112,6 +112,7 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
                   size="lg" 
                   onClick={handleBookNow}
                   className="bg-amber-600 hover:bg-amber-700 text-white min-w-[200px]"
+                  className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Book via WhatsApp
@@ -211,7 +212,7 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
                     <Button 
                       size="default" 
                       onClick={handleBookNow}
-                      className="flex-1 bg-amber-600 hover:bg-amber-700"
+                      className="flex-1 bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                     >
                       Book Now
                     </Button>

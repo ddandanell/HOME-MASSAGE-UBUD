@@ -224,7 +224,7 @@ export default function Pricing() {
                   </div>
                   
                   <Button 
-                    className="w-full bg-amber-600 hover:bg-amber-700 text-sm py-2"
+                    className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900 text-sm py-2"
                     onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
                   >
                     Book This Treatment
@@ -284,7 +284,7 @@ export default function Pricing() {
                   </div>
                   
                   <Button 
-                    className="w-full bg-amber-600 hover:bg-amber-700 text-sm py-2"
+                    className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900 text-sm py-2"
                     onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
                   >
                     Book This Package
@@ -342,7 +342,7 @@ export default function Pricing() {
               <div className="text-center mt-6 sm:mt-8">
                 <Button 
                   size="lg" 
-                  className="bg-emerald-600 hover:bg-emerald-700 w-full sm:w-auto px-6 py-3 text-sm sm:text-base"
+                  className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 w-full sm:w-auto px-6 py-3 text-sm sm:text-base"
                   onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
                 >
                   Book Your Treatment Now
@@ -370,7 +370,7 @@ export default function Pricing() {
               rel="noopener noreferrer"
               className="w-full sm:w-auto"
             >
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 w-full sm:w-auto px-4 sm:px-6 py-3 text-sm sm:text-base">
+              <Button size="lg" className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 w-full sm:w-auto px-4 sm:px-6 py-3 text-sm sm:text-base">
                 <MessageCircle className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 WhatsApp Consultation
               </Button>

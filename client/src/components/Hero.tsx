@@ -50,7 +50,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6 sm:mb-8 px-3 sm:px-0">
             <Button 
               onClick={handleBookExperience}
-              className="bg-amber-500 hover:bg-amber-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold uppercase tracking-wider border-0 rounded-xl transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+              className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold uppercase tracking-wider border-0 rounded-xl transition-all duration-300 hover:scale-105 w-full sm:w-auto"
               data-testid="button-book-now"
             >
               Book Now via WhatsApp

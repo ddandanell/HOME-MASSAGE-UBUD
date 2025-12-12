@@ -40,21 +40,21 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 280,000',
-      priceIDR: 'Rp 280,000',
+      price: 'Rp 240,000',
+      priceIDR: 'Rp 240,000',
       description: 'Perfect introduction to massage therapy with full body relaxation treatment'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 400,000',
-      priceIDR: 'Rp 400,000',
+      price: 'Rp 360,000',
+      priceIDR: 'Rp 360,000',
       description: 'Extended session allowing deeper work on problem areas and enhanced relaxation',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 520,000',
-      priceIDR: 'Rp 520,000',
+      price: 'Rp 480,000',
+      priceIDR: 'Rp 480,000',
       description: 'Comprehensive treatment with additional focus areas and ultimate relaxation time'
     }
   ],

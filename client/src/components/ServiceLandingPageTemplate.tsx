@@ -303,7 +303,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                   <Button 
                     size="lg" 
                     onClick={handleBookNow}
-                    className="w-full bg-green-600 hover:bg-green-700 text-white"
+                    className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
                     Book Now on WhatsApp
@@ -339,7 +339,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
   const renderHeroContent = (centered = false) => (
     <div className={centered ? 'text-center' : ''}>
       <div className={`flex ${centered ? 'justify-center' : ''} gap-2 mb-4`}>
-        <Badge className="bg-amber-600 hover:bg-amber-700">
+        <Badge className="bg-emerald-200 hover:bg-emerald-300 text-gray-900">
           {service.heroBadgeText || 'Premium Villa Service'}
         </Badge>
         <Badge variant="outline" className="border-amber-600 text-amber-600">
@@ -376,7 +376,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
         <Button 
           size="lg" 
           onClick={handleBookNow}
-          className="bg-amber-600 hover:bg-amber-700 text-white"
+          className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
         >
           <MessageCircle className="mr-2 h-5 w-5" />
           Book via WhatsApp
@@ -410,7 +410,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                 <p className="text-gray-600 mb-6">{pkg.description}</p>
                 <Button 
                   onClick={handleBookNow}
-                  className="w-full bg-amber-600 hover:bg-amber-700"
+                  className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                 >
                   <MessageCircle className="mr-2 h-4 w-4" />
                   Book Now
@@ -433,7 +433,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                 </div>
                 <div className="flex items-center gap-6">
                   <span className="text-2xl font-bold text-amber-600">{pkg.priceIDR}</span>
-                  <Button onClick={handleBookNow} className="bg-amber-600 hover:bg-amber-700">
+                  <Button onClick={handleBookNow} className="bg-emerald-200 hover:bg-emerald-300 text-gray-900">
                     <MessageCircle className="mr-2 h-4 w-4" />
                     Book
                   </Button>
@@ -455,7 +455,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-2">{pkg.duration} Session</h4>
                 <p className="text-gray-600 mb-4">{pkg.description}</p>
-                <Button onClick={handleBookNow} size="sm" className="bg-amber-600 hover:bg-amber-700">
+                <Button onClick={handleBookNow} size="sm" className="bg-emerald-200 hover:bg-emerald-300 text-gray-900">
                   <MessageCircle className="mr-2 h-4 w-4" />
                   Book Now
                 </Button>
@@ -479,7 +479,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
               <div className="bg-amber-50 border-2 border-amber-600 rounded-lg p-6 text-center">
                 <p className="text-lg font-semibold text-gray-900">Couples</p>
                 <p className="text-3xl font-bold text-amber-600 my-2">{service.couplesPricing.price}</p>
-                <Button onClick={handleBookNow} size="sm" className="mt-4 bg-amber-600 hover:bg-amber-700">
+                <Button onClick={handleBookNow} size="sm" className="mt-4 bg-emerald-200 hover:bg-emerald-300 text-gray-900">
                   Book
                 </Button>
               </div>
@@ -505,7 +505,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                     <td className="px-6 py-4 text-amber-600 font-bold">{pkg.priceIDR}</td>
                     <td className="px-6 py-4 text-gray-600">{pkg.description}</td>
                     <td className="px-6 py-4 text-center">
-                      <Button onClick={handleBookNow} size="sm" className="bg-amber-600 hover:bg-amber-700">
+                      <Button onClick={handleBookNow} size="sm" className="bg-emerald-200 hover:bg-emerald-300 text-gray-900">
                         <MessageCircle className="mr-1 h-4 w-4" />
                         Book
                       </Button>
@@ -699,16 +699,6 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
         {/* Hero Section */}
         {renderHero()}
 
-        {/* WhatsApp Floating Button */}
-        <a 
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all hover:scale-110"
-        >
-          <MessageCircle className="w-6 h-6" />
-        </a>
-
         {/* Introduction Section */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -864,7 +854,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
             {renderHowItWorks()}
             
             <div className="text-center mt-12">
-              <Button size="lg" onClick={handleBookNow} className="bg-amber-600 hover:bg-amber-700">
+              <Button size="lg" onClick={handleBookNow} className="bg-emerald-200 hover:bg-emerald-300 text-gray-900">
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Start Booking Now
               </Button>

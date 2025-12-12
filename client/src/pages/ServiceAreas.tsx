@@ -200,7 +200,7 @@ export default function ServiceAreas() {
               <div className="flex flex-wrap justify-center gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-amber-600 hover:bg-amber-700"
+                  className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                   onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
                 >
                   Book Your Location
@@ -262,7 +262,7 @@ export default function ServiceAreas() {
             </p>
             <Button 
               size="lg" 
-              className="bg-amber-600 hover:bg-amber-700"
+              className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
               onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
             >
               Contact Us on WhatsApp

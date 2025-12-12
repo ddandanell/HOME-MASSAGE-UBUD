@@ -40,21 +40,21 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 260,000',
-      priceIDR: 'Rp 260,000',
+      price: 'Rp 240,000',
+      priceIDR: 'Rp 240,000',
       description: 'Essential relaxation session to melt away daily stress'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 380,000',
-      priceIDR: 'Rp 380,000',
+      price: 'Rp 360,000',
+      priceIDR: 'Rp 360,000',
       description: 'Extended relaxation with scalp and facial massage',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 500,000',
-      priceIDR: 'Rp 500,000',
+      price: 'Rp 480,000',
+      priceIDR: 'Rp 480,000',
       description: 'Ultimate relaxation journey with hot towels and extended aromatherapy'
     }
   ],

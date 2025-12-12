@@ -82,7 +82,7 @@ export default function Header() {
               
               <Button 
                 onClick={() => setIsBookingModalOpen(true)}
-                className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2"
+                className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 px-6 py-2"
               >
                 Book Now
               </Button>
@@ -142,7 +142,7 @@ export default function Header() {
                       setIsBookingModalOpen(true);
                       setIsMenuOpen(false);
                     }}
-                    className="w-full bg-amber-600 hover:bg-amber-700"
+                    className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                   >
                     Book Treatment
                   </Button>
@@ -159,7 +159,7 @@ export default function Header() {
           <Button 
             onClick={() => setIsBookingModalOpen(true)}
             size="lg"
-            className="bg-amber-600 hover:bg-amber-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
+            className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
           >
             <MapPin className="mr-2 h-5 w-5" />
             Quick Book

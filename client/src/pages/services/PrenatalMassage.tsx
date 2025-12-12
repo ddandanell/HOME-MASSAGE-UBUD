@@ -46,15 +46,15 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 450,000',
-      priceIDR: 'Rp 450,000',
+      price: 'Rp 480,000',
+      priceIDR: 'Rp 480,000',
       description: 'Extended prenatal session with additional focus on legs and lower back',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 580,000',
-      priceIDR: 'Rp 580,000',
+      price: 'Rp 640,000',
+      priceIDR: 'Rp 640,000',
       description: 'Comprehensive prenatal treatment including scalp massage and gentle facial'
     }
   ],

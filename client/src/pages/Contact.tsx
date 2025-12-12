@@ -100,7 +100,7 @@ export default function Contact() {
                 <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">{item.description}</p>
                 
                 {item.action && (
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2">
+                  <Button className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 text-sm px-4 py-2">
                     Contact Now
                   </Button>
                 )}
@@ -125,7 +125,7 @@ export default function Contact() {
               <div className="space-y-4">
                 <Button 
                   onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
-                  className="w-full bg-green-600 hover:bg-green-700 text-white py-4 sm:py-6 text-base sm:text-xl font-semibold"
+                  className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900 py-4 sm:py-6 text-base sm:text-xl font-semibold"
                 >
                   <MessageCircle className="mr-2 h-5 w-5 sm:h-6 sm:w-6" />
                   Book via WhatsApp

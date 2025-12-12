@@ -159,6 +159,7 @@ export default function Treatments() {
                 <Button 
                   size="lg" 
                   className="bg-amber-600 hover:bg-amber-700 min-w-[220px]"
+                  className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                   onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
                 >
                   Book Now on WhatsApp
@@ -230,6 +231,7 @@ export default function Treatments() {
             <Button 
               size="lg" 
               className="bg-amber-600 hover:bg-amber-700 min-w-[250px] text-lg"
+              className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
               onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
             >
               Get Treatment Advice

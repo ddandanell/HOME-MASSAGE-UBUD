@@ -263,7 +263,7 @@ export default function UbudMassageVsSpa() {
           </p>
           <Button 
             size="lg"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
             onClick={() => openWhatsApp("Book Ubud massage at my villa")}
           >
             Book Your In-Villa Massage Now

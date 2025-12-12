@@ -40,21 +40,21 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 560,000',
-      priceIDR: 'Rp 560,000',
+      price: 'Rp 480,000',
+      priceIDR: 'Rp 480,000',
       description: 'Essential couples massage for two with synchronized treatments'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 800,000',
-      priceIDR: 'Rp 800,000',
+      price: 'Rp 720,000',
+      priceIDR: 'Rp 720,000',
       description: 'Extended couples experience with scalp massage and aromatherapy',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 1,040,000',
-      priceIDR: 'Rp 1,040,000',
+      price: 'Rp 960,000',
+      priceIDR: 'Rp 960,000',
       description: 'Luxury couples ritual with body scrub, massage, and foot treatment'
     }
   ],
