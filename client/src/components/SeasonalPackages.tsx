@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Cloud, Sun, Droplets, Wind, Sparkles, Heart, type LucideIcon } from "lucide-react";
-import { openWhatsApp } from "@/lib/whatsapp";
+import { openWhatsApp, generateGeneralInquiryMessage, CTA_TEXT } from "@/lib/whatsapp";
 
 interface SeasonalPackage {
   id: string;
@@ -233,10 +233,10 @@ export default function SeasonalPackages() {
 
                 {/* CTA Button */}
                 <Button 
-                  className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
+                  className="w-full"
                   onClick={() => handleBooking(pkg.name)}
                 >
-                  Book This Package
+                  {CTA_TEXT.PRIMARY}
                 </Button>
               </CardContent>
             </Card>
@@ -306,10 +306,10 @@ export default function SeasonalPackages() {
           </p>
           <Button 
             size="lg"
-            className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
-            onClick={() => openWhatsApp("Book Ubud massage at my villa")}
+            className="px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
           >
-            View All Packages & Book Now
+            {CTA_TEXT.PRIMARY}
           </Button>
         </div>
       </div>

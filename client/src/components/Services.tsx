@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { generateGeneralInquiryMessage, openWhatsApp } from "@/lib/whatsapp";
+import { generateGeneralInquiryMessage, openWhatsApp, CTA_TEXT } from "@/lib/whatsapp";
 import { Link } from "wouter";
 import balineseImage from "@assets/Balinese-Massage_1757317131191.jpg";
 import deepTissueImage from "@assets/Deep-Tissue-Massage_1757317131192.jpg";
@@ -160,10 +160,10 @@ Discover the best massage Ubud offers with our professional mobile massage servi
                   </Link>
                   <Button 
                     onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
-                    className="flex-1 bg-primary hover:bg-accent text-primary-foreground font-semibold text-sm sm:text-base py-2 sm:py-3"
+                    className="flex-1 font-semibold text-sm sm:text-base py-2 sm:py-3"
                     data-testid={`button-book-${service.id}`}
                   >
-                    Book Now
+                    {CTA_TEXT.PRIMARY}
                   </Button>
                 </div>
               </CardContent>
