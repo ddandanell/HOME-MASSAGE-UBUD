@@ -3,10 +3,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Clock, Users, Star, CheckCircle, MessageCircle, MapPin, Heart } from 'lucide-react';
-import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
+import { Clock, Users, Star, CheckCircle, MessageCircle, Heart } from 'lucide-react';
+import { generateTreatmentInquiryMessage, openWhatsApp, CTA_TEXT } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import SEOHead from '@/components/SEOHead';
+import WhatsAppButton from '@/components/WhatsAppButton';
 import { Link } from 'wouter';
 
 interface TreatmentPageProps {
@@ -45,8 +46,7 @@ interface TreatmentPageProps {
 
 export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps) {
   const handleBookNow = () => {
-    const message = `Hi! I'd like to book a ${treatment.name} in Ubud. Can you provide more information?`;
-    openWhatsApp(message);
+    openWhatsApp(generateTreatmentInquiryMessage(treatment.name));
   };
 
   return (
@@ -89,7 +89,7 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <Badge className="mb-4 bg-emerald-200 hover:bg-emerald-300 text-gray-900">
+                <Badge className="mb-4">
                   Premium Villa Service
                 </Badge>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -118,10 +118,9 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
                   <Button 
                     size="lg" 
                     onClick={handleBookNow}
-                    className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
-                    Book via WhatsApp
+                    {CTA_TEXT.PRIMARY}
                   </Button>
                   <Button 
                     size="lg" 
@@ -250,9 +249,9 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
                   <p className="text-gray-600 mb-6">{pkg.description}</p>
                   <Button 
                     onClick={handleBookNow}
-                    className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900"
+                    className="w-full"
                   >
-                    Book Now
+                    {CTA_TEXT.PRIMARY}
                   </Button>
                 </div>
               ))}
@@ -405,13 +404,16 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
               className="bg-white text-amber-600 hover:bg-gray-100"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
-              Book via WhatsApp
+              {CTA_TEXT.WHATSAPP}
             </Button>
           </div>
         </section>
       </main>
 
       <Footer />
+      
+      {/* Floating WhatsApp Button */}
+      <WhatsAppButton message={generateTreatmentInquiryMessage(treatment.name)} />
     </div>
   );
 }

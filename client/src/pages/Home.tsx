@@ -21,6 +21,7 @@ import SchemaMarkup from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
 import UbudMassageVsSpa from "@/components/UbudMassageVsSpa";
 import SeasonalPackages from "@/components/SeasonalPackages";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   const faqData = [
@@ -102,6 +103,9 @@ export default function Home() {
 
       {/* Footer */}
       <Footer />
+      
+      {/* Floating WhatsApp Button */}
+      <WhatsAppButton />
     </div>
   );
 }
