@@ -1,9 +1,8 @@
 // WhatsApp utility functions for booking and chat
 // Centralized WhatsApp integration for consistent user experience
 
-export const WHATSAPP_NUMBER = "+62 811-2656-869";
-export const WHATSAPP_NUMBER_FORMATTED = "+62 811-2656-869";
-export const WHATSAPP_NUMBER_CLEAN = "628112656869";
+export const WHATSAPP_NUMBER_FORMATTED = "+62 811-2656-869"; // Display format with spaces
+export const WHATSAPP_NUMBER_CLEAN = "628112656869"; // URL format without special chars
 
 // Standardized CTA text across the system
 export const CTA_TEXT = {

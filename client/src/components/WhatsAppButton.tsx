@@ -84,7 +84,9 @@ export default function WhatsAppButton({
 
 /**
  * Quick Book button variant (appears on scroll, pulsing animation)
- * Used in headers and hero sections for prominent CTA
+ * Used as an alternative to the standard floating button
+ * Position: bottom-6 left-6 to avoid conflict with main button
+ * Note: Use either WhatsAppButton OR QuickBookButton, not both
  */
 export function QuickBookButton() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -101,7 +103,7 @@ export function QuickBookButton() {
   if (!isScrolled) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 z-40 hidden md:block">
+    <div className="fixed bottom-6 left-6 z-40 hidden md:block">
       <Button 
         onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
         size="lg"
