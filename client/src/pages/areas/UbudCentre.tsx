@@ -42,7 +42,7 @@ export default function UbudCentre() {
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: 'Rp 240,000',
+        priceFrom: 'Rp 280,000',
         duration: '60-120 min'
       },
       {
@@ -54,7 +54,7 @@ export default function UbudCentre() {
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: 'Rp 280,000',
+        priceFrom: 'Rp 304,000',
         duration: '60-120 min'
       },
       {
