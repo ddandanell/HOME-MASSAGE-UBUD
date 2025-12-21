@@ -89,6 +89,7 @@ import WellnessMassage from "@/pages/services/WellnessMassage";
 import TherapeuticMassage from "@/pages/services/TherapeuticMassage";
 import LuxuryMassage from "@/pages/services/LuxuryMassage";
 import BestMassageServices from "@/pages/services/BestMassageServices";
+import MassageBali from "@/pages/services/MassageBali";
 
 function Router() {
   return (
@@ -172,15 +173,16 @@ function Router() {
       <Route path="/services/prenatal-massage" component={PrenatalMassage} />
       <Route path="/services/pregnancy-massage" component={PregnancyMassagePage} />
       <Route path="/services/postnatal-massage" component={PostnatalMassage} />
-      <Route path="/services/home-massage" component={HomeMassage} />
-      <Route path="/services/mobile-massage" component={MobileMassage} />
-      <Route path="/services/at-home-massage" component={AtHomeMassage} />
-      <Route path="/services/professional-massage" component={ProfessionalMassage} />
-      <Route path="/services/body-therapy-massage" component={BodyTherapyMassage} />
-      <Route path="/services/wellness-massage" component={WellnessMassage} />
-      <Route path="/services/therapeutic-massage" component={TherapeuticMassage} />
-      <Route path="/services/luxury-massage" component={LuxuryMassage} />
-      <Route path="/services/best-massage-services" component={BestMassageServices} />
+       <Route path="/services/home-massage" component={HomeMassage} />
+       <Route path="/services/mobile-massage" component={MobileMassage} />
+       <Route path="/services/at-home-massage" component={AtHomeMassage} />
+       <Route path="/services/professional-massage" component={ProfessionalMassage} />
+       <Route path="/services/body-therapy-massage" component={BodyTherapyMassage} />
+       <Route path="/services/wellness-massage" component={WellnessMassage} />
+       <Route path="/services/therapeutic-massage" component={TherapeuticMassage} />
+       <Route path="/services/luxury-massage" component={LuxuryMassage} />
+       <Route path="/services/best-massage-services" component={BestMassageServices} />
+       <Route path="/services/massage-bali" component={MassageBali} />
       
       {/* 404 */}
       <Route path="/:rest*" component={NotFound} />
