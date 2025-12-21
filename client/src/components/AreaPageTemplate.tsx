@@ -78,39 +78,41 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
       
       <main>
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-amber-50 via-white to-orange-50 py-20 md:py-32">
+        <section className="relative bg-gradient-to-br from-amber-50 via-white to-orange-50 py-24 md:py-36">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl">
-              <Badge className="mb-4">
-                <MapPin className="w-4 h-4 mr-1" />
+              <Badge className="mb-6 bg-amber-600 hover:bg-amber-700 text-base px-4 py-2">
+                <MapPin className="w-5 h-5 mr-2" />
                 Service Area
               </Badge>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
                 {area.h1Title}
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
                 {area.heroSubtitle}
               </p>
               
-              <div className="flex flex-wrap gap-6 mb-8">
-                <div className="flex items-center gap-2">
-                  <Clock className="w-5 h-5 text-amber-600" />
-                  <span className="text-gray-700">7am - 10pm Daily</span>
+              <div className="flex flex-wrap gap-8 mb-12">
+                <div className="flex items-center gap-3">
+                  <Clock className="w-6 h-6 text-amber-600" />
+                  <span className="text-gray-700 font-medium">7am - 10pm Daily</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Star className="w-5 h-5 text-amber-600" />
-                  <span className="text-gray-700">5.0 Rating (500+ Reviews)</span>
+                <div className="flex items-center gap-3">
+                  <Star className="w-6 h-6 text-amber-600" />
+                  <span className="text-gray-700 font-medium">5.0 Rating (500+ Reviews)</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="w-5 h-5 text-amber-600" />
-                  <span className="text-gray-700">Same-day Available</span>
+                <div className="flex items-center gap-3">
+                  <Phone className="w-6 h-6 text-amber-600" />
+                  <span className="text-gray-700 font-medium">Same-day Available</span>
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-6">
                 <Button 
                   size="lg" 
                   onClick={handleBookNow}
+                  className="bg-amber-600 hover:bg-amber-700 text-white min-w-[200px]"
+                  className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
                   {CTA_TEXT.PRIMARY}
@@ -118,6 +120,7 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
                 <Button 
                   size="lg" 
                   variant="outline"
+                  className="border-amber-600 text-amber-600 hover:bg-amber-50 min-w-[200px]"
                   onClick={() => document.getElementById('treatments')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   View Treatments
@@ -128,40 +131,42 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
         </section>
 
         {/* Area Description */}
-        <section className="py-16 bg-white">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
                 About {area.name}
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              <p className="text-lg text-gray-600 leading-relaxed mb-12">
                 {area.longDescription}
               </p>
               
-              <div className="grid md:grid-cols-2 gap-8 mt-12">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <div className="grid md:grid-cols-2 gap-12 mt-16">
+                <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                    <CheckCircle className="w-6 h-6 text-amber-600" />
                     Area Highlights
                   </h3>
-                  <ul className="space-y-3">
+                  <ul className="space-y-4">
                     {area.uniqueFeatures.map((feature, index) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-700">{feature}</span>
+                      <li key={index} className="flex items-start gap-3">
+                        <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-1" />
+                        <span className="text-gray-700 leading-relaxed">{feature}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                    <MapPin className="w-6 h-6 text-blue-600" />
                     Nearby Attractions
                   </h3>
-                  <ul className="space-y-3">
+                  <ul className="space-y-4">
                     {area.nearbyAttractions.map((attraction, index) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <MapPin className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-700">{attraction}</span>
+                      <li key={index} className="flex items-start gap-3">
+                        <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
+                        <span className="text-gray-700 leading-relaxed">{attraction}</span>
                       </li>
                     ))}
                   </ul>
@@ -172,40 +177,40 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
         </section>
 
         {/* Available Treatments */}
-        <section id="treatments" className="py-16 bg-gray-50">
+        <section id="treatments" className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Massage Treatments Available in {area.name}
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 All treatments delivered directly to your villa or hotel in {area.name}
               </p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {area.treatments.map((treatment, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all hover:-translate-y-1 border border-gray-100">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
                     {treatment.name}
                   </h3>
-                  <div className="flex items-center gap-4 mb-4 text-sm text-gray-600">
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-4 h-4" />
+                  <div className="flex items-center gap-6 mb-6 text-sm text-gray-600">
+                    <span className="flex items-center gap-2">
+                      <Clock className="w-5 h-5 text-amber-600" />
                       {treatment.duration}
                     </span>
-                    <span className="font-semibold text-amber-600">
-                      From {treatment.priceFrom}
+                    <span className="font-bold text-lg text-amber-600">
+                      {treatment.priceFrom}
                     </span>
                   </div>
-                  <div className="flex gap-2">
-                    <Link href={`/ubud/${treatment.slug}`}>
-                      <Button variant="outline" size="sm" className="flex-1">
+                  <div className="flex gap-3 mt-auto">
+                    <Link href={`/ubud/${treatment.slug}`} className="flex-1">
+                      <Button variant="outline" size="default" className="w-full border-amber-600 text-amber-600 hover:bg-amber-50">
                         Learn More
                       </Button>
                     </Link>
                     <Button 
-                      size="sm" 
+                      size="default" 
                       onClick={handleBookNow}
                       className="flex-1"
                     >
@@ -219,22 +224,22 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
         </section>
 
         {/* Popular Villas / Accommodation Types */}
-        <section className="py-16 bg-white">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-16">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 We Serve All Accommodations in {area.name}
               </h3>
-              <p className="text-lg text-gray-600">
+              <p className="text-xl text-gray-600">
                 Including luxury villas, boutique hotels, guesthouses, and private residences
               </p>
             </div>
             
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {area.popularVillas.map((villa, index) => (
-                <div key={index} className="flex items-center gap-2 p-4 bg-gray-50 rounded-lg">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  <span className="text-gray-700">{villa}</span>
+                <div key={index} className="flex items-center gap-3 p-5 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
+                  <span className="text-gray-700 font-medium">{villa}</span>
                 </div>
               ))}
             </div>
@@ -242,47 +247,47 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
         </section>
 
         {/* Why Choose Us for This Area */}
-        <section className="py-16 bg-gradient-to-br from-amber-50 to-orange-50">
+        <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-16">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Why Choose Our Service in {area.name}
               </h3>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-8 h-8 text-white" />
+            <div className="grid md:grid-cols-3 gap-10">
+              <div className="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-20 h-20 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <MapPin className="w-10 h-10 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">
+                <h4 className="text-2xl font-bold text-gray-900 mb-4">
                   Local Expertise
                 </h4>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   We know {area.name} well and can reach any villa, hotel, or accommodation quickly
                 </p>
               </div>
               
-              <div className="text-center">
-                <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-8 h-8 text-white" />
+              <div className="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-20 h-20 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <Clock className="w-10 h-10 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">
+                <h4 className="text-2xl font-bold text-gray-900 mb-4">
                   Flexible Hours
                 </h4>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   7am-10pm daily service in {area.name}, perfect for early morning or evening sessions
                 </p>
               </div>
               
-              <div className="text-center">
-                <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Star className="w-8 h-8 text-white" />
+              <div className="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-20 h-20 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <Star className="w-10 h-10 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">
+                <h4 className="text-2xl font-bold text-gray-900 mb-4">
                   Professional Service
                 </h4>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   Licensed therapists with 5+ years experience serving {area.name} residents and visitors
                 </p>
               </div>
@@ -290,20 +295,61 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
           </div>
         </section>
 
+        {/* Related Services - Internal Linking */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Explore Our Services
+              </h3>
+              <p className="text-xl text-gray-600">
+                Discover our complete range of professional massage treatments
+              </p>
+            </div>
+            
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Link href="/services/home-massage">
+                <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer border border-amber-200">
+                  <h4 className="text-xl font-bold text-gray-900 mb-3">Home Massage Service</h4>
+                  <p className="text-gray-600 mb-4">Professional massage delivered to your accommodation</p>
+                  <span className="text-amber-600 font-semibold">Learn More →</span>
+                </div>
+              </Link>
+              
+              <Link href="/services/couples-massage">
+                <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-8 hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer border border-pink-200">
+                  <h4 className="text-xl font-bold text-gray-900 mb-3">Couples Massage</h4>
+                  <p className="text-gray-600 mb-4">Romantic synchronized treatments for two</p>
+                  <span className="text-rose-600 font-semibold">Learn More →</span>
+                </div>
+              </Link>
+              
+              <Link href="/treatments">
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer border border-blue-200">
+                  <h4 className="text-xl font-bold text-gray-900 mb-3">All Treatments</h4>
+                  <p className="text-gray-600 mb-4">View our complete massage treatment menu</p>
+                  <span className="text-blue-600 font-semibold">Learn More →</span>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
-        <section className="py-16 bg-white">
+        <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-16 text-center">
               Frequently Asked Questions About {area.name}
             </h3>
             
             <div className="space-y-6">
               {area.faqs.map((faq, index) => (
-                <div key={index} className="bg-gray-50 rounded-lg p-6">
-                  <h4 className="text-lg font-bold text-gray-900 mb-2">
+                <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                  <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-start gap-3">
+                    <span className="text-amber-600 text-2xl">Q:</span>
                     {faq.question}
                   </h4>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-lg leading-relaxed pl-8">
                     {faq.answer}
                   </p>
                 </div>
@@ -313,17 +359,17 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
         </section>
 
         {/* More Service Areas */}
-        <section className="py-16 bg-white">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 We Also Serve Other Areas
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-xl text-gray-600 mb-10">
                 Professional in-villa massage service available throughout Bali
               </p>
               <Link href="/service-areas">
-                <Button size="lg" variant="outline" className="border-amber-600 text-amber-600 hover:bg-amber-50">
+                <Button size="lg" variant="outline" className="border-amber-600 text-amber-600 hover:bg-amber-50 min-w-[250px]">
                   <MapPin className="mr-2 h-5 w-5" />
                   View All Service Areas
                 </Button>
@@ -333,21 +379,21 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 bg-gradient-to-r from-amber-600 to-orange-600">
+        <section className="py-24 bg-gradient-to-r from-amber-600 to-orange-600">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h3 className="text-3xl md:text-5xl font-bold text-white mb-8">
               Ready to Book Your Villa Massage in {area.name}?
             </h3>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl md:text-2xl text-white/95 mb-12 leading-relaxed">
               Contact us via WhatsApp for instant booking. Available 7am-10pm daily in {area.name}.
             </p>
             <Button 
               size="lg" 
               onClick={handleBookNow}
-              className="bg-white text-amber-600 hover:bg-gray-100"
+              className="bg-white text-amber-600 hover:bg-gray-100 min-w-[300px] text-lg"
             >
-              <MessageCircle className="mr-2 h-5 w-5" />
-              {CTA_TEXT.WHATSAPP}
+              <MessageCircle className="mr-2 h-6 w-6" />
+              Book via WhatsApp: {WHATSAPP_NUMBER}
             </Button>
           </div>
         </section>

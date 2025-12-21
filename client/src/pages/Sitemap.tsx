@@ -349,6 +349,11 @@ export default function Sitemap() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/services/massage-bali">
+                    <span className="text-amber-600 hover:text-amber-700 hover:underline">Massage Bali</span>
+                  </Link>
+                </li>
+                <li>
                   <Link href="/services/spa-massage">
                     <span className="text-amber-600 hover:text-amber-700 hover:underline">Spa Massage</span>
                   </Link>

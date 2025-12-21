@@ -85,39 +85,43 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
       
       <main>
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-amber-50 via-white to-orange-50 py-20 md:py-32">
+        <section className="relative bg-gradient-to-br from-amber-50 via-white to-orange-50 py-24 md:py-36">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
                 <Badge className="mb-4">
+                <Badge className="mb-6 bg-amber-600 hover:bg-amber-700 text-base px-4 py-2">
+                <Badge className="mb-4 bg-emerald-200 hover:bg-emerald-300 text-gray-900">
                   Premium Villa Service
                 </Badge>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
                   {treatment.h1Title}
                 </h1>
-                <p className="text-xl text-gray-600 mb-8">
+                <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
                   {treatment.heroSubtitle}
                 </p>
                 
-                <div className="flex flex-wrap gap-6 mb-8">
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-5 h-5 text-amber-600" />
-                    <span className="text-gray-700">{treatment.duration}</span>
+                <div className="flex flex-wrap gap-8 mb-12">
+                  <div className="flex items-center gap-3">
+                    <Clock className="w-6 h-6 text-amber-600" />
+                    <span className="text-gray-700 font-medium">{treatment.duration}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Star className="w-5 h-5 text-amber-600" />
-                    <span className="text-gray-700">5.0 Rating</span>
+                  <div className="flex items-center gap-3">
+                    <Star className="w-6 h-6 text-amber-600" />
+                    <span className="text-gray-700 font-medium">5.0 Rating</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-5 h-5 text-amber-600" />
-                    <span className="text-gray-700">All Ubud Areas</span>
+                  <div className="flex items-center gap-3">
+                    <MapPin className="w-6 h-6 text-amber-600" />
+                    <span className="text-gray-700 font-medium">All Ubud Areas</span>
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-6">
                   <Button 
                     size="lg" 
                     onClick={handleBookNow}
+                    className="bg-amber-600 hover:bg-amber-700 text-white min-w-[200px]"
+                    className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
                     {CTA_TEXT.PRIMARY}
@@ -125,6 +129,7 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
                   <Button 
                     size="lg" 
                     variant="outline"
+                    className="border-amber-600 text-amber-600 hover:bg-amber-50 min-w-[200px]"
                     onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
                   >
                     View Pricing
@@ -136,7 +141,7 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
                 <img 
                   src={treatment.image} 
                   alt={treatment.name}
-                  className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
+                  className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
                   loading="lazy"
                 />
               </div>

@@ -12,6 +12,7 @@ import { Link } from 'wouter';
 // Service pages data for internal linking
 const servicePages = [
   { name: 'Massage', slug: 'massage' },
+  { name: 'Massage Bali', slug: 'massage-bali' },
   { name: 'Spa Massage', slug: 'spa-massage' },
   { name: 'Deep Tissue Massage', slug: 'deep-tissue-massage' },
   { name: 'Full Body Massage', slug: 'full-body-massage' },

@@ -60,19 +60,19 @@ export default function UbudEast() {
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: 'Rp 240,000',
+        priceFrom: 'Rp 280,000',
         duration: '60-120 min'
       },
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: 'Rp 280,000',
+        priceFrom: 'Rp 304,000',
         duration: '60-120 min'
       },
       {
         name: 'Detox & Wellness Massage',
         slug: 'detox-wellness-massage',
-        priceFrom: 'Rp 440,000',
+        priceFrom: 'Rp 384,000',
         duration: '90-120 min'
       }
     ],
