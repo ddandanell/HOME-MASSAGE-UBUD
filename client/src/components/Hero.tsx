@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Clock } from "lucide-react";
 import spaImage from "@assets/60363521082_1757316327941.webp";
-import { generateGeneralInquiryMessage, openWhatsApp } from "@/lib/whatsapp";
+import { generateGeneralInquiryMessage, openWhatsApp, CTA_TEXT } from "@/lib/whatsapp";
 
 export default function Hero() {
   const scrollToServices = () => {
@@ -50,10 +50,10 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6 sm:mb-8 px-3 sm:px-0">
             <Button 
               onClick={handleBookExperience}
-              className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold uppercase tracking-wider border-0 rounded-xl transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+              className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold uppercase tracking-wider border-0 rounded-xl transition-all duration-300 hover:scale-105 w-full sm:w-auto"
               data-testid="button-book-now"
             >
-              Book Now via WhatsApp
+              {CTA_TEXT.WHATSAPP}
             </Button>
             <Button 
               onClick={scrollToServices}

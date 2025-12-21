@@ -4,8 +4,9 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Clock, MapPin, Star, CheckCircle, MessageCircle, Phone } from 'lucide-react';
-import { generateGeneralInquiryMessage, openWhatsApp, WHATSAPP_NUMBER } from '@/lib/whatsapp';
+import { generateAreaInquiryMessage, openWhatsApp, CTA_TEXT, WHATSAPP_NUMBER_FORMATTED } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
+import WhatsAppButton from '@/components/WhatsAppButton';
 import { Link } from 'wouter';
 import SEOHead from '@/components/SEOHead';
 
@@ -38,8 +39,7 @@ interface AreaPageProps {
 
 export default function AreaPageTemplate({ area, additionalContent }: AreaPageProps) {
   const handleBookNow = () => {
-    const message = `Hi! I'd like to book a massage in ${area.name}. Can you provide more information?`;
-    openWhatsApp(message);
+    openWhatsApp(generateAreaInquiryMessage(area.name));
   };
 
   return (
@@ -115,7 +115,7 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
                   className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
-                  Book via WhatsApp
+                  {CTA_TEXT.PRIMARY}
                 </Button>
                 <Button 
                   size="lg" 
@@ -212,9 +212,9 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
                     <Button 
                       size="default" 
                       onClick={handleBookNow}
-                      className="flex-1 bg-emerald-200 hover:bg-emerald-300 text-gray-900"
+                      className="flex-1"
                     >
-                      Book Now
+                      {CTA_TEXT.PRIMARY}
                     </Button>
                   </div>
                 </div>
@@ -403,6 +403,9 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
       </main>
 
       <Footer />
+      
+      {/* Floating WhatsApp Button */}
+      <WhatsAppButton message={generateAreaInquiryMessage(area.name)} />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Phone, MessageCircle, MapPin } from 'lucide-react';
-import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
+import { Menu, X, Phone, MessageCircle } from 'lucide-react';
+import { generateGeneralInquiryMessage, openWhatsApp, CTA_TEXT, WHATSAPP_NUMBER_FORMATTED } from '@/lib/whatsapp';
 
 export default function Header() {
   const [location] = useLocation();
@@ -24,7 +24,7 @@ export default function Header() {
     { name: 'Areas', href: '/service-areas' },
     { name: 'Pricing', href: '/pricing' },
     { name: 'About', href: '/about' },
-    { name: 'Book Now', href: '#book', primary: true }
+    { name: CTA_TEXT.PRIMARY, href: '#book', primary: true }
   ];
 
   return (
@@ -59,7 +59,7 @@ export default function Header() {
                     <Button 
                       key={item.name}
                       onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
-                      className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 px-4 py-2 text-sm"
+                      className="px-4 py-2 text-sm"
                     >
                       {item.name}
                     </Button>
@@ -125,7 +125,7 @@ export default function Header() {
                         openWhatsApp(generateGeneralInquiryMessage());
                         setIsMenuOpen(false);
                       }}
-                      className="w-full bg-emerald-200 hover:bg-emerald-300 text-gray-900 py-3 text-sm font-semibold rounded-lg"
+                      className="w-full py-3 text-sm font-semibold rounded-lg"
                     >
                       {item.name}
                     </Button>
@@ -167,22 +167,23 @@ export default function Header() {
               <div className="border-t-2 border-gray-100 pt-3 mt-3">
                 <div className="flex items-center justify-center space-x-8 px-4 py-2">
                   <a 
-                    href="tel:+628112656869" 
+                    href={`tel:${WHATSAPP_NUMBER_FORMATTED.replace(/[^0-9+]/g, '')}`}
                     className="flex items-center text-gray-700 hover:text-amber-600 transition-colors"
                   >
                     <Phone className="h-4 w-4 mr-2" />
-                    <span className="text-sm font-medium">Call</span>
+                    <span className="text-sm font-medium">{CTA_TEXT.CALL}</span>
                   </a>
                   
-                  <a 
-                    href="https://wa.me/628112656869" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => {
+                      openWhatsApp(generateGeneralInquiryMessage());
+                      setIsMenuOpen(false);
+                    }}
                     className="flex items-center text-green-600 hover:text-green-700 transition-colors"
                   >
                     <MessageCircle className="h-4 w-4 mr-2" />
                     <span className="text-sm font-medium">WhatsApp</span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -190,18 +191,7 @@ export default function Header() {
         )}
       </header>
 
-      {isScrolled && (
-        <div className="fixed bottom-6 right-6 z-40 hidden md:block">
-          <Button 
-            onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
-            size="lg"
-            className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
-          >
-            <MapPin className="mr-2 h-5 w-5" />
-            Quick Book
-          </Button>
-        </div>
-      )}
+
     </>
   );
 }

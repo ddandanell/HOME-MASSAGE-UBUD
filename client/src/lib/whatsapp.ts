@@ -1,5 +1,16 @@
 // WhatsApp utility functions for booking and chat
-export const WHATSAPP_NUMBER = "+62 811-2656-869";
+// Centralized WhatsApp integration for consistent user experience
+
+export const WHATSAPP_NUMBER_FORMATTED = "+62 811-2656-869"; // Display format with spaces
+export const WHATSAPP_NUMBER_CLEAN = "628112656869"; // URL format without special chars
+
+// Standardized CTA text across the system
+export const CTA_TEXT = {
+  PRIMARY: "Book Now",
+  WHATSAPP: "Book via WhatsApp",
+  QUICK_BOOK: "Quick Book",
+  CALL: "Call Now",
+} as const;
 
 export interface BookingDetails {
   treatment?: string;
@@ -15,7 +26,7 @@ export interface BookingDetails {
 
 export function generateWhatsAppURL(message: string): string {
   const encodedMessage = encodeURIComponent(message);
-  return `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}?text=${encodedMessage}`;
+  return `https://wa.me/${WHATSAPP_NUMBER_CLEAN}?text=${encodedMessage}`;
 }
 
 export function generateBookingMessage(details: BookingDetails): string {
@@ -71,10 +82,18 @@ export function generateQuickBookingMessage(treatment: string, date: string, tim
 }
 
 export function generateGeneralInquiryMessage(): string {
-  return "Hi! I would like to book some massages to my villa.";
+  return "Hi! I would like to book a massage at my villa in Ubud.";
+}
+
+export function generateAreaInquiryMessage(areaName: string): string {
+  return `Hi! I'd like to book a massage in ${areaName}. Can you provide more information?`;
+}
+
+export function generateTreatmentInquiryMessage(treatmentName: string): string {
+  return `Hi! I'd like to book a ${treatmentName}. Can you provide more information?`;
 }
 
 export function openWhatsApp(message: string): void {
   const url = generateWhatsAppURL(message);
-  window.open(url, '_blank');
+  window.open(url, '_blank', 'noopener,noreferrer');
 }

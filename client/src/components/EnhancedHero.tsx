@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Star, MapPin, Clock, Users, MessageCircle, Phone, CheckCircle } from 'lucide-react';
-import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
+import { Star, Clock, Users, MessageCircle, Phone, CheckCircle } from 'lucide-react';
+import { generateGeneralInquiryMessage, openWhatsApp, CTA_TEXT, WHATSAPP_NUMBER_FORMATTED } from '@/lib/whatsapp';
 import TrustBadges from './TrustBadges';
 import massageHeroImage from '../assets/massage-therapy-hero.jpg';
 
@@ -76,25 +76,28 @@ export default function EnhancedHero() {
             <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start">
               <Button 
                 size="lg" 
-                className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all"
+                className="px-8 py-4 text-lg shadow-lg hover:shadow-xl"
                 onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
-                Book Treatment Now
+                {CTA_TEXT.PRIMARY}
               </Button>
               
               <div className="flex gap-2">
-                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" variant="outline" className="px-6 py-4">
-                    <MessageCircle className="mr-2 h-5 w-5 text-green-600" />
-                    WhatsApp
-                  </Button>
-                </a>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="px-6 py-4"
+                  onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
+                >
+                  <MessageCircle className="mr-2 h-5 w-5 text-green-600" />
+                  WhatsApp
+                </Button>
                 
-                <a href="tel:+628112656869">
+                <a href={`tel:${WHATSAPP_NUMBER_FORMATTED.replace(/[^0-9+]/g, '')}`}>
                   <Button size="lg" variant="outline" className="px-6 py-4">
                     <Phone className="mr-2 h-5 w-5" />
-                    Call
+                    {CTA_TEXT.CALL}
                   </Button>
                 </a>
               </div>

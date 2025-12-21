@@ -103,7 +103,7 @@ export default function AllTreatmentsAndAreas() {
               Can't find your area? We serve all of Ubud and surrounding villages within 20km.
             </p>
             <Link href="/contact">
-            <Button size="lg" className="bg-emerald-200 hover:bg-emerald-300 text-gray-900">
+            <Button size="lg">
                 Contact Us for Your Location
               </Button>
             </Link>

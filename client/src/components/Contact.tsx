@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, Mail, MapPin, Clock, Instagram, Facebook } from "lucide-react";
-import { generateGeneralInquiryMessage, openWhatsApp } from "@/lib/whatsapp";
+import { generateGeneralInquiryMessage, openWhatsApp, CTA_TEXT, WHATSAPP_NUMBER_FORMATTED } from "@/lib/whatsapp";
 
 export default function Contact() {
 
@@ -9,13 +9,13 @@ export default function Contact() {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+62 811-2656-869',
+      value: WHATSAPP_NUMBER_FORMATTED,
       id: 'phone'
     },
     {
       icon: MessageCircle,
       label: 'WhatsApp',
-      value: '+62 811-2656-869',
+      value: WHATSAPP_NUMBER_FORMATTED,
       id: 'whatsapp'
     },
     {
@@ -82,28 +82,28 @@ export default function Contact() {
               <div className="space-y-3 md:space-y-4">
                 <Button 
                   onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
-                  className="w-full bg-primary text-primary-foreground py-3 md:py-4 hover:bg-accent golden-glow font-semibold text-base md:text-lg"
+                  className="w-full py-3 md:py-4 font-semibold text-base md:text-lg"
                   data-testid="button-whatsapp"
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
-                  Book via WhatsApp
+                  {CTA_TEXT.WHATSAPP}
                 </Button>
                 
-                <a href="tel:+628112656869" className="block">
+                <a href={`tel:${WHATSAPP_NUMBER_FORMATTED.replace(/[^0-9+]/g, '')}`} className="block">
                   <Button 
                     variant="outline"
-                    className="w-full border-2 border-primary text-primary hover:bg-secondary py-3 md:py-4 font-semibold text-base md:text-lg"
+                    className="w-full py-3 md:py-4 font-semibold text-base md:text-lg"
                     data-testid="button-call"
                   >
                     <Phone className="mr-2 h-5 w-5" />
-                    Call Now
+                    {CTA_TEXT.CALL}
                   </Button>
                 </a>
               </div>
               
               <div className="mt-6 p-4 bg-secondary rounded-lg">
                 <p className="text-sm text-center text-muted-foreground">
-                  <strong>WhatsApp:</strong> +62 811-2656-869
+                  <strong>WhatsApp:</strong> {WHATSAPP_NUMBER_FORMATTED}
                 </p>
               </div>
             </CardContent>
