@@ -102,6 +102,35 @@ npm run server:start
 - `GET /api/bookings` - Get all bookings
 - `PATCH /api/bookings/:id/status` - Update booking status
 
+## SEO Content Pipeline
+
+This project includes a two-prompt system for scalable SEO landing page generation:
+
+### Prompt Files
+
+| File | Purpose |
+|------|---------|
+| `KEYWORD_BLUEPRINT_PROMPT.md` | Converts keyword research into structured build instructions |
+| `LANDING_PAGE_EXECUTION_PROMPT.md` | Generates landing pages from keyword blueprints |
+| `KEYWORD_BLUEPRINT_OUTPUT_EXAMPLE.md` | Example output for 10 high-volume keywords |
+
+### Workflow
+
+1. **Run Keyword Blueprint Prompt** on your keyword list
+2. **Pick one keyword blueprint** from the output
+3. **Paste into Landing Page Execution Prompt**
+4. **Generate page content**
+5. **Repeat for each keyword**
+
+This system enables scaling from 10 to 200+ pages with consistent quality.
+
+### Related Documentation
+
+- `UNIQUENESS_BLUEPRINT.md` - Content analysis and uniqueness requirements
+- `SEO_IMPLEMENTATION_SUMMARY.md` - SEO page implementation details
+- `SEO_IMPROVEMENTS_IMPLEMENTATION.md` - Quick wins and content enhancements
+- `INTERNAL_LINKING_SITEMAP_GUIDE.md` - Internal linking strategy
+
 ## License
 
 MIT License
