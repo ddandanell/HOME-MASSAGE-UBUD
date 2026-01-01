@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>{{PAGE_TITLE}} | HomeMassageUbud.com</title>
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <meta name="keywords" content="{{PRIMARY_KEYWORD}}, {{SECONDARY_KEYWORDS}}">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{{PAGE_TITLE}}">
+    <meta property="og:description" content="{{META_DESCRIPTION}}">
+    <meta property="og:image" content="{{OG_IMAGE_URL}}">
+    <meta property="og:url" content="https://homemassageubud.com{{URL_SLUG}}">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{PAGE_TITLE}}">
+    <meta name="twitter:description" content="{{META_DESCRIPTION}}">
+    <meta name="twitter:image" content="{{OG_IMAGE_URL}}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://homemassageubud.com{{URL_SLUG}}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Stylesheet (Replace with your CSS framework) -->
+    <link rel="stylesheet" href="/styles/main.css">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "{{SERVICE_TYPE}}",
+      "name": "{{PAGE_TITLE}}",
+      "description": "{{META_DESCRIPTION}}",
+      "provider": {
+        "@type": "Organization",
+        "name": "HomeMassageUbud.com",
+        "url": "https://homemassageubud.com",
+        "logo": "https://homemassageubud.com/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+62-XXX-XXX-XXXX",
+          "contactType": "customer service",
+          "availableLanguage": ["English", "Indonesian"]
+        }
+      },
+      "areaServed": {{SERVICE_AREAS_JSON}},
+      "offers": {
+        "@type": "Offer",
+        "price": "{{STARTING_PRICE}}",
+        "priceCurrency": "IDR",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{RATING_VALUE}}",
+        "reviewCount": "{{REVIEW_COUNT}}"
+      }
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": {{FAQ_SCHEMA_JSON}}
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation (Include your site navigation component) -->
+    <nav>
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="{{BREADCRUMB_PARENT_URL}}"><span itemprop="name">{{BREADCRUMB_PARENT}}</span></a>
+                <meta itemprop="position" content="2" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name">{{PAGE_NAME}}</span>
+                <meta itemprop="position" content="3" />
+            </li>
+        </ol>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>{{H1_TAG}}</h1>
+            <p class="hero-intro">{{HERO_INTRO_TEXT}}</p>
+            <div class="hero-cta">
+                <a href="{{WHATSAPP_LINK}}" class="btn btn-primary" target="_blank">
+                    Book via WhatsApp
+                </a>
+                <a href="#pricing" class="btn btn-secondary">View Pricing</a>
+            </div>
+            <!-- Trust Indicators -->
+            <div class="trust-badges">
+                <span>⭐ {{RATING_VALUE}}★ Rating</span>
+                <span>✓ Certified Therapists</span>
+                <span>✓ Same-Day Booking</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <div class="container">
+            <p class="intro-text">{{INTRODUCTION_TEXT}}</p>
+        </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section class="whats-included">
+        <div class="container">
+            <h2>What's Included in Your {{SERVICE_NAME}}</h2>
+            <ul class="included-list">
+                {{WHATS_INCLUDED_LIST}}
+            </ul>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2>Why Choose Our {{SERVICE_NAME}}</h2>
+            <div class="benefits-grid">
+                {{BENEFITS_CONTENT}}
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="target-audience">
+        <div class="container">
+            <h2>Perfect For</h2>
+            <p>{{TARGET_AUDIENCE_DESCRIPTION}}</p>
+            <ul class="audience-list">
+                {{TARGET_AUDIENCE_LIST}}
+            </ul>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <h2>What to Expect: Your Experience Step-by-Step</h2>
+            <ol class="process-steps">
+                {{PROCESS_STEPS_LIST}}
+            </ol>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Transparent Pricing & Package Options</h2>
+            <div class="pricing-grid">
+                {{PRICING_PACKAGES}}
+            </div>
+            <p class="payment-info">Payment: {{PAYMENT_METHOD}}</p>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="service-areas">
+        <div class="container">
+            <h2>Service Coverage Areas</h2>
+            <ul class="areas-list">
+                {{SERVICE_AREAS_LIST}}
+            </ul>
+            <p class="special-arrangements">{{SPECIAL_ARRANGEMENTS_TEXT}}</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                {{TESTIMONIALS_CONTENT}}
+            </div>
+            <!-- Social Proof Stats -->
+            <div class="social-proof-stats">
+                <div class="stat">
+                    <span class="stat-number">{{CLIENTS_SERVED}}+</span>
+                    <span class="stat-label">Clients Served</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">{{RATING_VALUE}}★</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">{{CERTIFICATIONS}}</span>
+                    <span class="stat-label">Certified Therapists</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-items">
+                {{FAQ_ITEMS}}
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services Section -->
+    <section class="related-services">
+        <div class="container">
+            <h2>Related Services</h2>
+            <div class="related-grid">
+                {{RELATED_SERVICES_LINKS}}
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Book Your {{SERVICE_NAME}}?</h2>
+            <p class="cta-text">{{CTA_FINAL_TEXT}}</p>
+            <a href="{{WHATSAPP_LINK}}" class="btn btn-primary btn-large" target="_blank">
+                WhatsApp Us Now: +62-XXX-XXX-XXXX
+            </a>
+            <p class="availability-info">{{AVAILABILITY_INFO}}</p>
+        </div>
+    </section>
+
+    <!-- Footer (Include your site footer component) -->
+    <footer>
+        <!-- Your site footer content -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/scripts/main.js"></script>
+    
+    <!-- WhatsApp Click Tracking -->
+    <script>
+        document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
+            link.addEventListener('click', function() {
+                // Add analytics tracking here
+                console.log('WhatsApp CTA clicked from {{PAGE_NAME}}');
+            });
+        });
+    </script>
+</body>
+</html>
