@@ -22,6 +22,7 @@ import SEOHead from "@/components/SEOHead";
 import UbudMassageVsSpa from "@/components/UbudMassageVsSpa";
 import SeasonalPackages from "@/components/SeasonalPackages";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import CrossLocationPromo from "@/components/CrossLocationPromo";
 
 export default function Home() {
   const faqData = [
@@ -63,6 +64,9 @@ export default function Home() {
         <section id="home">
           <EnhancedHero />
         </section>
+        
+        {/* Cross-Location Promotion */}
+        <CrossLocationPromo />
         
         {/* Trust Badges */}
         <section className="py-8 bg-white">
