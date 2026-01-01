@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Star, Clock, Users, MessageCircle, Phone, CheckCircle } from 'lucide-react';
+import { Star, Clock, Users, MessageCircle, Phone, CheckCircle, MapPin } from 'lucide-react';
 import { generateGeneralInquiryMessage, openWhatsApp, CTA_TEXT, WHATSAPP_NUMBER_FORMATTED } from '@/lib/whatsapp';
 import TrustBadges from './TrustBadges';
 import massageHeroImage from '../assets/massage-therapy-hero.jpg';

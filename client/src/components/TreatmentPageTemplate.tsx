@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Clock, Users, Star, CheckCircle, MessageCircle, Heart } from 'lucide-react';
+import { Clock, Users, Star, CheckCircle, MessageCircle, Heart, MapPin } from 'lucide-react';
 import { generateTreatmentInquiryMessage, openWhatsApp, CTA_TEXT } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import SEOHead from '@/components/SEOHead';
@@ -89,8 +89,6 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
-                <Badge className="mb-4">
-                <Badge className="mb-6 bg-amber-600 hover:bg-amber-700 text-base px-4 py-2">
                 <Badge className="mb-4 bg-emerald-200 hover:bg-emerald-300 text-gray-900">
                   Premium Villa Service
                 </Badge>
@@ -120,8 +118,7 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
                   <Button 
                     size="lg" 
                     onClick={handleBookNow}
-                    className="bg-amber-600 hover:bg-amber-700 text-white min-w-[200px]"
-                    className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
+                    className="bg-emerald-200 hover:bg-emerald-300 text-gray-900 min-w-[200px]"
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
                     {CTA_TEXT.PRIMARY}
