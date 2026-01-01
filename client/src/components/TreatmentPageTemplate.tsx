@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Clock, Users, Star, CheckCircle, MessageCircle, Heart, MapPin } from 'lucide-react';
@@ -82,6 +83,13 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
       />
 
       <Header />
+      
+      <Breadcrumbs 
+        items={[
+          { label: 'Treatments', href: '/treatments' },
+          { label: treatment.name, current: true }
+        ]}
+      />
       
       <main>
         {/* Hero Section */}
