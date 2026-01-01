@@ -392,7 +392,7 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
               className="bg-white text-amber-600 hover:bg-gray-100 min-w-[300px] text-lg"
             >
               <MessageCircle className="mr-2 h-6 w-6" />
-              Book via WhatsApp: {WHATSAPP_NUMBER}
+              Book via WhatsApp: {WHATSAPP_NUMBER_FORMATTED}
             </Button>
           </div>
         </section>
