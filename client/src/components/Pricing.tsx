@@ -12,8 +12,7 @@ const pricingPackages = [
       { name: 'Deep Tissue Reset (60 min)', price: 'Rp 320,000' },
       { name: 'Thai Massage (60 min)', price: 'Rp 360,000' },
       { name: 'Lymphatic Drainage (60 min)', price: 'Rp 384,000' },
-      { name: 'Hot Stone Ritual (60 min)', price: 'Rp 360,000' },
-      { name: 'Massage with Hot Stones (60 min)', price: 'Rp 440,000' }
+      { name: 'Hot Stone Ritual (60 min)', price: 'Rp 360,000' }
     ],
     buttonText: 'Book 60 Min',
     buttonVariant: 'secondary' as const,
@@ -29,8 +28,7 @@ const pricingPackages = [
       { name: 'Thai Massage (90 min)', price: 'Rp 520,000' },
       { name: 'Bali Glow (Massage + Scrub) (90 min)', price: 'Rp 480,000' },
       { name: 'Lymphatic Drainage (90 min)', price: 'Rp 550,000' },
-      { name: 'Hot Stone Ritual (90 min)', price: 'Rp 520,000' },
-      { name: 'Massage with Hot Stones (90 min)', price: 'Rp 600,000' }
+      { name: 'Hot Stone Ritual (90 min)', price: 'Rp 520,000' }
     ],
     note: 'Extended sessions for deeper relaxation and complete rejuvenation',
     buttonText: 'Book 90 Min',
