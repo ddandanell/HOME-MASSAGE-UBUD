@@ -1,0 +1,93 @@
+Source Page,Source URL,Target Page,Target URL,Anchor Text,Link Context,Link Type,Priority
+Couples Villa Massage,/services/couples-villa-massage,Couples Wellness Ritual,/ubud/couples-wellness-ritual,couples wellness ritual,Extended 2.5-hour premium experience,Related Service,High
+Couples Villa Massage,/services/couples-villa-massage,Honeymoon Spa,/services/honeymoon-spa,honeymoon packages,Multi-day romantic wellness,Related Service,High
+Couples Villa Massage,/services/couples-villa-massage,Traditional Balinese Massage,/treatments/traditional-balinese,traditional Balinese massage,Learn about our signature technique,Treatment Info,Medium
+Couples Villa Massage,/services/couples-villa-massage,Ubud Luxury Villas,/ubud-luxury-villas,luxury villa areas,Premium villa coverage,Service Area,Medium
+Couples Villa Massage,/services/couples-villa-massage,Aromatherapy Massage,/treatments/aromatherapy-massage,aromatherapy benefits,Essential oil benefits,Treatment Info,Low
+Couples Villa Massage,/services/couples-villa-massage,Seminyak,/seminyak,Seminyak couples massage,Beach area service,Service Area,Low
+Couples Villa Massage,/services/couples-villa-massage,Deep Tissue Massage,/treatments/deep-tissue-massage,deep tissue option,Pressure preference alternative,Treatment Info,Low
+Couples Villa Massage,/services/couples-villa-massage,Services,/services,all our services,Complete service listing,Navigation,Low
+Honeymoon Spa,/services/honeymoon-spa,Couples Villa Massage,/services/couples-villa-massage,single couples massage,One-time session option,Related Service,High
+Honeymoon Spa,/services/honeymoon-spa,Luxury Villa Wellness,/services/luxury-villa-wellness,luxury villa wellness,Premium VIP service,Related Service,High
+Honeymoon Spa,/services/honeymoon-spa,Couples Wellness Ritual,/ubud/couples-wellness-ritual,couples wellness ritual,Extended ceremony experience,Related Service,Medium
+Honeymoon Spa,/services/honeymoon-spa,Seminyak,/seminyak,Seminyak honeymoon,Beach honeymoon coverage,Service Area,Medium
+Honeymoon Spa,/services/honeymoon-spa,Uluwatu,/uluwatu,Uluwatu luxury villas,Dramatic cliff-top locations,Service Area,Medium
+Honeymoon Spa,/services/honeymoon-spa,Traditional Balinese Massage,/treatments/traditional-balinese,traditional Balinese massage,Cultural technique details,Treatment Info,Low
+Honeymoon Spa,/services/honeymoon-spa,Aromatherapy Massage,/treatments/aromatherapy-massage,aromatherapy treatments,Essential oil options,Treatment Info,Low
+Honeymoon Spa,/services/honeymoon-spa,Services,/services,all services,Full service menu,Navigation,Low
+Post-Yoga Recovery,/services/post-yoga-recovery,Yoga Stretch Massage,/ubud/yoga-stretch-massage,yoga stretch massage,Alternative gentle approach,Related Service,High
+Post-Yoga Recovery,/services/post-yoga-recovery,Therapeutic Massage,/services/therapeutic-massage,therapeutic massage,General recovery focus,Related Service,Medium
+Post-Yoga Recovery,/services/post-yoga-recovery,Deep Tissue Massage,/treatments/deep-tissue-massage,deep tissue,Intense pressure option,Treatment Info,Medium
+Post-Yoga Recovery,/services/post-yoga-recovery,Sports Massage,/services/sports-massage,sports massage,Athletic recovery techniques,Related Service,Medium
+Post-Yoga Recovery,/services/post-yoga-recovery,Ubud Centre,/ubud-centre,Ubud centre,Near Yoga Barn and main studios,Service Area,Medium
+Post-Yoga Recovery,/services/post-yoga-recovery,Services,/services,all services,Complete offerings,Navigation,Low
+Uluwatu Surf Massage,/uluwatu/surf-recovery-massage,Sports Massage,/services/sports-massage,sports massage,General athletic recovery,Related Service,High
+Uluwatu Surf Massage,/uluwatu/surf-recovery-massage,Post-Hike Recovery,/ubud/post-hike-recovery-massage,post-hike recovery,Similar recovery approach,Related Service,Medium
+Uluwatu Surf Massage,/uluwatu/surf-recovery-massage,Deep Tissue Massage,/treatments/deep-tissue-massage,deep tissue,Technique explanation,Treatment Info,Medium
+Uluwatu Surf Massage,/uluwatu/surf-recovery-massage,Canggu,/canggu,Canggu surf,North shore surf coverage,Service Area,High
+Uluwatu Surf Massage,/uluwatu/surf-recovery-massage,Uluwatu Area,/uluwatu,Uluwatu area,All cliff area services,Service Area,Medium
+Uluwatu Surf Massage,/uluwatu/surf-recovery-massage,Services,/services,all services,Full menu,Navigation,Low
+Group Spa Day,/services/group-spa-day,Couples Villa Massage,/services/couples-villa-massage,couples massage,For just two people,Related Service,High
+Group Spa Day,/services/group-spa-day,Post-Yoga Recovery,/services/post-yoga-recovery,yoga retreat recovery,Post-practice service,Related Service,Medium
+Group Spa Day,/services/group-spa-day,Services,/services,corporate wellness,Business retreat options,Related Service,Medium
+Group Spa Day,/services/group-spa-day,Ubud Centre,/ubud-centre,Ubud retreat centers,Popular retreat locations,Service Area,Medium
+Group Spa Day,/services/group-spa-day,Luxury Villa Wellness,/services/luxury-villa-wellness,luxury villa service,Premium options,Related Service,Low
+Group Spa Day,/services/group-spa-day,Canggu,/canggu,Canggu area,Group accommodation area,Service Area,Low
+Group Spa Day,/services/group-spa-day,Services,/services,all services,Complete menu,Navigation,Low
+Detox Wellness,/services/detox-wellness-massage,Detox Wellness Treatment,/ubud/detox-wellness-massage,detox wellness,Main treatment page,Related Service,High
+Detox Wellness,/services/detox-wellness-massage,Wellness Massage,/services/wellness-massage,wellness massage,General wellness services,Related Service,High
+Detox Wellness,/services/detox-wellness-massage,Therapeutic Massage,/services/therapeutic-massage,therapeutic massage,Healing-focused work,Related Service,Medium
+Detox Wellness,/services/detox-wellness-massage,Ubud Centre,/ubud-centre,Ubud retreats,Wellness retreat areas,Service Area,Medium
+Detox Wellness,/services/detox-wellness-massage,Lymphatic Drainage,/treatments/lymphatic-drainage,lymphatic drainage,Technique details,Treatment Info,High
+Detox Wellness,/services/detox-wellness-massage,Services,/services,all services,Full offerings,Navigation,Low
+Luxury Villa Wellness,/services/luxury-villa-wellness,Honeymoon Spa,/services/honeymoon-spa,honeymoon spa,Multi-day packages,Related Service,High
+Luxury Villa Wellness,/services/luxury-villa-wellness,Couples Villa Massage,/services/couples-villa-massage,couples massage,Couples option,Related Service,Medium
+Luxury Villa Wellness,/services/luxury-villa-wellness,Couples Wellness Ritual,/ubud/couples-wellness-ritual,couples wellness ritual,Extended ceremony,Related Service,Medium
+Luxury Villa Wellness,/services/luxury-villa-wellness,Ubud Luxury Villas,/ubud-luxury-villas,Ubud luxury villas,Premium Ubud estates,Service Area,High
+Luxury Villa Wellness,/services/luxury-villa-wellness,Seminyak,/seminyak,Seminyak premium service,High-end beach area,Service Area,High
+Luxury Villa Wellness,/services/luxury-villa-wellness,Uluwatu,/uluwatu,Uluwatu,Cliff estates,Service Area,Medium
+Luxury Villa Wellness,/services/luxury-villa-wellness,Traditional Balinese,/treatments/traditional-balinese,traditional Balinese,Luxury treatment option,Treatment Info,Low
+Luxury Villa Wellness,/services/luxury-villa-wellness,Services,/services,all services,Complete menu,Navigation,Low
+Mobile Spa Day,/services/mobile-spa-day-package,Body Scrub,/treatments/body-scrub,body scrub,Scrub treatment details,Treatment Info,Medium
+Mobile Spa Day,/services/mobile-spa-day-package,Balinese Massage,/treatments/traditional-balinese,Balinese massage,Massage component,Treatment Info,Medium
+Mobile Spa Day,/services/mobile-spa-day-package,Facial Services,/treatments/facial,facial services,Facial component,Treatment Info,Medium
+Mobile Spa Day,/services/mobile-spa-day-package,Couples Villa Massage,/services/couples-villa-massage,couples spa,Couples packages,Related Service,High
+Mobile Spa Day,/services/mobile-spa-day-package,Luxury Villa Wellness,/services/luxury-villa-wellness,luxury wellness,Premium option,Related Service,Low
+Mobile Spa Day,/services/mobile-spa-day-package,Seminyak,/seminyak,Seminyak,Beach villa area,Service Area,Low
+Mobile Spa Day,/services/mobile-spa-day-package,Services,/services,all services,Full menu,Navigation,Low
+Post-Hike Recovery,/services/post-hike-recovery,Sports Massage,/services/sports-massage,sports massage,General athletic recovery,Related Service,High
+Post-Hike Recovery,/services/post-hike-recovery,Post-Yoga Recovery,/services/post-yoga-recovery,post-yoga recovery,Similar athletic focus,Related Service,Medium
+Post-Hike Recovery,/services/post-hike-recovery,Therapeutic Massage,/services/therapeutic-massage,therapeutic massage,Healing approach,Related Service,Medium
+Post-Hike Recovery,/services/post-hike-recovery,Deep Tissue Massage,/treatments/deep-tissue-massage,deep tissue,Technique details,Treatment Info,Medium
+Post-Hike Recovery,/services/post-hike-recovery,Ubud Centre,/ubud-centre,Ubud centre,Near trekking departure points,Service Area,High
+Post-Hike Recovery,/services/post-hike-recovery,Services,/services,all services,Complete offerings,Navigation,Low
+Pregnancy Massage,/services/pregnancy-massage,Postnatal Massage,/services/postnatal-massage,postnatal massage,After birth recovery,Related Service,High
+Pregnancy Massage,/services/pregnancy-massage,Prenatal Treatment,/ubud/pregnancy-massage,prenatal treatment,Main prenatal page,Related Service,High
+Pregnancy Massage,/services/pregnancy-massage,Therapeutic Massage,/services/therapeutic-massage,therapeutic massage,Gentle approach,Related Service,Medium
+Pregnancy Massage,/services/pregnancy-massage,Foot Reflexology,/treatments/foot-reflexology,reflexology,Pregnancy-safe option,Treatment Info,Medium
+Pregnancy Massage,/services/pregnancy-massage,Ubud Centre,/ubud-centre,Ubud centre,Near BIMC Hospital,Service Area,Medium
+Pregnancy Massage,/services/pregnancy-massage,Sanur,/sanur,Sanur,Family-friendly area,Service Area,Low
+Pregnancy Massage,/services/pregnancy-massage,Services,/services,all services,Full menu,Navigation,Low
+Homepage,/,Couples Villa Massage,/services/couples-villa-massage,romantic couples massage,Perfect for honeymooners,New Service,High
+Homepage,/,Honeymoon Spa,/services/honeymoon-spa,honeymoon spa packages,Multi-day programs,New Service,High
+Homepage,/,Group Spa Day,/services/group-spa-day,group spa experiences,Retreats and celebrations,New Service,Medium
+Homepage,/,Luxury Villa Wellness,/services/luxury-villa-wellness,luxury villa wellness,VIP service,New Service,Medium
+Services Page,/services,Couples Villa Massage,/services/couples-villa-massage,Couples Villa Massage,Romantic in-room experience,New Service,High
+Services Page,/services,Honeymoon Spa,/services/honeymoon-spa,Honeymoon Spa Package,Multi-day couples wellness,New Service,High
+Services Page,/services,Post-Yoga Recovery,/services/post-yoga-recovery,Post-Yoga Recovery Massage,For yoga practitioners,New Service,Medium
+Services Page,/services,Group Spa Day,/services/group-spa-day,Group Spa Day Package,4-10 people simultaneously,New Service,Medium
+Services Page,/services,Detox Wellness,/services/detox-wellness-massage,Detox Wellness Massage,Lymphatic drainage programs,New Service,Medium
+Services Page,/services,Luxury Villa Wellness,/services/luxury-villa-wellness,Luxury Villa Wellness,VIP premium service,New Service,Medium
+Services Page,/services,Mobile Spa Day,/services/mobile-spa-day-package,Mobile Spa Day Package,Complete spa transformation,New Service,Low
+Services Page,/services,Post-Hike Recovery,/services/post-hike-recovery,Post-Hike Recovery,Mount Batur/Agung relief,New Service,Low
+Services Page,/services,Pregnancy Massage,/services/pregnancy-massage,Pregnancy Massage,Certified prenatal care,New Service,Low
+Uluwatu Area,/uluwatu,Uluwatu Surf Massage,/uluwatu/surf-recovery-massage,surf recovery massage,Post-session therapy,New Service,High
+Ubud Centre,/ubud-centre,Post-Yoga Recovery,/services/post-yoga-recovery,post-yoga recovery,Near major studios,New Service,High
+Ubud Centre,/ubud-centre,Post-Hike Recovery,/services/post-hike-recovery,post-hike recovery,Batur/Agung trekkers,New Service,High
+Canggu Area,/canggu,Uluwatu Surf Massage,/uluwatu/surf-recovery-massage,surf recovery,Also for Canggu surfers,Cross-Area,Medium
+Canggu Area,/canggu,Group Spa Day,/services/group-spa-day,group spa day,Group accommodations,New Service,Low
+Seminyak Area,/seminyak,Couples Villa Massage,/services/couples-villa-massage,couples villa massage,Romantic service,New Service,High
+Seminyak Area,/seminyak,Honeymoon Spa,/services/honeymoon-spa,honeymoon spa,Beach honeymoon hotspot,New Service,High
+Blog/Content,/blog,Post-Yoga Recovery,/services/post-yoga-recovery,post-yoga recovery massage,Yoga wellness content,Content Link,Low
+Blog/Content,/blog,Post-Hike Recovery,/services/post-hike-recovery,post-hike recovery massage,Hiking in Bali content,Content Link,Low
+Blog/Content,/blog,Detox Wellness,/services/detox-wellness-massage,detox wellness massage,Wellness retreat content,Content Link,Low
