@@ -36,7 +36,7 @@ const treatments = [
     name: 'Hot Stone Massage', 
     url: '/ubud/hot-stone-massage',
     description: 'Heated volcanic stones for deep relaxation',
-    priceFrom: 'Rp 400,000',
+    priceFrom: 'Rp 360,000',
     duration: '60-120 min',
     category: 'Luxury & Special'
   },
@@ -44,7 +44,7 @@ const treatments = [
     name: 'Thai Massage', 
     url: '/ubud/thai-massage',
     description: 'Assisted stretching & pressure point work',
-    priceFrom: 'Rp 280,000',
+    priceFrom: 'Rp 360,000',
     duration: '60-120 min',
     category: 'Traditional & Relaxation'
   },
