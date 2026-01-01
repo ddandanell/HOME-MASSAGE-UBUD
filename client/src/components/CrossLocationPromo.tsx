@@ -51,7 +51,6 @@ export default function CrossLocationPromo() {
                 
                 <a 
                   href="https://www.homemassagekuta.com/" 
-                  target="_self"
                   rel="noopener"
                   className="flex-shrink-0"
                 >
