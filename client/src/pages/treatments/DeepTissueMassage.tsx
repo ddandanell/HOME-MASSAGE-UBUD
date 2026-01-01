@@ -53,14 +53,14 @@ export default function DeepTissueMassage() {
       },
       {
         duration: '90 Minutes',
-        price: 'Rp 440,000',
-        priceIDR: 'Rp 440,000',
+        price: 'Rp 460,000',
+        priceIDR: 'Rp 460,000',
         description: 'Full body deep tissue massage with extended focus on multiple tension areas'
       },
       {
         duration: '120 Minutes',
-        price: 'Rp 560,000',
-        priceIDR: 'Rp 560,000',
+        price: 'Rp 600,000',
+        priceIDR: 'Rp 600,000',
         description: 'Comprehensive therapeutic session with hot stone enhancement and stretching'
       }
     ],

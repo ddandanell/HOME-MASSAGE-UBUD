@@ -48,8 +48,8 @@ const massageTypes = [
     description: 'Volcanic stones and therapeutic massage for ultimate muscle relaxation',
     duration: '75-90 minutes',
     price: {
-      single: 400000,
-      couple: 720000
+      single: 360000,
+      couple: 680000
     },
     benefits: ['Deep muscle relaxation', 'Improved circulation', 'Pain relief', 'Stress reduction'],
     popular: false
@@ -118,7 +118,7 @@ export default function Pricing() {
     <>
       <SEOHead
         title="Massage Pricing Ubud | Fair & Transparent Rates"
-        description="Ubud massage pricing from 240k IDR. Professional in-villa massage rates. Traditional Balinese, deep tissue & more. Transparent pricing, no hidden fees."
+        description="Ubud massage pricing from 280k IDR. Professional in-villa massage rates. Traditional Balinese, deep tissue & more. Transparent pricing, no hidden fees."
         canonical="https://homemassageubud.com/pricing"
         keywords="ubud massage price, massage ubud cost, ubud massage rates, villa massage pricing, spa prices ubud, massage therapy cost ubud bali"
       />

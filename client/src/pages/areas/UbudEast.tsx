@@ -7,7 +7,7 @@ export default function UbudEast() {
     slug: 'ubud-east',
     h1Title: 'Villa Massage in Ubud East – Campuhan Ridge Area Spa',
     metaTitle: 'Massage Ubud East | Campuhan Ridge Area Service',
-    metaDescription: 'Villa massage Ubud East & Campuhan Ridge area. Perfect post-hike spa for wellness seekers. Professional treatment from 240k IDR. Book experts 7am-10pm daily.',
+    metaDescription: 'Villa massage Ubud East & Campuhan Ridge area. Perfect post-hike spa for wellness seekers. Professional treatment from 280k IDR. Book experts 7am-10pm daily.',
     heroSubtitle: 'Professional massage therapy delivered to your accommodation in Ubud East, near Campuhan Ridge Walk and wellness centers',
     areaDescription: 'Mobile massage service in Ubud East - gateway to Campuhan Ridge and wellness retreats',
     longDescription: 'Ubud East, including the Campuhan Ridge area, is known for its iconic ridge walk, wellness centers, and peaceful atmosphere. This area offers easy access to one of Bali\'s most beautiful hiking trails while maintaining proximity to central Ubud. Home to yoga studios, healing centers, and boutique accommodations, Ubud East attracts wellness-focused travelers. Our mobile massage service brings professional treatments directly to your hotel or villa, perfect for post-hike recovery or enhancing your wellness journey in this special part of Ubud.',

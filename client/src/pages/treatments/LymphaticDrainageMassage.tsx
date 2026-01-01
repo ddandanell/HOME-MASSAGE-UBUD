@@ -11,8 +11,8 @@ export default function LymphaticDrainageMassage() {
     metaDescription: 'Lymphatic drainage massage Ubud for detox & wellness to your villa. Reduce swelling, boost immunity & improve circulation. From 384k IDR. Certified therapists.',
     heroSubtitle: 'Gentle lymphatic drainage massage for detoxification and wellness, delivered to your Ubud villa by certified therapists',
     duration: '60-90 minutes',
-    priceFrom: 'Rp 360,000',
-    priceFromIDR: 'Rp 360,000',
+    priceFrom: 'Rp 384,000',
+    priceFromIDR: 'Rp 384,000',
     image: lymphaticImage,
     description: 'Gentle lymphatic drainage massage Ubud - therapeutic detoxification treatment promoting natural cleansing',
     longDescription: 'Experience the therapeutic benefits of lymphatic drainage massage in Ubud. This specialized, gentle massage technique stimulates your lymphatic system to remove toxins, reduce swelling, and boost your immune function. Ideal for detoxification, post-travel recovery, and wellness enhancement, our certified therapists bring this healing treatment directly to your villa in Ubud and surrounding areas.',
@@ -47,20 +47,20 @@ export default function LymphaticDrainageMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: 'Rp 360,000',
-        priceIDR: 'Rp 360,000',
+        price: 'Rp 384,000',
+        priceIDR: 'Rp 384,000',
         description: 'Full body lymphatic drainage focusing on major lymph node areas and circulation'
       },
       {
         duration: '90 Minutes',
-        price: 'Rp 520,000',
-        priceIDR: 'Rp 520,000',
+        price: 'Rp 550,000',
+        priceIDR: 'Rp 550,000',
         description: 'Extended detox session with facial lymphatic drainage and body work'
       },
       {
         duration: '120 Minutes',
-        price: 'Rp 640,000',
-        priceIDR: 'Rp 640,000',
+        price: 'Rp 720,000',
+        priceIDR: 'Rp 720,000',
         description: 'Complete wellness ritual with body brushing, lymphatic massage, and aromatherapy'
       }
     ],

@@ -59,7 +59,7 @@ export default function Ungasan() {
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: 'Rp 400,000',
+        priceFrom: 'Rp 360,000',
         duration: '60-120 min'
       },
       {
@@ -89,7 +89,7 @@ export default function Ungasan() {
       {
         name: 'Thai Massage',
         slug: 'thai-massage',
-        priceFrom: 'Rp 280,000',
+        priceFrom: 'Rp 360,000',
         duration: '60-120 min'
       },
       {

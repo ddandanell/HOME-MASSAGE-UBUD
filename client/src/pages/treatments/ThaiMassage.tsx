@@ -8,11 +8,11 @@ export default function ThaiMassage() {
     slug: 'thai-massage',
     h1Title: 'Thai Massage in Ubud – Villa Spa Delivered',
     metaTitle: 'Thai Massage Ubud | Traditional Stretching Therapy',
-    metaDescription: 'Thai massage Ubud with ancient stretching & acupressure to your villa. Boost flexibility & energy flow. From 300k IDR. Expert therapists 7am-10pm daily.',
+    metaDescription: 'Thai massage Ubud with ancient stretching & acupressure to your villa. Boost flexibility & energy flow. From 360k IDR. Expert therapists 7am-10pm daily.',
     heroSubtitle: 'Ancient Thai healing art combining acupressure and assisted yoga stretches, delivered to your Ubud villa by trained therapists',
     duration: '60-120 minutes',
-    priceFrom: 'Rp 280,000',
-    priceFromIDR: 'Rp 280,000',
+    priceFrom: 'Rp 360,000',
+    priceFromIDR: 'Rp 360,000',
     image: thaiImage,
     description: 'Traditional Thai massage Ubud - ancient healing combining acupressure and assisted yoga stretches',
     longDescription: 'Experience the transformative power of traditional Thai massage in your Ubud villa. This ancient healing art, sometimes called "lazy yoga," combines acupressure, assisted yoga postures, and deep stretching techniques to improve flexibility, release tension, and activate your body\'s energy pathways. Performed on a comfortable floor mat with you fully clothed, Thai massage is perfect for those seeking increased mobility and energy flow. Our certified Thai massage therapists bring this centuries-old practice directly to your accommodation in Ubud.',
@@ -47,20 +47,20 @@ export default function ThaiMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: 'Rp 280,000',
-        priceIDR: 'Rp 280,000',
+        price: 'Rp 360,000',
+        priceIDR: 'Rp 360,000',
         description: 'Traditional Thai massage focusing on major muscle groups and flexibility work'
       },
       {
         duration: '90 Minutes',
-        price: 'Rp 400,000',
-        priceIDR: 'Rp 400,000',
+        price: 'Rp 520,000',
+        priceIDR: 'Rp 520,000',
         description: 'Extended Thai massage with deeper stretches and comprehensive energy line work'
       },
       {
         duration: '120 Minutes',
-        price: 'Rp 520,000',
-        priceIDR: 'Rp 520,000',
+        price: 'Rp 680,000',
+        priceIDR: 'Rp 680,000',
         description: 'Complete Thai healing session with herbal compress and extended therapeutic work'
       }
     ],

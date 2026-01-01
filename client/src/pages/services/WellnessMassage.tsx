@@ -45,21 +45,21 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 240,000',
-      priceIDR: 'Rp 240,000',
+      price: 'Rp 280,000',
+      priceIDR: 'Rp 280,000',
       description: 'Essential wellness massage balancing body and mind'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 360,000',
-      priceIDR: 'Rp 360,000',
+      price: 'Rp 400,000',
+      priceIDR: 'Rp 400,000',
       description: 'Extended wellness session with comprehensive integrative approach',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 480,000',
-      priceIDR: 'Rp 480,000',
+      price: 'Rp 520,000',
+      priceIDR: 'Rp 520,000',
       description: 'Complete wellness ritual including meditation and energy work'
     }
   ],

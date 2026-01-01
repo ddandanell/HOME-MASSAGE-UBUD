@@ -8,11 +8,11 @@ export default function TraditionalBalineseMassage() {
     slug: 'traditional-balinese-massage',
     h1Title: 'Traditional Balinese Massage in Ubud – Villa Spa Delivered',
     metaTitle: 'Balinese Massage Ubud | Traditional Villa Service',
-    metaDescription: 'Traditional Balinese massage Ubud to your villa. Authentic healing with acupressure & oils. Deep relaxation & stress relief. From 240k IDR. Book now 7am-10pm.',
+    metaDescription: 'Traditional Balinese massage Ubud to your villa. Authentic healing with acupressure & oils. Deep relaxation & stress relief. From 280k IDR. Book now 7am-10pm.',
     heroSubtitle: 'Licensed Balinese therapists bring authentic traditional massage to your villa or hotel in Ubud area, 7am-10pm daily',
     duration: '60-120 minutes',
-    priceFrom: 'Rp 240,000',
-    priceFromIDR: 'Rp 240,000',
+    priceFrom: 'Rp 280,000',
+    priceFromIDR: 'Rp 280,000',
     image: balineseImage,
     description: 'Authentic Balinese massage Ubud - traditional healing treatment combining palm pressure, acupressure, and aromatic oils delivered to your villa',
     longDescription: 'Experience the authentic healing art of traditional Balinese massage in the comfort of your villa in Ubud. This ancient therapeutic practice combines gentle palm pressure, acupressure techniques, and aromatic oils to stimulate blood flow, ease muscle tension, and restore energy balance. Our certified therapists bring centuries-old Balinese healing traditions directly to your accommodation in Ubud centre, Penestanan, Sayan, and surrounding villages.',
@@ -47,20 +47,20 @@ export default function TraditionalBalineseMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: 'Rp 240,000',
-        priceIDR: 'Rp 240,000',
+        price: 'Rp 280,000',
+        priceIDR: 'Rp 280,000',
         description: 'Full body traditional Balinese massage focusing on major muscle groups and stress points'
       },
       {
         duration: '90 Minutes',
-        price: 'Rp 360,000',
-        priceIDR: 'Rp 360,000',
+        price: 'Rp 400,000',
+        priceIDR: 'Rp 400,000',
         description: 'Extended session with extra time for problem areas, includes foot reflexology'
       },
       {
         duration: '120 Minutes',
-        price: 'Rp 480,000',
-        priceIDR: 'Rp 480,000',
+        price: 'Rp 520,000',
+        priceIDR: 'Rp 520,000',
         description: 'Complete therapeutic experience with head massage, body scrub, and extended relaxation'
       }
     ],

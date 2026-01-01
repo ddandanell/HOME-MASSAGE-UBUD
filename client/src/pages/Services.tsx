@@ -22,7 +22,7 @@ export default function Services() {
       id: 1,
       name: 'Traditional Balinese Massage',
       duration: '60-90 minutes',
-      price: 'From Rp 240,000',
+      price: 'From Rp 280,000',
       image: balineseImage,
       description: 'A traditional healing practice that combines gentle stretches, acupressure, and aromatherapy oils to stimulate blood circulation and ease tension.',
       benefits: [
@@ -37,7 +37,7 @@ export default function Services() {
       id: 2,
       name: 'Aromatherapy Massage',
       duration: '60-90 minutes',
-      price: 'From Rp 280,000',
+      price: 'From Rp 304,000',
       image: aromatherapyImage,
       description: 'Relaxing massage using premium essential oils that penetrate deep into the skin, promoting healing and emotional balance.',
       benefits: [
@@ -80,7 +80,7 @@ export default function Services() {
       id: 5,
       name: 'Thai Massage',
       duration: '60-90 minutes',
-      price: 'From Rp 280,000',
+      price: 'From Rp 360,000',
       image: thaiImage,
       description: 'Ancient healing art combining acupressure, assisted yoga postures, and stretching techniques.',
       benefits: [
@@ -94,7 +94,7 @@ export default function Services() {
       id: 6,
       name: 'Lymphatic Drainage',
       duration: '60-90 minutes',
-      price: 'From Rp 360,000',
+      price: 'From Rp 384,000',
       image: lymphaticImage,
       description: 'Gentle massage technique designed to stimulate lymphatic system and promote natural detoxification.',
       benefits: [
@@ -110,7 +110,7 @@ export default function Services() {
     <>
       <SEOHead
         title="Massage Services Ubud | 12+ Treatments at Your Villa"
-        description="Expert massage services Ubud: Traditional Balinese, deep tissue, hot stone & more. Licensed therapists to your villa. Professional treatments from 240k IDR."
+        description="Expert massage services Ubud: Traditional Balinese, deep tissue, hot stone & more. Licensed therapists to your villa. Professional treatments from 280k IDR."
         canonical="https://homemassageubud.com/services"
         keywords="massage services ubud, spa services ubud, balinese massage, deep tissue massage ubud, hot stone massage, thai massage ubud, pregnancy massage"
       />

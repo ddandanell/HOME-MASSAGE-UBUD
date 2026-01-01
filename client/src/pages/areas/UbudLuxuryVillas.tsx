@@ -48,7 +48,7 @@ export default function UbudLuxuryVillas() {
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: 'Rp 400,000',
+        priceFrom: 'Rp 360,000',
         duration: '60-120 min'
       },
       {
