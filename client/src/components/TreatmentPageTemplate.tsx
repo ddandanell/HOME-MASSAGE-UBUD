@@ -391,6 +391,26 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
           </section>
         )}
 
+        {/* Available Locations */}
+        <section className="py-16 bg-gradient-to-br from-amber-50 to-orange-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Available Throughout Bali
+              </h2>
+              <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+                We bring {treatment.name.toLowerCase()} directly to your villa, hotel, or resort across 23+ locations in Bali
+              </p>
+              <Link href="/service-areas">
+                <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
+                  <MapPin className="mr-2 h-5 w-5" />
+                  View All Service Areas
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-20 bg-gradient-to-r from-amber-600 to-orange-600">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
