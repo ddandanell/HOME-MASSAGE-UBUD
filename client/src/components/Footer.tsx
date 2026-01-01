@@ -5,21 +5,21 @@ const footerSections = [
   {
     title: 'Our Services',
     links: [
-      { name: 'All Treatments', href: '/treatments' },
-      { name: 'Traditional Balinese', href: '/ubud/traditional-balinese-massage' },
-      { name: 'Deep Tissue', href: '/ubud/deep-tissue-massage' },
-      { name: 'Aromatherapy', href: '/ubud/aromatherapy-massage' },
-      { name: 'Hot Stone', href: '/ubud/hot-stone-massage' }
+      { name: 'Browse All Massage Treatments', href: '/treatments' },
+      { name: 'Traditional Balinese Massage', href: '/ubud/traditional-balinese-massage' },
+      { name: 'Deep Tissue Massage', href: '/ubud/deep-tissue-massage' },
+      { name: 'Aromatherapy Massage', href: '/ubud/aromatherapy-massage' },
+      { name: 'Hot Stone Massage', href: '/ubud/hot-stone-massage' }
     ]
   },
   {
     title: 'Service Areas',
     links: [
-      { name: 'All Locations', href: '/service-areas' },
-      { name: 'Ubud Centre', href: '/ubud-centre' },
-      { name: 'Seminyak', href: '/seminyak' },
-      { name: 'Canggu', href: '/canggu' },
-      { name: 'Sanur', href: '/sanur' }
+      { name: 'View All Service Areas', href: '/service-areas' },
+      { name: 'Massage in Ubud Centre', href: '/ubud-centre' },
+      { name: 'Massage in Seminyak', href: '/seminyak' },
+      { name: 'Massage in Canggu', href: '/canggu' },
+      { name: 'Massage in Sanur', href: '/sanur' }
     ]
   },
   {

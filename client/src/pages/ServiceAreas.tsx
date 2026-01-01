@@ -205,9 +205,9 @@ export default function ServiceAreas() {
                 >
                   Book Your Location
                 </Button>
-                <Link href="/services">
+                <Link href="/treatments">
                   <Button size="lg" variant="outline" className="border-amber-600 text-amber-600 hover:bg-amber-50">
-                    View All Treatments
+                    Browse All Massage Treatments
                   </Button>
                 </Link>
               </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Clock, MapPin, Star, CheckCircle, MessageCircle, Phone } from 'lucide-react';
@@ -75,6 +76,13 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
       />
 
       <Header />
+      
+      <Breadcrumbs 
+        items={[
+          { label: 'Service Areas', href: '/service-areas' },
+          { label: area.name, current: true }
+        ]}
+      />
       
       <main>
         {/* Hero Section */}
