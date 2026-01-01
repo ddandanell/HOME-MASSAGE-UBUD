@@ -11,7 +11,8 @@
     "server:dev": "NODE_ENV=development tsx server/index.ts",
     "server:build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist-server",
     "server:start": "NODE_ENV=production node dist-server/index.js",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "seo:audit": "tsx scripts/seo-audit.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -98,8 +99,11 @@
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@types/ws": "^8.5.13",
+    "@types/xml2js": "^0.4.14",
     "@vitejs/plugin-react": "^4.3.2",
     "autoprefixer": "^10.4.20",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
     "drizzle-kit": "^0.30.4",
     "esbuild": "^0.25.0",
     "postcss": "^8.4.47",
@@ -107,7 +111,8 @@
     "ts-node": "^10.9.2",
     "tsx": "^4.19.1",
     "typescript": "5.6.3",
-    "vite": "^5.4.19"
+    "vite": "^5.4.19",
+    "xml2js": "^0.6.2"
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.8"
