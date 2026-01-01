@@ -36,7 +36,8 @@ const footerSections = [
       { name: 'About Us', href: '/about' },
       { name: 'Testimonials', href: '/testimonials' },
       { name: 'Blog', href: '/blog' },
-      { name: 'Sustainability', href: '/sustainability' }
+      { name: 'Sustainability', href: '/sustainability' },
+      { name: 'Recommended Services', href: '/recommended-services' }
     ]
   },
   {
