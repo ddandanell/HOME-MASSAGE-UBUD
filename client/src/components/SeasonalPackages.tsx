@@ -189,7 +189,7 @@ export default function SeasonalPackages() {
                     <pkg.icon className="h-6 w-6 text-amber-600" />
                   </div>
                   <div className="text-right">
-                    <div className="text-2xl font-bold text-emerald-700">{pkg.price}</div>
+                    <div className="text-2xl font-bold text-gray-900">{pkg.price}</div>
                     <div className="text-xs text-gray-600">{pkg.duration}</div>
                   </div>
                 </div>
@@ -204,7 +204,7 @@ export default function SeasonalPackages() {
                   <ul className="space-y-1">
                     {pkg.includes.map((item, index) => (
                       <li key={index} className="text-xs text-gray-700 flex items-start">
-                        <span className="text-emerald-600 mr-2">•</span>
+                        <span className="text-gray-900 mr-2">•</span>
                         <span>{item}</span>
                       </li>
                     ))}

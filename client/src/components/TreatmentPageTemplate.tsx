@@ -179,7 +179,7 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
                 <ul className="space-y-4">
                   {treatment.benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                      <CheckCircle className="w-6 h-6 text-gray-900 flex-shrink-0 mt-1" />
                       <span className="text-gray-700">{benefit}</span>
                     </li>
                   ))}

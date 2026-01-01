@@ -126,7 +126,7 @@ export default function Services() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Authentic <span className="text-amber-600">Balinese Healing</span>
               <br />
-              <span className="text-emerald-600">At Your Villa</span>
+              <span className="text-gray-900">At Your Villa</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Discover our comprehensive range of therapeutic massage treatments, 
@@ -212,7 +212,7 @@ export default function Services() {
                     <div className="grid grid-cols-2 gap-2">
                       {service.benefits.map((benefit, index) => (
                         <div key={index} className="flex items-center space-x-2 text-sm text-gray-700">
-                          <CheckCircle className="h-4 w-4 text-emerald-600 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-gray-900 flex-shrink-0" />
                           <span>{benefit}</span>
                         </div>
                       ))}
@@ -252,7 +252,7 @@ export default function Services() {
 
             <div className="text-center p-6 bg-white rounded-lg shadow-sm">
               <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="h-8 w-8 text-emerald-600" />
+                <CheckCircle className="h-8 w-8 text-gray-900" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Complete Setup</h3>
               <p className="text-gray-600">Professional massage table, linens, oils, and all equipment included</p>

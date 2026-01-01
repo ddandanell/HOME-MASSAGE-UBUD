@@ -72,39 +72,39 @@ export default function UbudMassageVsSpa() {
                 <div className="bg-emerald-600 text-white rounded-full p-3 mr-4">
                   <Home className="h-6 w-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-emerald-900">In-Villa Massage</h3>
+                <h3 className="text-2xl font-bold text-gray-900">In-Villa Massage</h3>
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-emerald-600 mr-3 mt-1 flex-shrink-0" />
+                  <Check className="h-5 w-5 text-gray-900 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <strong className="text-gray-900">Ultimate Convenience:</strong>
                     <p className="text-gray-700 text-sm mt-1">No need to travel - therapist comes to you with all equipment</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-emerald-600 mr-3 mt-1 flex-shrink-0" />
+                  <Check className="h-5 w-5 text-gray-900 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <strong className="text-gray-900">Total Privacy:</strong>
                     <p className="text-gray-700 text-sm mt-1">Enjoy massage in your private space without shared facilities</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-emerald-600 mr-3 mt-1 flex-shrink-0" />
+                  <Check className="h-5 w-5 text-gray-900 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <strong className="text-gray-900">Flexible Scheduling:</strong>
                     <p className="text-gray-700 text-sm mt-1">Book anytime between 8AM-9PM, including same-day availability</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-emerald-600 mr-3 mt-1 flex-shrink-0" />
+                  <Check className="h-5 w-5 text-gray-900 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <strong className="text-gray-900">Better Value:</strong>
                     <p className="text-gray-700 text-sm mt-1">Competitive pricing without hotel spa markups</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <Check className="h-5 w-5 text-emerald-600 mr-3 mt-1 flex-shrink-0" />
+                  <Check className="h-5 w-5 text-gray-900 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <strong className="text-gray-900">Perfect for Groups:</strong>
                     <p className="text-gray-700 text-sm mt-1">Easy to arrange couples or family massage sessions</p>
@@ -180,7 +180,7 @@ export default function UbudMassageVsSpa() {
                   <tr key={index} className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4">
                       <div className="flex items-center">
-                        <item.icon className="h-5 w-5 text-emerald-600 mr-3" />
+                        <item.icon className="h-5 w-5 text-gray-900 mr-3" />
                         <span className="font-medium text-gray-900">{item.feature}</span>
                       </div>
                     </td>
@@ -188,12 +188,12 @@ export default function UbudMassageVsSpa() {
                       <div className="flex items-center justify-center">
                         {typeof item.inVilla === 'boolean' ? (
                           item.inVilla ? (
-                            <Check className="h-6 w-6 text-emerald-600" />
+                            <Check className="h-6 w-6 text-gray-900" />
                           ) : (
                             <X className="h-6 w-6 text-gray-400" />
                           )
                         ) : (
-                          <span className="text-emerald-700 font-medium">{item.inVilla}</span>
+                          <span className="text-gray-900 font-medium">{item.inVilla}</span>
                         )}
                       </div>
                     </td>
@@ -201,7 +201,7 @@ export default function UbudMassageVsSpa() {
                       <div className="flex items-center justify-center">
                         {typeof item.traditionalSpa === 'boolean' ? (
                           item.traditionalSpa ? (
-                            <Check className="h-6 w-6 text-emerald-600" />
+                            <Check className="h-6 w-6 text-gray-900" />
                           ) : (
                             <X className="h-6 w-6 text-gray-400" />
                           )

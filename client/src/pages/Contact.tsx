@@ -71,7 +71,7 @@ export default function Contact() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Contact <span className="text-blue-600">Home Massage</span>
               <br />
-              <span className="text-emerald-600">Ubud</span>
+              <span className="text-gray-900">Ubud</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 px-2 sm:px-0">
               Ready to book your relaxing massage experience? Contact us through your preferred method below.
@@ -160,7 +160,7 @@ export default function Contact() {
                 <div className="grid grid-cols-2 gap-2 sm:gap-3">
                   {serviceAreas.map((area, index) => (
                     <div key={index} className="flex items-center space-x-2">
-                      <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-green-600 flex-shrink-0" />
+                      <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-gray-900 flex-shrink-0" />
                       <span className="text-xs sm:text-sm text-gray-700">{area}</span>
                     </div>
                   ))}
@@ -175,7 +175,7 @@ export default function Contact() {
                     onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
                     className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors w-full"
                   >
-                    <MessageCircle className="h-6 w-6 sm:h-8 sm:w-8 text-green-600" />
+                    <MessageCircle className="h-6 w-6 sm:h-8 sm:w-8 text-gray-900" />
                     <div>
                       <p className="font-semibold text-gray-900 text-sm sm:text-base">WhatsApp</p>
                       <p className="text-xs sm:text-sm text-gray-600">+62 811-2656-869</p>

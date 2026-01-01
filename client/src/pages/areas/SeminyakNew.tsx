@@ -167,7 +167,7 @@ export default function SeminyakMassage() {
                 <span>Licensed Therapists Only</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-green-600" />
+                <CheckCircle className="w-4 h-4 text-gray-900" />
                 <span>All Equipment Included</span>
               </div>
             </div>
@@ -268,7 +268,7 @@ export default function SeminyakMassage() {
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">Deep Tissue Restoration</h3>
-                    <p className="text-green-600 font-semibold">Therapeutic Muscle Work</p>
+                    <p className="text-gray-900 font-semibold">Therapeutic Muscle Work</p>
                   </div>
                   <span className="text-lg font-bold text-amber-600">Rp 320k</span>
                 </div>
@@ -347,7 +347,7 @@ export default function SeminyakMassage() {
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-green-600" />
+                  <Users className="w-8 h-8 text-gray-900" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Villa Partnerships</h3>
                 <p className="text-gray-600">

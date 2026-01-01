@@ -210,7 +210,7 @@ export default function Testimonials() {
 
                   {/* Highlight */}
                   <div className="mb-3 sm:mb-4">
-                    <Badge variant="outline" className="text-xs text-emerald-700 border-emerald-200">
+                    <Badge variant="outline" className="text-xs text-gray-900 border-emerald-200">
                       {testimonial.highlight}
                     </Badge>
                   </div>
@@ -261,7 +261,7 @@ export default function Testimonials() {
             
             <div className="text-center">
               <div className="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                <MapPin className="h-6 w-6 sm:h-8 sm:w-8 text-emerald-600" />
+                <MapPin className="h-6 w-6 sm:h-8 sm:w-8 text-gray-900" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Convenience</h3>
               <p className="text-xs sm:text-sm text-gray-600">We come to you with all equipment, setup, and cleanup - just relax and enjoy your treatment.</p>

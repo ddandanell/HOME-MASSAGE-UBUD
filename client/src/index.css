@@ -4,21 +4,21 @@
 @tailwind utilities;
 
 :root {
-  /* Home Massage Ubud Light/Happy Theme Colors */
+  /* Home Massage Ubud Light/Happy Theme Colors - Optimized for WCAG AA Accessibility */
   --background: hsl(40, 30%, 98%); /* Creamy White */
-  --foreground: hsl(32, 20%, 20%); /* Dark Brown Text */
+  --foreground: hsl(0, 0%, 10%); /* Near-Black Text for High Contrast */
   --card: hsl(0, 0%, 100%); /* White */
-  --card-foreground: hsl(32, 20%, 20%);
+  --card-foreground: hsl(0, 0%, 10%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(32, 20%, 20%);
-  --primary: hsl(152, 76%, 80%); /* Light Emerald Green */
-  --primary-foreground: hsl(152, 76%, 10%); /* Dark Green Text */
+  --popover-foreground: hsl(0, 0%, 10%);
+  --primary: hsl(152, 76%, 80%); /* Light Emerald Green - Background Use Only */
+  --primary-foreground: hsl(0, 0%, 10%); /* Dark Text for Accessibility */
   --secondary: hsl(35, 60%, 92%); /* Soft Amber/Beige */
-  --secondary-foreground: hsl(35, 80%, 20%);
+  --secondary-foreground: hsl(0, 0%, 13%); /* Dark Gray Text */
   --muted: hsl(35, 20%, 90%);
-  --muted-foreground: hsl(32, 10%, 40%);
+  --muted-foreground: hsl(0, 0%, 25%); /* Darker for Better Contrast */
   --accent: hsl(35, 80%, 50%); /* Gold */
-  --accent-foreground: hsl(35, 80%, 10%);
+  --accent-foreground: hsl(0, 0%, 10%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 98%);
   --border: hsl(35, 20%, 85%);
@@ -31,24 +31,29 @@
   
   /* Border radius */
   --radius: 0.75rem;
+  
+  /* High Contrast Text Colors for Accessibility */
+  --text-dark: hsl(0, 0%, 10%); /* #1A1A1A - Primary dark text */
+  --text-darker: hsl(0, 0%, 5%); /* #0D0D0D - Headings */
+  --text-medium: hsl(0, 0%, 25%); /* #404040 - Secondary text */
 }
 
 .dark {
   /* Enforce light theme even in dark mode for now to ensure consistency */
   --background: hsl(40, 30%, 98%);
-  --foreground: hsl(32, 20%, 20%);
+  --foreground: hsl(0, 0%, 10%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(32, 20%, 20%);
+  --card-foreground: hsl(0, 0%, 10%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(32, 20%, 20%);
+  --popover-foreground: hsl(0, 0%, 10%);
   --primary: hsl(152, 76%, 80%);
-  --primary-foreground: hsl(152, 76%, 10%);
+  --primary-foreground: hsl(0, 0%, 10%);
   --secondary: hsl(35, 60%, 92%);
-  --secondary-foreground: hsl(35, 80%, 20%);
+  --secondary-foreground: hsl(0, 0%, 13%);
   --muted: hsl(35, 20%, 90%);
-  --muted-foreground: hsl(32, 10%, 40%);
+  --muted-foreground: hsl(0, 0%, 25%);
   --accent: hsl(35, 80%, 50%);
-  --accent-foreground: hsl(35, 80%, 10%);
+  --accent-foreground: hsl(0, 0%, 10%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 98%);
   --border: hsl(35, 20%, 85%);
@@ -90,5 +95,54 @@
   
   .amber-glow {
     box-shadow: 0 0 30px hsla(43, 96%, 56%, 0.4);
+  }
+  
+  /* High Contrast Accessibility Classes */
+  .text-accessible-dark {
+    color: var(--text-dark) !important;
+  }
+  
+  .text-accessible-darker {
+    color: var(--text-darker) !important;
+  }
+  
+  .text-accessible-medium {
+    color: var(--text-medium) !important;
+  }
+  
+  /* Mobile-First Responsive Utilities */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .responsive-padding {
+    @apply px-4 py-6 sm:px-6 sm:py-8 md:px-8 md:py-10 lg:px-10 lg:py-12;
+  }
+  
+  .responsive-text-sm {
+    @apply text-sm sm:text-base;
+  }
+  
+  .responsive-text-base {
+    @apply text-base sm:text-lg;
+  }
+  
+  .responsive-text-lg {
+    @apply text-lg sm:text-xl md:text-2xl;
+  }
+  
+  .responsive-text-xl {
+    @apply text-xl sm:text-2xl md:text-3xl;
+  }
+  
+  .responsive-text-2xl {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  /* Prevent horizontal scroll on mobile */
+  .no-horizontal-scroll {
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 }

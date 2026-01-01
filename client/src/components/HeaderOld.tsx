@@ -75,7 +75,7 @@ export default function Header() {
                 href="https://wa.me/628112656869" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-green-600 hover:text-green-700 transition-colors"
+                className="text-gray-900 hover:text-gray-900 transition-colors"
               >
                 <MessageCircle className="h-5 w-5" />
               </a>
@@ -129,7 +129,7 @@ export default function Header() {
                     href="https://wa.me/628112656869" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center text-green-600"
+                    className="flex items-center text-gray-900"
                   >
                     <MessageCircle className="h-4 w-4 mr-2" />
                     <span className="text-sm">WhatsApp</span>

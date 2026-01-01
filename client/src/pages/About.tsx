@@ -92,11 +92,11 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
-              <Badge className="mb-4 bg-emerald-100 text-emerald-800 hover:bg-emerald-100 text-xs sm:text-sm">
+              <Badge className="mb-4 bg-emerald-100 text-gray-900 hover:bg-emerald-100 text-xs sm:text-sm">
                 About Home Massage Ubud
               </Badge>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-                Bringing <span className="text-emerald-600">Authentic</span>
+                Bringing <span className="text-gray-900">Authentic</span>
                 <br />
                 <span className="text-amber-600">Balinese Wellness</span>
                 <br />
@@ -169,7 +169,7 @@ export default function About() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-emerald-600 mb-1 sm:mb-2">{stat.number}</div>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-1 sm:mb-2">{stat.number}</div>
                 <div className="text-sm sm:text-base text-gray-600 font-medium">{stat.label}</div>
               </div>
             ))}
@@ -211,7 +211,7 @@ export default function About() {
             {values.map((value, index) => (
               <div key={index} className="text-center p-4 sm:p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-emerald-100 to-amber-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                  <value.icon className="h-6 w-6 sm:h-8 sm:w-8 text-emerald-600" />
+                  <value.icon className="h-6 w-6 sm:h-8 sm:w-8 text-gray-900" />
                 </div>
                 <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 sm:mb-3">{value.title}</h3>
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{value.description}</p>
@@ -239,7 +239,7 @@ export default function About() {
                 </div>
                 
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
-                <p className="text-emerald-600 font-semibold mb-2 text-sm sm:text-base">{member.role}</p>
+                <p className="text-gray-900 font-semibold mb-2 text-sm sm:text-base">{member.role}</p>
                 <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">{member.experience} experience</p>
                 
                 <div className="mb-3 sm:mb-4">
@@ -273,7 +273,7 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-white text-emerald-600 hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto"
+              className="bg-white text-gray-900 hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto"
               onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
             >
               <MessageCircle className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
@@ -284,7 +284,7 @@ export default function About() {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-emerald-600 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full"
+                className="border-white text-white hover:bg-white hover:text-gray-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full"
               >
                 <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 WhatsApp Us
