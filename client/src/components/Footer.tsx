@@ -23,6 +23,14 @@ const footerSections = [
     ]
   },
   {
+    title: 'Other Locations',
+    links: [
+      { name: 'In-villa massage in Kuta', href: 'https://www.homemassagekuta.com/', external: true },
+      { name: 'Massage service in South Bali', href: 'https://www.homemassagekuta.com/', external: true },
+      { name: 'Home massage Seminyak area', href: 'https://www.homemassagekuta.com/seminyak', external: true }
+    ]
+  },
+  {
     title: 'Company',
     links: [
       { name: 'About Us', href: '/about' },
@@ -65,7 +73,7 @@ export default function Footer() {
   return (
     <footer className="bg-secondary py-12 md:py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-8">
           <div data-testid="footer-brand">
             <div className="serif text-xl md:text-2xl font-bold text-primary mb-4" data-testid="footer-logo">
               Home Massage Ubud
@@ -131,14 +139,6 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-border mt-8 md:mt-12 pt-6 md:pt-8 text-center text-muted-foreground">
-          <div className="footer-partners mb-6">
-            <h4 className="font-semibold text-primary mb-2">Trusted Massage Partners</h4>
-            <p className="text-sm">
-              Discover our sister sites:
-              <a href="https://homemassagekuta.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline mx-1">Home Massage Kuta</a> &
-              <a href="https://homemassageubud.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline mx-1">Home Massage Ubud</a>
-            </p>
-          </div>
           <div className="mb-4">
             <Link href="/sitemap">
               <span className="text-primary hover:underline text-sm">View Sitemap</span>
