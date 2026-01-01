@@ -131,6 +131,7 @@ export default function RecommendedServices() {
                   <a 
                     href={service.url} 
                     className="w-full"
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Button 
