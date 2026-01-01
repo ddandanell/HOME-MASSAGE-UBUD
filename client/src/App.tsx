@@ -17,6 +17,7 @@ import NotFound from "@/pages/NotFound";
 import ServiceAreas from "@/pages/ServiceAreas";
 import Treatments from "@/pages/Treatments";
 import Sitemap from "@/pages/Sitemap";
+import RecommendedServices from "@/pages/RecommendedServices";
 
 // Blog Articles
 import PremiumHomeMassageKuta from "@/pages/blog/PremiumHomeMassageKuta";
@@ -106,6 +107,7 @@ function Router() {
       <Route path="/testimonials" component={Testimonials} />
       <Route path="/villa-partnerships" component={VillaPartnerships} />
       <Route path="/sustainability" component={Sustainability} />
+      <Route path="/recommended-services" component={RecommendedServices} />
       <Route path="/blog" component={BlogNew} />
       
       {/* Blog Articles */}
