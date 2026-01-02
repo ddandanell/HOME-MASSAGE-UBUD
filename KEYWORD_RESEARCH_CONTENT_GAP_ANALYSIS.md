@@ -415,12 +415,6 @@ This analysis identifies **150+ keyword opportunities** across massage types, lo
    - Insomnia Treatment
    - Anxiety Relief
 
-4. **Seasonal Wellness Calendar** (4 seasonal guides)
-   - Monsoon Season Wellness (Oct-Mar)
-   - Dry Season Recovery (Apr-Sep)
-   - Holiday Season Packages (Dec-Jan)
-   - Ceremony Season Guide (Nyepi, Galungan)
-
 **Expected Impact**: +50-70% content coverage, improved topical authority, better rankings for informational queries.
 
 ---
@@ -466,12 +460,6 @@ This analysis identifies **150+ keyword opportunities** across massage types, lo
 - "Where to Get a Massage in Canggu: Beach Club or Villa?"
 - "Ubud Wellness Travel Guide: Yoga, Massage & Healing Ceremonies"
 - "Romantic Bali Honeymoon: Best Couples Massage Experiences"
-
-**Seasonal Content**:
-- "Monsoon Wellness: Best Treatments for Rainy Season in Bali"
-- "Dry Season Recovery: Cooling Massages for Hot Bali Days"
-- "Valentine's Day in Bali: Ultimate Romantic Spa Guide"
-- "Nyepi Wellness: Post-Silence Day Relaxation Guide"
 
 **Expected Impact**: +40-60% organic traffic from long-tail informational searches, improved domain authority, better rankings overall.
 
@@ -805,19 +793,13 @@ Examples:
 |------|-------|---------------------|--------------|-----------|
 | **Jan 1, 2025** | New Year | "new year massage bali" | Landing page | 4 weeks before |
 | **Feb 14, 2025** | Valentine's Day | "valentine's massage bali", "romantic couples" | Landing page + blog | 6 weeks before |
-| **Mar 22, 2025** | Nyepi (Silent Day) | "nyepi massage bali", "post-silence recovery" | Blog post | 4 weeks before |
-| **Apr-May 2025** | Dry Season Start | "dry season massage", "cooling treatments" | Seasonal page | Evergreen |
 | **Jun-Aug 2025** | Peak Tourist Season | All high-volume keywords | All pages | Optimize before Jun |
-| **Sep 16, 2025** | Galungan | "galungan massage", "ceremony recovery" | Blog post | 4 weeks before |
-| **Oct-Nov 2025** | Rice Harvest | "rice harvest massage", "tegallalang wellness" | Seasonal content | 4 weeks before |
 | **Dec 2025** | Holiday Season | "christmas massage bali", "new year spa" | Landing page | 6 weeks before |
 | **Jan 29, 2026** | Chinese New Year | "chinese new year massage" | Landing page | 6 weeks before |
 | **Feb 14, 2026** | Valentine's Day | "romantic valentine spa" | Landing page | 6 weeks before |
 
 **Content Calendar Strategy**:
-- Create evergreen seasonal pages (monsoon, dry season)
 - Create annual event pages (Valentine's, New Year)
-- Create cultural event content (Nyepi, Galungan)
 - Publish 4-6 weeks before each event
 - Refresh content annually with current year
 

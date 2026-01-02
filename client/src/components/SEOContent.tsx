@@ -113,9 +113,6 @@ export default function SEOContent() {
         banana leaf presentation traditional serving eco packaging sustainable 
         bamboo architecture natural materials sustainable design green building 
         rice terrace wellness subak irrigation system harmony balance 
-        monsoon season rainy weather humidity tropical climate seasonal adjustment 
-        dry season sunny weather outdoor activities hiking trails exploration 
-        Nyepi silent day cultural ceremony spiritual cleansing annual ritual 
         Galungan Kuningan temple ceremonies ancestral worship family gatherings 
         full moon purnama ceremony new moon tilem ritual lunar calendar 
         Balinese calendar pawukon system tika cycle traditional timekeeping 

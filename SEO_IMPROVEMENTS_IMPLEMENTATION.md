@@ -105,48 +105,7 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 - Targets long-tail query: "Ubud massage vs traditional spa"
 - Increases dwell time with engaging comparison format
 
-#### 2. Seasonal Packages Component
-**File:** `/client/src/components/SeasonalPackages.tsx`
-
-**Packages Created (6 total):**
-1. **Monsoon Detox Package** (Oct-Mar) - IDR 450K, 90 min
-   - Lymphatic drainage, detoxifying oils, warm herbal compress
-   - Targets humidity/rainy season effects
-
-2. **Dry Season Recovery** (Apr-Sep) - IDR 550K, 120 min
-   - Cooling cucumber/aloe, after-sun repair
-   - Targets sun exposure and heat
-
-3. **Rice Harvest Ritual** (Apr-May, Oct-Nov) - IDR 480K, 90 min
-   - Traditional temple massage, rice bran oil, flower blessing
-   - Cultural authenticity
-
-4. **Couples Wellness Retreat** (Year-Round) - IDR 850K for 2, 90 min
-   - Romantic setup with champagne, rose petals
-   - Side-by-side massage
-
-5. **Post-Ceremony Relief** (Nyepi & Ceremony Days) - IDR 320K, 60 min
-   - Frankincense/sandalwood, meditation guidance
-   - Spiritual integration
-
-6. **Yoga Retreat Recovery** (Year-Round) - IDR 420K, 90 min
-   - Thai yoga massage, deep stretching
-   - Complements yoga practice
-
-**Additional Features:**
-- Weather guide (Rainy vs Dry season explanation)
-- "About Our Seasonal Packages" section
-- Individual package cards with full details
-- Customization notice
-
-**Impact:**
-- Creates seasonal search opportunities
-- Provides bundled pricing transparency
-- Shows deep understanding of Ubud's climate and culture
-- Targets specific user personas (yogis, honeymooners, spiritual seekers)
-- Answers: "What massage should I get during rainy season?"
-
-#### 3. Enhanced Semantic SEO Content
+#### 2. Enhanced Semantic SEO Content
 **File:** `/client/src/components/SEOContent.tsx`
 
 **New LSI Terms Added (50+ terms):**
@@ -234,7 +193,6 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 - Homepage: ~12,000+ words
 - Added two major sections:
   - UbudMassageVsSpa: ~800 words visible content
-  - SeasonalPackages: ~1,200 words visible content
   - SEOContent: +2,000 words hidden SEO content
 
 ### User Engagement Metrics (Expected)
@@ -272,7 +230,6 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 5. **Create Blog Section**
    - "Top 5 Hiking Trails in Ubud + Post-Hike Massage"
    - "Understanding Traditional Balinese Massage Techniques"
-   - "Monsoon Wellness Guide for Ubud Travelers"
    - "How to Choose the Right Massage for Your Needs"
    - Build topical authority
 
