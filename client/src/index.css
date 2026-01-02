@@ -11,7 +11,7 @@
   --card-foreground: hsl(0, 0%, 10%);
   --popover: hsl(0, 0%, 100%);
   --popover-foreground: hsl(0, 0%, 10%);
-  --primary: hsl(152, 76%, 80%); /* Light Emerald Green - Background Use Only */
+  --primary: hsl(0, 0%, 0%); /* Pure Black */
   --primary-foreground: hsl(0, 0%, 10%); /* Dark Text for Accessibility */
   --secondary: hsl(35, 60%, 92%); /* Soft Amber/Beige */
   --secondary-foreground: hsl(0, 0%, 13%); /* Dark Gray Text */
@@ -23,7 +23,7 @@
   --destructive-foreground: hsl(0, 0%, 98%);
   --border: hsl(35, 20%, 85%);
   --input: hsl(35, 20%, 90%);
-  --ring: hsl(152, 76%, 80%);
+  --ring: hsl(0, 0%, 0%);
   
   /* Font families */
   --font-serif: 'Playfair Display', serif;
@@ -46,7 +46,7 @@
   --card-foreground: hsl(0, 0%, 10%);
   --popover: hsl(0, 0%, 100%);
   --popover-foreground: hsl(0, 0%, 10%);
-  --primary: hsl(152, 76%, 80%);
+  --primary: hsl(0, 0%, 0%);
   --primary-foreground: hsl(0, 0%, 10%);
   --secondary: hsl(35, 60%, 92%);
   --secondary-foreground: hsl(0, 0%, 13%);
@@ -58,7 +58,7 @@
   --destructive-foreground: hsl(0, 0%, 98%);
   --border: hsl(35, 20%, 85%);
   --input: hsl(35, 20%, 90%);
-  --ring: hsl(152, 76%, 80%);
+  --ring: hsl(0, 0%, 0%);
 }
 
 @layer base {
