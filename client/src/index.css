@@ -12,7 +12,7 @@
   --popover: hsl(0, 0%, 100%);
   --popover-foreground: hsl(0, 0%, 10%);
   --primary: hsl(0, 0%, 0%); /* Pure Black */
-  --primary-foreground: hsl(0, 0%, 10%); /* Dark Text for Accessibility */
+  --primary-foreground: hsl(0, 0%, 98%); /* White for High Contrast on Black */
   --secondary: hsl(35, 60%, 92%); /* Soft Amber/Beige */
   --secondary-foreground: hsl(0, 0%, 13%); /* Dark Gray Text */
   --muted: hsl(35, 20%, 90%);
@@ -47,7 +47,7 @@
   --popover: hsl(0, 0%, 100%);
   --popover-foreground: hsl(0, 0%, 10%);
   --primary: hsl(0, 0%, 0%);
-  --primary-foreground: hsl(0, 0%, 10%);
+  --primary-foreground: hsl(0, 0%, 98%);
   --secondary: hsl(35, 60%, 92%);
   --secondary-foreground: hsl(0, 0%, 13%);
   --muted: hsl(35, 20%, 90%);
