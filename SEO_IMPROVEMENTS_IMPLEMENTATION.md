@@ -105,48 +105,7 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 - Targets long-tail query: "Ubud massage vs traditional spa"
 - Increases dwell time with engaging comparison format
 
-#### 2. Seasonal Packages Component
-**File:** `/client/src/components/SeasonalPackages.tsx`
-
-**Packages Created (6 total):**
-1. **Monsoon Detox Package** (Oct-Mar) - IDR 450K, 90 min
-   - Lymphatic drainage, detoxifying oils, warm herbal compress
-   - Targets humidity/rainy season effects
-
-2. **Dry Season Recovery** (Apr-Sep) - IDR 550K, 120 min
-   - Cooling cucumber/aloe, after-sun repair
-   - Targets sun exposure and heat
-
-3. **Rice Harvest Ritual** (Apr-May, Oct-Nov) - IDR 480K, 90 min
-   - Traditional temple massage, rice bran oil, flower blessing
-   - Cultural authenticity
-
-4. **Couples Wellness Retreat** (Year-Round) - IDR 850K for 2, 90 min
-   - Romantic setup with champagne, rose petals
-   - Side-by-side massage
-
-5. **Post-Ceremony Relief** (Nyepi & Ceremony Days) - IDR 320K, 60 min
-   - Frankincense/sandalwood, meditation guidance
-   - Spiritual integration
-
-6. **Yoga Retreat Recovery** (Year-Round) - IDR 420K, 90 min
-   - Thai yoga massage, deep stretching
-   - Complements yoga practice
-
-**Additional Features:**
-- Weather guide (Rainy vs Dry season explanation)
-- "About Our Seasonal Packages" section
-- Individual package cards with full details
-- Customization notice
-
-**Impact:**
-- Creates seasonal search opportunities
-- Provides bundled pricing transparency
-- Shows deep understanding of Ubud's climate and culture
-- Targets specific user personas (yogis, honeymooners, spiritual seekers)
-- Answers: "What massage should I get during rainy season?"
-
-#### 3. Enhanced Semantic SEO Content
+#### 2. Enhanced Semantic SEO Content
 **File:** `/client/src/components/SEOContent.tsx`
 
 **New LSI Terms Added (50+ terms):**
@@ -172,8 +131,7 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 - Balinese Hindu rituals, temple blessings, tirta empul
 - traditional healer (balian, dukun), Usada Bali texts
 - Boreh paste, turmeric, ginger, galangal
-- Nyepi, Galungan, Kuningan ceremonies
-- monsoon/dry season awareness
+- Galungan, Kuningan ceremonies
 
 **Impact:**
 - Covers semantic field comprehensively
@@ -220,10 +178,8 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 - Comprehensive semantic field
 - Long-tail keyword coverage:
   - "ubud massage vs traditional spa"
-  - "monsoon massage ubud"
   - "post hike massage ubud"
   - "yoga retreat massage ubud"
-  - "couples massage ubud seasonal"
 
 ### Content Depth
 **Before:**
@@ -234,7 +190,6 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 - Homepage: ~12,000+ words
 - Added two major sections:
   - UbudMassageVsSpa: ~800 words visible content
-  - SeasonalPackages: ~1,200 words visible content
   - SEOContent: +2,000 words hidden SEO content
 
 ### User Engagement Metrics (Expected)
@@ -272,7 +227,6 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 5. **Create Blog Section**
    - "Top 5 Hiking Trails in Ubud + Post-Hike Massage"
    - "Understanding Traditional Balinese Massage Techniques"
-   - "Monsoon Wellness Guide for Ubud Travelers"
    - "How to Choose the Right Massage for Your Needs"
    - Build topical authority
 
@@ -337,8 +291,6 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 - [ ] "home massage ubud" - Target: Top 3
 - [ ] "in villa massage ubud" - Target: Top 3
 - [ ] "ubud massage vs spa" - Target: Top 5
-- [ ] "seasonal massage ubud" - Target: Top 10
-- [ ] "monsoon massage ubud" - Target: Top 10
 
 ### User Engagement Metrics
 - [ ] Average session duration (expect +30-60 seconds)
@@ -376,7 +328,6 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 - Review WhatsApp widget performance
 
 ### Monthly
-- Update seasonal packages based on current season
 - Add 1-2 new blog posts
 - Review and update meta descriptions if CTR is low
 - Analyze top-performing keywords and optimize further
@@ -403,7 +354,6 @@ Before deploying to production:
 - [ ] Validate schema markup with Google Rich Results Test
 - [ ] Check page load speed with PageSpeed Insights
 - [ ] Verify all internal links work correctly
-- [ ] Test seasonal packages CTA buttons
 - [ ] Ensure comparison table is mobile-responsive
 
 ---

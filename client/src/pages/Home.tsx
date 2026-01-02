@@ -20,7 +20,6 @@ import Footer from "@/components/Footer";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
 import UbudMassageVsSpa from "@/components/UbudMassageVsSpa";
-import SeasonalPackages from "@/components/SeasonalPackages";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CrossLocationPromo from "@/components/CrossLocationPromo";
 
@@ -88,7 +87,6 @@ export default function Home() {
         </section>
         <WhatToExpect />
         <UbudMassageVsSpa />
-        <SeasonalPackages />
         <SafetyHygiene />
         <Therapists />
         <Testimonials />

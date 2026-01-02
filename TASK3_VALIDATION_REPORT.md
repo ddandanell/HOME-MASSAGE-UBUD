@@ -64,7 +64,9 @@
   - HIGH: couples massage bali, massage canggu, deep tissue massage bali
   - MEDIUM: prenatal massage, jet lag massage, yoga retreat massage
   - LOW: surf recovery, desk pain massage, family massage
-  - VERY LOW: tech neck massage, monsoon massage, lulur body scrub
+  - VERY LOW: tech neck massage, lulur body scrub
+  
+  **Note**: Keywords like "monsoon massage" were later removed as related phantom products were identified and eliminated.
   
 - ✅ **Page Matching**:
   - Each keyword matched to: CREATE new page, OPTIMIZE existing, or EXPAND current
@@ -294,12 +296,10 @@
 ✅ **Cultural Tourists** - Interest in traditional Balinese healing
 
 ### Seasonal Opportunities Captured:
-✅ Nyepi (Silent Day) - March 2025
-✅ Galungan ceremonies - September 2025
-✅ Monsoon/Dry season variations
 ✅ Tourist peak season (Jun-Aug)
 ✅ Holiday seasons (Christmas, New Year, Valentine's, Chinese New Year)
-✅ Rice harvest periods (Apr-May, Oct-Nov)
+
+**Note**: Seasonal packages related to monsoon, Nyepi, and rice harvest were subsequently removed as they were phantom products not actually offered.
 
 ---
 
