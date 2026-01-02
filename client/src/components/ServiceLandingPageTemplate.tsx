@@ -289,15 +289,15 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Instant WhatsApp Booking</h3>
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <CheckCircle className="w-5 h-5 text-gray-900" />
                       <span>Reply within 5 minutes</span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <CheckCircle className="w-5 h-5 text-gray-900" />
                       <span>Same-day appointments available</span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <CheckCircle className="w-5 h-5 text-gray-900" />
                       <span>English & Indonesian speaking</span>
                     </div>
                   </div>
@@ -611,7 +611,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {service.trustPoints.map((point, index) => (
               <div key={index} className="flex items-start gap-3 p-4 bg-white rounded-lg shadow">
-                <Shield className="w-6 h-6 text-green-600 flex-shrink-0" />
+                <Shield className="w-6 h-6 text-gray-900 flex-shrink-0" />
                 <span className="text-gray-700">{point}</span>
               </div>
             ))}
@@ -622,7 +622,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
           <div className="flex flex-wrap justify-center gap-4">
             {service.trustPoints.map((point, index) => (
               <div key={index} className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow">
-                <CheckCircle className="w-5 h-5 text-green-600" />
+                <CheckCircle className="w-5 h-5 text-gray-900" />
                 <span className="text-gray-700 text-sm">{point}</span>
               </div>
             ))}
@@ -634,7 +634,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
             {service.trustPoints.map((point, index) => (
               <div key={index} className="text-center p-4 bg-white rounded-lg shadow">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <CheckCircle className="w-6 h-6 text-green-600" />
+                  <CheckCircle className="w-6 h-6 text-gray-900" />
                 </div>
                 <p className="text-sm text-gray-700">{point}</p>
               </div>
@@ -747,7 +747,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                 <ul className="space-y-4">
                   {service.whyChoosePoints.map((point, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                      <CheckCircle className="w-6 h-6 text-gray-900 flex-shrink-0 mt-1" />
                       <span className="text-gray-700">{point}</span>
                     </li>
                   ))}

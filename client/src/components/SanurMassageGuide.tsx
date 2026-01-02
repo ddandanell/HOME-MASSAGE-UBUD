@@ -217,7 +217,7 @@ export default function SanurMassageGuide() {
                     Mid-Range
                   </Badge>
                 </div>
-                <p className="text-green-600 font-semibold mb-3">{spa.subtitle}</p>
+                <p className="text-gray-900 font-semibold mb-3">{spa.subtitle}</p>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">{spa.description}</p>
                 <p className="text-xs text-gray-600 italic">{spa.vibe}</p>
               </div>
@@ -228,7 +228,7 @@ export default function SanurMassageGuide() {
         {/* Budget-Friendly */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-8">
-            <DollarSign className="w-8 h-8 text-green-500" />
+            <DollarSign className="w-8 h-8 text-gray-800" />
             <h3 className="text-3xl font-bold text-gray-900">Budget-Friendly Discoveries: Accessible Excellence</h3>
           </div>
           
@@ -237,7 +237,7 @@ export default function SanurMassageGuide() {
               <div key={index} className="bg-white rounded-xl shadow-lg p-6 border-2 border-green-100 hover:border-green-300 transition-all">
                 <div className="flex items-start justify-between mb-3">
                   <h4 className="text-xl font-bold text-gray-900">{spa.name}</h4>
-                  <Badge className="bg-green-100 text-green-700 hover:bg-green-200">
+                  <Badge className="bg-green-100 text-gray-900 hover:bg-green-200">
                     Budget
                   </Badge>
                 </div>
@@ -292,7 +292,7 @@ export default function SanurMassageGuide() {
           
           <div className="grid md:grid-cols-3 gap-6 mb-6">
             <div className="bg-white rounded-lg p-6 text-center shadow-md">
-              <div className="text-green-600 font-bold text-xl mb-2">Budget Spas</div>
+              <div className="text-gray-900 font-bold text-xl mb-2">Budget Spas</div>
               <div className="text-3xl font-bold text-gray-900 mb-2">$4-$7</div>
               <div className="text-sm text-gray-600">IDR 60k-100k / 60 min</div>
             </div>

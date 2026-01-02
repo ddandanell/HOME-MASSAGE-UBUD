@@ -52,7 +52,7 @@ export default function EnhancedHero() {
                 </svg>
               </span>
               <br />
-              Best In-Villa <span className="text-emerald-600">Balinese Massage</span>
+              Best In-Villa <span className="text-gray-900">Balinese Massage</span>
               <br />
               <span className="text-gray-700 text-3xl md:text-4xl lg:text-5xl">Delivered to Your Villa</span>
             </h1>
@@ -66,7 +66,7 @@ export default function EnhancedHero() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8 text-left">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-center space-x-2 text-sm text-gray-700">
-                  <CheckCircle className="h-4 w-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-gray-900 flex-shrink-0" />
                   <span>{benefit}</span>
                 </div>
               ))}
@@ -90,7 +90,7 @@ export default function EnhancedHero() {
                   className="px-6 py-4"
                   onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
                 >
-                  <MessageCircle className="mr-2 h-5 w-5 text-green-600" />
+                  <MessageCircle className="mr-2 h-5 w-5 text-gray-900" />
                   WhatsApp
                 </Button>
                 
@@ -150,7 +150,7 @@ export default function EnhancedHero() {
                 <p className="text-xs text-gray-600 mt-1">500+ Reviews</p>
               </div>
 
-              <div className="absolute -bottom-4 -left-4 bg-emerald-600 text-white p-4 rounded-xl shadow-lg">
+              <div className="absolute -bottom-4 -left-4 bg-gray-900 text-white p-4 rounded-xl shadow-lg">
                 <div className="flex items-center space-x-2">
                   <Clock className="h-5 w-5" />
                   <div>

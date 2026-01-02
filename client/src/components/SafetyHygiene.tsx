@@ -111,12 +111,12 @@ export default function SafetyHygiene() {
         <div className="text-center mt-12 md:mt-16">
           <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 md:p-8 max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-4">
-              <Shield className="w-8 h-8 text-emerald-600 mr-3" />
-              <h3 className="serif text-xl md:text-2xl font-bold text-emerald-800">
+              <Shield className="w-8 h-8 text-gray-900 mr-3" />
+              <h3 className="serif text-xl md:text-2xl font-bold text-gray-900">
                 100% Safe, Professional, & Ethical Services Guarantee
               </h3>
             </div>
-            <p className="text-emerald-700 text-base md:text-lg">
+            <p className="text-gray-900 text-base md:text-lg">
               We guarantee exclusively professional, therapeutic, and ethical services with the highest standards of safety, hygiene, and client respect. Our comprehensive insurance coverage, professional certifications, and strict safety protocols ensure your complete peace of mind and optimal therapeutic experience. Contact us at homemassageubud.com or +62 811-2656-869 for any safety questions or specific accommodation needs.
             </p>
           </div>

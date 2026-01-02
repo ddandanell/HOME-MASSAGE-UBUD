@@ -13,7 +13,7 @@ export default function TrustBadges({ variant = 'default', className = '' }: Tru
       icon: Shield,
       text: 'Licensed & Insured',
       description: 'Full professional licensing and comprehensive insurance coverage',
-      color: 'bg-emerald-50 text-emerald-700 border-emerald-200'
+      color: 'bg-emerald-50 text-gray-900 border-emerald-200'
     },
     {
       icon: Award,
@@ -31,7 +31,7 @@ export default function TrustBadges({ variant = 'default', className = '' }: Tru
       icon: CheckCircle,
       text: '100% Satisfaction',
       description: 'Money-back guarantee if you\'re not completely satisfied',
-      color: 'bg-green-50 text-green-700 border-green-200'
+      color: 'bg-green-50 text-gray-900 border-green-200'
     },
     {
       icon: Clock,

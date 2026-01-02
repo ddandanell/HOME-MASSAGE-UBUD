@@ -82,14 +82,14 @@ export default function RecommendedServices() {
       <section className="pt-20 pb-12 sm:pb-16 bg-gradient-to-br from-emerald-50 via-white to-amber-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <Badge className="mb-4 bg-emerald-100 text-emerald-800 hover:bg-emerald-100 text-xs sm:text-sm">
+            <Badge className="mb-4 bg-emerald-100 text-gray-900 hover:bg-emerald-100 text-xs sm:text-sm">
               <Home className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
               Recommended Services
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Recommended Services for Your
               <br />
-              <span className="text-emerald-600">Bali Villa Lifestyle</span>
+              <span className="text-gray-900">Bali Villa Lifestyle</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed mb-8">
               To help you create the perfect Bali living experience, we recommend these trusted 
@@ -109,7 +109,7 @@ export default function RecommendedServices() {
               <Card key={index} className="flex flex-col hover:shadow-xl transition-all duration-300 border-2 hover:border-emerald-200">
                 <CardHeader>
                   <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-emerald-100 to-amber-100 rounded-full flex items-center justify-center mb-4">
-                    <service.icon className="h-6 w-6 sm:h-7 sm:w-7 text-emerald-600" />
+                    <service.icon className="h-6 w-6 sm:h-7 sm:w-7 text-gray-900" />
                   </div>
                   <CardTitle className="text-xl sm:text-2xl mb-2">{service.name}</CardTitle>
                   <CardDescription className="text-sm sm:text-base leading-relaxed">

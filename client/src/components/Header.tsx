@@ -179,7 +179,7 @@ export default function Header() {
                       openWhatsApp(generateGeneralInquiryMessage());
                       setIsMenuOpen(false);
                     }}
-                    className="flex items-center text-green-600 hover:text-green-700 transition-colors"
+                    className="flex items-center text-gray-900 hover:text-gray-900 transition-colors"
                   >
                     <MessageCircle className="h-4 w-4 mr-2" />
                     <span className="text-sm font-medium">WhatsApp</span>

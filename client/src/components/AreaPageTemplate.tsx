@@ -245,7 +245,7 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {area.popularVillas.map((villa, index) => (
                 <div key={index} className="flex items-center gap-3 p-5 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
+                  <CheckCircle className="w-6 h-6 text-gray-900 flex-shrink-0" />
                   <span className="text-gray-700 font-medium">{villa}</span>
                 </div>
               ))}

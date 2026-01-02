@@ -142,15 +142,15 @@ export default function Pricing() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mb-10 sm:mb-12">
-            <div className="flex items-center text-emerald-600">
+            <div className="flex items-center text-gray-900">
               <Shield className="h-6 w-6 sm:h-7 sm:w-7 mr-3" />
               <span className="text-base sm:text-lg font-medium">Licensed Therapists</span>
             </div>
-            <div className="flex items-center text-emerald-600">
+            <div className="flex items-center text-gray-900">
               <Award className="h-6 w-6 sm:h-7 sm:w-7 mr-3" />
               <span className="text-base sm:text-lg font-medium">Premium Equipment</span>
             </div>
-            <div className="flex items-center text-emerald-600">
+            <div className="flex items-center text-gray-900">
               <MapPin className="h-6 w-6 sm:h-7 sm:w-7 mr-3" />
               <span className="text-base sm:text-lg font-medium">Service Area Coverage</span>
             </div>
@@ -216,7 +216,7 @@ export default function Pricing() {
                     <ul className="space-y-1">
                       {massage.benefits.map((benefit, i) => (
                         <li key={i} className="text-xs sm:text-sm text-gray-600 flex items-center">
-                          <Check className="h-3 w-3 mr-2 text-emerald-600" />
+                          <Check className="h-3 w-3 mr-2 text-gray-900" />
                           {benefit}
                         </li>
                       ))}
@@ -276,7 +276,7 @@ export default function Pricing() {
                     <ul className="space-y-1">
                       {pkg.includes.map((item, i) => (
                         <li key={i} className="text-xs sm:text-sm text-gray-600 flex items-center">
-                          <Check className="h-3 w-3 mr-2 text-emerald-600" />
+                          <Check className="h-3 w-3 mr-2 text-gray-900" />
                           {item}
                         </li>
                       ))}
@@ -307,7 +307,7 @@ export default function Pricing() {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="flex items-start space-x-3">
-                  <Check className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 mt-1 flex-shrink-0" />
+                  <Check className="h-4 w-4 sm:h-5 sm:w-5 text-gray-900 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-gray-900 text-sm sm:text-base">Transparent Pricing</h4>
                     <p className="text-xs sm:text-sm text-gray-600">No hidden fees. What you see is what you pay.</p>
@@ -315,7 +315,7 @@ export default function Pricing() {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <Check className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 mt-1 flex-shrink-0" />
+                  <Check className="h-4 w-4 sm:h-5 sm:w-5 text-gray-900 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-gray-900 text-sm sm:text-base">Free Consultation</h4>
                     <p className="text-xs sm:text-sm text-gray-600">Complimentary health assessment with every booking.</p>
@@ -323,7 +323,7 @@ export default function Pricing() {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <Check className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 mt-1 flex-shrink-0" />
+                  <Check className="h-4 w-4 sm:h-5 sm:w-5 text-gray-900 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-gray-900 text-sm sm:text-base">Equipment Included</h4>
                     <p className="text-xs sm:text-sm text-gray-600">Massage table, oils, towels - all provided.</p>
@@ -331,7 +331,7 @@ export default function Pricing() {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <Check className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 mt-1 flex-shrink-0" />
+                  <Check className="h-4 w-4 sm:h-5 sm:w-5 text-gray-900 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-gray-900 text-sm sm:text-base">Satisfaction Guaranteed</h4>
                     <p className="text-xs sm:text-sm text-gray-600">100% satisfaction or we'll make it right.</p>

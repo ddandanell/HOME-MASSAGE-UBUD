@@ -589,7 +589,7 @@ export default function Blog() {
                   <Heart className="h-6 w-6 text-amber-600" />
                 </div>
                 <div className="p-3 bg-emerald-100 rounded-full">
-                  <Leaf className="h-6 w-6 text-emerald-600" />
+                  <Leaf className="h-6 w-6 text-gray-900" />
                 </div>
                 <div className="p-3 bg-blue-100 rounded-full">
                   <Zap className="h-6 w-6 text-blue-600" />
