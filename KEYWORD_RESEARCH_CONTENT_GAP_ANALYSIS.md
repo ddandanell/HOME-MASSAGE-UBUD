@@ -14,9 +14,9 @@ This analysis identifies **150+ keyword opportunities** across massage types, lo
 **Key Findings**:
 - ✅ **Strong Coverage**: Core location keywords (18 area pages), basic service types (25+ service pages), 13 treatment pages
 - ⚠️ **Moderate Coverage**: Couple/romance keywords, pregnancy services, post-activity recovery
-- ❌ **Critical Gaps**: Digital nomad wellness, surf recovery content, cultural/retreat guides, seasonal wellness, detox programs
+- ❌ **Critical Gaps**: Digital nomad wellness, surf recovery content, cultural/retreat guides, detox programs
 
-**Recommended Priority**: Focus on **long-tail, low-competition phrases** targeting specific audience pain points (digital nomads, surfers, honeymooners) and seasonal opportunities.
+**Recommended Priority**: Focus on **long-tail, low-competition phrases** targeting specific audience pain points (digital nomads, surfers, honeymooners).
 
 ---
 
@@ -74,7 +74,6 @@ This analysis identifies **150+ keyword opportunities** across massage types, lo
 
 **Current Keyword Weaknesses**:
 - ❌ Limited audience-specific content (couples, families, digital nomads)
-- ❌ Minimal seasonal/event-based keywords
 - ❌ Missing informational "how-to" and guide content
 - ❌ Underutilized wellness retreat and spiritual healing angles
 - ❌ No dedicated pregnancy/postnatal content hubs
@@ -199,16 +198,12 @@ This analysis identifies **150+ keyword opportunities** across massage types, lo
 
 | Keyword | Search Intent | Volume Estimate | Competition | Current Coverage | Recommended Action |
 |---------|---------------|-----------------|-------------|------------------|-------------------|
-| **nyepi massage bali** | Informational | LOW | Very Low | ⚠️ Seasonal Packages | Expand cultural event content |
-| **galungan massage bali** | Informational | LOW | Very Low | ⚠️ Seasonal Packages | Add ceremony recovery content |
-| **monsoon massage bali** | Commercial | LOW | Very Low | ✅ Seasonal Packages | Optimize rainy season content |
-| **dry season massage bali** | Commercial | LOW | Very Low | ✅ Seasonal Packages | Optimize hot season content |
 | **new year massage bali** | Commercial | MEDIUM | Low | ❌ Missing | NEW: Holiday packages |
 | **christmas massage bali** | Commercial | LOW | Low | ❌ Missing | NEW: Holiday packages |
 | **valentine's massage bali** | Commercial | MEDIUM | Medium | ⚠️ Couples page | Add romantic holiday content |
 | **full moon ceremony massage** | Informational | LOW | Very Low | ❌ Missing | NEW: Spiritual wellness content |
 
-**Recommendation**: Create a **seasonal content calendar** with event-specific pages and packages. Target 3-4 weeks before each major holiday/event.
+**Recommendation**: Create event-specific holiday pages. Target 3-4 weeks before each major holiday/event.
 
 ---
 
@@ -317,11 +312,10 @@ This analysis identifies **150+ keyword opportunities** across massage types, lo
 | 23 | **bachelorette spa bali** | Commercial | MEDIUM | Medium | ❌ None | Group events page | CREATE |
 | 24 | **massage sanur** | Local+Commercial | MEDIUM | Low | ✅ Area | Family/senior focus | OPTIMIZE |
 | 25 | **desk pain massage bali** | Problem-Solution | LOW | Very Low | ❌ None | Nomad wellness | CREATE |
-| 26 | **monsoon massage bali** | Commercial | LOW | Very Low | ✅ Seasonal | Optimize seasonal | OPTIMIZE |
-| 27 | **tech neck massage bali** | Problem-Solution | LOW | Very Low | ❌ None | Nomad wellness | CREATE |
-| 28 | **massage pecatu** | Local+Commercial | LOW | Low | ❌ None | NEW area page | CREATE |
-| 29 | **lulur body scrub massage** | Commercial | LOW | Very Low | ❌ None | Cultural treatment | CREATE |
-| 30 | **family massage service bali** | Commercial | LOW | Low | ❌ None | Family wellness | CREATE |
+| 26 | **tech neck massage bali** | Problem-Solution | LOW | Very Low | ❌ None | Nomad wellness | CREATE |
+| 27 | **massage pecatu** | Local+Commercial | LOW | Low | ❌ None | NEW area page | CREATE |
+| 28 | **lulur body scrub massage** | Commercial | LOW | Very Low | ❌ None | Cultural treatment | CREATE |
+| 29 | **family massage service bali** | Commercial | LOW | Low | ❌ None | Family wellness | CREATE |
 
 ---
 
@@ -511,11 +505,6 @@ This analysis identifies **150+ keyword opportunities** across massage types, lo
 - [ ] **Month 3, Weeks 1-2**: Problem-Solution Hub
   - Create 4 problem-solution pages (Tech Neck, Sunburn, Hangover, Insomnia)
   - Launch 2 "How to Fix..." blog posts
-
-- [ ] **Month 3, Weeks 3-4**: Seasonal Content
-  - Create monsoon wellness guide
-  - Create dry season recovery guide
-  - Add seasonal package recommendations
 
 **Expected Results**: +30-40% total traffic increase, 30-50 new keyword rankings, improved E-E-A-T signals
 

@@ -131,8 +131,7 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 - Balinese Hindu rituals, temple blessings, tirta empul
 - traditional healer (balian, dukun), Usada Bali texts
 - Boreh paste, turmeric, ginger, galangal
-- Nyepi, Galungan, Kuningan ceremonies
-- monsoon/dry season awareness
+- Galungan, Kuningan ceremonies
 
 **Impact:**
 - Covers semantic field comprehensively
@@ -179,10 +178,8 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 - Comprehensive semantic field
 - Long-tail keyword coverage:
   - "ubud massage vs traditional spa"
-  - "monsoon massage ubud"
   - "post hike massage ubud"
   - "yoga retreat massage ubud"
-  - "couples massage ubud seasonal"
 
 ### Content Depth
 **Before:**
@@ -294,8 +291,6 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 - [ ] "home massage ubud" - Target: Top 3
 - [ ] "in villa massage ubud" - Target: Top 3
 - [ ] "ubud massage vs spa" - Target: Top 5
-- [ ] "seasonal massage ubud" - Target: Top 10
-- [ ] "monsoon massage ubud" - Target: Top 10
 
 ### User Engagement Metrics
 - [ ] Average session duration (expect +30-60 seconds)
@@ -333,7 +328,6 @@ Experience #1 in-villa Ubud massage with professional Balinese therapists at you
 - Review WhatsApp widget performance
 
 ### Monthly
-- Update seasonal packages based on current season
 - Add 1-2 new blog posts
 - Review and update meta descriptions if CTR is low
 - Analyze top-performing keywords and optimize further
@@ -360,7 +354,6 @@ Before deploying to production:
 - [ ] Validate schema markup with Google Rich Results Test
 - [ ] Check page load speed with PageSpeed Insights
 - [ ] Verify all internal links work correctly
-- [ ] Test seasonal packages CTA buttons
 - [ ] Ensure comparison table is mobile-responsive
 
 ---
