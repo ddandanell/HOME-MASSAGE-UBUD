@@ -104,7 +104,7 @@ npm run server:start
 
 ## SEO Content Pipeline
 
-This project includes a two-prompt system for scalable SEO landing page generation:
+This project includes a comprehensive prompt system for scalable SEO landing page generation:
 
 ### Prompt Files
 
@@ -112,6 +112,7 @@ This project includes a two-prompt system for scalable SEO landing page generati
 |------|---------|
 | `KEYWORD_BLUEPRINT_PROMPT.md` | Converts keyword research into structured build instructions |
 | `LANDING_PAGE_EXECUTION_PROMPT.md` | Generates landing pages from keyword blueprints |
+| `SEO_HEADING_STRUCTURE_AGENT.md` | Creates optimized H1-H6 heading hierarchies for any page type |
 | `KEYWORD_BLUEPRINT_OUTPUT_EXAMPLE.md` | Example output for 10 high-volume keywords |
 
 ### Workflow
