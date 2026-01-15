@@ -699,7 +699,7 @@ Geographic location: Canggu, Bali
 Your heading structures must meet these standards:
 
 - ✓ **Perfect hierarchy** - No skipped levels, proper nesting
-- ✓ **Optimal keyword density** - 30-40% of all headings contain keywords
+- ✓ **Optimal keyword density** - 35-40% of all headings contain keywords
 - ✓ **Natural language** - Keywords integrated naturally, not forced
 - ✓ **Descriptive headings** - Users know exactly what each section contains
 - ✓ **Scannable structure** - Easy to skim and find information
