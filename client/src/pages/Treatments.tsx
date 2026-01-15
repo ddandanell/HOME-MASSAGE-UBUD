@@ -127,8 +127,8 @@ export default function Treatments() {
   return (
     <div className="min-h-screen bg-background text-foreground antialiased">
       <SEOHead
-        title="All Massage Treatments | Home Massage Ubud - Complete Menu"
-        description="Browse our complete massage treatment menu: Traditional Balinese, Deep Tissue, Hot Stone, Thai, Aromatherapy, Pregnancy, Couples & more. Professional in-villa service in Ubud. Book now!"
+        title="Massage Treatments Ubud | 13+ Professional Services"
+        description="Massage treatments Ubud delivered to your villa. Traditional Balinese, deep tissue, hot stone, Thai, aromatherapy & more. Licensed therapists. Book today."
         canonical="https://homemassageubud.com/treatments"
         keywords="massage treatments ubud, balinese massage, deep tissue massage, spa menu ubud, massage types bali, in-villa treatments"
       />
@@ -146,13 +146,15 @@ export default function Treatments() {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-                All Massage Treatments in Ubud
+                Massage Treatments Ubud
+                <br />
+                <span className="text-amber-600">Complete Professional Menu</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
-                Choose from our complete range of professional massage therapies, all delivered to your villa, 
-                hotel, or guesthouse in Ubud and across Bali. Licensed therapists bring everything needed for 
-                an exceptional spa experience.
+                Massage treatments Ubud delivered to your villa with our complete range of professional therapies. 
+                Traditional Balinese, deep tissue, hot stone & 13+ treatments. Licensed therapists bring everything 
+                needed for an exceptional spa experience at your accommodation.
               </p>
               
               <div className="flex flex-wrap justify-center gap-6">
@@ -226,6 +228,13 @@ export default function Treatments() {
             <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
               Our experienced therapists can help you select the perfect treatment for your needs. 
               Contact us for personalized recommendations.
+            </p>
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+              All massage treatments Ubud are available at your villa with professional therapists and complete equipment. 
+              Check our <a href="/pricing" className="text-amber-600 hover:text-amber-700 font-semibold underline">massage pricing</a> or 
+              view <a href="/services" className="text-amber-600 hover:text-amber-700 font-semibold underline">all massage services</a> we offer. 
+              We serve <a href="/service-areas" className="text-amber-600 hover:text-amber-700 font-semibold underline">all areas of Bali</a> including 
+              Ubud, Seminyak, Canggu and more – book your treatment today.
             </p>
             <Button 
               size="lg" 

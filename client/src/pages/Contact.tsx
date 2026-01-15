@@ -54,8 +54,8 @@ export default function Contact() {
   return (
     <>
       <SEOHead
-        title="Contact Us | Book Villa Massage Service in Ubud"
-        description="Contact Home Massage Ubud ☎ +62 811-2656-869. WhatsApp booking available 24/7. Professional massage to your villa in Ubud. Fast response & easy booking."
+        title="Contact Ubud Massage Service | Book Your Treatment"
+        description="Contact Ubud massage service +62 811-2656-869. WhatsApp booking 24/7 for professional in-villa massage. Fast response, licensed therapists. Book your session now."
         canonical="https://homemassageubud.com/contact"
         keywords="contact ubud massage, book massage ubud, whatsapp massage booking, massage appointment ubud, call massage ubud"
       />
@@ -69,12 +69,13 @@ export default function Contact() {
               Get In Touch
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-              Contact <span className="text-blue-600">Home Massage</span>
+              Contact Ubud Massage Service
               <br />
-              <span className="text-gray-900">Ubud</span>
+              <span className="text-blue-600">Book Your Treatment Today</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8 px-2 sm:px-0">
-              Ready to book your relaxing massage experience? Contact us through your preferred method below.
+              Contact our Ubud massage service to book your relaxing in-villa treatment. 
+              WhatsApp booking available 24/7 with fast response from our professional team.
             </p>
           </div>
         </div>
@@ -207,6 +208,30 @@ export default function Contact() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section with Internal Links */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-50 via-white to-blue-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Ready to Experience Our Ubud Massage Service?
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+            Contact our Ubud massage service today for professional in-villa treatments. 
+            Browse our complete <a href="/services" className="text-blue-600 hover:text-blue-700 font-semibold underline">massage services</a>, 
+            view all <a href="/treatments" className="text-blue-600 hover:text-blue-700 font-semibold underline">treatment options</a>, 
+            check <a href="/pricing" className="text-blue-600 hover:text-blue-700 font-semibold underline">pricing and rates</a>, or 
+            see <a href="/service-areas" className="text-blue-600 hover:text-blue-700 font-semibold underline">all locations we serve</a> across Bali.
+          </p>
+          <Button 
+            size="lg" 
+            className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
+            onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
+          >
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book Your Session Now
+          </Button>
         </div>
       </section>
 

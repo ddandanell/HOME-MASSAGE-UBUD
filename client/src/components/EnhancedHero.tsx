@@ -46,15 +46,14 @@ export default function EnhancedHero() {
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               <span className="text-amber-600 relative">
-                Home Massage Ubud
+                Ubud Massage
                 <svg className="absolute -bottom-2 left-0 w-full h-3 text-amber-200" viewBox="0 0 100 12" preserveAspectRatio="none">
                   <path d="M0,8 Q50,2 100,8" stroke="currentColor" strokeWidth="3" fill="none"/>
                 </svg>
               </span>
+              {" "}– Professional <span className="text-gray-900">In-Villa Service</span>
               <br />
-              Best In-Villa <span className="text-gray-900">Balinese Massage</span>
-              <br />
-              <span className="text-gray-700 text-3xl md:text-4xl lg:text-5xl">Delivered to Your Villa</span>
+              <span className="text-gray-700 text-3xl md:text-4xl lg:text-5xl">Traditional Balinese Healing at Your Villa</span>
             </h1>
 
             {/* Subtitle */}

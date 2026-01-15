@@ -109,8 +109,8 @@ export default function Services() {
   return (
     <>
       <SEOHead
-        title="Massage Services Ubud | 12+ Treatments at Your Villa"
-        description="Expert massage services Ubud: Traditional Balinese, deep tissue, hot stone & more. Licensed therapists to your villa. Professional treatments from 280k IDR."
+        title="Massage Services Ubud | Professional Treatments"
+        description="Massage services Ubud delivered to your villa. Traditional Balinese, deep tissue, hot stone & 12+ treatments. Licensed therapists from 280k IDR. Book today."
         canonical="https://homemassageubud.com/services"
         keywords="massage services ubud, spa services ubud, balinese massage, deep tissue massage ubud, hot stone massage, thai massage ubud, pregnancy massage"
       />
@@ -124,13 +124,13 @@ export default function Services() {
               Professional Massage Services
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Authentic <span className="text-amber-600">Balinese Healing</span>
+              Massage Services Ubud
               <br />
-              <span className="text-gray-900">At Your Villa</span>
+              <span className="text-amber-600">Professional In-Villa Treatments</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Discover our comprehensive range of therapeutic massage treatments, 
-              performed by licensed professionals in the comfort of your accommodation.
+              Discover massage services Ubud with our comprehensive range of therapeutic treatments, 
+              performed by licensed professionals in the comfort of your villa or accommodation.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-lg mx-auto sm:max-w-none">
@@ -266,6 +266,30 @@ export default function Services() {
               <p className="text-gray-600">High-quality oils, relaxing music, and personalized treatment</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section with Internal Links */}
+      <section className="py-16 bg-gradient-to-br from-amber-50 via-white to-emerald-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Ready to Book Your Massage Services Ubud?
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+            Our massage services Ubud bring professional therapists directly to your villa with all equipment included. 
+            View our <a href="/pricing" className="text-amber-600 hover:text-amber-700 font-semibold underline">transparent Ubud massage pricing</a> or 
+            explore <a href="/treatments" className="text-amber-600 hover:text-amber-700 font-semibold underline">all massage treatments</a> available. 
+            We serve <a href="/service-areas" className="text-amber-600 hover:text-amber-700 font-semibold underline">23+ locations across Bali</a> including 
+            all of Ubud, Seminyak, Canggu, and more.
+          </p>
+          <Button 
+            size="lg" 
+            className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
+            onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
+          >
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Book Your Massage Now
+          </Button>
         </div>
       </section>
 
