@@ -113,7 +113,9 @@ This project includes a comprehensive prompt system for scalable SEO landing pag
 | `KEYWORD_BLUEPRINT_PROMPT.md` | Converts keyword research into structured build instructions |
 | `LANDING_PAGE_EXECUTION_PROMPT.md` | Generates landing pages from keyword blueprints |
 | `SEO_HEADING_STRUCTURE_AGENT.md` | Creates optimized H1-H6 heading hierarchies for any page type |
+| `AEO_GEO_OPTIMIZATION_PROMPT.md` | Transforms content into AI-search optimized "Golden Source" assets for Google SGE, Perplexity, ChatGPT |
 | `KEYWORD_BLUEPRINT_OUTPUT_EXAMPLE.md` | Example output for 10 high-volume keywords |
+| `AEO_GEO_EXAMPLE_OUTPUT.md` | Example transformation showing before/after AEO/GEO optimization |
 
 ### Workflow
 
@@ -121,9 +123,10 @@ This project includes a comprehensive prompt system for scalable SEO landing pag
 2. **Pick one keyword blueprint** from the output
 3. **Paste into Landing Page Execution Prompt**
 4. **Generate page content**
-5. **Repeat for each keyword**
+5. **Apply AEO/GEO Optimization** to transform content for AI search engines
+6. **Repeat for each keyword**
 
-This system enables scaling from 10 to 200+ pages with consistent quality.
+This system enables scaling from 10 to 200+ pages with consistent quality optimized for both traditional search and AI answer engines.
 
 ### Related Documentation
 
