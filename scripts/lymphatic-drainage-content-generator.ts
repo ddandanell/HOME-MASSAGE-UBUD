@@ -124,7 +124,8 @@ SERVICE_VARIATIONS.forEach(service => {
 
 // Content Generation Helper Functions
 function formatPrice(price: number): string {
-  return `IDR ${price.toLocaleString('id-ID')}`;
+  // Format with dots as thousand separators (Indonesian style)
+  return `IDR ${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;
 }
 
 function getPricingBlock(): string {
@@ -392,7 +393,7 @@ The original method developed by Dr. Vodder uses:
 - Rhythmic, wave-like motions
 - Always directed toward lymph nodes
 
-At ${FACTS.brand.name}, our therapists are trained in **Vodder-style lymphatic drainage**—the gold standard for manual lymphatic drainage. Combined with ${FACTS.therapists.claims[2]} and adapted for Bali's climate and the needs of travelers, our approach delivers optimal results.
+At ${FACTS.brand.name}, our therapists are trained in **Vodder-style lymphatic drainage**—the gold standard for manual lymphatic drainage. Combined with ${FACTS.therapists.claims.length > 2 ? FACTS.therapists.claims[2] : FACTS.therapists.claims[0] || 'professional training'} and adapted for Bali's climate and the needs of travelers, our approach delivers optimal results.
 
 ### Other Techniques
 

@@ -225,7 +225,7 @@ class WebsiteDataExtractor {
     pricePatterns.forEach(pattern => {
       const matches = bodyText.matchAll(pattern);
       for (const match of matches) {
-        const priceStr = match[1].replace(/[,.]/, '');
+        const priceStr = match[1].replace(/[,.]/g, '');
         const price = parseInt(priceStr, 10);
         if (price >= 300 && price <= 1000) { // Reasonable range for massage (in thousands)
           prices.push(price * 1000);
