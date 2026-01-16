@@ -59,19 +59,27 @@ export default function CouplesHomeMassage() {
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-4">
                 Couples home massage brings two professional therapists to your villa for synchronized side-by-side treatments. 
-                This romantic home massage service transforms your private space into an intimate spa retreat. You and your 
+                This romantic <Link href="/home-massage" className="text-primary hover:underline">home massage</Link> service transforms your private space into an intimate spa retreat. You and your 
                 partner enjoy simultaneous massages in the same room, creating a shared wellness experience without leaving 
                 your accommodation.
               </p>
               <p className="text-lg text-muted-foreground mb-4">
-                Our couples home massage includes two massage tables, coordinated aromatherapy, and calming music to create 
+                Our couples <Link href="/home-massage/services" className="text-primary hover:underline">home massage services</Link> include two massage tables, coordinated aromatherapy, and calming music to create 
                 spa ambiance. Both therapists work in harmony, matching rhythm and pressure so you experience relaxation 
-                together. This home massage format strengthens connection while delivering professional therapeutic benefits.
+                together. This format strengthens connection while delivering professional therapeutic benefits.
+              </p>
+              <p className="text-lg text-muted-foreground mb-4">
+                Each couples home massage can be customized with different techniques for each partner. One may prefer deep 
+                tissue while the other chooses Balinese relaxation. Our <Link href="/home-massage/knowledge/benefits" className="text-primary hover:underline">home massage treatment</Link> accommodates individual preferences 
+                within the couples experience, ensuring both receive their ideal service.
               </p>
               <p className="text-lg text-muted-foreground">
-                Each couples home massage can be customized with different techniques for each partner. One may prefer deep 
-                tissue while the other chooses Balinese relaxation. Our home massage service accommodates individual preferences 
-                within the couples experience, ensuring both receive their ideal treatment.
+                The intimacy of <Link href="/home-massage/cities" className="text-primary hover:underline">home massage</Link> makes couples treatments especially meaningful. Your own villa provides 
+                the romantic setting, and you control the atmosphere with lighting and music preferences. After your 
+                <Link href="/home-massage/services/couples" className="text-primary hover:underline">couples home massage</Link>, continue the experience with champagne on your terrace or rest together 
+                in your own bed. This seamless romantic continuity makes home massage ideal for honeymoons, anniversaries, 
+                and relationship wellness. The convenience eliminates coordination stress, letting you focus entirely on 
+                connection and relaxation.
               </p>
             </div>
           </div>
@@ -199,7 +207,9 @@ export default function CouplesHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Complete Privacy</h3>
                   <p className="text-muted-foreground">
-                    Couples home massage in your own villa means absolute intimacy without other spa guests nearby.
+                    Couples home massage in your own villa means absolute intimacy without other spa guests nearby. Many couples 
+                    feel self-conscious in shared spa facilities, worried about sounds they make or personal conversations. Your 
+                    private villa eliminates these concerns entirely, creating a judgment-free zone for complete relaxation together.
                   </p>
                 </div>
               </div>
@@ -211,7 +221,9 @@ export default function CouplesHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Romantic Continuity</h3>
                   <p className="text-muted-foreground">
-                    Continue your couples home massage experience with champagne, music, or rest in your own romantic setting.
+                    Continue your couples home massage experience with champagne, music, or rest in your own romantic setting. 
+                    Spa visits end abruptly when you must dress and leave. Home massage flows naturally into whatever comes next, 
+                    whether that's dining on your terrace, swimming in your pool, or continuing intimacy in your bedroom.
                   </p>
                 </div>
               </div>
@@ -223,7 +235,9 @@ export default function CouplesHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">No Scheduling Stress</h3>
                   <p className="text-muted-foreground">
-                    Book couples home massage at your convenience without coordinating spa appointments or transport.
+                    Book couples home massage at your convenience without coordinating spa appointments or transport. Popular spas 
+                    require advance booking, often days ahead, and specific time slots fill quickly. Home massage offers same-day 
+                    availability and flexible timing, letting spontaneity enhance romance rather than rigid scheduling requirements.
                   </p>
                 </div>
               </div>
@@ -235,7 +249,9 @@ export default function CouplesHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Your Own Ambiance</h3>
                   <p className="text-muted-foreground">
-                    Set your preferred lighting, temperature, and atmosphere for couples home massage in familiar surroundings.
+                    Set your preferred lighting, temperature, and atmosphere for couples home massage in familiar surroundings. 
+                    Some couples prefer dim candlelight, others bright daylight. You control music volume, room temperature, and 
+                    even subtle details like scent choices that create your ideal romantic environment.
                   </p>
                 </div>
               </div>

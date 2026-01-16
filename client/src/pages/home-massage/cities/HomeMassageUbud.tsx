@@ -73,10 +73,16 @@ export default function HomeMassageUbud() {
                 maintain the tranquil energy of your accommodation while receiving traditional Balinese techniques. After 
                 yoga sessions or meditation, home massage continues your wellness journey without disrupting your centered state.
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground mb-4">
                 Ubud's humid afternoons and evening rain make leaving your villa inconvenient. Home massage eliminates weather 
                 concerns and transportation logistics. Whether you're staying in central Ubud, the monkey forest area, Tegallalang, 
                 or surrounding villages, our home massage therapists reach you reliably and punctually.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                The growing demand for home massage in Ubud reflects changing tourist preferences toward convenience and privacy. 
+                Visitors increasingly value experiences that fit their accommodation-centered lifestyle rather than requiring 
+                additional travel. Home massage meets this need perfectly, delivering spa-quality treatments without disrupting 
+                the peaceful retreat atmosphere that draws people to Ubud in the first place.
               </p>
             </div>
           </div>

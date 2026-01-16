@@ -61,19 +61,25 @@ export default function BalineseHomeMassage() {
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-4">
                 Balinese home massage combines traditional Indonesian healing techniques with the convenience of in-villa service. 
-                This home massage style uses long, flowing strokes, gentle stretching, and acupressure points to promote deep 
+                This <Link href="/home-massage" className="text-primary hover:underline">home massage</Link> style uses long, flowing strokes, gentle stretching, and acupressure points to promote deep 
                 relaxation and energy balance. Our therapists bring centuries-old Balinese tradition directly to your accommodation.
               </p>
               <p className="text-lg text-muted-foreground mb-4">
                 The treatment begins with aromatic oil warming, followed by rhythmic palm and thumb pressure along energy lines. 
-                Your Balinese home massage incorporates gentle joint mobilization and skin rolling techniques that stimulate 
-                circulation while maintaining a deeply meditative pace. This traditional approach to home massage creates both 
+                Your Balinese <Link href="/home-massage/services" className="text-primary hover:underline">home massage service</Link> incorporates gentle joint mobilization and skin rolling techniques that stimulate 
+                circulation while maintaining a deeply meditative pace. This traditional approach creates both 
                 physical relief and mental calm.
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground mb-4">
                 Each Balinese home massage session adapts to your needs while honoring authentic techniques. Whether you seek 
-                stress relief, muscle tension release, or cultural immersion, this home massage delivers the full Balinese 
+                stress relief, muscle tension release, or cultural immersion, this <Link href="/home-massage/knowledge/benefits" className="text-primary hover:underline">home massage treatment</Link> delivers the full Balinese 
                 spa experience in your private space.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                The convenience of receiving authentic Balinese techniques through <Link href="/home-massage/cities" className="text-primary hover:underline">home massage</Link> means you maintain 
+                the relaxed state achieved during treatment. Many guests book <Link href="/home-massage/services/balinese" className="text-primary hover:underline">Balinese home massage</Link> sessions 
+                multiple times during their stay, creating a consistent wellness routine without travel disruption. This accessibility 
+                makes traditional healing practices part of your daily vacation rhythm rather than a special excursion.
               </p>
             </div>
           </div>
@@ -204,7 +210,9 @@ export default function BalineseHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">No Travel Required</h3>
                   <p className="text-muted-foreground">
-                    Skip the journey to a spa. Your Balinese home massage comes to you, saving time and preserving your relaxed state.
+                    Skip the journey to a spa. Your Balinese home massage comes to you, saving time and preserving your relaxed state. 
+                    Bali's traffic can be unpredictable, especially during peak tourist seasons. Home massage eliminates this stress 
+                    entirely, letting you allocate travel time to actual relaxation instead.
                   </p>
                 </div>
               </div>
@@ -216,7 +224,9 @@ export default function BalineseHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Complete Privacy</h3>
                   <p className="text-muted-foreground">
-                    Enjoy your Balinese home massage in your own space without shared facilities or strangers nearby.
+                    Enjoy your Balinese home massage in your own space without shared facilities or strangers nearby. Many guests 
+                    prefer the intimacy of their own villa, where they can fully relax without concern about spa etiquette or 
+                    time constraints that public facilities impose.
                   </p>
                 </div>
               </div>
@@ -228,7 +238,9 @@ export default function BalineseHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Immediate Rest</h3>
                   <p className="text-muted-foreground">
-                    After your Balinese home massage, step directly into your own shower and bed. No need to dress up and travel back.
+                    After your Balinese home massage, step directly into your own shower and bed. No need to dress up and travel back. 
+                    The therapeutic benefits of massage continue for hours after treatment, and staying in your comfortable environment 
+                    maximizes these effects without interruption.
                   </p>
                 </div>
               </div>
@@ -240,7 +252,9 @@ export default function BalineseHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Flexible Timing</h3>
                   <p className="text-muted-foreground">
-                    Schedule your Balinese home massage around your activities, not spa hours. Same-day booking available.
+                    Schedule your Balinese home massage around your activities, not spa hours. Same-day booking available. Whether you 
+                    want early morning massage before sightseeing or late evening relaxation after dinner, home massage adapts to your 
+                    vacation schedule rather than forcing you to work around spa operating hours.
                   </p>
                 </div>
               </div>

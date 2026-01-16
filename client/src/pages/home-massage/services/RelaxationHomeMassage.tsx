@@ -59,20 +59,27 @@ export default function RelaxationHomeMassage() {
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-4">
                 Relaxation home massage focuses on gentle, flowing movements designed purely for stress relief and mental calm. 
-                This home massage style uses light to moderate pressure with long, rhythmic strokes that soothe the nervous 
+                This <Link href="/home-massage" className="text-primary hover:underline">home massage</Link> style uses light to moderate pressure with long, rhythmic strokes that soothe the nervous 
                 system. Our therapists create a tranquil experience directly in your villa, transforming your space into a 
                 peaceful sanctuary.
               </p>
               <p className="text-lg text-muted-foreground mb-4">
-                Unlike therapeutic massage, relaxation home massage prioritizes comfort over treatment. The pace is slow and 
-                meditative, using effleurage techniques and gentle kneading. This home massage approach allows complete mental 
+                Unlike therapeutic massage, relaxation <Link href="/home-massage/services" className="text-primary hover:underline">home massage services</Link> prioritize comfort over treatment. The pace is slow and 
+                meditative, using effleurage techniques and gentle kneading. This approach allows complete mental 
                 release, often leading to deep relaxation or sleep during the session. Aromatherapy enhances the calming 
                 effect throughout your treatment.
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground mb-4">
                 Your relaxation home massage adapts to your sensitivity and preferences. The therapist maintains consistent, 
-                soothing rhythm while you drift into complete ease. This home massage delivers pure stress reduction without 
+                soothing rhythm while you drift into complete ease. This <Link href="/home-massage/knowledge/benefits" className="text-primary hover:underline">home massage treatment</Link> delivers pure stress reduction without 
                 any discomfort, making it ideal for first-time massage recipients or those seeking gentle care.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                The familiar environment of <Link href="/home-massage/cities" className="text-primary hover:underline">home massage</Link> enhances relaxation effectiveness significantly. Your own bedroom 
+                or terrace feels safer than an unfamiliar spa room, allowing deeper nervous system release. After your 
+                <Link href="/home-massage/services/relaxation" className="text-primary hover:underline">relaxation home massage</Link> ends, you remain in this peaceful state without jarring transitions. 
+                Many guests drift directly into naps or nighttime sleep, maximizing the stress relief benefits. This seamless 
+                continuation of calm makes home massage particularly valuable for anxiety management and mental health support.
               </p>
             </div>
           </div>
@@ -200,7 +207,9 @@ export default function RelaxationHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Preserve Calm State</h3>
                   <p className="text-muted-foreground">
-                    Avoid disrupting your relaxation home massage benefits by traveling through traffic back to accommodation.
+                    Avoid disrupting your relaxation home massage benefits by traveling through traffic back to accommodation. 
+                    The parasympathetic nervous system activation achieved during massage continues for hours afterward. Any stress 
+                    from navigation, driving, or public spaces counteracts these benefits. Home massage protects your calm state completely.
                   </p>
                 </div>
               </div>
@@ -212,7 +221,9 @@ export default function RelaxationHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Familiar Environment</h3>
                   <p className="text-muted-foreground">
-                    Maximize relaxation home massage effectiveness in your own comfortable, known space versus unfamiliar spa.
+                    Maximize relaxation home massage effectiveness in your own comfortable, known space versus unfamiliar spa. 
+                    Research shows people relax more deeply in environments they know and control. Your villa's familiar sounds, 
+                    scents, and comfort level create ideal conditions for nervous system release that unfamiliar locations cannot match.
                   </p>
                 </div>
               </div>
@@ -224,7 +235,9 @@ export default function RelaxationHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Sleep Immediately</h3>
                   <p className="text-muted-foreground">
-                    Many fall asleep during relaxation home massage. Transition directly to nap or night rest in your own bed.
+                    Many fall asleep during relaxation home massage. Transition directly to nap or night rest in your own bed. 
+                    This seamless flow from treatment to sleep maximizes restorative benefits. Spa visits require dressing, traveling, 
+                    and navigating back to your room, disrupting the drowsy state that signals deep nervous system recovery.
                   </p>
                 </div>
               </div>
@@ -236,7 +249,10 @@ export default function RelaxationHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">No Time Pressure</h3>
                   <p className="text-muted-foreground">
-                    After relaxation home massage, remain in peaceful state without rushing to check out or leave spa facility.
+                    After relaxation home massage, remain in peaceful state without rushing to check out or leave spa facility. 
+                    Spas operate on schedules, often booking the same room immediately after your session. Home massage eliminates 
+                    this pressure entirely. Take as long as you need to emerge from relaxation, perhaps staying on the table, 
+                    meditating, or simply lying still.
                   </p>
                 </div>
               </div>

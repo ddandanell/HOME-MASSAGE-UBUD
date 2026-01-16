@@ -70,10 +70,16 @@ export default function HomeMassageHub() {
                 in the privacy and comfort of your own space. After your home massage, you can shower immediately, rest in your 
                 own bed, and continue relaxing without any journey back.
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground mb-4">
                 Our home massage service operates throughout Bali, serving private villas, hotels, resorts, and guesthouses. 
                 Each therapist brings professional equipment, premium oils, fresh linens, and years of training to deliver 
                 spa-quality home massage treatments.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                The convenience factor makes <Link href="/home-massage/services" className="text-primary hover:underline">home massage services</Link> increasingly 
+                popular among tourists. You control your environment, schedule flexibility improves, and the post-massage relaxation 
+                remains uninterrupted. Whether you prefer <Link href="/home-massage/services/balinese" className="text-primary hover:underline">traditional Balinese techniques</Link> or 
+                modern therapeutic approaches, home massage adapts to your needs while you stay comfortable in familiar surroundings.
               </p>
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
