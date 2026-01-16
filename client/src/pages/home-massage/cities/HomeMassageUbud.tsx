@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Check } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageUbud() {
   return (
     <>
       <SEOHead 
-        title="Home Massage in Ubud | Professional Villa Massage Service"
-        description="Professional home massage service throughout Ubud. Licensed therapists deliver spa-quality treatments to your villa, hotel, or guesthouse. Same-day booking available."
+        title="Home Massage in Ubud | Ubud Luxury Villas"
+        description="Professional home massage service throughout Ubud. Licensed therapists deliver spa-quality treatments to your villa, hotel, or guesthouse. Same-day booking available via call or WhatsApp."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -40,8 +45,18 @@ export default function HomeMassageUbud() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'why-ubud', label: 'Why Home Massage Fits Ubud' },
+        { id: 'accommodations', label: 'Ubud Accommodations' },
+        { id: 'availability', label: 'Availability & Response Time' },
+        { id: 'services', label: 'Services Available in Ubud' },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'Frequently Asked Questions' }
+      ]} />
+
       {/* Block 2: Why home massage fits this city */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="why-ubud" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -69,7 +84,7 @@ export default function HomeMassageUbud() {
       </section>
 
       {/* Block 3: Common accommodations */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="accommodations" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -117,7 +132,7 @@ export default function HomeMassageUbud() {
       </section>
 
       {/* Block 4: Availability & Response Time */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="availability" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -159,7 +174,7 @@ export default function HomeMassageUbud() {
       </section>
 
       {/* Block 5: Services available in this city */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="services" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -240,6 +255,45 @@ export default function HomeMassageUbud() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Safety Standards */}
+      <SafetyStandards />
+
+      {/* Spider Links Block */}
+      <SpiderLinksBlock currentPage="/home-massage/cities/ubud" />
+
+      {/* Booking CTA */}
+      <BookingCTA />
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <HomeMassageFAQ faqs={[
+          {
+            question: "How quickly can I get home massage in Ubud?",
+            answer: "Most home massage requests in Ubud are accommodated within 2-4 hours of contact via WhatsApp. We offer same-day booking throughout Ubud, including rice terrace villas, jungle retreats, and central accommodations. Contact us early for best availability."
+          },
+          {
+            question: "What areas in Ubud do you serve for home massage?",
+            answer: "Our home massage service covers all of Ubud including Central Ubud, Tegallalang, Sayan, Penestanan, Monkey Forest area, and surrounding villages. Whether you're staying in a remote rice field villa or town center hotel, we reach your location."
+          },
+          {
+            question: "Do you provide home massage to hotels in Ubud?",
+            answer: "Yes, we deliver home massage to all types of Ubud accommodations including boutique hotels, luxury resorts, guesthouses, and private villas. Our therapists coordinate with hotel staff to ensure smooth access to your room or private terrace."
+          },
+          {
+            question: "What types of home massage are available in Ubud?",
+            answer: "Ubud home massage includes Balinese massage, deep tissue massage, relaxation massage, and couples massage. All treatments are delivered with professional equipment and premium oils directly to your accommodation."
+          },
+          {
+            question: "How do I book home massage in Ubud?",
+            answer: "Book home massage in Ubud by contacting us via WhatsApp at +62 811-2656-869. Provide your accommodation name, preferred time, and massage type. We confirm availability and arrange therapist arrival to your Ubud location."
+          },
+          {
+            question: "Is home massage in Ubud suitable after yoga retreats?",
+            answer: "Absolutely! Home massage is perfect after yoga sessions or meditation. Our therapists deliver treatments that complement Ubud's wellness culture, helping you maintain the centered state achieved during your spiritual practices."
+          }
+        ]} />
       </section>
 
       {/* Block 6: CTA and Links */}

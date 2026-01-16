@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Check } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageSeminyak() {
   return (
     <>
       <SEOHead 
-        title="Home Massage in Seminyak | Professional Villa Massage Service"
-        description="Professional home massage service throughout Seminyak. Licensed therapists deliver spa-quality treatments to your villa, resort, or apartment. Same-day booking available. Perfect for luxury accommodations."
+        title="Home Massage in Seminyak | Ubud Luxury Villas"
+        description="Professional home massage service throughout Seminyak. Licensed therapists deliver spa-quality treatments to your villa, resort, or apartment. Same-day booking available via call or WhatsApp."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -40,8 +45,18 @@ export default function HomeMassageSeminyak() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'why-seminyak', label: 'Why Home Massage Fits Seminyak' },
+        { id: 'accommodations', label: 'Seminyak Accommodations' },
+        { id: 'availability', label: 'Availability & Response Time' },
+        { id: 'services', label: 'Services Available in Seminyak' },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'Frequently Asked Questions' }
+      ]} />
+
       {/* Block 2: Why home massage fits this city */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="why-seminyak" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -73,7 +88,7 @@ export default function HomeMassageSeminyak() {
       </section>
 
       {/* Block 3: Common accommodations */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="accommodations" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -121,7 +136,7 @@ export default function HomeMassageSeminyak() {
       </section>
 
       {/* Block 4: Availability & Response Time */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="availability" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -163,7 +178,7 @@ export default function HomeMassageSeminyak() {
       </section>
 
       {/* Block 5: Services available in this city */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="services" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -244,6 +259,45 @@ export default function HomeMassageSeminyak() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Safety Standards */}
+      <SafetyStandards />
+
+      {/* Spider Links Block */}
+      <SpiderLinksBlock currentPage="/home-massage/cities/seminyak" />
+
+      {/* Booking CTA */}
+      <BookingCTA />
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <HomeMassageFAQ faqs={[
+          {
+            question: "How quickly can I get home massage in Seminyak?",
+            answer: "Most home massage requests in Seminyak are accommodated within 1-3 hours of contact via WhatsApp. We offer same-day booking throughout Seminyak, including luxury resorts, beachfront villas, and boutique hotels. Contact us early for best availability."
+          },
+          {
+            question: "What areas in Seminyak do you serve for home massage?",
+            answer: "Our home massage service covers all of Seminyak including beachfront properties, beach clubs, Petitenget, Oberoi, and residential zones. Whether you're at a five-star resort or private villa, we reach your location."
+          },
+          {
+            question: "Do you provide home massage to hotels in Seminyak?",
+            answer: "Yes, we deliver home massage to all types of Seminyak accommodations including five-star resorts, boutique hotels, luxury apartments, and beachfront villas. Our therapists coordinate seamlessly with high-end properties."
+          },
+          {
+            question: "What types of home massage are available in Seminyak?",
+            answer: "Seminyak home massage includes relaxation massage, couples massage, Balinese massage, and deep tissue massage. All treatments are delivered with professional equipment and premium oils directly to your luxury accommodation."
+          },
+          {
+            question: "How do I book home massage in Seminyak?",
+            answer: "Book home massage in Seminyak by contacting us via WhatsApp at +62 811-2656-869. Provide your accommodation name, preferred time, and massage type. We confirm availability and arrange therapist arrival to your Seminyak location."
+          },
+          {
+            question: "Is home massage in Seminyak suitable for couples?",
+            answer: "Absolutely! Home massage is perfect for couples in Seminyak. We provide side-by-side couples treatments in your beachfront villa or resort suite, creating a romantic and relaxing experience without leaving your accommodation."
+          }
+        ]} />
       </section>
 
       {/* Block 6: CTA and Links */}
