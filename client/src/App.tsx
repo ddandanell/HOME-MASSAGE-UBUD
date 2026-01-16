@@ -22,6 +22,31 @@ import RecommendedServices from "@/pages/RecommendedServices";
 // Blog Articles
 import PremiumHomeMassageKuta from "@/pages/blog/PremiumHomeMassageKuta";
 
+// Home Massage Silo - Hub
+import HomeMassageHub from "@/pages/home-massage/HomeMassageHub";
+
+// Home Massage Silo - Services
+import BalineseHomeMassage from "@/pages/home-massage/services/BalineseHomeMassage";
+import DeepTissueHomeMassage from "@/pages/home-massage/services/DeepTissueHomeMassage";
+import CouplesHomeMassage from "@/pages/home-massage/services/CouplesHomeMassage";
+import RelaxationHomeMassage from "@/pages/home-massage/services/RelaxationHomeMassage";
+
+// Home Massage Silo - Cities
+import HomeMassageUbud from "@/pages/home-massage/cities/HomeMassageUbud";
+import HomeMassageCanggu from "@/pages/home-massage/cities/HomeMassageCanggu";
+import HomeMassageSeminyak from "@/pages/home-massage/cities/HomeMassageSeminyak";
+import HomeMassageSanur from "@/pages/home-massage/cities/HomeMassageSanur";
+
+// Home Massage Silo - Knowledge
+import HomeMassageSafety from "@/pages/home-massage/knowledge/HomeMassageSafety";
+import HomeMassageWhatToExpect from "@/pages/home-massage/knowledge/HomeMassageWhatToExpect";
+
+// Home Massage Silo - Blog
+import HomeMassageBlog from "@/pages/home-massage/blog/HomeMassageBlog";
+import WhatIsHomeMassage from "@/pages/home-massage/blog/WhatIsHomeMassage";
+import WhyTouristsPreferHomeMassage from "@/pages/home-massage/blog/WhyTouristsPreferHomeMassage";
+import HowToBookHomeMassage from "@/pages/home-massage/blog/HowToBookHomeMassage";
+
 // Treatment Pages
 import TraditionalBalineseMassage from "@/pages/treatments/TraditionalBalineseMassage";
 import DeepTissueMassage from "@/pages/treatments/DeepTissueMassage";
@@ -112,6 +137,31 @@ function Router() {
       
       {/* Blog Articles */}
       <Route path="/blog/premium-home-massage-kuta" component={PremiumHomeMassageKuta} />
+      
+      {/* Home Massage Silo - Complete structure */}
+      <Route path="/home-massage" component={HomeMassageHub} />
+      
+      {/* Home Massage Services */}
+      <Route path="/home-massage/services/balinese" component={BalineseHomeMassage} />
+      <Route path="/home-massage/services/deep-tissue" component={DeepTissueHomeMassage} />
+      <Route path="/home-massage/services/couples" component={CouplesHomeMassage} />
+      <Route path="/home-massage/services/relaxation" component={RelaxationHomeMassage} />
+      
+      {/* Home Massage Cities */}
+      <Route path="/home-massage/cities/ubud" component={HomeMassageUbud} />
+      <Route path="/home-massage/cities/canggu" component={HomeMassageCanggu} />
+      <Route path="/home-massage/cities/seminyak" component={HomeMassageSeminyak} />
+      <Route path="/home-massage/cities/sanur" component={HomeMassageSanur} />
+      
+      {/* Home Massage Knowledge */}
+      <Route path="/home-massage/knowledge/safety" component={HomeMassageSafety} />
+      <Route path="/home-massage/knowledge/what-to-expect" component={HomeMassageWhatToExpect} />
+      
+      {/* Home Massage Blog */}
+      <Route path="/home-massage/blog" component={HomeMassageBlog} />
+      <Route path="/home-massage/blog/what-is-home-massage" component={WhatIsHomeMassage} />
+      <Route path="/home-massage/blog/why-tourists-prefer-home-massage" component={WhyTouristsPreferHomeMassage} />
+      <Route path="/home-massage/blog/how-to-book-home-massage" component={HowToBookHomeMassage} />
       
       {/* Treatment Pages */}
       <Route path="/ubud/traditional-balinese-massage" component={TraditionalBalineseMassage} />
