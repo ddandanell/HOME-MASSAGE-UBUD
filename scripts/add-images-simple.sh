@@ -25,8 +25,8 @@ find "$HTML_DIR" -maxdepth 1 -name "*.html" -type f | while read -r file; do
     echo "Processing: $(basename "$file")"
     echo "=================================================="
     
-    # Extract keywords from title
-    keywords=$(grep -oP '(?<=<title>).*?(?=</title>)' "$file" 2>/dev/null | head -1)
+    # Extract keywords from title (using basic grep for portability)
+    keywords=$(grep -o '<title>[^<]*</title>' "$file" 2>/dev/null | sed 's/<title>//;s/<\/title>//' | head -1)
     
     if [ -z "$keywords" ]; then
         echo "⚠ No title found, skipping..."
@@ -60,8 +60,15 @@ find "$HTML_DIR" -maxdepth 1 -name "*.html" -type f | while read -r file; do
         # Create backup
         cp "$file" "${file}.backup"
         
-        # Insert image after body tag
-        sed -i "/<body/a\\    <img src=\"images/${basename_file}.jpg\" alt=\"${keywords}\" loading=\"lazy\" class=\"hero-image\" style=\"max-width: 100%; height: auto;\">" "$file"
+        # Insert image after body tag (portable sed syntax)
+        if [[ "$OSTYPE" == "darwin"* ]]; then
+            # macOS (BSD sed)
+            sed -i '' "/<body/a\\
+    <img src=\"images/${basename_file}.jpg\" alt=\"${keywords}\" loading=\"lazy\" class=\"hero-image\" style=\"max-width: 100%; height: auto;\">" "$file"
+        else
+            # Linux (GNU sed)
+            sed -i "/<body/a\\    <img src=\"images/${basename_file}.jpg\" alt=\"${keywords}\" loading=\"lazy\" class=\"hero-image\" style=\"max-width: 100%; height: auto;\">" "$file"
+        fi
         
         echo "✓ Inserted image into HTML"
         echo "✓ Backup saved: ${file}.backup"

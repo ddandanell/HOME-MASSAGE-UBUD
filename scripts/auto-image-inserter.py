@@ -17,7 +17,7 @@ from collections import Counter
 class ImageScraper:
     def __init__(self):
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         }
     
     def google_image_search(self, query, num_images=5):
@@ -26,6 +26,19 @@ class ImageScraper:
         
         try:
             response = requests.get(search_url, headers=self.headers, timeout=10)
+            
+            # Handle HTTP errors
+            if response.status_code == 403:
+                print(f"Access forbidden (403) - Google may be blocking requests")
+                return []
+            elif response.status_code == 429:
+                print(f"Rate limited (429) - Too many requests, try again later")
+                return []
+            elif response.status_code >= 400:
+                print(f"HTTP error {response.status_code}")
+                return []
+                
+            response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
             
             images = []
@@ -101,15 +114,40 @@ class ImageScraper:
             return []
     
     def download_image(self, url, save_path):
-        """Download image to local folder"""
+        """Download image to local folder with size and type validation"""
         try:
-            urllib.request.urlretrieve(url, save_path)
+            # Fetch with stream to check headers first
+            response = requests.get(url, headers=self.headers, stream=True, timeout=10)
+            response.raise_for_status()
+            
+            # Validate content type
+            content_type = response.headers.get('content-type', '').lower()
+            if not any(img_type in content_type for img_type in ['image/jpeg', 'image/png', 'image/webp', 'image/jpg']):
+                print(f"Invalid content type: {content_type}")
+                return False
+            
+            # Check file size (limit to 10MB)
+            content_length = response.headers.get('content-length')
+            if content_length and int(content_length) > 10 * 1024 * 1024:
+                print(f"File too large: {int(content_length) / 1024 / 1024:.1f}MB")
+                return False
+            
+            # Download the file
+            with open(save_path, 'wb') as f:
+                for chunk in response.iter_content(chunk_size=8192):
+                    f.write(chunk)
+            
             return True
         except Exception as e:
             print(f"Failed to download {url}: {e}")
             return False
 
 class WebsiteImageEnhancer:
+    # Common words to skip in keyword extraction
+    SKIP_WORDS = {'the', 'and', 'for', 'with', 'this', 'that', 'from', 'have', 
+                  'are', 'your', 'about', 'more', 'our', 'their', 'than', 'can', 
+                  'will', 'also', 'all', 'into', 'but', 'they', 'what', 'when'}
+    
     def __init__(self, website_dir):
         self.website_dir = Path(website_dir)
         self.scraper = ImageScraper()
@@ -136,11 +174,8 @@ class WebsiteImageEnhancer:
         # Combine and extract keywords
         text = f"{title_text} {' '.join(headings)} {description}".lower()
         
-        # Common words to skip
-        skip_words = {'the', 'and', 'for', 'with', 'this', 'that', 'from', 'have', 'are', 'your', 'about', 'more', 'our', 'their', 'than', 'can', 'will', 'also', 'all'}
-        
         words = re.findall(r'\b\w{4,}\b', text)
-        keywords = [w for w in words if w not in skip_words]
+        keywords = [w for w in words if w not in self.SKIP_WORDS]
         
         # Get top keywords by frequency
         top_keywords = Counter(keywords).most_common(5)
@@ -213,7 +248,14 @@ class WebsiteImageEnhancer:
                 break
             
             image_url = all_images[idx]
-            image_filename = f"{html_path.stem}_{idx}.jpg"
+            
+            # Determine file extension from URL
+            url_path = urllib.parse.urlparse(image_url).path
+            ext = os.path.splitext(url_path)[1] or '.jpg'
+            if ext.lower() not in ['.jpg', '.jpeg', '.png', '.webp']:
+                ext = '.jpg'  # Default to jpg if unknown
+            
+            image_filename = f"{html_path.stem}_{idx}{ext}"
             image_path = self.images_dir / image_filename
             
             # Download image

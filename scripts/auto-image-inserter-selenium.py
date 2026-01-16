@@ -27,7 +27,12 @@ def setup_browser():
         return driver
     except WebDriverException as e:
         print(f"Error setting up Chrome driver: {e}")
-        print("Please install ChromeDriver from: https://chromedriver.chromium.org/")
+        print("\nChrome and ChromeDriver installation guide:")
+        print("1. Check your Chrome version: chrome://version")
+        print("2. Download matching ChromeDriver from: https://chromedriver.chromium.org/downloads")
+        print("   OR for Chrome 115+: https://googlechromelabs.github.io/chrome-for-testing/")
+        print("3. Add ChromeDriver to your system PATH")
+        print("4. Verify: chromedriver --version")
         return None
 
 def scrape_google_images_selenium(query, num_images=5):
