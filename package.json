@@ -12,7 +12,9 @@
     "server:build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist-server",
     "server:start": "NODE_ENV=production node dist-server/index.js",
     "db:push": "drizzle-kit push",
-    "seo:audit": "tsx scripts/seo-audit.ts"
+    "seo:audit": "tsx scripts/seo-audit.ts",
+    "extract:lymphatic": "tsx scripts/lymphatic-drainage-data-extractor.ts",
+    "generate:lymphatic": "tsx scripts/lymphatic-drainage-content-generator.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

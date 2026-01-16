@@ -84,6 +84,11 @@ reports/*.json
 reports/seo-audit-*.md
 !reports/seo-audit-example.md
 
+# Generated content (markdown files before conversion to React)
+generated-content/
+data-extraction/*.json
+data-extraction/*-2026-*.md
+
 # Backup files
 *_backup.*
 *Old.*
