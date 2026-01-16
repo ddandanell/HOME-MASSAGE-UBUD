@@ -55,6 +55,38 @@ import IsHomeMassageSafe from "@/pages/home-massage/blog/IsHomeMassageSafe";
 import WhyTouristsPreferHomeMassage from "@/pages/home-massage/blog/WhyTouristsPreferHomeMassage";
 import HowToBookHomeMassage from "@/pages/home-massage/blog/HowToBookHomeMassage";
 
+// Mobile Massage Silo - Hub
+import MobileMassageHub from "@/pages/mobile-massage/MobileMassageHub";
+
+// Mobile Massage Silo - Services
+import MobileMassageServicesIndex from "@/pages/mobile-massage/services/MobileMassageServicesIndex";
+import BalineseMobileMassage from "@/pages/mobile-massage/services/BalineseMobileMassage";
+import DeepTissueMobileMassage from "@/pages/mobile-massage/services/DeepTissueMobileMassage";
+import CouplesMobileMassage from "@/pages/mobile-massage/services/CouplesMobileMassage";
+import RelaxationMobileMassage from "@/pages/mobile-massage/services/RelaxationMobileMassage";
+
+// Mobile Massage Silo - Cities
+import MobileMassageCitiesIndex from "@/pages/mobile-massage/cities/MobileMassageCitiesIndex";
+import MobileMassageUbud from "@/pages/mobile-massage/cities/MobileMassageUbud";
+import MobileMassageCanggu from "@/pages/mobile-massage/cities/MobileMassageCanggu";
+import MobileMassageSeminyak from "@/pages/mobile-massage/cities/MobileMassageSeminyak";
+import MobileMassageSanur from "@/pages/mobile-massage/cities/MobileMassageSanur";
+import MobileMassageNusaDua from "@/pages/mobile-massage/cities/MobileMassageNusaDua";
+
+// Mobile Massage Silo - Knowledge
+import MobileMassageKnowledgeIndex from "@/pages/mobile-massage/knowledge/MobileMassageKnowledgeIndex";
+import IsMobileMassageSafe from "@/pages/mobile-massage/knowledge/IsMobileMassageSafe";
+import HowToPrepareMobileMassage from "@/pages/mobile-massage/knowledge/HowToPrepareMobileMassage";
+import AftercareAfterMobileMassage from "@/pages/mobile-massage/knowledge/AftercareAfterMobileMassage";
+import WhatToExpectMobileMassage from "@/pages/mobile-massage/knowledge/WhatToExpectMobileMassage";
+
+// Mobile Massage Silo - Blog
+import MobileMassageBlog from "@/pages/mobile-massage/blog/MobileMassageBlog";
+import WhatIsMobileMassage from "@/pages/mobile-massage/blog/WhatIsMobileMassage";
+import MobileMassageVsSpa from "@/pages/mobile-massage/blog/MobileMassageVsSpa";
+import MobileMassageForTravelers from "@/pages/mobile-massage/blog/MobileMassageForTravelers";
+import HowToBookMobileMassage from "@/pages/mobile-massage/blog/HowToBookMobileMassage";
+
 // Villa Massage Silo - Hub
 import VillaMassageHub from "@/pages/villa-massage/VillaMassageHub";
 
@@ -214,6 +246,38 @@ function Router() {
       <Route path="/home-massage/blog/is-home-massage-safe" component={IsHomeMassageSafe} />
       <Route path="/home-massage/blog/why-tourists-prefer-home-massage" component={WhyTouristsPreferHomeMassage} />
       <Route path="/home-massage/blog/how-to-book-home-massage" component={HowToBookHomeMassage} />
+      
+      {/* Mobile Massage Silo - Complete structure */}
+      <Route path="/mobile-massage" component={MobileMassageHub} />
+      
+      {/* Mobile Massage Services */}
+      <Route path="/mobile-massage/services" component={MobileMassageServicesIndex} />
+      <Route path="/mobile-massage/services/balinese-mobile-massage" component={BalineseMobileMassage} />
+      <Route path="/mobile-massage/services/deep-tissue-mobile-massage" component={DeepTissueMobileMassage} />
+      <Route path="/mobile-massage/services/couples-mobile-massage" component={CouplesMobileMassage} />
+      <Route path="/mobile-massage/services/relaxation-mobile-massage" component={RelaxationMobileMassage} />
+      
+      {/* Mobile Massage Cities */}
+      <Route path="/mobile-massage/cities" component={MobileMassageCitiesIndex} />
+      <Route path="/mobile-massage/cities/ubud" component={MobileMassageUbud} />
+      <Route path="/mobile-massage/cities/canggu" component={MobileMassageCanggu} />
+      <Route path="/mobile-massage/cities/seminyak" component={MobileMassageSeminyak} />
+      <Route path="/mobile-massage/cities/sanur" component={MobileMassageSanur} />
+      <Route path="/mobile-massage/cities/nusa-dua" component={MobileMassageNusaDua} />
+      
+      {/* Mobile Massage Knowledge */}
+      <Route path="/mobile-massage/knowledge" component={MobileMassageKnowledgeIndex} />
+      <Route path="/mobile-massage/knowledge/is-mobile-massage-safe" component={IsMobileMassageSafe} />
+      <Route path="/mobile-massage/knowledge/how-to-prepare-mobile-massage" component={HowToPrepareMobileMassage} />
+      <Route path="/mobile-massage/knowledge/aftercare-after-mobile-massage" component={AftercareAfterMobileMassage} />
+      <Route path="/mobile-massage/knowledge/what-to-expect-mobile-massage" component={WhatToExpectMobileMassage} />
+      
+      {/* Mobile Massage Blog */}
+      <Route path="/mobile-massage/blog" component={MobileMassageBlog} />
+      <Route path="/mobile-massage/blog/what-is-mobile-massage" component={WhatIsMobileMassage} />
+      <Route path="/mobile-massage/blog/mobile-massage-vs-spa" component={MobileMassageVsSpa} />
+      <Route path="/mobile-massage/blog/mobile-massage-for-travelers" component={MobileMassageForTravelers} />
+      <Route path="/mobile-massage/blog/how-to-book-mobile-massage" component={HowToBookMobileMassage} />
       
       {/* Villa Massage Silo - Complete structure */}
       <Route path="/villa-massage" component={VillaMassageHub} />

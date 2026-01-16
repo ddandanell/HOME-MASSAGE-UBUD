@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "primary_keyword": "mobile massage",
+    "hub": "/mobile-massage/",
+    "language": "en",
+    "currency": "IDR",
+    "phone_e164": "+62 811-2656-869",
+    "whatsapp_clean": "628112656869",
+    "whatsapp_link": "https://wa.me/628112656869",
+    "email": "hello@homemassageubud.com",
+    "business_hours": "7am-10pm daily",
+    "same_day_booking": true
+  },
+  "requirements": {
+    "min_words_per_page": 500,
+    "min_keyword_anchor_links_per_page": 5,
+    "must_include_sections": ["toc", "booking_cta", "full_spider_links", "faq"]
+  },
+  "folders": {
+    "services": "/mobile-massage/services/",
+    "cities": "/mobile-massage/cities/",
+    "knowledge": "/mobile-massage/knowledge/",
+    "blog": "/mobile-massage/blog/"
+  },
+  "catalog": {
+    "services": [
+      { 
+        "slug": "deep-tissue-mobile-massage", 
+        "title": "Deep Tissue Mobile Massage",
+        "pricing": {
+          "single_60_90min": 320000,
+          "couple_60_90min": 600000,
+          "currency": "IDR"
+        }
+      },
+      { 
+        "slug": "relaxation-mobile-massage", 
+        "title": "Relaxation Mobile Massage",
+        "pricing": {
+          "single_60_90min": 304000,
+          "couple_60_90min": 560000,
+          "currency": "IDR"
+        }
+      },
+      { 
+        "slug": "balinese-mobile-massage", 
+        "title": "Balinese Mobile Massage",
+        "pricing": {
+          "single_60_90min": 280000,
+          "couple_60_90min": 520000,
+          "currency": "IDR"
+        }
+      },
+      { 
+        "slug": "couples-mobile-massage", 
+        "title": "Couples Mobile Massage",
+        "pricing": {
+          "couple_60_90min": 520000,
+          "currency": "IDR",
+          "note": "Two therapists, synchronized treatment"
+        }
+      }
+    ],
+    "cities": [
+      { 
+        "slug": "ubud", 
+        "title": "Mobile Massage in Ubud",
+        "areas_covered": ["Ubud Centre", "Penestanan", "Sayan", "Campuhan", "Lodtunduh", "Nyuh Kuning"],
+        "characteristics": "Wellness culture, rice terraces, spread-out geography"
+      },
+      { 
+        "slug": "canggu", 
+        "title": "Mobile Massage in Canggu",
+        "areas_covered": ["Canggu", "Berawa", "Pererenan"],
+        "characteristics": "Surf/yoga culture, beachfront villas, expat community"
+      },
+      { 
+        "slug": "seminyak", 
+        "title": "Mobile Massage in Seminyak",
+        "areas_covered": ["Seminyak", "Petitenget", "Kerobokan"],
+        "characteristics": "Luxury resorts, beach clubs, high-end accommodations"
+      },
+      { 
+        "slug": "sanur", 
+        "title": "Mobile Massage in Sanur",
+        "areas_covered": ["Sanur"],
+        "characteristics": "Family-friendly, quiet beaches, traditional atmosphere"
+      },
+      { 
+        "slug": "nusa-dua", 
+        "title": "Mobile Massage in Nusa Dua",
+        "areas_covered": ["Nusa Dua", "Jimbaran", "Uluwatu", "Ungasan"],
+        "characteristics": "Resort enclave, pristine beaches, luxury tourism"
+      }
+    ],
+    "knowledge": [
+      { 
+        "slug": "is-mobile-massage-safe", 
+        "title": "Is Mobile Massage Safe",
+        "focus": "Safety protocols, therapist vetting, professional standards"
+      },
+      { 
+        "slug": "what-to-expect-mobile-massage", 
+        "title": "What to Expect From Mobile Massage",
+        "focus": "Process walkthrough, preparation, session flow"
+      },
+      { 
+        "slug": "how-to-prepare-mobile-massage", 
+        "title": "How to Prepare for Mobile Massage",
+        "focus": "Space setup, what to provide, optimal conditions"
+      },
+      { 
+        "slug": "aftercare-after-mobile-massage", 
+        "title": "Aftercare After Mobile Massage",
+        "focus": "Post-treatment care, hydration, maximizing benefits"
+      }
+    ],
+    "blog": [
+      { 
+        "slug": "what-is-mobile-massage", 
+        "title": "What Is Mobile Massage",
+        "focus": "Definition, concept explanation, how it works"
+      },
+      { 
+        "slug": "mobile-massage-vs-spa", 
+        "title": "Mobile Massage vs Spa",
+        "focus": "Comparison, benefits of each, decision framework"
+      },
+      { 
+        "slug": "how-to-book-mobile-massage", 
+        "title": "How to Book Mobile Massage",
+        "focus": "Booking process, tips, best practices"
+      },
+      { 
+        "slug": "mobile-massage-for-travelers", 
+        "title": "Mobile Massage for Travelers",
+        "focus": "Travel wellness, convenience for tourists, common scenarios"
+      }
+    ]
+  },
+  "linking": {
+    "every_page_links_to": ["hub", "services_index", "cities_index", "knowledge_index", "blog_index"],
+    "full_mesh": true,
+    "keyword_anchor_required": "mobile massage"
+  },
+  "booking_details": {
+    "process": [
+      "Initial Contact via WhatsApp",
+      "Treatment Selection & Scheduling",
+      "Location Confirmation",
+      "Health Consultation",
+      "Appointment Confirmation (1-2 hours prior)",
+      "Professional Service Delivery"
+    ],
+    "durations": ["60 minutes", "90 minutes", "120 minutes"],
+    "availability": "7am-10pm daily",
+    "same_day": true,
+    "payment": ["Cash", "Bank transfer"]
+  }
+}
