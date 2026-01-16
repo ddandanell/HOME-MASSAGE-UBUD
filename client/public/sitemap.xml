@@ -2,7 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- Main Pages -->
   <url>
     <loc>https://homemassageubud.com/</loc>
     <lastmod>2026-01-16</lastmod>
@@ -75,8 +74,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  
-  <!-- Treatment Pages -->
   <url>
     <loc>https://homemassageubud.com/ubud/traditional-balinese-massage</loc>
     <lastmod>2026-01-16</lastmod>
@@ -155,8 +152,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Area Pages - Ubud -->
   <url>
     <loc>https://homemassageubud.com/ubud-centre</loc>
     <lastmod>2026-01-16</lastmod>
@@ -191,15 +186,13 @@
     <loc>https://homemassageubud.com/sidemen</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
-  
-  <!-- Area Pages - South Bali -->
   <url>
     <loc>https://homemassageubud.com/seminyak</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://homemassageubud.com/petitenget</loc>
@@ -211,7 +204,7 @@
     <loc>https://homemassageubud.com/canggu</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://homemassageubud.com/berawa</loc>
@@ -279,8 +272,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Area Pages - North & East Bali -->
   <url>
     <loc>https://homemassageubud.com/lovina</loc>
     <lastmod>2026-01-16</lastmod>
@@ -299,8 +290,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Service Landing Pages -->
   <url>
     <loc>https://homemassageubud.com/services/massage</loc>
     <lastmod>2026-01-16</lastmod>

@@ -1,0 +1,71 @@
+name: SEO - Sitemap Auto-generation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'client/src/**'
+      - 'scripts/generate-sitemap.ts'
+  workflow_dispatch:
+
+jobs:
+  generate-sitemap:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate sitemap
+        run: npm run sitemap:generate
+        env:
+          PING_GOOGLE: 'false'
+
+      - name: Validate SEO configuration
+        run: npm run sitemap:validate
+
+      - name: Check for sitemap changes
+        id: check_changes
+        run: |
+          if git diff --quiet client/public/sitemap*.xml; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No sitemap changes detected"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Sitemap changes detected"
+          fi
+
+      - name: Commit and push sitemap changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add client/public/sitemap*.xml
+          git commit -m "chore: auto-update sitemap [skip ci]"
+          git push
+
+      - name: Ping Google (production only)
+        if: steps.check_changes.outputs.changed == 'true' && github.ref == 'refs/heads/main'
+        run: |
+          echo "🔔 Pinging Google about sitemap update..."
+          curl -s "https://www.google.com/ping?sitemap=https://homemassageubud.com/sitemap.xml" || echo "⚠️  Google ping failed (non-critical)"
+          echo "✅ Google ping completed"
+
+      - name: Summary
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          echo "✅ Sitemap generation completed"
+          echo "📊 Changes committed and pushed"
+          echo "🔔 Google notified of sitemap update"
