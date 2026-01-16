@@ -230,6 +230,12 @@ class MobileMassageDataExtractor {
     ];
 
     const prices: number[] = [];
+    
+    // Price range validation constants
+    const MIN_PRICE_K = 200; // Minimum expected price in thousands (IDR)
+    const MAX_PRICE_K = 1000; // Maximum expected price in thousands (IDR)
+    const PRICE_MULTIPLIER = 1000; // Convert price in thousands to actual price
+    
     pricePatterns.forEach(pattern => {
       const matches = bodyText.matchAll(pattern);
       for (const match of matches) {
@@ -239,8 +245,9 @@ class MobileMassageDataExtractor {
         }
         priceStr = priceStr.replace(/[,.]/g, '');
         const price = parseInt(priceStr, 10);
-        if (price >= 200 && price <= 1000) {
-          prices.push(price * 1000);
+        // Validate price is in reasonable range for massage services
+        if (price >= MIN_PRICE_K && price <= MAX_PRICE_K) {
+          prices.push(price * PRICE_MULTIPLIER);
         }
       }
     });

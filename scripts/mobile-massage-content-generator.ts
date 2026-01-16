@@ -117,8 +117,8 @@ interface PageDefinitions {
 interface ServiceTypePage {
   slug: string;
   name: string;
-  price_60: number;
-  price_90: number;
+  price_60: number | null;
+  price_90: number | null;
   description: string;
 }
 
@@ -326,7 +326,8 @@ class MobileMassageContentGenerator {
 
   private formatPrice(price: number | null): string {
     if (price === null) return 'Price TBD';
-    return `IDR ${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;
+    const currency = this.facts.pricing.currency;
+    return `${currency} ${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;
   }
 
   private formatPriceK(price: number | null): string {
