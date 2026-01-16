@@ -274,7 +274,7 @@ export default function HomeMassageUbud() {
 
       {/* FAQ Section */}
       <section id="faq">
-        <HomeMassageFAQ faqs={[
+        <HomeMassageFAQ items={[
           {
             question: "How quickly can I get home massage in Ubud?",
             answer: "Most home massage requests in Ubud are accommodated within 2-4 hours of contact via WhatsApp. We offer same-day booking throughout Ubud, including rice terrace villas, jungle retreats, and central accommodations. Contact us early for best availability."
