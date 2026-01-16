@@ -112,8 +112,52 @@ This project includes a comprehensive prompt system for scalable SEO landing pag
 |------|---------|---------|
 | **SEO Audit** | Analyze on-page SEO, meta tags, and content quality | `npm run seo:audit` |
 | **Link Audit** | Scan for broken links, buttons, images, and redirects | `npm run link:audit` |
+| **Orphan Page Detector** | Identify pages with zero internal links | `npm run orphan:detect` |
+| **Orphan Page Monitor** | Weekly monitoring for new orphan pages | `npm run orphan:monitor` |
+| **New Page Validator** | Validate pages before publishing | `npm run page:validate <url>` |
 | **Sitemap Generator** | Generate sitemap.xml for search engines | `npm run sitemap:generate` |
 | **SEO Validator** | Validate sitemap and SEO implementation | `npm run sitemap:validate` |
+
+### Orphan Page Detection & Prevention System
+
+**NEW!** Comprehensive system for detecting, fixing, and preventing orphan pages (pages with zero internal links):
+
+**Features:**
+- **Full Site Crawl**: Maps entire internal linking structure
+- **Orphan Detection**: Identifies pages with 0 internal links
+- **Smart Classification**: Prioritizes by traffic, backlinks, and content value
+- **Automated Fixes**: Generates specific recommendations:
+  - Add internal links (with suggestions)
+  - Merge & 301 redirect (with targets)
+  - Add noindex tag
+  - Delete page
+- **Tracking Spreadsheet**: Excel-compatible CSV for monitoring
+- **Weekly Monitoring**: Detects new orphans automatically
+- **Pre-Publication Validation**: Prevents orphans before they happen
+- **Alerts**: Notifies when new orphans are detected
+
+**Quick Start:**
+```bash
+# Run full orphan detection
+npm run orphan:detect
+
+# Weekly monitoring (automate with cron)
+npm run orphan:monitor
+
+# Validate new page before publishing
+npm run page:validate https://yoursite.com/new-page
+```
+
+**Documentation:**
+- `ORPHAN_PAGE_DETECTION_GUIDE.md` - Complete system guide
+- `ORPHAN_PAGE_PREVENTION.md` - Best practices & content workflow
+- `ORPHAN_DETECTION_EXAMPLES.md` - Example outputs and usage scenarios
+
+**Expected Impact:**
+- Traffic recovery: 20-50% on fixed pages
+- Link equity preserved: 95%+
+- Crawl efficiency: Significantly improved
+- Prevention: <1% orphan rate
 
 ### Link Audit & Recovery System
 

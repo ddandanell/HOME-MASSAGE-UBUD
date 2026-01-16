@@ -1,9 +1,106 @@
-# SEO Audit Tool
+# SEO & Orphan Page Detection Tools
 
-This tool performs a comprehensive technical and on-page SEO audit of all pages on HomeMassageUbud.com.
+This directory contains comprehensive tools for SEO auditing, link management, and orphan page detection.
 
-## Features
+## Available Tools
 
+### 1. Orphan Page Detector (`orphan-page-detector.ts`)
+
+**Purpose:** Comprehensive orphan page detection and SEO optimization system
+
+**Usage:**
+```bash
+npm run orphan:detect
+```
+
+**Features:**
+- Full site crawl with internal link mapping
+- Identifies pages with zero internal links (orphans)
+- Classifies orphans by priority (high/medium/low)
+- Generates automated fix recommendations:
+  - Add internal links (with suggestions)
+  - Merge & 301 redirect (with targets)
+  - Add noindex tag
+  - Delete page
+- Simulates traffic and backlink analysis
+- Content quality assessment
+- Creates tracking spreadsheet
+
+**Output:**
+- `orphan-detection-[timestamp].md` - Comprehensive report
+- `orphan-detection-[timestamp].json` - Raw data
+- `orphan-page-tracking-[timestamp].csv` - Excel tracking spreadsheet
+
+**Documentation:** See `ORPHAN_PAGE_DETECTION_GUIDE.md`
+
+---
+
+### 2. Orphan Page Monitor (`orphan-page-monitor.ts`)
+
+**Purpose:** Automated weekly monitoring for new orphan pages
+
+**Usage:**
+```bash
+npm run orphan:monitor
+```
+
+**Features:**
+- Quick scan mode for speed
+- Detects NEW orphan pages since last scan
+- Tracks resolved orphans
+- Historical trend analysis (last 30 scans)
+- Automated alerts when orphans detected
+- Generates monitoring reports
+
+**Output:**
+- `orphan-monitor-[timestamp].json` - Scan results
+- `orphan-monitor-[timestamp].md` - Summary report
+- `orphan-alert-[timestamp].txt` - Alert messages
+- `orphan-history.json` - Historical data
+
+**Recommended:** Run weekly via cron or CI/CD
+
+---
+
+### 3. New Page Validator (`validate-new-page.ts`)
+
+**Purpose:** Pre-publication validation to prevent orphan pages
+
+**Usage:**
+```bash
+npm run page:validate https://homemassageubud.com/your-page
+```
+
+**Features:**
+- Validates page is in sitemap.xml
+- Counts internal links (requires minimum 2)
+- Checks SEO elements (title, meta, H1, canonical)
+- Verifies content quality (minimum 300 words)
+- Suggests pages to link from
+- Prevents orphan pages before they happen
+
+**Validation Criteria:**
+- ✅ In sitemap
+- ✅ At least 2 internal links
+- ✅ Title tag (50-60 chars)
+- ✅ Meta description (120-160 chars)
+- ✅ Single H1 tag
+- ✅ Minimum 300 words
+
+**Recommended:** Run before deploying new pages
+
+---
+
+### 4. SEO Audit Tool (`seo-audit.ts`)
+
+**Purpose:** Comprehensive technical and on-page SEO audit
+
+**Usage:**
+```bash
+npm run seo:audit
+```
+
+**Features:**
 - Fetches and parses sitemap.xml automatically
 - Analyzes all pages for:
   - Title tags and meta descriptions
@@ -22,6 +119,83 @@ This tool performs a comprehensive technical and on-page SEO audit of all pages 
   - Site-wide issues
   - Specific recommendations for each page
 
+**Output:**
+- `seo-audit-[timestamp].md` - Human-readable report
+- `seo-audit-[timestamp].json` - Raw data
+
+---
+
+### 5. Link Audit Tool (`link-audit.ts`)
+
+**Purpose:** Scan for broken links, buttons, images, and redirects
+
+**Usage:**
+```bash
+npm run link:audit
+```
+
+**Features:**
+- Scans all internal/external links
+- Detects broken links (404, 500 errors)
+- Finds redirect chains
+- Checks buttons and CTAs
+- Validates images
+- Priority scoring by SEO impact
+- Generates actionable recommendations
+
+**Output:**
+- `link-audit-[timestamp].md` - Report with recommendations
+- `link-audit-[timestamp].csv` - Spreadsheet export
+- `link-audit-[timestamp].json` - Raw data
+
+**Documentation:** See `LINK_AUDIT_TOOL.md`
+
+---
+
+## Quick Start
+
+### Initial Setup
+
+1. **Run comprehensive orphan detection:**
+   ```bash
+   npm run orphan:detect
+   ```
+
+2. **Review reports in `reports/` directory**
+
+3. **Fix high-priority orphans first** (service/area pages)
+
+4. **Set up weekly monitoring:**
+   ```bash
+   npm run orphan:monitor
+   ```
+
+### Before Publishing New Pages
+
+```bash
+# Validate new page
+npm run page:validate https://homemassageubud.com/new-page
+
+# If validation passes, publish
+# Then verify after 24 hours
+npm run orphan:monitor
+```
+
+### Monthly Maintenance
+
+```bash
+# Full SEO audit
+npm run seo:audit
+
+# Link audit
+npm run link:audit
+
+# Orphan detection
+npm run orphan:detect
+```
+
+---
+
 ## Installation
 
 Dependencies are already included in the project's `package.json`. If you need to reinstall them:
@@ -30,90 +204,138 @@ Dependencies are already included in the project's `package.json`. If you need t
 npm install
 ```
 
-## Usage
+---
 
-Run the SEO audit:
+## Report Outputs
 
-```bash
-npm run seo:audit
+All tools generate reports in the `reports/` directory:
+
+```
+reports/
+├── orphan-detection-[timestamp].md
+├── orphan-detection-[timestamp].json
+├── orphan-page-tracking-[timestamp].csv
+├── orphan-monitor-[timestamp].md
+├── orphan-monitor-[timestamp].json
+├── orphan-history.json
+├── seo-audit-[timestamp].md
+├── seo-audit-[timestamp].json
+├── link-audit-[timestamp].md
+├── link-audit-[timestamp].csv
+└── link-audit-[timestamp].json
 ```
 
-This will:
-1. Fetch the sitemap from https://homemassageubud.com/sitemap.xml
-2. Analyze each page (with a 1-second delay between requests)
-3. Generate two report files in the `reports/` directory:
-   - `seo-audit-[timestamp].md` - Human-readable markdown report
-   - `seo-audit-[timestamp].json` - Raw data in JSON format
+---
 
-## Report Structure
+## Complete Documentation
 
-### Markdown Report (.md)
+- **`ORPHAN_PAGE_DETECTION_GUIDE.md`** - Complete orphan detection system guide
+- **`ORPHAN_PAGE_PREVENTION.md`** - Best practices and content workflow
+- **`SEO_AUDIT_TOOL.md`** - SEO audit documentation
+- **`LINK_AUDIT_TOOL.md`** - Link audit documentation
+- **`INTERNAL_LINKING_ARCHITECTURE.md`** - Internal linking strategy
 
-The markdown report includes:
-
-1. **Page Analysis Table**: Summary of all pages with:
-   - URL
-   - Current title
-   - Recommended title approach
-   - Meta description excerpt
-   - Keyword focus (extracted from URL)
-   - Top issues found
-   - Key recommendations
-
-2. **Summary Statistics**:
-   - Count of pages with various issues
-   - Average word count across all pages
-
-3. **Detailed Findings**:
-   - Site-wide issues (duplicates, etc.)
-   - Page-specific recommendations
-   - Priority actions to take
-
-### JSON Report (.json)
-
-The JSON report contains raw data for:
-- Complete page data including all metadata
-- Full list of issues per page
-- All recommendations
-- Site-wide issues
+---
 
 ## Customization
 
-To audit a different website or modify the analysis:
+To customize for a different website:
 
-1. Edit `scripts/seo-audit.ts`
-2. Change the `sitemapUrl` in the `runAudit()` function
-3. Modify thresholds (word count, title length, etc.) in the `analyzePage()` function
-4. Add custom recommendations in the `generateRecommendations()` function
+1. Edit the respective script file in `scripts/`
+2. Update the `CONFIG` object:
+   ```typescript
+   const CONFIG = {
+     sitemapUrl: 'https://yoursite.com/sitemap.xml',
+     domain: 'yoursite.com',
+     baseUrl: 'https://yoursite.com',
+     // ... other settings
+   };
+   ```
+3. Adjust thresholds as needed (word count, link count, etc.)
 
-## Understanding the Output
+---
 
-### Common Issues
+## Best Practices
 
-- **Missing title/meta description**: Page lacks basic SEO metadata
-- **Duplicate content**: Multiple pages share the same title or description
-- **Low word count**: Page has less than 300 words of visible content
-- **Missing schema**: No JSON-LD structured data found
-- **Multiple H1 tags**: More than one H1 tag on a page (SEO best practice is one per page)
+### For Content Creators
+- Always add 2-3 internal links BEFORE publishing
+- Run `page:validate` before deploying
+- Use descriptive anchor text
+- Link to AND from related content
 
-### Recommendations
+### For Developers
+- Automate sitemap updates
+- Set up weekly monitoring in CI/CD
+- Implement pre-deployment validation
+- Track orphan metrics
 
-The tool provides specific recommendations based on:
-- Page type (service pages, area pages, etc.)
-- Detected issues
-- SEO best practices
+### For SEO Teams
+- Run monthly comprehensive audits
+- Fix high-priority orphans within 48 hours
+- Monitor historical trends
+- Document all changes
+
+---
+
+## Troubleshooting
+
+### Issue: Script fails with timeout error
+
+**Solution:**
+- Increase timeout in CONFIG
+- Reduce number of pages scanned
+- Check network connectivity
+
+### Issue: Too many false positives
+
+**Solution:**
+- Adjust classification thresholds
+- Review content type detection logic
+- Update priority rules
+
+### Issue: Missing reports directory
+
+**Solution:**
+- Reports directory is created automatically
+- Check write permissions
+- Verify script completed successfully
+
+---
 
 ## Technical Details
 
-- Built with TypeScript
-- Uses Axios for HTTP requests
-- Uses Cheerio for HTML parsing
-- Uses xml2js for sitemap parsing
-- Includes 1-second delay between requests to avoid overwhelming the server
+## Technical Details
+
+- **Language:** TypeScript
+- **HTTP Client:** Axios
+- **HTML Parser:** Cheerio
+- **XML Parser:** xml2js
+- **Rate Limiting:** Configurable delays between requests
+- **Error Handling:** Graceful degradation with detailed logging
+
+---
 
 ## Notes
 
-- The audit runs against the live website (homemassageubud.com)
+- All audits run against the live website
 - Analysis includes only visible content (scripts, styles removed)
-- Word count includes all text within the `<body>` tag after cleaning
-- Schema detection looks for `application/ld+json` script tags
+- Delays between requests prevent overwhelming the server
+- Historical data is preserved for trend analysis
+- Reports are timestamped for version control
+
+---
+
+## Contributing
+
+To improve these tools:
+1. Add new classification rules
+2. Enhance link suggestion algorithms
+3. Integrate additional data sources (Analytics, Search Console)
+4. Improve reporting formats
+5. Add new validation checks
+
+---
+
+## License
+
+MIT License - See LICENSE file for details
