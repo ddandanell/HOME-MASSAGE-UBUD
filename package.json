@@ -15,6 +15,8 @@
     "seo:audit": "tsx scripts/seo-audit.ts",
     "extract:lymphatic": "tsx scripts/lymphatic-drainage-data-extractor.ts",
     "generate:lymphatic": "tsx scripts/lymphatic-drainage-content-generator.ts",
+    "extract:mobile": "tsx scripts/mobile-massage-data-extractor.ts",
+    "generate:mobile": "tsx scripts/mobile-massage-content-generator.ts",
     "indexnow:submit": "tsx scripts/indexnow-submit.ts"
   },
   "dependencies": {

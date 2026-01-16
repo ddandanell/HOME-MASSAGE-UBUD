@@ -1,0 +1,677 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Mobile Massage SEO Factory Specification",
+  "version": "1.0.0",
+  "keyword": "mobile massage",
+  "description": "JSON-driven mobile massage SEO content generation system for HOME-MASSAGE-UBUD",
+  
+  "system_prompts": {
+    "content_generation": "You are an expert SEO content writer specializing in mobile massage services in Bali. Generate high-quality, unique content that strictly follows the linking rules, maintains consistent brand voice, includes accurate business information from facts_json, and meets all QA gates. NEVER invent unknown information - flag it instead. Be conversational yet professional, emphasizing convenience, quality, and authentic Balinese wellness traditions.",
+    "linking_enforcement": "STRICT RULE: You MUST include ALL required internal links specified in the linking_rules. Missing links will cause QA failure. Every page must link to its parent hub, related services, and at least 3 peer pages. Verify link density meets minimum requirements before completing generation.",
+    "quality_assurance": "Before finalizing any page: 1) Verify word count meets minimum, 2) Check all required internal links are present, 3) Confirm facts_json data is used correctly, 4) Flag any UNKNOWNS encountered, 5) Ensure natural keyword integration. FAIL the page if any gate is not met."
+  },
+  
+  "facts_json": {
+    "brand": {
+      "name": "Home Massage Ubud",
+      "site": "https://homemassageubud.com",
+      "tagline": "Premium Mobile Massage Services in Bali",
+      "established": "2018"
+    },
+    "contacts": {
+      "phone": "+62 811 2656 869",
+      "whatsapp": "+62 811 2656 869",
+      "whatsapp_url": "https://wa.me/628112656869",
+      "email": "info@homemassageubud.com",
+      "booking_url": "https://homemassageubud.com/booking"
+    },
+    "pricing": {
+      "currency": "IDR",
+      "mobile_massage": [
+        {
+          "minutes": 60,
+          "price": 280000,
+          "description": "Perfect for targeted treatment"
+        },
+        {
+          "minutes": 90,
+          "price": 400000,
+          "description": "Most popular - comprehensive session",
+          "badge": "⭐ MOST POPULAR"
+        },
+        {
+          "minutes": 120,
+          "price": 520000,
+          "description": "Extended treatment for maximum relaxation"
+        }
+      ],
+      "notes": "All prices include therapist travel to your location within Ubud area, professional massage table and linens, premium oils, complete setup and cleanup. No hidden fees.",
+      "couples_multiplier": 1.8,
+      "group_discount": "10% off for 3+ people"
+    },
+    "service_areas": {
+      "primary": ["Ubud"],
+      "all_locations": [
+        "Ubud", "Ubud Center", "Campuhan", "Penestanan", "Tegallalang",
+        "Payangan", "Petulu", "Kedewatan", "Sayan", "Monkey Forest",
+        "Nyuh Kuning", "Peliatan", "Seminyak", "Canggu", "Sanur",
+        "Nusa Dua", "Uluwatu", "Jimbaran", "Kuta", "Legian"
+      ],
+      "fees_or_rules": "No additional travel fees within Ubud and immediate surrounding areas (up to 15km radius). Extended areas (Seminyak, Canggu, Sanur, etc.) may have small transport supplement - confirm when booking."
+    },
+    "therapists": {
+      "claims": [
+        "Certified professional Balinese therapists",
+        "Advanced training in Swedish, deep tissue, and traditional Balinese techniques",
+        "Swiss-trained methodology combined with Balinese tradition",
+        "Minimum 5 years experience in luxury hotel and spa environments",
+        "All therapists background-checked and fully insured"
+      ],
+      "languages": ["English", "Indonesian", "Balinese"],
+      "count": "15+ professional therapists",
+      "specializations": ["Deep Tissue", "Swedish", "Balinese", "Hot Stone", "Prenatal", "Sports Massage", "Aromatherapy"]
+    },
+    "booking": {
+      "channels": ["WhatsApp (fastest)", "Phone", "Email", "Online Booking Form"],
+      "requirements": [
+        "Your location/accommodation address in Bali",
+        "Preferred date and time",
+        "Massage type and duration (60/90/120 min)",
+        "Number of people",
+        "Any health conditions or special requests"
+      ],
+      "cancellation": "Free cancellation up to 24 hours before appointment. Cancellations within 24 hours may incur 50% charge. No-shows will be charged full amount.",
+      "same_day": "Same-day booking available subject to therapist availability. Contact before 2pm for best chance of same-day service. Popular times book quickly.",
+      "advance_booking": "Recommend booking 2-3 days in advance during high season (July-August, December-January)"
+    },
+    "proof": {
+      "testimonials_claims": [
+        "500+ Five-Star Reviews",
+        "Trusted by Four Seasons, Como Uma, and Viceroy Bali",
+        "Top-rated mobile massage service on TripAdvisor"
+      ],
+      "positioning_claims": [
+        "Bali's premier mobile massage service",
+        "Bringing 5-star spa experiences to your door",
+        "Professional, convenient, and affordable",
+        "Serving Ubud since 2018"
+      ]
+    },
+    "mobile_service_benefits": [
+      "No travel time - therapist comes to you",
+      "Enjoy massage in your comfortable, private space",
+      "No need to worry about post-massage transportation",
+      "Flexible scheduling including early morning and late evening",
+      "Perfect for families, groups, or couples",
+      "Save time and maximize relaxation"
+    ]
+  },
+  
+  "content_architecture": {
+    "total_pages_target": 50,
+    "total_word_count_target": 75000,
+    "average_words_per_page": 1500,
+    "minimum_words_per_page": 800,
+    "keyword_density_target": "1-2%",
+    "internal_links_per_page_minimum": 8
+  },
+  
+  "chunk_order": [
+    {
+      "order": 1,
+      "chunk_name": "hub_page",
+      "page_count": 1,
+      "description": "Main landing page for mobile massage keyword"
+    },
+    {
+      "order": 2,
+      "chunk_name": "service_types_index",
+      "page_count": 1,
+      "description": "Index/hub page for all mobile massage service variations"
+    },
+    {
+      "order": 3,
+      "chunk_name": "service_type_pages",
+      "page_count": 10,
+      "description": "Individual pages for each service type offering"
+    },
+    {
+      "order": 4,
+      "chunk_name": "cities_index",
+      "page_count": 1,
+      "description": "Index/hub page for all location-based pages"
+    },
+    {
+      "order": 5,
+      "chunk_name": "city_pages",
+      "page_count": 15,
+      "description": "Location-specific landing pages"
+    },
+    {
+      "order": 6,
+      "chunk_name": "blog_index",
+      "page_count": 1,
+      "description": "Blog hub page for mobile massage content"
+    },
+    {
+      "order": 7,
+      "chunk_name": "blog_posts",
+      "page_count": 8,
+      "description": "Educational and promotional blog articles"
+    },
+    {
+      "order": 8,
+      "chunk_name": "venue_type_pages",
+      "page_count": 5,
+      "description": "Pages targeting specific accommodation types"
+    },
+    {
+      "order": 9,
+      "chunk_name": "comparison_pages",
+      "page_count": 4,
+      "description": "Service comparison pages"
+    },
+    {
+      "order": 10,
+      "chunk_name": "specialty_pages",
+      "page_count": 4,
+      "description": "Niche/specialty targeting pages"
+    }
+  ],
+  
+  "page_definitions": {
+    "hub_page": {
+      "path": "/mobile-massage",
+      "title": "Mobile Massage Bali - Professional Therapists Come to You | Home Massage Ubud",
+      "meta_description": "Premium mobile massage service in Bali. Certified therapists bring spa-quality massage to your villa, hotel, or accommodation. From Rp 280K. Book now!",
+      "h1": "Professional Mobile Massage Service in Bali",
+      "target_keywords": ["mobile massage", "mobile massage bali", "mobile massage ubud", "massage to your door"],
+      "target_word_count": 3000,
+      "content_sections": [
+        "Hero with primary value proposition",
+        "What is mobile massage and key benefits",
+        "Service types overview with links",
+        "How mobile massage works (booking to completion)",
+        "Pricing transparency section",
+        "Service areas with city links",
+        "Why choose our mobile massage service",
+        "Therapist qualifications",
+        "FAQ section",
+        "Strong CTA section"
+      ],
+      "required_links": [
+        "service_types_index",
+        "cities_index",
+        "blog_index",
+        "all service_type_pages",
+        "top 5 city_pages"
+      ]
+    },
+    
+    "service_types_index": {
+      "path": "/mobile-massage/services",
+      "title": "Mobile Massage Services - All Treatment Types | Home Massage Ubud",
+      "meta_description": "Browse all mobile massage services available in Bali. Balinese, Swedish, Deep Tissue, Hot Stone, and more. Professional therapists, flexible scheduling.",
+      "h1": "Mobile Massage Services in Bali",
+      "target_word_count": 2000,
+      "required_links": [
+        "hub_page",
+        "all service_type_pages",
+        "cities_index",
+        "top 3 blog_posts"
+      ]
+    },
+    
+    "service_type_pages": [
+      {
+        "slug": "balinese-mobile-massage",
+        "name": "Balinese Mobile Massage",
+        "price_60": 280000,
+        "price_90": 400000,
+        "description": "Traditional Balinese massage with deep pressure and acupressure"
+      },
+      {
+        "slug": "swedish-mobile-massage",
+        "name": "Swedish Mobile Massage",
+        "price_60": 280000,
+        "price_90": 400000,
+        "description": "Classic relaxation massage with flowing strokes"
+      },
+      {
+        "slug": "deep-tissue-mobile-massage",
+        "name": "Deep Tissue Mobile Massage",
+        "price_60": 320000,
+        "price_90": 440000,
+        "description": "Intense pressure targeting chronic muscle tension"
+      },
+      {
+        "slug": "hot-stone-mobile-massage",
+        "name": "Hot Stone Mobile Massage",
+        "price_60": 360000,
+        "price_90": 480000,
+        "description": "Heated stones combined with massage techniques"
+      },
+      {
+        "slug": "aromatherapy-mobile-massage",
+        "name": "Aromatherapy Mobile Massage",
+        "price_60": 304000,
+        "price_90": 424000,
+        "description": "Essential oils enhancing relaxation and healing"
+      },
+      {
+        "slug": "prenatal-mobile-massage",
+        "name": "Prenatal Mobile Massage",
+        "price_60": 336000,
+        "price_90": 456000,
+        "description": "Safe, specialized massage for pregnant women"
+      },
+      {
+        "slug": "sports-mobile-massage",
+        "name": "Sports Mobile Massage",
+        "price_60": 320000,
+        "price_90": 440000,
+        "description": "Recovery and performance for athletes"
+      },
+      {
+        "slug": "couples-mobile-massage",
+        "name": "Couples Mobile Massage",
+        "price_60": 520000,
+        "price_90": 760000,
+        "description": "Simultaneous massage for two people"
+      },
+      {
+        "slug": "thai-mobile-massage",
+        "name": "Thai Mobile Massage",
+        "price_60": 304000,
+        "price_90": 424000,
+        "description": "Traditional Thai stretching and pressure points"
+      },
+      {
+        "slug": "reflexology-mobile-massage",
+        "name": "Reflexology Mobile Massage",
+        "price_60": 240000,
+        "price_90": 304000,
+        "description": "Foot and hand pressure point therapy"
+      }
+    ],
+    
+    "cities_index": {
+      "path": "/mobile-massage/locations",
+      "title": "Mobile Massage Locations - Service Areas in Bali | Home Massage Ubud",
+      "meta_description": "Mobile massage available throughout Bali. Ubud, Seminyak, Canggu, Sanur, and more. Check if we serve your area.",
+      "h1": "Mobile Massage Service Areas in Bali",
+      "target_word_count": 1500,
+      "required_links": [
+        "hub_page",
+        "service_types_index",
+        "all city_pages"
+      ]
+    },
+    
+    "city_pages": [
+      {"slug": "ubud", "name": "Ubud", "type": "primary"},
+      {"slug": "ubud-center", "name": "Ubud Center", "type": "micro"},
+      {"slug": "campuhan", "name": "Campuhan", "type": "micro"},
+      {"slug": "penestanan", "name": "Penestanan", "type": "micro"},
+      {"slug": "seminyak", "name": "Seminyak", "type": "major"},
+      {"slug": "canggu", "name": "Canggu", "type": "major"},
+      {"slug": "sanur", "name": "Sanur", "type": "major"},
+      {"slug": "nusa-dua", "name": "Nusa Dua", "type": "major"},
+      {"slug": "uluwatu", "name": "Uluwatu", "type": "secondary"},
+      {"slug": "jimbaran", "name": "Jimbaran", "type": "secondary"},
+      {"slug": "kuta", "name": "Kuta", "type": "secondary"},
+      {"slug": "legian", "name": "Legian", "type": "secondary"},
+      {"slug": "tegallalang", "name": "Tegallalang", "type": "micro"},
+      {"slug": "kedewatan", "name": "Kedewatan", "type": "micro"},
+      {"slug": "sayan", "name": "Sayan", "type": "micro"}
+    ],
+    
+    "blog_index": {
+      "path": "/mobile-massage/blog",
+      "title": "Mobile Massage Blog - Tips, Benefits & Guides | Home Massage Ubud",
+      "meta_description": "Learn about mobile massage benefits, preparation tips, and wellness advice. Expert insights from professional Balinese therapists.",
+      "h1": "Mobile Massage Blog",
+      "target_word_count": 1200,
+      "required_links": [
+        "hub_page",
+        "service_types_index",
+        "cities_index",
+        "all blog_posts"
+      ]
+    },
+    
+    "blog_posts": [
+      {
+        "slug": "benefits-of-mobile-massage",
+        "title": "10 Benefits of Mobile Massage in Bali",
+        "target_word_count": 2500
+      },
+      {
+        "slug": "mobile-massage-vs-spa",
+        "title": "Mobile Massage vs Spa: Which is Right for You?",
+        "target_word_count": 2000
+      },
+      {
+        "slug": "prepare-for-mobile-massage",
+        "title": "How to Prepare Your Space for a Mobile Massage",
+        "target_word_count": 1800
+      },
+      {
+        "slug": "first-time-mobile-massage",
+        "title": "First Time Getting a Mobile Massage? What to Expect",
+        "target_word_count": 2200
+      },
+      {
+        "slug": "mobile-massage-for-travelers",
+        "title": "Why Travelers Love Mobile Massage in Bali",
+        "target_word_count": 2000
+      },
+      {
+        "slug": "best-mobile-massage-for-couples",
+        "title": "Best Mobile Massage Experiences for Couples in Bali",
+        "target_word_count": 2300
+      },
+      {
+        "slug": "mobile-massage-safety-hygiene",
+        "title": "Mobile Massage Safety and Hygiene Standards",
+        "target_word_count": 1600
+      },
+      {
+        "slug": "choosing-mobile-massage-therapist",
+        "title": "How to Choose a Professional Mobile Massage Therapist",
+        "target_word_count": 1900
+      }
+    ],
+    
+    "venue_type_pages": [
+      {
+        "slug": "hotel-mobile-massage",
+        "title": "Hotel Mobile Massage",
+        "target_word_count": 1500
+      },
+      {
+        "slug": "villa-mobile-massage",
+        "title": "Villa Mobile Massage",
+        "target_word_count": 1500
+      },
+      {
+        "slug": "resort-mobile-massage",
+        "title": "Resort Mobile Massage",
+        "target_word_count": 1500
+      },
+      {
+        "slug": "guesthouse-mobile-massage",
+        "title": "Guesthouse Mobile Massage",
+        "target_word_count": 1200
+      },
+      {
+        "slug": "airbnb-mobile-massage",
+        "title": "Airbnb Mobile Massage",
+        "target_word_count": 1200
+      }
+    ],
+    
+    "comparison_pages": [
+      {
+        "slug": "mobile-vs-spa-massage",
+        "title": "Mobile Massage vs Spa Massage",
+        "target_word_count": 1800
+      },
+      {
+        "slug": "mobile-vs-hotel-massage",
+        "title": "Mobile Massage vs Hotel Spa",
+        "target_word_count": 1600
+      },
+      {
+        "slug": "mobile-massage-cost-comparison",
+        "title": "Mobile Massage Cost Comparison Bali",
+        "target_word_count": 1400
+      },
+      {
+        "slug": "traditional-vs-mobile-massage",
+        "title": "Traditional Spa vs Mobile Massage",
+        "target_word_count": 1500
+      }
+    ],
+    
+    "specialty_pages": [
+      {
+        "slug": "same-day-mobile-massage",
+        "title": "Same-Day Mobile Massage Bali",
+        "target_word_count": 1300
+      },
+      {
+        "slug": "luxury-mobile-massage",
+        "title": "Luxury Mobile Massage Service",
+        "target_word_count": 1400
+      },
+      {
+        "slug": "group-mobile-massage",
+        "title": "Group Mobile Massage Events",
+        "target_word_count": 1300
+      },
+      {
+        "slug": "late-night-mobile-massage",
+        "title": "Late Night Mobile Massage",
+        "target_word_count": 1200
+      }
+    ]
+  },
+  
+  "linking_rules": {
+    "dense_mesh_strategy": "Every page must link to minimum 8 other pages in the ecosystem. Hub pages link to all child pages. Child pages link back to hub, across to siblings, and to relevant content in other sections.",
+    
+    "required_link_patterns": {
+      "hub_page": {
+        "must_link_to": [
+          "service_types_index",
+          "cities_index",
+          "blog_index",
+          "ALL service_type_pages (10 links)",
+          "top_city_pages (5 links)"
+        ],
+        "minimum_total_links": 20
+      },
+      "service_types_index": {
+        "must_link_to": [
+          "hub_page",
+          "ALL service_type_pages (10 links)",
+          "cities_index",
+          "3+ blog_posts"
+        ],
+        "minimum_total_links": 15
+      },
+      "service_type_page": {
+        "must_link_to": [
+          "hub_page",
+          "service_types_index",
+          "3+ related service_type_pages",
+          "3+ city_pages",
+          "1+ blog_posts",
+          "1+ comparison_pages"
+        ],
+        "minimum_total_links": 10
+      },
+      "cities_index": {
+        "must_link_to": [
+          "hub_page",
+          "service_types_index",
+          "ALL city_pages (15 links)"
+        ],
+        "minimum_total_links": 17
+      },
+      "city_page": {
+        "must_link_to": [
+          "hub_page",
+          "cities_index",
+          "service_types_index",
+          "3+ service_type_pages",
+          "3+ related city_pages",
+          "1+ blog_posts"
+        ],
+        "minimum_total_links": 10
+      },
+      "blog_index": {
+        "must_link_to": [
+          "hub_page",
+          "service_types_index",
+          "cities_index",
+          "ALL blog_posts (8 links)"
+        ],
+        "minimum_total_links": 11
+      },
+      "blog_post": {
+        "must_link_to": [
+          "hub_page",
+          "blog_index",
+          "3+ service_type_pages",
+          "3+ city_pages",
+          "2+ related blog_posts"
+        ],
+        "minimum_total_links": 10
+      },
+      "venue_type_page": {
+        "must_link_to": [
+          "hub_page",
+          "service_types_index",
+          "cities_index",
+          "3+ service_type_pages",
+          "2+ city_pages"
+        ],
+        "minimum_total_links": 8
+      },
+      "comparison_page": {
+        "must_link_to": [
+          "hub_page",
+          "service_types_index",
+          "2+ service_type_pages",
+          "2+ city_pages",
+          "1+ blog_posts"
+        ],
+        "minimum_total_links": 7
+      },
+      "specialty_page": {
+        "must_link_to": [
+          "hub_page",
+          "service_types_index",
+          "2+ service_type_pages",
+          "2+ city_pages",
+          "1+ blog_posts"
+        ],
+        "minimum_total_links": 7
+      }
+    },
+    
+    "link_placement_rules": [
+      "Links must be naturally integrated into content, not dumped in lists",
+      "Use descriptive anchor text including keyword variations",
+      "Distribute links throughout content (intro, body, conclusion)",
+      "Include navigation breadcrumbs at top of page",
+      "Related content section near bottom with 4-6 contextual links",
+      "Service/location grids should be actual clickable links, not just text"
+    ],
+    
+    "forbidden_linking": [
+      "No linking to external sites except for booking/contact",
+      "No broken internal links",
+      "No linking to non-existent pages",
+      "No circular single-link patterns (A->B, B->A only)"
+    ]
+  },
+  
+  "qa_gates": {
+    "word_count_gate": {
+      "description": "Every page must meet minimum word count",
+      "rules": [
+        "Hub pages: minimum 2500 words",
+        "Index pages: minimum 1200 words",
+        "Service/city pages: minimum 1000 words",
+        "Blog posts: minimum 1500 words",
+        "Other pages: minimum 800 words"
+      ],
+      "failure_action": "FAIL page generation, report deficiency"
+    },
+    
+    "linking_gate": {
+      "description": "Every page must have required internal links",
+      "rules": [
+        "Meet minimum link count per page type",
+        "All required link patterns present",
+        "No broken links",
+        "No links to undefined pages"
+      ],
+      "failure_action": "FAIL page generation, list missing links"
+    },
+    
+    "facts_json_gate": {
+      "description": "All business data must come from facts_json",
+      "rules": [
+        "Prices match facts_json exactly",
+        "Contact info matches facts_json",
+        "Brand name matches facts_json",
+        "Service areas from facts_json only"
+      ],
+      "failure_action": "FAIL page, report invented data"
+    },
+    
+    "unknown_handling_gate": {
+      "description": "Unknown information must be flagged, never invented",
+      "rules": [
+        "If data not in facts_json, flag as UNKNOWN",
+        "Do not generate fake testimonials",
+        "Do not invent specific therapist names",
+        "Do not create fictional statistics"
+      ],
+      "failure_action": "FAIL page, report unknowns encountered"
+    },
+    
+    "keyword_integration_gate": {
+      "description": "Keyword usage must be natural and strategic",
+      "rules": [
+        "Primary keyword in H1",
+        "Primary keyword in first 100 words",
+        "Keyword density 1-2% (not stuffed)",
+        "Variations used throughout",
+        "Natural, readable prose"
+      ],
+      "failure_action": "WARN, but may pass if readable"
+    },
+    
+    "meta_tags_gate": {
+      "description": "SEO meta tags must be complete and optimized",
+      "rules": [
+        "Title tag present, 50-60 characters",
+        "Meta description present, 140-160 characters",
+        "Both include primary keyword",
+        "Compelling and unique per page"
+      ],
+      "failure_action": "FAIL page generation"
+    }
+  },
+  
+  "content_quality_standards": {
+    "tone": "Professional yet warm and conversational. Emphasize convenience, quality, and authentic Balinese wellness.",
+    "voice": "Expert, trustworthy, customer-focused. We are educators and service providers, not salesy.",
+    "style": "Clear, scannable sections with headings. Short paragraphs. Bullet points for lists. Natural keyword integration.",
+    "uniqueness": "Every page must have unique content. No duplicate paragraphs across pages. Location/service-specific details required.",
+    "value": "Every page must provide genuine value to reader - answer questions, solve problems, educate, or facilitate booking."
+  },
+  
+  "generation_workflow": {
+    "step_1": "Load facts_json and spec.json",
+    "step_2": "Follow chunk_order sequentially",
+    "step_3": "For each page in chunk: generate content following page_definition",
+    "step_4": "Validate against ALL qa_gates before saving",
+    "step_5": "Log any UNKNOWNS or FAILURES",
+    "step_6": "Generate linking report showing connectivity",
+    "step_7": "Output pages in specified format (React TSX or Markdown)",
+    "step_8": "Create summary report with stats and any issues"
+  },
+  
+  "output_format": {
+    "file_type": "TypeScript React Component (.tsx) or Markdown (.md)",
+    "directory_structure": "organized by chunk type (services/, cities/, blog/, etc.)",
+    "frontmatter": "YAML with path, title, meta_description, h1, word_count, links_count",
+    "component_structure": "Helmet for SEO, semantic HTML, Tailwind CSS classes, proper heading hierarchy"
+  }
+}
