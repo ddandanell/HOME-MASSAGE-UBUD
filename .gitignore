@@ -89,6 +89,9 @@ generated-content/
 data-extraction/*.json
 data-extraction/*-2026-*.md
 
+# IndexNow submission logs
+indexnow-submission-log.json
+
 # Backup files
 *_backup.*
 *Old.*
