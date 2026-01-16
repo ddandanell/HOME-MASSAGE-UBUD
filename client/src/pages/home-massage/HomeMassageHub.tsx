@@ -150,6 +150,13 @@ export default function HomeMassageHub() {
               </CardContent>
             </Card>
           </div>
+          <div className="mt-8 text-center">
+            <Button size="lg" variant="outline" asChild>
+              <Link href="/home-massage/services">
+                View All Home Massage Services →
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -275,6 +282,24 @@ export default function HomeMassageHub() {
                 </Link>
               </CardContent>
             </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <MapPin className="w-5 h-5 text-primary mb-2" />
+                <Link href="/home-massage/cities/nusa-dua">
+                  <span className="font-semibold hover:text-primary cursor-pointer">
+                    Home Massage in Nusa Dua
+                  </span>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="text-center mt-8">
+            <Button size="lg" variant="outline" asChild>
+              <Link href="/home-massage/cities">
+                View All Service Areas →
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -376,10 +401,15 @@ export default function HomeMassageHub() {
                 </p>
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center flex flex-wrap gap-4 justify-center">
               <Button variant="outline" asChild>
                 <Link href="/home-massage/knowledge/safety">
                   Read Full Safety Guidelines
+                </Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link href="/home-massage/knowledge">
+                  Explore All Knowledge Topics
                 </Link>
               </Button>
             </div>

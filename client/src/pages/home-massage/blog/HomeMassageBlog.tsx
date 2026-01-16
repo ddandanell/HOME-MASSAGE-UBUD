@@ -142,6 +142,61 @@ export default function HomeMassageBlog() {
                 </CardContent>
               </Card>
             </div>
+
+            {/* Additional Articles Row */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
+              {/* Article 4: Home Massage vs Spa */}
+              <Card className="hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+                    <Calendar className="w-4 h-4" />
+                    <span>Comparison Guide</span>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">
+                    <Link href="/home-massage/blog/home-massage-vs-spa">
+                      <span className="hover:text-primary cursor-pointer">
+                        Home Massage vs Spa Massage
+                      </span>
+                    </Link>
+                  </h3>
+                  <p className="text-muted-foreground mb-6">
+                    Comprehensive comparison between home massage and spa massage. Discover differences in convenience, cost, privacy, 
+                    quality, and flexibility to make the best choice for your Bali wellness experience.
+                  </p>
+                  <Button variant="outline" asChild>
+                    <Link href="/home-massage/blog/home-massage-vs-spa">
+                      Read Comparison <ArrowRight className="w-4 h-4 ml-2" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Article 5: Is Home Massage Safe */}
+              <Card className="hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+                    <Calendar className="w-4 h-4" />
+                    <span>Safety Guide</span>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">
+                    <Link href="/home-massage/blog/is-home-massage-safe">
+                      <span className="hover:text-primary cursor-pointer">
+                        Is Home Massage Safe?
+                      </span>
+                    </Link>
+                  </h3>
+                  <p className="text-muted-foreground mb-6">
+                    Everything about home massage safety standards, therapist verification, red flags to watch for, and how professional 
+                    home massage services protect clients. Essential reading before your first booking.
+                  </p>
+                  <Button variant="outline" asChild>
+                    <Link href="/home-massage/blog/is-home-massage-safe">
+                      Read Safety Guide <ArrowRight className="w-4 h-4 ml-2" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
