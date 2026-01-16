@@ -37,6 +37,9 @@ def setup_browser():
 
 def scrape_google_images_selenium(query, num_images=5):
     """More reliable Google Images scraping"""
+    # Filters to exclude from results
+    EXCLUDED_DOMAINS = ['gstatic']
+    
     driver = setup_browser()
     if not driver:
         return []
@@ -56,7 +59,7 @@ def scrape_google_images_selenium(query, num_images=5):
         
         for img in images:
             src = img.get_attribute('src')
-            if src and src.startswith('http') and 'gstatic' not in src:
+            if src and src.startswith('http') and not any(domain in src for domain in EXCLUDED_DOMAINS):
                 image_urls.append(src)
                 if len(image_urls) >= num_images:
                     break

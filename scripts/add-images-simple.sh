@@ -61,14 +61,17 @@ find "$HTML_DIR" -maxdepth 1 -name "*.html" -type f | while read -r file; do
         # Create backup
         cp "$file" "${file}.backup"
         
+        # Create image tag HTML
+        img_tag="    <img src=\"images/${basename_file}.jpg\" alt=\"${keywords}\" loading=\"lazy\" class=\"hero-image\" style=\"max-width: 100%; height: auto;\">"
+        
         # Insert image after body tag (portable sed syntax)
         if [[ "$OSTYPE" == "darwin"* ]]; then
-            # macOS (BSD sed)
+            # macOS (BSD sed) - needs different escape sequence
             sed -i '' "/<body/a\\
-    <img src=\"images/${basename_file}.jpg\" alt=\"${keywords}\" loading=\"lazy\" class=\"hero-image\" style=\"max-width: 100%; height: auto;\">" "$file"
+${img_tag}" "$file"
         else
             # Linux (GNU sed)
-            sed -i "/<body/a\\    <img src=\"images/${basename_file}.jpg\" alt=\"${keywords}\" loading=\"lazy\" class=\"hero-image\" style=\"max-width: 100%; height: auto;\">" "$file"
+            sed -i "/<body/a\\${img_tag}" "$file"
         fi
         
         echo "✓ Inserted image into HTML"

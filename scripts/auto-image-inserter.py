@@ -148,6 +148,9 @@ class WebsiteImageEnhancer:
                   'are', 'your', 'about', 'more', 'our', 'their', 'than', 'can', 
                   'will', 'also', 'all', 'into', 'but', 'they', 'what', 'when'}
     
+    # Supported image file extensions
+    SUPPORTED_IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp']
+    
     def __init__(self, website_dir):
         self.website_dir = Path(website_dir)
         self.scraper = ImageScraper()
@@ -252,7 +255,7 @@ class WebsiteImageEnhancer:
             # Determine file extension from URL
             url_path = urllib.parse.urlparse(image_url).path
             ext = os.path.splitext(url_path)[1] or '.jpg'
-            if ext.lower() not in ['.jpg', '.jpeg', '.png', '.webp']:
+            if ext.lower() not in self.SUPPORTED_IMAGE_EXTENSIONS:
                 ext = '.jpg'  # Default to jpg if unknown
             
             image_filename = f"{html_path.stem}_{idx}{ext}"
