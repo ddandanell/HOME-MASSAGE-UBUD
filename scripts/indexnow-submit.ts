@@ -166,7 +166,15 @@ async function main() {
   console.log('\n✨ Done!\n');
 
   // Log to file
-  const logEntry = {
+  interface LogEntry {
+    timestamp: string;
+    total_urls: number;
+    successful: number;
+    failed: number;
+    batches: number;
+  }
+
+  const logEntry: LogEntry = {
     timestamp: new Date().toISOString(),
     total_urls: urls.length,
     successful: successCount,
@@ -175,7 +183,7 @@ async function main() {
   };
 
   const logPath = path.join(process.cwd(), 'indexnow-submission-log.json');
-  let logData: any[] = [];
+  let logData: LogEntry[] = [];
   
   if (fs.existsSync(logPath)) {
     const existingLog = fs.readFileSync(logPath, 'utf-8');

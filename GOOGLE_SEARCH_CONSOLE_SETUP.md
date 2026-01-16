@@ -8,7 +8,7 @@ Your website is now optimized and ready for Google Search Console submission wit
 - ✅ Updated sitemap.xml with current dates (2026-01-16)
 - ✅ Optimized robots.txt for search engine crawling
 - ✅ Google verification meta tag placeholder ready
-- ✅ 89 pages ready for indexing (main pages, treatment pages, area pages, and service landing pages)
+- ✅ 73 pages ready for indexing (main pages, treatment pages, area pages, and service landing pages)
 - ✅ Comprehensive structured data (Schema.org markup)
 - ✅ SEO-optimized meta tags on all pages
 
@@ -119,7 +119,7 @@ Monitor these metrics in Google Search Console:
 
 ## 🎁 Your Site Structure
 
-Your website has **89 URLs** ready for indexing:
+Your website has **73 URLs** ready for indexing:
 
 ### Main Pages (12)
 - Homepage
