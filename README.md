@@ -106,6 +106,36 @@ npm run server:start
 
 This project includes a comprehensive prompt system for scalable SEO landing page generation:
 
+### SEO & Link Management Tools
+
+| Tool | Purpose | Command |
+|------|---------|---------|
+| **SEO Audit** | Analyze on-page SEO, meta tags, and content quality | `npm run seo:audit` |
+| **Link Audit** | Scan for broken links, buttons, images, and redirects | `npm run link:audit` |
+| **Sitemap Generator** | Generate sitemap.xml for search engines | `npm run sitemap:generate` |
+| **SEO Validator** | Validate sitemap and SEO implementation | `npm run sitemap:validate` |
+
+### Link Audit & Recovery System
+
+Comprehensive tools for maintaining link health:
+- **Broken Link Detection**: Scans all internal/external links, images, and buttons
+- **Priority Scoring**: Automatically categorizes issues by SEO impact
+- **Report Generation**: CSV, Markdown, and JSON reports with actionable recommendations
+- **301 Redirect System**: Complete guide for implementing redirects
+- **Prevention & Monitoring**: Governance policies and automated monitoring
+
+**Quick Start:**
+```bash
+npm run link:audit  # Run comprehensive link audit
+```
+
+**Documentation:**
+- `LINK_AUDIT_TOOL.md` - Complete tool documentation
+- `REDIRECT_CONFIGURATION_GUIDE.md` - How to set up 301 redirects
+- `BROKEN_LINK_PREVENTION_GUIDE.md` - Prevention strategies
+- `SEO_LINK_AUDIT_ACTION_PLAN.md` - Implementation timeline
+- `LINK_AUDIT_IMPLEMENTATION_SUMMARY.md` - Overview and benefits
+
 ### Prompt Files
 
 | File | Purpose |

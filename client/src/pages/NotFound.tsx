@@ -2,13 +2,20 @@ import React from 'react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Home, ArrowLeft, Phone, MessageCircle } from 'lucide-react';
+import { Home, ArrowLeft, Phone, MessageCircle, Calendar } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-emerald-50 flex items-center justify-center px-4">
-      <Card className="w-full max-w-2xl text-center">
-        <CardContent className="p-12">
+    <>
+      <Helmet>
+        <title>Page Not Found - Home Massage Ubud</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+      
+      <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-emerald-50 flex items-center justify-center px-4">
+        <Card className="w-full max-w-2xl text-center">
+          <CardContent className="p-12">
           {/* Large 404 number */}
           <div className="text-9xl font-bold text-amber-600/20 mb-4">404</div>
           
@@ -23,7 +30,28 @@ export default function NotFound() {
             Let's help you get back to relaxation!
           </p>
           
-          {/* Action buttons */}
+          {/* Booking CTA - Primary action */}
+          <div className="bg-gradient-to-r from-emerald-100 to-amber-100 rounded-lg p-6 mb-8">
+            <h2 className="text-xl font-semibold text-gray-900 mb-2">
+              Ready to Relax? Book Your Massage Now
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Professional massage services delivered to your villa or hotel in Ubud and Bali
+            </p>
+            <a 
+              href="https://wa.me/628112656869?text=Hi!%20I%20would%20like%20to%20book%20a%20massage%20session" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white">
+                <Calendar className="mr-2 h-5 w-5" />
+                Book Now via WhatsApp
+              </Button>
+            </a>
+          </div>
+          
+          {/* Navigation buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link href="/">
               <Button size="lg" className="bg-emerald-200 hover:bg-emerald-300 text-gray-900">
@@ -90,5 +118,6 @@ export default function NotFound() {
         </CardContent>
       </Card>
     </div>
+    </>
   );
 }

@@ -13,6 +13,7 @@
     "server:start": "NODE_ENV=production node dist-server/index.js",
     "db:push": "drizzle-kit push",
     "seo:audit": "tsx scripts/seo-audit.ts",
+    "link:audit": "tsx scripts/link-audit.ts",
     "extract:lymphatic": "tsx scripts/lymphatic-drainage-data-extractor.ts",
     "generate:lymphatic": "tsx scripts/lymphatic-drainage-content-generator.ts",
     "indexnow:submit": "tsx scripts/indexnow-submit.ts",
