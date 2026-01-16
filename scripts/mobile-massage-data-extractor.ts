@@ -342,7 +342,7 @@ class MobileMassageDataExtractor {
 
   async extract(): Promise<ExtractionResult> {
     console.log('🔍 Starting Mobile Massage Data Extraction\n');
-    console.log('=' .repeat(70));
+    console.log('='.repeat(70));
 
     // Try to fetch homepage
     const html = await this.fetchPage(this.baseUrl);

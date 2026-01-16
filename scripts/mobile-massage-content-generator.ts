@@ -80,7 +80,7 @@ interface FactsJSON {
 
 interface PriceOption {
   minutes: number;
-  price: number;
+  price: number | null;
   description: string;
   badge?: string;
 }
@@ -324,11 +324,13 @@ class MobileMassageContentGenerator {
 
   // ==================== UTILITY FUNCTIONS ====================
 
-  private formatPrice(price: number): string {
+  private formatPrice(price: number | null): string {
+    if (price === null) return 'Price TBD';
     return `IDR ${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;
   }
 
-  private formatPriceK(price: number): string {
+  private formatPriceK(price: number | null): string {
+    if (price === null) return 'Price TBD';
     return `Rp ${Math.round(price / 1000)}K`;
   }
 
