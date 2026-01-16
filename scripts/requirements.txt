@@ -4,8 +4,10 @@
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 
-# Optional: for Selenium-based scraper (more reliable but requires ChromeDriver)
-# selenium>=4.0.0
+# For Selenium-based scraper (auto-image-inserter-selenium.py)
+# Install separately if needed: pip install selenium
+# Note: Also requires ChromeDriver - see AUTO_IMAGE_INSERTER_README.md
+selenium>=4.0.0
 
 # HTML parsing
 lxml>=4.9.0

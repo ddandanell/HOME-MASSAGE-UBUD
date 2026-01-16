@@ -122,7 +122,7 @@ class ImageScraper:
             
             # Validate content type
             content_type = response.headers.get('content-type', '').lower()
-            if not any(img_type in content_type for img_type in ['image/jpeg', 'image/png', 'image/webp', 'image/jpg']):
+            if not any(img_type in content_type for img_type in ['image/jpeg', 'image/png', 'image/webp']):
                 print(f"Invalid content type: {content_type}")
                 return False
             

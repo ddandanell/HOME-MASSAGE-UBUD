@@ -20,7 +20,7 @@ def setup_browser():
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument('--disable-gpu')
     options.add_argument('--disable-extensions')
-    options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36')
+    options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
     
     try:
         driver = webdriver.Chrome(options=options)
@@ -69,9 +69,31 @@ def scrape_google_images_selenium(query, num_images=5):
         driver.quit()
 
 def download_image(url, save_path):
-    """Download image to local folder"""
+    """Download image to local folder with validation"""
     try:
-        urllib.request.urlretrieve(url, save_path)
+        import requests
+        
+        # Fetch with stream to check headers first
+        response = requests.get(url, stream=True, timeout=10)
+        response.raise_for_status()
+        
+        # Validate content type
+        content_type = response.headers.get('content-type', '').lower()
+        if not any(img_type in content_type for img_type in ['image/jpeg', 'image/png', 'image/webp']):
+            print(f"Invalid content type: {content_type}")
+            return False
+        
+        # Check file size (limit to 10MB)
+        content_length = response.headers.get('content-length')
+        if content_length and int(content_length) > 10 * 1024 * 1024:
+            print(f"File too large: {int(content_length) / 1024 / 1024:.1f}MB")
+            return False
+        
+        # Download the file
+        with open(save_path, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+        
         return True
     except Exception as e:
         print(f"Failed to download {url}: {e}")

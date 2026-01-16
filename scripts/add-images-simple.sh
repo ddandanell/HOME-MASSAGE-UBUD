@@ -16,8 +16,9 @@ echo "Processing HTML files in: $HTML_DIR"
 echo "Images will be saved to: $IMAGES_DIR"
 echo ""
 
-# Counter for processed files
-count=0
+# Counter for processed files (use temp file to avoid subshell issue)
+temp_count_file="/tmp/image_inserter_count_$$"
+echo "0" > "$temp_count_file"
 
 # Find and process all HTML files
 find "$HTML_DIR" -maxdepth 1 -name "*.html" -type f | while read -r file; do
@@ -74,12 +75,19 @@ find "$HTML_DIR" -maxdepth 1 -name "*.html" -type f | while read -r file; do
         echo "✓ Backup saved: ${file}.backup"
     fi
     
+    # Increment counter
+    count=$(cat "$temp_count_file")
     count=$((count + 1))
+    echo "$count" > "$temp_count_file"
     
     # Be nice to servers
     sleep 2
     echo ""
 done
+
+# Read final count
+count=$(cat "$temp_count_file")
+rm -f "$temp_count_file"
 
 echo "=================================================="
 echo "✅ Completed! Processed $count files"
