@@ -42,12 +42,12 @@ export default function DeepTissueHomeMassage() {
 
       {/* Table of Contents */}
       <TableOfContents items={[
-        { id: 'what-is', title: 'What Is Deep Tissue Home Massage?' },
-        { id: 'who-benefits', title: 'Who Benefits?' },
-        { id: 'pricing', title: 'Pricing & Duration' },
-        { id: 'advantages', title: 'Why Home Massage?' },
-        { id: 'safety', title: 'Safety Standards' },
-        { id: 'faq', title: 'FAQ' }
+        { id: 'what-is', label: 'What Is Deep Tissue Home Massage?' },
+        { id: 'who-benefits', label: 'Who Benefits?' },
+        { id: 'pricing', label: 'Pricing & Duration' },
+        { id: 'advantages', label: 'Why Home Massage?' },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'FAQ' }
       ]} />
 
       <section id="what-is" className="py-16 md:py-20 bg-background">
@@ -255,7 +255,7 @@ export default function DeepTissueHomeMassage() {
       {/* FAQ Section */}
       <section id="faq">
         <HomeMassageFAQ 
-          questions={[
+          items={[
             {
               question: "Is deep tissue home massage painful?",
               answer: "Deep tissue home massage should produce therapeutic discomfort, not pain. Our therapists communicate constantly and adjust pressure to stay within your tolerance. You should feel intense but bearable pressure that helps release chronic tension."

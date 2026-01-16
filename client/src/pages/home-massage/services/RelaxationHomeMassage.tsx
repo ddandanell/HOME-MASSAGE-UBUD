@@ -42,12 +42,12 @@ export default function RelaxationHomeMassage() {
 
       {/* Table of Contents */}
       <TableOfContents items={[
-        { id: 'what-is', title: 'What Is Relaxation Home Massage?' },
-        { id: 'who-benefits', title: 'Who Benefits?' },
-        { id: 'pricing', title: 'Pricing & Duration' },
-        { id: 'advantages', title: 'Why Home Massage?' },
-        { id: 'safety', title: 'Safety Standards' },
-        { id: 'faq', title: 'FAQ' }
+        { id: 'what-is', label: 'What Is Relaxation Home Massage?' },
+        { id: 'who-benefits', label: 'Who Benefits?' },
+        { id: 'pricing', label: 'Pricing & Duration' },
+        { id: 'advantages', label: 'Why Home Massage?' },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'FAQ' }
       ]} />
 
       <section id="what-is" className="py-16 md:py-20 bg-background">
@@ -257,7 +257,7 @@ export default function RelaxationHomeMassage() {
       {/* FAQ Section */}
       <section id="faq">
         <HomeMassageFAQ 
-          questions={[
+          items={[
             {
               question: "What pressure level is used in relaxation home massage?",
               answer: "Relaxation home massage uses light to moderate pressure designed purely for comfort and stress relief. The therapist maintains consistent, gentle strokes that soothe without causing any discomfort. You can request lighter or slightly firmer touch as needed."

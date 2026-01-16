@@ -43,11 +43,11 @@ export default function HomeMassageServicesIndex() {
 
       {/* Table of Contents */}
       <TableOfContents items={[
-        { id: 'why-choose', title: 'Why Choose Our Services?' },
-        { id: 'services', title: 'Available Services' },
-        { id: 'included', title: "What's Included" },
-        { id: 'safety', title: 'Safety Standards' },
-        { id: 'faq', title: 'FAQ' }
+        { id: 'why-choose', label: 'Why Choose Our Services?' },
+        { id: 'services', label: 'Available Services' },
+        { id: 'included', label: "What's Included" },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'FAQ' }
       ]} />
 
       {/* Introduction */}
@@ -332,7 +332,7 @@ export default function HomeMassageServicesIndex() {
       {/* FAQ Section */}
       <section id="faq">
         <HomeMassageFAQ 
-          questions={[
+          items={[
             {
               question: "What home massage services do you offer?",
               answer: "We offer four main home massage services: Balinese home massage (traditional techniques with acupressure), deep tissue home massage (therapeutic pressure for chronic tension), relaxation home massage (gentle stress relief), and couples home massage (side-by-side treatments with two therapists)."

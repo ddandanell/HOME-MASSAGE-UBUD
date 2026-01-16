@@ -43,12 +43,12 @@ export default function BalineseHomeMassage() {
 
       {/* Table of Contents */}
       <TableOfContents items={[
-        { id: 'what-is', title: 'What Is Balinese Home Massage?' },
-        { id: 'who-benefits', title: 'Who Benefits?' },
-        { id: 'pricing', title: 'Pricing & Duration' },
-        { id: 'advantages', title: 'Why Home Massage?' },
-        { id: 'safety', title: 'Safety Standards' },
-        { id: 'faq', title: 'FAQ' }
+        { id: 'what-is', label: 'What Is Balinese Home Massage?' },
+        { id: 'who-benefits', label: 'Who Benefits?' },
+        { id: 'pricing', label: 'Pricing & Duration' },
+        { id: 'advantages', label: 'Why Home Massage?' },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'FAQ' }
       ]} />
 
       {/* Block 2: What this home massage does */}
@@ -261,7 +261,7 @@ export default function BalineseHomeMassage() {
       {/* FAQ Section */}
       <section id="faq">
         <HomeMassageFAQ 
-          questions={[
+          items={[
             {
               question: "How long does a Balinese home massage session take?",
               answer: "Balinese home massage sessions are available in 60, 90, or 120-minute durations. The 90-minute session is most popular as it allows time for full-body treatment with traditional Balinese techniques including stretching and acupressure."

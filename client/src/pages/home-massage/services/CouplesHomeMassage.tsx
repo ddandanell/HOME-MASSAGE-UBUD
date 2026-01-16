@@ -42,12 +42,12 @@ export default function CouplesHomeMassage() {
 
       {/* Table of Contents */}
       <TableOfContents items={[
-        { id: 'what-is', title: 'What Is Couples Home Massage?' },
-        { id: 'who-benefits', title: 'Who Benefits?' },
-        { id: 'pricing', title: 'Pricing & Duration' },
-        { id: 'advantages', title: 'Why Home Massage?' },
-        { id: 'safety', title: 'Safety Standards' },
-        { id: 'faq', title: 'FAQ' }
+        { id: 'what-is', label: 'What Is Couples Home Massage?' },
+        { id: 'who-benefits', label: 'Who Benefits?' },
+        { id: 'pricing', label: 'Pricing & Duration' },
+        { id: 'advantages', label: 'Why Home Massage?' },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'FAQ' }
       ]} />
 
       <section id="what-is" className="py-16 md:py-20 bg-background">
@@ -256,7 +256,7 @@ export default function CouplesHomeMassage() {
       {/* FAQ Section */}
       <section id="faq">
         <HomeMassageFAQ 
-          questions={[
+          items={[
             {
               question: "Do both people receive the same type of massage during couples home massage?",
               answer: "No, each person can choose their preferred style. One partner might select deep tissue home massage while the other prefers relaxation massage. Our therapists coordinate to ensure both treatments happen simultaneously with appropriate techniques for each person."
