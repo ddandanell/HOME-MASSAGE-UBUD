@@ -40,12 +40,12 @@ export default function HomeMassageWhatToExpect() {
       </section>
 
       <TableOfContents items={[
-        { id: 'why-expectations', title: 'Why Understanding Expectations Matters' },
-        { id: 'preparation', title: 'Before Home Massage: Preparation' },
-        { id: 'arrival', title: 'Therapist Arrival' },
-        { id: 'treatment-flow', title: 'During Home Massage: Treatment Flow' },
-        { id: 'post-session', title: 'After Home Massage: Post-Session Care' },
-        { id: 'by-type', title: 'Home Massage Type-Specific Expectations' },
+        { id: 'why-expectations', label: 'Why Understanding Expectations Matters' },
+        { id: 'preparation', label: 'Before Home Massage: Preparation' },
+        { id: 'arrival', label: 'Therapist Arrival' },
+        { id: 'treatment-flow', label: 'During Home Massage: Treatment Flow' },
+        { id: 'post-session', label: 'After Home Massage: Post-Session Care' },
+        { id: 'by-type', label: 'Home Massage Type-Specific Expectations' },
       ]} />
 
       {/* Block 1: Why knowing what to expect matters */}
