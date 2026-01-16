@@ -3,6 +3,16 @@ import { Link } from "wouter";
 
 const footerSections = [
   {
+    title: 'Home Massage',
+    links: [
+      { name: 'Home Massage', href: '/home-massage' },
+      { name: 'Home Massage Services', href: '/home-massage' },
+      { name: 'Home Massage in Ubud', href: '/home-massage/cities/ubud' },
+      { name: 'Book Home Massage', href: 'https://wa.me/628112656869', external: true },
+      { name: 'Home Massage Safety', href: '/home-massage/knowledge/safety' }
+    ]
+  },
+  {
     title: 'Our Services',
     links: [
       { name: 'Browse All Massage Treatments', href: '/treatments' },
