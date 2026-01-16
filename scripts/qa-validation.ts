@@ -174,7 +174,7 @@ function validatePage(filePath: string): QAResult {
 
 function main() {
   console.log('🔍 TOTAL MESH LINKING QA VALIDATION\n');
-  console.log('=' .repeat(80));
+  console.log('='.repeat(80));
   
   const results: QAResult[] = [];
   

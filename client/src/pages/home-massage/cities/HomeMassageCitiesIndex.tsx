@@ -353,7 +353,7 @@ export default function HomeMassageCitiesIndex() {
 
       {/* FAQ Section */}
       <section id="faq">
-        <HomeMassageFAQ faqs={[
+        <HomeMassageFAQ items={[
           {
             question: "Which cities in Bali offer home massage services?",
             answer: "We provide home massage throughout Bali's most popular destinations including Ubud, Canggu, Seminyak, Sanur, and Nusa Dua. All cities receive the same professional service with licensed therapists and complete equipment."

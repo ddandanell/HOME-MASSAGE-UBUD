@@ -348,7 +348,7 @@ export default function HomeMassageNusaDua() {
 
       {/* FAQ Section */}
       <section id="faq">
-        <HomeMassageFAQ faqs={[
+        <HomeMassageFAQ items={[
           {
             question: "How quickly can I get home massage in Nusa Dua?",
             answer: "Most home massage requests in Nusa Dua are accommodated within 1-3 hours of contact via WhatsApp. We offer same-day booking throughout Nusa Dua, including five-star resorts, gated villas, and luxury hotels. Contact us early for best availability."

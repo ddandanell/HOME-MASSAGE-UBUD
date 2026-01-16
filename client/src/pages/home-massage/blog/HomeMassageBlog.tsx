@@ -385,7 +385,7 @@ export default function HomeMassageBlog() {
       <BookingCTA />
 
       {/* FAQ Section */}
-      <HomeMassageFAQ faqs={[
+      <HomeMassageFAQ items={[
         {
           question: "What topics does the home massage blog cover?",
           answer: "Our home massage blog covers everything travelers need: what home massage is, why tourists prefer it over spas, how to book safely, safety verification standards, cost comparisons, and detailed service explanations. Each article provides practical information for booking home massage confidently in Bali."

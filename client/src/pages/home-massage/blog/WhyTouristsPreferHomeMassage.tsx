@@ -599,7 +599,7 @@ export default function WhyTouristsPreferHomeMassage() {
       <BookingCTA />
 
       {/* FAQ Section */}
-      <HomeMassageFAQ faqs={[
+      <HomeMassageFAQ items={[
         {
           question: "Why do tourists prefer home massage over spa massage?",
           answer: "Tourists choose home massage for six major reasons: convenience (zero travel time), complete privacy (your personal space), superior value (40-60% cost savings), enhanced safety (verified therapists), consistent quality (direct accountability), and flexible scheduling (extended hours). Home massage eliminates spa friction while maintaining professional standards."

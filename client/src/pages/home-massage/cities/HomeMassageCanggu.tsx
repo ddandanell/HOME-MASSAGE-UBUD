@@ -271,7 +271,7 @@ export default function HomeMassageCanggu() {
 
       {/* FAQ Section */}
       <section id="faq">
-        <HomeMassageFAQ faqs={[
+        <HomeMassageFAQ items={[
           {
             question: "How quickly can I get home massage in Canggu?",
             answer: "Most home massage requests in Canggu are accommodated within 1-3 hours of contact via WhatsApp. We offer same-day booking throughout Canggu, including beachfront villas, apartments, and boutique hotels. Contact us early for best availability."

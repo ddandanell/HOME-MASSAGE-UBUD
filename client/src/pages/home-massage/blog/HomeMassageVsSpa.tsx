@@ -696,7 +696,7 @@ export default function HomeMassageVsSpa() {
       <BookingCTA />
 
       {/* FAQ Section */}
-      <HomeMassageFAQ faqs={[
+      <HomeMassageFAQ items={[
         {
           question: "Which is better, home massage or spa massage?",
           answer: "For most travelers, home massage is superior. Home massage eliminates travel time, provides complete privacy, costs 40-60% less, offers extended scheduling, and delivers identical therapeutic quality. The only advantages of spa massage are facility ambiance and multiple services in one location—but home massage specialization often delivers superior individual treatments."

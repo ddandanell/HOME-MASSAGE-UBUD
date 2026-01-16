@@ -528,7 +528,7 @@ export default function WhatIsHomeMassage() {
       <BookingCTA />
 
       {/* FAQ Section */}
-      <HomeMassageFAQ faqs={[
+      <HomeMassageFAQ items={[
         {
           question: "What exactly is home massage?",
           answer: "Home massage is professional massage therapy delivered by a licensed therapist at your villa, hotel room, or accommodation. The therapist brings all necessary equipment and expertise to you, providing the same professional techniques and therapeutic benefits as spa massage—but with convenience and privacy of in-villa treatment."

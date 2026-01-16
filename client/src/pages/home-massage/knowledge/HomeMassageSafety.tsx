@@ -301,7 +301,7 @@ export default function HomeMassageSafety() {
 
       <BookingCTA />
 
-      <HomeMassageFAQ questions={[
+      <HomeMassageFAQ items={[
         {
           question: "How do I verify a home massage therapist is licensed?",
           answer: "Professional home massage services provide therapist credentials before arrival. Ask for certification numbers, years of experience, and client reviews. Legitimate home massage providers willingly share this information."

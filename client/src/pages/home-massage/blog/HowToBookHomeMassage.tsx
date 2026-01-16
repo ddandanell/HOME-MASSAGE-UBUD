@@ -800,7 +800,7 @@ export default function HowToBookHomeMassage() {
       <BookingCTA />
 
       {/* FAQ Section */}
-      <HomeMassageFAQ faqs={[
+      <HomeMassageFAQ items={[
         {
           question: "How do I book home massage?",
           answer: "Book home massage via WhatsApp or phone. Message with your preferred service type (Balinese, deep tissue, couples, or relaxation), location, date, time, and duration. Professional home massage coordinators confirm availability, pricing, and therapist details within minutes. The entire booking process takes less than 5 minutes."

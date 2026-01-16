@@ -272,7 +272,7 @@ export default function HomeMassageSanur() {
 
       {/* FAQ Section */}
       <section id="faq">
-        <HomeMassageFAQ faqs={[
+        <HomeMassageFAQ items={[
           {
             question: "How quickly can I get home massage in Sanur?",
             answer: "Most home massage requests in Sanur are accommodated within 2-4 hours of contact via WhatsApp. We offer same-day booking throughout Sanur, including beachfront hotels, family villas, and boutique resorts. Contact us early for best availability."

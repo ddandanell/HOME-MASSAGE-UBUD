@@ -725,7 +725,7 @@ export default function IsHomeMassageSafe() {
       <BookingCTA />
 
       {/* FAQ Section */}
-      <HomeMassageFAQ faqs={[
+      <HomeMassageFAQ items={[
         {
           question: "Is home massage safe?",
           answer: "Yes, professional home massage is safe when you book through verified providers. Home massage safety depends on choosing legitimate services that verify therapists, maintain standards, and operate transparently. Professional home massage can actually be safer than random spa visits because you know exactly who's coming and can verify credentials in advance."
