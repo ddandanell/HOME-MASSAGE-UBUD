@@ -6,13 +6,17 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Shield, Check, AlertCircle, Users } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageSafety() {
   return (
     <>
       <SEOHead 
-        title="Home Massage Safety Standards | Professional Guidelines"
-        description="Comprehensive safety standards for home massage services. Learn about therapist vetting, hygiene protocols, and professional conduct in home massage."
+        title="Safety | Home Massage"
+        description="Comprehensive home massage safety standards. Learn about therapist credentials, hygiene protocols, and how to identify professional home massage services. Call or WhatsApp to book."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -34,8 +38,16 @@ export default function HomeMassageSafety() {
         </div>
       </section>
 
+      <TableOfContents items={[
+        { id: 'what-is-safety', title: 'What Safety Means in Home Massage' },
+        { id: 'therapist-standards', title: 'Home Massage Therapist Standards' },
+        { id: 'client-boundaries', title: 'Client Boundaries in Home Massage' },
+        { id: 'normal-vs-concerning', title: 'Normal vs Concerning Behavior' },
+        { id: 'why-safer', title: 'Why Home Massage Exceeds Spa Safety' },
+      ]} />
+
       {/* Block 1: What safety means in home massage */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="what-is-safety" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -66,7 +78,7 @@ export default function HomeMassageSafety() {
       </section>
 
       {/* Block 2: Therapist Standards */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="therapist-standards" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -138,7 +150,7 @@ export default function HomeMassageSafety() {
       </section>
 
       {/* Block 3: Client Boundaries */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="client-boundaries" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -192,7 +204,7 @@ export default function HomeMassageSafety() {
       </section>
 
       {/* Block 4: What is normal / not normal */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="normal-vs-concerning" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -256,7 +268,7 @@ export default function HomeMassageSafety() {
       </section>
 
       {/* Block 5: Why this makes home massage safer than random spas */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="why-safer" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -284,6 +296,37 @@ export default function HomeMassageSafety() {
           </div>
         </div>
       </section>
+
+      <SpiderLinksBlock currentPage="/home-massage/knowledge/safety" />
+
+      <BookingCTA />
+
+      <HomeMassageFAQ questions={[
+        {
+          question: "How do I verify a home massage therapist is licensed?",
+          answer: "Professional home massage services provide therapist credentials before arrival. Ask for certification numbers, years of experience, and client reviews. Legitimate home massage providers willingly share this information."
+        },
+        {
+          question: "What safety equipment should a home massage therapist bring?",
+          answer: "Expect clean linens, professional oils, sanitized massage tools, and proper identification. Home massage therapists should arrive fully equipped—you provide only clean space and basic amenities."
+        },
+        {
+          question: "Are there background checks for home massage therapists?",
+          answer: "Reputable home massage services conduct background screening on all therapists. This includes criminal checks, reference verification, and skills assessment before any home massage provider enters client accommodations."
+        },
+        {
+          question: "What if I feel uncomfortable during home massage?",
+          answer: "You can stop any home massage session at any time. Professional therapists respect boundaries and adjust based on your comfort. Your safety and comfort are the top priorities in home massage."
+        },
+        {
+          question: "Is home massage safe for solo travelers?",
+          answer: "Yes, when booking through verified providers. Home massage through reputable services includes therapist tracking, client communication protocols, and professional accountability that makes it safe for anyone."
+        },
+        {
+          question: "What's the difference between spa massage and home massage safety?",
+          answer: "Professional home massage maintains identical or superior safety standards to spas. The advantage of home massage is you control the environment while accessing verified, trackable therapists with transparent credentials."
+        }
+      ]} />
 
       {/* Soft CTA and extensive linking */}
       <section className="py-16 md:py-20 bg-secondary/20">

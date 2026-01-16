@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Droplets, Clock, Activity, AlertCircle, CheckCircle, Calendar } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageAftercare() {
   return (
     <>
       <SEOHead 
-        title="Home Massage Aftercare Guide | Post-Treatment Care & Recovery"
-        description="Complete home massage aftercare guide covering hydration, activity guidelines, post-massage sensations, and treatment frequency. Maximize your home massage benefits with proper recovery protocols."
+        title="Aftercare | Home Massage"
+        description="Complete home massage aftercare guide: hydration, rest, activity guidelines, and recovery protocols. Maximize your home massage benefits with proper post-treatment care. Call or WhatsApp to book."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -34,8 +39,17 @@ export default function HomeMassageAftercare() {
         </div>
       </section>
 
+      <TableOfContents items={[
+        { id: 'why-aftercare', title: 'Why Aftercare Determines Results' },
+        { id: 'immediate-care', title: 'Immediate Post-Treatment Care' },
+        { id: 'extended-recovery', title: 'Extended Recovery (24-48 Hours)' },
+        { id: 'post-massage-sensations', title: 'Understanding Post-Massage Sensations' },
+        { id: 'treatment-frequency', title: 'Treatment Frequency & Long-Term Care' },
+        { id: 'aftercare-by-type', title: 'Aftercare by Massage Type' },
+      ]} />
+
       {/* Block 1: Why aftercare matters for home massage */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="why-aftercare" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -57,7 +71,7 @@ export default function HomeMassageAftercare() {
       </section>
 
       {/* Block 2: Immediate Post-Treatment Care (First 2 Hours) */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="immediate-care" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -182,7 +196,7 @@ export default function HomeMassageAftercare() {
       </section>
 
       {/* Block 3: Extended Recovery (24-48 Hours) */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="extended-recovery" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -303,7 +317,7 @@ export default function HomeMassageAftercare() {
       </section>
 
       {/* Block 4: Common Post-Massage Sensations */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="post-massage-sensations" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -423,7 +437,7 @@ export default function HomeMassageAftercare() {
       </section>
 
       {/* Block 5: Treatment Frequency & Long-Term Aftercare */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="treatment-frequency" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -605,7 +619,7 @@ export default function HomeMassageAftercare() {
       </section>
 
       {/* Block 6: Home Massage Aftercare by Service Type */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="aftercare-by-type" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -710,6 +724,39 @@ export default function HomeMassageAftercare() {
           </div>
         </div>
       </section>
+
+      <SafetyStandards />
+
+      <SpiderLinksBlock currentPage="/home-massage/knowledge/aftercare" />
+
+      <BookingCTA />
+
+      <HomeMassageFAQ questions={[
+        {
+          question: "How much water should I drink after home massage?",
+          answer: "Drink 24-32 ounces of water in the 2 hours following home massage, then increase your daily intake by 30-50% for the next 48 hours. This supports the detoxification process home massage initiates."
+        },
+        {
+          question: "Is soreness normal after home massage?",
+          answer: "Mild muscle soreness for 24-48 hours after deep tissue home massage is normal and indicates effective therapeutic work. However, severe or sharp pain signals a problem requiring attention."
+        },
+        {
+          question: "Can I exercise after home massage?",
+          answer: "Avoid intense exercise for 24-48 hours after home massage. Light activities like walking, gentle yoga, or swimming at moderate pace support recovery without interfering with the therapeutic process."
+        },
+        {
+          question: "What should I eat after home massage?",
+          answer: "Light, healthy meals work best after home massage. Avoid heavy food for 1-2 hours post-treatment. Anti-inflammatory foods and adequate protein support tissue repair during home massage recovery."
+        },
+        {
+          question: "How long should I rest after home massage?",
+          answer: "Rest for at least 2 hours after home massage if possible. The home massage advantage is you're already in your ideal recovery space—transition directly to your bed or couch to maximize benefits."
+        },
+        {
+          question: "When can I schedule my next home massage?",
+          answer: "This depends on massage type and goals. After deep tissue home massage, wait 5-7 days. For relaxation home massage, 3-5 days is fine. Listen to your body and communicate with your therapist."
+        }
+      ]} />
 
       {/* Soft CTA and extensive linking */}
       <section className="py-16 md:py-20 bg-background">

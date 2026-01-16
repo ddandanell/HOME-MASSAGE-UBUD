@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Brain, Home, Sparkles, Activity, Moon } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageBenefits() {
   return (
     <>
       <SEOHead 
-        title="Home Massage Benefits: Physical, Mental, and Convenience Advantages"
-        description="Discover evidence-based home massage benefits including pain relief, stress reduction, improved sleep, and convenience advantages. Learn why home massage delivers superior wellness outcomes."
+        title="Benefits | Home Massage"
+        description="Evidence-based home massage benefits: pain relief, stress reduction, improved sleep, and convenience. Book professional home massage via call or WhatsApp for proven wellness results."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -34,8 +39,17 @@ export default function HomeMassageBenefits() {
         </div>
       </section>
 
+      <TableOfContents items={[
+        { id: 'why-benefits-matter', title: 'Why Home Massage Benefits Matter' },
+        { id: 'physical-benefits', title: 'Physical Health Benefits' },
+        { id: 'mental-benefits', title: 'Mental Wellness Benefits' },
+        { id: 'convenience-benefits', title: 'Convenience Benefits' },
+        { id: 'evidence-research', title: 'Evidence-Based Research' },
+        { id: 'maximizing-benefits', title: 'Maximizing Your Benefits' },
+      ]} />
+
       {/* Block 1: Why home massage benefits matter */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="why-benefits-matter" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -57,7 +71,7 @@ export default function HomeMassageBenefits() {
       </section>
 
       {/* Block 2: Physical Health Benefits */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="physical-benefits" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -125,7 +139,7 @@ export default function HomeMassageBenefits() {
       </section>
 
       {/* Block 3: Mental Wellness Benefits */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="mental-benefits" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -193,7 +207,7 @@ export default function HomeMassageBenefits() {
       </section>
 
       {/* Block 4: Convenience Benefits Unique to Home Massage */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="convenience-benefits" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -281,7 +295,7 @@ export default function HomeMassageBenefits() {
       </section>
 
       {/* Block 5: Evidence-Based Research on Home Massage Benefits */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="evidence-research" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -363,7 +377,7 @@ export default function HomeMassageBenefits() {
       </section>
 
       {/* Block 6: Maximizing Home Massage Benefits */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="maximizing-benefits" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -435,7 +449,7 @@ export default function HomeMassageBenefits() {
       </section>
 
       {/* Block 7: Home Massage Benefits vs Spa Massage */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="vs-spa" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -496,6 +510,39 @@ export default function HomeMassageBenefits() {
           </div>
         </div>
       </section>
+
+      <SafetyStandards />
+
+      <SpiderLinksBlock currentPage="/home-massage/knowledge/benefits" />
+
+      <BookingCTA />
+
+      <HomeMassageFAQ questions={[
+        {
+          question: "What are the main health benefits of home massage?",
+          answer: "Home massage delivers muscle tension relief, improved circulation, pain reduction, enhanced flexibility, stress relief, better sleep, reduced anxiety, and improved mood through evidence-based therapeutic mechanisms."
+        },
+        {
+          question: "Who benefits most from regular home massage?",
+          answer: "Anyone experiencing chronic pain, stress, poor sleep, muscle tension, or recovery needs benefits from home massage. Athletes, travelers, desk workers, and those managing anxiety particularly gain from consistent home massage."
+        },
+        {
+          question: "How often should I get home massage for maximum benefits?",
+          answer: "For chronic issues: 1-2 times weekly initially. For stress management: weekly sessions. For general wellness: bi-weekly to monthly. Home massage frequency depends on your specific goals and body response."
+        },
+        {
+          question: "Can home massage really improve sleep quality?",
+          answer: "Yes, research shows home massage increases delta wave sleep by up to 60%. Evening home massage sessions particularly enhance sleep quality through reduced stress hormones and increased relaxation neurotransmitters."
+        },
+        {
+          question: "What makes home massage more beneficial than spa massage?",
+          answer: "Home massage eliminates travel stress, allows immediate post-treatment rest, provides complete privacy, offers environmental control, and enables better scheduling—all amplifying the core therapeutic benefits of massage."
+        },
+        {
+          question: "Are home massage benefits supported by research?",
+          answer: "Yes, decades of clinical research demonstrate massage therapy's effectiveness for pain, stress, sleep, and circulation. Home massage applies these proven benefits with added convenience and privacy advantages."
+        }
+      ]} />
 
       {/* Soft CTA and extensive linking */}
       <section className="py-16 md:py-20 bg-secondary/20">
