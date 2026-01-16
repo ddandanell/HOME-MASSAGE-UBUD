@@ -45,6 +45,8 @@ find "$HTML_DIR" -maxdepth 1 -name "*.html" -type f | while read -r file; do
         echo "✓ Image already exists: $image_file"
     else
         # Download image from Picsum (random free images)
+        # NOTE: These are placeholder images for development/testing.
+        # Review all downloaded images before using in production.
         echo "Downloading image..."
         if wget -q -O "$image_file" "https://picsum.photos/800/600?random" 2>/dev/null; then
             echo "✓ Downloaded image to: $image_file"

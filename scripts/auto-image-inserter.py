@@ -9,7 +9,6 @@ from bs4 import BeautifulSoup
 import urllib.parse
 import urllib.request
 import re
-import os
 import time
 from pathlib import Path
 from collections import Counter
@@ -254,7 +253,7 @@ class WebsiteImageEnhancer:
             
             # Determine file extension from URL
             url_path = urllib.parse.urlparse(image_url).path
-            ext = os.path.splitext(url_path)[1] or '.jpg'
+            ext = Path(url_path).suffix or '.jpg'
             if ext.lower() not in self.SUPPORTED_IMAGE_EXTENSIONS:
                 ext = '.jpg'  # Default to jpg if unknown
             
@@ -277,7 +276,9 @@ class WebsiteImageEnhancer:
         
         # Save modified HTML
         backup_path = html_path.with_suffix('.html.backup')
-        html_path.rename(backup_path)
+        # Only create backup if it doesn't exist (preserve original)
+        if not backup_path.exists():
+            html_path.rename(backup_path)
         
         with open(html_path, 'w', encoding='utf-8') as f:
             f.write(str(soup.prettify()))
@@ -286,7 +287,8 @@ class WebsiteImageEnhancer:
     
     def process_all_files(self):
         """Process all HTML files in directory"""
-        html_files = list(self.website_dir.glob("**/*.html"))
+        # Get all HTML files, excluding backup files
+        html_files = [f for f in self.website_dir.glob("**/*.html") if not f.name.endswith('.backup')]
         
         print(f"\n🚀 Starting Image Enhancement")
         print(f"Found {len(html_files)} HTML files\n")

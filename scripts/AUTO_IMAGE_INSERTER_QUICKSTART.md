@@ -5,10 +5,14 @@ This guide helps you get started with the auto-image-inserter tools quickly.
 ## TL;DR - Get Started in 3 Steps
 
 ```bash
-# 1. Install Python dependencies
+# 1. (Recommended) Create a virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 2. Install Python dependencies
 pip install -r scripts/requirements.txt
 
-# 2. Run the auto-image-inserter
+# 3. Run the auto-image-inserter
 python3 scripts/auto-image-inserter.py ./client
 
 # OR use npm script
@@ -37,7 +41,21 @@ Automatically:
 
 ## Installation
 
-### Step 1: Install Python Dependencies
+### Step 1: (Recommended) Create a Virtual Environment
+
+To avoid conflicts with system packages, it's recommended to use a virtual environment:
+
+```bash
+# Create virtual environment
+python3 -m venv venv
+
+# Activate it
+source venv/bin/activate  # On Linux/macOS
+# OR
+venv\Scripts\activate  # On Windows
+```
+
+### Step 2: Install Python Dependencies
 
 ```bash
 # Navigate to the project root
@@ -47,7 +65,7 @@ cd /path/to/HOME-MASSAGE-UBUD
 pip install -r scripts/requirements.txt
 ```
 
-### Step 2: Verify Installation
+### Step 3: Verify Installation
 
 ```bash
 python3 -c "import requests; import bs4; print('✓ Ready to go!')"
