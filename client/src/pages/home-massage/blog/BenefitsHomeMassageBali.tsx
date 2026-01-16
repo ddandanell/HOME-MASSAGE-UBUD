@@ -11,7 +11,7 @@ export default function BenefitsHomeMassageBali() {
   return (
     <>
       <SEOHead 
-        title="5 Benefits of Home Massage vs Spa Visits in Bali | Home Massage Ubud"
+        title="5 Benefits of Home Massage vs Spa Visits Bali"
         description="Why home massage beats spa visits: privacy, convenience, value, and comfort. Professional therapists to your Bali villa. Save time & money. Book today."
       />
       <div className="min-h-screen bg-background flex flex-col">
