@@ -280,7 +280,9 @@ async function auditLinks(urls: string[]): Promise<AuditReport> {
   
   // Check each unique link
   let checked = 0;
-  for (const [key, link] of uniqueLinks.entries()) {
+  const linksArray = Array.from(uniqueLinks.values());
+  
+  for (const link of linksArray) {
     checked++;
     if (checked % 10 === 0) {
       console.log(`   Progress: ${checked}/${uniqueLinks.size} links checked...`);
@@ -310,12 +312,19 @@ async function auditLinks(urls: string[]): Promise<AuditReport> {
     await new Promise(resolve => setTimeout(resolve, 200));
   }
   
-  const linksArray = Array.from(uniqueLinks.values());
+  // Update the Map with checked links
+  linksArray.forEach(link => {
+    const key = `${link.sourceUrl}|${link.targetUrl}`;
+    uniqueLinks.set(key, link);
+  });
+  
+  // Get final array after all checks
+  const finalLinksArray = Array.from(uniqueLinks.values());
   
   // Categorize links
-  const brokenLinks = linksArray.filter(l => l.status === 'broken');
-  const redirectLinks = linksArray.filter(l => l.status === 'redirect');
-  const externalLinks = linksArray.filter(l => l.linkType === 'external');
+  const brokenLinks = finalLinksArray.filter(l => l.status === 'broken');
+  const redirectLinks = finalLinksArray.filter(l => l.status === 'redirect');
+  const externalLinks = finalLinksArray.filter(l => l.linkType === 'external');
   const brokenImages = brokenLinks.filter(l => l.linkType === 'image');
   const brokenButtons = allButtons.filter(b => b.status === 'broken');
   
@@ -337,7 +346,7 @@ async function auditLinks(urls: string[]): Promise<AuditReport> {
   
   return {
     timestamp: new Date().toISOString(),
-    totalLinksChecked: linksArray.length,
+    totalLinksChecked: finalLinksArray.length,
     brokenLinks,
     redirectLinks,
     externalLinks,
