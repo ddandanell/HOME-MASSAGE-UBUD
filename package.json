@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run sitemap:generate && vite build",
     "preview": "vite preview",
     "check": "tsc",
     "server:dev": "NODE_ENV=development tsx server/index.ts",
@@ -15,7 +15,10 @@
     "seo:audit": "tsx scripts/seo-audit.ts",
     "extract:lymphatic": "tsx scripts/lymphatic-drainage-data-extractor.ts",
     "generate:lymphatic": "tsx scripts/lymphatic-drainage-content-generator.ts",
-    "indexnow:submit": "tsx scripts/indexnow-submit.ts"
+    "indexnow:submit": "tsx scripts/indexnow-submit.ts",
+    "sitemap:generate": "tsx scripts/generate-sitemap.ts",
+    "sitemap:validate": "tsx scripts/validate-seo.ts",
+    "deploy:notify": "PING_GOOGLE=true npm run sitemap:generate"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
