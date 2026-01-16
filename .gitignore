@@ -96,6 +96,12 @@ indexnow-submission-log.json
 *_backup.*
 *Old.*
 *.bak
+*.backup
+
+# Auto image inserter files
+downloaded_images/
+client/images/
+*.html.backup
 
 # Replit specific files (optional to keep)
 .replit

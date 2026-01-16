@@ -1,0 +1,12 @@
+# Python dependencies for auto-image-inserter scripts
+
+# Core dependencies for image scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Optional: for Selenium-based scraper (more reliable but requires ChromeDriver)
+# selenium>=4.0.0
+
+# HTML parsing
+lxml>=4.9.0
+html5lib>=1.1

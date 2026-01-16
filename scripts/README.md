@@ -1,4 +1,31 @@
-# SEO Audit Tool
+# Scripts Directory
+
+This directory contains various automation and utility scripts for the HOME-MASSAGE-UBUD project.
+
+## Available Scripts
+
+### 1. Auto Image Inserter
+
+Automated tools to scrape and insert images into HTML files. See [AUTO_IMAGE_INSERTER_README.md](./AUTO_IMAGE_INSERTER_README.md) for detailed documentation.
+
+**Quick Start:**
+```bash
+# Python scraper (recommended)
+python3 scripts/auto-image-inserter.py ./client
+
+# Selenium scraper (most reliable)
+python3 scripts/auto-image-inserter-selenium.py "massage therapy"
+
+# Simple bash script
+./scripts/add-images-simple.sh ./client
+```
+
+**Scripts:**
+- `auto-image-inserter.py` - Full-featured image scraper and inserter
+- `auto-image-inserter-selenium.py` - Browser-based image scraper
+- `add-images-simple.sh` - Simple bash script for placeholder images
+
+### 2. SEO Audit Tool
 
 This tool performs a comprehensive technical and on-page SEO audit of all pages on HomeMassageUbud.com.
 

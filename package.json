@@ -15,7 +15,10 @@
     "seo:audit": "tsx scripts/seo-audit.ts",
     "extract:lymphatic": "tsx scripts/lymphatic-drainage-data-extractor.ts",
     "generate:lymphatic": "tsx scripts/lymphatic-drainage-content-generator.ts",
-    "indexnow:submit": "tsx scripts/indexnow-submit.ts"
+    "indexnow:submit": "tsx scripts/indexnow-submit.ts",
+    "images:add": "python3 scripts/auto-image-inserter.py ./client",
+    "images:selenium": "python3 scripts/auto-image-inserter-selenium.py",
+    "images:simple": "./scripts/add-images-simple.sh ./client"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
