@@ -14,7 +14,8 @@
     "db:push": "drizzle-kit push",
     "seo:audit": "tsx scripts/seo-audit.ts",
     "extract:lymphatic": "tsx scripts/lymphatic-drainage-data-extractor.ts",
-    "generate:lymphatic": "tsx scripts/lymphatic-drainage-content-generator.ts"
+    "generate:lymphatic": "tsx scripts/lymphatic-drainage-content-generator.ts",
+    "indexnow:submit": "tsx scripts/indexnow-submit.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
