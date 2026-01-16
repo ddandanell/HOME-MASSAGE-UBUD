@@ -4,6 +4,22 @@ import * as xml2js from 'xml2js';
 import * as fs from 'fs';
 import * as path from 'path';
 
+// Configuration
+const CONFIG = {
+  sitemapUrl: 'https://homemassageubud.com/sitemap.xml',
+  domain: 'homemassageubud.com',
+  highPriorityPatterns: [
+    '/services/',
+    '/massage/',
+    '/areas/',
+    /\/(ubud|seminyak|canggu|sanur|kuta)/i
+  ],
+  delays: {
+    betweenPages: 1000,   // 1 second between page scans
+    betweenChecks: 200    // 200ms between link checks
+  }
+};
+
 interface LinkData {
   sourceUrl: string;
   targetUrl: string;
@@ -78,20 +94,22 @@ async function checkUrl(url: string, sourceUrl: string): Promise<{ status: numbe
         'User-Agent': 'Mozilla/5.0 (compatible; LinkAuditBot/1.0)'
       },
       timeout: 15000,
-      maxRedirects: 5,
+      maxRedirects: 0, // Don't follow redirects automatically
       validateStatus: (status) => status < 500 // Don't throw on 4xx errors
     });
     
-    // Check if there was a redirect
-    if (response.request.res && response.request.res.responseUrl) {
-      const finalUrl = response.request.res.responseUrl;
-      if (finalUrl !== url) {
-        return { status: response.status, redirect: finalUrl };
-      }
-    }
-    
     return { status: response.status };
   } catch (error: any) {
+    // Check if it's a redirect (3xx status)
+    if (error.response && error.response.status >= 300 && error.response.status < 400) {
+      const redirectLocation = error.response.headers.location;
+      return { 
+        status: error.response.status, 
+        redirect: redirectLocation ? new URL(redirectLocation, url).href : undefined 
+      };
+    }
+    
+    // Other errors
     if (error.response) {
       return { status: error.response.status, error: error.message };
     }
@@ -261,7 +279,7 @@ async function auditLinks(urls: string[]): Promise<AuditReport> {
     allButtons.push(...buttons);
     
     // Add delay to avoid overwhelming the server
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, CONFIG.delays.betweenPages));
   }
   
   console.log(`\n📊 Total links found: ${allLinks.length}`);
@@ -289,7 +307,7 @@ async function auditLinks(urls: string[]): Promise<AuditReport> {
     }
     
     // Skip external links for now (can be enabled but slows down significantly)
-    if (link.linkType === 'external' && !link.targetUrl.includes('homemassageubud.com')) {
+    if (link.linkType === 'external' && !link.targetUrl.includes(CONFIG.domain)) {
       link.status = 'untested';
       link.errorMessage = 'External link not tested';
       continue;
@@ -309,7 +327,7 @@ async function auditLinks(urls: string[]): Promise<AuditReport> {
     }
     
     // Add small delay between checks
-    await new Promise(resolve => setTimeout(resolve, 200));
+    await new Promise(resolve => setTimeout(resolve, CONFIG.delays.betweenChecks));
   }
   
   // Update the Map with checked links
@@ -329,13 +347,21 @@ async function auditLinks(urls: string[]): Promise<AuditReport> {
   const brokenButtons = allButtons.filter(b => b.status === 'broken');
   
   // Prioritize broken links by SEO impact
-  const highPriority = brokenLinks.filter(l => 
-    l.linkType === 'internal' && 
-    (l.targetUrl.includes('/services/') || 
-     l.targetUrl.includes('/massage/') ||
-     l.sourceUrl.endsWith('/') || // Homepage links
-     l.targetUrl.match(/\/(ubud|seminyak|canggu|sanur|kuta)/i))
-  );
+  const highPriority = brokenLinks.filter(l => {
+    if (l.linkType !== 'internal') return false;
+    
+    // Check if source is homepage
+    if (l.sourceUrl.endsWith('/')) return true;
+    
+    // Check against high priority patterns
+    return CONFIG.highPriorityPatterns.some(pattern => {
+      if (typeof pattern === 'string') {
+        return l.targetUrl.includes(pattern);
+      } else {
+        return pattern.test(l.targetUrl);
+      }
+    });
+  });
   
   const mediumPriority = brokenLinks.filter(l => 
     l.linkType === 'external' || 
@@ -364,10 +390,12 @@ async function auditLinks(urls: string[]): Promise<AuditReport> {
 function generateCSVReport(report: AuditReport): string {
   let csv = 'Source URL,Broken Link (Target URL),Type,Status Code,Link Text,Priority,SEO Impact,Redirect Recommendation,Estimated Effort (hours)\n';
   
+  const domainPattern = new RegExp(`https://${CONFIG.domain}`, 'g');
+  
   // High priority broken links
   report.seoImpact.highPriority.forEach(link => {
-    const targetPath = link.targetUrl.replace('https://homemassageubud.com', '');
-    const sourcePath = link.sourceUrl.replace('https://homemassageubud.com', '');
+    const targetPath = link.targetUrl.replace(domainPattern, '');
+    const sourcePath = link.sourceUrl.replace(domainPattern, '');
     const redirectRec = targetPath.includes('/services/') ? 'Redirect to /services or homepage' : 'Redirect to homepage';
     
     csv += `"${sourcePath}","${targetPath}","${link.linkType}","${link.statusCode || 'N/A'}","${link.linkText}","High","High - Service/product page with traffic","${redirectRec}","2-4"\n`;
@@ -375,16 +403,16 @@ function generateCSVReport(report: AuditReport): string {
   
   // Medium priority broken links
   report.seoImpact.mediumPriority.forEach(link => {
-    const targetPath = link.targetUrl.replace('https://homemassageubud.com', '');
-    const sourcePath = link.sourceUrl.replace('https://homemassageubud.com', '');
+    const targetPath = link.targetUrl.replace(domainPattern, '');
+    const sourcePath = link.sourceUrl.replace(domainPattern, '');
     
     csv += `"${sourcePath}","${targetPath}","${link.linkType}","${link.statusCode || 'N/A'}","${link.linkText}","Medium","Medium - Internal/external link","Update or remove link","1-2"\n`;
   });
   
   // Low priority (images)
   report.seoImpact.lowPriority.forEach(link => {
-    const targetPath = link.targetUrl.replace('https://homemassageubud.com', '');
-    const sourcePath = link.sourceUrl.replace('https://homemassageubud.com', '');
+    const targetPath = link.targetUrl.replace(domainPattern, '');
+    const sourcePath = link.sourceUrl.replace(domainPattern, '');
     
     csv += `"${sourcePath}","${targetPath}","image","${link.statusCode || 'N/A'}","${link.linkText}","Low","Low - Broken image","Replace image + add alt-text","0.5-1"\n`;
   });
@@ -421,8 +449,8 @@ function generateMarkdownReport(report: AuditReport): string {
     md += '|------------|-------------|------|--------|--------|\n';
     
     report.seoImpact.highPriority.slice(0, 20).forEach(link => {
-      const source = link.sourceUrl.replace('https://homemassageubud.com', '');
-      const target = link.targetUrl.replace('https://homemassageubud.com', '');
+      const source = link.sourceUrl.replace(domainPattern, '');
+      const target = link.targetUrl.replace(domainPattern, '');
       md += `| ${source} | ${target} | ${link.linkType} | ${link.statusCode || 'N/A'} | Apply 301 redirect |\n`;
     });
     
@@ -438,9 +466,9 @@ function generateMarkdownReport(report: AuditReport): string {
     md += '|------------|------|--------------|--------|\n';
     
     report.redirectLinks.slice(0, 10).forEach(link => {
-      const source = link.sourceUrl.replace('https://homemassageubud.com', '');
-      const target = link.targetUrl.replace('https://homemassageubud.com', '');
-      const redirect = link.redirectTarget ? link.redirectTarget.replace('https://homemassageubud.com', '') : '';
+      const source = link.sourceUrl.replace(domainPattern, '');
+      const target = link.targetUrl.replace(domainPattern, '');
+      const redirect = link.redirectTarget ? link.redirectTarget.replace(domainPattern, '') : '';
       md += `| ${source} | ${target} | ${redirect} | Update link to final destination |\n`;
     });
     
@@ -456,7 +484,7 @@ function generateMarkdownReport(report: AuditReport): string {
     md += '|------------|-------------|------|-------|\n';
     
     report.brokenButtons.forEach(button => {
-      const source = button.sourceUrl.replace('https://homemassageubud.com', '');
+      const source = button.sourceUrl.replace(domainPattern, '');
       md += `| ${source} | ${button.buttonText} | ${button.buttonType} | ${button.errorMessage || 'Unknown'} |\n`;
     });
     md += '\n';
@@ -491,12 +519,17 @@ function generateMarkdownReport(report: AuditReport): string {
   return md;
 }
 
+// Utility function to format timestamp for filenames
+function formatTimestamp(date: Date): string {
+  return date.toISOString().replace(/:/g, '-').split('.')[0];
+}
+
 // Main audit function
 async function runLinkAudit() {
-  const sitemapUrl = 'https://homemassageubud.com/sitemap.xml';
+  const sitemapUrl = CONFIG.sitemapUrl;
   
   try {
-    console.log('🚀 Starting Link Audit for homemassageubud.com\n');
+    console.log(`🚀 Starting Link Audit for ${CONFIG.domain}\n`);
     
     // Fetch sitemap
     const urls = await fetchSitemap(sitemapUrl);
@@ -514,7 +547,7 @@ async function runLinkAudit() {
       fs.mkdirSync(outputDir, { recursive: true });
     }
     
-    const timestamp = new Date().toISOString().replace(/:/g, '-').split('.')[0];
+    const timestamp = formatTimestamp(new Date());
     const csvPath = path.join(outputDir, `link-audit-${timestamp}.csv`);
     const mdPath = path.join(outputDir, `link-audit-${timestamp}.md`);
     const jsonPath = path.join(outputDir, `link-audit-${timestamp}.json`);
