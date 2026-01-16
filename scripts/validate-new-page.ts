@@ -91,12 +91,15 @@ function isInSitemap(pageUrl: string, sitemapUrls: string[]): boolean {
 }
 
 // Count internal links pointing to this page
+// NOTE: This is a quick validation check that samples pages for speed.
+// For comprehensive link counting, use the full orphan detector script.
 async function countInternalLinksTo(targetUrl: string, sitemapUrls: string[]): Promise<{ count: number; sources: string[] }> {
   const normalizedTarget = normalizeUrl(targetUrl);
   const sources: string[] = [];
   let count = 0;
   
-  // Sample check from first 20 pages (for speed)
+  // Sample check from first 20 pages (for speed in validation)
+  // For production: make this configurable or check all pages
   const samplesToCheck = Math.min(20, sitemapUrls.length);
   
   for (let i = 0; i < samplesToCheck; i++) {

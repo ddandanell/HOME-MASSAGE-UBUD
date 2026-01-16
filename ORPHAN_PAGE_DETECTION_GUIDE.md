@@ -4,6 +4,27 @@
 
 A comprehensive, automated system for detecting, classifying, and fixing orphan pages (pages with zero internal links) to improve SEO performance and prevent link equity loss.
 
+## ⚠️ Important Notes
+
+### Simulated Data
+The current implementation uses **simulated data** for:
+- **Traffic metrics**: Random values for demonstration
+- **Backlink counts**: Random values for demonstration
+
+### For Production Use
+To get accurate results, integrate with actual data sources:
+- **Google Analytics API** - Real traffic data
+- **Google Search Console API** - Clicks, impressions, position data
+- **Ahrefs/SEMrush API** - Real backlink data
+
+See [Integration & Automation](#-integration--automation) section for implementation details.
+
+### Alert System
+The monitoring system currently saves alerts to files. For production use:
+- Implement email notifications (see integration section)
+- Add Slack webhook integration
+- Set up SMS alerts for critical issues
+
 ## 🚀 Quick Start
 
 ### Run Complete Orphan Detection

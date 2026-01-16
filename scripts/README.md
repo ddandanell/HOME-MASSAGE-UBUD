@@ -100,8 +100,6 @@ npm run page:validate https://homemassageubud.com/your-page
 npm run seo:audit
 ```
 
-**Features:
-
 **Features:**
 - Fetches and parses sitemap.xml automatically
 - Analyzes all pages for:
@@ -211,7 +209,6 @@ npm install
 ## Report Outputs
 
 All tools generate reports in the `reports/` directory:
-All tools generate reports in the `reports/` directory:
 
 ```
 reports/
@@ -241,8 +238,6 @@ reports/
 ---
 
 ## Customization
-
-To customize for a different website:
 
 To customize for a different website:
 

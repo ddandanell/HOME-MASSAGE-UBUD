@@ -273,10 +273,19 @@ function sendAlert(message: string): void {
   fs.writeFileSync(alertPath, message);
   console.log(`📝 Alert saved to: ${alertPath}\n`);
   
-  // TODO: Integrate with email service or Slack webhook
-  // Example:
-  // await sendEmail({ to: 'admin@example.com', subject: 'Orphan Page Alert', body: message });
-  // await sendSlackMessage({ channel: '#seo-alerts', text: message });
+  // TODO: For production, implement actual notification system
+  // See ORPHAN_PAGE_DETECTION_GUIDE.md for integration examples:
+  // 
+  // Email Integration:
+  // import nodemailer from 'nodemailer';
+  // const transporter = nodemailer.createTransporter({...});
+  // await transporter.sendMail({ to: 'seo-team@example.com', subject: 'Orphan Alert', text: message });
+  // 
+  // Slack Integration:
+  // await axios.post(process.env.SLACK_WEBHOOK_URL, { text: message, channel: '#seo-alerts' });
+  //
+  // SMS Integration:
+  // await twilioClient.messages.create({ to: '+1234567890', from: '+0987654321', body: message });
 }
 
 // Main monitoring function

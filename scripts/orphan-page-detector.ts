@@ -265,9 +265,13 @@ async function buildSiteMap(sitemapUrls: string[]): Promise<Map<string, PageInfo
     // Track links in graph
     linkGraph.set(url, new Set(internal));
     
-    // Simulate traffic and backlinks (in real scenario, use Google Analytics API and Ahrefs/SEMrush API)
-    pageInfo.traffic = Math.floor(Math.random() * 500); // Simulated
-    pageInfo.backlinksCount = Math.floor(Math.random() * 50); // Simulated
+    // Simulate traffic and backlinks 
+    // TODO: For production, integrate with real data sources:
+    // - Google Analytics API for traffic data
+    // - Google Search Console API for clicks/impressions
+    // - Ahrefs/SEMrush/Moz API for backlink data
+    pageInfo.traffic = Math.floor(Math.random() * 500); // SIMULATED - Replace with real data
+    pageInfo.backlinksCount = Math.floor(Math.random() * 50); // SIMULATED - Replace with real data
     
     // Add delay
     await new Promise(resolve => setTimeout(resolve, CONFIG.delays.betweenPages));
