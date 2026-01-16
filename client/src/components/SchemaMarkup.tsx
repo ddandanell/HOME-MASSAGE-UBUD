@@ -13,7 +13,9 @@ import React from 'react';
  * - review: For customer testimonials and reviews
  * - faq: For frequently asked questions sections
  * - breadcrumb: For navigation breadcrumb trails
- * - organization: (Deprecated - handled in index.html globally)
+ * 
+ * NOTE: Organization/LocalBusiness schema is handled globally in index.html
+ * and does not need to be generated per-page via this component.
  * 
  * USAGE EXAMPLE:
  * ```tsx
@@ -34,27 +36,23 @@ import React from 'react';
  * - LocalBusiness schema is in client/index.html (loaded on all pages)
  * - Only include real, verifiable information (no fake reviews)
  * - Test all changes with Google Rich Results Test
+ * - Data prop uses 'any' type for flexibility across different schema types
+ *   (defining strict types for each schema would add complexity without
+ *   significant benefit since React escapes all content automatically)
  * 
  * @see SCHEMA_IMPLEMENTATION_GUIDE.md for complete documentation
  */
 
 interface SchemaMarkupProps {
-  type: 'organization' | 'service' | 'review' | 'faq' | 'breadcrumb';
+  type: 'service' | 'review' | 'faq' | 'breadcrumb';
+  // Using 'any' for flexibility across different schema types
+  // React's built-in escaping via JSON.stringify provides XSS protection
   data: any;
 }
 
 export default function SchemaMarkup({ type, data }: SchemaMarkupProps) {
   const generateSchema = () => {
     switch (type) {
-      case 'organization':
-        /**
-         * ORGANIZATION SCHEMA (Deprecated in component)
-         * This is now handled globally in client/index.html
-         * All pages automatically include the HealthAndBeautyBusiness schema
-         * DO NOT generate organization schema here to avoid duplication
-         */
-        return null;
-
       case 'service':
         /**
          * SERVICE SCHEMA

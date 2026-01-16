@@ -314,8 +314,9 @@ Safe prenatal massage by certified therapists for expectant mothers.
 
 ### Additional Schema Property for Pregnancy Massage
 
-For pregnancy massage, you can add an audience property:
+For pregnancy massage, you can add an audience property to indicate who the service is for:
 
+**React Component (recommended):**
 ```tsx
 // In the data object, add:
 audience: {
@@ -323,6 +324,8 @@ audience: {
   "name": "Pregnant Women (12+ weeks)"
 }
 ```
+
+**Note:** The `//` comments above are for explanation only. In actual JSON-LD, don't include comments - only include the properties themselves.
 
 ---
 
