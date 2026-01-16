@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'wouter';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import PageLayout from '@/components/PageLayout';
 import { Users, MapPin, Clock, Heart, Shield, TrendingUp } from 'lucide-react';
 
 export default function WhyTouristsPreferHomeMassage() {
   return (
-    <PageLayout
-      title="Why Tourists Prefer Home Massage | Convenience, Safety & Privacy"
-      description="Discover why tourists choose home massage over spas. Learn about convenience, safety, privacy benefits, and cost savings. Real traveler testimonials explain the home massage preference."
-    >
+    <>
+      <SEOHead 
+        title="Why Tourists Prefer Home Massage | Convenience, Safety & Privacy"
+        description="Discover why tourists choose home massage over spas. Learn about convenience, safety, privacy benefits, and cost savings. Real traveler testimonials explain the home massage preference."
+      />
+      <div className="min-h-screen bg-background flex flex-col">
+        <Header />
+        <main className="flex-grow">
       <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -656,6 +662,9 @@ export default function WhyTouristsPreferHomeMassage() {
           </div>
         </div>
       </section>
-    </PageLayout>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

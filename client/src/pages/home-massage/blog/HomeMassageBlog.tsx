@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'wouter';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import PageLayout from '@/components/PageLayout';
 import { BookOpen, Calendar, ArrowRight } from 'lucide-react';
 
 export default function HomeMassageBlog() {
   return (
-    <PageLayout
-      title="Home Massage Blog | Expert Guides & Tips"
-      description="Complete guides about home massage in Bali. Learn everything about booking, benefits, safety, and choosing the right home massage service."
-    >
+    <>
+      <SEOHead 
+        title="Home Massage Blog | Expert Guides & Tips"
+        description="Complete guides about home massage in Bali. Learn everything about booking, benefits, safety, and choosing the right home massage service."
+      />
+      <div className="min-h-screen bg-background flex flex-col">
+        <Header />
+        <main className="flex-grow">
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
@@ -392,6 +398,9 @@ export default function HomeMassageBlog() {
           </div>
         </div>
       </section>
-    </PageLayout>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

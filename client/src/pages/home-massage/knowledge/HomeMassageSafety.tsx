@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'wouter';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import PageLayout from '@/components/PageLayout';
 import { Shield, Check, AlertCircle, Users } from 'lucide-react';
 
 export default function HomeMassageSafety() {
   return (
-    <PageLayout
-      title="Home Massage Safety Standards | Professional Guidelines"
-      description="Comprehensive safety standards for home massage services. Learn about therapist vetting, hygiene protocols, and professional conduct in home massage."
-    >
+    <>
+      <SEOHead 
+        title="Home Massage Safety Standards | Professional Guidelines"
+        description="Comprehensive safety standards for home massage services. Learn about therapist vetting, hygiene protocols, and professional conduct in home massage."
+      />
+      <div className="min-h-screen bg-background flex flex-col">
+        <Header />
+        <main className="flex-grow">
       <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -354,6 +360,9 @@ export default function HomeMassageSafety() {
           </div>
         </div>
       </section>
-    </PageLayout>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

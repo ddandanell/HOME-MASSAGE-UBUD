@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'wouter';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import PageLayout from '@/components/PageLayout';
 import { Clock, DollarSign } from 'lucide-react';
 
 export default function DeepTissueHomeMassage() {
   return (
-    <PageLayout
-      title="Deep Tissue Home Massage | Therapeutic Massage at Your Villa"
-      description="Professional deep tissue home massage delivered to your accommodation. Target chronic pain and muscle tension with therapeutic home massage. Book today."
-    >
+    <>
+      <SEOHead 
+        title="Deep Tissue Home Massage | Therapeutic Massage at Your Villa"
+        description="Professional deep tissue home massage delivered to your accommodation. Target chronic pain and muscle tension with therapeutic home massage. Book today."
+      />
+      <div className="min-h-screen bg-background flex flex-col">
+        <Header />
+        <main className="flex-grow">
       <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -274,6 +280,9 @@ export default function DeepTissueHomeMassage() {
           </div>
         </div>
       </section>
-    </PageLayout>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

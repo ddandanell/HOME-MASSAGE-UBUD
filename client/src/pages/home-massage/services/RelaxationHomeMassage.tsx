@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'wouter';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import PageLayout from '@/components/PageLayout';
 import { Clock, DollarSign } from 'lucide-react';
 
 export default function RelaxationHomeMassage() {
   return (
-    <PageLayout
-      title="Relaxation Home Massage | Gentle Massage at Your Villa"
-      description="Pure relaxation home massage with gentle, flowing strokes. Perfect stress relief delivered to your accommodation. Book your calming home massage today."
-    >
+    <>
+      <SEOHead 
+        title="Relaxation Home Massage | Gentle Massage at Your Villa"
+        description="Pure relaxation home massage with gentle, flowing strokes. Perfect stress relief delivered to your accommodation. Book your calming home massage today."
+      />
+      <div className="min-h-screen bg-background flex flex-col">
+        <Header />
+        <main className="flex-grow">
       <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -276,6 +282,9 @@ export default function RelaxationHomeMassage() {
           </div>
         </div>
       </section>
-    </PageLayout>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

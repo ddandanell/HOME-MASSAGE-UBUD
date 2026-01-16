@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'wouter';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import PageLayout from '@/components/PageLayout';
 import { MapPin, Clock, Check } from 'lucide-react';
 
 export default function HomeMassageSanur() {
   return (
-    <PageLayout
-      title="Home Massage in Sanur | Professional Villa Massage Service"
-      description="Professional home massage service throughout Sanur. Licensed therapists deliver spa-quality treatments to your villa, hotel, or apartment. Same-day booking available. Perfect for families and relaxation."
-    >
+    <>
+      <SEOHead 
+        title="Home Massage in Sanur | Professional Villa Massage Service"
+        description="Professional home massage service throughout Sanur. Licensed therapists deliver spa-quality treatments to your villa, hotel, or apartment. Same-day booking available. Perfect for families and relaxation."
+      />
+      <div className="min-h-screen bg-background flex flex-col">
+        <Header />
+        <main className="flex-grow">
       {/* H1: Home Massage in [City] */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
@@ -293,6 +299,9 @@ export default function HomeMassageSanur() {
           </div>
         </div>
       </section>
-    </PageLayout>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

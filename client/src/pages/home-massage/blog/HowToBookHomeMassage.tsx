@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'wouter';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import PageLayout from '@/components/PageLayout';
 import { BookOpen, Phone, CreditCard, CheckCircle, Clock, AlertCircle } from 'lucide-react';
 
 export default function HowToBookHomeMassage() {
   return (
-    <PageLayout
-      title="How to Book Home Massage | Complete Booking Guide & Tips"
-      description="Step-by-step guide to booking home massage. Learn timing, preparation, payment, communication, and troubleshooting for stress-free home massage booking."
-    >
+    <>
+      <SEOHead 
+        title="How to Book Home Massage | Complete Booking Guide & Tips"
+        description="Step-by-step guide to booking home massage. Learn timing, preparation, payment, communication, and troubleshooting for stress-free home massage booking."
+      />
+      <div className="min-h-screen bg-background flex flex-col">
+        <Header />
+        <main className="flex-grow">
       <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -856,6 +862,9 @@ export default function HowToBookHomeMassage() {
           </div>
         </div>
       </section>
-    </PageLayout>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

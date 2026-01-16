@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'wouter';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import PageLayout from '@/components/PageLayout';
 import { Check, Clock, Shield, MapPin, Calendar, Star } from 'lucide-react';
 
 export default function HomeMassageHub() {
   return (
-    <PageLayout
-      title="Home Massage in Bali | Professional Massage at Your Villa"
-      description="Professional home massage service delivered to your villa or hotel in Bali. Licensed therapists bring spa-quality treatments to your accommodation. Same-day booking available."
-    >
+    <>
+      <SEOHead 
+        title="Home Massage in Bali | Professional Massage at Your Villa"
+        description="Professional home massage service delivered to your villa or hotel in Bali. Licensed therapists bring spa-quality treatments to your accommodation. Same-day booking available."
+      />
+      <div className="min-h-screen bg-background flex flex-col">
+        <Header />
+        <main className="flex-grow">
       {/* Block 1: Hero (Conversion) */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
@@ -451,6 +457,9 @@ export default function HomeMassageHub() {
           </div>
         </div>
       </section>
-    </PageLayout>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

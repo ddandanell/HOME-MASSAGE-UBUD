@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'wouter';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import PageLayout from '@/components/PageLayout';
 import { Clock, DollarSign } from 'lucide-react';
 
 export default function BalineseHomeMassage() {
   return (
-    <PageLayout
-      title="Balinese Home Massage | Traditional Massage at Your Villa"
-      description="Experience authentic Balinese home massage at your villa or hotel. Traditional techniques delivered by licensed therapists. Book your home massage today."
-    >
+    <>
+      <SEOHead 
+        title="Balinese Home Massage | Traditional Massage at Your Villa"
+        description="Experience authentic Balinese home massage at your villa or hotel. Traditional techniques delivered by licensed therapists. Book your home massage today."
+      />
+      <div className="min-h-screen bg-background flex flex-col">
+        <Header />
+        <main className="flex-grow">
       {/* H1: [Service] Home Massage */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
@@ -282,6 +288,9 @@ export default function BalineseHomeMassage() {
           </div>
         </div>
       </section>
-    </PageLayout>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

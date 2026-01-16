@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'wouter';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import PageLayout from '@/components/PageLayout';
 import { Clock, MapPin, CheckCircle, AlertCircle, Home } from 'lucide-react';
 
 export default function HomeMassageWhatToExpect() {
   return (
-    <PageLayout
-      title="What to Expect: Home Massage Service Guide | Before During After"
-      description="Complete guide to home massage experience. Learn what happens before, during, and after your home massage appointment. Professional home massage preparation and process explained."
-    >
+    <>
+      <SEOHead 
+        title="What to Expect: Home Massage Service Guide | Before During After"
+        description="Complete guide to home massage experience. Learn what happens before, during, and after your home massage appointment. Professional home massage preparation and process explained."
+      />
+      <div className="min-h-screen bg-background flex flex-col">
+        <Header />
+        <main className="flex-grow">
       <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -736,6 +742,9 @@ export default function HomeMassageWhatToExpect() {
           </div>
         </div>
       </section>
-    </PageLayout>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }
