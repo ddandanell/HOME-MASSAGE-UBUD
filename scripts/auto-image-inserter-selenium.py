@@ -6,7 +6,6 @@ Using Selenium to scrape images (more reliable)
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import WebDriverException
 import time
 import urllib.request
@@ -35,10 +34,12 @@ def setup_browser():
         print("4. Verify: chromedriver --version")
         return None
 
-def scrape_google_images_selenium(query, num_images=5):
+def scrape_google_images_selenium(query, num_images=5, excluded_domains=None):
     """More reliable Google Images scraping"""
-    # Filters to exclude from results
-    EXCLUDED_DOMAINS = ['gstatic']
+    # Configurable filters to exclude from results
+    # Default excludes Google's own static content domains
+    if excluded_domains is None:
+        excluded_domains = ['gstatic', 'googleusercontent', 'ggpht']
     
     driver = setup_browser()
     if not driver:
@@ -59,7 +60,7 @@ def scrape_google_images_selenium(query, num_images=5):
         
         for img in images:
             src = img.get_attribute('src')
-            if src and src.startswith('http') and not any(domain in src for domain in EXCLUDED_DOMAINS):
+            if src and src.startswith('http') and not any(domain in src for domain in excluded_domains):
                 image_urls.append(src)
                 if len(image_urls) >= num_images:
                     break

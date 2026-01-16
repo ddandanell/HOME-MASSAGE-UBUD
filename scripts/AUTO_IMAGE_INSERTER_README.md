@@ -314,17 +314,17 @@ npm run images:add
 
 ### Copyright and Licensing
 
-- **Google Images**: May contain copyrighted content - verify licensing
-- **Pexels**: Free to use with Pexels License (attribution appreciated)
-- **Unsplash**: Free to use with Unsplash License (attribution appreciated)
-- **Picsum**: Placeholder images for testing (check individual photo licenses)
+- **Google Images**: May contain copyrighted content - verify licensing for each image
+- **Pexels**: Free to use under the Pexels License; attribution is not required but is encouraged. When scraping, individual photos/photographers may have additional terms, so always verify the license for each image.
+- **Unsplash**: Free to use under the Unsplash License; attribution is not required but is encouraged. Scraped images may have photographer-specific requirements, so confirm the license details for each image before production use.
+- **Picsum**: Placeholder images for testing (individual photos sourced from Unsplash - check specific photo licenses)
 
 ### Recommendations
 
 1. **Use for development/testing** - These tools are great for prototyping
-2. **Verify licensing** - Before using in production, ensure proper licensing
-3. **Consider paid stock photos** - For commercial websites
-4. **Use reputable APIs** - Unsplash API, Pexels API (with authentication) for production
+2. **Verify licensing** - Before using in production, ensure proper licensing for each image
+3. **Consider paid stock photos** - For commercial websites with clear licensing
+4. **Use reputable APIs** - Unsplash API, Pexels API (with authentication) for production to ensure proper attribution and licensing tracking
 
 ### Web Scraping Ethics
 
