@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, DollarSign } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function DeepTissueHomeMassage() {
   return (
     <>
       <SEOHead 
-        title="Deep Tissue Home Massage | Therapeutic Massage at Your Villa"
-        description="Professional deep tissue home massage delivered to your accommodation. Target chronic pain and muscle tension with therapeutic home massage. Book today."
+        title="Deep Tissue Home Massage | Ubud Luxury Villas"
+        description="Professional deep tissue home massage at your villa. Call or WhatsApp for therapeutic home massage targeting chronic pain. Licensed therapists available daily."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -35,7 +40,17 @@ export default function DeepTissueHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'what-is', title: 'What Is Deep Tissue Home Massage?' },
+        { id: 'who-benefits', title: 'Who Benefits?' },
+        { id: 'pricing', title: 'Pricing & Duration' },
+        { id: 'advantages', title: 'Why Home Massage?' },
+        { id: 'safety', title: 'Safety Standards' },
+        { id: 'faq', title: 'FAQ' }
+      ]} />
+
+      <section id="what-is" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -62,7 +77,7 @@ export default function DeepTissueHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="who-benefits" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -109,7 +124,7 @@ export default function DeepTissueHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
+      <section id="pricing" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -169,7 +184,7 @@ export default function DeepTissueHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="advantages" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -228,57 +243,45 @@ export default function DeepTissueHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Book Your Deep Tissue Home Massage
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Professional therapeutic home massage delivered to your accommodation
-              </p>
-              <Button size="lg" className="text-lg px-8" asChild>
-                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                  Book This Home Massage
-                </a>
-              </Button>
-            </div>
+      {/* Safety Standards */}
+      <SafetyStandards />
 
-            <div className="border-t pt-12">
-              <h3 className="text-xl font-semibold mb-6">Related Home Massage Services</h3>
-              <div className="grid md:grid-cols-3 gap-4">
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage">
-                    ← All Home Massage Services
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/services/balinese">
-                    Balinese Home Massage →
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/cities/canggu">
-                    Home Massage in Canggu
-                  </Link>
-                </Button>
-              </div>
-              <div className="grid md:grid-cols-2 gap-4 mt-4">
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/knowledge/what-to-expect">
-                    What to Expect
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/blog/what-is-home-massage">
-                    Learn About Home Massage
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Spider Links */}
+      <SpiderLinksBlock currentPage="/home-massage/services/deep-tissue" />
+
+      {/* Booking CTA */}
+      <BookingCTA />
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <HomeMassageFAQ 
+          questions={[
+            {
+              question: "Is deep tissue home massage painful?",
+              answer: "Deep tissue home massage should produce therapeutic discomfort, not pain. Our therapists communicate constantly and adjust pressure to stay within your tolerance. You should feel intense but bearable pressure that helps release chronic tension."
+            },
+            {
+              question: "How is deep tissue home massage different from regular massage?",
+              answer: "Deep tissue home massage uses slower, firmer strokes to reach deeper muscle layers and fascia. While relaxation massage uses light pressure for stress relief, deep tissue home massage targets specific problem areas with therapeutic intent."
+            },
+            {
+              question: "Will I be sore after deep tissue home massage?",
+              answer: "Mild soreness for 24-48 hours is normal after deep tissue home massage, similar to post-workout muscle fatigue. This indicates effective tissue work. Drinking water and gentle stretching help minimize discomfort. The soreness gives way to improved mobility."
+            },
+            {
+              question: "Can deep tissue home massage help with chronic back pain?",
+              answer: "Yes, deep tissue home massage is highly effective for chronic back pain caused by muscle tension, poor posture, or overuse. Regular sessions combined with stretching and posture awareness provide long-term relief for many clients."
+            },
+            {
+              question: "How often should I get deep tissue home massage?",
+              answer: "For chronic issues, weekly or bi-weekly deep tissue home massage sessions yield best results. For maintenance, monthly sessions suffice. Your therapist will assess your condition during the first home massage and recommend a treatment schedule."
+            },
+            {
+              question: "Can I request focus areas for my deep tissue home massage?",
+              answer: "Absolutely. During the consultation, tell your therapist which areas need the most attention. We can spend the entire session on problem zones like shoulders, lower back, or legs, or combine focused work with full-body treatment."
+            }
+          ]}
+        />
       </section>
         </main>
         <Footer />

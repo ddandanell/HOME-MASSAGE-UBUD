@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, DollarSign } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function RelaxationHomeMassage() {
   return (
     <>
       <SEOHead 
-        title="Relaxation Home Massage | Gentle Massage at Your Villa"
-        description="Pure relaxation home massage with gentle, flowing strokes. Perfect stress relief delivered to your accommodation. Book your calming home massage today."
+        title="Relaxation Home Massage | Ubud Luxury Villas"
+        description="Gentle relaxation home massage at your villa. Call or WhatsApp for same-day booking. Stress relief delivered to your accommodation by licensed therapists."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -35,7 +40,17 @@ export default function RelaxationHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'what-is', title: 'What Is Relaxation Home Massage?' },
+        { id: 'who-benefits', title: 'Who Benefits?' },
+        { id: 'pricing', title: 'Pricing & Duration' },
+        { id: 'advantages', title: 'Why Home Massage?' },
+        { id: 'safety', title: 'Safety Standards' },
+        { id: 'faq', title: 'FAQ' }
+      ]} />
+
+      <section id="what-is" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -64,7 +79,7 @@ export default function RelaxationHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="who-benefits" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -111,7 +126,7 @@ export default function RelaxationHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
+      <section id="pricing" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -171,7 +186,7 @@ export default function RelaxationHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="advantages" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -230,57 +245,45 @@ export default function RelaxationHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Book Your Relaxation Home Massage
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Gentle, stress-relieving home massage delivered to your private space
-              </p>
-              <Button size="lg" className="text-lg px-8" asChild>
-                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                  Book This Home Massage
-                </a>
-              </Button>
-            </div>
+      {/* Safety Standards */}
+      <SafetyStandards />
 
-            <div className="border-t pt-12">
-              <h3 className="text-xl font-semibold mb-6">Related Home Massage Services</h3>
-              <div className="grid md:grid-cols-3 gap-4">
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage">
-                    ← All Home Massage Services
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/services/couples">
-                    Couples Home Massage →
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/cities/sanur">
-                    Home Massage in Sanur
-                  </Link>
-                </Button>
-              </div>
-              <div className="grid md:grid-cols-2 gap-4 mt-4">
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/knowledge/what-to-expect">
-                    What to Expect
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/blog/why-tourists-prefer-home-massage">
-                    Why Choose Home Massage
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Spider Links */}
+      <SpiderLinksBlock currentPage="/home-massage/services/relaxation" />
+
+      {/* Booking CTA */}
+      <BookingCTA />
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <HomeMassageFAQ 
+          questions={[
+            {
+              question: "What pressure level is used in relaxation home massage?",
+              answer: "Relaxation home massage uses light to moderate pressure designed purely for comfort and stress relief. The therapist maintains consistent, gentle strokes that soothe without causing any discomfort. You can request lighter or slightly firmer touch as needed."
+            },
+            {
+              question: "Can I fall asleep during relaxation home massage?",
+              answer: "Yes! Many clients fall asleep during relaxation home massage, which indicates deep nervous system calming. Your therapist will continue working and gently wake you when the session ends. Falling asleep is a sign the home massage is working effectively."
+            },
+            {
+              question: "Is relaxation home massage good for anxiety?",
+              answer: "Absolutely. Relaxation home massage activates the parasympathetic nervous system, reducing cortisol and promoting calm. The combination of gentle touch, aromatherapy, and familiar surroundings makes home massage particularly effective for anxiety relief."
+            },
+            {
+              question: "How does relaxation home massage differ from Balinese massage?",
+              answer: "Balinese home massage incorporates acupressure and stretching with varied pressure. Relaxation home massage maintains consistently gentle pressure throughout, focusing purely on stress reduction. Both are effective; choose based on whether you prefer traditional techniques or pure gentleness."
+            },
+            {
+              question: "Should I book 60 or 90 minutes for relaxation home massage?",
+              answer: "The 90-minute relaxation home massage allows deeper nervous system reset and is most popular. If you're new to massage or have limited time, 60 minutes provides effective stress relief. For vacation pampering, consider the 120-minute luxury session."
+            },
+            {
+              question: "Can I request specific focus areas in relaxation home massage?",
+              answer: "Yes. While relaxation home massage is typically full-body, you can request extra time on shoulders, back, or any tense area. The therapist will maintain the gentle, flowing style while giving more attention to your preferred zones."
+            }
+          ]}
+        />
       </section>
         </main>
         <Footer />

@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, DollarSign } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function BalineseHomeMassage() {
   return (
     <>
       <SEOHead 
-        title="Balinese Home Massage | Traditional Massage at Your Villa"
-        description="Experience authentic Balinese home massage at your villa or hotel. Traditional techniques delivered by licensed therapists. Book your home massage today."
+        title="Balinese Home Massage | Ubud Luxury Villas"
+        description="Experience authentic Balinese home massage at your villa. Call or WhatsApp for same-day booking. Licensed therapists deliver traditional home massage to your accommodation."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -36,8 +41,18 @@ export default function BalineseHomeMassage() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'what-is', title: 'What Is Balinese Home Massage?' },
+        { id: 'who-benefits', title: 'Who Benefits?' },
+        { id: 'pricing', title: 'Pricing & Duration' },
+        { id: 'advantages', title: 'Why Home Massage?' },
+        { id: 'safety', title: 'Safety Standards' },
+        { id: 'faq', title: 'FAQ' }
+      ]} />
+
       {/* Block 2: What this home massage does */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="what-is" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -66,7 +81,7 @@ export default function BalineseHomeMassage() {
       </section>
 
       {/* Block 3: Who it's for */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="who-benefits" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -114,7 +129,7 @@ export default function BalineseHomeMassage() {
       </section>
 
       {/* Block 4: Duration & Pricing */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="pricing" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -175,7 +190,7 @@ export default function BalineseHomeMassage() {
       </section>
 
       {/* Block 5: Why at home is better than spa */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="advantages" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -234,59 +249,45 @@ export default function BalineseHomeMassage() {
         </div>
       </section>
 
-      {/* Block 6: CTA and Links */}
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Book Your Balinese Home Massage
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Experience authentic Balinese tradition delivered as professional home massage service
-              </p>
-              <Button size="lg" className="text-lg px-8" asChild>
-                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                  Book This Home Massage
-                </a>
-              </Button>
-            </div>
+      {/* Safety Standards */}
+      <SafetyStandards />
 
-            {/* Mandatory Links - UP, SIDE, DOWN within home massage silo only */}
-            <div className="border-t pt-12">
-              <h3 className="text-xl font-semibold mb-6">Related Home Massage Services & Information</h3>
-              <div className="grid md:grid-cols-3 gap-4">
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage">
-                    ← All Home Massage Services
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/services/deep-tissue">
-                    Deep Tissue Home Massage →
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/cities/ubud">
-                    Home Massage in Ubud
-                  </Link>
-                </Button>
-              </div>
-              <div className="grid md:grid-cols-2 gap-4 mt-4">
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/knowledge/what-to-expect">
-                    What to Expect from Home Massage
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/knowledge/safety">
-                    Safety Standards
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Spider Links */}
+      <SpiderLinksBlock currentPage="/home-massage/services/balinese" />
+
+      {/* Booking CTA */}
+      <BookingCTA />
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <HomeMassageFAQ 
+          questions={[
+            {
+              question: "How long does a Balinese home massage session take?",
+              answer: "Balinese home massage sessions are available in 60, 90, or 120-minute durations. The 90-minute session is most popular as it allows time for full-body treatment with traditional Balinese techniques including stretching and acupressure."
+            },
+            {
+              question: "What should I prepare for my Balinese home massage?",
+              answer: "Simply provide a quiet space with room for a massage table. Our therapists bring all equipment including the table, linens, oils, and music. You just need to ensure access to your villa and a comfortable room temperature."
+            },
+            {
+              question: "Is Balinese home massage suitable for first-time massage recipients?",
+              answer: "Yes! Balinese home massage uses gentle to moderate pressure and is perfect for beginners. The therapist will adjust pressure to your comfort level and explain techniques throughout your home massage session."
+            },
+            {
+              question: "Can I request specific aromatherapy oils for my Balinese home massage?",
+              answer: "Absolutely. Our therapists carry a selection of traditional Balinese oils including frangipani, coconut, and essential oil blends. Let us know your preference when booking your home massage."
+            },
+            {
+              question: "How far in advance should I book Balinese home massage?",
+              answer: "We offer same-day booking for Balinese home massage throughout Ubud, Canggu, Seminyak, Sanur, and Nusa Dua. For guaranteed availability at your preferred time, we recommend booking 24 hours ahead via WhatsApp."
+            },
+            {
+              question: "What's the difference between Balinese home massage and spa treatment?",
+              answer: "The techniques are identical, but home massage eliminates travel time, provides complete privacy, and allows you to rest immediately after. You receive the same professional Balinese treatment in your own comfortable space."
+            }
+          ]}
+        />
       </section>
         </main>
         <Footer />
