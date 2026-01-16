@@ -43,6 +43,7 @@ const mainPages: SitemapUrl[] = [
   { loc: `${DOMAIN}/contact`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.9 },
   { loc: `${DOMAIN}/pricing`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.9 },
   { loc: `${DOMAIN}/testimonials`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/recommended-services`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
   { loc: `${DOMAIN}/blog`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.7 },
   { loc: `${DOMAIN}/sustainability`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
   { loc: `${DOMAIN}/villa-partnerships`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
@@ -123,6 +124,7 @@ const northEastBaliAreaPages: SitemapUrl[] = [
 // Service landing pages
 const serviceLandingPages: SitemapUrl[] = [
   'massage',
+  'massage-bali',
   'spa-massage',
   'deep-tissue-massage',
   'full-body-massage',
@@ -153,6 +155,101 @@ const serviceLandingPages: SitemapUrl[] = [
   changefreq: 'monthly',
   priority: 0.8
 }));
+
+// Blog articles
+const blogArticles: SitemapUrl[] = [
+  'premium-home-massage-kuta',
+].map(slug => ({
+  loc: `${DOMAIN}/blog/${slug}`,
+  lastmod: getCurrentDate(),
+  changefreq: 'monthly',
+  priority: 0.6
+}));
+
+// Home Massage Silo
+const homeMassagePages: SitemapUrl[] = [
+  { loc: `${DOMAIN}/home-massage`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.8 },
+  { loc: `${DOMAIN}/home-massage/services`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/home-massage/services/balinese`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/home-massage/services/deep-tissue`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/home-massage/services/couples`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/home-massage/services/relaxation`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/home-massage/cities`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/home-massage/cities/ubud`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/home-massage/cities/canggu`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/home-massage/cities/seminyak`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/home-massage/cities/sanur`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/home-massage/cities/nusa-dua`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/home-massage/knowledge`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/home-massage/knowledge/safety`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/home-massage/knowledge/benefits`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/home-massage/knowledge/aftercare`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/home-massage/knowledge/what-to-expect`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/home-massage/blog`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.6 },
+  { loc: `${DOMAIN}/home-massage/blog/what-is-home-massage`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/home-massage/blog/home-massage-vs-spa`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/home-massage/blog/is-home-massage-safe`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/home-massage/blog/why-tourists-prefer-home-massage`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/home-massage/blog/how-to-book-home-massage`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+];
+
+// Mobile Massage Silo
+const mobileMassagePages: SitemapUrl[] = [
+  { loc: `${DOMAIN}/mobile-massage`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.8 },
+  { loc: `${DOMAIN}/mobile-massage/services`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/mobile-massage/services/balinese-mobile-massage`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/mobile-massage/services/deep-tissue-mobile-massage`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/mobile-massage/services/couples-mobile-massage`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/mobile-massage/services/relaxation-mobile-massage`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/mobile-massage/cities`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/mobile-massage/cities/ubud`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/mobile-massage/cities/canggu`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/mobile-massage/cities/seminyak`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/mobile-massage/cities/sanur`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/mobile-massage/cities/nusa-dua`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/mobile-massage/knowledge`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/mobile-massage/knowledge/is-mobile-massage-safe`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/mobile-massage/knowledge/how-to-prepare-mobile-massage`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/mobile-massage/knowledge/aftercare-after-mobile-massage`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/mobile-massage/knowledge/what-to-expect-mobile-massage`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/mobile-massage/blog`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.6 },
+  { loc: `${DOMAIN}/mobile-massage/blog/what-is-mobile-massage`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/mobile-massage/blog/mobile-massage-vs-spa`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/mobile-massage/blog/mobile-massage-for-travelers`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/mobile-massage/blog/how-to-book-mobile-massage`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+];
+
+// Villa Massage Silo
+const villaMassagePages: SitemapUrl[] = [
+  { loc: `${DOMAIN}/villa-massage`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.8 },
+  { loc: `${DOMAIN}/villa-massage/services`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/services/balinese`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/services/deep-tissue`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/services/couples`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/services/relaxation`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/services/aromatherapy`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/services/hot-stone`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/services/prenatal`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/services/thai`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/services/sports`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/services/reflexology`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/cities`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/cities/ubud`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/cities/seminyak`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/cities/canggu`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/cities/sanur`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/cities/nusa-dua`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/cities/uluwatu`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/cities/jimbaran`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/cities/kuta`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/cities/legian`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/cities/pererenan`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.7 },
+  { loc: `${DOMAIN}/villa-massage/blog`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.6 },
+  { loc: `${DOMAIN}/villa-massage/blog/benefits-bali`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/villa-massage/blog/vs-spa`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/villa-massage/blog/prepare-villa`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/villa-massage/blog/best-couples`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+];
 
 function generateSitemapXML(urls: SitemapUrl[]): string {
   const urlElements = urls.map(url => `  <url>
@@ -205,11 +302,15 @@ async function main() {
   // Define sitemap sections
   const sections: SitemapSection[] = [
     { name: 'Main Pages', filename: 'sitemap-pages.xml', urls: mainPages },
+    { name: 'Blog Articles', filename: 'sitemap-blog.xml', urls: blogArticles },
     { name: 'Treatments', filename: 'sitemap-treatments.xml', urls: treatmentPages },
     { name: 'Ubud Areas', filename: 'sitemap-areas-ubud.xml', urls: ubudAreaPages },
     { name: 'South Bali Areas', filename: 'sitemap-areas-south.xml', urls: southBaliAreaPages },
     { name: 'North/East Bali Areas', filename: 'sitemap-areas-north-east.xml', urls: northEastBaliAreaPages },
     { name: 'Service Landing Pages', filename: 'sitemap-services.xml', urls: serviceLandingPages },
+    { name: 'Home Massage Silo', filename: 'sitemap-home-massage.xml', urls: homeMassagePages },
+    { name: 'Mobile Massage Silo', filename: 'sitemap-mobile-massage.xml', urls: mobileMassagePages },
+    { name: 'Villa Massage Silo', filename: 'sitemap-villa-massage.xml', urls: villaMassagePages },
   ];
 
   // Ensure output directory exists
