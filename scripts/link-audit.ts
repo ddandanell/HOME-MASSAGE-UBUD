@@ -426,6 +426,8 @@ function generateMarkdownReport(report: AuditReport): string {
   md += `**Generated:** ${new Date().toLocaleString()}\n\n`;
   md += `**Total Links Checked:** ${report.totalLinksChecked}\n\n`;
   
+  const domainPattern = new RegExp(`https://${CONFIG.domain}`, 'g');
+  
   md += '## Executive Summary\n\n';
   md += `- 🔴 **Broken Links:** ${report.brokenLinks.length}\n`;
   md += `- 🟡 **Redirect Links:** ${report.redirectLinks.length}\n`;
