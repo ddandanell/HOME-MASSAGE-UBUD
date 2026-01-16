@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, Check, ArrowRight, Star } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageServicesIndex() {
   return (
     <>
       <SEOHead 
-        title="Home Massage Services | All Treatments at Your Villa"
-        description="Browse all home massage services available at your villa or hotel in Bali. Balinese, deep tissue, relaxation, and couples home massage. Professional therapists, same-day booking."
+        title="Home Massage Services | Ubud Luxury Villas"
+        description="Browse all home massage services in Bali. Call or WhatsApp for Balinese, deep tissue, relaxation, and couples home massage. Professional therapists deliver to your villa."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -36,8 +41,17 @@ export default function HomeMassageServicesIndex() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'why-choose', label: 'Why Choose Our Services?' },
+        { id: 'services', label: 'Available Services' },
+        { id: 'included', label: "What's Included" },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'FAQ' }
+      ]} />
+
       {/* Introduction */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="why-choose" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -68,7 +82,7 @@ export default function HomeMassageServicesIndex() {
       </section>
 
       {/* Service Cards */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="services" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -258,7 +272,7 @@ export default function HomeMassageServicesIndex() {
       </section>
 
       {/* What You Get */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="included" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -306,30 +320,45 @@ export default function HomeMassageServicesIndex() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-secondary/20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Book Home Massage?
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Choose your home massage service and experience professional spa treatments in your private space
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild>
-                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                  Book Home Massage Now
-                </a>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/home-massage">
-                  Back to Home Massage Hub
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
+      {/* Safety Standards */}
+      <SafetyStandards />
+
+      {/* Spider Links */}
+      <SpiderLinksBlock currentPage="/home-massage/services" />
+
+      {/* Booking CTA */}
+      <BookingCTA />
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <HomeMassageFAQ 
+          items={[
+            {
+              question: "What home massage services do you offer?",
+              answer: "We offer four main home massage services: Balinese home massage (traditional techniques with acupressure), deep tissue home massage (therapeutic pressure for chronic tension), relaxation home massage (gentle stress relief), and couples home massage (side-by-side treatments with two therapists)."
+            },
+            {
+              question: "How do I choose which home massage service is right for me?",
+              answer: "Choose Balinese home massage for cultural experience and balanced treatment, deep tissue home massage for chronic pain or sports recovery, relaxation home massage for pure stress relief with gentle pressure, or couples home massage to share the experience with your partner."
+            },
+            {
+              question: "Can I mix different home massage styles in one session?",
+              answer: "Yes! Many clients request combination home massage—for example, deep tissue on the back and shoulders with relaxation massage for the rest. Discuss your preferences with the therapist at the start of your session."
+            },
+            {
+              question: "Are all home massage services the same price?",
+              answer: "Balinese and relaxation home massage have the same pricing. Deep tissue home massage costs slightly more due to specialized technique. Couples home massage is double the individual rate since two therapists work simultaneously. All pricing is listed on individual service pages."
+            },
+            {
+              question: "Do you offer home massage services outside the listed areas?",
+              answer: "Our primary service areas are Ubud, Canggu, Seminyak, Sanur, and Nusa Dua. We occasionally accommodate home massage requests in nearby areas. Contact us via WhatsApp to confirm availability for your specific location in Bali."
+            },
+            {
+              question: "Can I book multiple home massage services for a group?",
+              answer: "Absolutely! We can arrange multiple therapists for group home massage bookings. Whether you want couples home massage for multiple pairs or individual treatments happening simultaneously, contact us to coordinate scheduling and therapist availability."
+            }
+          ]}
+        />
       </section>
 
       {/* Links to Knowledge */}

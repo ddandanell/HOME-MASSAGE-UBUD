@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, DollarSign } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function CouplesHomeMassage() {
   return (
     <>
       <SEOHead 
-        title="Couples Home Massage | Side-by-Side Massage at Your Villa"
-        description="Romantic couples home massage experience at your accommodation. Two therapists deliver synchronized treatments. Perfect for honeymoons and romantic getaways."
+        title="Couples Home Massage | Ubud Luxury Villas"
+        description="Romantic couples home massage at your villa. Call or WhatsApp for side-by-side treatments. Two therapists deliver synchronized home massage to your accommodation."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -35,7 +40,17 @@ export default function CouplesHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'what-is', label: 'What Is Couples Home Massage?' },
+        { id: 'who-benefits', label: 'Who Benefits?' },
+        { id: 'pricing', label: 'Pricing & Duration' },
+        { id: 'advantages', label: 'Why Home Massage?' },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'FAQ' }
+      ]} />
+
+      <section id="what-is" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -44,26 +59,34 @@ export default function CouplesHomeMassage() {
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-4">
                 Couples home massage brings two professional therapists to your villa for synchronized side-by-side treatments. 
-                This romantic home massage service transforms your private space into an intimate spa retreat. You and your 
+                This romantic <Link href="/home-massage" className="text-primary hover:underline">home massage</Link> service transforms your private space into an intimate spa retreat. You and your 
                 partner enjoy simultaneous massages in the same room, creating a shared wellness experience without leaving 
                 your accommodation.
               </p>
               <p className="text-lg text-muted-foreground mb-4">
-                Our couples home massage includes two massage tables, coordinated aromatherapy, and calming music to create 
+                Our couples <Link href="/home-massage/services" className="text-primary hover:underline">home massage services</Link> include two massage tables, coordinated aromatherapy, and calming music to create 
                 spa ambiance. Both therapists work in harmony, matching rhythm and pressure so you experience relaxation 
-                together. This home massage format strengthens connection while delivering professional therapeutic benefits.
+                together. This format strengthens connection while delivering professional therapeutic benefits.
+              </p>
+              <p className="text-lg text-muted-foreground mb-4">
+                Each couples home massage can be customized with different techniques for each partner. One may prefer deep 
+                tissue while the other chooses Balinese relaxation. Our <Link href="/home-massage/knowledge/benefits" className="text-primary hover:underline">home massage treatment</Link> accommodates individual preferences 
+                within the couples experience, ensuring both receive their ideal service.
               </p>
               <p className="text-lg text-muted-foreground">
-                Each couples home massage can be customized with different techniques for each partner. One may prefer deep 
-                tissue while the other chooses Balinese relaxation. Our home massage service accommodates individual preferences 
-                within the couples experience, ensuring both receive their ideal treatment.
+                The intimacy of <Link href="/home-massage/cities" className="text-primary hover:underline">home massage</Link> makes couples treatments especially meaningful. Your own villa provides 
+                the romantic setting, and you control the atmosphere with lighting and music preferences. After your 
+                <Link href="/home-massage/services/couples" className="text-primary hover:underline">couples home massage</Link>, continue the experience with champagne on your terrace or rest together 
+                in your own bed. This seamless romantic continuity makes home massage ideal for honeymoons, anniversaries, 
+                and relationship wellness. The convenience eliminates coordination stress, letting you focus entirely on 
+                connection and relaxation.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="who-benefits" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -110,7 +133,7 @@ export default function CouplesHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
+      <section id="pricing" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -170,7 +193,7 @@ export default function CouplesHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="advantages" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -184,7 +207,9 @@ export default function CouplesHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Complete Privacy</h3>
                   <p className="text-muted-foreground">
-                    Couples home massage in your own villa means absolute intimacy without other spa guests nearby.
+                    Couples home massage in your own villa means absolute intimacy without other spa guests nearby. Many couples 
+                    feel self-conscious in shared spa facilities, worried about sounds they make or personal conversations. Your 
+                    private villa eliminates these concerns entirely, creating a judgment-free zone for complete relaxation together.
                   </p>
                 </div>
               </div>
@@ -196,7 +221,9 @@ export default function CouplesHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Romantic Continuity</h3>
                   <p className="text-muted-foreground">
-                    Continue your couples home massage experience with champagne, music, or rest in your own romantic setting.
+                    Continue your couples home massage experience with champagne, music, or rest in your own romantic setting. 
+                    Spa visits end abruptly when you must dress and leave. Home massage flows naturally into whatever comes next, 
+                    whether that's dining on your terrace, swimming in your pool, or continuing intimacy in your bedroom.
                   </p>
                 </div>
               </div>
@@ -208,7 +235,9 @@ export default function CouplesHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">No Scheduling Stress</h3>
                   <p className="text-muted-foreground">
-                    Book couples home massage at your convenience without coordinating spa appointments or transport.
+                    Book couples home massage at your convenience without coordinating spa appointments or transport. Popular spas 
+                    require advance booking, often days ahead, and specific time slots fill quickly. Home massage offers same-day 
+                    availability and flexible timing, letting spontaneity enhance romance rather than rigid scheduling requirements.
                   </p>
                 </div>
               </div>
@@ -220,7 +249,9 @@ export default function CouplesHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Your Own Ambiance</h3>
                   <p className="text-muted-foreground">
-                    Set your preferred lighting, temperature, and atmosphere for couples home massage in familiar surroundings.
+                    Set your preferred lighting, temperature, and atmosphere for couples home massage in familiar surroundings. 
+                    Some couples prefer dim candlelight, others bright daylight. You control music volume, room temperature, and 
+                    even subtle details like scent choices that create your ideal romantic environment.
                   </p>
                 </div>
               </div>
@@ -229,57 +260,45 @@ export default function CouplesHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Book Your Couples Home Massage
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Romantic side-by-side home massage experience delivered to your villa
-              </p>
-              <Button size="lg" className="text-lg px-8" asChild>
-                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                  Book This Home Massage
-                </a>
-              </Button>
-            </div>
+      {/* Safety Standards */}
+      <SafetyStandards />
 
-            <div className="border-t pt-12">
-              <h3 className="text-xl font-semibold mb-6">Related Home Massage Services</h3>
-              <div className="grid md:grid-cols-3 gap-4">
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage">
-                    ← All Home Massage Services
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/services/relaxation">
-                    Relaxation Home Massage →
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/cities/seminyak">
-                    Home Massage in Seminyak
-                  </Link>
-                </Button>
-              </div>
-              <div className="grid md:grid-cols-2 gap-4 mt-4">
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/knowledge/safety">
-                    Safety Standards
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/blog/how-to-book-home-massage">
-                    Booking Guide
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Spider Links */}
+      <SpiderLinksBlock currentPage="/home-massage/services/couples" />
+
+      {/* Booking CTA */}
+      <BookingCTA />
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <HomeMassageFAQ 
+          items={[
+            {
+              question: "Do both people receive the same type of massage during couples home massage?",
+              answer: "No, each person can choose their preferred style. One partner might select deep tissue home massage while the other prefers relaxation massage. Our therapists coordinate to ensure both treatments happen simultaneously with appropriate techniques for each person."
+            },
+            {
+              question: "How much space do we need for couples home massage?",
+              answer: "You need a room large enough for two massage tables side-by-side with space for therapists to work around them. Most hotel rooms or villa bedrooms work perfectly. Our team can assess your space when you book your couples home massage."
+            },
+            {
+              question: "Can we book couples home massage for different durations?",
+              answer: "Both treatments must be the same duration for synchronized couples home massage. However, you can book different lengths for separate sessions if you prefer individual treatments at different times rather than side-by-side home massage."
+            },
+            {
+              question: "Is couples home massage more expensive than two individual massages?",
+              answer: "Couples home massage pricing reflects two simultaneous treatments with two therapists. The per-person cost is the same as individual home massage sessions. You save time and create a shared experience while paying the same total amount."
+            },
+            {
+              question: "Can we talk during couples home massage?",
+              answer: "Absolutely. Some couples prefer peaceful silence during home massage, while others enjoy quiet conversation. Let your therapists know your preference. They'll adjust music volume and work quietly to accommodate whatever experience you want."
+            },
+            {
+              question: "What if one person needs to stop the couples home massage early?",
+              answer: "If one partner needs to end their session, both therapists will conclude professionally. The other partner can continue if desired while the first therapist leaves. We understand that comfort levels vary, and our home massage service adapts to your needs."
+            }
+          ]}
+        />
       </section>
         </main>
         <Footer />

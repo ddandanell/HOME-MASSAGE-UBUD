@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Check } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageSanur() {
   return (
     <>
       <SEOHead 
-        title="Home Massage in Sanur | Professional Villa Massage Service"
-        description="Professional home massage service throughout Sanur. Licensed therapists deliver spa-quality treatments to your villa, hotel, or apartment. Same-day booking available. Perfect for families and relaxation."
+        title="Home Massage in Sanur | Ubud Luxury Villas"
+        description="Professional home massage service throughout Sanur. Licensed therapists deliver spa-quality treatments to your villa, hotel, or apartment. Same-day booking available via call or WhatsApp."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -40,8 +45,18 @@ export default function HomeMassageSanur() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'why-sanur', label: 'Why Home Massage Fits Sanur' },
+        { id: 'accommodations', label: 'Sanur Accommodations' },
+        { id: 'availability', label: 'Availability & Response Time' },
+        { id: 'services', label: 'Services Available in Sanur' },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'Frequently Asked Questions' }
+      ]} />
+
       {/* Block 2: Why home massage fits this city */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="why-sanur" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -73,7 +88,7 @@ export default function HomeMassageSanur() {
       </section>
 
       {/* Block 3: Common accommodations */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="accommodations" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -121,7 +136,7 @@ export default function HomeMassageSanur() {
       </section>
 
       {/* Block 4: Availability & Response Time */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="availability" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -163,7 +178,7 @@ export default function HomeMassageSanur() {
       </section>
 
       {/* Block 5: Services available in this city */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="services" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -244,6 +259,45 @@ export default function HomeMassageSanur() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Safety Standards */}
+      <SafetyStandards />
+
+      {/* Spider Links Block */}
+      <SpiderLinksBlock currentPage="/home-massage/cities/sanur" />
+
+      {/* Booking CTA */}
+      <BookingCTA />
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <HomeMassageFAQ items={[
+          {
+            question: "How quickly can I get home massage in Sanur?",
+            answer: "Most home massage requests in Sanur are accommodated within 2-4 hours of contact via WhatsApp. We offer same-day booking throughout Sanur, including beachfront hotels, family villas, and boutique resorts. Contact us early for best availability."
+          },
+          {
+            question: "What areas in Sanur do you serve for home massage?",
+            answer: "Our home massage service covers all of Sanur including beachfront properties, residential neighborhoods, traditional guesthouses, and all surrounding Sanur areas. Whether you're staying near the beach or inland, we reach your location."
+          },
+          {
+            question: "Do you provide home massage to hotels in Sanur?",
+            answer: "Yes, we deliver home massage to all types of Sanur accommodations including beachfront hotels, boutique resorts, family villas, and traditional guesthouses. Our therapists coordinate seamlessly with your accommodation."
+          },
+          {
+            question: "What types of home massage are available in Sanur?",
+            answer: "Sanur home massage includes traditional Balinese massage, relaxation massage, couples massage, and deep tissue massage. All treatments are delivered with professional equipment directly to your peaceful Sanur accommodation."
+          },
+          {
+            question: "How do I book home massage in Sanur?",
+            answer: "Book home massage in Sanur by contacting us via WhatsApp at +62 811-2656-869. Provide your accommodation name, preferred time, and massage type. We confirm availability and arrange therapist arrival to your Sanur location."
+          },
+          {
+            question: "Is home massage in Sanur suitable for families?",
+            answer: "Absolutely! Home massage is perfect for families in Sanur. We can schedule multiple treatments around children's activities, and our flexible service works well with the family-friendly atmosphere of Sanur accommodations."
+          }
+        ]} />
       </section>
 
       {/* Block 6: CTA and Links */}

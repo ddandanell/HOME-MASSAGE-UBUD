@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Shield, MapPin, Calendar, Star } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageHub() {
   return (
     <>
       <SEOHead 
-        title="Home Massage in Bali | Professional Massage at Your Villa"
-        description="Professional home massage service delivered to your villa or hotel in Bali. Licensed therapists bring spa-quality treatments to your accommodation. Same-day booking available."
+        title="Home Massage in Bali | Ubud Luxury Villas"
+        description="Book home massage in Bali today! Licensed therapists deliver professional home massage to your villa. Call +62 811-2656-869 or WhatsApp for same-day home massage availability."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -36,8 +41,20 @@ export default function HomeMassageHub() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'what-is-home-massage', label: 'What is Home Massage?' },
+        { id: 'services', label: 'Home Massage Services' },
+        { id: 'why-choose', label: 'Why Choose Home Massage' },
+        { id: 'locations', label: 'Service Areas' },
+        { id: 'booking', label: 'How to Book' },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'pricing', label: 'Pricing & FAQ' },
+        { id: 'full-spider-links', label: 'Explore More' }
+      ]} />
+
       {/* Block 2: What Home Massage Is (Education) */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="what-is-home-massage" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -53,10 +70,16 @@ export default function HomeMassageHub() {
                 in the privacy and comfort of your own space. After your home massage, you can shower immediately, rest in your 
                 own bed, and continue relaxing without any journey back.
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground mb-4">
                 Our home massage service operates throughout Bali, serving private villas, hotels, resorts, and guesthouses. 
                 Each therapist brings professional equipment, premium oils, fresh linens, and years of training to deliver 
                 spa-quality home massage treatments.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                The convenience factor makes <Link href="/home-massage/services" className="text-primary hover:underline">home massage services</Link> increasingly 
+                popular among tourists. You control your environment, schedule flexibility improves, and the post-massage relaxation 
+                remains uninterrupted. Whether you prefer <Link href="/home-massage/services/balinese" className="text-primary hover:underline">traditional Balinese techniques</Link> or 
+                modern therapeutic approaches, home massage adapts to your needs while you stay comfortable in familiar surroundings.
               </p>
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
@@ -76,7 +99,7 @@ export default function HomeMassageHub() {
       </section>
 
       {/* Block 3: Services Preview (Decision) */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="services" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             Home Massage Services
@@ -161,7 +184,7 @@ export default function HomeMassageHub() {
       </section>
 
       {/* Block 4: Why Tourists Choose Home Massage (Sales Psychology) */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="why-choose" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -233,7 +256,7 @@ export default function HomeMassageHub() {
       </section>
 
       {/* Block 5: Cities Coverage (Local Proof) */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="locations" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             Home Massage Service Areas
@@ -305,7 +328,7 @@ export default function HomeMassageHub() {
       </section>
 
       {/* Block 6: How Booking Works (Friction Removal) */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="booking" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -364,7 +387,7 @@ export default function HomeMassageHub() {
       </section>
 
       {/* Block 7: Trust & Safety */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="safety" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -417,76 +440,53 @@ export default function HomeMassageHub() {
         </div>
       </section>
 
+      {/* Spider Links Block */}
+      <section id="full-spider-links">
+        <SpiderLinksBlock currentPage="/home-massage" />
+      </section>
+
+      {/* SafetyStandards Component */}
+      <SafetyStandards />
+
       {/* Block 8: FAQ (Objection Killer) */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="pricing" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
               Home Massage Frequently Asked Questions
             </h2>
-            <div className="space-y-6">
-              <div className="border-b pb-6">
-                <h3 className="font-semibold text-lg mb-2">
-                  What do I need to prepare for home massage?
-                </h3>
-                <p className="text-muted-foreground">
-                  Nothing! Our home massage therapists bring everything: professional table, oils, linens, and music. 
-                  You just need a space of about 2x3 meters and a power outlet.
-                </p>
-              </div>
-
-              <div className="border-b pb-6">
-                <h3 className="font-semibold text-lg mb-2">
-                  How far in advance should I book home massage?
-                </h3>
-                <p className="text-muted-foreground">
-                  We often accommodate same-day home massage bookings. However, booking a few hours in advance 
-                  ensures your preferred time slot is available.
-                </p>
-              </div>
-
-              <div className="border-b pb-6">
-                <h3 className="font-semibold text-lg mb-2">
-                  Is home massage more expensive than spa?
-                </h3>
-                <p className="text-muted-foreground">
-                  Our home massage rates are competitive with quality spas, and you save on transportation time 
-                  and costs while enjoying added privacy and convenience.
-                </p>
-              </div>
-
-              <div className="border-b pb-6">
-                <h3 className="font-semibold text-lg mb-2">
-                  Which areas do you serve for home massage?
-                </h3>
-                <p className="text-muted-foreground">
-                  Our home massage service covers Ubud, Canggu, Seminyak, Sanur, and surrounding areas throughout Bali. 
-                  Contact us to confirm availability in your specific location.
-                </p>
-              </div>
-            </div>
+            <HomeMassageFAQ items={[
+              {
+                question: "What is home massage in Bali?",
+                answer: "Home massage in Bali is a professional spa service delivered directly to your villa, hotel, or accommodation. Licensed therapists bring all necessary equipment including massage table, premium oils, fresh linens, and music to provide a complete spa experience in the comfort and privacy of your own space."
+              },
+              {
+                question: "How do I book a home massage?",
+                answer: "Booking a home massage is simple: contact us via WhatsApp at +62 811-2656-869 or call directly. Choose your preferred service, select a time slot, and provide your location. We often accommodate same-day home massage bookings, though advance booking ensures your preferred time is available."
+              },
+              {
+                question: "What areas do you cover for home massage?",
+                answer: "Our home massage service covers all major areas in Bali including Ubud, Canggu, Seminyak, Sanur, Nusa Dua, Uluwatu, and surrounding regions. We serve private villas, hotels, resorts, and guesthouses throughout the island. Contact us to confirm availability in your specific location."
+              },
+              {
+                question: "Are your home massage therapists licensed?",
+                answer: "Yes, all our home massage therapists are professionally trained, certified, and licensed. They undergo thorough background checks and must demonstrate expertise in their specialties. We maintain strict vetting standards to ensure you receive safe, professional home massage treatment."
+              },
+              {
+                question: "Can I get same-day home massage?",
+                answer: "Yes! We frequently accommodate same-day home massage bookings throughout Bali. Availability depends on therapist schedules and your location. For best results, contact us a few hours in advance, but we'll do our best to meet urgent requests for home massage service."
+              },
+              {
+                question: "What do I need to prepare for home massage?",
+                answer: "Very little! Our home massage therapists bring everything needed: professional table, oils, linens, and music. You only need to provide a space of approximately 2x3 meters (bedroom, living room, or terrace work well) and access to a power outlet. We handle all setup and cleanup."
+              }
+            ]} />
           </div>
         </div>
       </section>
 
-      {/* Block 9: Final CTA */}
-      <section className="py-16 md:py-20 bg-primary/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Book Your Home Massage Today
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Professional home massage delivered to your villa or hotel. Same-day availability throughout Bali.
-            </p>
-            <Button size="lg" className="text-lg px-8" asChild>
-              <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                Check Availability on WhatsApp
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
+      {/* BookingCTA Component */}
+      <BookingCTA />
         </main>
         <Footer />
       </div>
