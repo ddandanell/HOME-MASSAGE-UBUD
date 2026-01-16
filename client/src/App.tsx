@@ -55,6 +55,42 @@ import IsHomeMassageSafe from "@/pages/home-massage/blog/IsHomeMassageSafe";
 import WhyTouristsPreferHomeMassage from "@/pages/home-massage/blog/WhyTouristsPreferHomeMassage";
 import HowToBookHomeMassage from "@/pages/home-massage/blog/HowToBookHomeMassage";
 
+// Villa Massage Silo - Hub
+import VillaMassageHub from "@/pages/villa-massage/VillaMassageHub";
+
+// Villa Massage Silo - Services
+import VillaMassageServicesIndex from "@/pages/villa-massage/services/VillaMassageServicesIndex";
+import BalineseVillaMassage from "@/pages/villa-massage/services/BalineseVillaMassage";
+import DeepTissueVillaMassage from "@/pages/villa-massage/services/DeepTissueVillaMassage";
+import CouplesVillaMassage from "@/pages/villa-massage/services/CouplesVillaMassage";
+import RelaxationVillaMassage from "@/pages/villa-massage/services/RelaxationVillaMassage";
+import AromatherapyVillaMassage from "@/pages/villa-massage/services/AromatherapyVillaMassage";
+import HotStoneVillaMassage from "@/pages/villa-massage/services/HotStoneVillaMassage";
+import PrenatalVillaMassage from "@/pages/villa-massage/services/PrenatalVillaMassage";
+import ThaiVillaMassage from "@/pages/villa-massage/services/ThaiVillaMassage";
+import SportsVillaMassage from "@/pages/villa-massage/services/SportsVillaMassage";
+import ReflexologyVillaMassage from "@/pages/villa-massage/services/ReflexologyVillaMassage";
+
+// Villa Massage Silo - Cities
+import VillaMassageCitiesIndex from "@/pages/villa-massage/cities/VillaMassageCitiesIndex";
+import VillaMassageUbud from "@/pages/villa-massage/cities/VillaMassageUbud";
+import VillaMassageSeminyak from "@/pages/villa-massage/cities/VillaMassageSeminyak";
+import VillaMassageCanggu from "@/pages/villa-massage/cities/VillaMassageCanggu";
+import VillaMassageSanur from "@/pages/villa-massage/cities/VillaMassageSanur";
+import VillaMassageNusaDua from "@/pages/villa-massage/cities/VillaMassageNusaDua";
+import VillaMassageUluwatu from "@/pages/villa-massage/cities/VillaMassageUluwatu";
+import VillaMassageJimbaran from "@/pages/villa-massage/cities/VillaMassageJimbaran";
+import VillaMassageKuta from "@/pages/villa-massage/cities/VillaMassageKuta";
+import VillaMassageLegian from "@/pages/villa-massage/cities/VillaMassageLegian";
+import VillaMassagePererenan from "@/pages/villa-massage/cities/VillaMassagePererenan";
+
+// Villa Massage Silo - Blog
+import VillaMassageBlog from "@/pages/villa-massage/blog/VillaMassageBlog";
+import VillaMassageBenefitsBali from "@/pages/villa-massage/blog/VillaMassageBenefitsBali";
+import VillaMassageVsSpaPost from "@/pages/villa-massage/blog/VillaMassageVsSpa";
+import PrepareVillaForMassage from "@/pages/villa-massage/blog/PrepareVillaForMassage";
+import BestVillaMassageCouples from "@/pages/villa-massage/blog/BestVillaMassageCouples";
+
 // Treatment Pages
 import TraditionalBalineseMassage from "@/pages/treatments/TraditionalBalineseMassage";
 import DeepTissueMassage from "@/pages/treatments/DeepTissueMassage";
@@ -178,6 +214,42 @@ function Router() {
       <Route path="/home-massage/blog/is-home-massage-safe" component={IsHomeMassageSafe} />
       <Route path="/home-massage/blog/why-tourists-prefer-home-massage" component={WhyTouristsPreferHomeMassage} />
       <Route path="/home-massage/blog/how-to-book-home-massage" component={HowToBookHomeMassage} />
+      
+      {/* Villa Massage Silo - Complete structure */}
+      <Route path="/villa-massage" component={VillaMassageHub} />
+      
+      {/* Villa Massage Services */}
+      <Route path="/villa-massage/services" component={VillaMassageServicesIndex} />
+      <Route path="/villa-massage/services/balinese" component={BalineseVillaMassage} />
+      <Route path="/villa-massage/services/deep-tissue" component={DeepTissueVillaMassage} />
+      <Route path="/villa-massage/services/couples" component={CouplesVillaMassage} />
+      <Route path="/villa-massage/services/relaxation" component={RelaxationVillaMassage} />
+      <Route path="/villa-massage/services/aromatherapy" component={AromatherapyVillaMassage} />
+      <Route path="/villa-massage/services/hot-stone" component={HotStoneVillaMassage} />
+      <Route path="/villa-massage/services/prenatal" component={PrenatalVillaMassage} />
+      <Route path="/villa-massage/services/thai" component={ThaiVillaMassage} />
+      <Route path="/villa-massage/services/sports" component={SportsVillaMassage} />
+      <Route path="/villa-massage/services/reflexology" component={ReflexologyVillaMassage} />
+      
+      {/* Villa Massage Cities */}
+      <Route path="/villa-massage/cities" component={VillaMassageCitiesIndex} />
+      <Route path="/villa-massage/cities/ubud" component={VillaMassageUbud} />
+      <Route path="/villa-massage/cities/seminyak" component={VillaMassageSeminyak} />
+      <Route path="/villa-massage/cities/canggu" component={VillaMassageCanggu} />
+      <Route path="/villa-massage/cities/sanur" component={VillaMassageSanur} />
+      <Route path="/villa-massage/cities/nusa-dua" component={VillaMassageNusaDua} />
+      <Route path="/villa-massage/cities/uluwatu" component={VillaMassageUluwatu} />
+      <Route path="/villa-massage/cities/jimbaran" component={VillaMassageJimbaran} />
+      <Route path="/villa-massage/cities/kuta" component={VillaMassageKuta} />
+      <Route path="/villa-massage/cities/legian" component={VillaMassageLegian} />
+      <Route path="/villa-massage/cities/pererenan" component={VillaMassagePererenan} />
+      
+      {/* Villa Massage Blog */}
+      <Route path="/villa-massage/blog" component={VillaMassageBlog} />
+      <Route path="/villa-massage/blog/benefits-bali" component={VillaMassageBenefitsBali} />
+      <Route path="/villa-massage/blog/vs-spa" component={VillaMassageVsSpaPost} />
+      <Route path="/villa-massage/blog/prepare-villa" component={PrepareVillaForMassage} />
+      <Route path="/villa-massage/blog/best-couples" component={BestVillaMassageCouples} />
       
       {/* Treatment Pages */}
       <Route path="/ubud/traditional-balinese-massage" component={TraditionalBalineseMassage} />
