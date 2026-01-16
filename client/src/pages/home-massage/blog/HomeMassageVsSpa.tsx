@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Scale, MapPin, Clock, Shield, DollarSign, Heart, CheckCircle, Users } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageVsSpa() {
   return (
     <>
       <SEOHead 
-        title="Home Massage vs Spa Massage | Complete Comparison Guide 2024"
-        description="Compare home massage vs spa massage across convenience, cost, privacy, quality, and flexibility. Discover which option best suits your needs with our detailed analysis."
+        title="Home Massage vs Spa | Home Massage"
+        description="Compare home massage vs spa across convenience, cost, privacy, and quality. Call or WhatsApp to book home massage in Bali today."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -34,8 +39,19 @@ export default function HomeMassageVsSpa() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'essential-question', label: 'Which Should You Choose?' },
+        { id: 'convenience', label: 'Convenience Comparison' },
+        { id: 'privacy', label: 'Privacy and Comfort' },
+        { id: 'cost', label: 'Cost Analysis' },
+        { id: 'flexibility', label: 'Scheduling Flexibility' },
+        { id: 'equipment', label: 'Equipment and Quality' },
+        { id: 'therapist-quality', label: 'Therapist Professionalism' }
+      ]} />
+
       {/* Block 1: The Essential Question */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="essential-question" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -57,7 +73,7 @@ export default function HomeMassageVsSpa() {
       </section>
 
       {/* Block 2: Convenience and Travel Time Comparison */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="convenience" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -144,7 +160,7 @@ export default function HomeMassageVsSpa() {
       </section>
 
       {/* Block 3: Privacy and Comfort */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="privacy" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -201,7 +217,7 @@ export default function HomeMassageVsSpa() {
       </section>
 
       {/* Block 4: Cost Comparison */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="cost" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -317,7 +333,7 @@ export default function HomeMassageVsSpa() {
       </section>
 
       {/* Block 5: Flexibility and Scheduling */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="flexibility" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -411,7 +427,7 @@ export default function HomeMassageVsSpa() {
       </section>
 
       {/* Block 6: Equipment and Quality Standards */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="equipment" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -484,7 +500,7 @@ export default function HomeMassageVsSpa() {
       </section>
 
       {/* Block 7: Therapist Professionalism */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="therapist-quality" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -670,97 +686,42 @@ export default function HomeMassageVsSpa() {
         </div>
       </section>
 
-      {/* Block 9: Call to Action */}
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Experience the Home Massage Advantage
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Now that you understand the home massage vs spa differences, make the smart choice for your vacation
-              </p>
-              <Button size="lg" className="text-lg px-8" asChild>
-                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                  Book Your Home Massage Today
-                </a>
-              </Button>
-              <p className="text-sm text-muted-foreground mt-4">
-                Professional home massage available across all major Bali locations
-              </p>
-            </div>
+      {/* Safety Standards */}
+      <SafetyStandards />
 
-            <div className="border-t pt-12">
-              <h3 className="text-2xl font-semibold mb-8">Explore Home Massage Options</h3>
-              
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <h4 className="font-semibold mb-4 text-lg">Home Massage Services:</h4>
-                  <div className="space-y-2">
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/balinese">Balinese Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/deep-tissue">Deep Tissue Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/couples">Couples Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/relaxation">Relaxation Home Massage</Link>
-                    </Button>
-                  </div>
-                </div>
+      {/* Spider Links Block */}
+      <SpiderLinksBlock currentPage="/home-massage/blog/home-massage-vs-spa" />
 
-                <div>
-                  <h4 className="font-semibold mb-4 text-lg">Home Massage by Location:</h4>
-                  <div className="space-y-2">
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/ubud">Home Massage in Ubud</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/canggu">Home Massage in Canggu</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/seminyak">Home Massage in Seminyak</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/sanur">Home Massage in Sanur</Link>
-                    </Button>
-                  </div>
-                </div>
-              </div>
+      {/* Booking CTA */}
+      <BookingCTA />
 
-              <div>
-                <h4 className="font-semibold mb-4 text-lg">Learn More About Home Massage:</h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/blog/what-is-home-massage">What is Home Massage?</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/blog/why-tourists-prefer-home-massage">Why Choose Home Massage</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/blog/how-to-book-home-massage">How to Book</Link>
-                  </Button>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-3">
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/knowledge/what-to-expect">What to Expect</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/knowledge/safety">Safety Standards</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage">Home Massage Hub</Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* FAQ Section */}
+      <HomeMassageFAQ faqs={[
+        {
+          question: "Which is better, home massage or spa massage?",
+          answer: "For most travelers, home massage is superior. Home massage eliminates travel time, provides complete privacy, costs 40-60% less, offers extended scheduling, and delivers identical therapeutic quality. The only advantages of spa massage are facility ambiance and multiple services in one location—but home massage specialization often delivers superior individual treatments."
+        },
+        {
+          question: "Is home massage cheaper than spa massage?",
+          answer: "Yes. Home massage typically costs 40-60% less than equivalent spa massage. A 90-minute home massage costs approximately Rp 400,000-600,000 versus Rp 750,000-1,112,500 for comparable spa massage (including transportation and expected upgrades). Home massage eliminates facility overhead, passing savings directly to you."
+        },
+        {
+          question: "Is home massage as professional as spa massage?",
+          answer: "Yes. Professional home massage therapists have identical qualifications, licensing, and expertise as spa therapists. The therapeutic quality and techniques remain the same. Home massage often provides superior accountability—therapists stake their reputation on every appointment, creating stronger service commitment than wage-earning spa staff."
+        },
+        {
+          question: "Can I get the same massage types at home as in a spa?",
+          answer: "Yes. Home massage services offer Balinese massage, deep tissue massage, couples massage, relaxation massage, and other modalities available at spas. Professional home massage therapists often specialize in specific techniques, allowing you to match therapist expertise to your needs—something random spa assignment rarely provides."
+        },
+        {
+          question: "What about privacy—is home massage more private than spa?",
+          answer: "Absolutely. Home massage happens in your personal space with only you and your therapist present. Spas have shared facilities, adjacent treatment rooms, passing staff, and public areas. If privacy matters—especially for solo travelers or couples—home massage provides complete control impossible at commercial spas."
+        },
+        {
+          question: "How much time does home massage save compared to spa visits?",
+          answer: "Home massage saves 40-80 minutes per session. Spa massage requires 30-60 minutes roundtrip transportation plus 10-20 minutes check-in/waiting. Home massage eliminates all non-massage time. For travelers taking multiple massages during vacation, home massage saves hours of precious vacation time."
+        }
+      ]} />
         </main>
         <Footer />
       </div>

@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { BookOpen, Calendar, ArrowRight } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageBlog() {
   return (
     <>
       <SEOHead 
-        title="Home Massage Blog | Expert Guides & Tips"
-        description="Complete guides about home massage in Bali. Learn everything about booking, benefits, safety, and choosing the right home massage service."
+        title="Home Massage Blog | Ubud Luxury Villas"
+        description="Complete guides about home massage in Bali. Learn about booking, benefits, safety. Call or WhatsApp for home massage today."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -35,8 +40,18 @@ export default function HomeMassageBlog() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'featured', label: 'Featured Articles' },
+        { id: 'what-is', label: 'What Is Home Massage?' },
+        { id: 'why-tourists', label: 'Why Tourists Prefer' },
+        { id: 'how-to-book', label: 'How to Book' },
+        { id: 'is-safe', label: 'Is Home Massage Safe?' },
+        { id: 'vs-spa', label: 'Home Massage vs Spa' }
+      ]} />
+
       {/* Featured Articles */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="featured" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -44,7 +59,7 @@ export default function HomeMassageBlog() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {/* Article 1: What Is Home Massage */}
-              <Card className="hover:shadow-xl transition-shadow">
+              <Card id="what-is" className="hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                     <Calendar className="w-4 h-4" />
@@ -78,7 +93,7 @@ export default function HomeMassageBlog() {
               </Card>
 
               {/* Article 2: Why Tourists Prefer */}
-              <Card className="hover:shadow-xl transition-shadow">
+              <Card id="why-tourists" className="hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                     <Calendar className="w-4 h-4" />
@@ -110,7 +125,7 @@ export default function HomeMassageBlog() {
               </Card>
 
               {/* Article 3: How to Book */}
-              <Card className="hover:shadow-xl transition-shadow">
+              <Card id="how-to-book" className="hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                     <Calendar className="w-4 h-4" />
@@ -146,7 +161,7 @@ export default function HomeMassageBlog() {
             {/* Additional Articles Row */}
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
               {/* Article 4: Home Massage vs Spa */}
-              <Card className="hover:shadow-xl transition-shadow">
+              <Card id="vs-spa" className="hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                     <Calendar className="w-4 h-4" />
@@ -172,7 +187,7 @@ export default function HomeMassageBlog() {
               </Card>
 
               {/* Article 5: Is Home Massage Safe */}
-              <Card className="hover:shadow-xl transition-shadow">
+              <Card id="is-safe" className="hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                     <Calendar className="w-4 h-4" />
@@ -360,99 +375,42 @@ export default function HomeMassageBlog() {
         </div>
       </section>
 
-      {/* Extensive Navigation */}
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Explore Home Massage Services & Locations
-            </h2>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Services Column */}
-              <div>
-                <h3 className="font-semibold text-lg mb-4 text-primary">Home Massage Services</h3>
-                <div className="space-y-2">
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href="/home-massage/services/balinese">
-                      → Balinese Home Massage
-                    </Link>
-                  </Button>
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href="/home-massage/services/deep-tissue">
-                      → Deep Tissue Home Massage
-                    </Link>
-                  </Button>
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href="/home-massage/services/couples">
-                      → Couples Home Massage
-                    </Link>
-                  </Button>
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href="/home-massage/services/relaxation">
-                      → Relaxation Home Massage
-                    </Link>
-                  </Button>
-                </div>
-              </div>
+      {/* Safety Standards */}
+      <SafetyStandards />
 
-              {/* Cities Column */}
-              <div>
-                <h3 className="font-semibold text-lg mb-4 text-primary">Home Massage by City</h3>
-                <div className="space-y-2">
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href="/home-massage/cities/ubud">
-                      → Home Massage in Ubud
-                    </Link>
-                  </Button>
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href="/home-massage/cities/canggu">
-                      → Home Massage in Canggu
-                    </Link>
-                  </Button>
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href="/home-massage/cities/seminyak">
-                      → Home Massage in Seminyak
-                    </Link>
-                  </Button>
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href="/home-massage/cities/sanur">
-                      → Home Massage in Sanur
-                    </Link>
-                  </Button>
-                </div>
-              </div>
+      {/* Spider Links Block */}
+      <SpiderLinksBlock currentPage="/home-massage/blog" />
 
-              {/* Knowledge & Blog Column */}
-              <div>
-                <h3 className="font-semibold text-lg mb-4 text-primary">Learn More</h3>
-                <div className="space-y-2">
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href="/home-massage">
-                      → Home Massage Hub
-                    </Link>
-                  </Button>
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href="/home-massage/knowledge/safety">
-                      → Safety Standards
-                    </Link>
-                  </Button>
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href="/home-massage/knowledge/what-to-expect">
-                      → What to Expect
-                    </Link>
-                  </Button>
-                  <Button variant="ghost" className="w-full justify-start" asChild>
-                    <Link href="/home-massage/blog">
-                      → Home Massage Blog
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Booking CTA */}
+      <BookingCTA />
+
+      {/* FAQ Section */}
+      <HomeMassageFAQ faqs={[
+        {
+          question: "What topics does the home massage blog cover?",
+          answer: "Our home massage blog covers everything travelers need: what home massage is, why tourists prefer it over spas, how to book safely, safety verification standards, cost comparisons, and detailed service explanations. Each article provides practical information for booking home massage confidently in Bali."
+        },
+        {
+          question: "Which home massage article should I read first?",
+          answer: "Start with 'What is Home Massage?' for foundational understanding. Then read 'Why Tourists Prefer Home Massage' to understand benefits. Finally, check 'How to Book Home Massage' for practical booking steps. These three articles give you complete home massage knowledge for confident booking."
+        },
+        {
+          question: "How do I know home massage information is accurate?",
+          answer: "Every home massage blog article draws from years of delivering professional services throughout Bali. We explain real processes, honest pricing, and genuine safety protocols. Our home massage guides reflect actual service standards, not marketing hype. Information is verified, practical, and tourist-focused."
+        },
+        {
+          question: "Can I really save money with home massage vs spas?",
+          answer: "Yes. Our blog article 'Home Massage vs Spa' provides detailed cost breakdowns showing 40-60% savings. Home massage eliminates facility overhead, transportation costs, and pressure for expensive upgrades. You get professional quality at better value—exact pricing explained in our guides."
+        },
+        {
+          question: "Where can I book home massage after reading these articles?",
+          answer: "Book via WhatsApp after understanding home massage through our blog. Professional coordinators guide you through the process explained in our articles. Available across Ubud, Canggu, Seminyak, and Sanur. Our blog prepares you for confident, informed home massage booking."
+        },
+        {
+          question: "Do these home massage articles apply to all Bali locations?",
+          answer: "Yes. Home massage processes, safety standards, and benefits remain consistent across Ubud, Canggu, Seminyak, Sanur, and other Bali areas. Our blog articles explain universal home massage principles that apply throughout Bali. Location-specific details are noted where relevant."
+        }
+      ]} />
         </main>
         <Footer />
       </div>

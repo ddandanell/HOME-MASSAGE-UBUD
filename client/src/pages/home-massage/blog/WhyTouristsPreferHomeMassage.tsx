@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, MapPin, Clock, Heart, Shield, TrendingUp } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function WhyTouristsPreferHomeMassage() {
   return (
     <>
       <SEOHead 
-        title="Why Tourists Prefer Home Massage | Convenience, Safety & Privacy"
-        description="Discover why tourists choose home massage over spas. Learn about convenience, safety, privacy benefits, and cost savings. Real traveler testimonials explain the home massage preference."
+        title="Why Tourists Prefer Home Massage | Home Massage"
+        description="Discover why tourists choose home massage. Call or WhatsApp to book convenient, private home massage in Bali today."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -34,8 +39,18 @@ export default function WhyTouristsPreferHomeMassage() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'spa-problems', label: 'The Spa Problem' },
+        { id: 'reason-convenience', label: 'Reason 1: Unmatched Convenience' },
+        { id: 'reason-privacy', label: 'Reason 2: Complete Privacy' },
+        { id: 'reason-value', label: 'Reason 3: Better Value' },
+        { id: 'reason-safety', label: 'Reason 4: Superior Safety' },
+        { id: 'reason-quality', label: 'Reason 5: Consistent Quality' }
+      ]} />
+
       {/* Block 1: Tourist Pain Points with Spas */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="spa-problems" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -115,7 +130,7 @@ export default function WhyTouristsPreferHomeMassage() {
       </section>
 
       {/* Block 2: Convenience Factors */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="reason-convenience" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -211,7 +226,7 @@ export default function WhyTouristsPreferHomeMassage() {
       </section>
 
       {/* Block 3: Privacy Benefits */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="reason-privacy" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -288,7 +303,7 @@ export default function WhyTouristsPreferHomeMassage() {
       </section>
 
       {/* Block 4: Cost Comparison and Value */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="reason-value" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -407,7 +422,7 @@ export default function WhyTouristsPreferHomeMassage() {
       </section>
 
       {/* Block 5: Testimonial Stories */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="reason-safety" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -491,7 +506,7 @@ export default function WhyTouristsPreferHomeMassage() {
       </section>
 
       {/* Block 6: Why Specific Tourist Types Choose Home Massage */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="reason-quality" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -574,94 +589,42 @@ export default function WhyTouristsPreferHomeMassage() {
         </div>
       </section>
 
-      {/* Block 7: Soft CTA */}
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Join Thousands of Tourists Choosing Home Massage
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Experience the convenience, privacy, and value that make professional home massage the traveler's choice
-              </p>
-              <Button size="lg" className="text-lg px-8" asChild>
-                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                  Book Your Home Massage Today
-                </a>
-              </Button>
-            </div>
+      {/* Safety Standards */}
+      <SafetyStandards />
 
-            <div className="border-t pt-12">
-              <h3 className="text-2xl font-semibold mb-8">Explore Home Massage Services</h3>
-              
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <h4 className="font-semibold mb-4 text-lg">Home Massage Services:</h4>
-                  <div className="space-y-2">
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/balinese">Balinese Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/deep-tissue">Deep Tissue Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/couples">Couples Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/relaxation">Relaxation Home Massage</Link>
-                    </Button>
-                  </div>
-                </div>
+      {/* Spider Links Block */}
+      <SpiderLinksBlock currentPage="/home-massage/blog/why-tourists-prefer-home-massage" />
 
-                <div>
-                  <h4 className="font-semibold mb-4 text-lg">Home Massage by Location:</h4>
-                  <div className="space-y-2">
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/ubud">Home Massage in Ubud</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/canggu">Home Massage in Canggu</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/seminyak">Home Massage in Seminyak</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/sanur">Home Massage in Sanur</Link>
-                    </Button>
-                  </div>
-                </div>
-              </div>
+      {/* Booking CTA */}
+      <BookingCTA />
 
-              <div>
-                <h4 className="font-semibold mb-4 text-lg">Learn More About Home Massage:</h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/blog/what-is-home-massage">What is Home Massage?</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/knowledge/what-to-expect">What to Expect</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/knowledge/safety">Safety Standards</Link>
-                  </Button>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-3">
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/blog/how-to-book-home-massage">How to Book</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage">Home Massage Hub</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage">Back to Home Massage</Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* FAQ Section */}
+      <HomeMassageFAQ faqs={[
+        {
+          question: "Why do tourists prefer home massage over spa massage?",
+          answer: "Tourists choose home massage for six major reasons: convenience (zero travel time), complete privacy (your personal space), superior value (40-60% cost savings), enhanced safety (verified therapists), consistent quality (direct accountability), and flexible scheduling (extended hours). Home massage eliminates spa friction while maintaining professional standards."
+        },
+        {
+          question: "What makes home massage more convenient than spa massage?",
+          answer: "Home massage eliminates 40-80 minutes of non-massage time. No transportation, no traffic navigation, no waiting, no check-in delays. Your therapist arrives at your villa or hotel with all equipment. You relax immediately after treatment in your own space. This convenience particularly matters in Ubud's rural areas and Canggu's traffic-heavy zones."
+        },
+        {
+          question: "Is home massage really safer than spa massage?",
+          answer: "Yes. Professional home massage services verify therapists completely—providing names, credentials, and profiles before arrival. You control your environment, know exactly who's coming, and have complete transparency. Random spa assignments offer no such verification. Solo travelers and women especially appreciate home massage safety advantages."
+        },
+        {
+          question: "How much money do tourists save choosing home massage?",
+          answer: "Home massage costs 40-60% less than equivalent spa massage. A 90-minute home massage costs approximately Rp 400,000-600,000 versus Rp 750,000-1,112,500 for spa massage (including transportation, facility markups, and expected upgrades). For multiple vacation massages, savings multiply dramatically while quality remains identical."
+        },
+        {
+          question: "Do tourists get the same quality with home massage as spas?",
+          answer: "Yes—often better. Home massage therapists have identical qualifications as spa therapists but stake their entire reputation on every appointment. This direct accountability drives consistent excellence. Professional home massage services maintain rigorous verification and quality control that exceeds typical spa standards."
+        },
+        {
+          question: "What do tourists love most about home massage?",
+          answer: "The combination of privacy and convenience. Couples enjoy intimate couples home massage in their villas. Solo travelers appreciate safety transparency. Families love scheduling flexibility. Luxury travelers value villa integration. Everyone appreciates avoiding transportation hassles while saving money for identical therapeutic quality."
+        }
+      ]} />
         </main>
         <Footer />
       </div>
