@@ -146,8 +146,146 @@ export default function HomeMassageBlog() {
         </div>
       </section>
 
-      {/* Why Read Our Blog */}
+      {/* New SEO-Optimized Articles */}
       <section className="py-16 md:py-20 bg-secondary/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+              Complete Home Massage Guides
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Article 1: Ultimate Guide */}
+              <Card className="hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+                    <Calendar className="w-4 h-4" />
+                    <span>Pillar Content</span>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">
+                    <Link href="/home-massage/blog/home-massage-guide-bali">
+                      <span className="hover:text-primary cursor-pointer">
+                        Home Massage Bali: Complete 2025 Guide
+                      </span>
+                    </Link>
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    The ultimate guide to home massage in Bali. Learn about service types, booking procedures, pricing ($50-150), 
+                    and what to expect from professional therapists. Covers everything from traditional <Link href="/home-massage/services/balinese"><span className="text-primary hover:underline">Balinese massage</span></Link> to 
+                    <Link href="/home-massage/services/deep-tissue"><span className="text-primary hover:underline"> deep tissue treatments</span></Link>.
+                  </p>
+                  <p className="text-muted-foreground mb-6">
+                    Essential reading for first-time home massage guests. Includes preparation tips, FAQ, and area coverage for 
+                    <Link href="/home-massage/cities/ubud"><span className="text-primary hover:underline"> Ubud</span></Link>, 
+                    <Link href="/home-massage/cities/seminyak"><span className="text-primary hover:underline"> Seminyak</span></Link>, and more.
+                  </p>
+                  <Button variant="outline" asChild>
+                    <Link href="/home-massage/blog/home-massage-guide-bali">
+                      Read Complete Guide <ArrowRight className="w-4 h-4 ml-2" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Article 2: Benefits */}
+              <Card className="hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+                    <Calendar className="w-4 h-4" />
+                    <span>Benefits Guide</span>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">
+                    <Link href="/home-massage/blog/benefits-home-massage-bali">
+                      <span className="hover:text-primary cursor-pointer">
+                        5 Benefits of Home Massage vs Spa Visits
+                      </span>
+                    </Link>
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Discover why home massage beats spa visits: skip Bali traffic, save 2+ hours per session, enjoy complete privacy, 
+                    and save 40-50% on costs. Real comparison data and testimonials from travelers who've tried both options.
+                  </p>
+                  <p className="text-muted-foreground mb-6">
+                    Perfect for deciding between home massage and traditional spas. Includes time-savings calculator, price comparisons, 
+                    and scenarios where each option works best. See why <Link href="/home-massage/services/couples"><span className="text-primary hover:underline">couples massage</span></Link> at home 
+                    offers exceptional value.
+                  </p>
+                  <Button variant="outline" asChild>
+                    <Link href="/home-massage/blog/benefits-home-massage-bali">
+                      Read Benefits Guide <ArrowRight className="w-4 h-4 ml-2" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Article 3: Comparison */}
+              <Card className="hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+                    <Calendar className="w-4 h-4" />
+                    <span>Comparison Guide</span>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">
+                    <Link href="/home-massage/blog/home-massage-vs-spa-bali">
+                      <span className="hover:text-primary cursor-pointer">
+                        Home Massage vs Spa: Which Should You Choose?
+                      </span>
+                    </Link>
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Comprehensive comparison of home massage versus spa visits in Bali. Compare costs, convenience, quality, privacy, 
+                    and ambiance. Includes decision framework helping you choose the right option for your vacation needs.
+                  </p>
+                  <p className="text-muted-foreground mb-6">
+                    Features real guest testimonials, side-by-side quality comparison, and scenarios for when to choose home massage 
+                    versus spa facilities. Honest assessment covering pros and cons of each approach to massage therapy in Bali.
+                  </p>
+                  <Button variant="outline" asChild>
+                    <Link href="/home-massage/blog/home-massage-vs-spa-bali">
+                      View Comparison <ArrowRight className="w-4 h-4 ml-2" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Article 4: Location Guide */}
+              <Card className="hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+                    <Calendar className="w-4 h-4" />
+                    <span>Location Guide</span>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">
+                    <Link href="/home-massage/blog/home-massage-seminyak-canggu">
+                      <span className="hover:text-primary cursor-pointer">
+                        Home Massage in Seminyak, Canggu & Ubud
+                      </span>
+                    </Link>
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Location-specific guide to home massage in Bali's most popular areas. Learn about service availability, 
+                    therapist travel times, area-specific pricing, and what makes home massage ideal for 
+                    <Link href="/home-massage/cities/seminyak"><span className="text-primary hover:underline"> Seminyak villas</span></Link>, 
+                    <Link href="/home-massage/cities/canggu"><span className="text-primary hover:underline"> Canggu surf scene</span></Link>, and 
+                    <Link href="/home-massage/cities/ubud"><span className="text-primary hover:underline"> Ubud wellness retreats</span></Link>.
+                  </p>
+                  <p className="text-muted-foreground mb-6">
+                    Covers same-day booking, traffic considerations, popular villa areas served, and treatment recommendations for each location. 
+                    Essential reading if you're staying in Seminyak, Canggu, or Ubud.
+                  </p>
+                  <Button variant="outline" asChild>
+                    <Link href="/home-massage/blog/home-massage-seminyak-canggu">
+                      Read Location Guide <ArrowRight className="w-4 h-4 ml-2" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Read Our Blog */}
+      <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">

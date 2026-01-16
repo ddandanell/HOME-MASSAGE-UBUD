@@ -46,6 +46,10 @@ import HomeMassageBlog from "@/pages/home-massage/blog/HomeMassageBlog";
 import WhatIsHomeMassage from "@/pages/home-massage/blog/WhatIsHomeMassage";
 import WhyTouristsPreferHomeMassage from "@/pages/home-massage/blog/WhyTouristsPreferHomeMassage";
 import HowToBookHomeMassage from "@/pages/home-massage/blog/HowToBookHomeMassage";
+import HomeMassageGuideBali from "@/pages/home-massage/blog/HomeMassageGuideBali";
+import BenefitsHomeMassageBali from "@/pages/home-massage/blog/BenefitsHomeMassageBali";
+import HomeMassageVsSpaBali from "@/pages/home-massage/blog/HomeMassageVsSpaBali";
+import HomeMassageSeminyakCanggu from "@/pages/home-massage/blog/HomeMassageSeminyakCanggu";
 
 // Treatment Pages
 import TraditionalBalineseMassage from "@/pages/treatments/TraditionalBalineseMassage";
@@ -162,6 +166,10 @@ function Router() {
       <Route path="/home-massage/blog/what-is-home-massage" component={WhatIsHomeMassage} />
       <Route path="/home-massage/blog/why-tourists-prefer-home-massage" component={WhyTouristsPreferHomeMassage} />
       <Route path="/home-massage/blog/how-to-book-home-massage" component={HowToBookHomeMassage} />
+      <Route path="/home-massage/blog/home-massage-guide-bali" component={HomeMassageGuideBali} />
+      <Route path="/home-massage/blog/benefits-home-massage-bali" component={BenefitsHomeMassageBali} />
+      <Route path="/home-massage/blog/home-massage-vs-spa-bali" component={HomeMassageVsSpaBali} />
+      <Route path="/home-massage/blog/home-massage-seminyak-canggu" component={HomeMassageSeminyakCanggu} />
       
       {/* Treatment Pages */}
       <Route path="/ubud/traditional-balinese-massage" component={TraditionalBalineseMassage} />
