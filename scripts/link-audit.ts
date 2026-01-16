@@ -8,6 +8,7 @@ import * as path from 'path';
 const CONFIG = {
   sitemapUrl: 'https://homemassageubud.com/sitemap.xml',
   domain: 'homemassageubud.com',
+  userAgent: 'Mozilla/5.0 (compatible; LinkAuditBot/1.0)',
   highPriorityPatterns: [
     '/services/',
     '/massage/',
@@ -61,7 +62,7 @@ async function fetchSitemap(sitemapUrl: string): Promise<string[]> {
     console.log(`📡 Fetching sitemap from ${sitemapUrl}...`);
     const response = await axios.get(sitemapUrl, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; LinkAuditBot/1.0)'
+        'User-Agent': CONFIG.userAgent
       },
       timeout: 30000
     });
@@ -91,7 +92,7 @@ async function checkUrl(url: string, sourceUrl: string): Promise<{ status: numbe
   try {
     const response = await axios.get(url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; LinkAuditBot/1.0)'
+        'User-Agent': CONFIG.userAgent
       },
       timeout: 15000,
       maxRedirects: 0, // Don't follow redirects automatically
@@ -124,7 +125,7 @@ async function extractLinks(url: string): Promise<{ links: LinkData[]; buttons: 
     
     const response = await axios.get(url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; LinkAuditBot/1.0)'
+        'User-Agent': CONFIG.userAgent
       },
       timeout: 30000
     });
@@ -307,10 +308,20 @@ async function auditLinks(urls: string[]): Promise<AuditReport> {
     }
     
     // Skip external links for now (can be enabled but slows down significantly)
-    if (link.linkType === 'external' && !link.targetUrl.includes(CONFIG.domain)) {
-      link.status = 'untested';
-      link.errorMessage = 'External link not tested';
-      continue;
+    if (link.linkType === 'external') {
+      // Check if it's actually our domain by parsing the URL
+      try {
+        const linkHostname = new URL(link.targetUrl).hostname;
+        if (linkHostname !== CONFIG.domain && !linkHostname.endsWith(`.${CONFIG.domain}`)) {
+          link.status = 'untested';
+          link.errorMessage = 'External link not tested';
+          continue;
+        }
+      } catch {
+        link.status = 'broken';
+        link.errorMessage = 'Invalid URL format';
+        continue;
+      }
     }
     
     const result = await checkUrl(link.targetUrl, link.sourceUrl);
