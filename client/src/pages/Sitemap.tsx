@@ -252,7 +252,7 @@ const SiloSection = ({
   cities,
   knowledge,
   blog,
-  color 
+  color = 'amber'
 }: { 
   title: string; 
   icon: React.ElementType; 
@@ -261,7 +261,7 @@ const SiloSection = ({
   cities: Array<{ href: string; label: string }>;
   knowledge?: Array<{ href: string; label: string }>;
   blog: Array<{ href: string; label: string }>;
-  color: string;
+  color?: string;
 }) => {
   const colorClasses = {
     blue: {
