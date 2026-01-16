@@ -201,13 +201,22 @@ const sitemapData = {
 };
 
 // Reusable link component
-const SitemapLink = ({ href, label, color = 'amber' }: { href: string; label: string; color?: string }) => (
-  <li>
-    <Link href={href}>
-      <span className={`text-${color}-600 hover:text-${color}-700 hover:underline`}>{label}</span>
-    </Link>
-  </li>
-);
+const SitemapLink = ({ href, label, color = 'amber' }: { href: string; label: string; color?: string }) => {
+  const colorClasses = {
+    amber: 'text-amber-600 hover:text-amber-700',
+    blue: 'text-blue-600 hover:text-blue-700',
+    green: 'text-green-600 hover:text-green-700',
+    purple: 'text-purple-600 hover:text-purple-700',
+  }[color] || 'text-amber-600 hover:text-amber-700';
+
+  return (
+    <li>
+      <Link href={href}>
+        <span className={`${colorClasses} hover:underline`}>{label}</span>
+      </Link>
+    </li>
+  );
+};
 
 // Reusable section component
 const SitemapSection = ({ 
@@ -253,70 +262,94 @@ const SiloSection = ({
   knowledge?: Array<{ href: string; label: string }>;
   blog: Array<{ href: string; label: string }>;
   color: string;
-}) => (
-  <>
-    {/* Hub */}
-    <div className={`bg-gradient-to-br from-${color}-50 to-white rounded-xl p-6 shadow-md border border-gray-200`}>
-      <div className={`flex items-center gap-2 mb-4 pb-2 border-b-2 border-${color}-600`}>
-        <Icon className={`w-6 h-6 text-${color}-600`} />
-        <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
+}) => {
+  const colorClasses = {
+    blue: {
+      bg: 'bg-gradient-to-br from-blue-50 to-white',
+      border: 'border-blue-600',
+      icon: 'text-blue-600',
+    },
+    green: {
+      bg: 'bg-gradient-to-br from-green-50 to-white',
+      border: 'border-green-600',
+      icon: 'text-green-600',
+    },
+    purple: {
+      bg: 'bg-gradient-to-br from-purple-50 to-white',
+      border: 'border-purple-600',
+      icon: 'text-purple-600',
+    },
+  }[color] || {
+    bg: 'bg-gradient-to-br from-amber-50 to-white',
+    border: 'border-amber-600',
+    icon: 'text-amber-600',
+  };
+
+  return (
+    <>
+      {/* Hub */}
+      <div className={`${colorClasses.bg} rounded-xl p-6 shadow-md border border-gray-200`}>
+        <div className={`flex items-center gap-2 mb-4 pb-2 border-b-2 ${colorClasses.border}`}>
+          <Icon className={`w-6 h-6 ${colorClasses.icon}`} />
+          <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
+        </div>
+        <ul className="space-y-2">
+          <SitemapLink {...hub} color={color} />
+        </ul>
       </div>
-      <ul className="space-y-2">
-        <SitemapLink {...hub} color={color} />
-      </ul>
-    </div>
-    
-    {/* Services */}
-    <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl p-6 shadow-md border border-gray-200">
-      <h3 className="text-xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-300">
-        {title} - Services
-      </h3>
-      <ul className="space-y-2">
-        {services.map(link => (
-          <SitemapLink key={link.href} {...link} color={color} />
-        ))}
-      </ul>
-    </div>
-    
-    {/* Cities */}
-    <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl p-6 shadow-md border border-gray-200">
-      <h3 className="text-xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-300">
-        {title} - Cities
-      </h3>
-      <ul className="space-y-2">
-        {cities.map(link => (
-          <SitemapLink key={link.href} {...link} color={color} />
-        ))}
-      </ul>
-    </div>
-    
-    {/* Knowledge (if available) */}
-    {knowledge && (
+      
+      {/* Services */}
       <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl p-6 shadow-md border border-gray-200">
         <h3 className="text-xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-300">
-          {title} - Knowledge
+          {title} - Services
         </h3>
         <ul className="space-y-2">
-          {knowledge.map(link => (
+          {services.map(link => (
             <SitemapLink key={link.href} {...link} color={color} />
           ))}
         </ul>
       </div>
-    )}
-    
-    {/* Blog */}
-    <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl p-6 shadow-md border border-gray-200">
-      <h3 className="text-xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-300">
-        {title} - Blog
-      </h3>
-      <ul className="space-y-2">
-        {blog.map(link => (
-          <SitemapLink key={link.href} {...link} color={color} />
-        ))}
-      </ul>
-    </div>
-  </>
-);
+      
+      {/* Cities */}
+      <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl p-6 shadow-md border border-gray-200">
+        <h3 className="text-xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-300">
+          {title} - Cities
+        </h3>
+        <ul className="space-y-2">
+          {cities.map(link => (
+            <SitemapLink key={link.href} {...link} color={color} />
+          ))}
+        </ul>
+      </div>
+      
+      {/* Knowledge (if available) */}
+      {knowledge && (
+        <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl p-6 shadow-md border border-gray-200">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-300">
+            {title} - Knowledge
+          </h3>
+          <ul className="space-y-2">
+            {knowledge.map(link => (
+              <SitemapLink key={link.href} {...link} color={color} />
+            ))}
+          </ul>
+        </div>
+      )}
+      
+      {/* Blog */}
+      <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl p-6 shadow-md border border-gray-200">
+        <h3 className="text-xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-300">
+          {title} - Blog
+        </h3>
+        <ul className="space-y-2">
+          {blog.map(link => (
+            <SitemapLink key={link.href} {...link} color={color} />
+          ))}
+        </ul>
+      </div>
+    </>
+  );
+};
 
 export default function Sitemap() {
   return (
