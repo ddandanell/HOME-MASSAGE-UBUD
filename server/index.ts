@@ -18,6 +18,11 @@ app.get('/api/health', (req, res) => {
   res.json({ ok: true, env: app.get('env'), time: new Date().toISOString() });
 });
 
+// 301 redirect for legacy misspelled URL
+app.get('/HOME-MESSEDAGE', (_req, res) => {
+  res.redirect(301, '/home-massage');
+});
+
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
