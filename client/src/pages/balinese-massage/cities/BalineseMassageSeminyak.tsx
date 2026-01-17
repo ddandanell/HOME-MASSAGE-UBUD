@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import BalineseMassageFAQ from "@/components/balinese-massage/BalineseMassageFAQ";
 
 export default function BalineseMassageSeminyak() {
   return (
@@ -208,6 +209,33 @@ export default function BalineseMassageSeminyak() {
           </p>
         </div>
       </section>
+
+      <BalineseMassageFAQ items={[
+        {
+          question: "How does Balinese massage in Seminyak compare to luxury spa experiences?",
+          answer: "Our Balinese massage service in Seminyak delivers spa-quality treatments with added privacy and convenience. Traditional Balinese massage techniques are performed by certified therapists using premium oils and professional equipment, all in your private villa setting. Many clients find in-villa Balinese massage more relaxing than spa visits because you avoid Seminyak's traffic and can immediately enjoy your pool or bed after treatment, enhancing the Balinese massage healing benefits."
+        },
+        {
+          question: "Can Balinese massage help with jet lag after arriving in Seminyak?",
+          answer: "Yes! Balinese massage is highly effective for jet lag recovery. The traditional Balinese massage techniques improve circulation, reduce travel-related muscle tension, and promote deep sleep—essential for adjusting to Bali time. Many Seminyak visitors book Balinese massage on their first day to accelerate recovery. The rhythmic acupressure and stretching in Balinese massage help reset your body clock while promoting relaxation in your villa sanctuary."
+        },
+        {
+          question: "What makes Balinese massage ideal for Seminyak's luxury villa setting?",
+          answer: "Balinese massage was traditionally performed in homes, making it perfect for Seminyak's luxury villas. The treatment's holistic approach—combining massage, aromatherapy, and energy work—creates a complete spa experience in your private space. Seminyak's premium villas provide ideal environments for authentic Balinese massage, with peaceful settings, tropical gardens, and pools nearby for post-treatment relaxation, capturing the essence of traditional Balinese healing in luxurious surroundings."
+        },
+        {
+          question: "Do Seminyak Balinese massage therapists understand luxury service standards?",
+          answer: "Absolutely. Our Seminyak-based Balinese massage therapists are specially trained for high-end properties and discerning clientele. They combine authentic Balinese massage techniques with professional hospitality standards expected in luxury settings. These therapists understand timing, discretion, and premium service delivery while maintaining the traditional healing wisdom that makes Balinese massage authentic, ensuring you receive both cultural authenticity and five-star service quality."
+        },
+        {
+          question: "Can you provide Balinese massage for couples in Seminyak villas?",
+          answer: "Yes, couples Balinese massage is one of our most popular Seminyak services. We bring two certified therapists and professional equipment to your villa for simultaneous treatments. Balinese massage for couples creates a romantic wellness experience perfect for Seminyak's honeymoon and anniversary travelers. The synchronized traditional Balinese massage techniques, combined with your private villa atmosphere, offer an intimate healing experience that luxury spas cannot match."
+        },
+        {
+          question: "How quickly can I book Balinese massage service in busy Seminyak?",
+          answer: "We offer same-day Balinese massage booking in Seminyak most days, though advance booking is recommended during peak seasons (July-August, December-January). Our therapists know Seminyak thoroughly and can navigate efficiently to all areas from Petitenget to Oberoi. For guaranteed Balinese massage availability during your preferred time in high season, booking 2-3 days ahead ensures you receive authentic Balinese massage when you want it."
+        }
+      ]} />
 
       <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto text-center">

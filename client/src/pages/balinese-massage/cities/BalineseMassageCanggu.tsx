@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import BalineseMassageFAQ from "@/components/balinese-massage/BalineseMassageFAQ";
 
 export default function BalineseMassageCanggu() {
   return (
@@ -208,6 +209,33 @@ export default function BalineseMassageCanggu() {
           </p>
         </div>
       </section>
+
+      <BalineseMassageFAQ items={[
+        {
+          question: "Can Balinese massage help with surf-related muscle soreness in Canggu?",
+          answer: "Absolutely! Balinese massage is perfect for surfers dealing with paddling fatigue and wave-riding injuries. The deep tissue techniques in traditional Balinese massage target shoulder tension, lower back strain, and neck stiffness common after surf sessions at Echo Beach or Batu Bolong. Many Canggu surfers schedule Balinese massage after dawn patrol to accelerate recovery. The ancient Balinese massage healing methods include stretches that improve flexibility and circulation, helping you get back in the water faster while preventing chronic injuries."
+        },
+        {
+          question: "Do Canggu digital nomads benefit from regular Balinese massage?",
+          answer: "Yes! Digital nomads working from Canggu's cafes and co-working spaces find Balinese massage essential for managing desk-related tension. Hours at laptops create neck, shoulder, and wrist problems that traditional Balinese massage effectively addresses through acupressure and energy balancing. Regular Balinese massage sessions—weekly or bi-weekly—help remote workers maintain productivity while preventing repetitive strain injuries. The holistic nature of Balinese massage also reduces stress and improves mental clarity, supporting the balanced lifestyle Canggu nomads seek."
+        },
+        {
+          question: "What makes Balinese massage authentic in Canggu's modern wellness scene?",
+          answer: "Despite Canggu's trendy evolution, authentic Balinese massage maintains its traditional roots through centuries-old healing techniques. Our therapists practice genuine Balinese massage methods passed down through generations, using aromatic oils, acupressure points, and energy channeling unique to Balinese culture. While Canggu offers many wellness options, traditional Balinese massage connects you to Bali's spiritual heritage. The treatment's holistic approach—addressing physical, mental, and energetic health—reflects the Balinese philosophy of balance, offering deeper healing than modern spa trends."
+        },
+        {
+          question: "Can I book Balinese massage at my Canggu guesthouse or villa?",
+          answer: "Yes, our mobile Balinese massage service comes to any Canggu accommodation—from budget guesthouses to luxury villas. We bring professional massage tables, organic oils, and everything needed for authentic Balinese massage in your space. Canggu's diverse lodging options all work perfectly for in-room treatments. Many guests prefer villa Balinese massage because you can relax by your pool afterward, shower immediately, or even nap without navigating Canggu's traffic. The convenience enhances the Balinese massage healing experience significantly."
+        },
+        {
+          question: "How does Balinese massage incorporate traditional Balinese healing wisdom?",
+          answer: "Traditional Balinese massage is rooted in Usada healing texts and Hindu-Balinese philosophy. The treatment channels prana (life force energy) through specific pressure points while releasing blocked energy that causes disease according to Balinese medicine. Each Balinese massage stroke follows ancient patterns designed to harmonize body, mind, and spirit. Therapists often incorporate Balinese prayers or mantras, connecting the physical treatment to spiritual cleansing. This makes Balinese massage more than bodywork—it's a complete healing ceremony that modern Canggu wellness enthusiasts increasingly appreciate."
+        },
+        {
+          question: "What's the ideal frequency for Balinese massage during a Canggu stay?",
+          answer: "For short visits (1-2 weeks), book Balinese massage every 3-4 days to maintain wellness benefits without overstimulating muscles. Long-term Canggu residents benefit from weekly Balinese massage sessions as preventive healthcare, especially if surfing or working at computers daily. Athletes and digital nomads with chronic issues may start with twice-weekly Balinese massage treatments, then reduce frequency as conditions improve. Traditional Balinese massage works cumulatively—regular sessions deepen healing effects, improve body awareness, and provide consistent stress relief essential for Canggu's active lifestyle."
+        }
+      ]} />
 
       <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto text-center">
