@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calendar, Users, Home, Sparkles } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageBlog() {
   const blogPosts = [
@@ -201,6 +202,30 @@ export default function VillaMassageBlog() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "What topics does the villa massage blog cover?",
+              answer: "The villa massage blog provides guides on choosing services, preparing your villa, comparing spa options, and maximizing benefits. Villa massage articles address practical questions and help readers make informed decisions. Regular villa massage blog updates share insider tips from experienced therapists and satisfied clients."
+            },
+            {
+              question: "How can the villa massage blog help first-time bookers?",
+              answer: "Villa massage blog guides explain the entire booking process, what to expect, and how to prepare. Villa massage articles answer common questions before your first treatment. Reading the villa massage blog builds confidence and ensures you're prepared for optimal experiences."
+            },
+            {
+              question: "Does the villa massage blog include real client experiences?",
+              answer: "Yes! Villa massage blog articles incorporate real scenarios and common situations from actual bookings. Villa massage content reflects authentic experiences rather than generic information. The villa massage blog provides practical insights you can apply to your own Bali wellness journey."
+            },
+            {
+              question: "Can I suggest topics for the villa massage blog?",
+              answer: "Absolutely! Villa massage blog suggestions are welcome via WhatsApp or email. Villa massage content is created based on real questions and reader interests. Your villa massage blog topic suggestions help us address what matters most to travelers."
+            },
+            {
+              question: "How often is new villa massage blog content published?",
+              answer: "Villa massage blog updates appear regularly with new guides, tips, and service information. Villa massage articles are added based on trending questions and seasonal topics. Check back frequently for the latest villa massage blog insights and recommendations."
+            }
+          ]} />
 
           {/* CTA Section */}
           <section className="py-16 bg-primary/5">

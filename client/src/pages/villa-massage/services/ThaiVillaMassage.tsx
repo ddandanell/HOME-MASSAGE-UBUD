@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Star, Waves, Zap, Target } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function ThaiVillaMassage() {
   return (
@@ -254,6 +255,34 @@ export default function ThaiVillaMassage() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Do I wear clothes during Thai villa massage?",
+              answer: "Yes! Thai villa massage is performed fully clothed in comfortable, loose-fitting garments. Villa massage therapists work through fabric using compression and stretching rather than oil. Thai villa massage requires flexibility-friendly clothing that allows full range of motion during assisted stretches."
+            },
+            {
+              question: "How does Thai villa massage differ from oil-based massage?",
+              answer: "Thai villa massage uses no oil, focuses on stretching and acupressure, and is performed on a floor mat rather than massage table. Villa massage therapists use body weight and leverage for deep stretches. Thai villa massage is often called 'lazy yoga' because therapists move your body through yoga-like positions."
+            },
+            {
+              question: "Will Thai villa massage hurt if I'm not flexible?",
+              answer: "Thai villa massage therapists adjust stretches to your flexibility level without forcing positions. Villa massage should feel challenging but never painful during stretches. Regular Thai villa massage actually improves flexibility over time, making subsequent sessions more comfortable and effective."
+            },
+            {
+              question: "Can Thai villa massage help with lower back stiffness?",
+              answer: "Yes! Thai villa massage is excellent for lower back stiffness with its combination of spinal twists, hip stretches, and pressure point work. Villa massage therapists address back pain root causes in hip flexors and hamstrings. Thai villa massage provides lasting relief by improving overall flexibility and alignment."
+            },
+            {
+              question: "Is Thai villa massage suitable for elderly clients?",
+              answer: "Thai villa massage can be modified for seniors with gentler stretching and reduced intensity. Villa massage therapists adapt techniques for limited flexibility and health conditions. Modified Thai villa massage provides excellent benefits for elderly clients when properly adjusted for individual abilities."
+            },
+            {
+              question: "How long does Thai villa massage take?",
+              answer: "Traditional Thai villa massage sessions run 90 minutes to work through the complete body systematically. Villa massage therapists can offer shorter Thai massage focusing on specific areas. Full-length Thai villa massage provides the most comprehensive benefits through complete body stretching sequences."
+            }
+          ]} />
 
           {/* Internal Links */}
           <section className="py-16 bg-muted/30">

@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Star, Cloud, Wind, Waves } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function RelaxationVillaMassage() {
   return (
@@ -254,6 +255,34 @@ export default function RelaxationVillaMassage() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "What pressure level is used in relaxation villa massage?",
+              answer: "Relaxation villa massage uses gentle to light-medium pressure focusing on soothing strokes rather than deep muscle work. Villa massage therapists emphasize rhythm and flow to induce calm mental states. Relaxation villa massage prioritizes stress relief and nervous system calming over therapeutic muscle manipulation."
+            },
+            {
+              question: "Can relaxation villa massage help with anxiety and insomnia?",
+              answer: "Yes! Relaxation villa massage is specifically designed to reduce anxiety and improve sleep quality through calming techniques. Villa massage therapists use slow, predictable movements that signal safety to your nervous system. Regular relaxation villa massage helps reset stress responses and promotes better sleep patterns."
+            },
+            {
+              question: "How does relaxation villa massage differ from deep tissue treatment?",
+              answer: "Relaxation villa massage uses lighter pressure and flowing strokes for mental calm, while deep tissue targets specific muscle problems. Villa massage therapists adjust technique based on your goal—stress relief versus pain management. Relaxation villa massage is perfect when you need mental unwinding rather than intensive bodywork."
+            },
+            {
+              question: "Will I fall asleep during relaxation villa massage?",
+              answer: "Many people drift off during relaxation villa massage—it's perfectly normal and welcomed! Villa massage therapists create a peaceful environment conducive to deep rest at your villa. Falling asleep during relaxation villa massage indicates your nervous system is fully relaxing and receiving maximum benefits."
+            },
+            {
+              question: "Is relaxation villa massage suitable for elderly or sensitive individuals?",
+              answer: "Absolutely! Relaxation villa massage is ideal for seniors and anyone sensitive to pressure or touch. Villa massage therapists adjust techniques for fragile skin, limited mobility, and health considerations. Gentle relaxation villa massage provides therapeutic benefits without risks associated with more intense treatments."
+            },
+            {
+              question: "Can relaxation villa massage be done outdoors in villa gardens?",
+              answer: "Yes! Relaxation villa massage is perfect for outdoor settings with natural sounds and fresh air enhancing the experience. Villa massage therapists set up treatments in gardens, poolside areas, or terraces with shade and privacy. Outdoor relaxation villa massage combines nature's calming effects with therapeutic touch."
+            }
+          ]} />
 
           {/* Internal Links */}
           <section className="py-16 bg-muted/30">

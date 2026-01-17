@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Users, Shield } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageCitiesIndex() {
   const cities = [
@@ -248,6 +249,30 @@ export default function VillaMassageCitiesIndex() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "How do I choose the right villa massage location in Bali?",
+              answer: "Villa massage is available across all major Bali locations—each area offers unique benefits. Coastal villa massage in Seminyak and Canggu suits beach lovers, while Ubud villa massage provides jungle tranquility. Villa massage service quality remains consistent across all Bali regions regardless of your chosen location."
+            },
+            {
+              question: "Can I book villa massage in multiple Bali cities during my trip?",
+              answer: "Absolutely! Many visitors book villa massage in different locations as they explore Bali. Our villa massage service operates island-wide so you can enjoy treatments in Ubud, then Seminyak, then Uluwatu. Villa massage follows you throughout your Bali journey with consistent professional quality."
+            },
+            {
+              question: "Which Bali locations offer the best value for villa massage services?",
+              answer: "Villa massage pricing is consistent across Bali, but areas like Sanur and Ubud offer exceptional value with peaceful settings. Beach locations provide villa massage with ocean ambiance while inland areas feature rice field views. Villa massage delivers great value everywhere with location-specific atmosphere enhancing each treatment."
+            },
+            {
+              question: "Do villa massage therapists understand different neighborhood characteristics?",
+              answer: "Yes! Villa massage therapists are trained for each area's unique features—surf culture in Canggu, luxury standards in Seminyak, wellness focus in Ubud. Our villa massage service adapts to neighborhood character while maintaining professional treatment quality. Villa massage reflects the distinct personality of each Bali location."
+            },
+            {
+              question: "Can families book villa massage across different Bali locations simultaneously?",
+              answer: "Definitely! If your family is split between villa locations, we coordinate villa massage appointments across multiple areas. Our villa massage network allows simultaneous bookings in different cities. Villa massage service flexibility supports families exploring various parts of Bali together."
+            }
+          ]} />
 
           {/* CTA Section */}
           <section className="py-16 bg-primary text-primary-foreground">

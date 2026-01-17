@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Star, Footprints, Sparkles, Target } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function ReflexologyVillaMassage() {
   return (
@@ -254,6 +255,34 @@ export default function ReflexologyVillaMassage() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "How does foot reflexology villa massage work?",
+              answer: "Reflexology villa massage applies pressure to specific foot points corresponding to body organs and systems through nerve pathways. Villa massage therapists use thumb and finger techniques on reflex zones for therapeutic effects. Foot reflexology villa massage treats whole-body conditions through targeted foot work."
+            },
+            {
+              question: "Will reflexology villa massage hurt my sensitive feet?",
+              answer: "Reflexology villa massage pressure is firm but should never hurt—discomfort indicates blocked energy or health issues in corresponding areas. Villa massage therapists adjust pressure for sensitive feet while maintaining effectiveness. Most people find reflexology villa massage deeply satisfying rather than painful despite firm pressure."
+            },
+            {
+              question: "Can reflexology villa massage help with digestive problems?",
+              answer: "Yes! Reflexology villa massage includes specific foot zones linked to digestive organs that therapists target for gastrointestinal relief. Villa massage therapists work liver, stomach, and intestine reflex points systematically. Regular reflexology villa massage often improves digestion, bloating, and elimination issues through foot therapy."
+            },
+            {
+              question: "How long does a reflexology villa massage session take?",
+              answer: "Reflexology villa massage typically runs 60 minutes, focusing exclusively on feet, ankles, and lower legs. Villa massage therapists work systematically through all reflex zones for comprehensive treatment. Shorter reflexology villa massage sessions concentrate on specific health concerns rather than full-body reflexology protocols."
+            },
+            {
+              question: "Is reflexology villa massage different from regular foot massage?",
+              answer: "Yes! Reflexology villa massage follows specific reflex zone maps and therapeutic protocols, while foot massage provides general relaxation. Villa massage therapists trained in reflexology understand organ correspondence and systematic techniques. Reflexology villa massage delivers targeted health benefits beyond simple foot relaxation."
+            },
+            {
+              question: "Can reflexology villa massage detect health problems?",
+              answer: "Reflexology villa massage therapists identify tender reflex points that may indicate imbalances in corresponding body areas. Villa massage practitioners note sensitivity patterns during treatment. While reflexology villa massage supports wellness, it complements rather than replaces medical diagnosis—consult doctors for health concerns."
+            }
+          ]} />
 
           {/* Internal Links */}
           <section className="py-16 bg-muted/30">

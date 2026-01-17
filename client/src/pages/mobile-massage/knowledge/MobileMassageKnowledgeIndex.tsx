@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { BookOpen, Check, ArrowRight, Shield } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function MobileMassageKnowledgeIndex() {
   return (
@@ -387,6 +388,30 @@ export default function MobileMassageKnowledgeIndex() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "What should I know before trying mobile massage for the first time?",
+          answer: "Before your first mobile massage, understand that professional therapists bring all equipment to your location, the process mirrors spa quality with added convenience, and safety standards match or exceed traditional facilities. Mobile massage knowledge helps you prepare properly, communicate preferences effectively, and maximize therapeutic benefits. The mobile massage experience combines professional treatment with private-space comfort."
+        },
+        {
+          question: "How do I choose between different mobile massage knowledge topics?",
+          answer: "Start with 'What to Expect' for mobile massage process overview, then explore 'Safety Standards' for credential verification, 'Benefits' for health outcomes, 'Preparation' for pre-treatment optimization, and 'Aftercare' for recovery protocols. This mobile massage knowledge progression builds comprehensive understanding from basic concepts through advanced care strategies, helping you optimize every mobile massage session."
+        },
+        {
+          question: "Why is mobile massage knowledge important for treatment effectiveness?",
+          answer: "Mobile massage knowledge directly impacts treatment effectiveness by teaching proper preparation, realistic expectations, communication techniques, and aftercare protocols. Educated mobile massage clients achieve 30-40% better outcomes because they optimize pre-treatment conditions, communicate needs clearly, and follow proper recovery guidelines. Mobile massage knowledge transforms random relaxation into strategic therapeutic intervention."
+        },
+        {
+          question: "How does mobile massage safety knowledge protect me as a traveler?",
+          answer: "Mobile massage safety knowledge teaches credential verification, red flag identification, professional boundary expectations, and legitimate service characteristics. This mobile massage knowledge protects travelers from unprofessional practitioners while building confidence in reputable services. Understanding mobile massage safety standards helps you distinguish quality providers from questionable operations, ensuring secure, beneficial treatments throughout your Bali stay."
+        },
+        {
+          question: "What mobile massage knowledge applies across all Bali locations?",
+          answer: "Core mobile massage knowledge—safety standards, therapist qualifications, booking processes, treatment expectations, and aftercare protocols—applies uniformly across Ubud, Canggu, Seminyak, Sanur, and all Bali locations. Professional mobile massage maintains consistent quality standards regardless of city. This mobile massage knowledge universality means you can confidently book services anywhere in Bali using the same evaluation criteria."
+        }
+      ]} />
 
         </main>
         <Footer />

@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Home, Building2, CheckCircle, XCircle } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageVsSpa() {
   const comparisons = [
@@ -279,6 +280,34 @@ export default function VillaMassageVsSpa() {
                     </Link>
                   </div>
                 </div>
+
+                {/* FAQ Section */}
+                <VillaMassageFAQ items={[
+                  {
+                    question: "How does villa massage privacy compare to spa private rooms?",
+                    answer: "Villa massage provides complete property privacy versus spa rooms with thin walls and shared hallways. Villa massage means no strangers nearby and no rushing for appointment times. True privacy of villa massage surpasses even the most private spa facilities."
+                  },
+                  {
+                    question: "Are spa facilities really necessary for quality massage?",
+                    answer: "No! Villa massage demonstrates that therapist skill matters more than fancy facilities. Villa massage therapists bring everything needed for spa-quality treatments to your space. Professional villa massage achieves identical therapeutic results without expensive spa infrastructure."
+                  },
+                  {
+                    question: "What about spa amenities like saunas and pools?",
+                    answer: "Most villas have pools, and villa massage therapists recommend home bathing rituals replacing spa amenities. Villa massage combined with your villa's facilities creates complete spa experiences. The convenience of villa massage outweighs spa amenities for most travelers."
+                  },
+                  {
+                    question: "Can I get multiple villa massage treatments in one day?",
+                    answer: "Yes! Villa massage scheduling is completely flexible for multiple daily treatments at your convenience. Villa massage eliminates travel between spa appointments and allows optimal spacing. Flexibility of villa massage enables personalized wellness days impossible at fixed spa facilities."
+                  },
+                  {
+                    question: "How do spa resort massages compare to independent villa massage services?",
+                    answer: "Villa massage often costs 30-50% less than resort spa rates with identical therapist qualifications. Villa massage avoids resort markup and provides more personalized service. Independent villa massage therapists often have more experience than resort staff rotating through tourist properties."
+                  },
+                  {
+                    question: "Is villa massage suitable for luxury travelers accustomed to high-end spas?",
+                    answer: "Absolutely! Luxury villa massage matches five-star spa quality with added privacy and personalization. Villa massage appeals to discerning travelers seeking exclusivity over generic spa experiences. Many luxury villas in Bali specifically recommend villa massage for their guests."
+                  }
+                ]} />
 
                 {/* Related Articles */}
                 <div className="mt-12 pt-8 border-t">

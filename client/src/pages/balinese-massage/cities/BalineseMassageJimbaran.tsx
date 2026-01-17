@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import BalineseMassageFAQ from "@/components/balinese-massage/BalineseMassageFAQ";
 
 export default function BalineseMassageJimbaran() {
   return (
@@ -208,6 +209,33 @@ export default function BalineseMassageJimbaran() {
           </p>
         </div>
       </section>
+
+      <BalineseMassageFAQ items={[
+        {
+          question: "Can romantic couples experience Balinese massage with Jimbaran sunset views?",
+          answer: "Yes! Jimbaran's famous sunsets create magical settings for couples Balinese massage experiences. We time treatments so you finish as the sun sets over the bay, allowing you to enjoy golden-hour views from your villa terrace while Balinese massage endorphins peak. Many anniversary and honeymoon couples choose Jimbaran specifically for this combination—traditional Balinese massage followed by sunset champagne overlooking fishing boats. The romantic atmosphere amplifies Balinese healing benefits, creating shared memories that deepen both relationship bonds and appreciation for traditional Balinese wellness wisdom cultivated over centuries."
+        },
+        {
+          question: "Do Jimbaran seafood dinner reservations work with Balinese massage timing?",
+          answer: "Absolutely! We coordinate Balinese massage appointments around Jimbaran's iconic beach seafood dinners. Afternoon treatments (3-4 PM) provide perfect timing—finishing with energy and appetite for evening dining while avoiding post-meal treatment discomfort. Traditional Balinese massage enhances dining enjoyment by improving digestion through abdominal acupressure and reducing stress that inhibits taste perception. Many guests book Balinese massage before sunset seafood dinners, finding that the relaxed state from authentic Balinese healing makes Jimbaran's culinary experience even more pleasurable and memorable. The combination represents Bali's complete sensory luxury."
+        },
+        {
+          question: "How does Jimbaran's fishing village heritage influence authentic Balinese massage?",
+          answer: "Jimbaran's traditional fishing community maintains authentic Balinese healing practices better than tourist-developed areas. Many local therapists learned Balinese massage from family elders who served fishing families for generations, preserving techniques designed for ocean-related body stress. Traditional Balinese massage in fishing villages includes specific methods for shoulder and back problems from boat work—knowledge that transfers effectively to modern tension patterns. The spiritual elements of Balinese massage connect to ocean ceremonies and fishing traditions still practiced in Jimbaran, ensuring treatments honor complete cultural context rather than simplified wellness versions."
+        },
+        {
+          question: "Can post-flight Balinese massage combine with Jimbaran's calm atmosphere?",
+          answer: "Yes! Jimbaran's peaceful bay provides ideal jet lag recovery settings for arrival-day Balinese massage. The village's unhurried pace mirrors the slow, meditative quality of traditional Balinese massage, allowing exhausted bodies to properly release travel tension. Unlike busier areas, Jimbaran's tranquility supports the deep relaxation state where Balinese massage healing occurs most effectively. The sound of gentle waves enhances treatment benefits—traditional Balinese medicine recognizes that natural sounds facilitate energy channel opening. Many travelers start Bali trips with Jimbaran Balinese massage, establishing wellness foundations for their entire vacation."
+        },
+        {
+          question: "Why is authentic Balinese massage meaningful in romantic Jimbaran settings?",
+          answer: "Jimbaran's romantic reputation aligns perfectly with traditional Balinese massage philosophy emphasizing connection and harmony. Couples Balinese massage in intimate villa settings creates shared healing experiences that strengthen relationships through synchronized relaxation. The traditional Balinese belief that balanced energy improves all life aspects—including love—makes Balinese massage particularly appropriate for romantic getaways. Jimbaran's sunset beauty, village charm, and seafood dinners provide the complete romance package, while authentic Balinese massage adds depth—a healing ritual honoring traditional wisdom about partnership, balance, and mutual care essential to lasting relationships."
+        },
+        {
+          question: "Do Jimbaran villas' architectural features enhance Balinese massage experiences?",
+          answer: "Yes! Jimbaran's traditional Balinese architecture—open pavilions, tropical gardens, ocean breezes—creates ideal Balinese massage environments. These spaces honor how traditional Balinese massage was historically performed: outdoors in nature, with fresh air circulation and spiritual connection to elements. Modern Jimbaran villas preserve these architectural principles, making them perfect for authentic Balinese massage that requires proper ventilation for aromatherapy oils and connection to natural energy flows. The traditional design supports Balinese healing effectiveness by providing environments where body, mind, and spirit naturally relax into receptive states for profound therapeutic transformation."
+        }
+      ]} />
 
       <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto text-center">

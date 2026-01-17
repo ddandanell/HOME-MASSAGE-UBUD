@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Star, CheckCircle } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageSanur() {
   const services = [
@@ -174,6 +175,34 @@ export default function VillaMassageSanur() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Is villa massage popular with families staying in Sanur?",
+              answer: "Yes! Villa massage in Sanur is ideal for families with children. Many family villas along Sanur Beach welcome villa massage services while kids play safely nearby. Villa massage therapists in Sanur are experienced with family environments and can provide quiet treatments during children's nap times."
+            },
+            {
+              question: "Can I book morning villa massage along Sanur's beachfront?",
+              answer: "Absolutely! Morning villa massage in Sanur is perfect after sunrise beach walks. Our villa massage service starts early for guests who want treatments before the day heats up. Beachfront villa massage in Sanur combines ocean breezes with professional therapy for ultimate relaxation."
+            },
+            {
+              question: "How does villa massage work for elderly guests in Sanur?",
+              answer: "Villa massage in Sanur is excellent for senior travelers seeking gentle, accessible treatments. Our therapists bring villa massage directly to your room, eliminating travel to spas. Villa massage techniques can be adjusted for arthritis, mobility issues, and specific health needs common among Sanur's mature visitors."
+            },
+            {
+              question: "Do villa massage therapists serve Sanur's bicycle path neighborhoods?",
+              answer: "Yes! Villa massage service covers all Sanur areas along the famous bike path from Mertasari Beach to north Sanur. Our therapists navigate villa massage appointments throughout seaside neighborhoods and inland residential streets. Villa massage is available along Sanur's entire beachfront and beyond."
+            },
+            {
+              question: "Can couples book villa massage after snorkeling trips in Sanur?",
+              answer: "Definitely! Couples villa massage in Sanur is popular after water activities and boat tours. Our synchronized villa massage treatments help recover from snorkeling and provide peaceful connection time. Villa massage sessions can be scheduled for late afternoon after returning from marine adventures."
+            },
+            {
+              question: "What makes prenatal villa massage safe for pregnancy in Sanur?",
+              answer: "Prenatal villa massage in Sanur uses specialized techniques and positioning safe for expectant mothers. Our certified therapists bring proper cushioning for villa massage that supports pregnancy comfort. Villa massage in Sanur's calm environment provides stress relief without traveling to crowded spas during pregnancy."
+            }
+          ]} />
 
           {/* CTA Section */}
           <section className="py-16 bg-primary text-primary-foreground">

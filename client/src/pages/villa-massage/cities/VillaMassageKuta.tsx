@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Star, CheckCircle } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageKuta() {
   const services = [
@@ -174,6 +175,34 @@ export default function VillaMassageKuta() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Is villa massage popular with budget travelers staying in Kuta?",
+              answer: "Yes! Villa massage in Kuta offers affordable spa quality perfect for budget-conscious travelers. Many guesthouses and shared villas in Kuta welcome villa massage services. Villa massage provides premium treatments at accessible prices that fit Kuta's backpacker-friendly atmosphere."
+            },
+            {
+              question: "Can I book villa massage after arriving at Ngurah Rai Airport?",
+              answer: "Absolutely! Villa massage in Kuta is convenient for immediate airport arrival recovery. We offer same-day villa massage booking for travelers landing at nearby Ngurah Rai Airport. Villa massage helps you recover from long flights without leaving your Kuta accommodation."
+            },
+            {
+              question: "How does villa massage work with Kuta's busy nightlife schedule?",
+              answer: "Villa massage in Kuta can be scheduled for late morning or afternoon before nightlife begins. Many partygoers book villa massage for hangover recovery and energy restoration. Villa massage helps you stay active through Kuta's famous party scene with strategic timing and rejuvenation."
+            },
+            {
+              question: "Do villa massage therapists navigate Kuta's congested streets easily?",
+              answer: "Yes! Villa massage therapists in Kuta know shortcuts through back alleys and side streets to avoid main road traffic. Our scooter-based villa massage delivery ensures reliable arrivals despite Kuta congestion. Villa massage service reaches every Kuta neighborhood efficiently."
+            },
+            {
+              question: "Can surfing beginners book villa massage for Kuta Beach soreness?",
+              answer: "Definitely! Villa massage in Kuta specializes in beginner surfer recovery from Kuta Beach lessons. Our villa massage therapists understand paddling fatigue and wipeout impact. Villa massage with sports therapy techniques helps surf school students recover faster between Kuta sessions."
+            },
+            {
+              question: "What makes villa massage better than Kuta's street massage parlors?",
+              answer: "Villa massage in Kuta provides private, hygienic, professional treatments away from street noise and pushy vendors. Unlike sidewalk massage shops, villa massage offers peaceful environment with licensed therapists. Villa massage eliminates Kuta's overwhelming street scene while delivering superior therapeutic value."
+            }
+          ]} />
 
           {/* CTA Section */}
           <section className="py-16 bg-primary text-primary-foreground">

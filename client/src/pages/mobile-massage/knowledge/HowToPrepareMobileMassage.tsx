@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Brain, Home, Sparkles, Activity, Moon } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function MobileMassageBenefits() {
   return (
@@ -574,6 +575,34 @@ export default function MobileMassageBenefits() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "What are the main physical benefits of mobile massage?",
+          answer: "Mobile massage delivers significant physical benefits including muscle tension relief, improved circulation, reduced pain, enhanced flexibility, and better sleep quality. Professional mobile massage addresses these through systematic soft tissue manipulation while the convenience of mobile massage maximizes recovery by eliminating post-treatment travel stress."
+        },
+        {
+          question: "How does mobile massage benefit mental health?",
+          answer: "Mobile massage reduces stress hormones by up to 30%, decreases anxiety, improves mood through endorphin release, and enhances overall emotional wellbeing. The mobile massage environment—your private, familiar space—amplifies these mental benefits by eliminating public spa anxiety and creating optimal relaxation conditions for mobile massage therapy."
+        },
+        {
+          question: "Why are mobile massage convenience benefits important for health outcomes?",
+          answer: "Mobile massage convenience directly improves health outcomes by eliminating transportation stress, enabling immediate post-treatment recovery, and encouraging consistent treatment scheduling. When mobile massage comes to you, you're more likely to maintain regular sessions, and the mobile massage recovery environment optimizes therapeutic benefits unavailable through traditional spa visits."
+        },
+        {
+          question: "Can mobile massage help with chronic pain conditions?",
+          answer: "Yes, regular mobile massage significantly reduces chronic pain through muscle tension release, improved circulation, and neurological pain gate mechanisms. Deep tissue mobile massage specifically targets chronic conditions, with mobile massage research showing 40-60% pain reduction in regular recipients. The mobile massage convenience factor enables the consistent treatments chronic pain management requires."
+        },
+        {
+          question: "How does mobile massage compare to spa massage for wellness benefits?",
+          answer: "Mobile massage delivers equivalent or superior wellness benefits compared to spa massage due to enhanced recovery environment and reduced stress. The therapeutic techniques used in professional mobile massage match spa standards, but mobile massage eliminates travel disruption and public space anxiety that diminish spa treatment effectiveness."
+        },
+        {
+          question: "What makes mobile massage benefits last longer than spa treatments?",
+          answer: "Mobile massage benefits last longer because immediate post-treatment recovery happens in your private, comfortable space without disruptive travel. This mobile massage advantage allows your nervous system to process the treatment fully while remaining relaxed. The mobile massage environment optimization extends therapeutic benefits by 30-50% compared to spa treatments requiring immediate re-entry into public life."
+        }
+      ]} />
         </main>
         <Footer />
       </div>

@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Droplets, Clock, Activity, AlertCircle, CheckCircle, Calendar } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function MobileMassageAftercare() {
   return (
@@ -797,6 +798,34 @@ export default function MobileMassageAftercare() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "Why is hydration so important after mobile massage?",
+          answer: "Mobile massage releases metabolic waste and toxins from muscle tissues into your bloodstream, requiring water for elimination. Proper hydration after mobile massage supports kidney function in processing these released substances. The mobile massage aftercare hydration protocol (minimum 2-3 liters over 24 hours) ensures your body efficiently clears mobilized toxins and maintains the therapeutic mobile massage benefits."
+        },
+        {
+          question: "What activities should I avoid immediately after mobile massage?",
+          answer: "Avoid strenuous exercise, heavy lifting, intense heat exposure (hot yoga, saunas), alcohol consumption, and prolonged standing for 4-6 hours after mobile massage. Your muscles are vulnerable during this mobile massage recovery window. The mobile massage aftercare advantage is resting in your private space—use this recovery time wisely to maximize therapeutic benefits."
+        },
+        {
+          question: "Is post-mobile-massage soreness normal?",
+          answer: "Yes, mild soreness 24-48 hours after deep tissue mobile massage is completely normal and indicates effective treatment. This mobile massage soreness differs from injury pain—it feels like post-workout muscle sensitivity. The mobile massage aftercare approach includes gentle heat, continued hydration, and light stretching to accelerate soreness resolution. Severe pain after mobile massage is abnormal and requires therapist consultation."
+        },
+        {
+          question: "How does the mobile massage aftercare environment improve recovery?",
+          answer: "Mobile massage aftercare happens in your private, comfortable space where you can immediately rest undisturbed—a recovery advantage impossible with spa visits requiring post-treatment travel. This mobile massage environmental benefit optimizes your nervous system's treatment processing. Remaining in familiar surroundings after mobile massage extends therapeutic effects by 30-50% compared to disruptive spa departure."
+        },
+        {
+          question: "When should I schedule my next mobile massage session?",
+          answer: "For chronic issues, schedule mobile massage weekly; for wellness maintenance, bi-weekly or monthly mobile massage sessions work well. The mobile massage frequency depends on treatment goals and body response. Regular mobile massage provides cumulative benefits—consistent scheduling ensures continuous therapeutic progress. The mobile massage convenience makes maintaining optimal treatment frequency significantly easier than spa-dependent schedules."
+        },
+        {
+          question: "Can I shower or bathe immediately after mobile massage?",
+          answer: "Wait 2-4 hours before showering after mobile massage to allow oils to absorb fully and avoid washing away beneficial essential oils. When you do bathe post-mobile-massage, use warm (not hot) water to avoid stress on your relaxed muscles. The mobile massage aftercare advantage means this waiting period happens comfortably in your villa, unlike spa visits requiring immediate cleanup before departure."
+        }
+      ]} />
         </main>
         <Footer />
       </div>

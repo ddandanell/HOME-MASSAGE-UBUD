@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Star, CheckCircle } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageNusaDua() {
   const services = [
@@ -174,6 +175,34 @@ export default function VillaMassageNusaDua() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Do resort villas in Nusa Dua allow outside villa massage services?",
+              answer: "Most private villas in Nusa Dua welcome villa massage services. While integrated resort compounds may have restrictions, standalone villa rentals and villa complexes fully accommodate villa massage therapists. We coordinate villa massage access with security and property management for seamless service in Nusa Dua."
+            },
+            {
+              question: "Can I book villa massage near Nusa Dua's gated communities?",
+              answer: "Yes! Villa massage service covers all Nusa Dua gated communities and villa estates. Our therapists are familiar with villa massage protocol for security checkpoints and property regulations. Villa massage appointments in Nusa Dua include coordination with villa staff for smooth, discreet arrivals."
+            },
+            {
+              question: "Is villa massage available for golf resort villas in Nusa Dua?",
+              answer: "Absolutely! Villa massage in Nusa Dua is popular with golf villa guests needing sports recovery. Our villa massage therapists specialize in golf-related tension relief for shoulders, back, and legs. Villa massage sessions can be scheduled after morning tee times for optimal relaxation."
+            },
+            {
+              question: "How does villa massage work with Nusa Dua's luxury villa standards?",
+              answer: "Villa massage service in Nusa Dua maintains the same luxury standards as premium resort spas. Our villa massage therapists bring high-end equipment, premium oils, and five-star service directly to your villa. Villa massage in Nusa Dua matches the area's upscale expectations."
+            },
+            {
+              question: "Can families book multiple villa massage sessions for MICE events?",
+              answer: "Definitely! Villa massage in Nusa Dua serves corporate groups and conference attendees at villa properties. We provide multiple therapists for simultaneous villa massage treatments at meetings or incentive group villas. Villa massage is an excellent addition to Nusa Dua's MICE offerings."
+            },
+            {
+              question: "What makes beachfront villa massage special in Nusa Dua?",
+              answer: "Beachfront villa massage in Nusa Dua combines pristine white sand beaches with private villa comfort. Many villas have beachside pavilions perfect for villa massage with ocean views and breezes. Villa massage on Nusa Dua Beach offers unmatched tranquility in Bali's most exclusive coastal area."
+            }
+          ]} />
 
           {/* CTA Section */}
           <section className="py-16 bg-primary text-primary-foreground">

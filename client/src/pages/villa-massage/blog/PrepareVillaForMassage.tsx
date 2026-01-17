@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Sun, Wind, Sparkles, Music, Droplets } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function PrepareVillaForMassage() {
   const preparationSteps = [
@@ -335,6 +336,34 @@ export default function PrepareVillaForMassage() {
                     </Link>
                   </div>
                 </div>
+
+                {/* FAQ Section */}
+                <VillaMassageFAQ items={[
+                  {
+                    question: "How much space do I need to prepare for villa massage?",
+                    answer: "Villa massage requires a flat area approximately 7 feet by 3 feet for the massage table plus therapist movement space. Most villa bedrooms, living rooms, or covered terraces work perfectly for villa massage. Villa massage therapists help identify ideal setup locations during booking."
+                  },
+                  {
+                    question: "Should I clean my villa before the massage therapist arrives?",
+                    answer: "Basic tidiness is appreciated, but deep cleaning isn't necessary for villa massage. Villa massage therapists focus on the treatment area, not your entire property. Simply ensure the massage space is accessible and has enough room for villa massage equipment setup."
+                  },
+                  {
+                    question: "What temperature is best for indoor villa massage?",
+                    answer: "Villa massage is most comfortable at 72-76°F (22-24°C) with air conditioning providing consistent cooling. Villa massage therapists recommend adjusting temperature 30 minutes before the session. Proper cooling makes villa massage enjoyable in Bali's tropical climate."
+                  },
+                  {
+                    question: "Can I have villa massage outdoors in my garden?",
+                    answer: "Yes! Outdoor villa massage works beautifully in shaded, private garden areas or covered pavilions. Villa massage therapists need protection from direct sun and rain. Garden villa massage combines nature's tranquility with professional treatment for exceptional experiences."
+                  },
+                  {
+                    question: "Should pets be kept away during villa massage?",
+                    answer: "Yes, pets should be secured in separate areas during villa massage for safety and therapist comfort. Villa massage requires calm, distraction-free environments. Even friendly pets can disrupt villa massage concentration and interfere with equipment."
+                  },
+                  {
+                    question: "What if my villa is messy or under renovation?",
+                    answer: "Villa massage therapists are professionals who work in various conditions without judgment. As long as one clean area exists for villa massage setup, treatments proceed normally. Communicate any special circumstances when booking villa massage for appropriate planning."
+                  }
+                ]} />
 
                 {/* Related Articles */}
                 <div className="mt-12 pt-8 border-t">

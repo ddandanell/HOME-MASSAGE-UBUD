@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import BalineseMassageFAQ from "@/components/balinese-massage/BalineseMassageFAQ";
 
 export default function BalineseMassageAmed() {
   return (
@@ -117,6 +118,33 @@ export default function BalineseMassageAmed() {
           </p>
         </div>
       </section>
+
+      <BalineseMassageFAQ items={[
+        {
+          question: "Can Balinese massage help divers recover in Amed's diving community?",
+          answer: "Absolutely! Amed's diving scene creates specific body stress that Balinese massage effectively addresses. The deep tissue techniques in traditional Balinese massage target shoulder fatigue from equipment carrying, lower back strain from tank weight, and neck tension from regulator positioning. Balinese massage also supports decompression by improving circulation and lymphatic drainage—helping the body process nitrogen safely after deep dives. Many dive instructors and dedicated divers incorporate regular Balinese massage into their routines, finding that traditional healing methods prevent chronic injuries while maintaining flexibility essential for diving safety. The holistic Balinese approach supports both physical recovery and the calm mental state required for safe diving."
+        },
+        {
+          question: "How does Amed's quiet east coast atmosphere enhance Balinese massage?",
+          answer: "Amed's peaceful, unhurried energy creates ideal conditions for deep Balinese massage healing. Traditional Balinese medicine recognizes that healing accelerates in calm environments where nervous systems fully relax—Amed's lack of traffic, nightlife, and tourist crowds provides this sanctuary. The sound of gentle waves and fishing boats enhances Balinese massage's meditative quality, allowing treatments to address not just physical tension but energetic and emotional blockages. Many guests report that Balinese massage in Amed produces more profound results than busier areas because the entire environment supports the relaxation response that traditional healing requires for optimal effectiveness and long-lasting benefits."
+        },
+        {
+          question: "Do Amed beachfront bungalows provide ideal settings for Balinese massage?",
+          answer: "Yes! Amed's traditional beachfront bungalows offer perfect environments for authentic Balinese massage. The open-air Balinese architecture, ocean breezes, and natural sounds create conditions where traditional Balinese massage originated—outdoors in nature rather than enclosed spas. Many bungalows have massage pavilions or beachside platforms where treatments capture Mount Agung views and sea air. The traditional Balinese healing philosophy emphasizes connection to natural elements during treatment, making Amed's simple beachfront settings more aligned with authentic Balinese massage practice than luxury hotel rooms. The combination of skilled therapists, proper techniques, and natural beauty creates deeply healing experiences without unnecessary commercial amenities."
+        },
+        {
+          question: "Can traditional fishing village culture influence Balinese massage authenticity?",
+          answer: "Yes! Amed's fishing village heritage preserves authentic Balinese healing practices better than developed tourist areas. Local therapists often learned Balinese massage from family elders who treated fishing communities for generations, maintaining techniques designed for ocean-related body stress. Traditional Balinese massage in fishing villages includes specific methods for shoulder and back problems from boat work—knowledge applicable to modern tension patterns. The spiritual elements of Balinese massage remain connected to ocean ceremonies and fishing traditions still practiced in Amed, ensuring treatments honor complete cultural context. This living tradition makes Amed Balinese massage more authentic than commercialized spa versions."
+        },
+        {
+          question: "Why is sunrise timing special for Balinese massage in Amed?",
+          answer: "Amed's east coast location makes sunrise treatments uniquely powerful for traditional Balinese massage. Balinese philosophy considers dawn a sacred time when spiritual energy peaks—scheduling treatments around sunrise aligns with natural rhythms that enhance healing. The cool morning temperature makes oil-based Balinese massage comfortable while fresh sea air amplifies aromatherapy benefits. Many guests book early Balinese massage sessions (7-8 AM) to capture this special energy, finding that treatments at dawn produce deeper relaxation and more lasting benefits. The combination of traditional Balinese healing techniques with Amed's spectacular sunrise energy creates transformative wellness experiences rooted in natural and cultural wisdom."
+        },
+        {
+          question: "How does budget-friendly Amed accommodate authentic Balinese massage?",
+          answer: "Amed's affordable accommodations don't compromise Balinese massage quality—authentic healing depends on therapist skill and traditional techniques, not luxury settings. Our mobile service brings the same certified practitioners and professional Balinese massage methods to simple bungalows as to upscale villas. This accessibility reflects traditional Balinese values where healing serves entire communities, not just wealthy tourists. Many budget travelers specifically choose Amed because they can afford regular Balinese massage sessions, experiencing consistent traditional healing that produces cumulative benefits. The democratic spirit of authentic Balinese massage—available to all who seek wellness—thrives in Amed's unpretentious, community-focused atmosphere better than exclusive resort environments."
+        }
+      ]} />
 
       <Footer />
     </div>

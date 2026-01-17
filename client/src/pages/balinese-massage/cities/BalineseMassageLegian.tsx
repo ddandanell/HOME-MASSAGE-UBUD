@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import BalineseMassageFAQ from "@/components/balinese-massage/BalineseMassageFAQ";
 
 export default function BalineseMassageLegian() {
   return (
@@ -146,6 +147,33 @@ export default function BalineseMassageLegian() {
           </p>
         </div>
       </section>
+
+      <BalineseMassageFAQ items={[
+        {
+          question: "Can late-night Balinese massage help after Legian beach club parties?",
+          answer: "Yes! We offer late-evening Balinese massage appointments perfect for post-party recovery in Legian's nightlife hub. Traditional Balinese massage techniques reduce muscle tension from dancing and standing, while acupressure points address dehydration and circulation issues from alcohol consumption. The aromatherapy in authentic Balinese massage calms overstimulated nervous systems, promoting restorative sleep after high-energy beach club experiences. Many Legian partygoers schedule Balinese massage around 10-11 PM to transition from club energy to restful sleep, making traditional Balinese healing an essential part of sustainable party routines without total exhaustion."
+        },
+        {
+          question: "Do Legian family hotels accommodate in-room Balinese massage?",
+          answer: "Absolutely! Legian's family-friendly hotels welcome our Balinese massage service for parents needing relaxation while kids are supervised. We bring portable professional equipment that works in standard hotel rooms, providing authentic Balinese massage without disturbing sleeping children. Many parents alternate treatments—one receives Balinese massage while the other watches kids, then switch. The convenience of in-room Balinese massage means family vacationers actually experience the stress relief they need, rather than skipping wellness because leaving hotels with children is complicated. Traditional Balinese healing supports parental well-being essential for enjoying family travel."
+        },
+        {
+          question: "How does Balinese massage benefit mixed-budget Legian accommodations?",
+          answer: "Legian's range from budget guesthouses to mid-range hotels all suit our mobile Balinese massage service equally. Traditional Balinese massage quality depends on therapist skill and authentic techniques, not accommodation luxury. We provide the same certified therapists and professional Balinese massage methods whether you're in a simple fan room or air-conditioned suite. This democratization of authentic Balinese healing allows backpackers and mid-range travelers to experience traditional treatments at accessible prices. The healing power of genuine Balinese massage doesn't require five-star settings—just skilled hands and sacred techniques passed through generations."
+        },
+        {
+          question: "Can Balinese massage address sun damage from Legian Beach days?",
+          answer: "Yes! Balinese massage offers specific benefits for sun-exposed skin common in Legian. Traditional Balinese massage uses cooling coconut and frangipani oils with natural anti-inflammatory properties that soothe sunburned skin. The gentle lymphatic drainage techniques in authentic Balinese massage reduce heat retention and inflammation from UV exposure. Therapists can adjust pressure to avoid discomfort on tender areas while still providing full Balinese massage benefits. Many Legian beach-goers schedule evening Balinese massage sessions to repair daily sun exposure, finding that traditional Balinese healing accelerates skin recovery and prevents vacation-ruining burns."
+        },
+        {
+          question: "Why is affordable Balinese massage important in value-focused Legian?",
+          answer: "Legian attracts budget-conscious travelers who still deserve authentic Balinese massage experiences. Traditional Balinese healing shouldn't be luxury-only—it's part of Indonesian wellness heritage accessible to all. Our pricing makes genuine Balinese massage affordable for backpackers, young travelers, and families watching expenses. Unlike expensive resort spas, we offer certified therapists and traditional Balinese massage techniques at fair prices reflecting Balinese economic reality, not inflated tourist rates. This ensures everyone visiting Legian can experience the profound healing benefits of authentic Balinese massage regardless of travel budget constraints."
+        },
+        {
+          question: "What makes sunset timing ideal for Legian Balinese massage bookings?",
+          answer: "Sunset appointments align perfectly with Legian's beach rhythm—after daytime activities, before nightlife begins. Scheduling Balinese massage around 5-6 PM allows morning beach time and afternoon exploration, with treatments refreshing you for evening plans. The cooler sunset temperatures make traditional Balinese massage more comfortable than midday heat. This timing also reflects Balinese spiritual philosophy—sunset transitions require energy balancing that Balinese massage provides. Many guests find that Balinese massage during Legian's magical sunset hour creates profound relaxation, connecting the treatment's healing power with the natural beauty and spiritual energy of day's end."
+        }
+      ]} />
 
       <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto text-center">

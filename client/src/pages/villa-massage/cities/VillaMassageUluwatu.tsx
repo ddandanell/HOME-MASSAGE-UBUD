@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Star, CheckCircle } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageUluwatu() {
   const services = [
@@ -174,6 +175,34 @@ export default function VillaMassageUluwatu() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Can villa massage therapists reach clifftop villas in Uluwatu?",
+              answer: "Yes! Villa massage therapists in Uluwatu navigate steep cliff roads to reach spectacular ocean-view properties. Our villa massage service includes villas perched on Uluwatu's dramatic limestone cliffs. Villa massage brings professional treatments to even the most breathtaking elevated locations in Uluwatu."
+            },
+            {
+              question: "Is villa massage available near Uluwatu's famous surf breaks?",
+              answer: "Absolutely! Villa massage in Uluwatu serves surfers staying near Padang Padang, Bingin, Impossibles, and other breaks. Our villa massage therapists understand surf injuries and wave-riding fatigue. Villa massage provides essential recovery for surfers tackling Uluwatu's world-class reef breaks."
+            },
+            {
+              question: "How does villa massage help with Uluwatu Temple visit fatigue?",
+              answer: "Villa massage in Uluwatu offers perfect recovery after climbing temple stairs and exploring cliffside paths. Our villa massage therapists focus on leg and foot relief from temple walking. Villa massage helps you recover from cultural sightseeing while enjoying your clifftop villa views."
+            },
+            {
+              question: "Can I book sunset villa massage overlooking Uluwatu coastline?",
+              answer: "Definitely! Sunset villa massage in Uluwatu is magical on clifftop terraces with ocean panoramas. We time villa massage appointments to coincide with golden hour views over the Indian Ocean. Villa massage during Uluwatu sunsets creates unforgettable wellness experiences."
+            },
+            {
+              question: "What makes villa massage ideal for Uluwatu's luxury villa market?",
+              answer: "Villa massage in Uluwatu matches the area's ultra-premium villa standards with professional service and equipment. Our villa massage therapists are experienced with high-end properties and discerning guests. Villa massage enhances Uluwatu's luxury lifestyle with spa-quality treatments in private clifftop settings."
+            },
+            {
+              question: "Do villa massage therapists know Uluwatu's winding roads and directions?",
+              answer: "Yes! Villa massage therapists in Uluwatu are familiar with complex cliff road networks and villa directions. Our team knows every gang and villa location throughout Uluwatu's Pecatu area. Villa massage service ensures reliable arrivals despite Uluwatu's challenging navigation."
+            }
+          ]} />
 
           {/* CTA Section */}
           <section className="py-16 bg-primary text-primary-foreground">

@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import BalineseMassageFAQ from "@/components/balinese-massage/BalineseMassageFAQ";
 
 export default function BalineseMassageUbud() {
   return (
@@ -208,6 +209,33 @@ export default function BalineseMassageUbud() {
           </p>
         </div>
       </section>
+
+      <BalineseMassageFAQ items={[
+        {
+          question: "Why is Ubud the best place to experience authentic Balinese massage?",
+          answer: "Ubud is Bali's cultural heart where traditional Balinese massage techniques have been preserved for generations. Balinese massage therapists in Ubud often train in traditional healing villages nearby, learning ancient methods passed down through families. The spiritual atmosphere of Ubud enhances Balinese massage healing benefits, combining authentic techniques with the area's natural wellness energy and proximity to sacred temples."
+        },
+        {
+          question: "How does the cooler Ubud climate affect my Balinese massage experience?",
+          answer: "Ubud's mountain climate creates ideal conditions for Balinese massage. The cooler temperatures allow for deeper pressure work without overheating, while the natural jungle sounds enhance relaxation. Traditional Balinese massage uses warming oils and techniques that feel especially therapeutic in Ubud's fresh air, creating a perfectly balanced healing experience that differs from coastal Balinese massage sessions."
+        },
+        {
+          question: "Can Balinese massage complement my yoga retreat in Ubud?",
+          answer: "Absolutely! Balinese massage is the perfect complement to yoga practice in Ubud. Traditional Balinese massage techniques release muscle tension from yoga poses, improve flexibility, and deepen the mind-body connection cultivated in yoga. Many Ubud wellness retreats incorporate Balinese massage as it shares yoga's holistic philosophy, addressing physical, energetic, and spiritual wellbeing through traditional Balinese healing methods."
+        },
+        {
+          question: "What makes Balinese massage in Ubud different from beach locations?",
+          answer: "Balinese massage in Ubud connects to the island's spiritual heartland. Unlike beach areas focused on tourism, Ubud's Balinese massage tradition is embedded in daily healing practices and cultural ceremonies. The mountain energy, sacred temple proximity, and concentration of traditional healers make Ubud Balinese massage feel more authentic and spiritually grounded, reflecting centuries of Balinese healing wisdom preserved in this cultural center."
+        },
+        {
+          question: "Do Ubud Balinese massage therapists understand traditional healing philosophy?",
+          answer: "Yes, our Ubud-based Balinese massage therapists are often raised in families with generational healing traditions. They understand Balinese massage as part of a larger wellness system that includes herbal medicine, energy work, and spiritual balance. This deeper knowledge makes Ubud Balinese massage more than just physical therapy—it's an authentic experience of traditional Balinese healing culture practiced in its birthplace."
+        },
+        {
+          question: "Can you provide Balinese massage to remote rice field villas around Ubud?",
+          answer: "Yes, we provide Balinese massage services throughout all Ubud areas, including remote rice field villas in Tegallalang, Sayan, Keliki, and Payangan. Our therapists know Ubud's winding roads and can navigate to secluded jungle locations. Whether you're staying in town center or a distant rice terrace villa, you'll receive the same authentic Balinese massage experience delivered to your peaceful sanctuary."
+        }
+      ]} />
 
       <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto text-center">

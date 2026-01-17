@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Star, CheckCircle } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageJimbaran() {
   const services = [
@@ -174,6 +175,34 @@ export default function VillaMassageJimbaran() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Can I book villa massage before sunset dinner on Jimbaran Beach?",
+              answer: "Yes! Villa massage in Jimbaran perfectly complements beachfront dining plans. Our villa massage sessions can be timed so you finish relaxed and refreshed before heading to famous Jimbaran seafood restaurants. Villa massage therapists know how to schedule around sunset dinner reservations."
+            },
+            {
+              question: "Is villa massage available near Jimbaran's fish market area?",
+              answer: "Absolutely! Villa massage service covers all Jimbaran neighborhoods from the fish market to hillside villa estates. Our therapists bring villa massage to beachside properties and elevated villas with bay views. Villa massage in Jimbaran reaches every location in this scenic fishing village."
+            },
+            {
+              question: "How does villa massage help with Bali airport arrival fatigue?",
+              answer: "Villa massage in Jimbaran is ideal for airport recovery since Jimbaran is closest to Ngurah Rai Airport. Many travelers book villa massage upon arrival to ease long-flight stiffness and jet lag. Villa massage helps you transition smoothly into vacation mode in your Jimbaran villa."
+            },
+            {
+              question: "Can villa massage therapists reach hilltop villas in Jimbaran?",
+              answer: "Yes! Villa massage therapists in Jimbaran navigate steep hill roads to reach clifftop properties with spectacular views. Our villa massage service includes villas on Jimbaran's ridges overlooking the bay. Villa massage brings spa treatments to even the most elevated locations in Jimbaran."
+            },
+            {
+              question: "What's the best time for villa massage in Jimbaran's hot climate?",
+              answer: "Late afternoon villa massage in Jimbaran is most popular when temperatures cool and sea breezes strengthen. Many guests enjoy villa massage during the golden hour before sunset. Evening villa massage in Jimbaran provides perfect relaxation after beach time and before dinner."
+            },
+            {
+              question: "Do villa massage therapists understand local fishing village schedules?",
+              answer: "Yes! Villa massage service in Jimbaran respects the peaceful fishing village atmosphere and timing. Our therapists schedule villa massage around local routines and villa neighborhood quiet times. Villa massage in Jimbaran harmonizes with the area's traditional coastal lifestyle."
+            }
+          ]} />
 
           {/* CTA Section */}
           <section className="py-16 bg-primary text-primary-foreground">

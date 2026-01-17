@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import BalineseMassageFAQ from "@/components/balinese-massage/BalineseMassageFAQ";
 
 export default function BalineseMassageKuta() {
   return (
@@ -208,6 +209,33 @@ export default function BalineseMassageKuta() {
           </p>
         </div>
       </section>
+
+      <BalineseMassageFAQ items={[
+        {
+          question: "Can Balinese massage help with jet lag after landing at Ngurah Rai Airport?",
+          answer: "Yes! Kuta's proximity to the airport makes it perfect for immediate jet lag relief through Balinese massage. Traditional Balinese massage techniques improve circulation and lymphatic drainage, helping your body adjust to time zone changes faster. The acupressure points targeted in authentic Balinese massage specifically address fatigue and disorientation from long flights. Many travelers book Balinese massage within hours of Kuta hotel check-in to accelerate recovery. The deep relaxation induced by traditional Balinese massage helps reset sleep patterns, ensuring you enjoy your Bali vacation from day one rather than losing days to exhaustion."
+        },
+        {
+          question: "Do budget travelers in Kuta have access to authentic Balinese massage?",
+          answer: "Absolutely! Kuta's diverse accommodation options—from hostels to guesthouses—all work for our mobile Balinese massage service. We bring professional equipment and certified therapists to any Kuta location, making authentic Balinese massage accessible regardless of budget. Traditional Balinese massage techniques remain the same whether in luxury hotels or modest guesthouses—the healing wisdom doesn't change. Many backpackers appreciate that quality Balinese massage is affordable in Bali, offering genuine therapeutic benefits at prices far lower than Western countries, making traditional healing accessible to all travelers."
+        },
+        {
+          question: "How does Balinese massage benefit surfers at Kuta Beach?",
+          answer: "Kuta's famous surf breaks create demand for Balinese massage among wave riders. Traditional Balinese massage deep tissue work targets paddling-related shoulder tension, lower back strain from pop-ups, and neck stiffness from duck dives. The stretching techniques in authentic Balinese massage improve flexibility crucial for surf performance while preventing injury. Many surf schools recommend Balinese massage for students dealing with beginner soreness. Regular Balinese massage sessions help dedicated surfers maintain body conditioning throughout their Kuta stay, extending surf days rather than sitting out due to muscle fatigue and strain."
+        },
+        {
+          question: "Can Kuta party-goers use Balinese massage for hangover recovery?",
+          answer: "Yes! Balinese massage is surprisingly effective for post-party recovery in Kuta's nightlife scene. Traditional Balinese massage techniques improve liver function and toxin elimination through acupressure on detoxification points. The increased circulation from authentic Balinese massage helps clear alcohol metabolites faster while reducing headache severity. Aromatherapy oils used in Balinese massage soothe nausea and restore balance. Many Sky Garden and Bounty regulars schedule late-morning Balinese massage sessions to recover before evening activities resume, making traditional Balinese healing an essential part of Kuta's party-and-recovery lifestyle."
+        },
+        {
+          question: "Why is quick-booking Balinese massage important in busy Kuta?",
+          answer: "Kuta's constant activity makes spontaneous Balinese massage availability crucial. Our mobile service offers same-day Balinese massage bookings throughout Kuta, accommodating travelers' unpredictable schedules. Traditional Balinese massage doesn't require lengthy spa appointments—we come to you when you're ready. Whether you suddenly need relief after unexpected surf wipeouts or want relaxation between shopping at Beachwalk Mall and dinner, flexible Balinese massage scheduling fits Kuta's fast-paced environment. This convenience ensures you experience authentic Balinese healing whenever your body needs it, not just when spas have openings."
+        },
+        {
+          question: "What makes traditional Balinese massage authentic despite Kuta's tourism?",
+          answer: "While Kuta is heavily commercialized, authentic Balinese massage maintains its traditional integrity through properly trained therapists. Our practitioners learned genuine Balinese massage techniques from Balinese masters, not abbreviated spa training programs. Traditional Balinese massage includes specific acupressure sequences, energy channeling, and stretches rooted in centuries-old healing wisdom—these fundamentals never change regardless of location. We ensure Balinese massage in Kuta honors traditional methods rather than simplified tourist versions. The healing power of authentic Balinese massage transcends Kuta's commercial atmosphere when performed by therapists committed to preserving cultural heritage."
+        }
+      ]} />
 
       <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto text-center">

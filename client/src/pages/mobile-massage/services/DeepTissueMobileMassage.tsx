@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, DollarSign } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function DeepTissueMobileMassage() {
   return (
@@ -227,6 +228,34 @@ export default function DeepTissueMobileMassage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "Is deep tissue mobile massage painful or too intense?",
+          answer: "Deep tissue mobile massage applies firm pressure but shouldn't be painful. Our therapists use graduated pressure, starting gently and increasing as muscles release. Deep tissue mobile massage targets deep muscle layers systematically. Communicate during your mobile massage if pressure feels excessive - effective deep tissue mobile massage should create 'good hurt' sensation, not sharp pain."
+        },
+        {
+          question: "Who benefits most from deep tissue mobile massage?",
+          answer: "Deep tissue mobile massage helps athletes, surfers, hikers, and anyone with chronic muscle tension. Office workers with postural issues benefit from deep tissue mobile massage targeting neck and shoulders. This mobile massage style addresses specific problem areas rather than providing general relaxation, making deep tissue mobile massage ideal for rehabilitation and injury recovery."
+        },
+        {
+          question: "How often should I book deep tissue mobile massage?",
+          answer: "For chronic issues, weekly deep tissue mobile massage for 4-6 weeks often shows significant improvement. Once issues resolve, bi-weekly or monthly deep tissue mobile massage maintains results. Athletes might need more frequent deep tissue mobile massage during training. Your therapist can recommend optimal deep tissue mobile massage frequency based on your specific condition."
+        },
+        {
+          question: "Will I be sore after deep tissue mobile massage?",
+          answer: "Mild soreness 24-48 hours after deep tissue mobile massage is normal and indicates deep muscle work. This post-mobile massage soreness resembles workout soreness and typically resolves within 2 days. Drinking water after deep tissue mobile massage helps flush released toxins and reduces soreness. Severe pain isn't normal - contact us if deep tissue mobile massage causes significant discomfort."
+        },
+        {
+          question: "Can deep tissue mobile massage combine with other techniques?",
+          answer: "Absolutely! Deep tissue mobile massage often incorporates stretching, trigger point therapy, and even some relaxation techniques. Your therapist might blend deep tissue mobile massage with Swedish strokes for transitions or sensitive areas. This integrated approach makes mobile massage more comprehensive and addresses multiple needs within single deep tissue mobile massage session."
+        },
+        {
+          question: "Is deep tissue mobile massage suitable for first-time massage recipients?",
+          answer: "While possible, first-time clients might prefer starting with gentler mobile massage styles like Balinese or relaxation massage. However, if you have specific pain or athletic needs, deep tissue mobile massage works fine as introduction. Communicate clearly with your therapist, who'll adjust deep tissue mobile massage pressure appropriately for your experience level."
+        }
+      ]} />
 
       <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
