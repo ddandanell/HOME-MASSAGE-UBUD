@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Heart, DollarSign, CheckCircle } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function WhatIsHomeMassage() {
   return (
@@ -501,6 +502,34 @@ export default function WhatIsHomeMassage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "How is mobile massage different from regular massage?",
+          answer: "Mobile massage brings professional therapists and equipment directly to your location, unlike regular massage which requires traveling to a spa. The mobile massage experience eliminates commute time and provides treatments in your comfortable, familiar environment. All mobile massage equipment, oils, and supplies are brought by the therapist, creating a complete spa experience at your villa or hotel."
+        },
+        {
+          question: "What makes mobile massage more convenient than spa visits?",
+          answer: "Mobile massage saves 40-80 minutes of transportation time compared to spa visits. Professional mobile massage arrives at your accommodation on your schedule, with no waiting rooms or facility delays. The mobile massage therapist sets up, delivers treatment, and departs—you never leave the comfort of your villa."
+        },
+        {
+          question: "Are mobile massage therapists properly trained and qualified?",
+          answer: "Professional mobile massage services require identical qualifications as spa therapists—licensed practitioners with certified training. Mobile massage companies verify credentials, experience, and client satisfaction continuously. The mobile massage industry maintains professional standards matching or exceeding traditional spa requirements."
+        },
+        {
+          question: "Can I get the same massage styles through mobile massage services?",
+          answer: "Yes, mobile massage offers all major massage styles including Balinese, deep tissue, couples, and relaxation treatments. The mobile massage therapist brings specialized oils, techniques, and equipment for your chosen modality. Mobile massage quality equals spa treatments—only the location changes."
+        },
+        {
+          question: "Is mobile massage actually cheaper than spa massage?",
+          answer: "Mobile massage typically costs 40-60% less than equivalent spa treatments because there's no facility overhead, reception staff, or building costs. The mobile massage pricing reflects direct therapist payment without middleman markup. You receive professional-quality mobile massage at better value than traditional spas."
+        },
+        {
+          question: "What should I know before booking my first mobile massage?",
+          answer: "Before your first mobile massage, understand that you'll receive professional therapy in your private space with complete control over environment and timing. Mobile massage therapists arrive with all necessary equipment, requiring only a clean space and basic amenities. The mobile massage booking process is straightforward, with transparent pricing and flexible scheduling throughout Bali locations."
+        }
+      ]} />
 
       {/* Block 8: Soft Conversion - Next Steps */}
       <section className="py-16 md:py-20 bg-secondary/20">
