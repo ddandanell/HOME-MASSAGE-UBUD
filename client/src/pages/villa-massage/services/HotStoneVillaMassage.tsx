@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Star, Flame, Mountain, Zap } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function HotStoneVillaMassage() {
   return (
@@ -254,6 +255,34 @@ export default function HotStoneVillaMassage() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "How hot are the stones used in hot stone villa massage?",
+              answer: "Hot stone villa massage uses smooth basalt stones heated to approximately 130-145°F (54-63°C) for therapeutic warmth without burning. Villa massage therapists test stone temperature before placement and adjust heat levels throughout treatment. Hot stone villa massage heat penetrates deep into muscles for exceptional relaxation."
+            },
+            {
+              question: "Will hot stone villa massage burn my skin?",
+              answer: "No! Hot stone villa massage uses controlled temperatures and proper placement techniques to prevent burns. Villa massage therapists always test stones and place them with oil barriers on your skin. Professional hot stone villa massage feels deeply warm and soothing, never painful or dangerous."
+            },
+            {
+              question: "Can hot stone villa massage help with chronic muscle pain?",
+              answer: "Yes! Hot stone villa massage is excellent for chronic muscle tension because heat increases blood flow and tissue flexibility. Villa massage therapists use stones to warm muscles before applying deeper pressure safely. Regular hot stone villa massage provides cumulative relief for long-standing pain conditions."
+            },
+            {
+              question: "How does hot stone villa massage differ from regular massage?",
+              answer: "Hot stone villa massage combines heated stones with traditional massage strokes for enhanced muscle relaxation and circulation. Villa massage therapists use stones as tools and place them on energy points. Hot stone villa massage achieves deeper muscle release than standard techniques through therapeutic heat application."
+            },
+            {
+              question: "Is hot stone villa massage suitable during Bali's hot weather?",
+              answer: "Absolutely! Hot stone villa massage remains comfortable in tropical weather because treatments occur indoors with air conditioning at your villa. Villa massage therapists adjust stone temperature for comfort in warm climates. Many people enjoy hot stone villa massage year-round for its unique therapeutic benefits."
+            },
+            {
+              question: "Do villa massage therapists bring their own stone heaters?",
+              answer: "Yes! Hot stone villa massage includes all specialized equipment—stones, heating unit, and temperature controls brought by therapists. Villa massage setup requires only electrical access at your property. Professional hot stone villa massage delivers spa-quality results with complete portable equipment."
+            }
+          ]} />
 
           {/* Internal Links */}
           <section className="py-16 bg-muted/30">

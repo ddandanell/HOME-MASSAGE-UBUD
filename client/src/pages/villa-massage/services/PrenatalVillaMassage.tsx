@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Star, Baby, Heart, Sparkles } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function PrenatalVillaMassage() {
   return (
@@ -254,6 +255,34 @@ export default function PrenatalVillaMassage() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "During which trimester is prenatal villa massage safest?",
+              answer: "Prenatal villa massage is safest during second and third trimesters after first trimester risks subside. Villa massage therapists trained in pregnancy techniques accommodate all trimesters with appropriate precautions. Many women enjoy prenatal villa massage regularly throughout pregnancy for comfort and stress relief."
+            },
+            {
+              question: "What positions are used for prenatal villa massage?",
+              answer: "Prenatal villa massage uses side-lying positions with specialized cushioning to support your belly and prevent back strain. Villa massage therapists bring pregnancy pillows and bolsters for safe positioning. Later pregnancy prenatal villa massage avoids face-down positions that newer mothers might miss from standard treatments."
+            },
+            {
+              question: "Can prenatal villa massage help with pregnancy back pain?",
+              answer: "Yes! Prenatal villa massage effectively relieves pregnancy-related back pain by addressing posture changes and muscle strain from baby weight. Villa massage therapists focus on lower back, hips, and legs where pregnancy discomfort concentrates. Regular prenatal villa massage helps maintain comfort throughout pregnancy progression."
+            },
+            {
+              question: "Is prenatal villa massage safe for high-risk pregnancies?",
+              answer: "Prenatal villa massage for high-risk pregnancies requires doctor clearance before booking. Villa massage therapists need medical approval and specific restrictions for complicated pregnancies. Always consult your obstetrician before scheduling prenatal villa massage if you have pregnancy complications or concerns."
+            },
+            {
+              question: "What areas are avoided during prenatal villa massage?",
+              answer: "Prenatal villa massage avoids deep abdominal pressure and certain acupressure points that may stimulate contractions. Villa massage therapists trained in pregnancy work know restricted areas and safe techniques. Professional prenatal villa massage focuses on relief while protecting mother and baby throughout treatment."
+            },
+            {
+              question: "Can partners attend prenatal villa massage sessions?",
+              answer: "Absolutely! Partners are welcome during prenatal villa massage to provide emotional support and learn massage techniques to use at home. Villa massage therapists can demonstrate safe pregnancy massage moves for partners. Prenatal villa massage becomes a bonding experience when partners participate in the care process."
+            }
+          ]} />
 
           {/* Internal Links */}
           <section className="py-16 bg-muted/30">

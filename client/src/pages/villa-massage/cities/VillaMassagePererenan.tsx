@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Star, CheckCircle } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassagePererenan() {
   const services = [
@@ -174,6 +175,34 @@ export default function VillaMassagePererenan() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Is villa massage available in Pererenan's developing neighborhoods?",
+              answer: "Yes! Villa massage service in Pererenan covers both established areas and new developments. Our therapists bring villa massage to rice field villas and beachfront properties throughout expanding Pererenan. Villa massage reaches every corner of this growing community between Canggu and Tanah Lot."
+            },
+            {
+              question: "Can I book villa massage near Pererenan Beach and black sand coast?",
+              answer: "Absolutely! Villa massage in Pererenan serves beachfront villas along the dramatic black sand coastline. Our villa massage service includes properties near Pererenan Beach and neighboring surf spots. Villa massage brings relaxation to villas with authentic coastal Pererenan character."
+            },
+            {
+              question: "How does villa massage work with Pererenan's quieter atmosphere?",
+              answer: "Villa massage in Pererenan perfectly suits the area's peaceful, less-developed vibe compared to busy Canggu. Our villa massage service respects Pererenan's tranquil environment and local community. Villa massage enhances the calm, authentic Balinese experience that draws visitors to Pererenan."
+            },
+            {
+              question: "Do villa massage therapists navigate Pererenan's rural roads and rice fields?",
+              answer: "Yes! Villa massage therapists in Pererenan know the back roads through rice paddies and village areas. Our team navigates villa massage appointments on narrow lanes and developing infrastructure. Villa massage service reliably reaches remote Pererenan villas surrounded by agricultural land."
+            },
+            {
+              question: "Can digital nomads book flexible villa massage in Pererenan co-living spaces?",
+              answer: "Definitely! Villa massage in Pererenan serves co-living communities and villa-share arrangements popular with remote workers. Our villa massage service accommodates flexible scheduling for digital nomad routines. Villa massage provides wellness support for Pererenan's growing remote work community."
+            },
+            {
+              question: "What makes villa massage special for Pererenan's authentic Bali experience?",
+              answer: "Villa massage in Pererenan combines professional service with authentic village atmosphere and natural surroundings. Our villa massage treatments often take place with rice field views and traditional Bali sounds. Villa massage in Pererenan offers genuine Balinese wellness away from tourist crowds."
+            }
+          ]} />
 
           {/* CTA Section */}
           <section className="py-16 bg-primary text-primary-foreground">

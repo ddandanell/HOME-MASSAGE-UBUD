@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Star, CheckCircle } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageCanggu() {
   const services = [
@@ -174,6 +175,34 @@ export default function VillaMassageCanggu() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Can villa massage therapists access villas in Canggu's small alleys?",
+              answer: "Yes! Villa massage therapists in Canggu know all the small gangs and shortcuts through rice fields. Our villa massage service reaches every Canggu neighborhood from Echo Beach to Berawa. Therapists arrive by scooter for easy villa massage access even in narrow paths."
+            },
+            {
+              question: "Is villa massage in Canggu available during high surf season?",
+              answer: "Absolutely! Villa massage in Canggu is especially popular during swell season when surfers need muscle recovery. We schedule villa massage sessions around tide times so you can surf during optimal conditions and recover afterward at your villa."
+            },
+            {
+              question: "Do you offer villa massage near Echo Beach and Batu Bolong?",
+              answer: "Yes, villa massage service covers all coastal Canggu areas including Echo Beach, Batu Bolong, and Berawa. Our therapists bring villa massage treatments to beachside villas, guesthouses, and properties throughout the entire Canggu coastline with same-day booking available."
+            },
+            {
+              question: "Can villa massage help with surfing-related shoulder pain?",
+              answer: "Definitely! Our villa massage therapists in Canggu specialize in surfer recovery, focusing on shoulders, lower back, and paddling muscles. Villa massage with deep tissue or sports techniques provides effective relief from surf-related tension and helps prevent chronic injuries."
+            },
+            {
+              question: "Is parking available for villa massage therapists in Canggu?",
+              answer: "Villa massage therapists in Canggu travel by scooter to navigate traffic and narrow streets easily. This means villa massage service doesn't require car parking space at your villa. Therapists simply need a safe spot to park their scooter during your treatment."
+            },
+            {
+              question: "What's the best time to book villa massage in Canggu?",
+              answer: "Evening villa massage in Canggu is most popular after surf sessions and beach days. However, villa massage is available throughout the day in Canggu. Many digital nomads prefer late afternoon villa massage between work and dinner, while surfers often book post-session recovery treatments."
+            }
+          ]} />
 
           {/* CTA Section */}
           <section className="py-16 bg-primary text-primary-foreground">

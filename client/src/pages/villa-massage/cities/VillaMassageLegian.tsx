@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Star, CheckCircle } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageLegian() {
   const services = [
@@ -174,6 +175,34 @@ export default function VillaMassageLegian() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Is villa massage available near Legian's Double Six Beach area?",
+              answer: "Yes! Villa massage service covers all Legian from Double Six Beach to the Kuta border. Our therapists bring villa massage to beachfront villas, boutique hotels, and residential properties throughout Legian. Villa massage reaches every neighborhood along Legian's famous beach strip."
+            },
+            {
+              question: "Can I book villa massage for pre-party relaxation in Legian?",
+              answer: "Absolutely! Villa massage in Legian is popular for preparing mind and body before hitting beach clubs and bars. Evening villa massage provides energy boost and stress relief before nightlife. Villa massage helps you enjoy Legian's party scene from a centered, refreshed state."
+            },
+            {
+              question: "How does villa massage work with Legian's mid-range villa accommodations?",
+              answer: "Villa massage in Legian is perfect for mid-range properties offering value and location. Our villa massage service doesn't require luxury villas—we bring professional treatments to all Legian accommodation types. Villa massage makes any Legian stay feel more upscale and pampering."
+            },
+            {
+              question: "Do villa massage therapists serve Legian's central shopping areas?",
+              answer: "Yes! Villa massage service covers villas near Legian's Jalan Melasti and central shopping streets. Our therapists bring villa massage to properties within walking distance of restaurants and boutiques. Villa massage provides recovery after exploring Legian's retail and dining scene."
+            },
+            {
+              question: "Can couples book villa massage before sunset at Double Six Beach?",
+              answer: "Definitely! Couples villa massage in Legian can be timed perfectly for post-treatment sunset beach walks. We schedule villa massage to finish in late afternoon so you're relaxed for Double Six sunset viewing. Villa massage enhances romantic Legian experiences with proper timing."
+            },
+            {
+              question: "What makes villa massage ideal for Legian's intermediate surfers?",
+              answer: "Villa massage in Legian targets intermediate surfer needs with deep tissue and sports recovery techniques. Legian's consistent waves create repetitive strain that villa massage addresses effectively. Villa massage helps surfers maintain performance throughout extended Legian surf trips."
+            }
+          ]} />
 
           {/* CTA Section */}
           <section className="py-16 bg-primary text-primary-foreground">

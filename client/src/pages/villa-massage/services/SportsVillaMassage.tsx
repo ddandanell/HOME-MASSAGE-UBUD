@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Star, Activity, Trophy, Zap } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function SportsVillaMassage() {
   return (
@@ -254,6 +255,34 @@ export default function SportsVillaMassage() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "How does sports villa massage differ from regular massage?",
+              answer: "Sports villa massage uses targeted techniques for athletic performance and injury prevention, focusing on sport-specific muscle groups. Villa massage therapists understand biomechanics and training stress patterns. Sports villa massage combines deep tissue, stretching, and trigger point work specifically designed for active individuals."
+            },
+            {
+              question: "When should I book sports villa massage—before or after activity?",
+              answer: "Pre-activity sports villa massage uses lighter, warming strokes to prepare muscles and prevent injury. Post-activity sports villa massage focuses on recovery with deeper pressure to reduce soreness. Villa massage therapists adjust sports techniques based on timing relative to your training or competition schedule."
+            },
+            {
+              question: "Can sports villa massage help prevent running injuries?",
+              answer: "Yes! Sports villa massage identifies and releases tight areas before they cause running injuries like IT band syndrome or plantar fasciitis. Villa massage therapists work calves, hamstrings, hip flexors, and feet systematically. Regular sports villa massage maintains muscle balance essential for injury-free running."
+            },
+            {
+              question: "Is sports villa massage suitable for weekend warriors and recreational athletes?",
+              answer: "Absolutely! Sports villa massage benefits anyone engaging in physical activity, not just professional athletes. Villa massage therapists adapt techniques for various fitness levels and sports. Weekend warriors often need sports villa massage more than pros due to less-consistent training and higher injury risk."
+            },
+            {
+              question: "Can sports villa massage improve surfing performance?",
+              answer: "Definitely! Sports villa massage addresses surfing-specific issues like shoulder rotation, paddling endurance, and pop-up flexibility. Villa massage therapists familiar with surf culture understand wave-riding biomechanics. Regular sports villa massage helps surfers maintain performance throughout extended Bali surf trips."
+            },
+            {
+              question: "How often should athletes receive sports villa massage?",
+              answer: "Serious athletes benefit from weekly sports villa massage during training periods and bi-weekly during maintenance phases. Villa massage therapists recommend frequency based on training intensity and recovery needs. Consistent sports villa massage prevents overuse injuries and optimizes athletic performance over time."
+            }
+          ]} />
 
           {/* Internal Links */}
           <section className="py-16 bg-muted/30">

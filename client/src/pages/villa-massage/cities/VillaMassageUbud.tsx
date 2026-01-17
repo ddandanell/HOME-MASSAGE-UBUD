@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Star, CheckCircle } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageUbud() {
   const services = [
@@ -174,6 +175,34 @@ export default function VillaMassageUbud() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Can villa massage therapists reach remote villas in Ubud's rice terraces?",
+              answer: "Yes! Villa massage therapists in Ubud know all the back roads through rice paddies and jungle areas. Our villa massage service reaches secluded properties in Tegallalang, Campuhan Ridge, and surrounding valleys. We specialize in villa massage access to Ubud's most peaceful hideaways."
+            },
+            {
+              question: "Is traditional Balinese villa massage more authentic in Ubud?",
+              answer: "Absolutely! Ubud is the cultural heart of Bali where traditional healing arts thrive. Villa massage therapists in Ubud often train at local healing centers and use authentic Balinese techniques. Villa massage in Ubud connects you with genuine Balinese wellness traditions in your private space."
+            },
+            {
+              question: "How does villa massage work with Ubud's steep villa locations?",
+              answer: "Villa massage therapists in Ubud are experienced with hillside properties and challenging terrain. Our therapists bring lightweight professional equipment perfect for villa massage in multi-level properties. Villa massage setup works in any room, balcony, or garden space you choose in your Ubud villa."
+            },
+            {
+              question: "Can I book villa massage after trekking and yoga in Ubud?",
+              answer: "Definitely! Villa massage in Ubud is ideal for recovery after Campuhan Ridge walks, yoga classes, and temple visits. Our villa massage therapists understand trekking fatigue and yoga-related muscle work. Villa massage sessions can be scheduled for late afternoon after your active Ubud explorations."
+            },
+            {
+              question: "What's special about aromatherapy villa massage in Ubud?",
+              answer: "Ubud's natural setting enhances aromatherapy villa massage with fresh air and forest sounds. Many villas have open-air spaces where villa massage combines essential oils with jungle ambiance. Villa massage in Ubud offers a truly immersive wellness experience surrounded by nature's healing energy."
+            },
+            {
+              question: "Do villa massage therapists serve Ubud's art village neighborhoods?",
+              answer: "Yes! Villa massage service covers all Ubud areas including Penestanan, Nyuh Kuning, Mas, and Peliatan art villages. Our therapists bring villa massage to traditional compounds and modern villas alike. Villa massage in Ubud reaches every neighborhood from central Monkey Forest to outlying creative communities."
+            }
+          ]} />
 
           {/* CTA Section */}
           <section className="py-16 bg-primary text-primary-foreground">
