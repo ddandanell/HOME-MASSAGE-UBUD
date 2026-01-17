@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, DollarSign } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function CouplesMobileMassage() {
   return (
@@ -228,6 +229,34 @@ export default function CouplesMobileMassage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "How does couples mobile massage work with two therapists?",
+          answer: "Couples mobile massage sends two professional therapists to your location with two complete massage tables and equipment setups. The therapists work simultaneously in synchronized rhythm, creating shared relaxation experience. Each partner receives full attention from their own dedicated mobile massage therapist while enjoying the experience together in your private villa space."
+        },
+        {
+          question: "Can we customize pressure and styles for each partner during couples mobile massage?",
+          answer: "Absolutely! In couples mobile massage, each therapist adapts independently to their client's preferences. One partner might prefer deep tissue mobile massage while the other chooses gentle relaxation. This flexibility makes couples mobile massage perfect for partners with different massage preferences, ensuring both enjoy optimal mobile massage experience simultaneously."
+        },
+        {
+          question: "What space is needed for couples mobile massage setup?",
+          answer: "Couples mobile massage requires space for two massage tables side-by-side (approximately 2m x 3m total). Most villa bedrooms, living rooms, or covered outdoor areas work perfectly for couples mobile massage. Our therapists can assess your space via photos before arrival if you're unsure whether it accommodates couples mobile massage setup."
+        },
+        {
+          question: "Is couples mobile massage suitable for honeymoons and anniversaries?",
+          answer: "Yes! Couples mobile massage is extremely popular for romantic occasions. We can enhance your couples mobile massage with aromatherapy candles, rose petals, and romantic music. The intimate privacy of mobile massage in your villa creates perfect honeymoon or anniversary experience without leaving your romantic accommodation."
+        },
+        {
+          question: "How much does couples mobile massage cost compared to individual sessions?",
+          answer: "Couples mobile massage is priced per person, essentially two individual mobile massage sessions occurring simultaneously. There's no significant premium for couples mobile massage service. The value comes from sharing the relaxation experience together and having professional mobile massage delivered to your private space with complete romantic setup."
+        },
+        {
+          question: "Can we book couples mobile massage for same-day appointments?",
+          answer: "Couples mobile massage often has same-day availability, though we recommend booking 24 hours ahead when possible since it requires coordinating two therapists' schedules. Contact us via WhatsApp in the morning for best same-day couples mobile massage availability, especially during peak seasons when mobile massage appointments fill quickly."
+        }
+      ]} />
 
       <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">

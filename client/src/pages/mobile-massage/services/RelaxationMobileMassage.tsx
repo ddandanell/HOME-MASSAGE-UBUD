@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, DollarSign } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function RelaxationMobileMassage() {
   return (
@@ -229,6 +230,34 @@ export default function RelaxationMobileMassage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "What makes relaxation mobile massage different from other massage types?",
+          answer: "Relaxation mobile massage emphasizes gentle, flowing strokes and calming atmosphere over therapeutic manipulation. Unlike deep tissue mobile massage targeting specific problems, relaxation mobile massage provides full-body stress relief. The lighter pressure and slower pace of relaxation mobile massage induces deep calm, making this mobile massage style perfect for pure unwinding and mental rejuvenation."
+        },
+        {
+          question: "Can relaxation mobile massage help with sleep problems?",
+          answer: "Yes! Relaxation mobile massage significantly improves sleep quality by reducing stress hormones and activating the parasympathetic nervous system. Evening relaxation mobile massage sessions are particularly effective for insomnia. The calming effects of mobile massage continue hours after treatment, helping establish healthier sleep patterns. Many guests book regular relaxation mobile massage specifically for sleep improvement."
+        },
+        {
+          question: "Is relaxation mobile massage suitable for massage beginners?",
+          answer: "Absolutely! Relaxation mobile massage is perfect for first-time clients. The gentle pressure and non-intimidating approach makes this mobile massage style very accessible. Relaxation mobile massage introduces benefits of therapeutic touch without intensity that might overwhelm newcomers. It's also ideal for elderly clients or anyone preferring gentle mobile massage experience."
+        },
+        {
+          question: "How long should a relaxation mobile massage session last?",
+          answer: "Relaxation mobile massage typically runs 60 or 90 minutes. The 90-minute session is recommended for full relaxation benefits, allowing complete full-body coverage without rushing. Shorter 60-minute relaxation mobile massage works for maintenance sessions or time-constrained schedules. Longer duration mobile massage deepens relaxation effects and provides more comprehensive stress relief."
+        },
+        {
+          question: "Can relaxation mobile massage use aromatherapy?",
+          answer: "Yes! Aromatherapy enhances relaxation mobile massage significantly. We offer lavender for sleep and relaxation, chamomile for stress, and other calming essential oils during your mobile massage. The combination of gentle touch and therapeutic scents in relaxation mobile massage creates multi-sensory calming experience. Specify your aromatherapy preferences when booking mobile massage."
+        },
+        {
+          question: "Is relaxation mobile massage effective for anxiety and stress?",
+          answer: "Extremely effective! Relaxation mobile massage reduces cortisol (stress hormone) while increasing serotonin and dopamine (mood-elevating chemicals). Regular relaxation mobile massage sessions help manage chronic anxiety and work-related stress. The convenience of mobile massage in familiar surroundings further reduces anxiety compared to visiting unfamiliar spas for relaxation mobile massage treatments."
+        }
+      ]} />
 
       <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
