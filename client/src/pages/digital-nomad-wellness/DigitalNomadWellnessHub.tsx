@@ -573,7 +573,10 @@ export default function DigitalNomadWellnessHub() {
             </div>
 
             <div className="mt-8 p-6 bg-secondary/20 rounded-lg">
-              <h3 className="font-bold text-lg mb-3">⚠️ Warning Signs You Need Immediate Treatment</h3>
+              <div className="flex items-center gap-2 mb-3">
+                <Shield className="w-5 h-5 text-primary" />
+                <h3 className="font-bold text-lg">Warning Signs You Need Immediate Treatment</h3>
+              </div>
               <p className="text-muted-foreground mb-4">
                 Don't wait until pain becomes unbearable. If you experience any of these symptoms, book a session within 48 hours:
               </p>
@@ -600,9 +603,9 @@ export default function DigitalNomadWellnessHub() {
             <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <CardContent className="p-6">
-                  <div className="flex gap-1 mb-4">
+                  <div className="flex gap-1 mb-4" aria-label="5 out of 5 stars" role="img">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                      <Star key={i} className="w-5 h-5 fill-primary text-primary" aria-hidden="true" />
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4">
@@ -622,9 +625,9 @@ export default function DigitalNomadWellnessHub() {
 
               <Card>
                 <CardContent className="p-6">
-                  <div className="flex gap-1 mb-4">
+                  <div className="flex gap-1 mb-4" aria-label="5 out of 5 stars" role="img">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                      <Star key={i} className="w-5 h-5 fill-primary text-primary" aria-hidden="true" />
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4">
@@ -644,9 +647,9 @@ export default function DigitalNomadWellnessHub() {
 
               <Card>
                 <CardContent className="p-6">
-                  <div className="flex gap-1 mb-4">
+                  <div className="flex gap-1 mb-4" aria-label="5 out of 5 stars" role="img">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                      <Star key={i} className="w-5 h-5 fill-primary text-primary" aria-hidden="true" />
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4">
@@ -666,9 +669,9 @@ export default function DigitalNomadWellnessHub() {
 
               <Card>
                 <CardContent className="p-6">
-                  <div className="flex gap-1 mb-4">
+                  <div className="flex gap-1 mb-4" aria-label="5 out of 5 stars" role="img">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                      <Star key={i} className="w-5 h-5 fill-primary text-primary" aria-hidden="true" />
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4">
