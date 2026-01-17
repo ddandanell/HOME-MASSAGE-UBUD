@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Check } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function MobileMassageCanggu() {
   return (
@@ -244,6 +245,34 @@ export default function MobileMassageCanggu() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "How quickly can I get mobile massage service in Canggu?",
+          answer: "Mobile massage in Canggu is typically available within 1-3 hours of booking via WhatsApp. Our therapists are familiar with all Canggu areas including Echo Beach, Berawa, and Batu Bolong. Same-day mobile massage service is standard throughout Canggu, making it perfect for spontaneous wellness sessions after surfing or yoga."
+        },
+        {
+          question: "Do mobile massage therapists in Canggu know how to find small villas and guesthouses?",
+          answer: "Yes! Our mobile massage therapists are experienced navigating Canggu's maze of small streets and alleys. They know the area extremely well, including shortcuts through rice fields and all the small gangs. Simply provide your accommodation name or GPS location when booking mobile massage in Canggu, and we'll find you easily."
+        },
+        {
+          question: "Is mobile massage in Canggu suitable for surfers with muscle soreness?",
+          answer: "Absolutely! Mobile massage is ideal for surfers in Canggu. Our therapists offer specialized post-surf treatments targeting shoulders, back, and paddling muscles. Many Canggu surfers book mobile massage for late morning or afternoon sessions after dawn patrol. Deep tissue and sports massage techniques help with recovery and prevent injuries."
+        },
+        {
+          question: "Can I book regular weekly mobile massage sessions in Canggu as a digital nomad?",
+          answer: "Yes! Many digital nomads in Canggu book recurring mobile massage appointments weekly or bi-weekly. This helps manage desk-related tension and maintains wellness during extended stays. We offer priority scheduling for regular mobile massage clients and can often arrange your preferred therapist for consistency throughout your time in Canggu."
+        },
+        {
+          question: "What areas of Canggu does your mobile massage service cover?",
+          answer: "Our mobile massage service covers all Canggu neighborhoods including Echo Beach, Berawa Beach, Batu Bolong, Pantai Berawa, Padonan, Pererenan, and Cemagi. Whether you're in a beachfront villa, modern apartment, boutique hotel, or co-living space, mobile massage reaches your location. No additional fees apply regardless of where in Canggu you're staying."
+        },
+        {
+          question: "What payment methods do you accept for mobile massage in Canggu?",
+          answer: "Mobile massage in Canggu is paid in cash (Indonesian Rupiah) at the time of service. Canggu has numerous ATMs along the main road, near Echo Beach, and in Batu Bolong area. Many accommodations also offer money exchange. We provide receipts upon request for all mobile massage treatments."
+        }
+      ]} />
 
       {/* Block 6: CTA and Links */}
       <section className="py-16 md:py-20 bg-background">

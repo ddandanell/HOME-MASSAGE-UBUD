@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Check } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function MobileMassageSeminyak() {
   return (
@@ -245,6 +246,34 @@ export default function MobileMassageSeminyak() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "How do I book mobile massage in Seminyak luxury resorts and villas?",
+          answer: "Booking mobile massage for Seminyak luxury properties is simple via WhatsApp at +62 811-2656-869. Our therapists coordinate professionally with resort security and villa management. We serve all Seminyak accommodations from Petitenget to Double Six Beach, delivering spa-quality mobile massage treatments to your private space."
+        },
+        {
+          question: "Is mobile massage in Seminyak available for hotel guests?",
+          answer: "Yes! Mobile massage service is available for all Seminyak hotels, resorts, and villas. Our therapists are experienced working with luxury properties throughout Seminyak and coordinate seamlessly with hotel staff. Many Seminyak visitors prefer mobile massage for the privacy and convenience of in-room spa treatments without leaving their accommodation."
+        },
+        {
+          question: "What makes mobile massage in Seminyak different from spa visits?",
+          answer: "Mobile massage in Seminyak eliminates the need to navigate busy streets, find parking, or schedule around spa opening hours. Your therapist brings professional equipment, premium oils, and complete spa setup directly to your villa or hotel room. This is especially valuable in Seminyak where traffic can be challenging and spas often require advance reservations."
+        },
+        {
+          question: "Can mobile massage therapists access gated villas in Seminyak?",
+          answer: "Absolutely. Our mobile massage therapists are professional and experienced accessing gated communities and luxury villas throughout Seminyak. Simply inform your villa security or management that you're expecting a massage therapist, or provide our contact information. Most Seminyak properties are very accommodating of mobile massage services."
+        },
+        {
+          question: "What are the best times to book mobile massage in Seminyak?",
+          answer: "Mobile massage in Seminyak is available 7am-10pm daily. Morning sessions (8-11am) are popular before beach or shopping activities. Afternoon treatments (2-5pm) work well after beach time. Evening mobile massage (7-10pm) is ideal for unwinding after dining at Seminyak's restaurants. Weekend slots book quickly, so reserve 1-2 days ahead."
+        },
+        {
+          question: "Does mobile massage in Seminyak include couples treatments?",
+          answer: "Yes! Couples mobile massage is very popular in Seminyak's romantic setting. We send two therapists to your villa or hotel with complete equipment for synchronized treatments. This is perfect for honeymoons, anniversaries, or couples enjoying Seminyak's beach clubs and sunset dining together."
+        }
+      ]} />
 
       {/* Block 6: CTA and Links */}
       <section className="py-16 md:py-20 bg-background">

@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Check } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function MobileMassageNusaDua() {
   return (
@@ -320,6 +321,34 @@ export default function MobileMassageNusaDua() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "Can mobile massage therapists access luxury resorts in Nusa Dua's gated area?",
+          answer: "Yes! Our mobile massage therapists are experienced working with Nusa Dua's luxury resort security protocols. We coordinate professionally with hotel management for seamless access to your room or villa. Many Nusa Dua resort guests prefer mobile massage for the privacy and personalized attention compared to resort spa facilities."
+        },
+        {
+          question: "How does mobile massage pricing compare to Nusa Dua resort spas?",
+          answer: "Mobile massage in Nusa Dua offers exceptional value compared to resort spa prices. Our rates are transparent with no hidden fees or resort markups. You receive the same professional quality treatment in your private space at a fraction of resort spa costs, making mobile massage very popular with budget-conscious Nusa Dua visitors."
+        },
+        {
+          question: "Is mobile massage available for Nusa Dua convention center and MICE event participants?",
+          answer: "Absolutely! Mobile massage is popular among business travelers attending events at Nusa Dua's BTDC convention center. We serve hotels throughout the BTDC complex and can accommodate group bookings for corporate wellness. Post-conference mobile massage helps business travelers recover from long meetings and travel fatigue."
+        },
+        {
+          question: "What areas in and around Nusa Dua does mobile massage cover?",
+          answer: "Mobile massage covers all Nusa Dua including the BTDC (Bali Tourism Development Center) gated area, all luxury resorts along the beach, Tanjung Benoa water sports area, and nearby neighborhoods. We serve the entire Nusa Dua peninsula from The Mulia to Club Med, including private villas and residential areas."
+        },
+        {
+          question: "Can I book mobile massage on Nusa Dua beach or at beach clubs?",
+          answer: "While we primarily serve private accommodations, some Nusa Dua beach clubs and beach areas allow mobile massage setups. Contact us to discuss your specific beach location. Most Nusa Dua resort guests prefer mobile massage in their private beachfront villas or hotel rooms for comfort and privacy."
+        },
+        {
+          question: "How far in advance should I book mobile massage in Nusa Dua during peak season?",
+          answer: "During Nusa Dua's peak season (July-August, December-January), we recommend booking mobile massage 24-48 hours in advance, especially for couples treatments or evening appointments. Morning and midday slots are easier to arrange same-day. For high-season guarantee, book as early as possible."
+        }
+      ]} />
 
       {/* Block 7: CTA and Links */}
       <section className="py-16 md:py-20 bg-secondary/20">
