@@ -22,6 +22,9 @@ import RecommendedServices from "@/pages/RecommendedServices";
 // Blog Articles
 import PremiumHomeMassageKuta from "@/pages/blog/PremiumHomeMassageKuta";
 
+// Digital Nomad Wellness - Hub
+import DigitalNomadWellnessHub from "@/pages/digital-nomad-wellness/DigitalNomadWellnessHub";
+
 // Home Massage Silo - Hub
 import HomeMassageHub from "@/pages/home-massage/HomeMassageHub";
 
@@ -213,6 +216,9 @@ function Router() {
       
       {/* Blog Articles */}
       <Route path="/blog/premium-home-massage-kuta" component={PremiumHomeMassageKuta} />
+      
+      {/* Digital Nomad Wellness - Complete structure */}
+      <Route path="/digital-nomad-wellness" component={DigitalNomadWellnessHub} />
       
       {/* Home Massage Silo - Complete structure */}
       <Route path="/home-massage" component={HomeMassageHub} />
