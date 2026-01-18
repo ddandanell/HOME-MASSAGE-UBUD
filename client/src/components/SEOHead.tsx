@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'wouter';
+import { generateCanonicalUrl } from '@/lib/seoUtils';
 
 interface SEOHeadProps {
   title: string;
@@ -23,11 +24,9 @@ export default function SEOHead({
 }: SEOHeadProps) {
   const [location] = useLocation();
   const fullTitle = title.includes('Home Massage Ubud') ? title : `${title} | Home Massage Ubud`;
-  const siteUrl = 'https://homemassageubud.com';
   
   // Generate canonical URL - use provided canonical or construct from current location
-  // Always use absolute URL without trailing slash
-  const canonicalUrl = canonical || `${siteUrl}${location === '/' ? '' : location.replace(/\/$/, '')}`;
+  const canonicalUrl = canonical || generateCanonicalUrl(location);
 
   return (
     <Helmet>

@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { LEGAL_PAGES_CONFIG } from "@/lib/legalConfig";
 
 export default function TermsAndConditions() {
   return (
@@ -23,7 +24,7 @@ export default function TermsAndConditions() {
           
           <div className="prose prose-lg max-w-none">
             <p className="text-muted-foreground text-center mb-8">
-              Last Updated: January 18, 2026
+              Last Updated: {LEGAL_PAGES_CONFIG.termsAndConditions.lastUpdated}
             </p>
             
             <section className="mb-8">
