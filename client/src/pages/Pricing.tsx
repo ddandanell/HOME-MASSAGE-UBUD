@@ -117,8 +117,8 @@ export default function Pricing() {
   return (
     <>
       <SEOHead
-        title="Massage Pricing Ubud | Fair & Transparent Rates"
-        description="Ubud massage pricing from 280k IDR. Professional in-villa massage rates. Traditional Balinese, deep tissue & more. Transparent pricing, no hidden fees."
+        title="Ubud Massage Pricing | Transparent Rates from 280k"
+        description="Ubud massage pricing from 280k IDR per session. In-villa service with licensed therapists, all equipment included. Traditional Balinese, deep tissue & more. Book now."
         canonical="https://homemassageubud.com/pricing"
         keywords="ubud massage price, massage ubud cost, ubud massage rates, villa massage pricing, spa prices ubud, massage therapy cost ubud bali"
       />
@@ -132,12 +132,12 @@ export default function Pricing() {
           </Badge>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 sm:mb-8">
-            Professional Massage Services
-            <span className="text-amber-600"> at Your Villa</span>
+            Ubud Massage Pricing
+            <span className="text-amber-600"> – Transparent Rates</span>
           </h1>
           
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-10 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-            Premium therapeutic treatments delivered to your accommodation. 
+            Ubud massage pricing from 280k IDR. Premium therapeutic treatments delivered to your villa. 
             All prices include transportation, setup, and professional equipment.
           </p>
 
@@ -383,6 +383,29 @@ export default function Pricing() {
               </Button>
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section with Internal Links */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-50 via-white to-amber-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Book Your Ubud Massage Today
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+            Our Ubud massage pricing is transparent with no hidden fees. All prices include licensed therapists, 
+            premium equipment, and setup at your villa. Browse our complete <a href="/services" className="text-amber-600 hover:text-amber-700 font-semibold underline">massage services</a> or 
+            explore all <a href="/treatments" className="text-amber-600 hover:text-amber-700 font-semibold underline">massage treatments Ubud</a>. 
+            We deliver to <a href="/service-areas" className="text-amber-600 hover:text-amber-700 font-semibold underline">your location in Bali</a> – book your session now.
+          </p>
+          <Button 
+            size="lg" 
+            className="bg-emerald-200 hover:bg-emerald-300 text-gray-900"
+            onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
+          >
+            <MessageCircle className="mr-2 h-5 w-5" />
+            WhatsApp Booking
+          </Button>
         </div>
       </section>
     </div>

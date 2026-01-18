@@ -43,8 +43,8 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground antialiased">
       {/* SEO Meta Tags */}
       <SEOHead
-        title="Ubud Massage | #1 In-Villa Massage Ubud Bali"
-        description="★★★★★ Professional Ubud massage services to your villa. Traditional Balinese, deep tissue & aromatherapy. Mobile spa Ubud. Book now ☎ +62 811-2656-869"
+        title="Ubud Massage | #1 In-Villa Spa Service Bali"
+        description="Ubud massage delivered to your villa. Professional Balinese therapists, traditional treatments from 280k IDR. Licensed, premium service. Book now +62 811-2656-869"
         canonical="https://homemassageubud.com"
         keywords="ubud massage, massage ubud, in villa massage ubud, balinese massage ubud, home massage ubud, spa ubud, massage ubud bali"
       />

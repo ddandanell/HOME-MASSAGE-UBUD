@@ -80,8 +80,8 @@ export default function About() {
   return (
     <>
       <SEOHead
-        title="About Us | Expert Massage Therapists in Ubud Bali"
-        description="Meet our licensed massage therapists in Ubud. 8+ years experience in traditional Balinese healing. Professional in-villa spa service with 500+ 5-star reviews."
+        title="About Us | Professional Massage Therapists Ubud"
+        description="About Home Massage Ubud – 8+ years serving Bali with licensed massage therapists. Traditional Balinese healing, in-villa service. 500+ five-star reviews. Book now."
         canonical="https://homemassageubud.com/about"
         keywords="massage therapists ubud, about home massage ubud, professional massage ubud, licensed therapists bali, spa team ubud"
       />
@@ -96,16 +96,14 @@ export default function About() {
                 About Home Massage Ubud
               </Badge>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-                Bringing <span className="text-gray-900">Authentic</span>
+                Professional Massage Therapists Ubud
                 <br />
-                <span className="text-amber-600">Balinese Wellness</span>
-                <br />
-                To Your Doorstep
+                <span className="text-amber-600">Authentic Balinese Wellness</span>
               </h1>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
-                Founded with a passion for traditional healing arts, we bring the authentic 
-                experience of Balinese massage therapy directly to your villa, hotel, or accommodation 
-                throughout Ubud and surrounding areas.
+                Home Massage Ubud brings professional massage therapists and traditional Balinese healing arts 
+                directly to your villa, hotel, or accommodation throughout Ubud and surrounding areas. 
+                Founded with a passion for authentic wellness, we deliver exceptional in-villa spa experiences.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -291,6 +289,13 @@ export default function About() {
               </Button>
             </a>
           </div>
+          
+          <p className="text-lg text-white/90 mt-8 max-w-2xl mx-auto">
+            Our massage therapists Ubud deliver <a href="/services" className="text-amber-300 hover:text-amber-200 font-semibold underline">professional massage services</a> across 
+            all <a href="/service-areas" className="text-amber-300 hover:text-amber-200 font-semibold underline">Bali locations</a>. 
+            View <a href="/treatments" className="text-amber-300 hover:text-amber-200 font-semibold underline">all treatments</a> and 
+            check our <a href="/pricing" className="text-amber-300 hover:text-amber-200 font-semibold underline">transparent pricing</a> to book your session today.
+          </p>
         </div>
       </section>
 

@@ -170,8 +170,8 @@ export default function ServiceAreas() {
   return (
     <div className="min-h-screen bg-background text-foreground antialiased">
       <SEOHead
-        title="Service Areas | Home Massage Ubud - All Locations in Bali"
-        description="Home Massage Ubud serves 23+ locations across Bali including Ubud, Seminyak, Canggu, Sanur, Nusa Dua, Uluwatu, and more. Mobile spa service delivered to your villa or hotel. Book now!"
+        title="Service Areas Ubud Massage | 23+ Bali Locations"
+        description="Service areas for Ubud massage across 23+ Bali locations: Ubud, Seminyak, Canggu, Sanur, Uluwatu & more. Professional in-villa massage delivered to your location."
         canonical="https://homemassageubud.com/service-areas"
         keywords="massage service areas bali, ubud massage locations, seminyak massage, canggu massage, mobile spa bali, in-villa massage areas"
       />
@@ -189,12 +189,15 @@ export default function ServiceAreas() {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Service Areas Across Bali
+                Service Areas Ubud Massage
+                <br />
+                <span className="text-amber-600">23+ Bali Locations</span>
               </h1>
               
               <p className="text-xl text-gray-600 mb-8">
-                Professional in-villa massage therapy delivered to your accommodation throughout Bali. 
-                From Ubud rice terraces to beachside Seminyak, from surf spots in Canggu to clifftop villas in Uluwatu.
+                Service areas for professional Ubud massage delivered to your villa throughout Bali. 
+                From Ubud rice terraces to Seminyak beaches, Canggu surf spots to Uluwatu clifftops – we bring 
+                licensed therapists and premium treatments directly to your accommodation.
               </p>
               
               <div className="flex flex-wrap justify-center gap-4">
@@ -258,7 +261,10 @@ export default function ServiceAreas() {
               Can't Find Your Location?
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              We serve many more areas across Bali! Contact us to check if we serve your villa, hotel, or guesthouse.
+              We serve many more service areas for Ubud massage across Bali! Contact us to check if we serve your villa, hotel, or guesthouse. 
+              View our complete <a href="/services" className="text-amber-600 hover:text-amber-700 font-semibold underline">massage services</a>, 
+              explore <a href="/treatments" className="text-amber-600 hover:text-amber-700 font-semibold underline">all treatment options</a>, or 
+              check <a href="/pricing" className="text-amber-600 hover:text-amber-700 font-semibold underline">pricing and rates</a> for your location.
             </p>
             <Button 
               size="lg" 
