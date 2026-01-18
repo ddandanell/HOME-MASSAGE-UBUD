@@ -59,6 +59,10 @@ import HomeMassageVsSpa from "@/pages/home-massage/blog/HomeMassageVsSpa";
 import IsHomeMassageSafe from "@/pages/home-massage/blog/IsHomeMassageSafe";
 import WhyTouristsPreferHomeMassage from "@/pages/home-massage/blog/WhyTouristsPreferHomeMassage";
 import HowToBookHomeMassage from "@/pages/home-massage/blog/HowToBookHomeMassage";
+import HomeMassageGuideBali from "@/pages/home-massage/blog/HomeMassageGuideBali";
+import BenefitsHomeMassageBali from "@/pages/home-massage/blog/BenefitsHomeMassageBali";
+import HomeMassageVsSpaBali from "@/pages/home-massage/blog/HomeMassageVsSpaBali";
+import HomeMassageSeminyakCanggu from "@/pages/home-massage/blog/HomeMassageSeminyakCanggu";
 
 // Mobile Massage Silo - Hub
 import MobileMassageHub from "@/pages/mobile-massage/MobileMassageHub";
@@ -256,6 +260,10 @@ function Router() {
       <Route path="/home-massage/blog/is-home-massage-safe" component={IsHomeMassageSafe} />
       <Route path="/home-massage/blog/why-tourists-prefer-home-massage" component={WhyTouristsPreferHomeMassage} />
       <Route path="/home-massage/blog/how-to-book-home-massage" component={HowToBookHomeMassage} />
+      <Route path="/home-massage/blog/home-massage-guide-bali" component={HomeMassageGuideBali} />
+      <Route path="/home-massage/blog/benefits-home-massage-bali" component={BenefitsHomeMassageBali} />
+      <Route path="/home-massage/blog/home-massage-vs-spa-bali" component={HomeMassageVsSpaBali} />
+      <Route path="/home-massage/blog/home-massage-seminyak-canggu" component={HomeMassageSeminyakCanggu} />
       
       {/* Mobile Massage Silo - Complete structure */}
       <Route path="/mobile-massage" component={MobileMassageHub} />
