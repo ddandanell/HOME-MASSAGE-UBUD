@@ -48,6 +48,8 @@ const mainPages: SitemapUrl[] = [
   { loc: `${DOMAIN}/blog`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.7 },
   { loc: `${DOMAIN}/sustainability`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
   { loc: `${DOMAIN}/villa-partnerships`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/privacy-policy`, lastmod: getCurrentDate(), changefreq: 'yearly', priority: 0.3 },
+  { loc: `${DOMAIN}/terms-and-conditions`, lastmod: getCurrentDate(), changefreq: 'yearly', priority: 0.3 },
 ];
 
 // Treatment pages
