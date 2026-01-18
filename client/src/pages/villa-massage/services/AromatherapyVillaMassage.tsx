@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Star, Flower2, Droplets, Sparkles } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function AromatherapyVillaMassage() {
   return (
@@ -254,6 +255,34 @@ export default function AromatherapyVillaMassage() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Which essential oils are used in aromatherapy villa massage?",
+              answer: "Aromatherapy villa massage typically uses lavender for relaxation, eucalyptus for respiratory relief, or lemongrass for energizing effects. Villa massage therapists bring organic essential oil blends customized to your needs. Each aromatherapy villa massage session includes consultation to select oils matching your therapeutic goals."
+            },
+            {
+              question: "Can I request specific scents for aromatherapy villa massage?",
+              answer: "Absolutely! Aromatherapy villa massage allows you to choose preferred essential oils or avoid scents you dislike. Villa massage therapists carry various oils including frangipani, peppermint, ylang-ylang, and sandalwood. Custom aromatherapy villa massage ensures you enjoy both the scent and therapeutic benefits."
+            },
+            {
+              question: "How do essential oils enhance villa massage effectiveness?",
+              answer: "Essential oils in aromatherapy villa massage absorb through skin and affect emotions via olfactory pathways to the brain. Villa massage therapists combine oils with massage strokes for synergistic benefits. Aromatherapy villa massage addresses both physical tension and emotional stress simultaneously for holistic healing."
+            },
+            {
+              question: "Is aromatherapy villa massage safe for sensitive skin?",
+              answer: "Yes! Aromatherapy villa massage uses diluted essential oils in carrier oils to prevent irritation. Villa massage therapists can adjust concentration or select gentler oils for sensitive skin. Always inform villa massage therapists about allergies so aromatherapy formulations can be customized safely."
+            },
+            {
+              question: "Can aromatherapy villa massage help with headaches and migraines?",
+              answer: "Definitely! Aromatherapy villa massage using peppermint or lavender oils effectively relieves tension headaches and migraine symptoms. Villa massage therapists focus on neck, shoulder, and temple points while aromatherapy vapors provide additional relief. Many people find aromatherapy villa massage prevents recurring headaches."
+            },
+            {
+              question: "How long do aromatherapy scents linger after villa massage?",
+              answer: "Aromatherapy villa massage leaves gentle scents on your skin for 2-4 hours, creating lasting therapeutic effects. Villa massage therapists use natural oils that fade gradually unlike synthetic fragrances. The subtle aromatherapy presence extends relaxation benefits beyond your villa massage session."
+            }
+          ]} />
 
           {/* Internal Links */}
           <section className="py-16 bg-muted/30">

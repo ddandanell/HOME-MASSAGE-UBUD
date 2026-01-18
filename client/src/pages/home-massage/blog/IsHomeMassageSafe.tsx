@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Shield, CheckCircle, AlertTriangle, Award, FileCheck, Users, Lock, AlertCircle, Clock, CreditCard } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function IsHomeMassageSafe() {
   return (
     <>
       <SEOHead 
-        title="Is Home Massage Safe? Safety Standards, Verification & Trust Guide"
-        description="Discover the truth about home massage safety. Learn about therapist verification, safety protocols, red flags to watch for, and why professional home massage can be safer than spas."
+        title="Is Home Massage Safe | Home Massage"
+        description="Learn about home massage safety standards and verification. Call or WhatsApp to book verified home massage therapists in Bali today."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -34,8 +39,19 @@ export default function IsHomeMassageSafe() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'direct-answer', label: 'The Direct Answer' },
+        { id: 'what-makes-safe', label: 'What Makes Home Massage Safe' },
+        { id: 'timing-tips', label: 'Best Times to Book' },
+        { id: 'communication', label: 'What to Tell Providers' },
+        { id: 'payment', label: 'Payment Information' },
+        { id: 'preparation', label: 'Preparation Guide' },
+        { id: 'troubleshooting', label: 'Troubleshooting Issues' }
+      ]} />
+
       {/* Block 1: Direct Answer */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="direct-answer" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -65,7 +81,7 @@ export default function IsHomeMassageSafe() {
       </section>
 
       {/* Block 2: What Makes Home Massage Safe */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="what-makes-safe" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -167,7 +183,7 @@ export default function IsHomeMassageSafe() {
       </section>
 
       {/* Block 3: Timing Tips for Home Massage Booking */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="timing-tips" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -233,7 +249,7 @@ export default function IsHomeMassageSafe() {
       </section>
 
       {/* Block 4: What to Communicate When Booking Home Massage */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="communication" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -319,7 +335,7 @@ export default function IsHomeMassageSafe() {
       </section>
 
       {/* Block 5: Payment Information and Methods */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="payment" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -415,7 +431,7 @@ export default function IsHomeMassageSafe() {
       </section>
 
       {/* Block 6: Special Preparation for Home Massage Booking */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="preparation" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -505,7 +521,7 @@ export default function IsHomeMassageSafe() {
       </section>
 
       {/* Block 7: Troubleshooting Common Home Massage Booking Issues */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="troubleshooting" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -699,94 +715,42 @@ export default function IsHomeMassageSafe() {
         </div>
       </section>
 
-      {/* Soft CTA */}
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Book Safe, Professional Home Massage Today
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Now that you understand home massage safety completely, experience the peace of mind that comes with professional, verified service
-              </p>
-              <Button size="lg" className="text-lg px-8" asChild>
-                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                  Book Verified Home Massage via WhatsApp
-                </a>
-              </Button>
-            </div>
+      {/* Safety Standards */}
+      <SafetyStandards />
 
-            <div className="border-t pt-12">
-              <h3 className="text-2xl font-semibold mb-8">Explore Home Massage Options</h3>
-              
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <h4 className="font-semibold mb-4 text-lg">Home Massage Services:</h4>
-                  <div className="space-y-2">
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/balinese">Balinese Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/deep-tissue">Deep Tissue Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/couples">Couples Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/relaxation">Relaxation Home Massage</Link>
-                    </Button>
-                  </div>
-                </div>
+      {/* Spider Links Block */}
+      <SpiderLinksBlock currentPage="/home-massage/blog/is-home-massage-safe" />
 
-                <div>
-                  <h4 className="font-semibold mb-4 text-lg">Home Massage by Location:</h4>
-                  <div className="space-y-2">
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/ubud">Home Massage in Ubud</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/canggu">Home Massage in Canggu</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/seminyak">Home Massage in Seminyak</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/sanur">Home Massage in Sanur</Link>
-                    </Button>
-                  </div>
-                </div>
-              </div>
+      {/* Booking CTA */}
+      <BookingCTA />
 
-              <div>
-                <h4 className="font-semibold mb-4 text-lg">Essential Home Massage Guides:</h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/knowledge/safety">Safety Standards</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/knowledge/what-to-expect">What to Expect</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/blog/what-is-home-massage">What is Home Massage?</Link>
-                  </Button>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-3">
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/blog/how-to-book-home-massage">How to Book</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/blog/why-tourists-prefer-home-massage">Why Choose Home Massage</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage">Home Massage Hub</Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* FAQ Section */}
+      <HomeMassageFAQ items={[
+        {
+          question: "Is home massage safe?",
+          answer: "Yes, professional home massage is safe when you book through verified providers. Home massage safety depends on choosing legitimate services that verify therapists, maintain standards, and operate transparently. Professional home massage can actually be safer than random spa visits because you know exactly who's coming and can verify credentials in advance."
+        },
+        {
+          question: "How do I verify my home massage therapist is legitimate?",
+          answer: "Professional home massage services provide therapist names, credentials, and profiles before arrival. Ask to see ID, training certificates, and massage license documentation. Reputable home massage companies maintain therapist databases with background verification. Check reviews, ask for references, and verify the company's longevity in the market."
+        },
+        {
+          question: "What safety precautions should I take when booking home massage?",
+          answer: "Book through established home massage companies with verifiable reputations. Get written confirmation with therapist details. Ensure your accommodation knows about the appointment. Keep your phone accessible. Trust your instincts—if anything feels wrong, end the session immediately. Professional home massage therapists expect and respect these precautions."
+        },
+        {
+          question: "Can I request a specific gender therapist for home massage?",
+          answer: "Yes. Professional home massage services accommodate gender preferences. Simply specify your preference when booking. This is standard practice and ensures your complete comfort during treatment. Both male and female home massage therapists maintain identical professional standards and qualifications."
+        },
+        {
+          question: "What if I'm uncomfortable during my home massage?",
+          answer: "Speak up immediately. Professional home massage therapists welcome feedback and adjust treatment accordingly. You can request pressure changes, skip areas, take breaks, or end the session entirely. Reputable home massage companies support client comfort completely and typically offer refunds or rescheduling if you're genuinely uncomfortable."
+        },
+        {
+          question: "Are home massage therapists properly trained and licensed?",
+          answer: "Professional home massage services require identical qualifications as spa therapists—certified training, licensing, and proven experience. Licensed practitioners deliver Balinese home massage, deep tissue home massage, and other modalities with verified expertise. Reputable home massage companies maintain rigorous therapist verification that often exceeds typical spa standards."
+        }
+      ]} />
         </main>
         <Footer />
       </div>

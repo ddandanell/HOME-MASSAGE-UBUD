@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import BalineseMassageFAQ from "@/components/balinese-massage/BalineseMassageFAQ";
 
 export default function BalineseMassagePadangbai() {
   return (
@@ -102,6 +103,33 @@ export default function BalineseMassagePadangbai() {
           </p>
         </div>
       </section>
+
+      <BalineseMassageFAQ items={[
+        {
+          question: "Can transit travelers get quick Balinese massage during ferry waits in Padangbai?",
+          answer: "Yes! Padangbai's ferry port location makes it perfect for travel-day Balinese massage. We offer flexible scheduling around boat departures to/from Lombok and the Gilis, providing 60-minute treatments that fit between connections. Traditional Balinese massage effectively relieves travel tension from backpacks, ferry rides, and transit stress while the acupressure techniques reduce travel anxiety. Many backpackers and island-hoppers discover that Balinese massage during Padangbai layovers transforms exhausting transit into refreshing wellness breaks. The quick but authentic Balinese healing makes long travel days more manageable and enjoyable rather than merely endured."
+        },
+        {
+          question: "How does Balinese massage benefit budget travelers in backpacker-friendly Padangbai?",
+          answer: "Padangbai's affordable guesthouse scene makes regular Balinese massage accessible to budget-conscious travelers. Traditional Balinese massage quality depends on therapist skill and authentic techniques, not luxury accommodation—we provide the same certified practitioners and genuine methods at simple guesthouses as upscale hotels. This reflects traditional Balinese values where healing serves all community members, not just wealthy tourists. Many backpackers appreciate that Balinese massage in Bali costs far less than Western countries while offering superior traditional techniques. Padangbai's budget-friendly environment allows young travelers to experience authentic Balinese healing they couldn't afford at home, democratizing access to ancient wellness wisdom."
+        },
+        {
+          question: "Can snorkelers and divers use Balinese massage for ocean activity recovery?",
+          answer: "Absolutely! Padangbai's excellent snorkeling and diving create physical demands that traditional Balinese massage effectively addresses. The shoulder and back techniques in authentic Balinese massage relieve strain from swimming, equipment handling, and boat climbing. Balinese massage improves circulation essential for clearing nitrogen after dives while reducing muscle soreness from finning against currents. Many Blue Lagoon and Bias Tugel beach visitors schedule afternoon Balinese massage sessions after morning water activities, finding that traditional healing methods accelerate recovery and prevent the chronic shoulder issues common among frequent snorkelers. The holistic Balinese approach balances physical repair with relaxation for sustained ocean activity."
+        },
+        {
+          question: "Why is Padangbai's local village character important for authentic Balinese massage?",
+          answer: "Padangbai remains a functioning Balinese fishing village despite tourism, preserving authentic Balinese massage lineages. Local therapists learned traditional techniques from family elders who served the community for generations, maintaining methods unchanged by commercial spa demands. Traditional Balinese massage in Padangbai includes spiritual elements and proper acupressure sequences that tourist-focused treatments often simplify or omit. The strong Hindu-Balinese culture—visible in daily offerings and temple ceremonies—ensures massage stays connected to its sacred healing origins. Visitors seeking genuinely traditional Balinese massage find that Padangbai's village authenticity provides deeper cultural experiences than commercialized resort areas where traditions become performance."
+        },
+        {
+          question: "How does beachside Balinese massage work in Padangbai's small bay setting?",
+          answer: "Padangbai's intimate bay creates perfect conditions for beachfront Balinese massage experiences. Many guesthouses sit right on the sand, allowing treatments with ocean breezes and wave sounds that enhance traditional Balinese massage's meditative quality. The protected bay means calmer conditions than exposed beaches—ideal for outdoor treatments. Traditional Balinese healing philosophy values connection to natural elements during massage; Padangbai's beachside settings honor this principle while providing the informal, accessible atmosphere that makes Balinese massage feel welcoming rather than intimidating. The combination of authentic techniques, skilled therapists, and beautiful natural surroundings creates powerful healing without pretentious spa formality."
+        },
+        {
+          question: "Can last-minute Balinese massage bookings accommodate spontaneous Padangbai visits?",
+          answer: "Yes! Padangbai attracts spontaneous travelers following island-hopping whims, and we offer flexible Balinese massage scheduling to match this travel style. Same-day bookings work most days, especially for transit stops between ferries or surprise extended stays. Traditional Balinese massage doesn't require elaborate spa appointments—our mobile service comes to your guesthouse when you're ready. This flexibility reflects the adaptive nature of traditional Balinese healing, historically practiced within family compounds on-demand rather than by rigid appointment. Padangbai's laid-back vibe aligns perfectly with authentic Balinese massage that prioritizes meeting people's immediate wellness needs over commercial scheduling convenience."
+        }
+      ]} />
 
       <Footer />
     </div>

@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Shield, Check, AlertCircle, Users } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function MobileMassageSafety() {
   return (
@@ -360,6 +361,34 @@ export default function MobileMassageSafety() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "Is mobile massage safer than going to a random spa?",
+          answer: "Professional mobile massage is typically safer than random spa visits because mobile massage services verify therapist credentials, conduct background checks, and maintain transparent quality standards. Mobile massage clients know their therapist's identity and qualifications in advance, while random spa assignments offer no such safety transparency. Mobile massage companies stake their reputation on every appointment."
+        },
+        {
+          question: "How are mobile massage therapists vetted for safety?",
+          answer: "Mobile massage therapists undergo credential verification, license checks, experience confirmation, background screening, and ongoing performance monitoring. Professional mobile massage services maintain rigorous vetting standards exceeding random spa hiring practices. This mobile massage verification process ensures only qualified, trustworthy practitioners deliver treatments in your private space."
+        },
+        {
+          question: "What hygiene standards do mobile massage services maintain?",
+          answer: "Mobile massage hygiene standards require fresh linens for every client, sanitized equipment between appointments, clean professional oils, and strict cleanliness protocols. The mobile massage therapist brings brand-new, individually-wrapped supplies to your session. These mobile massage hygiene practices often exceed spa standards where equipment gets reused throughout the day."
+        },
+        {
+          question: "Is it safe to have a mobile massage therapist in my private space?",
+          answer: "Yes, professional mobile massage in your private space is safe when booking through reputable services that verify therapist identities and maintain accountability systems. Mobile massage companies provide therapist names, photos, and credentials before appointments. Solo travelers can share mobile massage appointment details with friends for added security, a safety measure unavailable with random spa visits."
+        },
+        {
+          question: "What professional boundaries do mobile massage therapists maintain?",
+          answer: "Mobile massage therapists maintain strict professional boundaries including proper draping, respectful communication, appropriate touch limited to therapeutic areas, and clear treatment protocols. Professional mobile massage standards prohibit any inappropriate conduct. Mobile massage therapists understand that your private space requires heightened professionalism and respectful behavior throughout the session."
+        },
+        {
+          question: "How can I verify my mobile massage therapist's credentials?",
+          answer: "Reputable mobile massage services provide therapist credentials, training certifications, years of experience, and client reviews before booking. You can request to see licenses and professional IDs when the mobile massage therapist arrives. This mobile massage transparency far exceeds random spa visits where you learn nothing about your assigned therapist until treatment begins."
+        }
+      ]} />
         </main>
         <Footer />
       </div>

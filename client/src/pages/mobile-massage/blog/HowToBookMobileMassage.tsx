@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { BookOpen, Phone, CreditCard, CheckCircle, Clock, AlertCircle } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function HowToBookHomeMassage() {
   return (
@@ -773,6 +774,34 @@ export default function HowToBookHomeMassage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "What's the easiest way to book mobile massage in Bali?",
+          answer: "The easiest mobile massage booking method is WhatsApp—simply message with your location, preferred time, and massage type. Mobile massage coordinators respond within minutes confirming availability and pricing. This mobile massage booking approach works seamlessly across Ubud, Canggu, Seminyak, and Sanur locations."
+        },
+        {
+          question: "How far in advance should I book mobile massage?",
+          answer: "Same-day mobile massage bookings are often possible with 2-4 hours notice, though next-day mobile massage booking guarantees better availability. For couples mobile massage or peak vacation times, booking mobile massage 1-2 days ahead ensures your preferred time slot. The mobile massage booking flexibility accommodates both spontaneous and planned sessions."
+        },
+        {
+          question: "What payment methods do mobile massage services accept?",
+          answer: "Most mobile massage services prefer cash payment in Indonesian Rupiah at session end, though bank transfers can be arranged during booking. Mobile massage pricing is transparent and fixed—no hidden fees or mandatory tips. The mobile massage payment happens after treatment, with optional gratuities based entirely on your satisfaction."
+        },
+        {
+          question: "What information do I need when booking mobile massage?",
+          answer: "For mobile massage booking, provide your accommodation location, preferred date and time, massage type (Balinese, deep tissue, couples, or relaxation), session duration (60 or 90 minutes), and contact phone number. Mentioning any health concerns or pressure preferences helps the mobile massage therapist prepare appropriately for your session."
+        },
+        {
+          question: "Can I reschedule my mobile massage appointment?",
+          answer: "Yes, mobile massage bookings are typically flexible with rescheduling when you provide adequate notice (24+ hours recommended). Contact your mobile massage provider immediately via WhatsApp to change times. Professional mobile massage services accommodate legitimate schedule changes without penalties, making mobile massage ideal for dynamic vacation plans."
+        },
+        {
+          question: "How do I prepare my space for mobile massage arrival?",
+          answer: "Mobile massage preparation requires minimal effort—clear a space for the massage table, ensure a firm surface, have clean towels ready, and adjust room temperature comfortably. The mobile massage therapist brings all equipment and supplies. Simply notify hotel reception about the incoming mobile massage appointment, and your space is ready."
+        }
+      ]} />
 
       {/* Soft CTA */}
       <section className="py-16 md:py-20 bg-background">

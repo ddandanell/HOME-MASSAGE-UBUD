@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Check } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageNusaDua() {
   return (
     <>
       <SEOHead 
-        title="Home Massage in Nusa Dua | Professional Villa & Resort Massage Service"
-        description="Professional home massage service throughout Nusa Dua. Licensed therapists deliver spa-quality treatments to luxury resorts, villas, and hotels. Same-day booking available. Perfect for pristine beach resort area."
+        title="Home Massage in Nusa Dua | Ubud Luxury Villas"
+        description="Professional home massage service throughout Nusa Dua. Licensed therapists deliver spa-quality treatments to luxury resorts, villas, and hotels. Same-day booking available via call or WhatsApp."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -40,8 +45,19 @@ export default function HomeMassageNusaDua() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'why-nusa-dua', label: 'Why Home Massage Fits Nusa Dua' },
+        { id: 'accommodations', label: 'Nusa Dua Accommodations' },
+        { id: 'availability', label: 'Availability & Response Time' },
+        { id: 'services', label: 'Services Available in Nusa Dua' },
+        { id: 'experience', label: 'The Nusa Dua Experience' },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'Frequently Asked Questions' }
+      ]} />
+
       {/* Block 2: Why home massage fits this city */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="why-nusa-dua" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -77,7 +93,7 @@ export default function HomeMassageNusaDua() {
       </section>
 
       {/* Block 3: Common accommodations */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="accommodations" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -125,7 +141,7 @@ export default function HomeMassageNusaDua() {
       </section>
 
       {/* Block 4: Availability & Response Time */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="availability" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -167,7 +183,7 @@ export default function HomeMassageNusaDua() {
       </section>
 
       {/* Block 5: Services available in this city */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="services" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -279,7 +295,7 @@ export default function HomeMassageNusaDua() {
       </section>
 
       {/* Block 6: Detailed Benefits Section */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="experience" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -319,6 +335,45 @@ export default function HomeMassageNusaDua() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Safety Standards */}
+      <SafetyStandards />
+
+      {/* Spider Links Block */}
+      <SpiderLinksBlock currentPage="/home-massage/cities/nusa-dua" />
+
+      {/* Booking CTA */}
+      <BookingCTA />
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <HomeMassageFAQ items={[
+          {
+            question: "How quickly can I get home massage in Nusa Dua?",
+            answer: "Most home massage requests in Nusa Dua are accommodated within 1-3 hours of contact via WhatsApp. We offer same-day booking throughout Nusa Dua, including five-star resorts, gated villas, and luxury hotels. Contact us early for best availability."
+          },
+          {
+            question: "What areas in Nusa Dua do you serve for home massage?",
+            answer: "Our home massage service covers all of Nusa Dua including the BTDC resort complex, Pantai Geger, gated estates, beachfront properties, and all Nusa Dua neighborhoods. We reach every prestigious property throughout the peninsula."
+          },
+          {
+            question: "Do you provide home massage to hotels in Nusa Dua?",
+            answer: "Yes, we deliver home massage to all Nusa Dua accommodations including international five-star resorts, luxury hotels, beachfront properties, and private gated villas. Our therapists coordinate seamlessly with high-end resort properties."
+          },
+          {
+            question: "What types of home massage are available in Nusa Dua?",
+            answer: "Nusa Dua home massage includes relaxation massage, couples massage, traditional Balinese massage, and deep tissue massage. All treatments are delivered with professional equipment and premium oils matching five-star resort spa standards."
+          },
+          {
+            question: "How do I book home massage in Nusa Dua?",
+            answer: "Book home massage in Nusa Dua by contacting us via WhatsApp at +62 811-2656-869. Provide your resort or villa name, preferred time, and massage type. We confirm availability and arrange therapist arrival to your luxury Nusa Dua location."
+          },
+          {
+            question: "Is home massage in Nusa Dua suitable for resort guests?",
+            answer: "Absolutely! Home massage is ideal for resort guests in Nusa Dua. We coordinate with resort security and staff to provide seamless in-room or villa treatments that match the premium service standards you expect from luxury accommodations."
+          }
+        ]} />
       </section>
 
       {/* Block 7: CTA and Links */}

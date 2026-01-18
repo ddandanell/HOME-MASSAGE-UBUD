@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, MapPin, CheckCircle, AlertCircle, Home } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function MobileMassageWhatToExpect() {
   return (
@@ -653,6 +654,34 @@ export default function MobileMassageWhatToExpect() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "What should I expect when the mobile massage therapist first arrives?",
+          answer: "When your mobile massage therapist arrives, expect a brief professional introduction, ID verification, and discussion of your massage preferences and any health concerns. The mobile massage setup takes 5-10 minutes as the therapist arranges equipment and prepares oils. This mobile massage check-in ensures everything aligns with your expectations before treatment begins."
+        },
+        {
+          question: "How should I prepare my space before mobile massage arrival?",
+          answer: "Mobile massage preparation requires clearing a clean area for the massage table, ensuring adequate room temperature, having clean towels available, and notifying reception about the appointment. The mobile massage therapist brings all professional equipment and oils. Minimal mobile massage preparation on your part creates an optimal treatment environment."
+        },
+        {
+          question: "What happens during a typical mobile massage session?",
+          answer: "A mobile massage session progresses through warming strokes, main therapeutic work, focused problem area treatment, and gentle closing touches. Professional mobile massage follows this structure whether you receive Balinese, deep tissue, couples, or relaxation treatments. The mobile massage flow ensures comprehensive treatment with proper warm-up and cool-down phases."
+        },
+        {
+          question: "What should I do immediately after my mobile massage ends?",
+          answer: "After mobile massage, sit quietly for 2-3 minutes before standing, move slowly when getting up, and drink water immediately to aid toxin release. The mobile massage advantage is immediate recovery in your private space without needing to travel. Avoid strenuous activity for 2-4 hours post mobile massage to maximize therapeutic benefits."
+        },
+        {
+          question: "Is it normal to feel different sensations after mobile massage?",
+          answer: "Yes, post-mobile-massage sensations like mild soreness (especially after deep tissue mobile massage), increased relaxation, improved circulation warmth, or light-headedness are completely normal. These mobile massage effects indicate successful treatment and typically resolve within 24-48 hours. Continued hydration supports your mobile massage recovery process."
+        },
+        {
+          question: "Can I communicate preferences during my mobile massage?",
+          answer: "Absolutely—mobile massage therapists welcome communication about pressure adjustments, problem area focus, or comfort needs throughout your session. Professional mobile massage prioritizes your comfort and therapeutic goals. Speaking up during mobile massage ensures the treatment matches your expectations and delivers optimal benefits."
+        }
+      ]} />
 
       {/* Soft CTA and extensive linking */}
       <section className="py-16 md:py-20 bg-background">

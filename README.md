@@ -106,6 +106,80 @@ npm run server:start
 
 This project includes a comprehensive prompt system for scalable SEO landing page generation:
 
+### SEO & Link Management Tools
+
+| Tool | Purpose | Command |
+|------|---------|---------|
+| **SEO Audit** | Analyze on-page SEO, meta tags, and content quality | `npm run seo:audit` |
+| **Link Audit** | Scan for broken links, buttons, images, and redirects | `npm run link:audit` |
+| **Orphan Page Detector** | Identify pages with zero internal links | `npm run orphan:detect` |
+| **Orphan Page Monitor** | Weekly monitoring for new orphan pages | `npm run orphan:monitor` |
+| **New Page Validator** | Validate pages before publishing | `npm run page:validate <url>` |
+| **Sitemap Generator** | Generate sitemap.xml for search engines | `npm run sitemap:generate` |
+| **SEO Validator** | Validate sitemap and SEO implementation | `npm run sitemap:validate` |
+
+### Orphan Page Detection & Prevention System
+
+**NEW!** Comprehensive system for detecting, fixing, and preventing orphan pages (pages with zero internal links):
+
+**Features:**
+- **Full Site Crawl**: Maps entire internal linking structure
+- **Orphan Detection**: Identifies pages with 0 internal links
+- **Smart Classification**: Prioritizes by traffic, backlinks, and content value
+- **Automated Fixes**: Generates specific recommendations:
+  - Add internal links (with suggestions)
+  - Merge & 301 redirect (with targets)
+  - Add noindex tag
+  - Delete page
+- **Tracking Spreadsheet**: Excel-compatible CSV for monitoring
+- **Weekly Monitoring**: Detects new orphans automatically
+- **Pre-Publication Validation**: Prevents orphans before they happen
+- **Alerts**: Notifies when new orphans are detected
+
+**Quick Start:**
+```bash
+# Run full orphan detection
+npm run orphan:detect
+
+# Weekly monitoring (automate with cron)
+npm run orphan:monitor
+
+# Validate new page before publishing
+npm run page:validate https://yoursite.com/new-page
+```
+
+**Documentation:**
+- `ORPHAN_PAGE_DETECTION_GUIDE.md` - Complete system guide
+- `ORPHAN_PAGE_PREVENTION.md` - Best practices & content workflow
+- `ORPHAN_DETECTION_EXAMPLES.md` - Example outputs and usage scenarios
+
+**Expected Impact:**
+- Traffic recovery: 20-50% on fixed pages
+- Link equity preserved: 95%+
+- Crawl efficiency: Significantly improved
+- Prevention: <1% orphan rate
+
+### Link Audit & Recovery System
+
+Comprehensive tools for maintaining link health:
+- **Broken Link Detection**: Scans all internal/external links, images, and buttons
+- **Priority Scoring**: Automatically categorizes issues by SEO impact
+- **Report Generation**: CSV, Markdown, and JSON reports with actionable recommendations
+- **301 Redirect System**: Complete guide for implementing redirects
+- **Prevention & Monitoring**: Governance policies and automated monitoring
+
+**Quick Start:**
+```bash
+npm run link:audit  # Run comprehensive link audit
+```
+
+**Documentation:**
+- `LINK_AUDIT_TOOL.md` - Complete tool documentation
+- `REDIRECT_CONFIGURATION_GUIDE.md` - How to set up 301 redirects
+- `BROKEN_LINK_PREVENTION_GUIDE.md` - Prevention strategies
+- `SEO_LINK_AUDIT_ACTION_PLAN.md` - Implementation timeline
+- `LINK_AUDIT_IMPLEMENTATION_SUMMARY.md` - Overview and benefits
+
 ### Prompt Files
 
 | File | Purpose |
@@ -113,7 +187,9 @@ This project includes a comprehensive prompt system for scalable SEO landing pag
 | `KEYWORD_BLUEPRINT_PROMPT.md` | Converts keyword research into structured build instructions |
 | `LANDING_PAGE_EXECUTION_PROMPT.md` | Generates landing pages from keyword blueprints |
 | `SEO_HEADING_STRUCTURE_AGENT.md` | Creates optimized H1-H6 heading hierarchies for any page type |
+| `AEO_GEO_OPTIMIZATION_PROMPT.md` | Transforms content into AI-search optimized "Golden Source" assets for Google SGE, Perplexity, ChatGPT |
 | `KEYWORD_BLUEPRINT_OUTPUT_EXAMPLE.md` | Example output for 10 high-volume keywords |
+| `AEO_GEO_EXAMPLE_OUTPUT.md` | Example transformation showing before/after AEO/GEO optimization |
 
 ### Workflow
 
@@ -121,9 +197,10 @@ This project includes a comprehensive prompt system for scalable SEO landing pag
 2. **Pick one keyword blueprint** from the output
 3. **Paste into Landing Page Execution Prompt**
 4. **Generate page content**
-5. **Repeat for each keyword**
+5. **Apply AEO/GEO Optimization** to transform content for AI search engines
+6. **Repeat for each keyword**
 
-This system enables scaling from 10 to 200+ pages with consistent quality.
+This system enables scaling from 10 to 200+ pages with consistent quality optimized for both traditional search and AI answer engines.
 
 ### Related Documentation
 

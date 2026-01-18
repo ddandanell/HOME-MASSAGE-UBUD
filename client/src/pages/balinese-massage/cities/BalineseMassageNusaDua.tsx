@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import BalineseMassageFAQ from "@/components/balinese-massage/BalineseMassageFAQ";
 
 export default function BalineseMassageNusaDua() {
   return (
@@ -208,6 +209,33 @@ export default function BalineseMassageNusaDua() {
           </p>
         </div>
       </section>
+
+      <BalineseMassageFAQ items={[
+        {
+          question: "Do Nusa Dua luxury resorts allow external Balinese massage providers?",
+          answer: "Most Nusa Dua resorts welcome our certified Balinese massage therapists, though some require advance notification. We have extensive experience providing authentic Balinese massage at premium Nusa Dua properties and understand their security protocols. Our professional presentation and equipment meet five-star standards expected in luxury environments. Many guests choose independent Balinese massage providers because we offer traditional techniques at lower prices than resort spas, with therapists who practice authentic Balinese massage methods rather than standardized hotel spa treatments designed for efficiency over cultural authenticity."
+        },
+        {
+          question: "Can Balinese massage enhance beach wedding experiences in Nusa Dua?",
+          answer: "Absolutely! Balinese massage is increasingly popular for destination weddings in Nusa Dua. Bridal parties book pre-ceremony Balinese massage sessions to calm nerves and ensure glowing complexions for photos. The traditional Balinese massage acupressure and aromatherapy reduce stress while improving circulation for natural radiance. We can coordinate multiple therapists for simultaneous bridal party treatments, creating bonding experiences rooted in Balinese healing traditions. Post-wedding, couples often schedule Balinese massage to recover from celebration exhaustion before honeymoon relaxation truly begins."
+        },
+        {
+          question: "How does Nusa Dua's pristine beach environment affect Balinese massage?",
+          answer: "Nusa Dua's manicured beaches and clean air create ideal conditions for Balinese massage healing. Traditional Balinese medicine recognizes that pure environments enhance treatment effectiveness—toxins in surroundings impede energy flow. The carefully maintained Nusa Dua resort area provides the serene, beautiful setting that traditional Balinese massage requires for optimal results. Ocean breezes naturally complement aromatherapy oils used in Balinese massage, while the sound of waves supports the meditative state that deepens healing. This makes Balinese massage in Nusa Dua particularly powerful for detoxification and rejuvenation."
+        },
+        {
+          question: "Do business travelers benefit from Balinese massage during Nusa Dua conferences?",
+          answer: "Yes! Corporate groups increasingly book Balinese massage for conference attendees at Nusa Dua convention hotels. Traditional Balinese massage techniques effectively relieve tension from sitting through presentations and reduce jet lag that impairs business performance. The holistic Balinese approach addresses both physical discomfort and mental fatigue, improving focus and decision-making abilities. Many international executives appreciate experiencing authentic Balinese massage during business travel, combining corporate responsibilities with cultural wellness. We can coordinate group bookings for team-building through shared traditional Balinese healing experiences."
+        },
+        {
+          question: "What makes beachfront villa Balinese massage special in Nusa Dua?",
+          answer: "Nusa Dua's beachfront villas provide the ultimate setting for authentic Balinese massage. Private pools, ocean views, and tropical gardens create the paradise atmosphere where traditional Balinese massage originated—performed in beautiful natural settings rather than clinical spaces. After your treatment, you can immediately enjoy your villa's amenities without traveling, allowing Balinese massage benefits to deepen. The combination of professional Balinese massage techniques, premium villa comfort, and Nusa Dua's pristine environment creates healing experiences that luxury spa facilities cannot match despite their amenities and higher prices."
+        },
+        {
+          question: "Can Nusa Dua visitors learn about Balinese massage healing philosophy?",
+          answer: "Yes! Our Nusa Dua therapists are knowledgeable about traditional Balinese massage theory and happy to explain healing principles during treatments. Authentic Balinese massage is rooted in Hindu-Balinese cosmology, Ayurvedic influences, and indigenous healing wisdom spanning centuries. Understanding that Balinese massage works on energy channels, not just muscles, enhances appreciation for the treatment's depth. Many Nusa Dua guests—especially those interested in wellness and spirituality—value learning how Balinese massage integrates physical therapy with energy balancing and spiritual cleansing, making it far more comprehensive than Western massage modalities."
+        }
+      ]} />
 
       <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto text-center">

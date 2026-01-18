@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, DollarSign } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function BalineseMobileMassage() {
   return (
@@ -233,6 +234,34 @@ export default function BalineseMobileMassage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "What makes Balinese mobile massage different from other mobile massage styles?",
+          answer: "Balinese mobile massage uniquely combines gentle flowing strokes, acupressure, stretching, and aromatherapy with traditional Indonesian healing philosophy. Unlike Swedish or deep tissue mobile massage, Balinese technique focuses on energy flow and holistic wellbeing. Our mobile massage therapists bring authentic Balinese essential oils and traditional methods directly to your location."
+        },
+        {
+          question: "How long does a typical Balinese mobile massage session last?",
+          answer: "Balinese mobile massage typically runs 60, 90, or 120 minutes. The 90-minute session is most popular as it allows full-body coverage with proper attention to each area. During mobile massage setup (10 minutes), therapists prepare aromatherapy and equipment. The treatment itself follows traditional Balinese sequence from back to feet, ensuring comprehensive mobile massage experience."
+        },
+        {
+          question: "Can Balinese mobile massage help with specific health conditions?",
+          answer: "Balinese mobile massage helps with stress, muscle tension, poor circulation, and sleep issues. The technique's combination of acupressure and gentle stretching makes this mobile massage style suitable for managing chronic pain and promoting relaxation. However, please inform us of specific conditions when booking mobile massage so therapists can adapt techniques appropriately."
+        },
+        {
+          question: "What should I prepare before my Balinese mobile massage arrives?",
+          answer: "Simply ensure a quiet, private space with room for the mobile massage table. Our therapists bring everything needed for Balinese mobile massage: professional table, organic oils, aromatherapy, fresh linens, and relaxation music. Having shower access nearby enhances the post-mobile massage experience, but isn't required. We handle all mobile massage setup and cleanup."
+        },
+        {
+          question: "Is Balinese mobile massage suitable for first-time massage recipients?",
+          answer: "Absolutely! Balinese mobile massage is perfect for beginners due to its gentle, flowing nature. The pressure is moderate and soothing rather than intense, making this mobile massage style very approachable. Our therapists explain each Balinese mobile massage technique and adjust pressure based on comfort, ensuring positive first-time mobile massage experience."
+        },
+        {
+          question: "How often should I book Balinese mobile massage for wellness maintenance?",
+          answer: "For wellness maintenance, weekly or bi-weekly Balinese mobile massage is ideal. Regular mobile massage helps manage ongoing stress and maintains flexibility. Monthly Balinese mobile massage works for general wellbeing. Many clients start with weekly mobile massage during Bali visits, then maintain routine at home with local therapists using similar Balinese mobile massage techniques."
+        }
+      ]} />
 
       {/* Block 6: CTA and Links */}
       <section className="py-16 md:py-20 bg-background">

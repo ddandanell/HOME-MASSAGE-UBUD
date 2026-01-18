@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { BookOpen, Check, ArrowRight, Shield } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageKnowledgeIndex() {
   return (
     <>
       <SEOHead 
-        title="Home Massage Knowledge | Safety, Benefits & Expectations"
-        description="Complete guide to home massage in Bali. Learn about safety standards, health benefits, proper aftercare, and what to expect from professional home massage services."
+        title="Home Massage Knowledge | Ubud Luxury Villas"
+        description="Complete guide to home massage: safety standards, health benefits, aftercare protocols, and service expectations. Book professional home massage via call or WhatsApp."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -40,8 +45,16 @@ export default function HomeMassageKnowledgeIndex() {
         </div>
       </section>
 
+      <TableOfContents items={[
+        { id: 'understanding', title: 'Understanding Home Massage' },
+        { id: 'topics', title: 'Essential Topics' },
+        { id: 'why-matters', title: 'Why Knowledge Matters' },
+        { id: 'ready', title: 'Ready to Experience' },
+        { id: 'explore', title: 'Explore Options' },
+      ]} />
+
       {/* Introduction */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="understanding" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -72,7 +85,7 @@ export default function HomeMassageKnowledgeIndex() {
       </section>
 
       {/* Knowledge Articles */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="topics" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -262,7 +275,7 @@ export default function HomeMassageKnowledgeIndex() {
       </section>
 
       {/* Why This Matters */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="why-matters" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -314,8 +327,41 @@ export default function HomeMassageKnowledgeIndex() {
         </div>
       </section>
 
+      <SafetyStandards />
+
+      <SpiderLinksBlock currentPage="/home-massage/knowledge" />
+
+      <BookingCTA />
+
+      <HomeMassageFAQ questions={[
+        {
+          question: "What should I know before booking my first home massage?",
+          answer: "Understand home massage safety standards, expected benefits, proper preparation steps, and post-treatment care. Review our knowledge articles covering safety, benefits, aftercare, and expectations for comprehensive understanding."
+        },
+        {
+          question: "Is home massage safe for everyone?",
+          answer: "Home massage is safe for most people when delivered by licensed therapists following professional protocols. However, certain medical conditions require consultation with healthcare providers before booking home massage."
+        },
+        {
+          question: "How do I choose the right type of home massage?",
+          answer: "Consider your goals: deep tissue home massage for pain, Balinese home massage for relaxation, couples home massage for shared experience. Our service pages detail each type's characteristics and benefits."
+        },
+        {
+          question: "What are the main benefits of home massage?",
+          answer: "Home massage delivers pain relief, stress reduction, improved sleep, enhanced circulation, and convenience benefits unavailable in spa settings. Regular home massage supports both physical and mental wellness."
+        },
+        {
+          question: "How often should I get home massage?",
+          answer: "Frequency depends on goals: chronic pain benefits from 1-2 weekly sessions, stress management from weekly treatments, general wellness from bi-weekly to monthly home massage. Consult therapists for personalized recommendations."
+        },
+        {
+          question: "Where can I get home massage in Bali?",
+          answer: "Professional home massage services operate throughout Bali including Ubud, Canggu, Seminyak, and Sanur. Therapists arrive at your villa, hotel, or accommodation—anywhere you're staying in Bali."
+        }
+      ]} />
+
       {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="ready" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -341,7 +387,7 @@ export default function HomeMassageKnowledgeIndex() {
       </section>
 
       {/* Related Resources */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="explore" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">

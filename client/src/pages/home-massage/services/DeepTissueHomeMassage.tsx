@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, DollarSign } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function DeepTissueHomeMassage() {
   return (
     <>
       <SEOHead 
-        title="Deep Tissue Home Massage | Therapeutic Massage at Your Villa"
-        description="Professional deep tissue home massage delivered to your accommodation. Target chronic pain and muscle tension with therapeutic home massage. Book today."
+        title="Deep Tissue Home Massage | Ubud Luxury Villas"
+        description="Professional deep tissue home massage at your villa. Call or WhatsApp for therapeutic home massage targeting chronic pain. Licensed therapists available daily."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -35,7 +40,17 @@ export default function DeepTissueHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'what-is', label: 'What Is Deep Tissue Home Massage?' },
+        { id: 'who-benefits', label: 'Who Benefits?' },
+        { id: 'pricing', label: 'Pricing & Duration' },
+        { id: 'advantages', label: 'Why Home Massage?' },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'FAQ' }
+      ]} />
+
+      <section id="what-is" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -44,25 +59,32 @@ export default function DeepTissueHomeMassage() {
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-4">
                 Deep tissue home massage uses firm, focused pressure to reach deeper muscle layers and fascia. This therapeutic 
-                home massage targets chronic tension, muscle knots, and injury recovery while you remain in the comfort of your 
+                <Link href="/home-massage" className="text-primary hover:underline">home massage</Link> targets chronic tension, muscle knots, and injury recovery while you remain in the comfort of your 
                 villa or hotel. Our specialized therapists bring clinical expertise directly to your accommodation.
               </p>
               <p className="text-lg text-muted-foreground mb-4">
-                Unlike lighter relaxation techniques, deep tissue home massage applies sustained pressure across muscle grain 
-                to break down adhesions and restore mobility. This home massage approach combines trigger point therapy, 
+                Unlike lighter relaxation techniques, deep tissue <Link href="/home-massage/services" className="text-primary hover:underline">home massage services</Link> apply sustained pressure across muscle grain 
+                to break down adhesions and restore mobility. This approach combines trigger point therapy, 
                 myofascial release, and deep stripping strokes to address underlying muscle dysfunction.
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground mb-4">
                 Your deep tissue home massage session begins with assessment of problem areas, followed by progressive pressure 
                 application. The therapist adjusts intensity throughout to maintain therapeutic benefit without excessive discomfort. 
-                This targeted home massage delivers measurable relief for chronic pain and restricted movement.
+                This targeted <Link href="/home-massage/knowledge/benefits" className="text-primary hover:underline">home massage treatment</Link> delivers measurable relief for chronic pain and restricted movement.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Recovery-focused travelers appreciate how <Link href="/home-massage/cities" className="text-primary hover:underline">home massage</Link> eliminates post-treatment travel. Deep tissue work 
+                can cause temporary soreness, making immediate rest essential. With <Link href="/home-massage/services/deep-tissue" className="text-primary hover:underline">deep tissue home massage</Link>, you 
+                transition directly from treatment table to your own bed, applying ice from your accommodation's facilities and 
+                hydrating without navigating traffic. This convenience supports optimal recovery and makes regular therapeutic 
+                sessions more practical during your vacation.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="who-benefits" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -109,7 +131,7 @@ export default function DeepTissueHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
+      <section id="pricing" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -169,7 +191,7 @@ export default function DeepTissueHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="advantages" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -183,7 +205,9 @@ export default function DeepTissueHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Rest Immediately After</h3>
                   <p className="text-muted-foreground">
-                    Deep tissue home massage can cause temporary soreness. Rest in your own bed instead of traveling post-treatment.
+                    Deep tissue home massage can cause temporary soreness. Rest in your own bed instead of traveling post-treatment. 
+                    The body continues releasing tension for hours after deep tissue work, and immediate rest enhances recovery. 
+                    Your own comfortable environment supports this healing process better than navigating traffic or public spaces.
                   </p>
                 </div>
               </div>
@@ -195,7 +219,9 @@ export default function DeepTissueHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Privacy for Therapy</h3>
                   <p className="text-muted-foreground">
-                    Discuss pain openly and adjust pressure freely during home massage without spa environment concerns.
+                    Discuss pain openly and adjust pressure freely during home massage without spa environment concerns. Therapeutic 
+                    massage requires honest communication about discomfort levels. Your private space encourages this dialogue, 
+                    helping therapists calibrate pressure precisely to your needs without time pressure or other clients nearby.
                   </p>
                 </div>
               </div>
@@ -207,7 +233,9 @@ export default function DeepTissueHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Consistent Follow-Up</h3>
                   <p className="text-muted-foreground">
-                    Schedule regular deep tissue home massage sessions without travel barrier affecting commitment.
+                    Schedule regular deep tissue home massage sessions without travel barrier affecting commitment. Chronic pain 
+                    responds best to consistent treatment. When massage comes to you, maintaining a therapeutic schedule becomes 
+                    effortless rather than requiring motivation to leave your accommodation repeatedly.
                   </p>
                 </div>
               </div>
@@ -219,7 +247,9 @@ export default function DeepTissueHomeMassage() {
                 <div>
                   <h3 className="font-semibold mb-1">Ice & Heat Access</h3>
                   <p className="text-muted-foreground">
-                    Apply ice or heat from your own facilities before or after deep tissue home massage as needed.
+                    Apply ice or heat from your own facilities before or after deep tissue home massage as needed. Complementary 
+                    therapies like ice packs reduce inflammation, while heat preparation loosens muscles before treatment. Having 
+                    your accommodation's resources immediately available optimizes therapeutic outcomes.
                   </p>
                 </div>
               </div>
@@ -228,57 +258,45 @@ export default function DeepTissueHomeMassage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Book Your Deep Tissue Home Massage
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Professional therapeutic home massage delivered to your accommodation
-              </p>
-              <Button size="lg" className="text-lg px-8" asChild>
-                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                  Book This Home Massage
-                </a>
-              </Button>
-            </div>
+      {/* Safety Standards */}
+      <SafetyStandards />
 
-            <div className="border-t pt-12">
-              <h3 className="text-xl font-semibold mb-6">Related Home Massage Services</h3>
-              <div className="grid md:grid-cols-3 gap-4">
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage">
-                    ← All Home Massage Services
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/services/balinese">
-                    Balinese Home Massage →
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/cities/canggu">
-                    Home Massage in Canggu
-                  </Link>
-                </Button>
-              </div>
-              <div className="grid md:grid-cols-2 gap-4 mt-4">
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/knowledge/what-to-expect">
-                    What to Expect
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link href="/home-massage/blog/what-is-home-massage">
-                    Learn About Home Massage
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Spider Links */}
+      <SpiderLinksBlock currentPage="/home-massage/services/deep-tissue" />
+
+      {/* Booking CTA */}
+      <BookingCTA />
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <HomeMassageFAQ 
+          items={[
+            {
+              question: "Is deep tissue home massage painful?",
+              answer: "Deep tissue home massage should produce therapeutic discomfort, not pain. Our therapists communicate constantly and adjust pressure to stay within your tolerance. You should feel intense but bearable pressure that helps release chronic tension."
+            },
+            {
+              question: "How is deep tissue home massage different from regular massage?",
+              answer: "Deep tissue home massage uses slower, firmer strokes to reach deeper muscle layers and fascia. While relaxation massage uses light pressure for stress relief, deep tissue home massage targets specific problem areas with therapeutic intent."
+            },
+            {
+              question: "Will I be sore after deep tissue home massage?",
+              answer: "Mild soreness for 24-48 hours is normal after deep tissue home massage, similar to post-workout muscle fatigue. This indicates effective tissue work. Drinking water and gentle stretching help minimize discomfort. The soreness gives way to improved mobility."
+            },
+            {
+              question: "Can deep tissue home massage help with chronic back pain?",
+              answer: "Yes, deep tissue home massage is highly effective for chronic back pain caused by muscle tension, poor posture, or overuse. Regular sessions combined with stretching and posture awareness provide long-term relief for many clients."
+            },
+            {
+              question: "How often should I get deep tissue home massage?",
+              answer: "For chronic issues, weekly or bi-weekly deep tissue home massage sessions yield best results. For maintenance, monthly sessions suffice. Your therapist will assess your condition during the first home massage and recommend a treatment schedule."
+            },
+            {
+              question: "Can I request focus areas for my deep tissue home massage?",
+              answer: "Absolutely. During the consultation, tell your therapist which areas need the most attention. We can spend the entire session on problem zones like shoulders, lower back, or legs, or combine focused work with full-body treatment."
+            }
+          ]}
+        />
       </section>
         </main>
         <Footer />

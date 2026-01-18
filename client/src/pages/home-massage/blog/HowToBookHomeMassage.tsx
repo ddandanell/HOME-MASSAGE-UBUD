@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { BookOpen, Phone, CreditCard, CheckCircle, Clock, AlertCircle } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HowToBookHomeMassage() {
   return (
     <>
       <SEOHead 
-        title="How to Book Home Massage | Complete Booking Guide & Tips"
-        description="Step-by-step guide to booking home massage. Learn timing, preparation, payment, communication, and troubleshooting for stress-free home massage booking."
+        title="How to Book Home Massage | Home Massage"
+        description="Step-by-step guide to booking home massage. Call or WhatsApp to book professional home massage in Bali today."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -34,8 +39,19 @@ export default function HowToBookHomeMassage() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'why-matters', label: 'Why Proper Booking Matters' },
+        { id: 'step-by-step', label: 'Booking Process Step by Step' },
+        { id: 'timing', label: 'Best Times to Book' },
+        { id: 'communication', label: 'What to Communicate' },
+        { id: 'payment', label: 'Payment Methods' },
+        { id: 'preparation', label: 'Pre-Booking Preparation' },
+        { id: 'troubleshooting', label: 'Common Issues' }
+      ]} />
+
       {/* Block 1: Why Proper Home Massage Booking Matters */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="why-matters" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -57,7 +73,7 @@ export default function HowToBookHomeMassage() {
       </section>
 
       {/* Block 2: Step-by-Step Home Massage Booking Process */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="step-by-step" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -242,7 +258,7 @@ export default function HowToBookHomeMassage() {
       </section>
 
       {/* Block 3: Timing Tips for Home Massage Booking */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="timing" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -308,7 +324,7 @@ export default function HowToBookHomeMassage() {
       </section>
 
       {/* Block 4: What to Communicate When Booking Home Massage */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="communication" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -394,7 +410,7 @@ export default function HowToBookHomeMassage() {
       </section>
 
       {/* Block 5: Payment Information and Methods */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="payment" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -490,7 +506,7 @@ export default function HowToBookHomeMassage() {
       </section>
 
       {/* Block 6: Special Preparation for Home Massage Booking */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="preparation" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -580,7 +596,7 @@ export default function HowToBookHomeMassage() {
       </section>
 
       {/* Block 7: Troubleshooting Common Home Massage Booking Issues */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="troubleshooting" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -774,94 +790,42 @@ export default function HowToBookHomeMassage() {
         </div>
       </section>
 
-      {/* Soft CTA */}
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Book Your Professional Home Massage?
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Now that you know exactly how to book home massage, it's time to experience the difference
-              </p>
-              <Button size="lg" className="text-lg px-8" asChild>
-                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                  Book Your Home Massage Now via WhatsApp
-                </a>
-              </Button>
-            </div>
+      {/* Safety Standards */}
+      <SafetyStandards />
 
-            <div className="border-t pt-12">
-              <h3 className="text-2xl font-semibold mb-8">Explore Home Massage Options</h3>
-              
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <h4 className="font-semibold mb-4 text-lg">Home Massage Services:</h4>
-                  <div className="space-y-2">
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/balinese">Balinese Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/deep-tissue">Deep Tissue Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/couples">Couples Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/relaxation">Relaxation Home Massage</Link>
-                    </Button>
-                  </div>
-                </div>
+      {/* Spider Links Block */}
+      <SpiderLinksBlock currentPage="/home-massage/blog/how-to-book-home-massage" />
 
-                <div>
-                  <h4 className="font-semibold mb-4 text-lg">Home Massage by Location:</h4>
-                  <div className="space-y-2">
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/ubud">Home Massage in Ubud</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/canggu">Home Massage in Canggu</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/seminyak">Home Massage in Seminyak</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/sanur">Home Massage in Sanur</Link>
-                    </Button>
-                  </div>
-                </div>
-              </div>
+      {/* Booking CTA */}
+      <BookingCTA />
 
-              <div>
-                <h4 className="font-semibold mb-4 text-lg">Home Massage Learning Center:</h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/blog/what-is-home-massage">What is Home Massage?</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/blog/why-tourists-prefer-home-massage">Why Choose Home Massage</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/knowledge/what-to-expect">What to Expect</Link>
-                  </Button>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-3">
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/knowledge/safety">Safety Standards</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage">Home Massage Hub</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/">Home</Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* FAQ Section */}
+      <HomeMassageFAQ items={[
+        {
+          question: "How do I book home massage?",
+          answer: "Book home massage via WhatsApp or phone. Message with your preferred service type (Balinese, deep tissue, couples, or relaxation), location, date, time, and duration. Professional home massage coordinators confirm availability, pricing, and therapist details within minutes. The entire booking process takes less than 5 minutes."
+        },
+        {
+          question: "How far in advance should I book home massage?",
+          answer: "Same-day home massage is often available if you book 2-4 hours ahead. Next-day booking guarantees availability for popular times. For couples home massage or specific therapist requests during peak season, book 1-2 days in advance. Professional home massage services accommodate flexible scheduling."
+        },
+        {
+          question: "What information do I need to provide when booking home massage?",
+          answer: "Provide: massage type, your accommodation location, preferred date/time, duration (60 or 90 minutes), and contact number. Helpful but optional: pressure preference, problem areas, medical concerns, and therapist gender preference. Professional home massage coordinators guide you through the entire process."
+        },
+        {
+          question: "How much does home massage cost?",
+          answer: "Home massage typically costs Rp 300,000-400,000 for 60 minutes, Rp 450,000-600,000 for 90 minutes. Couples home massage costs Rp 550,000-750,000 for 60 minutes. Pricing includes all equipment, oils, and therapist travel. No hidden costs. Payment usually via cash after service, or bank transfer beforehand."
+        },
+        {
+          question: "Can I reschedule my home massage booking?",
+          answer: "Yes. Contact your home massage provider via WhatsApp as soon as possible. Most professional services offer flexible rescheduling with 24+ hours notice. Cancellation policies vary but are typically forgiving for legitimate changes. Same-day cancellations may incur fees."
+        },
+        {
+          question: "What if the therapist is late for my home massage?",
+          answer: "Wait 10-15 minutes (Bali traffic happens), then contact the home massage provider immediately. Professional services track therapists and provide ETA updates. Delays are rare with reputable home massage companies. If therapist doesn't arrive, full refund or immediate rescheduling offered."
+        }
+      ]} />
         </main>
         <Footer />
       </div>

@@ -38,6 +38,7 @@ const mainPages: SitemapUrl[] = [
   { loc: `${DOMAIN}/services`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.9 },
   { loc: `${DOMAIN}/treatments`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.9 },
   { loc: `${DOMAIN}/service-areas`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.9 },
+  { loc: `${DOMAIN}/digital-nomad-wellness`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.9 },
   { loc: `${DOMAIN}/sitemap`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.5 },
   { loc: `${DOMAIN}/about`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.8 },
   { loc: `${DOMAIN}/contact`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.9 },
@@ -47,6 +48,8 @@ const mainPages: SitemapUrl[] = [
   { loc: `${DOMAIN}/blog`, lastmod: getCurrentDate(), changefreq: 'weekly', priority: 0.7 },
   { loc: `${DOMAIN}/sustainability`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
   { loc: `${DOMAIN}/villa-partnerships`, lastmod: getCurrentDate(), changefreq: 'monthly', priority: 0.6 },
+  { loc: `${DOMAIN}/privacy-policy`, lastmod: getCurrentDate(), changefreq: 'yearly', priority: 0.3 },
+  { loc: `${DOMAIN}/terms-and-conditions`, lastmod: getCurrentDate(), changefreq: 'yearly', priority: 0.3 },
 ];
 
 // Treatment pages

@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Heart, DollarSign, CheckCircle } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function WhatIsHomeMassage() {
   return (
     <>
       <SEOHead 
-        title="What is Home Massage? Complete Guide to In-Villa Therapy"
-        description="Discover what home massage really is. Learn the definition, benefits, and how home massage compares to spa massage. Professional massage therapy at your villa or hotel."
+        title="What is Home Massage | Home Massage"
+        description="Discover what home massage is. Learn the definition, benefits, and how to call or WhatsApp to book professional home massage therapy at your villa or hotel."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -34,8 +39,19 @@ export default function WhatIsHomeMassage() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'tourist-story', label: 'The Tourist Massage Dilemma' },
+        { id: 'definition', label: 'Simple Definition: What is Home Massage?' },
+        { id: 'types', label: 'Types of Home Massage Available' },
+        { id: 'myths', label: 'Common Myths About Home Massage' },
+        { id: 'comparison', label: 'Home Massage vs Spa Massage' },
+        { id: 'best-choice', label: 'When Home Massage is Your Best Choice' },
+        { id: 'popularity', label: 'Why Home Massage is Growing' }
+      ]} />
+
       {/* Block 1: Tourist Story Opening */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="tourist-story" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -57,7 +73,7 @@ export default function WhatIsHomeMassage() {
       </section>
 
       {/* Block 2: Simple Definition */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="definition" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -84,7 +100,7 @@ export default function WhatIsHomeMassage() {
       </section>
 
       {/* Block 3: Types of Home Massage */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="types" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -160,7 +176,7 @@ export default function WhatIsHomeMassage() {
       </section>
 
       {/* Block 4: Common Home Massage Myths */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="myths" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -268,7 +284,7 @@ export default function WhatIsHomeMassage() {
       </section>
 
       {/* Block 5: Home Massage vs Spa Massage Comparison */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="comparison" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -342,7 +358,7 @@ export default function WhatIsHomeMassage() {
       </section>
 
       {/* Block 6: When Home Massage is Best Choice */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="best-choice" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -450,7 +466,7 @@ export default function WhatIsHomeMassage() {
       </section>
 
       {/* Block 7: Why Home Massage Has Exploded in Popularity */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="popularity" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -502,96 +518,42 @@ export default function WhatIsHomeMassage() {
         </div>
       </section>
 
-      {/* Block 8: Soft Conversion - Next Steps */}
-      <section className="py-16 md:py-20 bg-secondary/20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-              Ready to Experience Home Massage?
-            </h2>
-            <div className="prose prose-lg max-w-none mb-8">
-              <p className="text-lg text-muted-foreground text-center mb-6">
-                Now that you understand home massage fundamentals, explore which type fits your needs. Our <Link href="/home-massage/knowledge/what-to-expect"><span className="text-primary hover:underline">what to expect guide</span></Link> walks through the entire home massage process, and our <Link href="/home-massage/blog/how-to-book-home-massage"><span className="text-primary hover:underline">booking guide</span></Link> explains home massage booking simply.
-              </p>
-            </div>
-            <div className="text-center mb-12">
-              <Button size="lg" className="text-lg px-8" asChild>
-                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                  Book Your First Home Massage
-                </a>
-              </Button>
-            </div>
+      {/* Safety Standards */}
+      <SafetyStandards />
 
-            <div className="border-t pt-12">
-              <h3 className="text-2xl font-semibold mb-8">Explore Home Massage Further</h3>
-              
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <h4 className="font-semibold mb-4 text-lg">Home Massage Services:</h4>
-                  <div className="space-y-2">
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/balinese">Balinese Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/deep-tissue">Deep Tissue Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/couples">Couples Home Massage</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/services/relaxation">Relaxation Home Massage</Link>
-                    </Button>
-                  </div>
-                </div>
+      {/* Spider Links Block */}
+      <SpiderLinksBlock currentPage="/home-massage/blog/what-is-home-massage" />
 
-                <div>
-                  <h4 className="font-semibold mb-4 text-lg">Home Massage by City:</h4>
-                  <div className="space-y-2">
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/ubud">Home Massage in Ubud</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/canggu">Home Massage in Canggu</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/seminyak">Home Massage in Seminyak</Link>
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start" asChild>
-                      <Link href="/home-massage/cities/sanur">Home Massage in Sanur</Link>
-                    </Button>
-                  </div>
-                </div>
-              </div>
+      {/* Booking CTA */}
+      <BookingCTA />
 
-              <div>
-                <h4 className="font-semibold mb-4 text-lg">Home Massage Knowledge Center:</h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/knowledge/what-to-expect">What to Expect</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/knowledge/safety">Safety Standards</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage">Home Massage Hub</Link>
-                  </Button>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-3">
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/blog/how-to-book-home-massage">How to Book</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage/blog/why-tourists-prefer-home-massage">Why Choose Home Massage</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/home-massage">Explore More</Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* FAQ Section */}
+      <HomeMassageFAQ items={[
+        {
+          question: "What exactly is home massage?",
+          answer: "Home massage is professional massage therapy delivered by a licensed therapist at your villa, hotel room, or accommodation. The therapist brings all necessary equipment and expertise to you, providing the same professional techniques and therapeutic benefits as spa massage—but with convenience and privacy of in-villa treatment."
+        },
+        {
+          question: "How does home massage work?",
+          answer: "You book home massage through WhatsApp or phone, specifying your preferred time and massage type. The therapist arrives at your location with portable equipment, sets up in your space, delivers professional treatment, and leaves. You never have to leave your accommodation."
+        },
+        {
+          question: "Is home massage as good as spa massage?",
+          answer: "Yes. Professional home massage therapists have identical qualifications and expertise as spa therapists. The difference is location—home massage comes to you. The therapeutic quality, techniques, and professionalism remain the same. Many travelers find home massage superior due to privacy, convenience, and better value."
+        },
+        {
+          question: "What types of home massage are available?",
+          answer: "Professional home massage services offer Balinese massage (traditional Indonesian techniques), deep tissue massage (intensive muscle therapy), couples massage (synchronized treatment for two), and relaxation massage (gentle stress relief). Each type serves different therapeutic needs."
+        },
+        {
+          question: "Why do tourists prefer home massage over spa visits?",
+          answer: "Tourists choose home massage for convenience (no travel time), privacy (your personal space), cost savings (no facility overhead), flexibility (extended booking hours), safety (verified therapists), and immediate post-massage recovery in familiar surroundings. Home massage eliminates all spa friction while maintaining professional quality."
+        },
+        {
+          question: "How much does home massage cost compared to spa massage?",
+          answer: "Home massage typically costs 40-60% less than equivalent spa massage for the same quality. You avoid facility markups, transportation costs, and pressure for expensive upgrades. Pricing is transparent and fixed when booking."
+        }
+      ]} />
         </main>
         <Footer />
       </div>

@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, MapPin, Clock, Heart, Shield, TrendingUp } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function WhyTouristsPreferHomeMassage() {
   return (
@@ -573,6 +574,34 @@ export default function WhyTouristsPreferHomeMassage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "Why do solo travelers prefer mobile massage over spa visits?",
+          answer: "Solo travelers choose mobile massage for safety, privacy, and therapist verification advantages unavailable at random spas. Mobile massage provides complete control over environment and timing, with verified professional credentials eliminating safety concerns. The mobile massage experience offers comfort and security that solo travelers value highly, especially women traveling alone in Bali."
+        },
+        {
+          question: "How does mobile massage benefit couples on vacation?",
+          answer: "Couples mobile massage creates shared relaxation experiences in private villa spaces, strengthening vacation bonding while both partners receive synchronized professional treatment. Mobile massage for couples eliminates separate spa bookings and provides intimate, personalized sessions impossible in public facilities. The mobile massage convenience means more quality time together without transportation logistics."
+        },
+        {
+          question: "What makes mobile massage ideal for families traveling with children?",
+          answer: "Families prefer mobile massage because parents can relax while children remain safely in the villa under supervision. Mobile massage eliminates childcare coordination challenges that make spa visits difficult for parents. The mobile massage flexibility allows treatment during nap times or quiet moments, maximizing family vacation enjoyment without complicated arrangements."
+        },
+        {
+          question: "Why do luxury travelers choose mobile massage?",
+          answer: "Luxury travelers select mobile massage to maximize their high-end villa investment—professional spa services arrive at their accommodation rather than requiring them to leave. Mobile massage aligns with luxury travel expectations for convenience, privacy, and personalized service. The mobile massage experience complements premium accommodations across Ubud, Seminyak, Canggu, and Sanur resort areas."
+        },
+        {
+          question: "How does mobile massage solve budget travelers' needs?",
+          answer: "Budget travelers choose mobile massage because it delivers professional-quality treatments at 40-60% lower cost than equivalent spa services. Mobile massage eliminates facility overhead while maintaining therapist expertise and treatment quality. The mobile massage value proposition means travelers can afford more frequent sessions, enhancing their Bali wellness experience without overspending."
+        },
+        {
+          question: "What traveler problems does mobile massage uniquely solve?",
+          answer: "Mobile massage solves transportation stress, scheduling conflicts, safety concerns, privacy issues, cost inflation, and recovery environment challenges that plague traditional spa experiences. Tourists booking mobile massage avoid commute time, enjoy flexible scheduling, verify therapist credentials, control their environment, pay transparent prices, and recover immediately in comfortable spaces. The mobile massage model addresses every major tourist complaint about traditional spa services."
+        }
+      ]} />
 
       {/* Block 7: Soft CTA */}
       <section className="py-16 md:py-20 bg-background">

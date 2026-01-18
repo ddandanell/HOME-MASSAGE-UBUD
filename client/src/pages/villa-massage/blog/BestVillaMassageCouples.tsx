@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, Sparkles, Clock, Home, Gift } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function BestVillaMassageCouples() {
   const couplesBenefits = [
@@ -316,6 +317,34 @@ export default function BestVillaMassageCouples() {
                     </Link>
                   </div>
                 </div>
+
+                {/* FAQ Section */}
+                <VillaMassageFAQ items={[
+                  {
+                    question: "What makes villa massage more romantic than spa treatments for couples?",
+                    answer: "Villa massage creates complete privacy and intimacy impossible at public spas. Couples enjoy villa massage in their own space without strangers nearby. Villa massage therapists can incorporate personal romantic touches, music preferences, and timing that makes couples villa massage uniquely special."
+                  },
+                  {
+                    question: "Can we customize our couples villa massage with special requests?",
+                    answer: "Absolutely! Couples villa massage welcomes requests like specific music, aromatherapy preferences, or romantic additions. Villa massage coordinators help arrange flowers, champagne, or special timing for proposals. Customization is what makes couples villa massage perfect for celebrating relationships."
+                  },
+                  {
+                    question: "Is couples villa massage suitable for anniversary celebrations?",
+                    answer: "Yes! Couples villa massage is ideal for anniversaries with its romantic, pampering nature. Villa massage creates shared relaxation and bonding time away from daily stresses. Many couples make anniversary villa massage a yearly tradition throughout their Bali visits."
+                  },
+                  {
+                    question: "Do we need a large villa space for couples villa massage?",
+                    answer: "Couples villa massage fits in most villa bedrooms or living areas with space for two tables side-by-side. Villa massage therapists assess your space during booking and suggest best setup locations. Even modest villas typically have adequate room for couples villa massage treatments."
+                  },
+                  {
+                    question: "Can couples villa massage help strengthen our relationship?",
+                    answer: "Definitely! Couples villa massage promotes bonding through shared relaxation and stress reduction together. Villa massage creates quality time focused on mutual wellness and care. Many couples find villa massage enhances emotional connection by reducing tension and promoting presence."
+                  },
+                  {
+                    question: "What if one partner wants different pressure than the other?",
+                    answer: "Couples villa massage allows each person to receive customized pressure from their individual therapist. Villa massage professionals adjust techniques independently while maintaining synchronized timing. Different preferences don't diminish the shared couples villa massage experience."
+                  }
+                ]} />
 
                 {/* Related Articles */}
                 <div className="mt-12 pt-8 border-t">

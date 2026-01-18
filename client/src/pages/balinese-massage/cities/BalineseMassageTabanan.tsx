@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import BalineseMassageFAQ from "@/components/balinese-massage/BalineseMassageFAQ";
 
 export default function BalineseMassageTabanan() {
   return (
@@ -81,6 +82,33 @@ export default function BalineseMassageTabanan() {
           </p>
         </div>
       </section>
+
+      <BalineseMassageFAQ items={[
+        {
+          question: "How do Tabanan's rice terraces influence Balinese massage healing energy?",
+          answer: "Tabanan's UNESCO rice terraces create powerful healing environments for authentic Balinese massage. Traditional Balinese philosophy recognizes that agricultural landscapes blessed through Subak water temple rituals carry sacred energy beneficial for treatments. The terraces' geometric patterns and irrigation systems reflect cosmic order that Balinese massage seeks to restore in human bodies. Our therapists working in Tabanan retreat areas incorporate this peaceful agricultural energy into treatments, finding that guests experience deeper Balinese massage relaxation surrounded by blessed rice fields than in commercial settings. The spiritual connection between land stewardship and body care makes Tabanan Balinese massage uniquely profound."
+        },
+        {
+          question: "Can meditation retreat participants enhance practices with Balinese massage?",
+          answer: "Absolutely! Tabanan's meditation centers increasingly integrate Balinese massage into wellness programs. Traditional Balinese massage facilitates meditation by releasing physical tension that prevents stillness and clearing energy blockages that distract the mind. The acupressure points in authentic Balinese massage open channels that meditation then activates more powerfully. Many retreat participants schedule Balinese massage mid-program when accumulated sitting creates body resistance, finding that treatments break through meditation plateaus. The holistic Balinese healing approach complements contemplative practices by addressing the body-mind connection that both traditions recognize as essential for spiritual development and inner peace."
+        },
+        {
+          question: "Why is quiet mountain atmosphere ideal for traditional Balinese massage?",
+          answer: "Tabanan's peaceful mountain setting creates optimal conditions for deep Balinese massage healing. Traditional Balinese medicine emphasizes that treatments work best in calm environments where nervous systems can fully release into parasympathetic states. Mountain silence allows guests to hear their own breathing and heartbeat during Balinese massage—this body awareness deepens therapeutic effects. The cooler Tabanan temperatures make oil-based Balinese massage more comfortable than coastal heat while fresh mountain air enhances aromatherapy benefits. Many guests report that Balinese massage in Tabanan's tranquil atmosphere produces more profound results than the same techniques in busier, hotter beach locations."
+        },
+        {
+          question: "Do Tabanan's traditional villages offer authentic Balinese massage lineages?",
+          answer: "Yes! Tabanan's remote villages preserve Balinese massage knowledge passed through family generations for centuries. Our therapists often learned authentic Balinese healing from elders who never worked in commercial spas—maintaining techniques unchanged by tourist demands for lighter, faster treatments. Traditional Balinese massage in Tabanan includes spiritual elements and specific herb combinations that commercialized versions omit. The area's strong Hindu-Balinese culture ensures that massage remains connected to its sacred origins rather than becoming mere bodywork. Visitors seeking genuinely traditional Balinese massage find that Tabanan offers access to healing lineages preserved through isolation from mass tourism."
+        },
+        {
+          question: "Can Balinese massage support creative inspiration in Tabanan's artistic atmosphere?",
+          answer: "Yes! Tabanan attracts writers, artists, and creators who find Balinese massage enhances creative processes. Traditional Balinese massage clears mental clutter and energy stagnation that blocks creativity, while stimulating specific acupressure points believed to open intuition. The deep relaxation from authentic Balinese massage allows subconscious insights to surface—many creative professionals report breakthrough ideas emerging during or after treatments. Tabanan's inspiring mountain landscapes combined with Balinese massage's energy balancing creates powerful conditions for artistic work. The traditional Balinese understanding that physical, mental, and spiritual health interconnect supports the holistic wellness needed for sustained creative output."
+        },
+        {
+          question: "How does Tabanan's agricultural calendar affect Balinese massage availability?",
+          answer: "Tabanan's rice farming cycles and temple ceremonies do influence local therapist schedules, though we maintain consistent Balinese massage availability. During major harvest festivals and temple anniversary ceremonies (odalan), some therapists participate in community rituals—this connection to living culture ensures their Balinese massage remains spiritually authentic. We coordinate multiple therapists to guarantee service even during ceremonial periods. Many guests appreciate this integration of Balinese massage practice with actual Balinese religious life rather than commercialized treatments divorced from cultural roots. Understanding that your therapist may have just returned from temple offerings adds meaningful depth to traditional Balinese healing experiences."
+        }
+      ]} />
 
       <Footer />
     </div>

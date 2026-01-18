@@ -18,9 +18,14 @@ import ServiceAreas from "@/pages/ServiceAreas";
 import Treatments from "@/pages/Treatments";
 import Sitemap from "@/pages/Sitemap";
 import RecommendedServices from "@/pages/RecommendedServices";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsAndConditions from "@/pages/TermsAndConditions";
 
 // Blog Articles
 import PremiumHomeMassageKuta from "@/pages/blog/PremiumHomeMassageKuta";
+
+// Digital Nomad Wellness - Hub
+import DigitalNomadWellnessHub from "@/pages/digital-nomad-wellness/DigitalNomadWellnessHub";
 
 // Home Massage Silo - Hub
 import HomeMassageHub from "@/pages/home-massage/HomeMassageHub";
@@ -209,10 +214,15 @@ function Router() {
       <Route path="/villa-partnerships" component={VillaPartnerships} />
       <Route path="/sustainability" component={Sustainability} />
       <Route path="/recommended-services" component={RecommendedServices} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/terms-and-conditions" component={TermsAndConditions} />
       <Route path="/blog" component={BlogNew} />
       
       {/* Blog Articles */}
       <Route path="/blog/premium-home-massage-kuta" component={PremiumHomeMassageKuta} />
+      
+      {/* Digital Nomad Wellness - Complete structure */}
+      <Route path="/digital-nomad-wellness" component={DigitalNomadWellnessHub} />
       
       {/* Home Massage Silo - Complete structure */}
       <Route path="/home-massage" component={HomeMassageHub} />

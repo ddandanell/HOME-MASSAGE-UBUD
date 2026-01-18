@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, MapPin, CheckCircle, AlertCircle, Home } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageWhatToExpect() {
   return (
     <>
       <SEOHead 
-        title="What to Expect: Home Massage Service Guide | Before During After"
-        description="Complete guide to home massage experience. Learn what happens before, during, and after your home massage appointment. Professional home massage preparation and process explained."
+        title="What to Expect | Home Massage"
+        description="Complete home massage service guide: booking, preparation, treatment flow, and aftercare. Know exactly what happens during professional home massage. Call or WhatsApp to book now."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -34,8 +39,17 @@ export default function HomeMassageWhatToExpect() {
         </div>
       </section>
 
+      <TableOfContents items={[
+        { id: 'why-expectations', label: 'Why Understanding Expectations Matters' },
+        { id: 'preparation', label: 'Before Home Massage: Preparation' },
+        { id: 'arrival', label: 'Therapist Arrival' },
+        { id: 'treatment-flow', label: 'During Home Massage: Treatment Flow' },
+        { id: 'post-session', label: 'After Home Massage: Post-Session Care' },
+        { id: 'by-type', label: 'Home Massage Type-Specific Expectations' },
+      ]} />
+
       {/* Block 1: Why knowing what to expect matters */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="why-expectations" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -57,7 +71,7 @@ export default function HomeMassageWhatToExpect() {
       </section>
 
       {/* Block 2: Before - Preparation Phase */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="preparation" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -152,7 +166,7 @@ export default function HomeMassageWhatToExpect() {
       </section>
 
       {/* Block 3: Therapist Arrival and Welcome */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="arrival" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -217,7 +231,7 @@ export default function HomeMassageWhatToExpect() {
       </section>
 
       {/* Block 4: During Home Massage - Treatment Flow */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="treatment-flow" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -325,7 +339,7 @@ export default function HomeMassageWhatToExpect() {
       </section>
 
       {/* Block 5: After Home Massage - Post-Session Care */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="post-session" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -424,7 +438,7 @@ export default function HomeMassageWhatToExpect() {
       </section>
 
       {/* Block 6: Special Considerations by Home Massage Type */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="by-type" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -543,8 +557,41 @@ export default function HomeMassageWhatToExpect() {
         </div>
       </section>
 
+      <SafetyStandards />
+
+      <SpiderLinksBlock currentPage="/home-massage/knowledge/what-to-expect" />
+
+      <BookingCTA />
+
+      <HomeMassageFAQ questions={[
+        {
+          question: "How long before my home massage should I prepare?",
+          answer: "Start hydrating 24-48 hours before home massage. Clear your massage space 2 hours before. Shower 30 minutes before. These preparations ensure your home massage session runs smoothly and effectively."
+        },
+        {
+          question: "What does the therapist bring for home massage?",
+          answer: "Your home massage therapist arrives with massage oils, clean linens, professional tools, and identification. You provide only clean space—everything needed for quality home massage comes with the therapist."
+        },
+        {
+          question: "How long does home massage setup take?",
+          answer: "Expect 5-10 minutes for home massage setup. This is included in your appointment time, so a 60-minute booking includes setup—actual massage time is about 50 minutes."
+        },
+        {
+          question: "Can I talk during home massage?",
+          answer: "Yes, communicate pressure preferences and any discomfort during home massage. However, many clients prefer quiet, meditative sessions. Share your preference when your home massage therapist arrives."
+        },
+        {
+          question: "What if I fall asleep during home massage?",
+          answer: "Falling asleep during home massage is completely normal and indicates deep relaxation. Your therapist continues providing excellent treatment while you rest—this is a positive sign."
+        },
+        {
+          question: "What happens after home massage ends?",
+          answer: "After your home massage, transition slowly, drink water immediately, and rest for 2-4 hours if possible. The home massage advantage is you're already in your ideal recovery space."
+        }
+      ]} />
+
       {/* Block 7: Safety and Comfort During Home Massage */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="safety-comfort" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">

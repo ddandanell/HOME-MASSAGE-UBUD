@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- SEO Meta Tags -->
     <title>Professional Ubud Massage Services | Premium In-Villa Therapy | Book Now</title>
@@ -33,14 +33,48 @@
     <meta name="twitter:image" content="https://homemassageubud.com/twitter-image.jpg" />
     <meta name="twitter:image:alt" content="Professional Balinese massage therapy in villa" />
     
-    <!-- Local Business Schema -->
+    <!-- 
+      ========================================
+      SCHEMA.ORG STRUCTURED DATA - HOMEPAGE
+      ========================================
+      
+      This JSON-LD structured data helps Google understand your business
+      and enables rich results in search (business cards, maps, reviews).
+      
+      IMPORTANT: This schema is loaded on EVERY page via index.html.
+      All other page-specific schemas reference this using @id.
+      
+      SCHEMA PROPERTY EXPLANATIONS:
+      - @type: "HealthAndBeautyBusiness" - More specific than "LocalBusiness" for spa/wellness
+      - @id: Unique identifier that other schemas reference via "provider": { "@id": "..." }
+      - name: Business name shown in search results  
+      - alternateName: Alternative names customers search for
+      - description: Brief service overview (max 250 chars) for business cards
+      - url: Your primary website address
+      - image/logo: Business images for Google Business Profile
+      - telephone: WhatsApp-ready phone (+62 format) for click-to-call
+      - email: Primary contact email
+      - priceRange: $$ = Moderate pricing
+      - currenciesAccepted: IDR = Indonesian Rupiah
+      - paymentAccepted: Payment methods you accept
+      - address: Operational area (no streetAddress for mobile services)
+      - geo: GPS coordinates for local search and "near me" queries
+      - areaServed: REQUIRED for mobile businesses - all service locations
+      - openingHoursSpecification: Availability hours (7 AM - 10 PM, 7 days)
+      - aggregateRating: Overall ratings (ONLY REAL REVIEWS from actual customers)
+      - sameAs: Social media profiles for verification
+    -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "HealthAndBeautyBusiness",
       "@id": "https://homemassageubud.com/#localbusiness",
       "name": "Home Massage Ubud",
-      "alternateName": ["Premium Ubud Massage", "Ubud Villa Massage Service", "Professional Massage Therapy Ubud"],
+      "alternateName": [
+        "Premium Ubud Massage", 
+        "Ubud Villa Massage Service", 
+        "Professional Massage Therapy Ubud"
+      ],
       "description": "Premier in-villa massage and wellness services throughout Ubud, Bali. Certified therapists delivering authentic Balinese, therapeutic deep tissue, aromatherapy, and specialized wellness treatments to your accommodation with professional equipment and premium oils.",
       "url": "https://homemassageubud.com",
       "image": "https://homemassageubud.com/logo.png",

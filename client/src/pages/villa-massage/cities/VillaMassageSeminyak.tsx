@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Star, CheckCircle } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageSeminyak() {
   const services = [
@@ -174,6 +175,34 @@ export default function VillaMassageSeminyak() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Do luxury villas in Seminyak allow villa massage services?",
+              answer: "Yes! Most luxury villas in Seminyak welcome villa massage services. Our villa massage therapists work with properties along Jalan Kayu Aya, Jalan Laksmana, and beachfront estates. Villa massage is a standard amenity expected by guests in Seminyak's upscale accommodations."
+            },
+            {
+              question: "Is villa massage available near Seminyak Beach and Petitenget?",
+              answer: "Absolutely! Villa massage service covers all Seminyak neighborhoods including beachfront areas, Petitenget Temple vicinity, and Oberoi district. Our therapists bring villa massage treatments to boutique villas and luxury estates throughout Seminyak with reliable same-day availability."
+            },
+            {
+              question: "Can I book couples villa massage for anniversary celebrations in Seminyak?",
+              answer: "Definitely! Couples villa massage is popular in Seminyak for special occasions. We provide synchronized villa massage with two therapists, romantic aromatherapy, and premium service that matches Seminyak's luxury standards. Perfect villa massage experience for anniversaries, honeymoons, or romantic getaways."
+            },
+            {
+              question: "How does villa massage pricing compare to Seminyak spa resorts?",
+              answer: "Villa massage in Seminyak offers exceptional value compared to resort spas. Our villa massage rates are 30-40% lower than beachfront spa resorts while maintaining professional standards. You receive the same quality villa massage in your private space without resort premiums or service charges."
+            },
+            {
+              question: "What makes villa massage ideal for Seminyak's shopping district visitors?",
+              answer: "After exploring Seminyak's boutiques and galleries, villa massage provides perfect recovery for tired feet and shopping fatigue. Our villa massage therapists understand retail exhaustion and focus on foot reflexology and leg relief. Evening villa massage sessions help you relax before enjoying Seminyak's dining scene."
+            },
+            {
+              question: "Can villa massage therapists navigate Seminyak's busy traffic?",
+              answer: "Yes! Villa massage therapists in Seminyak are experienced with the area's traffic patterns and peak hours. We schedule villa massage appointments accounting for Seminyak congestion. Our therapists use scooters for reliable villa massage arrivals regardless of traffic conditions on main roads."
+            }
+          ]} />
 
           {/* CTA Section */}
           <section className="py-16 bg-primary text-primary-foreground">

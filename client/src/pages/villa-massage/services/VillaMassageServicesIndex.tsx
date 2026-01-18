@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Clock, Check, ArrowRight, Star, Heart, Sparkles } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageServicesIndex() {
   return (
@@ -557,6 +558,30 @@ export default function VillaMassageServicesIndex() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <VillaMassageFAQ items={[
+        {
+          question: "Which villa massage service is best for first-time clients?",
+          answer: "Balinese villa massage is ideal for first-time clients with its balanced pressure and comprehensive technique. Villa massage therapists combine relaxation with therapeutic benefits in traditional Balinese style. Most people find Balinese villa massage provides the perfect introduction to professional massage therapy."
+        },
+        {
+          question: "Can I combine different villa massage services in one session?",
+          answer: "Yes! Villa massage therapists can blend techniques like aromatherapy with deep tissue or hot stone with relaxation. Hybrid villa massage sessions customize treatments to your specific needs and preferences. Discuss combination options when booking villa massage for personalized therapeutic experiences."
+        },
+        {
+          question: "How do I choose between relaxation and deep tissue villa massage?",
+          answer: "Choose relaxation villa massage for stress relief and mental calm, deep tissue for chronic pain and muscle knots. Villa massage therapists help determine which service matches your primary goal. Many clients alternate between villa massage types depending on their current physical and emotional needs."
+        },
+        {
+          question: "Are all villa massage services the same price?",
+          answer: "Most villa massage services cost the same, except couples treatments (two therapists) and shorter reflexology sessions. Villa massage pricing reflects therapist expertise and session duration rather than technique complexity. Premium services like hot stone include all equipment at no additional villa massage cost."
+        },
+        {
+          question: "Can villa massage therapists recommend the right service for me?",
+          answer: "Absolutely! Villa massage therapists assess your needs and suggest appropriate treatments during booking consultations. They consider your goals, health conditions, and preferences when recommending villa massage services. Professional guidance ensures you select the most beneficial villa massage style."
+        }
+      ]} />
 
       {/* Booking Information */}
       <section className="py-16 md:py-20 bg-background">

@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Check } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function MobileMassageUbud() {
   return (
@@ -241,6 +242,34 @@ export default function MobileMassageUbud() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "How does mobile massage work in Ubud's hilly terrain and villa locations?",
+          answer: "Mobile massage therapists in Ubud are experienced navigating the area's hills, rice terraces, and remote villa locations. They know shortcuts through Ubud Center, Penestanan, Sanggingan, and Tegallalang. Our therapists bring complete mobile massage equipment on scooters, easily reaching villas on narrow paths where cars cannot access."
+        },
+        {
+          question: "Can I book mobile massage after hiking or yoga in Ubud?",
+          answer: "Absolutely! Mobile massage is perfect for post-activity recovery in Ubud. Many guests book treatments after Campuhan Ridge walks, Tegallalang rice terrace visits, or yoga classes. Our therapists offer specialized mobile massage techniques for hiking-tired legs and yoga-stretched muscles. Same-day booking is often available for spontaneous sessions."
+        },
+        {
+          question: "Is mobile massage in Ubud suitable for wellness retreat participants?",
+          answer: "Yes! Mobile massage complements Ubud's wellness retreats perfectly. Whether you're at a dedicated retreat center or independent villa, our mobile massage service integrates seamlessly with your wellness program. We offer various modalities including Balinese, deep tissue, and gentle relaxation massage to support your healing journey."
+        },
+        {
+          question: "Do mobile massage therapists in Ubud serve luxury villa resorts?",
+          answer: "Yes. Our mobile massage service reaches luxury properties throughout Ubud including Payangan, Kedewatan, and Sayan areas. Therapists coordinate professionally with resort management and security. Many Ubud luxury villa guests prefer mobile massage for the privacy and personalized experience compared to shared spa facilities."
+        },
+        {
+          question: "What areas of Ubud does mobile massage cover?",
+          answer: "Mobile massage covers all Ubud areas: Ubud Center, Monkey Forest area, Penestanan, Campuhan, Sanggingan, Tegallalang, Payangan, Kedewatan, Sayan, and Lodtunduh. Whether you're in a traditional guesthouse, modern villa, or luxury resort, mobile massage reaches your location within Ubud's 15km radius service area."
+        },
+        {
+          question: "Can mobile massage therapists accommodate vegetarian/vegan wellness preferences in Ubud?",
+          answer: "While our mobile massage doesn't involve food, we do use essential oils and products. If you have specific preferences for vegan, organic, or chemical-free products as part of your Ubud wellness lifestyle, please mention this when booking. We can accommodate various product preferences for your mobile massage treatment."
+        }
+      ]} />
 
       {/* Block 6: CTA and Links */}
       <section className="py-16 md:py-20 bg-background">

@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import BalineseMassageFAQ from "@/components/balinese-massage/BalineseMassageFAQ";
 
 export default function BalineseMassageSanur() {
   return (
@@ -208,6 +209,33 @@ export default function BalineseMassageSanur() {
           </p>
         </div>
       </section>
+
+      <BalineseMassageFAQ items={[
+        {
+          question: "Why is Sanur ideal for family-friendly Balinese massage experiences?",
+          answer: "Sanur's peaceful atmosphere makes it perfect for introducing families to authentic Balinese massage. The gentle, calm energy of Sanur mirrors the traditional Balinese massage philosophy of balance and relaxation. Our therapists can provide Balinese massage treatments for parents while children play safely nearby in villas, or offer gentle Balinese massage techniques suitable for teenagers. Sanur's family-oriented culture aligns beautifully with the holistic Balinese healing approach, creating stress-free wellness experiences for all ages without the intensity of busier beach areas."
+        },
+        {
+          question: "Can long-term Sanur residents use Balinese massage for chronic pain management?",
+          answer: "Yes! Many expatriates and long-term residents in Sanur rely on regular Balinese massage for managing chronic conditions. Traditional Balinese massage techniques effectively address arthritis, repetitive strain injuries, and age-related muscle tension through consistent therapeutic application. Weekly or bi-weekly Balinese massage sessions help maintain mobility and reduce inflammation naturally. Sanur's calm pace supports the sustained healing that Balinese massage traditions emphasize—gradual improvement through regular treatment rather than quick fixes, making it ideal for ongoing pain management programs."
+        },
+        {
+          question: "How does Sanur's calm water energy influence Balinese massage benefits?",
+          answer: "Sanur's protected bay creates uniquely calm, healing energy that enhances Balinese massage effectiveness. Traditional Balinese healing philosophy recognizes environmental energy influences on treatment outcomes. The still waters and gentle sunrise atmosphere of Sanur promote deeper relaxation during Balinese massage, allowing therapists to work more effectively on energy channels. Many guests report that Balinese massage in Sanur feels more meditative than in busier areas, with the peaceful ocean energy supporting the spiritual cleansing aspects traditional to authentic Balinese massage practice."
+        },
+        {
+          question: "Do Sanur's older demographic find Balinese massage particularly beneficial?",
+          answer: "Absolutely. Sanur attracts mature travelers who especially appreciate traditional Balinese massage benefits for age-related wellness. The gentle yet effective pressure in Balinese massage improves circulation critical for older bodies, while acupressure techniques address joint stiffness without aggressive manipulation. Our experienced therapists adapt Balinese massage intensity for sensitive bodies while maintaining therapeutic effectiveness. The holistic Balinese approach—combining physical treatment with energy balancing—supports healthy aging naturally, making Balinese massage a cornerstone of wellness for Sanur's mature community."
+        },
+        {
+          question: "Can beachfront Sanur villas accommodate couples Balinese massage?",
+          answer: "Yes, Sanur's spacious beachfront villas are perfect for couples Balinese massage experiences. We bring two certified therapists and complete equipment to your villa for synchronized treatments. The tranquil Sanur setting—with gentle waves and sunrise views—creates romantic ambiance that enhances couples Balinese massage. Many anniversary and retirement celebration guests choose Sanur specifically for peaceful, intimate Balinese massage experiences. The area's unhurried atmosphere allows couples to fully absorb traditional Balinese healing benefits without rushing, creating meaningful shared wellness moments."
+        },
+        {
+          question: "What makes traditional Balinese massage authentic in peaceful Sanur?",
+          answer: "Sanur's traditional village roots preserve authentic Balinese massage lineage better than newer tourist areas. Many local therapists learned Balinese massage from family elders, maintaining generations-old techniques and spiritual elements. Traditional Balinese massage in Sanur often includes prayers and offerings that commercialized spas omit, connecting treatments to their sacred origins. The area's Balinese Hindu temples and ceremonies infuse daily life with the spiritual philosophy underlying authentic Balinese massage, ensuring treatments honor traditional healing wisdom rather than simplified spa versions designed for rapid tourist turnover."
+        }
+      ]} />
 
       <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto text-center">

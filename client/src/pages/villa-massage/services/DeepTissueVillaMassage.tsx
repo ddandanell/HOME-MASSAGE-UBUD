@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Star, Activity, Zap, Target } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function DeepTissueVillaMassage() {
   return (
@@ -254,6 +255,34 @@ export default function DeepTissueVillaMassage() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "How much pressure is used in deep tissue villa massage?",
+              answer: "Deep tissue villa massage uses firm to strong pressure targeting muscle depths below surface tissue. Villa massage therapists gradually increase pressure as muscles warm up and release. Deep tissue villa massage intensity is always adjusted based on your tolerance to ensure therapeutic effectiveness without excessive discomfort."
+            },
+            {
+              question: "Will deep tissue villa massage hurt or cause bruising?",
+              answer: "Deep tissue villa massage should feel intensely relieving, not painful. Villa massage therapists work within your comfort threshold using controlled pressure. Slight muscle tenderness may occur post-treatment, but bruising indicates excessive force. Communicate with villa massage therapists to maintain proper deep tissue pressure levels."
+            },
+            {
+              question: "How soon will I feel benefits from deep tissue villa massage?",
+              answer: "Most people feel immediate relief from deep tissue villa massage, with continued improvement over 24-48 hours as inflammation reduces. Villa massage therapists target chronic tension that may require multiple sessions. Regular deep tissue villa massage produces cumulative benefits for long-standing muscle issues."
+            },
+            {
+              question: "Can deep tissue villa massage help with chronic back pain?",
+              answer: "Yes! Deep tissue villa massage effectively addresses chronic back pain by releasing muscle adhesions and improving flexibility. Villa massage therapists focus on paraspinal muscles and trigger points causing discomfort. Consistent deep tissue villa massage often provides significant relief where other treatments haven't worked."
+            },
+            {
+              question: "Should I drink water after deep tissue villa massage?",
+              answer: "Absolutely! Deep tissue villa massage releases metabolic waste from muscles that needs flushing from your system. Villa massage therapists recommend drinking extra water for 24 hours post-treatment. Proper hydration after deep tissue villa massage reduces soreness and maximizes therapeutic benefits."
+            },
+            {
+              question: "Is deep tissue villa massage suitable for athletes and active people?",
+              answer: "Definitely! Deep tissue villa massage is ideal for athletes dealing with training stress and repetitive strain injuries. Villa massage therapists understand sports-specific muscle patterns and recovery needs. Many active individuals schedule regular deep tissue villa massage for injury prevention and performance maintenance."
+            }
+          ]} />
 
           {/* Internal Links */}
           <section className="py-16 bg-muted/30">

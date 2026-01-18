@@ -51,10 +51,17 @@ const footerSections = [
     ]
   },
   {
+    title: 'Legal',
+    links: [
+      { name: 'Privacy Policy', href: '/privacy-policy' },
+      { name: 'Terms & Conditions', href: '/terms-and-conditions' },
+      { name: 'Contact Us', href: '/contact' }
+    ]
+  },
+  {
     title: 'Booking',
     links: [
       { name: 'Pricing', href: '/pricing' },
-      { name: 'Contact Us', href: '/contact' },
       { name: 'Villa Partnerships', href: '/villa-partnerships' },
       { name: 'WhatsApp Book', href: 'https://wa.me/628112656869', external: true }
     ]

@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Star, Heart, Users, Sparkles } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function CouplesVillaMassage() {
   return (
@@ -254,6 +255,34 @@ export default function CouplesVillaMassage() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "Do both partners receive couples villa massage simultaneously?",
+              answer: "Yes! Couples villa massage uses two therapists working side-by-side so you and your partner receive synchronized treatments. Villa massage therapists coordinate techniques and timing for a shared experience. Couples villa massage allows you to relax together at your villa in perfect harmony."
+            },
+            {
+              question: "Can couples with different pressure preferences book villa massage together?",
+              answer: "Absolutely! Each couples villa massage therapist customizes their technique to individual preferences. One partner might enjoy deep tissue villa massage while the other prefers gentle relaxation. Couples villa massage accommodates different needs while maintaining the shared experience."
+            },
+            {
+              question: "What makes couples villa massage romantic for anniversaries?",
+              answer: "Couples villa massage creates intimate bonding through shared relaxation in your private villa space. Villa massage therapists can incorporate romantic aromatherapy and coordinate with special touches like flowers or champagne. Couples villa massage turns your anniversary into a memorable wellness celebration."
+            },
+            {
+              question: "Is couples villa massage more expensive than two individual sessions?",
+              answer: "No! Couples villa massage is typically the same total price as booking two separate individual villa massage appointments. You pay for two therapists and two treatments combined into one synchronized couples villa massage session. Many villas offer the perfect romantic setting at no additional cost."
+            },
+            {
+              question: "Can unmarried partners or friends book couples villa massage?",
+              answer: "Definitely! Couples villa massage welcomes any two people wanting to share the experience—partners, spouses, friends, or family members. Villa massage therapists focus on professional treatment regardless of relationship type. Couples villa massage is simply side-by-side treatments for any two people."
+            },
+            {
+              question: "How much space is needed for couples villa massage at our villa?",
+              answer: "Couples villa massage requires a room or outdoor area large enough for two massage tables side-by-side with therapist movement space. Most villa bedrooms, living rooms, or poolside pavilions work perfectly for couples villa massage. Villa massage therapists help determine the best villa space during booking."
+            }
+          ]} />
 
           {/* Internal Links */}
           <section className="py-16 bg-muted/30">

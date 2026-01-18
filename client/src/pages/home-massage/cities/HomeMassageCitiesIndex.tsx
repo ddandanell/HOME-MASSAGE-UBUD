@@ -6,13 +6,18 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Check, ArrowRight, Clock } from 'lucide-react';
+import TableOfContents from '@/components/home-massage/TableOfContents';
+import SpiderLinksBlock from '@/components/home-massage/SpiderLinksBlock';
+import HomeMassageFAQ from '@/components/home-massage/HomeMassageFAQ';
+import SafetyStandards from '@/components/home-massage/SafetyStandards';
+import BookingCTA from '@/components/home-massage/BookingCTA';
 
 export default function HomeMassageCitiesIndex() {
   return (
     <>
       <SEOHead 
-        title="Home Massage by City | Service Areas Across Bali"
-        description="Home massage service available throughout Bali. Professional treatments delivered to your villa in Ubud, Canggu, Seminyak, Sanur, and Nusa Dua. Same-day booking across all locations."
+        title="Home Massage Cities | Ubud Luxury Villas"
+        description="Home massage service available throughout Bali. Professional treatments delivered to your villa in Ubud, Canggu, Seminyak, Sanur, and Nusa Dua. Same-day booking via call or WhatsApp."
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
@@ -40,8 +45,17 @@ export default function HomeMassageCitiesIndex() {
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <TableOfContents items={[
+        { id: 'introduction', label: 'Home Massage Throughout Bali' },
+        { id: 'cities', label: 'Cities We Serve' },
+        { id: 'features', label: 'Universal Service Features' },
+        { id: 'safety', label: 'Safety Standards' },
+        { id: 'faq', label: 'Frequently Asked Questions' }
+      ]} />
+
       {/* Introduction */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="introduction" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -71,7 +85,7 @@ export default function HomeMassageCitiesIndex() {
       </section>
 
       {/* City Cards */}
-      <section className="py-16 md:py-20 bg-secondary/20">
+      <section id="cities" className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -280,7 +294,7 @@ export default function HomeMassageCitiesIndex() {
       </section>
 
       {/* Universal Features */}
-      <section className="py-16 md:py-20 bg-background">
+      <section id="features" className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -326,6 +340,45 @@ export default function HomeMassageCitiesIndex() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Safety Standards */}
+      <SafetyStandards />
+
+      {/* Spider Links Block */}
+      <SpiderLinksBlock currentPage="/home-massage/cities" />
+
+      {/* Booking CTA */}
+      <BookingCTA />
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <HomeMassageFAQ items={[
+          {
+            question: "Which cities in Bali offer home massage services?",
+            answer: "We provide home massage throughout Bali's most popular destinations including Ubud, Canggu, Seminyak, Sanur, and Nusa Dua. All cities receive the same professional service with licensed therapists and complete equipment."
+          },
+          {
+            question: "How do I book home massage in different cities?",
+            answer: "Book home massage in any Bali city by contacting us via WhatsApp at +62 811-2656-869. Provide your city, accommodation name, preferred time, and massage type. We confirm availability and arrange therapist arrival."
+          },
+          {
+            question: "Is home massage pricing the same in all cities?",
+            answer: "Home massage pricing is consistent across all cities we serve. Rates include therapist travel, professional equipment, premium oils, and flexible scheduling. Contact us for exact pricing for your location and preferred treatment."
+          },
+          {
+            question: "What types of home massage are available in all cities?",
+            answer: "All cities receive the full range of home massage services including Balinese massage, deep tissue massage, relaxation massage, and couples massage. Same professional standards apply regardless of location."
+          },
+          {
+            question: "Can I get home massage in remote villa locations?",
+            answer: "Yes! Our home massage service reaches all accommodation types including remote rice field villas in Ubud, beachfront properties in Canggu, and gated estates in Nusa Dua. We navigate to your exact location."
+          },
+          {
+            question: "How quickly can I get home massage in different cities?",
+            answer: "Most home massage requests are accommodated within 1-4 hours depending on the city. Canggu and Seminyak typically have 1-3 hour response times, while Ubud and Sanur average 2-4 hours. Same-day booking available in all locations."
+          }
+        ]} />
       </section>
 
       {/* CTA Section */}

@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Clock, Home, Shield, Heart, Sparkles } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageBenefitsBali() {
   const benefits = [
@@ -222,6 +223,34 @@ export default function VillaMassageBenefitsBali() {
                     </Link>
                   </div>
                 </div>
+
+                {/* FAQ Section */}
+                <VillaMassageFAQ items={[
+                  {
+                    question: "What are the main benefits of choosing villa massage over spa visits?",
+                    answer: "Villa massage eliminates travel time and stress while providing complete privacy in your own space. Villa massage saves time and money on transportation while offering personalized attention. The convenience of villa massage means more relaxation and less hassle during your Bali vacation."
+                  },
+                  {
+                    question: "Can villa massage really match spa facility quality?",
+                    answer: "Absolutely! Villa massage therapists bring professional equipment and premium products matching spa standards. Villa massage delivers identical technique quality with added privacy and convenience benefits. Many people find villa massage superior because therapists focus exclusively on you without facility distractions."
+                  },
+                  {
+                    question: "Is villa massage more cost-effective than going to spas?",
+                    answer: "Yes! Villa massage eliminates transportation costs and often charges less than comparable spa treatments. Villa massage avoids hidden spa fees for facilities and service charges. The value of villa massage includes convenience and time savings beyond direct price comparisons."
+                  },
+                  {
+                    question: "How does villa massage benefit families traveling with children?",
+                    answer: "Villa massage allows parents to receive treatments while children play safely nearby at the villa. Villa massage eliminates childcare logistics required for spa visits. Families find villa massage essential for maintaining wellness without sacrificing supervision or family time."
+                  },
+                  {
+                    question: "Can villa massage help with specific health conditions?",
+                    answer: "Villa massage addresses various conditions including chronic pain, stress, poor circulation, and muscle tension. Villa massage therapists customize techniques for individual health needs and limitations. Regular villa massage provides therapeutic benefits for many common health concerns."
+                  },
+                  {
+                    question: "What makes villa massage ideal for long-term Bali visitors?",
+                    answer: "Villa massage offers flexible scheduling and consistent quality for extended stays without repetitive spa visits. Villa massage becomes part of weekly wellness routines for digital nomads and long-term travelers. Regular villa massage maintains health and reduces stress throughout prolonged Bali residency."
+                  }
+                ]} />
 
                 {/* Related Articles */}
                 <div className="mt-12 pt-8 border-t">

@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Scale, MapPin, Clock, Shield, DollarSign, Heart, CheckCircle, Users } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function MobileMassageVsSpa() {
   return (
@@ -669,6 +670,34 @@ export default function MobileMassageVsSpa() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "Which is better value: mobile massage or spa massage?",
+          answer: "Mobile massage delivers significantly better value, typically costing 40-60% less than equivalent spa treatments while maintaining professional quality. The mobile massage vs spa price difference reflects eliminated facility overhead—no building rent, reception staff, or spa markup. Mobile massage therapists provide identical professional service at lower cost, making mobile massage the smart value choice for budget-conscious travelers."
+        },
+        {
+          question: "Is mobile massage as professional as spa massage?",
+          answer: "Professional mobile massage matches or exceeds spa massage quality standards. Mobile massage therapists maintain identical credentials, training, and experience as spa practitioners. The mobile massage vs spa difference is location and convenience, not professionalism—mobile massage services verify therapist qualifications rigorously, often with more transparency than random spa assignments."
+        },
+        {
+          question: "How does privacy compare between mobile massage and spa?",
+          answer: "Mobile massage provides superior privacy compared to spa massage—you receive treatment in your personal space with no shared facilities, waiting rooms, or other clients nearby. The mobile massage vs spa privacy difference is dramatic: mobile massage happens in your villa or hotel room under your complete control. Spa massage occurs in commercial facilities with inevitable social interaction and public spaces."
+        },
+        {
+          question: "Which offers more flexible scheduling: mobile massage or spa?",
+          answer: "Mobile massage offers dramatically more scheduling flexibility than spa massage, with extended hours (typically 7am-11pm) and same-day booking options. The mobile massage vs spa scheduling comparison favors mobile massage: spa facilities operate limited hours with rigid appointment windows. Mobile massage accommodates last-minute changes and works around your vacation plans seamlessly."
+        },
+        {
+          question: "Does mobile massage or spa massage provide better therapeutic results?",
+          answer: "Mobile massage often delivers superior therapeutic results because the immediate post-treatment recovery happens in your private, relaxed space. The mobile massage vs spa comparison shows mobile massage eliminates disruptive travel after treatment, allowing your body to process the work undisturbed. Mobile massage therapists use identical techniques as spa practitioners—the enhanced recovery environment makes mobile massage more therapeutically effective."
+        },
+        {
+          question: "When should I choose spa massage over mobile massage?",
+          answer: "Choose spa massage only when you specifically want dedicated facility atmosphere or multi-service spa packages combining massage with facials and body treatments. However, for most travelers, the mobile massage vs spa comparison overwhelmingly favors mobile massage across convenience, privacy, cost, flexibility, and quality dimensions. Mobile massage provides equivalent or superior therapeutic benefits at better value."
+        }
+      ]} />
 
       {/* Block 9: Call to Action */}
       <section className="py-16 md:py-20 bg-background">

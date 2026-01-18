@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Check } from 'lucide-react';
+import MobileMassageFAQ from '@/components/mobile-massage/MobileMassageFAQ';
 
 export default function MobileMassageSanur() {
   return (
@@ -245,6 +246,34 @@ export default function MobileMassageSanur() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <MobileMassageFAQ items={[
+        {
+          question: "How do I book mobile massage for beachfront accommodations in Sanur?",
+          answer: "Booking mobile massage for Sanur beachfront properties is easy via WhatsApp at +62 811-2656-869. Our therapists serve the entire Sanur beach strip from north to south. Simply provide your hotel name or villa address, and our mobile massage service will reach any beachfront location in Sanur within 1-3 hours."
+        },
+        {
+          question: "Is mobile massage in Sanur suitable for families and older travelers?",
+          answer: "Absolutely! Sanur's calm atmosphere attracts families and mature travelers, and mobile massage is perfect for all ages. Our therapists offer gentle, relaxing treatments ideal for seniors and family members with varying massage preferences. Couples and family mobile massage sessions are popular in Sanur's spacious villas and family-friendly resorts."
+        },
+        {
+          question: "Can mobile massage therapists set up treatments on Sanur beachfront patios or gardens?",
+          answer: "Yes! Many Sanur guests enjoy mobile massage on private beach patios or garden areas. Our therapists bring portable equipment suitable for outdoor setups. Sanur's calm beach atmosphere and gentle breeze create perfect conditions for outdoor mobile massage treatments with ocean views."
+        },
+        {
+          question: "What makes mobile massage in Sanur different from busier beach areas?",
+          answer: "Sanur's relaxed pace makes mobile massage even more appealing. Unlike busy Kuta or Seminyak, Sanur offers peaceful settings perfect for therapeutic treatments. The area's family-friendly atmosphere, calm beach, and established expat community create ideal conditions for regular mobile massage wellness routines."
+        },
+        {
+          question: "Do you offer mobile massage for long-term Sanur residents and expats?",
+          answer: "Yes! Many Sanur expats and long-term residents book regular mobile massage appointments. We offer priority scheduling for recurring clients and can arrange your preferred therapist for consistency. Mobile massage is popular among Sanur's retirement community and expats seeking regular wellness maintenance."
+        },
+        {
+          question: "What are mobile massage operating hours in Sanur?",
+          answer: "Mobile massage in Sanur operates 7am-10pm daily. Early morning sessions (7-9am) are popular before beach walks. Midday treatments (12-3pm) work well after swimming. Evening mobile massage (6-10pm) is perfect after Sanur's beachfront dining. We accommodate Sanur's relaxed schedule with flexible timing."
+        }
+      ]} />
 
       {/* Block 6: CTA and Links */}
       <section className="py-16 md:py-20 bg-background">

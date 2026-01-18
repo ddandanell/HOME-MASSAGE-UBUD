@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Star, Sparkles, Heart, Leaf } from 'lucide-react';
+import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function BalineseVillaMassage() {
   return (
@@ -254,6 +255,34 @@ export default function BalineseVillaMassage() {
               </div>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <VillaMassageFAQ items={[
+            {
+              question: "What pressure level is used in Balinese villa massage?",
+              answer: "Balinese villa massage uses medium to firm pressure with long flowing strokes. Villa massage therapists adjust pressure based on your preferences and muscle tension. Traditional Balinese villa massage combines gentle stretching with deeper acupressure, making it ideal for relaxation and therapeutic benefits at your villa."
+            },
+            {
+              question: "How does traditional Balinese villa massage differ from other styles?",
+              answer: "Balinese villa massage uniquely combines techniques including deep tissue, reflexology, and aromatherapy in one treatment. Villa massage therapists use palm pressure, thumb work, and gentle stretches. Traditional Balinese villa massage treats the whole body systematically, making it the most comprehensive villa massage style available."
+            },
+            {
+              question: "Can Balinese villa massage help with jet lag and travel fatigue?",
+              answer: "Yes! Balinese villa massage is excellent for jet lag recovery with its circulation-boosting strokes and relaxing aromatherapy. Villa massage therapists focus on tension points that tighten during flights. Post-travel Balinese villa massage helps reset your body clock and eases you into vacation mode."
+            },
+            {
+              question: "What essential oils are used in Balinese villa massage?",
+              answer: "Balinese villa massage traditionally uses frangipani, sandalwood, and coconut oils with natural aromatherapy benefits. Villa massage therapists bring organic Balinese oils that nourish skin while providing therapeutic scents. The essential oils used in villa massage enhance relaxation and connect you to authentic Balinese healing traditions."
+            },
+            {
+              question: "Is Balinese villa massage suitable for first-time massage recipients?",
+              answer: "Absolutely! Balinese villa massage is perfect for beginners with its balanced pressure and flowing rhythm. Villa massage therapists communicate throughout the session and adjust techniques for comfort. Many people choose Balinese as their first villa massage because it's deeply relaxing without being too intense."
+            },
+            {
+              question: "How long should I wait between Balinese villa massage sessions?",
+              answer: "Most people enjoy Balinese villa massage every 3-5 days during Bali visits for optimal benefits. Villa massage therapists can provide treatments more frequently for specific issues. Regular Balinese villa massage throughout your stay maintains relaxation and addresses cumulative travel stress effectively."
+            }
+          ]} />
 
           {/* Internal Links */}
           <section className="py-16 bg-muted/30">
