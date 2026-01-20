@@ -57,17 +57,17 @@ primary_keywords:
   - "private massage ubud"
 
 keyword_targets:
-  exact_match_per_keyword: {min: 6, max: 14}     # across the whole page
-  partial_variations_per_keyword: {min: 8, max: 20}
+  exact_match_per_keyword: {min: 25, max: 60}     # For 40K-50K word count
+  partial_variations_per_keyword: {min: 50, max: 120}  # Natural variations
   overall_density_cap: 2.0                        # do not exceed
 
 targets:
-  total_word_count: 3200-4200
-  sections_min: 20
-  faqs: 10
-  ctas_min: 10
-  internal_links_min: 12
-  images_min: 12
+  total_word_count: 40000-50000  # Comprehensive ultimate guide
+  sections_min: 100  # Extensive sectioning
+  faqs: 50  # Comprehensive FAQ coverage
+  ctas_min: 30  # Multiple CTAs throughout
+  internal_links_min: 50  # Extensive internal linking
+  images_min: 40  # Rich visual content
   mobile_friendly: true
   page_speed_target: 80
 
@@ -183,7 +183,11 @@ Create:
 
 ### PHASE 5: WRITE THE FULL LANDING PAGE (CONTENT + HTML)
 
-Generate a complete landing page (3200-4200 words total) with the following sections:
+Generate a comprehensive, ultimate guide landing page **(40,000-50,000 words total)** with the following structure:
+
+**THIS IS A MASSIVE CONTENT PIECE - AN ULTIMATE RESOURCE GUIDE**
+
+Break content generation into multiple tasks and jump between sections to maintain quality. Use the following structure:
 
 #### 5.1 META TAGS
 - **Title Tag:** 50-60 characters, include primary keyword
@@ -194,47 +198,160 @@ Generate a complete landing page (3200-4200 words total) with the following sect
 - Include primary keyword naturally
 - Make it compelling and benefit-focused
 
-#### 5.3 HERO SECTION (50-80 words)
+#### 5.3 HERO SECTION (150-250 words)
 - Immediate value proposition
 - Location-specific hook
 - Clear CTA mention
+- Brief overview of comprehensive content below
 
-#### 5.4 INTRODUCTION (150-200 words)
-- Address target audience directly
-- Establish relevance to their situation
-- Include 2-3 secondary keyword variants naturally
+#### 5.4 TABLE OF CONTENTS (200-300 words)
+- **REQUIRED for 40K+ word pages**
+- Jump links to all major sections
+- Organized by topic clusters
+- Makes long content navigable
 
-#### 5.5 MAIN CONTENT SECTIONS (800-1200 words total)
-- One section per Content Angle from blueprint
-- Each section: 150-250 words
-- H2 subheadings with keyword variants
-- Unique storytelling per section
-- Local landmarks/culture references
+#### 5.5 EXECUTIVE SUMMARY (500-800 words)
+- Comprehensive overview of entire guide
+- Key takeaways up front
+- Who this guide is for
+- What they'll learn
+- Include 3-5 secondary keywords naturally
 
-#### 5.6 PRICING/OFFER SECTION (100-150 words)
-- Based on Pricing Visibility level
-- Clear pricing or "starting from" ranges
-- Value justification
+#### 5.6 MAIN CONTENT SECTIONS (35,000-40,000 words total)
 
-#### 5.7 TRUST SIGNALS (100-150 words)
-- Certifications
+**CRITICAL**: Break into 80-100+ sections across these topic clusters:
+
+**Cluster 1: Service Overview & Introduction (3,000-4,000 words)**
+- What is [Service]
+- History and origins
+- How it works
+- Benefits overview
+- Science behind it
+- Who it's for
+- Variations and styles
+
+**Cluster 2: Detailed Benefits & Use Cases (5,000-6,000 words)**
+- Physical benefits (1000 words)
+- Mental/emotional benefits (1000 words)
+- Specific conditions it addresses (2000 words)
+- Short-term vs long-term benefits (1000 words)
+- Scientific studies and evidence (1000 words)
+
+**Cluster 3: Service Process & What to Expect (4,000-5,000 words)**
+- Before the service (1000 words)
+- During the service (1500 words)
+- After the service (1000 words)
+- First-time experience (1000 words)
+- Tips for maximizing benefits (500 words)
+
+**Cluster 4: Location-Specific Information (6,000-8,000 words)**
+- Ubud Centre coverage (1000 words)
+- North Ubud areas (800 words)
+- South Ubud areas (800 words)
+- Penestanan (600 words)
+- Sayan Valley (600 words)
+- Tegallalang (600 words)
+- Sanggingan (600 words)
+- Monkey Forest area (600 words)
+- Campuhan Ridge (600 words)
+- Nyuh Kuning (600 words)
+- Petulu (400 words)
+- Mas (400 words)
+- Hotel and villa coverage (1000 words)
+
+**Cluster 5: Service Types & Variations (5,000-6,000 words)**
+- Type 1 in detail (800 words each × 6-8 types)
+- Comparison between types (1000 words)
+- Which type for which need (1000 words)
+- Combination services (500 words)
+
+**Cluster 6: Practitioner & Quality Information (3,000-4,000 words)**
+- Therapist qualifications (1000 words)
+- Training and certification (1000 words)
+- Experience levels (500 words)
+- Specializations (500 words)
+- Quality standards (500 words)
+- Safety protocols (500 words)
+
+**Cluster 7: Pricing & Packages (2,000-3,000 words)**
+- Individual session pricing (500 words)
+- Package deals (500 words)
+- Value comparison (500 words)
+- Payment options (300 words)
+- Money-back guarantee (300 words)
+- Special offers (400 words)
+- ROI and value justification (500 words)
+
+**Cluster 8: Booking & Logistics (2,000-2,500 words)**
+- How to book (500 words)
+- Response times (300 words)
+- Same-day booking (300 words)
+- Advance booking (300 words)
+- Cancellation policy (300 words)
+- Rescheduling (300 words)
+- Group bookings (500 words)
+
+**Cluster 9: Comparisons & Alternatives (3,000-4,000 words)**
+- vs Hotel spas (1000 words)
+- vs Spa clinics (1000 words)
+- vs Warung massages (800 words)
+- vs DIY methods (600 words)
+- Why mobile service wins (600 words)
+
+**Cluster 10: Customer Stories & Case Studies (2,000-3,000 words)**
+- 10-15 detailed testimonials (150-200 words each)
+- Before/after scenarios
+- Specific problem solutions
+- Various client types
+
+#### 5.7 COMPREHENSIVE FAQ SECTION (4,000-5,000 words)
+- **50 detailed FAQs** (80-100 words each)
+- Organized by category:
+  - Booking & Logistics (10 FAQs)
+  - Service Details (10 FAQs)
+  - Pricing & Payments (8 FAQs)
+  - Therapists & Qualifications (8 FAQs)
+  - Location & Coverage (8 FAQs)
+  - Safety & Privacy (6 FAQs)
+- Schema-ready formatting (Question/Answer pairs)
+
+#### 5.8 ULTIMATE RESOURCE SECTION (2,000-3,000 words)
+- Related wellness topics (1000 words)
+- Self-care tips (800 words)
+- Bali wellness culture (600 words)
+- Local landmarks and attractions (600 words)
+
+#### 5.9 TRUST SIGNALS & CREDENTIALS (800-1,000 words)
+- Certifications in detail
 - Guarantees
 - Response time promises
+- Client statistics
+- Industry recognition
+- Partnerships
 
-#### 5.8 FAQ SECTION (300-400 words)
-- 5-7 unique questions based on FAQ Focus Themes
-- 50-70 words per answer
-- Include schema-ready formatting (Question/Answer pairs)
-
-#### 5.9 CTA SECTION (50-80 words)
+#### 5.10 STRONG CTA SECTION (200-300 words)
 - WhatsApp booking emphasis
 - Urgency without pressure
 - Location-specific close
+- Next steps clearly outlined
 
-#### 5.10 INTERNAL LINKING SUGGESTIONS
-- List recommended anchor text + target URLs
-- Based on Internal Links field
-- 12+ contextual links to other pages
+#### 5.11 INTERNAL LINKING STRATEGY
+- **50+ contextual internal links**
+- Distributed throughout 40K+ words
+- Anchor text recommendations
+- Link to related services, locations, treatments
+- Create content hub effect
+
+**CONTENT GENERATION STRATEGY FOR 40K-50K WORDS:**
+
+1. **Generate in chunks** - Don't try to write 40K words at once
+2. **Jump between topics** - Maintain freshness and avoid repetition
+3. **Use different content angles** - Vary perspective throughout
+4. **Deep dive each section** - Each cluster gets thorough treatment
+5. **Include examples and scenarios** throughout
+6. **Maintain keyword distribution** - Spread keywords naturally across all sections
+7. **Local references in every cluster** - Ubud-specific details throughout
+8. **Break into sub-tasks** - Generate 5,000 words at a time, then move to next cluster
 
 **STYLE GUIDELINES:**
 
@@ -243,6 +360,7 @@ Generate a complete landing page (3200-4200 words total) with the following sect
 - Confident expertise - you know Bali wellness culture
 - Action-oriented - every section drives toward booking
 - Location-authentic - reference real landmarks, culture, experiences
+- Educational and authoritative - this is THE ultimate guide
 
 **SEO Rules:**
 - Primary keyword in: Title, H1, first paragraph, one H2, last paragraph
@@ -315,16 +433,21 @@ Deliver a short implementation checklist to reach PageSpeed targets:
 
 ## QUALITY GATES (PASS/FAIL)
 
-- [ ] Word count within target range (3200-4200)
-- [ ] 20+ sections, 10 FAQs, 10+ CTAs, 12+ internal links, 12+ images
-- [ ] Exact-match keyword usage within min/max, total density cap respected
+- [ ] Word count within target range (40,000-50,000)
+- [ ] 100+ sections, 50 FAQs, 30+ CTAs, 50+ internal links, 40+ images
+- [ ] Exact-match keyword usage within min/max (25-60 per keyword), total density cap respected (≤2.0%)
 - [ ] No fabricated ratings/reviews/certifications
 - [ ] Canonical correct, schema validates, page is mobile-friendly
-- [ ] All content angles from blueprint addressed
-- [ ] Local landmarks and specific location references included
+- [ ] All content angles from blueprint addressed with deep dives
+- [ ] Local landmarks and specific location references included throughout all clusters
 - [ ] Unique content (no generic wellness copy or template phrases)
 - [ ] FAQ answers are schema-ready (Question/Answer format)
-- [ ] WhatsApp CTAs prominent and functional
+- [ ] WhatsApp CTAs prominent and functional (30+ placements)
+- [ ] Table of Contents included for navigation
+- [ ] Content broken into clear topic clusters
+- [ ] Each cluster thoroughly explored (3,000-8,000 words per cluster)
+- [ ] Examples and case studies throughout
+- [ ] Comprehensive coverage of all aspects of the service
 
 ---
 

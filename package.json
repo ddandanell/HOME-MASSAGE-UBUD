@@ -23,7 +23,8 @@
     "sitemap:generate": "tsx scripts/generate-sitemap.ts",
     "sitemap:validate": "tsx scripts/validate-seo.ts",
     "deploy:notify": "PING_GOOGLE=true npm run sitemap:generate",
-    "landing:generate": "tsx scripts/autonomous-landing-page-generator.ts"
+    "landing:generate": "tsx scripts/autonomous-landing-page-generator.ts",
+    "landing:multi-agent": "tsx scripts/multi-agent-content-generator.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
