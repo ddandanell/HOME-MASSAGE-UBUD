@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "npm run sitemap:generate && vite build",
+    "build": "vite build",
+    "build:with-sitemap": "npm run sitemap:generate && vite build",
     "preview": "vite preview",
     "check": "tsc",
     "server:dev": "NODE_ENV=development tsx server/index.ts",
