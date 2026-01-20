@@ -68,7 +68,7 @@ interface PageConfig {
 
 function createContentClusters(config: PageConfig): ContentCluster[] {
   const serviceName = config.service_focus;
-  const location = "Ubud";
+  const location = "Ubud"; // TODO: Extract from config when location field is added
   
   return [
     {
@@ -383,7 +383,7 @@ Provide clean markdown with H2 and H3 headings for each section.
 
 async function orchestrateGeneration(configPath: string): Promise<void> {
   console.log('🎯 Multi-Agent Content Generation Orchestrator');
-  console.log('=' .repeat(70));
+  console.log('='.repeat(70));
   
   // Load config
   const configContent = fs.readFileSync(configPath, 'utf8');

@@ -293,7 +293,7 @@ async function executePhase1_SiteRecon(config: PageConfig): Promise<BusinessProf
     
     // Extract business info
     const business_name = config.business_name === '[EXTRACT FROM WEBSITE]' 
-      ? ($('title').text().split('|')[0].trim() || 'UNKNOWN')
+      ? extractBusinessName($) || 'UNKNOWN'
       : config.business_name;
     
     // Extract contact methods
@@ -362,6 +362,49 @@ function extractWhatsApp($: cheerio.CheerioAPI): string | null {
     const match = href.match(/\d{10,15}/);
     return match ? match[0] : null;
   }
+  return null;
+}
+
+function extractBusinessName($: cheerio.CheerioAPI): string | null {
+  // Try multiple extraction methods
+  
+  // Method 1: Title tag with common delimiters
+  const title = $('title').text();
+  const delimiters = ['|', '-', '–', '•', ':'];
+  for (const delimiter of delimiters) {
+    if (title.includes(delimiter)) {
+      const parts = title.split(delimiter);
+      const name = parts[0].trim();
+      if (name && name.length < 50) { // Reasonable business name length
+        return name;
+      }
+    }
+  }
+  
+  // Method 2: Schema.org markup
+  const schemaScript = $('script[type="application/ld+json"]').first();
+  if (schemaScript.length) {
+    try {
+      const schema = JSON.parse(schemaScript.html() || '{}');
+      if (schema.name) {
+        return schema.name;
+      }
+    } catch (e) {
+      // Invalid JSON, continue to next method
+    }
+  }
+  
+  // Method 3: H1 or site title
+  const h1 = $('h1').first().text().trim();
+  if (h1 && h1.length < 50) {
+    return h1;
+  }
+  
+  // Method 4: Just use the title as-is
+  if (title && title.length < 50) {
+    return title;
+  }
+  
   return null;
 }
 
@@ -566,7 +609,7 @@ function executePhase3_PageBlueprint(
 
 async function generateLandingPage(configPath: string): Promise<void> {
   console.log('🚀 Starting Autonomous Landing Page Generation v3.1');
-  console.log('=' .repeat(60));
+  console.log('='.repeat(60));
   
   // Load configuration
   const config = loadConfig(configPath);
