@@ -24,7 +24,14 @@
     "sitemap:validate": "tsx scripts/validate-seo.ts",
     "deploy:notify": "PING_GOOGLE=true npm run sitemap:generate",
     "landing:generate": "tsx scripts/autonomous-landing-page-generator.ts",
-    "landing:multi-agent": "tsx scripts/multi-agent-content-generator.ts"
+    "landing:multi-agent": "tsx scripts/multi-agent-content-generator.ts",
+    "landing:assemble": "tsx scripts/content-assembler.ts",
+    "landing:validate": "tsx scripts/keyword-density-validator.ts",
+    "landing:render": "tsx scripts/html-production-renderer.ts",
+    "landing:progress": "tsx scripts/progress-tracker.ts",
+    "landing:batch": "tsx scripts/batch-processor.ts",
+    "landing:cms": "tsx scripts/cms-integration.ts",
+    "landing:ab-test": "tsx scripts/ab-testing-framework.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
