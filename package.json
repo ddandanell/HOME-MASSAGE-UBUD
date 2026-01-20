@@ -31,7 +31,9 @@
     "landing:progress": "tsx scripts/progress-tracker.ts",
     "landing:batch": "tsx scripts/batch-processor.ts",
     "landing:cms": "tsx scripts/cms-integration.ts",
-    "landing:ab-test": "tsx scripts/ab-testing-framework.ts"
+    "landing:ab-test": "tsx scripts/ab-testing-framework.ts",
+    "landing:autonomous": "tsx scripts/fully-autonomous-generator.ts",
+    "landing:autonomous:batch": "tsx scripts/fully-autonomous-generator.ts --batch"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
