@@ -89,6 +89,19 @@
           "value": "public, max-age=3600, must-revalidate"
         }
       ]
+    },
+    {
+      "source": "/massage-ubud-price.html",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/html; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
     }
   ],
   "redirects": [
@@ -111,6 +124,10 @@
   "trailingSlash": false,
   "cleanUrls": true,
   "rewrites": [
+    {
+      "source": "/massage-ubud-price",
+      "destination": "/massage-ubud-price.html"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
