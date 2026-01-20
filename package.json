@@ -22,7 +22,8 @@
     "indexnow:submit": "tsx scripts/indexnow-submit.ts",
     "sitemap:generate": "tsx scripts/generate-sitemap.ts",
     "sitemap:validate": "tsx scripts/validate-seo.ts",
-    "deploy:notify": "PING_GOOGLE=true npm run sitemap:generate"
+    "deploy:notify": "PING_GOOGLE=true npm run sitemap:generate",
+    "landing:build": "npx tsx scripts/autonomous-landing-page-builder.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
