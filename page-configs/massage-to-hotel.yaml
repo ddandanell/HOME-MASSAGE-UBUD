@@ -1,0 +1,87 @@
+# Example configuration for Massage to Hotel/Villa landing page
+
+existing_website_url: "https://homemassageubud.com"
+target_landing_page_url: "https://homemassageubud.com/massage-to-hotel"
+
+business_name: "[EXTRACT FROM WEBSITE]"
+location:
+  city: "Ubud"
+  region: "Bali"
+  country: "Indonesia"
+
+service_focus: "Mobile massage to hotel/villa (in-room service)"
+
+content_angles:
+  - "Fast response time (20-30 min arrival)"
+  - "Service coverage (all Ubud areas)"
+  - "In-room convenience vs spa travel"
+  - "Professional equipment + setup"
+  - "Therapist qualifications + experience"
+  - "Safety and hygiene protocols"
+
+target_audience: "Hotel guests, villa renters, tourists seeking convenience, travelers avoiding crowds"
+
+pricing_visibility: "Medium"
+
+h1_formula: "Massage to Hotel Ubud – Fast In-Room Relief for Travelers"
+
+primary_keywords:
+  - "best home massage ubud"
+  - "massage to hotel ubud"
+  - "massage to villa ubud"
+  - "in room massage ubud"
+  - "mobile massage service ubud"
+  - "massage therapist comes to you ubud"
+  - "home visit massage ubud"
+  - "massage delivery ubud"
+  - "ubud massage at your villa"
+  - "private massage ubud"
+
+keyword_targets:
+  exact_match_per_keyword:
+    min: 6
+    max: 14
+  partial_variations_per_keyword:
+    min: 8
+    max: 20
+  overall_density_cap: 2.0
+
+targets:
+  total_word_count: "3200-4200"
+  sections_min: 20
+  faqs: 10
+  ctas_min: 10
+  internal_links_min: 12
+  images_min: 12
+  mobile_friendly: true
+  page_speed_target: 80
+
+contact_methods:
+  whatsapp: "[EXTRACT]"
+  phone: "[EXTRACT]"
+  email: "[EXTRACT]"
+
+faq_focus_themes:
+  - "Coverage areas and response time"
+  - "Booking process and same-day availability"
+  - "Pricing and payment methods"
+  - "Service types and customization"
+  - "Therapist qualifications and gender preferences"
+  - "Safety, hygiene, and privacy"
+  - "Comparison with hotel spas"
+
+internal_links_to_include:
+  - "Mobile Massage Bali"
+  - "Traditional Balinese Massage"
+  - "Deep Tissue Massage"
+  - "Aromatherapy Massage"
+  - "Thai Massage"
+  - "Hot Stone Massage"
+  - "Services Page"
+  - "About Us"
+  - "Pricing Page"
+  - "Contact Page"
+  - "Seminyak Area"
+  - "Canggu Area"
+
+execution_notes: "Include specific Ubud hotel names (Como Uma, Viceroy, Capella) and villa areas (Penestanan, Sayan, Tegallalang); emphasize convenience and time-saving; reference local landmarks (Monkey Forest, Campuhan Ridge, Yoga Barn)"

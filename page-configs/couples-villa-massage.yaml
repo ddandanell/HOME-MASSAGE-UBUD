@@ -1,0 +1,85 @@
+# Example configuration for Couples Villa Massage landing page
+
+existing_website_url: "https://homemassageubud.com"
+target_landing_page_url: "https://homemassageubud.com/couples-villa-massage"
+
+business_name: "[EXTRACT FROM WEBSITE]"
+location:
+  city: "Ubud"
+  region: "Bali"
+  country: "Indonesia"
+
+service_focus: "Romantic couples massage in villa"
+
+content_angles:
+  - "Side-by-side synchronized massage"
+  - "Romantic setup with candles and flowers"
+  - "Privacy and intimacy in your villa"
+  - "Perfect for honeymoons and anniversaries"
+  - "Two certified therapists simultaneously"
+  - "Customizable for each partner"
+
+target_audience: "Honeymooners, couples celebrating anniversaries, romantic travelers, pre-wedding relaxation"
+
+pricing_visibility: "High"
+
+h1_formula: "Romantic Couples Villa Massage in Ubud | Private In-Room Spa for Two"
+
+primary_keywords:
+  - "couples villa massage ubud"
+  - "romantic couples massage bali"
+  - "in-villa couples spa ubud"
+  - "private couples massage service"
+  - "honeymoon massage ubud"
+  - "romantic spa for two bali"
+  - "couples massage at villa"
+  - "side by side massage ubud"
+
+keyword_targets:
+  exact_match_per_keyword:
+    min: 6
+    max: 14
+  partial_variations_per_keyword:
+    min: 8
+    max: 20
+  overall_density_cap: 2.0
+
+targets:
+  total_word_count: "3200-4200"
+  sections_min: 20
+  faqs: 10
+  ctas_min: 10
+  internal_links_min: 12
+  images_min: 12
+  mobile_friendly: true
+  page_speed_target: 80
+
+contact_methods:
+  whatsapp: "[EXTRACT]"
+  phone: "[EXTRACT]"
+  email: "[EXTRACT]"
+
+faq_focus_themes:
+  - "Therapist gender preferences for couples"
+  - "Space requirements in villa"
+  - "Different pressure preferences per partner"
+  - "Outdoor setup options"
+  - "Romantic setup details"
+  - "Same-day booking availability"
+  - "What if one partner falls asleep"
+
+internal_links_to_include:
+  - "Couples Wellness Ritual"
+  - "Honeymoon Spa Package"
+  - "Traditional Balinese Massage"
+  - "Luxury Villa Service Areas"
+  - "Aromatherapy Massage"
+  - "Seminyak Couples Massage"
+  - "Deep Tissue Option"
+  - "All Services"
+  - "About Our Therapists"
+  - "Pricing Page"
+  - "Contact"
+  - "Testimonials"
+
+execution_notes: "Emphasize romance, intimacy, and creating special memories; include specific villa areas (Sayan luxury estates, Tegallalang rice terrace villas); mention Instagram-worthy setup; focus on relationship bonding benefits"
