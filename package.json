@@ -35,6 +35,7 @@
     "landing:ab-test": "tsx scripts/ab-testing-framework.ts",
     "landing:autonomous": "tsx scripts/fully-autonomous-generator.ts",
     "landing:autonomous:batch": "tsx scripts/fully-autonomous-generator.ts --batch"
+    "landing:build": "npx tsx scripts/autonomous-landing-page-builder.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
