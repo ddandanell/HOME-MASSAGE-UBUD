@@ -184,21 +184,70 @@ npm run link:audit  # Run comprehensive link audit
 
 | File | Purpose |
 |------|---------|
+| **`AUTONOMOUS_LANDING_PAGE_BUILDER_V3.1.md`** | **NEW! Optimized autonomous landing page generator with keyword density controls and production-ready output** |
+| `AUTONOMOUS_LANDING_PAGE_V3.1_GUIDE.md` | Implementation guide for v3.1 builder |
+| `AUTONOMOUS_LANDING_PAGE_V3.1_EXAMPLE.md` | Ready-to-use example with filled YAML configuration |
 | `KEYWORD_BLUEPRINT_PROMPT.md` | Converts keyword research into structured build instructions |
-| `LANDING_PAGE_EXECUTION_PROMPT.md` | Generates landing pages from keyword blueprints |
+| `LANDING_PAGE_EXECUTION_PROMPT.md` | Generates landing pages from keyword blueprints (legacy) |
 | `SEO_HEADING_STRUCTURE_AGENT.md` | Creates optimized H1-H6 heading hierarchies for any page type |
 | `AEO_GEO_OPTIMIZATION_PROMPT.md` | Transforms content into AI-search optimized "Golden Source" assets for Google SGE, Perplexity, ChatGPT |
 | `KEYWORD_BLUEPRINT_OUTPUT_EXAMPLE.md` | Example output for 10 high-volume keywords |
 | `AEO_GEO_EXAMPLE_OUTPUT.md` | Example transformation showing before/after AEO/GEO optimization |
 
+### Autonomous Landing Page Builder v3.1 (NEW!)
+
+**What's New:**
+- **No keyword stuffing** - Built-in density controls (2.0% cap)
+- **Natural keyword usage** - 6-14 exact matches, 8-20 variations per keyword
+- **Fully autonomous** - Runs all 7 phases without questions
+- **Production-ready** - Complete HTML + 9 deliverables
+- **Reusable** - Change only YAML block for new pages
+- **Detailed structure** - Exact word counts per section
+- **Style enforcement** - No generic copy, local references required
+
+**Quick Start:**
+```bash
+# 1. Open AUTONOMOUS_LANDING_PAGE_BUILDER_V3.1.md
+# 2. Fill in YAML variables for your page
+# 3. Copy entire prompt + YAML
+# 4. Paste into AI tool (ChatGPT, Claude)
+# 5. Receive 9 complete deliverables:
+#    - Business profile
+#    - Site URL map
+#    - Competitor analysis
+#    - Page blueprint
+#    - Meta tags
+#    - Schema markup
+#    - Full HTML landing page
+#    - Image specifications
+#    - Deployment checklist
+```
+
+**Documentation:**
+- `AUTONOMOUS_LANDING_PAGE_BUILDER_V3.1.md` - Main prompt
+- `AUTONOMOUS_LANDING_PAGE_V3.1_GUIDE.md` - Detailed implementation guide
+- `AUTONOMOUS_LANDING_PAGE_V3.1_EXAMPLE.md` - Ready-to-use example
+
 ### Workflow
 
+**Recommended (v3.1):**
 1. **Run Keyword Blueprint Prompt** on your keyword list
 2. **Pick one keyword blueprint** from the output
-3. **Paste into Landing Page Execution Prompt**
-4. **Generate page content**
-5. **Apply AEO/GEO Optimization** to transform content for AI search engines
-6. **Repeat for each keyword**
+3. **Fill v3.1 YAML** with keyword data
+4. **Run Autonomous Landing Page Builder v3.1**
+5. **Receive 9 complete deliverables** (including HTML)
+6. **Validate with SEO checklist**
+7. **Apply AEO/GEO Optimization** to transform content for AI search engines
+8. **Deploy to production**
+9. **Repeat for each keyword**
+
+**Legacy:**
+1. Run Keyword Blueprint Prompt on your keyword list
+2. Pick one keyword blueprint from the output
+3. Paste into Landing Page Execution Prompt (legacy)
+4. Generate page content
+5. Apply AEO/GEO Optimization
+6. Repeat for each keyword
 
 This system enables scaling from 10 to 200+ pages with consistent quality optimized for both traditional search and AI answer engines.
 

@@ -1,0 +1,6 @@
+{
+  "email": "NOT_FOUND in codebase - no email address available",
+  "ratings": "NOT_AVAILABLE - no aggregate rating data to use in schema",
+  "specific_prices": "NOT_EXTRACTED - prices exist in codebase but not extracted for this demo",
+  "note": "All missing data clearly marked to avoid hallucinations"
+}
