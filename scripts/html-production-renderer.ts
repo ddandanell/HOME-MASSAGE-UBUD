@@ -411,10 +411,10 @@ async function renderProduction(contentDir: string, options: Partial<RenderOptio
   html = html.replace('<body>', '<body><div class="progress-bar"></div>');
   
   // Update stylesheet reference
-  html = html.replace('/styles/main.css', 'production.css');
+  html = html.replace(/<link rel="stylesheet" href="\/styles\/main\.css">/g, '<link rel="stylesheet" href="production.css">');
   
   // Update script reference
-  html = html.replace('/scripts/main.js', 'production.js');
+  html = html.replace(/<script src="\/scripts\/main\.js"><\/script>/g, '<script src="production.js"></script>');
   
   // Optimize images
   if (renderOptions.performance.lazyLoad) {

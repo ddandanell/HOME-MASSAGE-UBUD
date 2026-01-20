@@ -262,9 +262,16 @@ async function setupABTest(contentDir: string, testConfig?: Partial<TestConfig>)
   console.log('='.repeat(60));
   
   // Load original HTML
-  const htmlPath = path.join(contentDir, 'index.html') || path.join(contentDir, '7_landing_page.html');
-  if (!fs.existsSync(htmlPath)) {
-    throw new Error(`HTML not found: ${htmlPath}`);
+  const indexPath = path.join(contentDir, 'index.html');
+  const landingPagePath = path.join(contentDir, '7_landing_page.html');
+  
+  let htmlPath: string;
+  if (fs.existsSync(indexPath)) {
+    htmlPath = indexPath;
+  } else if (fs.existsSync(landingPagePath)) {
+    htmlPath = landingPagePath;
+  } else {
+    throw new Error(`HTML not found in ${contentDir}`);
   }
   
   const originalHTML = fs.readFileSync(htmlPath, 'utf8');

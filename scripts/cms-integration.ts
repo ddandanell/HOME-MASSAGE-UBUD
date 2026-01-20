@@ -120,11 +120,15 @@ class WordPressIntegration {
   
   async uploadMedia(filePath: string): Promise<string> {
     const endpoint = `${this.config.endpoint}/wp-json/wp/v2/media`;
-    const formData = new FormData();
     
-    // In Node.js, you'd use form-data package or similar
+    // Note: Media upload requires the 'form-data' package for Node.js
+    // npm install form-data
+    // const FormData = require('form-data');
+    // const form = new FormData();
+    // form.append('file', fs.createReadStream(filePath));
+    
     console.log(`📤 Uploading media: ${filePath}`);
-    console.log(`⚠️  Media upload requires form-data implementation`);
+    console.log(`⚠️  Media upload requires 'form-data' package: npm install form-data`);
     
     return 'https://example.com/placeholder.jpg';
   }

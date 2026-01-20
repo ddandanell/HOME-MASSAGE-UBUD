@@ -257,11 +257,11 @@ function convertMarkdownToHTML(markdown: string): string {
     .replace(/^\- (.+)$/gm, '<li>$1</li>')
     .replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>')
     .replace(/\n\n/g, '</p><p>')
-    .replace(/^(?!<[h2|h3|ul|li])/gm, '<p>')
+    .replace(/^(?!<(?:h2|h3|ul|li))/gm, '<p>')
     .replace(/$/gm, '</p>')
     .replace(/<p><\/p>/g, '')
-    .replace(/<p>(<[h2|h3|ul])/g, '$1')
-    .replace(/(<\/[h2|h3|ul]>)<\/p>/g, '$1');
+    .replace(/<p>(<(?:h2|h3|ul))/g, '$1')
+    .replace(/(<\/(?:h2|h3|ul)>)<\/p>/g, '$1');
 }
 
 // ============================================================================
