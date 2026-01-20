@@ -1,0 +1,76 @@
+{
+  "title": "Best Massage in Ubud | Professional Therapists Come to You",
+  "description": "Experience the best massage in Ubud with professional therapists. Top quality massage services delivered to your villa, hotel, or home. Book via WhatsApp today.",
+  "canonical": "https://homemassageubud.com/best-massage",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "og_tags": [
+    {
+      "property": "og:type",
+      "content": "website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://homemassageubud.com/best-massage"
+    },
+    {
+      "property": "og:title",
+      "content": "Best Massage in Ubud | Professional Therapists Come to You"
+    },
+    {
+      "property": "og:description",
+      "content": "Experience the best massage in Ubud with professional therapists. Top quality massage services delivered to your location."
+    },
+    {
+      "property": "og:image",
+      "content": "https://homemassageubud.com/og-best-massage-ubud.jpg"
+    },
+    {
+      "property": "og:locale",
+      "content": "en_US"
+    },
+    {
+      "property": "og:site_name",
+      "content": "Home Massage Ubud"
+    }
+  ],
+  "twitter_tags": [
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:url",
+      "content": "https://homemassageubud.com/best-massage"
+    },
+    {
+      "name": "twitter:title",
+      "content": "Best Massage in Ubud | Professional Therapists Come to You"
+    },
+    {
+      "name": "twitter:description",
+      "content": "Experience the best massage in Ubud with professional therapists. Top quality massage services delivered to your location."
+    },
+    {
+      "name": "twitter:image",
+      "content": "https://homemassageubud.com/twitter-best-massage-ubud.jpg"
+    }
+  ],
+  "geo_tags": [
+    {
+      "name": "geo.region",
+      "content": "ID-BA"
+    },
+    {
+      "name": "geo.placename",
+      "content": "Ubud"
+    },
+    {
+      "name": "geo.position",
+      "content": "-8.5069;115.2625"
+    },
+    {
+      "name": "ICBM",
+      "content": "-8.5069, 115.2625"
+    }
+  ]
+}

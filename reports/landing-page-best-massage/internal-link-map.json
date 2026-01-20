@@ -1,0 +1,184 @@
+{
+  "total_links": 28,
+  "links": [
+    {
+      "url": "/services",
+      "anchor_text": "Our Massage Services",
+      "relevance_score": 10,
+      "category": "services"
+    },
+    {
+      "url": "/pricing",
+      "anchor_text": "Massage Pricing & Packages",
+      "relevance_score": 10,
+      "category": "pricing"
+    },
+    {
+      "url": "/treatments",
+      "anchor_text": "All Treatments",
+      "relevance_score": 9,
+      "category": "treatments"
+    },
+    {
+      "url": "/treatments/traditional-balinese-massage",
+      "anchor_text": "Traditional Balinese Massage",
+      "relevance_score": 9,
+      "category": "treatment"
+    },
+    {
+      "url": "/treatments/aromatherapy-massage",
+      "anchor_text": "Aromatherapy Massage",
+      "relevance_score": 9,
+      "category": "treatment"
+    },
+    {
+      "url": "/treatments/deep-tissue-massage",
+      "anchor_text": "Deep Tissue Massage",
+      "relevance_score": 9,
+      "category": "treatment"
+    },
+    {
+      "url": "/treatments/hot-stone-massage",
+      "anchor_text": "Hot Stone Massage",
+      "relevance_score": 8,
+      "category": "treatment"
+    },
+    {
+      "url": "/treatments/thai-massage",
+      "anchor_text": "Thai Massage",
+      "relevance_score": 8,
+      "category": "treatment"
+    },
+    {
+      "url": "/treatments/lymphatic-drainage-massage",
+      "anchor_text": "Lymphatic Drainage Massage",
+      "relevance_score": 8,
+      "category": "treatment"
+    },
+    {
+      "url": "/treatments/pregnancy-massage",
+      "anchor_text": "Pregnancy Massage",
+      "relevance_score": 7,
+      "category": "treatment"
+    },
+    {
+      "url": "/treatments/foot-reflexology",
+      "anchor_text": "Foot Reflexology",
+      "relevance_score": 7,
+      "category": "treatment"
+    },
+    {
+      "url": "/treatments/couples-wellness-ritual",
+      "anchor_text": "Couples Wellness Ritual",
+      "relevance_score": 7,
+      "category": "treatment"
+    },
+    {
+      "url": "/home-massage",
+      "anchor_text": "Home Massage Hub",
+      "relevance_score": 10,
+      "category": "hub"
+    },
+    {
+      "url": "/home-massage/cities/home-massage-ubud",
+      "anchor_text": "Home Massage in Ubud",
+      "relevance_score": 10,
+      "category": "location"
+    },
+    {
+      "url": "/home-massage/cities/home-massage-seminyak",
+      "anchor_text": "Home Massage in Seminyak",
+      "relevance_score": 8,
+      "category": "location"
+    },
+    {
+      "url": "/home-massage/cities/home-massage-canggu",
+      "anchor_text": "Home Massage in Canggu",
+      "relevance_score": 8,
+      "category": "location"
+    },
+    {
+      "url": "/home-massage/cities/home-massage-sanur",
+      "anchor_text": "Home Massage in Sanur",
+      "relevance_score": 7,
+      "category": "location"
+    },
+    {
+      "url": "/home-massage/cities/home-massage-nusa-dua",
+      "anchor_text": "Home Massage in Nusa Dua",
+      "relevance_score": 7,
+      "category": "location"
+    },
+    {
+      "url": "/home-massage/knowledge/home-massage-benefits",
+      "anchor_text": "Benefits of Home Massage",
+      "relevance_score": 8,
+      "category": "knowledge"
+    },
+    {
+      "url": "/home-massage/knowledge/home-massage-what-to-expect",
+      "anchor_text": "What to Expect from Home Massage",
+      "relevance_score": 8,
+      "category": "knowledge"
+    },
+    {
+      "url": "/home-massage/knowledge/home-massage-safety",
+      "anchor_text": "Home Massage Safety",
+      "relevance_score": 7,
+      "category": "knowledge"
+    },
+    {
+      "url": "/home-massage/knowledge/home-massage-aftercare",
+      "anchor_text": "Home Massage Aftercare",
+      "relevance_score": 7,
+      "category": "knowledge"
+    },
+    {
+      "url": "/about",
+      "anchor_text": "About Our Therapists",
+      "relevance_score": 7,
+      "category": "about"
+    },
+    {
+      "url": "/testimonials",
+      "anchor_text": "Client Testimonials",
+      "relevance_score": 6,
+      "category": "social_proof"
+    },
+    {
+      "url": "/services/professional-massage",
+      "anchor_text": "Professional Massage Services",
+      "relevance_score": 9,
+      "category": "services"
+    },
+    {
+      "url": "/services/luxury-massage",
+      "anchor_text": "Luxury Massage Experiences",
+      "relevance_score": 8,
+      "category": "services"
+    },
+    {
+      "url": "/services/therapeutic-massage",
+      "anchor_text": "Therapeutic Massage",
+      "relevance_score": 8,
+      "category": "services"
+    },
+    {
+      "url": "/services/wellness-massage",
+      "anchor_text": "Wellness Massage",
+      "relevance_score": 8,
+      "category": "services"
+    }
+  ],
+  "categories": [
+    "services",
+    "pricing",
+    "treatments",
+    "treatment",
+    "hub",
+    "location",
+    "knowledge",
+    "about",
+    "social_proof"
+  ]
+}
