@@ -2,6 +2,19 @@
 
 A modern, responsive website for premium massage services in Ubud, Bali.
 
+## 🚀 Quick Start - Deploy Now
+
+**Ready to deploy?** This repository is production-ready and fully configured!
+
+👉 **[DEPLOYMENT_QUICKSTART.md](./DEPLOYMENT_QUICKSTART.md)** - Deploy in 5 minutes  
+📚 **[VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md)** - Comprehensive Vercel guide  
+📖 **[GITHUB_PAGES_DEPLOYMENT_GUIDE.md](./GITHUB_PAGES_DEPLOYMENT_GUIDE.md)** - GitHub Pages guide  
+📋 **[DEPLOYMENT_QA_FINAL_AUDIT_REPORT.md](./DEPLOYMENT_QA_FINAL_AUDIT_REPORT.md)** - Full audit report
+
+**Status:** ✅ All deployment blockers resolved, configuration optimized, ready for production.
+
+---
+
 ## Features
 
 - **Modern Stack**: React 18, TypeScript, Express.js, Vite
