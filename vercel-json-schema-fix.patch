@@ -1,0 +1,24 @@
+From 8b89b3c4edcba06b41610557277d9a09da1269c9 Mon Sep 17 00:00:00 2001
+From: "copilot-swe-agent[bot]" <198982749+Copilot@users.noreply.github.com>
+Date: Tue, 20 Jan 2026 01:24:29 +0000
+Subject: [PATCH] Remove unsupported rootDirectory property from vercel.json
+
+---
+ vercel.json | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/vercel.json b/vercel.json
+index d7edf2a..5149d2e 100644
+--- a/vercel.json
++++ b/vercel.json
+@@ -2,7 +2,6 @@
+   "buildCommand": "npm run build",
+   "outputDirectory": "dist",
+   "framework": "vite",
+-  "rootDirectory": ".",
+   "installCommand": "npm ci",
+   "headers": [
+     {
+-- 
+2.52.0
+
