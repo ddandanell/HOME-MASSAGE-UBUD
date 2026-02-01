@@ -7,12 +7,14 @@ interface FAQItem {
 }
 
 interface HomeMassageFAQProps {
-  items: FAQItem[];
+  items?: FAQItem[];
+  questions?: FAQItem[];
   additionalItems?: FAQItem[];
 }
 
-export default function HomeMassageFAQ({ items, additionalItems = [] }: HomeMassageFAQProps) {
-  const allItems = [...items, ...additionalItems];
+export default function HomeMassageFAQ({ items, questions, additionalItems = [] }: HomeMassageFAQProps) {
+  const baseItems = items || questions || [];
+  const allItems = [...baseItems, ...additionalItems];
 
   return (
     <section className="py-16 md:py-20 bg-secondary/10" id="faq">

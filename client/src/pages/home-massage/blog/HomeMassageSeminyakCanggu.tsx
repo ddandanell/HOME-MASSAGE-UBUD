@@ -120,7 +120,7 @@ export default function HomeMassageSeminyakCanggu() {
         title="Home Massage Seminyak & Canggu: Book Villa Spa Service"
         description="Home massage in Seminyak, Canggu & Ubud. Professional therapists to your villa within 60 mins. Traditional Balinese & deep tissue. Book same-day service."
         keywords="home massage Seminyak, Canggu mobile massage, Ubud villa spa, Seminyak massage service, Canggu home massage, Ubud at-home massage, villa massage Bali"
-        canonicalUrl="/home-massage/blog/home-massage-seminyak-canggu"
+        canonical="https://homemassageubud.com/home-massage/blog/home-massage-seminyak-canggu"
       />
       <div className="min-h-screen flex flex-col">
         <Header />

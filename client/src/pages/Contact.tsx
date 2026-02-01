@@ -11,7 +11,6 @@ import {
   CheckCircle
 } from 'lucide-react';
 import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
-import SchemaMarkup from '@/components/SchemaMarkup';
 import SEOHead from '@/components/SEOHead';
 
 export default function Contact() {
@@ -236,16 +235,6 @@ export default function Contact() {
       </section>
 
       <Footer />
-
-      <SchemaMarkup 
-        type="organization"
-        data={{
-          name: "Home Massage Ubud",
-          description: "Contact Home Massage Ubud for professional mobile massage services in Ubud, Bali.",
-          url: "https://homemassageubud.com/contact",
-          telephone: "+62 811-2656-869"
-        }}
-      />
     </>
   );
 }

@@ -16,7 +16,6 @@ import {
   Phone
 } from 'lucide-react';
 import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
-import SchemaMarkup from '@/components/SchemaMarkup';
 import SEOHead from '@/components/SEOHead';
 
 // Import images
@@ -300,22 +299,6 @@ export default function About() {
       </section>
 
       <Footer />
-
-      <SchemaMarkup 
-        type="organization"
-        data={{
-          name: "Home Massage Ubud",
-          description: "Professional mobile massage therapy service in Ubud, Bali. Authentic Balinese healing treatments delivered to your accommodation.",
-          url: "https://homemassageubud.com/about",
-          telephone: "+62 811-2656-869",
-          address: {
-            streetAddress: "Ubud Area",
-            addressLocality: "Ubud",
-            addressRegion: "Bali",
-            addressCountry: "Indonesia"
-          }
-        }}
-      />
     </>
   );
 }

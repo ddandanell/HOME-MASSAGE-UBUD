@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Calendar, Clock, User, ArrowRight, Heart, Leaf, Zap } from 'lucide-react';
-import SchemaMarkup from './SchemaMarkup';
 
 const blogPosts = [
   {
@@ -77,30 +76,8 @@ export default function BlogNew() {
   const featuredPosts = blogPosts.filter(post => post.featured);
   const regularPosts = blogPosts.filter(post => !post.featured);
 
-  const blogSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Blog',
-    name: 'Home Massage Ubud Wellness Blog',
-    description: 'Expert insights on massage therapy, wellness treatments, and traditional Balinese healing practices in Ubud.',
-    url: 'https://homemassageubud.com/blog',
-    blogPost: blogPosts.map(post => ({
-      '@type': 'BlogPosting',
-      headline: post.title,
-      description: post.excerpt,
-      author: {
-        '@type': 'Person',
-        name: post.author
-      },
-      datePublished: post.date,
-      image: `https://homemassageubud.com${post.image}`,
-      url: `https://homemassageubud.com/blog/${post.id}`
-    }))
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-emerald-50">
-      <SchemaMarkup type="organization" data={blogSchema} />
-      
       {/* Hero Section */}
       <section className="pt-24 pb-12 px-4">
         <div className="max-w-6xl mx-auto text-center">

@@ -4,7 +4,8 @@ import { List } from 'lucide-react';
 
 interface TOCItem {
   id: string;
-  label: string;
+  label?: string;
+  title?: string;
 }
 
 interface TableOfContentsProps {
@@ -44,7 +45,7 @@ export default function TableOfContents({ items }: TableOfContentsProps) {
                         onClick={() => scrollToSection(item.id)}
                         className="text-left text-primary hover:underline hover:text-primary/80 transition-colors w-full"
                       >
-                        {index + 1}. {item.label}
+                        {index + 1}. {item.label || item.title}
                       </button>
                     </li>
                   ))}

@@ -3,7 +3,6 @@ import { Link } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
-import SchemaMarkup from '@/components/SchemaMarkup';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check, Clock, Shield, MapPin, Calendar, Star, Phone, MessageCircle, Home, Hotel, Users, Zap } from 'lucide-react';
@@ -65,8 +64,14 @@ export default function NearMeMassageHub() {
         description="Looking for near me massage? Professional mobile massage service comes directly to your location in Bali. Same-day availability. Licensed therapists. Book massage near you now."
         canonical="https://homemassageubud.com/near-me-massage"
       />
-      <SchemaMarkup schema={schema} />
-      <SchemaMarkup schema={breadcrumbSchema} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
