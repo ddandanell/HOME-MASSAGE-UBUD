@@ -187,7 +187,7 @@ export default function HomeMassageHub() {
             </Button>
             <Button size="lg" asChild>
               <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                Book Now on WhatsApp
+                Book Now via WhatsApp
               </a>
             </Button>
           </div>
