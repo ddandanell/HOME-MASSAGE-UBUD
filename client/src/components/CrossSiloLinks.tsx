@@ -52,7 +52,11 @@ export default function CrossSiloLinks({ currentSilo }: CrossSiloLinksProps) {
             We offer multiple ways to experience professional massage in Bali – choose what works best for you
           </p>
           
-          <div className={`grid ${filteredSilos.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'} gap-6`}>
+          <div className={`grid gap-6 ${
+            filteredSilos.length === 1 ? 'md:grid-cols-1 max-w-md mx-auto' : 
+            filteredSilos.length === 2 ? 'md:grid-cols-2' : 
+            'md:grid-cols-3'
+          }`}>
             {filteredSilos.map((silo) => (
               <Link key={silo.id} href={silo.href}>
                 <Card className={`${silo.color} border-2 transition-all cursor-pointer hover:shadow-lg h-full`}>
