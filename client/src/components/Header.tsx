@@ -20,10 +20,10 @@ export default function Header() {
 
   const navigation = [
     { name: 'Home', href: '/' },
+    { name: 'Services', href: '/services' },
     { name: 'Treatments', href: '/treatments' },
     { name: 'Areas', href: '/service-areas' },
     { name: 'Pricing', href: '/pricing' },
-    { name: 'About', href: '/about' },
     { name: CTA_TEXT.PRIMARY, href: '#book', primary: true }
   ];
 

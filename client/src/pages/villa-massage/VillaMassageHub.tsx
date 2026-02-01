@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Shield, MapPin, Calendar, Star, Home, Sparkles, Users, Heart } from 'lucide-react';
+import CrossSiloLinks from '@/components/CrossSiloLinks';
 
 export default function VillaMassageHub() {
   return (
@@ -22,18 +23,28 @@ export default function VillaMassageHub() {
       <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 text-sm font-semibold">
+              ⭐ From Rp 280,000 | Licensed Therapists | Same-Day Booking
+            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Villa Massage in Bali
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Experience professional villa massage delivered directly to your private accommodation. 
-              Luxury spa treatments in the comfort and privacy of your own villa.
+              Experience professional villa massage delivered directly to your private accommodation – 
+              all equipment included.
             </p>
-            <Button size="lg" className="text-lg px-8" asChild>
-              <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                Book Your Villa Massage Now
-              </a>
-            </Button>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button size="lg" className="text-lg px-8" asChild>
+                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
+                  Book Now via WhatsApp
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/pricing">
+                  View Pricing
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -274,18 +285,20 @@ export default function VillaMassageHub() {
       {/* Villa Massage Services Preview */}
       <section className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             Available Villa Massage Services
           </h2>
+          <p className="text-center text-muted-foreground mb-12">
+            Professional villa massage from <span className="font-bold text-primary">Rp 280,000</span> | <Link href="/pricing" className="text-primary hover:underline">View All Pricing</Link>
+          </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
-            <Card>
+            <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">Balinese Villa Massage</h3>
+                <h3 className="text-xl font-semibold mb-2">Balinese Villa Massage</h3>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 280,000</p>
                 <p className="text-muted-foreground mb-4">
-                  Traditional Balinese techniques delivered as premium villa massage. Long flowing strokes combined with gentle stretching and 
-                  acupressure for deep relaxation in your private villa.
+                  Traditional Balinese techniques with long flowing strokes and gentle stretching.
                 </p>
-                <p className="text-sm font-semibold mb-2">From Rp 280,000</p>
                 <Button variant="link" className="p-0" asChild>
                   <Link href="/villa-massage/services/balinese">
                     Learn More →
@@ -294,14 +307,13 @@ export default function VillaMassageHub() {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">Deep Tissue Villa Massage</h3>
+                <h3 className="text-xl font-semibold mb-2">Deep Tissue Villa Massage</h3>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 320,000</p>
                 <p className="text-muted-foreground mb-4">
-                  Therapeutic villa massage targeting chronic tension and muscle knots. Intensive pressure techniques applied by certified therapists 
-                  in your villa setting.
+                  Therapeutic massage targeting chronic tension and muscle knots.
                 </p>
-                <p className="text-sm font-semibold mb-2">From Rp 320,000</p>
                 <Button variant="link" className="p-0" asChild>
                   <Link href="/villa-massage/services/deep-tissue">
                     Learn More →
@@ -310,14 +322,13 @@ export default function VillaMassageHub() {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">Couples Villa Massage</h3>
+                <h3 className="text-xl font-semibold mb-2">Couples Villa Massage</h3>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 520,000</p>
                 <p className="text-muted-foreground mb-4">
-                  Romantic villa massage experience for two. Simultaneous treatments by two therapists create intimate bonding moments in your 
-                  private villa space.
+                  Romantic massage for two with simultaneous treatments.
                 </p>
-                <p className="text-sm font-semibold mb-2">From Rp 520,000</p>
                 <Button variant="link" className="p-0" asChild>
                   <Link href="/villa-massage/services/couples">
                     Learn More →
@@ -326,14 +337,13 @@ export default function VillaMassageHub() {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">Relaxation Villa Massage</h3>
+                <h3 className="text-xl font-semibold mb-2">Relaxation Villa Massage</h3>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 280,000</p>
                 <p className="text-muted-foreground mb-4">
-                  Gentle, soothing villa massage focusing on stress relief. Light to medium pressure combined with aromatherapy creates ultimate 
-                  relaxation at your villa.
+                  Gentle, soothing massage focusing on stress relief.
                 </p>
-                <p className="text-sm font-semibold mb-2">From Rp 280,000</p>
                 <Button variant="link" className="p-0" asChild>
                   <Link href="/villa-massage/services/relaxation">
                     Learn More →
@@ -342,11 +352,16 @@ export default function VillaMassageHub() {
               </CardContent>
             </Card>
           </div>
-          <div className="text-center">
+          <div className="text-center flex flex-wrap gap-4 justify-center">
             <Button variant="outline" size="lg" asChild>
               <Link href="/villa-massage/services">
                 View All Villa Massage Services →
               </Link>
+            </Button>
+            <Button size="lg" asChild>
+              <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
+                Book Now on WhatsApp
+              </a>
             </Button>
           </div>
         </div>
@@ -588,6 +603,9 @@ export default function VillaMassageHub() {
           </div>
         </div>
       </section>
+
+      {/* Cross-Silo Links */}
+      <CrossSiloLinks currentSilo="villa-massage" />
 
       {/* Final CTA */}
       <section className="py-16 md:py-24 bg-background">

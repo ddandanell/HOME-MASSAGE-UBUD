@@ -6,6 +6,7 @@ import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Shield, MapPin, Calendar, Star } from 'lucide-react';
+import CrossSiloLinks from '@/components/CrossSiloLinks';
 
 export default function MobileMassageHub() {
   return (
@@ -21,17 +22,27 @@ export default function MobileMassageHub() {
       <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 text-sm font-semibold">
+              ⭐ From Rp 280,000 | Licensed Therapists | Same-Day Booking
+            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Mobile Massage in Bali
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Professional mobile massage at your villa or hotel
+              Professional mobile massage at your villa or hotel – all equipment included
             </p>
-            <Button size="lg" className="text-lg px-8" asChild>
-              <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
-                Check Availability
-              </a>
-            </Button>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button size="lg" className="text-lg px-8" asChild>
+                <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
+                  Book Now via WhatsApp
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/pricing">
+                  View Pricing
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -78,18 +89,19 @@ export default function MobileMassageHub() {
       {/* Block 3: Services Preview (Decision) */}
       <section className="py-16 md:py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             Mobile Massage Services
           </h2>
+          <p className="text-center text-muted-foreground mb-12">
+            Professional mobile massage from <span className="font-bold text-primary">Rp 280,000</span> | <Link href="/pricing" className="text-primary hover:underline">View All Pricing</Link>
+          </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            <Card>
+            <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">Balinese Mobile Massage</h3>
+                <h3 className="text-xl font-semibold mb-2">Balinese Mobile Massage</h3>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 280,000</p>
                 <p className="text-muted-foreground mb-4">
                   Traditional techniques for deep relaxation
-                </p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Delivered as a professional mobile massage
                 </p>
                 <Button variant="link" className="p-0" asChild>
                   <Link href="/mobile-massage/services/balinese-mobile-massage">
@@ -99,14 +111,12 @@ export default function MobileMassageHub() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">Deep Tissue Mobile Massage</h3>
+                <h3 className="text-xl font-semibold mb-2">Deep Tissue Mobile Massage</h3>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 320,000</p>
                 <p className="text-muted-foreground mb-4">
                   Therapeutic pressure for muscle tension
-                </p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Delivered as a professional mobile massage
                 </p>
                 <Button variant="link" className="p-0" asChild>
                   <Link href="/mobile-massage/services/deep-tissue-mobile-massage">
@@ -116,14 +126,12 @@ export default function MobileMassageHub() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">Couples Mobile Massage</h3>
+                <h3 className="text-xl font-semibold mb-2">Couples Mobile Massage</h3>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 520,000</p>
                 <p className="text-muted-foreground mb-4">
                   Side-by-side relaxation for two
-                </p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Delivered as a professional mobile massage
                 </p>
                 <Button variant="link" className="p-0" asChild>
                   <Link href="/mobile-massage/services/couples-mobile-massage">
@@ -133,14 +141,12 @@ export default function MobileMassageHub() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">Relaxation Mobile Massage</h3>
+                <h3 className="text-xl font-semibold mb-2">Relaxation Mobile Massage</h3>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 280,000</p>
                 <p className="text-muted-foreground mb-4">
                   Gentle strokes for ultimate calm
-                </p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Delivered as a professional mobile massage
                 </p>
                 <Button variant="link" className="p-0" asChild>
                   <Link href="/mobile-massage/services/relaxation-mobile-massage">
@@ -150,11 +156,16 @@ export default function MobileMassageHub() {
               </CardContent>
             </Card>
           </div>
-          <div className="mt-8 text-center">
+          <div className="mt-8 text-center flex flex-wrap gap-4 justify-center">
             <Button size="lg" variant="outline" asChild>
               <Link href="/mobile-massage/services">
                 View All Mobile Massage Services →
               </Link>
+            </Button>
+            <Button size="lg" asChild>
+              <a href="https://wa.me/628112656869" target="_blank" rel="noopener noreferrer">
+                Book Now on WhatsApp
+              </a>
             </Button>
           </div>
         </div>
@@ -468,6 +479,9 @@ export default function MobileMassageHub() {
           </div>
         </div>
       </section>
+
+      {/* Cross-Silo Links */}
+      <CrossSiloLinks currentSilo="mobile-massage" />
 
       {/* Block 9: Final CTA */}
       <section className="py-16 md:py-20 bg-primary/5">
