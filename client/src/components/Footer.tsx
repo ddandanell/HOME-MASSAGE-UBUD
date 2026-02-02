@@ -3,23 +3,23 @@ import { Link } from "wouter";
 
 const footerSections = [
   {
-    title: 'Home Massage',
+    title: 'Massage Services',
     links: [
       { name: 'Home Massage', href: '/home-massage' },
-      { name: 'Home Massage Services', href: '/home-massage' },
-      { name: 'Home Massage in Ubud', href: '/home-massage/cities/ubud' },
-      { name: 'Book Home Massage', href: 'https://wa.me/628112656869', external: true },
-      { name: 'Home Massage Safety', href: '/home-massage/knowledge/safety' }
+      { name: 'Mobile Massage', href: '/mobile-massage' },
+      { name: 'Villa Massage', href: '/villa-massage' },
+      { name: 'All Treatments', href: '/treatments' },
+      { name: 'View Pricing', href: '/pricing' }
     ]
   },
   {
-    title: 'Our Services',
+    title: 'Popular Treatments',
     links: [
-      { name: 'Browse All Massage Treatments', href: '/treatments' },
       { name: 'Traditional Balinese Massage', href: '/ubud/traditional-balinese-massage' },
       { name: 'Deep Tissue Massage', href: '/ubud/deep-tissue-massage' },
       { name: 'Aromatherapy Massage', href: '/ubud/aromatherapy-massage' },
-      { name: 'Hot Stone Massage', href: '/ubud/hot-stone-massage' }
+      { name: 'Hot Stone Massage', href: '/ubud/hot-stone-massage' },
+      { name: 'Couples Massage', href: '/ubud/couples-wellness-ritual' }
     ]
   },
   {
@@ -47,23 +47,17 @@ const footerSections = [
       { name: 'Testimonials', href: '/testimonials' },
       { name: 'Blog', href: '/blog' },
       { name: 'Sustainability', href: '/sustainability' },
-      { name: 'Recommended Services', href: '/recommended-services' }
-    ]
-  },
-  {
-    title: 'Legal',
-    links: [
-      { name: 'Privacy Policy', href: '/privacy-policy' },
-      { name: 'Terms & Conditions', href: '/terms-and-conditions' },
       { name: 'Contact Us', href: '/contact' }
     ]
   },
   {
-    title: 'Booking',
+    title: 'Book Now',
     links: [
-      { name: 'Pricing', href: '/pricing' },
+      { name: 'View Pricing', href: '/pricing' },
       { name: 'Villa Partnerships', href: '/villa-partnerships' },
-      { name: 'WhatsApp Book', href: 'https://wa.me/628112656869', external: true }
+      { name: 'WhatsApp Booking', href: 'https://wa.me/628112656869', external: true },
+      { name: 'Privacy Policy', href: '/privacy-policy' },
+      { name: 'Terms & Conditions', href: '/terms-and-conditions' }
     ]
   }
 ];
