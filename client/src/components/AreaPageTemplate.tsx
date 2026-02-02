@@ -4,12 +4,13 @@ import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Clock, MapPin, Star, CheckCircle, MessageCircle, Phone } from 'lucide-react';
+import { Clock, MapPin, Star, CheckCircle, MessageCircle, Phone, Sparkles } from 'lucide-react';
 import { generateAreaInquiryMessage, openWhatsApp, CTA_TEXT, WHATSAPP_NUMBER_FORMATTED } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { Link } from 'wouter';
 import SEOHead from '@/components/SEOHead';
+import { FEATURED_NAIL_SERVICES, formatNailServicePrice, getTransportFeeForArea } from '@/data/nailCareServices';
 
 interface AreaPageProps {
   area: {
@@ -36,12 +37,15 @@ interface AreaPageProps {
     }[];
   };
   additionalContent?: React.ReactNode;
+  showNailCare?: boolean; // Option to show nail care section
 }
 
-export default function AreaPageTemplate({ area, additionalContent }: AreaPageProps) {
+export default function AreaPageTemplate({ area, additionalContent, showNailCare = true }: AreaPageProps) {
   const handleBookNow = () => {
     openWhatsApp(generateAreaInquiryMessage(area.name));
   };
+
+  const transportFee = getTransportFeeForArea(area.name);
 
   return (
     <div className="min-h-screen bg-background text-foreground antialiased">
@@ -301,6 +305,71 @@ export default function AreaPageTemplate({ area, additionalContent }: AreaPagePr
             </div>
           </div>
         </section>
+
+        {/* Nail Care Services Section */}
+        {showNailCare && (
+          <section className="py-20 bg-gradient-to-br from-pink-50 via-white to-purple-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-16">
+                <Badge className="mb-6 bg-pink-600 hover:bg-pink-700 text-white text-base px-4 py-2">
+                  <Sparkles className="w-5 h-5 mr-2" />
+                  Also Available in {area.name}
+                </Badge>
+                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                  Professional Nail Care Services
+                </h3>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                  Complete your relaxation with professional manicure, pedicure, gel nails, nail art, 
+                  and extensions — all delivered to your accommodation in {area.name}
+                </p>
+                <p className="text-sm text-gray-500">
+                  Transport fee for {area.name}: <span className="font-semibold text-pink-600">{transportFee}</span>
+                </p>
+              </div>
+
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                {FEATURED_NAIL_SERVICES.map((service, index) => (
+                  <div key={index} className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-all hover:-translate-y-1 border border-pink-100">
+                    <div className="flex items-start justify-between mb-3">
+                      <h4 className="text-lg font-bold text-gray-900">{service.name}</h4>
+                      {service.popular && (
+                        <Badge className="bg-pink-100 text-pink-800 text-xs">Popular</Badge>
+                      )}
+                    </div>
+                    <p className="text-sm text-gray-600 mb-4">{service.description}</p>
+                    <div className="flex items-center gap-4 mb-4 text-sm">
+                      <span className="flex items-center gap-1 text-gray-500">
+                        <Clock className="w-4 h-4" />
+                        {service.duration}
+                      </span>
+                    </div>
+                    <div className="text-lg font-bold text-pink-600 mb-4">
+                      {formatNailServicePrice(service)}
+                    </div>
+                    <Button 
+                      size="sm"
+                      className="w-full bg-pink-500 hover:bg-pink-600 text-white"
+                      onClick={handleBookNow}
+                    >
+                      Book Service
+                    </Button>
+                  </div>
+                ))}
+              </div>
+
+              <div className="text-center">
+                <p className="text-gray-600 mb-6">
+                  View complete nail care pricing with all services, nail art, extensions, and tips
+                </p>
+                <Link href="/nail-care">
+                  <Button size="lg" className="bg-pink-500 hover:bg-pink-600 text-white px-8">
+                    View Full Nail Care Menu & Pricing
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Related Services - Internal Linking */}
         <section className="py-20 bg-white">
