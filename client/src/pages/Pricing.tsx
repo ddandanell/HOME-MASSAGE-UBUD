@@ -408,6 +408,64 @@ export default function Pricing() {
           </Button>
         </div>
       </section>
+
+      {/* NEW: Nail Care Services Promo Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pink-50 via-white to-purple-50">
+        <div className="max-w-4xl mx-auto">
+          <Card className="border-pink-200 shadow-xl">
+            <CardContent className="p-8">
+              <div className="text-center mb-6">
+                <Badge className="mb-4 bg-pink-100 text-pink-800 text-sm px-4 py-2">
+                  <Sparkles className="h-4 w-4 mr-2" />
+                  Also Available
+                </Badge>
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                  Complete Your Relaxation with
+                  <span className="text-pink-600"> Nail Care Services</span>
+                </h2>
+                <p className="text-lg text-gray-600 mb-6">
+                  Enhance your wellness experience with professional manicure, pedicure, gel nails, nail art, 
+                  and extensions – all delivered to your villa.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="text-center p-4 bg-white rounded-lg border border-pink-100">
+                  <Sparkles className="h-8 w-8 text-pink-600 mx-auto mb-3" />
+                  <h3 className="font-semibold text-gray-900 mb-2">Manicure & Pedicure</h3>
+                  <p className="text-sm text-gray-600 mb-2">From Rp 200,000</p>
+                  <p className="text-xs text-gray-500">Professional nail care at your location</p>
+                </div>
+
+                <div className="text-center p-4 bg-white rounded-lg border border-pink-100">
+                  <Heart className="h-8 w-8 text-pink-600 mx-auto mb-3" />
+                  <h3 className="font-semibold text-gray-900 mb-2">Gel Polish & Nail Art</h3>
+                  <p className="text-sm text-gray-600 mb-2">From Rp 50,000</p>
+                  <p className="text-xs text-gray-500">Custom designs and long-lasting color</p>
+                </div>
+
+                <div className="text-center p-4 bg-white rounded-lg border border-pink-100">
+                  <Award className="h-8 w-8 text-pink-600 mx-auto mb-3" />
+                  <h3 className="font-semibold text-gray-900 mb-2">Nail Extensions & Tips</h3>
+                  <p className="text-sm text-gray-600 mb-2">From Rp 200,000</p>
+                  <p className="text-xs text-gray-500">Professional extensions and nail tips</p>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <a href="/nail-care">
+                  <Button size="lg" className="bg-pink-500 hover:bg-pink-600 text-white px-8">
+                    View Full Nail Care Pricing
+                  </Button>
+                </a>
+                <p className="text-sm text-gray-600 mt-4">
+                  💅 Perfect add-on to any massage booking
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
     </div>
     
     <Footer />

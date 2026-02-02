@@ -12,6 +12,7 @@ import VillaPartnerships from "@/pages/VillaPartnerships";
 import Sustainability from "@/pages/Sustainability";
 import BlogNew from "@/pages/BlogNew";
 import Pricing from "@/pages/Pricing";
+import NailCare from "@/pages/NailCare";
 import Testimonials from "@/pages/Testimonials";
 import NotFound from "@/pages/NotFound";
 import ServiceAreas from "@/pages/ServiceAreas";
@@ -214,6 +215,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/pricing" component={Pricing} />
+      <Route path="/nail-care" component={NailCare} />
       <Route path="/testimonials" component={Testimonials} />
       <Route path="/villa-partnerships" component={VillaPartnerships} />
       <Route path="/sustainability" component={Sustainability} />

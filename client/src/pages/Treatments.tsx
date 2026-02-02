@@ -245,6 +245,41 @@ export default function Treatments() {
             </Button>
           </div>
         </section>
+
+        {/* NEW: Nail Care Cross-Promo */}
+        <section className="py-16 bg-gradient-to-br from-pink-50 via-white to-purple-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white border-2 border-pink-200 rounded-2xl p-8 shadow-lg text-center">
+              <div className="inline-flex items-center gap-2 bg-pink-100 text-pink-800 px-4 py-2 rounded-full mb-4 text-sm font-semibold">
+                <Sparkles className="w-4 h-4" />
+                <span>Also Available</span>
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Complete Your Relaxation with Nail Care
+              </h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Add professional manicure, pedicure, gel nails, or nail art to any massage booking. 
+                All services delivered to your villa.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/nail-care">
+                  <Button size="lg" className="bg-pink-500 hover:bg-pink-600 text-white">
+                    View Nail Care Services
+                  </Button>
+                </Link>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-pink-300 text-pink-600 hover:bg-pink-50"
+                  onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
+                >
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Book Combined Service
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       
       <Footer />

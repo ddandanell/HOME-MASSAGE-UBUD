@@ -9,7 +9,8 @@ const footerSections = [
       { name: 'Mobile Massage', href: '/mobile-massage' },
       { name: 'Villa Massage', href: '/villa-massage' },
       { name: 'All Treatments', href: '/treatments' },
-      { name: 'View Pricing', href: '/pricing' }
+      { name: 'View Pricing', href: '/pricing' },
+      { name: 'Nail Care Services', href: '/nail-care' }
     ]
   },
   {
