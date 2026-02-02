@@ -8,6 +8,7 @@ import { openWhatsApp } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import SEOHead from '@/components/SEOHead';
 import { Link } from 'wouter';
+import { FEATURED_NAIL_SERVICES, formatNailServicePrice, getTransportFeeForArea } from '@/data/nailCareServices';
 
 /**
  * Seminyak In-Villa Massage Page - Completely Unique Structure
@@ -313,6 +314,69 @@ export default function SeminyakMassage() {
               >
                 View All Treatment Options
               </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Nail Care Services Section */}
+        <section className="py-20 bg-gradient-to-br from-pink-50 via-white to-purple-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <Badge className="mb-6 bg-pink-600 hover:bg-pink-700 text-white text-base px-4 py-2">
+                <Sparkles className="w-5 h-5 mr-2" />
+                Also Available in Seminyak
+              </Badge>
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Professional Nail Care Services
+              </h3>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Complete your beach-side relaxation with professional manicure, pedicure, gel nails, nail art, 
+                and extensions — all delivered to your Seminyak villa or hotel
+              </p>
+              <p className="text-sm text-gray-500">
+                Transport fee for Seminyak: <span className="font-semibold text-pink-600">{getTransportFeeForArea('Seminyak')}</span>
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              {FEATURED_NAIL_SERVICES.map((service, index) => (
+                <div key={index} className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-all hover:-translate-y-1 border border-pink-100">
+                  <div className="flex items-start justify-between mb-3">
+                    <h4 className="text-lg font-bold text-gray-900">{service.name}</h4>
+                    {service.popular && (
+                      <Badge className="bg-pink-100 text-pink-800 text-xs">Popular</Badge>
+                    )}
+                  </div>
+                  <p className="text-sm text-gray-600 mb-4">{service.description}</p>
+                  <div className="flex items-center gap-4 mb-4 text-sm">
+                    <span className="flex items-center gap-1 text-gray-500">
+                      <Clock className="w-4 h-4" />
+                      {service.duration}
+                    </span>
+                  </div>
+                  <div className="text-lg font-bold text-pink-600 mb-4">
+                    {formatNailServicePrice(service)}
+                  </div>
+                  <Button 
+                    size="sm"
+                    className="w-full bg-pink-500 hover:bg-pink-600 text-white"
+                    onClick={() => handleBooking(service.name)}
+                  >
+                    Book Service
+                  </Button>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <p className="text-gray-600 mb-6">
+                View complete nail care pricing with all services, nail art, extensions, and tips
+              </p>
+              <Link href="/nail-care">
+                <Button size="lg" className="bg-pink-500 hover:bg-pink-600 text-white px-8">
+                  View Full Nail Care Menu & Pricing
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
