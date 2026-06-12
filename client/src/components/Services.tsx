@@ -2,33 +2,44 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { generateGeneralInquiryMessage, openWhatsApp, CTA_TEXT } from "@/lib/whatsapp";
 import { Link } from "wouter";
-import balineseImage from "@assets/Balinese-Massage_1757317131191.jpg";
-import deepTissueImage from "@assets/Deep-Tissue-Massage_1757317131192.jpg";
-import aromatherapyImage from "@assets/Aromatherapy-Massage_1757317131192.jpg";
-import lymphaticImage from "@assets/lymphatic-drainage-massage_1757317131192.jpg";
-import thaiImage from "@assets/Thai-Massage_1757317131192.jpg";
-import fourHandsImage from "@assets/Four-Hands-Massage_1757317131192.jpg";
-import hotStoneImage from "@assets/woman-getting-bali-massage-with-all-the-benefits-of-bailnese-massage_1757329093079.jpg";
+import {
+  balineseMassage as balineseImage,
+  balineseMassageWebp as balineseImageWebp,
+  deepTissueMassage as deepTissueImage,
+  deepTissueMassageWebp as deepTissueImageWebp,
+  aromatherapyMassage as aromatherapyImage,
+  aromatherapyMassageWebp as aromatherapyImageWebp,
+  lymphaticDrainage as lymphaticImage,
+  lymphaticDrainageWebp as lymphaticImageWebp,
+  thaiMassage as thaiImage,
+  thaiMassageWebp as thaiImageWebp,
+  fourHandsMassage as fourHandsImage,
+  fourHandsMassageWebp as fourHandsImageWebp,
+  womanBaliMassage as hotStoneImage,
+  womanBaliMassageWebp as hotStoneImageWebp,
+} from "@/assets";
 
 const services = [
   {
     id: 'traditional-balinese',
-    name: 'Traditional Balinese Massage Ubud',
+    name: 'Traditional Balinese Massage',
     image: balineseImage,
+    imageWebp: balineseImageWebp,
     link: '/ubud/traditional-balinese-massage',
-    description: 'Authentic Balinese massage Ubud - traditional full-body massage combining palm pressure, acupressure, and stretching with aromatic oils. The most popular massage in Ubud for stress relief, muscle tension release, and deep relaxation at your villa.',
+    description: 'Authentic Balinese massage — traditional full-body treatment combining palm pressure, acupressure, and stretching with aromatic oils. Our most popular massage for stress relief, muscle tension release, and deep relaxation at your villa.',
     pricing: [
-      { duration: '60 Min', price: 'IDR 380K' },
+      { duration: '60 Min', price: 'IDR 320K' },
       { duration: '90 Min', price: 'IDR 450K' },
       { duration: '120 Min', price: 'IDR 590K' }
     ]
   },
   {
     id: 'deep-tissue',
-    name: 'Deep Tissue Massage Ubud',
+    name: 'Deep Tissue Massage',
     image: deepTissueImage,
+    imageWebp: deepTissueImageWebp,
     link: '/ubud/deep-tissue-massage',
-    description: 'Professional deep tissue massage Ubud - intensive treatment targeting chronic muscle tension and deep knots using firm pressure. Best therapeutic massage Ubud for sports recovery, chronic pain relief, and work-related tension at your villa.',
+    description: 'Intensive deep tissue massage targeting chronic muscle tension and deep knots using firm therapeutic pressure. Ideal for sports recovery, chronic pain relief, and work-related tension at your villa.',
     pricing: [
       { duration: '60 Min', price: 'IDR 380K' },
       { duration: '90 Min', price: 'IDR 540K' },
@@ -37,10 +48,11 @@ const services = [
   },
   {
     id: 'aromatherapy',
-    name: 'Aromatherapy Massage Ubud',
+    name: 'Aromatherapy Massage',
     image: aromatherapyImage,
+    imageWebp: aromatherapyImageWebp,
     link: '/ubud/aromatherapy-massage',
-    description: 'Relaxing aromatherapy massage Ubud - full-body massage using premium essential oils like lavender, lemongrass, eucalyptus. Popular wellness massage in Ubud with light to medium pressure for deep relaxation and better sleep.',
+    description: 'Relaxing aromatherapy massage using premium essential oils — lavender, lemongrass, eucalyptus. Light to medium pressure for deep relaxation, better sleep, and stress relief at your villa.',
     pricing: [
       { duration: '60 Min', price: 'IDR 350K' },
       { duration: '90 Min', price: 'IDR 490K' },
@@ -48,51 +60,55 @@ const services = [
     ]
   },
   {
-    id: 'lymphatic-drainage',
-    name: 'Lymphatic Drainage Massage Ubud',
-    image: lymphaticImage,
-    link: '/ubud/lymphatic-drainage-massage',
-    description: 'Specialized lymphatic drainage massage Ubud - gentle rhythmic massage that stimulates lymphatic system to reduce swelling and boost immunity. Best detox massage in Ubud, perfect for post-flight recovery at your villa.',
+    id: 'thai-massage',
+    name: 'Thai Massage',
+    image: thaiImage,
+    imageWebp: thaiImageWebp,
+    link: '/ubud/thai-massage',
+    description: 'Authentic Thai massage combining yoga-like stretches with pressure along energy lines. Performed fully clothed, improves flexibility and relieves stiffness. Great after hiking or yoga.',
     pricing: [
-      { duration: '60 Min', price: 'IDR 420K' },
-      { duration: '90 Min', price: 'IDR 590K' },
+      { duration: '60 Min', price: 'IDR 390K' },
+      { duration: '90 Min', price: 'IDR 550K' },
       { duration: '120 Min', price: 'IDR 720K' }
     ]
   },
   {
-    id: 'thai-massage',
-    name: 'Thai Massage Ubud',
-    image: thaiImage,
-    link: '/ubud/thai-massage',
-    description: 'Authentic Thai massage Ubud - energizing treatment combining yoga-like stretches with pressure along energy lines. Traditional massage in Ubud performed fully clothed, improves flexibility and relieves stiffness. Great after hiking or yoga.',
+    id: 'hot-stone',
+    name: 'Hot Stone Massage',
+    image: hotStoneImage,
+    imageWebp: hotStoneImageWebp,
+    link: '/ubud/hot-stone-massage',
+    description: 'Therapeutic hot stone massage using smooth heated volcanic stones placed on key body points. Warmth penetrates deep into muscles for ultimate relaxation. Perfect for muscle stiffness and stress relief.',
     pricing: [
-      { duration: '60 Min', price: 'IDR 390K' },
+      { duration: '60 Min', price: 'IDR 420K' },
       { duration: '90 Min', price: 'IDR 590K' },
-      { duration: '120 Min', price: 'IDR 620K' }
+      { duration: '120 Min', price: 'IDR 760K' }
+    ]
+  },
+  {
+    id: 'lymphatic-drainage',
+    name: 'Lymphatic Drainage Massage',
+    image: lymphaticImage,
+    imageWebp: lymphaticImageWebp,
+    link: '/ubud/lymphatic-drainage-massage',
+    description: 'Specialized lymphatic drainage massage — gentle rhythmic treatment that stimulates the lymphatic system to reduce swelling and boost immunity. Perfect for post-flight recovery and detox.',
+    pricing: [
+      { duration: '60 Min', price: 'IDR 450K' },
+      { duration: '90 Min', price: 'IDR 630K' },
+      { duration: '120 Min', price: 'IDR 820K' }
     ]
   },
   {
     id: 'four-hands',
-    name: 'Four Hands Massage Ubud',
+    name: 'Four Hands Massage',
     image: fourHandsImage,
+    imageWebp: fourHandsImageWebp,
     link: '/ubud/couples-wellness-ritual',
-    description: 'Luxury four hands massage Ubud - premium couples massage with two synchronized therapists working together. Ultimate relaxation massage in Ubud for complete body coverage, perfect for special occasions or romantic couples massage Ubud experience.',
+    description: 'Luxury four hands massage with two synchronized therapists working in harmony. Ultimate relaxation with complete body coverage. Perfect for special occasions and couples seeking a premium experience.',
     pricing: [
-      { duration: '60 Min', price: 'IDR 590K' },
-      { duration: '90 Min', price: 'IDR 760K' },
+      { duration: '60 Min', price: 'IDR 620K' },
+      { duration: '90 Min', price: 'IDR 860K' },
       { duration: '120 Min', price: 'IDR 1,100K' }
-    ]
-  },
-  {
-    id: 'hot-stone',
-    name: 'Hot Stone Massage Ubud',
-    image: hotStoneImage,
-    link: '/ubud/hot-stone-massage',
-    description: 'Healing hot stone massage Ubud - therapeutic massage using smooth heated volcanic stones placed on key points. The warmth penetrates deep into muscles for ultimate relaxation massage Ubud. Perfect for muscle stiffness and stress relief at your villa.',
-    pricing: [
-      { duration: '60 Min', price: 'IDR 390K' },
-      { duration: '90 Min', price: 'IDR 590K' },
-      { duration: '120 Min', price: 'IDR 620K' }
     ]
   }
 ];
@@ -103,10 +119,11 @@ export default function Services() {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
           <h2 className="serif text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 px-2 sm:px-0" data-testid="services-title">
-            Ubud Massage Services | Professional In-Villa Massage Ubud
+            Our Massage Services
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-4xl mx-auto px-2 sm:px-4" data-testid="services-description">
-Discover the best massage Ubud offers with our professional mobile massage services. From traditional Balinese massage Ubud to deep tissue massage Ubud, all treatments delivered to your villa. Experience authentic massage in Ubud performed by certified therapists with premium Ubud massage therapy techniques.
+            Premium in-villa massage treatments delivered by certified Balinese therapists. 
+            Choose from traditional healing arts to modern therapeutic techniques — all at your villa, on your schedule.
           </p>
           
           {/* English Communication Badge */}
@@ -121,14 +138,18 @@ Discover the best massage Ubud offers with our professional mobile massage servi
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {services.map((service) => (
             <Card key={service.id} className="bg-card rounded-2xl overflow-hidden hover-scale border-border" data-testid={`service-card-${service.id}`}>
-              <img 
-                src={service.image}
-                alt={`${service.name} - best massage Ubud, professional ${service.name.toLowerCase()} delivered to your villa in Ubud Bali by certified therapists, authentic Balinese healing treatment, mobile massage Ubud services`} 
-                className="w-full h-40 sm:h-48 md:h-56 object-cover object-center"
-                loading="lazy"
-                width="400"
-                height="300"
-              />
+              <picture>
+                {service.imageWebp && <source srcSet={service.imageWebp} type="image/webp" />}
+                <img 
+                  src={service.image}
+                  alt={`${service.name} — professional in-villa massage treatment by certified Balinese therapists`}
+                  className="w-full h-40 sm:h-48 md:h-56 object-cover object-center"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                  decoding="async"
+                />
+              </picture>
               <CardContent className="p-3 sm:p-4 md:p-6">
                 <h3 className="serif text-base sm:text-lg md:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 text-black leading-tight" data-testid={`service-name-${service.id}`}>
                   {service.name}

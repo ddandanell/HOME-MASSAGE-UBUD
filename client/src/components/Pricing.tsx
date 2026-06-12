@@ -7,12 +7,12 @@ const pricingPackages = [
     id: 'signature-60min',
     title: '60 Minute Treatments',
     treatments: [
-      { name: 'Traditional Balinese Massage (60 min)', price: 'IDR 320,000' },
-      { name: 'Aromatherapy Massage (60 min)', price: 'IDR 320,000' },
-      { name: 'Deep Tissue Massage (60 min)', price: 'IDR 380,000' },
-      { name: 'Thai Massage (60 min)', price: 'IDR 390,000' },
-      { name: 'Lymphatic Drainage (60 min)', price: 'IDR 450,000' },
-      { name: 'Hot Stone Massage (60 min)', price: 'IDR 420,000' }
+      { name: 'Traditional Balinese Massage', price: 'IDR 320,000' },
+      { name: 'Aromatherapy Massage', price: 'IDR 350,000' },
+      { name: 'Deep Tissue Massage', price: 'IDR 380,000' },
+      { name: 'Thai Massage', price: 'IDR 390,000' },
+      { name: 'Hot Stone Massage', price: 'IDR 420,000' },
+      { name: 'Lymphatic Drainage', price: 'IDR 450,000' }
     ],
     buttonText: 'Book 60 Min',
     buttonVariant: 'secondary' as const,
@@ -22,13 +22,12 @@ const pricingPackages = [
     id: 'signature-90min',
     title: '90 Minute Treatments',
     treatments: [
-      { name: 'Traditional Balinese Massage (90 min)', price: 'IDR 450,000' },
-      { name: 'Aromatherapy Massage (90 min)', price: 'IDR 490,000' },
-      { name: 'Deep Tissue Massage (90 min)', price: 'IDR 540,000' },
-      { name: 'Thai Massage (90 min)', price: 'IDR 550,000' },
-      { name: 'Traditional Balinese Massage (90 min)', price: 'IDR 450,000' },
-      { name: 'Lymphatic Drainage (90 min)', price: 'IDR 630,000' },
-      { name: 'Hot Stone Massage (90 min)', price: 'IDR 590,000' }
+      { name: 'Traditional Balinese Massage', price: 'IDR 450,000' },
+      { name: 'Aromatherapy Massage', price: 'IDR 490,000' },
+      { name: 'Deep Tissue Massage', price: 'IDR 540,000' },
+      { name: 'Thai Massage', price: 'IDR 550,000' },
+      { name: 'Hot Stone Massage', price: 'IDR 590,000' },
+      { name: 'Lymphatic Drainage', price: 'IDR 630,000' }
     ],
     note: 'Extended sessions for deeper relaxation and complete rejuvenation',
     buttonText: 'Book 90 Min',
@@ -36,15 +35,31 @@ const pricingPackages = [
     featured: true
   },
   {
+    id: 'signature-120min',
+    title: '120 Minute Treatments',
+    treatments: [
+      { name: 'Traditional Balinese Massage', price: 'IDR 590,000' },
+      { name: 'Aromatherapy Massage', price: 'IDR 640,000' },
+      { name: 'Deep Tissue Massage', price: 'IDR 700,000' },
+      { name: 'Thai Massage', price: 'IDR 720,000' },
+      { name: 'Hot Stone Massage', price: 'IDR 760,000' },
+      { name: 'Lymphatic Drainage', price: 'IDR 820,000' }
+    ],
+    note: 'Ultimate wellness experience — complete full-body treatment',
+    buttonText: 'Book 120 Min',
+    buttonVariant: 'secondary' as const,
+    featured: false
+  },
+  {
     id: 'specialty',
-    title: 'Specialty Experiences',
+    title: 'Four Hands Massage',
     treatments: [
       { name: 'Four Hands Massage (60 min)', price: 'IDR 620,000' },
       { name: 'Four Hands Massage (90 min)', price: 'IDR 860,000' },
       { name: 'Four Hands Massage (120 min)', price: 'IDR 1,100,000' }
     ],
-    note: 'Perfect for couples and extended wellness experiences',
-    buttonText: 'Book Special',
+    note: 'Two synchronized therapists — the ultimate luxury experience',
+    buttonText: 'Book Four Hands',
     buttonVariant: 'secondary' as const,
     featured: false
   }

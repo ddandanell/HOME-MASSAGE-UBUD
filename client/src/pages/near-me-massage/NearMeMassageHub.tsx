@@ -457,7 +457,7 @@ export default function NearMeMassageHub() {
                       <p className="text-muted-foreground mb-3">
                         Gentle, soothing massage for stress relief and deep relaxation
                       </p>
-                      <p className="text-sm font-semibold">From IDR 380,000</p>
+                      <p className="text-sm font-semibold">From IDR 320,000</p>
                     </CardContent>
                   </Card>
                   
@@ -475,25 +475,25 @@ export default function NearMeMassageHub() {
                   
                   <Card>
                     <CardHeader>
-                      <CardTitle>Traditional Massage</CardTitle>
+                      <CardTitle>Traditional Balinese Massage</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground mb-3">
                         Balinese healing techniques with acupressure and stretching
                       </p>
-                      <p className="text-sm font-semibold">From IDR 380,000</p>
+                      <p className="text-sm font-semibold">From IDR 320,000</p>
                     </CardContent>
                   </Card>
                   
                   <Card>
                     <CardHeader>
-                      <CardTitle>Oil Massage</CardTitle>
+                      <CardTitle>Aromatherapy Oil Massage</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground mb-3">
                         Smooth, flowing massage with aromatherapy oils
                       </p>
-                      <p className="text-sm font-semibold">From IDR 320,000</p>
+                      <p className="text-sm font-semibold">From IDR 350,000</p>
                     </CardContent>
                   </Card>
                   
@@ -505,19 +505,19 @@ export default function NearMeMassageHub() {
                       <p className="text-muted-foreground mb-3">
                         Two therapists provide simultaneous massage treatments
                       </p>
-                      <p className="text-sm font-semibold">From IDR 550,000</p>
+                      <p className="text-sm font-semibold">From IDR 850,000</p>
                     </CardContent>
                   </Card>
                   
                   <Card>
                     <CardHeader>
-                      <CardTitle>Recovery Massage</CardTitle>
+                      <CardTitle>Thai Massage</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground mb-3">
-                        Sports and stress-relief massage for active individuals
+                        Assisted stretching and acupressure for flexibility and energy
                       </p>
-                      <p className="text-sm font-semibold">From IDR 380,000</p>
+                      <p className="text-sm font-semibold">From IDR 390,000</p>
                     </CardContent>
                   </Card>
                 </div>
