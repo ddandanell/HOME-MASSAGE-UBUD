@@ -256,8 +256,8 @@ export default function MobileMassageNusaDua() {
                 <p className="text-lg text-muted-foreground mb-4">
                   Home massage pricing in Nusa Dua reflects the premium service standards and resort-area convenience. Our rates 
                   include professional therapist travel throughout the gated resort complex, complete spa equipment setup in your 
-                  accommodation, and quality oils and treatment materials. Nusa Dua mobile massage typically ranges from 350,000 IDR 
-                  to 650,000 IDR for single treatments, with couples mobile massage starting around 650,000 IDR.
+                  accommodation, and quality oils and treatment materials. Nusa Dua mobile massage typically ranges from 320,000 IDR 
+                  to 590,000 IDR for single treatments, with couples mobile massage starting around 850,000 IDR.
                 </p>
                 <p className="text-lg text-muted-foreground mb-4">
                   The pricing for mobile massage in Nusa Dua considers the exclusive nature of the area and coordination required 

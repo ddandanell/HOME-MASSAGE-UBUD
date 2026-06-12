@@ -23,7 +23,7 @@ export default function MobileMassageHub() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 text-sm font-semibold">
-              ⭐ From Rp 280,000 | Licensed Therapists | Same-Day Booking
+              ⭐ From Rp 320,000 | Licensed Therapists | Same-Day Booking
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Mobile Massage in Bali
@@ -93,13 +93,13 @@ export default function MobileMassageHub() {
             Mobile Massage Services
           </h2>
           <p className="text-center text-muted-foreground mb-12">
-            Professional mobile massage from <span className="font-bold text-primary">Rp 280,000</span> | <Link href="/pricing" className="text-primary hover:underline">View All Pricing</Link>
+            Professional mobile massage from <span className="font-bold text-primary">Rp 320,000</span> | <Link href="/pricing" className="text-primary hover:underline">View All Pricing</Link>
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Balinese Mobile Massage</h3>
-                <p className="text-lg font-bold text-primary mb-3">From Rp 280,000</p>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 320,000</p>
                 <p className="text-muted-foreground mb-4">
                   Traditional techniques for deep relaxation
                 </p>
@@ -144,7 +144,7 @@ export default function MobileMassageHub() {
             <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Relaxation Mobile Massage</h3>
-                <p className="text-lg font-bold text-primary mb-3">From Rp 280,000</p>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 320,000</p>
                 <p className="text-muted-foreground mb-4">
                   Gentle strokes for ultimate calm
                 </p>

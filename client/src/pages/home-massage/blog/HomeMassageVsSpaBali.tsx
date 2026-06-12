@@ -130,7 +130,7 @@ export default function HomeMassageVsSpaBali() {
                   <div>
                     <h3 className="text-2xl font-bold mb-4">Home Massage Pricing</h3>
                     <p className="text-lg text-muted-foreground mb-4">
-                      Home massage services in Bali typically charge 320,000-450,000 IDR ($20-33 USD) for a 60-minute session, with 90-minute sessions running 450,000-590,000 IDR ($26-43 USD). <Link href="/home-massage/services/couples"><span className="text-primary hover:underline">Couples massage</span></Link> packages usually cost 700,000-1,000,000 IDR ($46-66 USD) for 90 minutes with two therapists. Premium treatments like hot stone or prenatal massage may add 50,000-120,000 IDR ($3-7 USD).
+                      Home massage services in Bali typically charge 320,000-450,000 IDR ($21-30 USD) for a 60-minute session, with 90-minute sessions running 450,000-590,000 IDR ($30-39 USD). <Link href="/home-massage/services/couples"><span className="text-primary hover:underline">Couples massage</span></Link> packages usually cost 850,000-1,200,000 IDR ($57-80 USD) for 90 minutes with two therapists. Premium treatments like hot stone or prenatal massage may add 50,000-120,000 IDR ($3-8 USD).
                     </p>
                     <p className="text-lg text-muted-foreground">
                       These prices include everything: therapist travel, equipment, oils, and service. There's no entrance fee, facility charge, or mandatory tips. Most services offer package discounts for multiple sessions or group bookings. Check our full <Link href="/pricing"><span className="text-primary hover:underline">pricing guide</span></Link> for current rates.
@@ -140,7 +140,7 @@ export default function HomeMassageVsSpaBali() {
                   <div>
                     <h3 className="text-2xl font-bold mb-4">Spa Pricing</h3>
                     <p className="text-lg text-muted-foreground mb-4">
-                      Budget spas in Bali charge 180,000-320,000 IDR ($10-20 USD) for basic massage, but often deliver inconsistent quality. Mid-range spas typically price 60-minute massages at 450,000-700,000 IDR ($26-46 USD), while luxury resort spas charge 820,000-1,450,000 IDR ($53-100 USD) or more for similar treatments.
+                      Budget spas in Bali charge 180,000-320,000 IDR ($12-21 USD) for basic massage, but often deliver inconsistent quality. Mid-range spas typically price 60-minute massages at 450,000-700,000 IDR ($30-47 USD), while luxury resort spas charge 850,000-1,500,000 IDR ($57-100 USD) or more for similar treatments.
                     </p>
                     <p className="text-lg text-muted-foreground">
                       Multi-treatment packages at premium spas can reach 2,000,000-4,000,000 IDR ($133-266 USD) for 2-3 hour experiences. While these include additional amenities (flower baths, body scrubs, facility access), the core massage component often costs 30-50% more than equivalent home massage services.
@@ -185,7 +185,7 @@ export default function HomeMassageVsSpaBali() {
                   <div>
                     <h3 className="text-2xl font-bold mb-4">Best Value Verdict</h3>
                     <p className="text-lg text-muted-foreground mb-4">
-                      For pure massage quality per dollar, home massage delivers superior value. A 450,000 IDR ($30) home massage typically matches or exceeds the quality of 700,000 IDR ($46) spa massage, while eliminating transportation costs and saving 2+ hours of time.
+                      For pure massage quality per dollar, home massage delivers superior value. A 450,000 IDR ($30) home massage typically matches or exceeds the quality of 700,000 IDR ($47) spa massage, while eliminating transportation costs and saving 2+ hours of time.
                     </p>
                     <p className="text-lg text-muted-foreground">
                       Spas justify higher prices with facilities and ambiance. If you value flower baths, architectural beauty, and a "destination experience," premium spas are worth the extra cost. But if your priority is effective bodywork at fair pricing, home massage wins decisively.

@@ -815,7 +815,7 @@ export default function HowToBookHomeMassage() {
         },
         {
           question: "How much does home massage cost?",
-          answer: "Home massage typically costs Rp 320,000-450,000 for 60 minutes, Rp 450,000-700,000 for 90 minutes. Couples home massage costs Rp 550,000-760,000 for 60 minutes. Pricing includes all equipment, oils, and therapist travel. No hidden costs. Payment usually via cash after service, or bank transfer beforehand."
+          answer: "Home massage typically costs Rp 320,000-450,000 for 60 minutes, Rp 450,000-700,000 for 90 minutes. Couples home massage costs Rp 850,000 for 90 minutes. Pricing includes all equipment, oils, and therapist travel. No hidden costs. Payment usually via cash after service, or bank transfer beforehand."
         },
         {
           question: "Can I reschedule my home massage booking?",

@@ -229,7 +229,7 @@ export default function VillaMassageCitiesIndex() {
                     <p className="text-sm text-muted-foreground">Side-by-side treatment</p>
                   </div>
                   <div className="bg-background p-4 rounded-lg">
-                    <h3 className="font-semibold mb-2">Aromatherapy - Rp 350,000</h3>
+                    <h3 className="font-semibold mb-2">Aromatherapy - Rp 390,000</h3>
                     <p className="text-sm text-muted-foreground">Essential oils therapy</p>
                   </div>
                   <div className="bg-background p-4 rounded-lg">

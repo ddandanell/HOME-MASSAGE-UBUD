@@ -53,8 +53,8 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 700,000',
-      priceIDR: 'Rp 700,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Full postnatal recovery session including abdominal work and gentle stretching'
     }
   ],

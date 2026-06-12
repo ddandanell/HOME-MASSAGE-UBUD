@@ -493,7 +493,7 @@ export default function NearMeMassageHub() {
                       <p className="text-muted-foreground mb-3">
                         Smooth, flowing massage with aromatherapy oils
                       </p>
-                      <p className="text-sm font-semibold">From IDR 350,000</p>
+                      <p className="text-sm font-semibold">From IDR 320,000</p>
                     </CardContent>
                   </Card>
                   

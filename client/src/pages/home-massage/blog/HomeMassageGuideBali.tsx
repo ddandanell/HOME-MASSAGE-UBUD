@@ -474,7 +474,7 @@ export default function HomeMassageGuideBali() {
                     <CardContent className="p-6">
                       <h3 className="text-xl font-bold mb-3">What about tipping?</h3>
                       <p className="text-muted-foreground">
-                        Tipping is appreciated but not mandatory in Bali. For excellent service, 10-20% is customary. Many clients tip 50,000-120,000 IDR ($3-7 USD) for standard sessions. If your therapist went above and beyond—arrived early, accommodated special requests, or provided exceptional treatment—consider tipping on the higher end. Carry cash for tipping, as digital tips rarely reach therapists directly.
+                        Tipping is appreciated but not mandatory in Bali. For excellent service, 10-20% is customary. Many clients tip 50,000-120,000 IDR ($3-8 USD) for standard sessions. If your therapist went above and beyond—arrived early, accommodated special requests, or provided exceptional treatment—consider tipping on the higher end. Carry cash for tipping, as digital tips rarely reach therapists directly.
                       </p>
                     </CardContent>
                   </Card>

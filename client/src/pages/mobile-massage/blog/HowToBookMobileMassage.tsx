@@ -417,7 +417,7 @@ export default function HowToBookHomeMassage() {
                   <div className="space-y-3">
                     <div className="flex justify-between items-center pb-2 border-b">
                       <span className="text-muted-foreground">60-minute mobile massage</span>
-                      <span className="font-semibold">Rp 300,000-400,000</span>
+                      <span className="font-semibold">Rp 320,000-450,000</span>
                     </div>
                     <div className="flex justify-between items-center pb-2 border-b">
                       <span className="text-muted-foreground">90-minute mobile massage</span>
@@ -425,7 +425,7 @@ export default function HowToBookHomeMassage() {
                     </div>
                     <div className="flex justify-between items-center pb-2 border-b">
                       <span className="text-muted-foreground">Couples mobile massage (60 min)</span>
-                      <span className="font-semibold">Rp 550,000-750,000</span>
+                      <span className="font-semibold">Rp 700,000-900,000</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-muted-foreground">Early morning mobile massage (7am)</span>

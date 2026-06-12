@@ -71,7 +71,7 @@ export default function BalineseCouplesMassage() {
                       </div>
                       <div className="flex items-center gap-2 mb-4">
                         <DollarSign className="w-5 h-5 text-primary" />
-                        <span className="text-2xl font-bold">Rp 700,000</span>
+                        <span className="text-2xl font-bold">Rp 850,000</span>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Two therapists, complete traditional treatment for both
@@ -104,7 +104,7 @@ export default function BalineseCouplesMassage() {
                       </div>
                       <div className="flex items-center gap-2 mb-4">
                         <DollarSign className="w-5 h-5 text-primary" />
-                        <span className="text-2xl font-bold">Rp 1,300,000</span>
+                        <span className="text-2xl font-bold">Rp 1,500,000</span>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Complete couples ritual with comprehensive treatment

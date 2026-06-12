@@ -148,7 +148,7 @@ export default function AromatherapyVillaMassage() {
                     <div className="text-center mb-8">
                       <h3 className="text-2xl font-bold mb-2">Aromatherapy Villa Massage</h3>
                       <p className="text-muted-foreground mb-4">Essential oil healing at your villa</p>
-                      <div className="text-4xl font-bold text-primary mb-2">Rp 350,000</div>
+                      <div className="text-4xl font-bold text-primary mb-2">Rp 390,000</div>
                       <p className="text-sm text-muted-foreground">per person / 90 minutes</p>
                     </div>
                     <ul className="space-y-3 mb-8">

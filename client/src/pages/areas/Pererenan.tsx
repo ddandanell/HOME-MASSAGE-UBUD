@@ -59,7 +59,7 @@ export default function Pererenan() {
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: 'Rp 350,000',
+        priceFrom: 'Rp 320,000',
         duration: '60-120 min'
       },
       {

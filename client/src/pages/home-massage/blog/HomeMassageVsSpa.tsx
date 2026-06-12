@@ -281,7 +281,7 @@ export default function HomeMassageVsSpa() {
                   </div>
 
                   <div className="bg-primary text-white p-4 rounded-lg text-center">
-                    <p className="font-semibold text-lg">Home Massage Savings: Rp 700,000 (64% less)</p>
+                    <p className="font-semibold text-lg">Home Massage Savings: Rp 850,000 (60% less)</p>
                   </div>
                 </div>
               </CardContent>
@@ -703,7 +703,7 @@ export default function HomeMassageVsSpa() {
         },
         {
           question: "Is home massage cheaper than spa massage?",
-          answer: "Yes. Home massage typically costs 40-60% less than equivalent spa massage. A 90-minute home massage costs approximately Rp 450,000-700,000 versus Rp 760,000-1,160,000 for comparable spa massage (including transportation and expected upgrades). Home massage eliminates facility overhead, passing savings directly to you."
+          answer: "Yes. Home massage typically costs 40-60% less than equivalent spa massage. A 90-minute home massage costs approximately Rp 450,000-700,000 versus Rp 850,000-1,200,000 for comparable spa massage (including transportation and expected upgrades). Home massage eliminates facility overhead, passing savings directly to you."
         },
         {
           question: "Is home massage as professional as spa massage?",

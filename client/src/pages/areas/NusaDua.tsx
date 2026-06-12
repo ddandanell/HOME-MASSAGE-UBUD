@@ -65,7 +65,7 @@ export default function NusaDua() {
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: 'Rp 350,000',
+        priceFrom: 'Rp 320,000',
         duration: '60-120 min'
       },
       {
@@ -114,7 +114,7 @@ export default function NusaDua() {
       },
       {
         question: 'What are your prices compared to Nusa Dua resort spas?',
-        answer: 'Our pricing is significantly more affordable than most Nusa Dua resort spas while maintaining professional quality. Resort spas typically charge premium prices due to facility overhead. We offer the same (or higher) quality of licensed therapists, premium oils, and professional equipment, but with more transparent, accessible pricing. For example, where a resort might charge 820,000-1,200,000 IDR for treatments, ours range from 380,000-450,000 IDR for similar services.'
+        answer: 'Our pricing is significantly more affordable than most Nusa Dua resort spas while maintaining professional quality. Resort spas typically charge premium prices due to facility overhead. We offer the same (or higher) quality of licensed therapists, premium oils, and professional equipment, but with more transparent, accessible pricing. For example, where a resort might charge 850,000-1,200,000 IDR for treatments, ours range from 380,000-450,000 IDR for similar services.'
       },
       {
         question: 'Can I book massage for early morning or late evening at my resort?',

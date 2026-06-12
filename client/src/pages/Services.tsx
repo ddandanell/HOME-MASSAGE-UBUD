@@ -37,7 +37,7 @@ export default function Services() {
       id: 2,
       name: 'Aromatherapy Massage',
       duration: '60-90 minutes',
-      price: 'From Rp 350,000',
+      price: 'From Rp 320,000',
       image: aromatherapyImage,
       description: 'Relaxing massage using premium essential oils that penetrate deep into the skin, promoting healing and emotional balance.',
       benefits: [

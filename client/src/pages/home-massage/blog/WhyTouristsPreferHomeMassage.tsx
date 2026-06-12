@@ -324,7 +324,7 @@ export default function WhyTouristsPreferHomeMassage() {
                       <p className="font-semibold">Random Tourist Spa</p>
                       <p className="text-sm text-muted-foreground">Plus transportation, wait time, pressure for upgrades</p>
                     </div>
-                    <p className="text-lg font-bold">Rp 700,000-820,000+</p>
+                    <p className="text-lg font-bold">Rp 850,000-1,100,000+</p>
                   </div>
                   <div className="flex justify-between items-center pb-3 border-b">
                     <div>
@@ -410,7 +410,7 @@ export default function WhyTouristsPreferHomeMassage() {
             <Card className="mt-6 bg-primary/5">
               <CardContent className="p-6">
                 <p className="text-muted-foreground mb-3">
-                  Many tourists spend 3-5 vacation days receiving spa treatments. At typical spa rates (Rp 700,000 × 4 visits), that's Rp 2,820,000+. Professional <Link href="/home-massage/services/balinese"><span className="text-primary hover:underline">Balinese home massage</span></Link>, <Link href="/home-massage/services/deep-tissue"><span className="text-primary hover:underline">deep tissue home massage</span></Link>, and <Link href="/home-massage/services/relaxation"><span className="text-primary hover:underline">relaxation home massage</span></Link> at home massage prices totals closer to Rp 1,450,000—literally half price for better experience.
+                  Many tourists spend 3-5 vacation days receiving spa treatments. At typical spa rates (Rp 850,000 × 4 visits), that's Rp 3,400,000+. Professional <Link href="/home-massage/services/balinese"><span className="text-primary hover:underline">Balinese home massage</span></Link>, <Link href="/home-massage/services/deep-tissue"><span className="text-primary hover:underline">deep tissue home massage</span></Link>, and <Link href="/home-massage/services/relaxation"><span className="text-primary hover:underline">relaxation home massage</span></Link> at home massage prices totals closer to Rp 1,800,000—significant savings for better experience.
                 </p>
                 <p className="text-primary font-semibold">
                   This is why smart travelers choose professional home massage. Better value, better privacy, better control.
@@ -614,7 +614,7 @@ export default function WhyTouristsPreferHomeMassage() {
         },
         {
           question: "How much money do tourists save choosing home massage?",
-          answer: "Home massage costs 40-60% less than equivalent spa massage. A 90-minute home massage costs approximately Rp 450,000-700,000 versus Rp 760,000-1,160,000 for spa massage (including transportation, facility markups, and expected upgrades). For multiple vacation massages, savings multiply dramatically while quality remains identical."
+          answer: "Home massage costs 40-60% less than equivalent spa massage. A 90-minute home massage costs approximately Rp 450,000-700,000 versus Rp 850,000-1,200,000 for spa massage (including transportation, facility markups, and expected upgrades). For multiple vacation massages, savings multiply dramatically while quality remains identical."
         },
         {
           question: "Do tourists get the same quality with home massage as spas?",

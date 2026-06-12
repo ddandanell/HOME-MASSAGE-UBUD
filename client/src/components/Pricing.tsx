@@ -8,7 +8,7 @@ const pricingPackages = [
     title: '60 Minute Treatments',
     treatments: [
       { name: 'Traditional Balinese Massage (60 min)', price: 'IDR 320,000' },
-      { name: 'Aromatherapy Massage (60 min)', price: 'IDR 350,000' },
+      { name: 'Aromatherapy Massage (60 min)', price: 'IDR 320,000' },
       { name: 'Deep Tissue Massage (60 min)', price: 'IDR 380,000' },
       { name: 'Thai Massage (60 min)', price: 'IDR 390,000' },
       { name: 'Lymphatic Drainage (60 min)', price: 'IDR 450,000' },

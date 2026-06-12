@@ -40,8 +40,8 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '90 Minutes',
-      price: 'Rp 700,000',
-      priceIDR: 'Rp 700,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Premium luxury massage with senior therapist and finest products'
     },
     {

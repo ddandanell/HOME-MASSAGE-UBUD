@@ -244,7 +244,7 @@ export default function MobileMassageVsSpa() {
                     <div className="space-y-2 text-muted-foreground ml-4">
                       <div className="flex justify-between">
                         <span>Base massage price:</span>
-                        <span>Rp 750,000</span>
+                        <span>Rp 850,000</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Transportation (roundtrip):</span>

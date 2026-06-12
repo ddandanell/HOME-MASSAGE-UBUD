@@ -39,7 +39,7 @@
         ],
         "offers": {
           "@type": "Offer",
-          "price": "900000",
+          "price": "850000",
           "priceCurrency": "IDR",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01"
@@ -180,7 +180,7 @@
         },
         "offers": {
           "@type": "Offer",
-          "price": "750000",
+          "price": "540000",
           "priceCurrency": "IDR",
           "availability": "https://schema.org/InStock"
         },
@@ -223,7 +223,7 @@
         ],
         "offers": {
           "@type": "Offer",
-          "price": "800000",
+          "price": "540000",
           "priceCurrency": "IDR",
           "availability": "https://schema.org/InStock"
         },
@@ -250,19 +250,19 @@
           {
             "@type": "Offer",
             "name": "4-Person Group Spa",
-            "price": "2800000",
+            "price": "1800000",
             "priceCurrency": "IDR"
           },
           {
             "@type": "Offer",
             "name": "6-Person Group Spa",
-            "price": "3900000",
+            "price": "2600000",
             "priceCurrency": "IDR"
           },
           {
             "@type": "Offer",
             "name": "8-Person Group Spa",
-            "price": "4800000",
+            "price": "3200000",
             "priceCurrency": "IDR"
           }
         ],
@@ -291,7 +291,7 @@
         },
         "offers": {
           "@type": "Offer",
-          "price": "750000",
+          "price": "540000",
           "priceCurrency": "IDR",
           "availability": "https://schema.org/InStock"
         },
@@ -330,7 +330,7 @@
         ],
         "offers": {
           "@type": "Offer",
-          "price": "1500000",
+          "price": "860000",
           "priceCurrency": "IDR",
           "availability": "https://schema.org/InStock"
         },
@@ -357,13 +357,13 @@
           {
             "@type": "Offer",
             "name": "3-Hour Spa Journey",
-            "price": "1800000",
+            "price": "1200000",
             "priceCurrency": "IDR"
           },
           {
             "@type": "Offer",
             "name": "5-Hour Ultimate Spa",
-            "price": "2800000",
+            "price": "1800000",
             "priceCurrency": "IDR"
           }
         ],
@@ -392,7 +392,7 @@
         },
         "offers": {
           "@type": "Offer",
-          "price": "750000",
+          "price": "540000",
           "priceCurrency": "IDR",
           "availability": "https://schema.org/InStock"
         },
@@ -435,7 +435,7 @@
         ],
         "offers": {
           "@type": "Offer",
-          "price": "700000",
+          "price": "490000",
           "priceCurrency": "IDR",
           "availability": "https://schema.org/InStock"
         },

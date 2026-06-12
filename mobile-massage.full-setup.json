@@ -28,8 +28,8 @@
         "slug": "deep-tissue-mobile-massage", 
         "title": "Deep Tissue Mobile Massage",
         "pricing": {
-          "single_60_90min": 320000,
-          "couple_60_90min": 600000,
+          "single_60_90min": 380000,
+          "couple_60_90min": 850000,
           "currency": "IDR"
         }
       },
@@ -37,8 +37,8 @@
         "slug": "relaxation-mobile-massage", 
         "title": "Relaxation Mobile Massage",
         "pricing": {
-          "single_60_90min": 304000,
-          "couple_60_90min": 560000,
+          "single_60_90min": 350000,
+          "couple_60_90min": 850000,
           "currency": "IDR"
         }
       },
@@ -46,8 +46,8 @@
         "slug": "balinese-mobile-massage", 
         "title": "Balinese Mobile Massage",
         "pricing": {
-          "single_60_90min": 280000,
-          "couple_60_90min": 520000,
+          "single_60_90min": 320000,
+          "couple_60_90min": 850000,
           "currency": "IDR"
         }
       },
@@ -55,7 +55,7 @@
         "slug": "couples-mobile-massage", 
         "title": "Couples Mobile Massage",
         "pricing": {
-          "couple_60_90min": 520000,
+          "couple_60_90min": 850000,
           "currency": "IDR",
           "note": "Two therapists, synchronized treatment"
         }

@@ -28,7 +28,7 @@ const treatments = [
     name: 'Aromatherapy Massage', 
     url: '/ubud/aromatherapy-massage',
     description: 'Essential oils for relaxation & healing',
-    priceFrom: 'Rp 350,000',
+    priceFrom: 'Rp 320,000',
     duration: '60-120 min',
     category: 'Traditional & Relaxation'
   },
