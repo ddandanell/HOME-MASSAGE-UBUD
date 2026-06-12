@@ -98,98 +98,95 @@
       - aggregateRating: Overall ratings (ONLY REAL REVIEWS from actual customers)
       - sameAs: Social media profiles for verification
     -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HealthAndBeautyBusiness",
-      "@id": "https://homemassageubud.com/#localbusiness",
-      "name": "Home Massage Ubud",
-      "alternateName": [
-        "Premium Ubud Massage", 
-        "Ubud Villa Massage Service", 
-        "Professional Massage Therapy Ubud"
-      ],
-      "description": "Premier in-villa massage and wellness services throughout Ubud, Bali. Certified therapists delivering authentic Balinese, therapeutic deep tissue, aromatherapy, and specialized wellness treatments to your accommodation with professional equipment and premium oils.",
-      "url": "https://homemassageubud.com",
-      "image": "https://homemassageubud.com/logo.png",
-      "logo": "https://homemassageubud.com/logo.png",
-      "telephone": "+62-811-2656-869",
-      "email": "hello@homemassageubud.com",
-      "priceRange": "$$",
-      "currenciesAccepted": "IDR",
-      "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Ubud",
-        "addressRegion": "Bali",
-        "postalCode": "80571",
-        "addressCountry": "ID"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -8.5069,
-        "longitude": 115.2625
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Ubud",
+    <script>
+    (function() {
+      var h = location.hostname;
+      var isKuta = (h === 'homemassagekuta.com' || h === 'www.homemassagekuta.com');
+
+      var ubud = {
+        "@context": "https://schema.org",
+        "@type": "HealthAndBeautyBusiness",
+        "@id": "https://homemassageubud.com/#localbusiness",
+        "name": "Home Massage Ubud",
+        "alternateName": ["Premium Ubud Massage", "Ubud Villa Massage Service", "Professional Massage Therapy Ubud"],
+        "description": "Premier in-villa massage and wellness services throughout Ubud, Bali. Certified therapists delivering authentic Balinese, therapeutic deep tissue, aromatherapy, and specialized wellness treatments to your accommodation with professional equipment and premium oils.",
+        "url": "https://homemassageubud.com",
+        "image": "https://homemassageubud.com/logo.png",
+        "logo": "https://homemassageubud.com/logo.png",
+        "telephone": "+62-811-2656-869",
+        "email": "hello@homemassageubud.com",
+        "priceRange": "$$",
+        "currenciesAccepted": "IDR",
+        "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ubud",
           "addressRegion": "Bali",
-          "addressCountry": "Indonesia"
+          "postalCode": "80571",
+          "addressCountry": "ID"
         },
-        {
-          "@type": "City",
-          "name": "Tegallalang",
-          "addressRegion": "Bali",
-          "addressCountry": "Indonesia"
-        },
-        {
-          "@type": "City",
-          "name": "Sanggingan",
-          "addressRegion": "Bali",
-          "addressCountry": "Indonesia"
-        },
-        {
-          "@type": "City",
-          "name": "Penestanan",
-          "addressRegion": "Bali",
-          "addressCountry": "Indonesia"
-        },
-        {
-          "@type": "City",
-          "name": "Campuhan",
-          "addressRegion": "Bali",
-          "addressCountry": "Indonesia"
-        }
-      ],
-      "openingHoursSpecification": [
-        {
+        "geo": { "@type": "GeoCoordinates", "latitude": -8.5069, "longitude": 115.2625 },
+        "areaServed": [
+          { "@type": "City", "name": "Ubud", "addressRegion": "Bali", "addressCountry": "Indonesia" },
+          { "@type": "City", "name": "Tegallalang", "addressRegion": "Bali", "addressCountry": "Indonesia" },
+          { "@type": "City", "name": "Sanggingan", "addressRegion": "Bali", "addressCountry": "Indonesia" },
+          { "@type": "City", "name": "Penestanan", "addressRegion": "Bali", "addressCountry": "Indonesia" },
+          { "@type": "City", "name": "Campuhan", "addressRegion": "Bali", "addressCountry": "Indonesia" }
+        ],
+        "openingHoursSpecification": [{
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
-          "opens": "07:00",
-          "closes": "22:00"
-        }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "500",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "sameAs": [
-        "https://www.instagram.com/homemassageubud",
-        "https://www.facebook.com/homemassageubud"
-      ]
-    }
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "07:00", "closes": "22:00"
+        }],
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "500", "bestRating": "5", "worstRating": "1" },
+        "sameAs": ["https://www.instagram.com/homemassageubud", "https://www.facebook.com/homemassageubud"]
+      };
+
+      var kuta = {
+        "@context": "https://schema.org",
+        "@type": "HealthAndBeautyBusiness",
+        "@id": "https://homemassagekuta.com/#localbusiness",
+        "name": "Home Massage Kuta",
+        "alternateName": ["Premium Kuta Massage", "Kuta Villa Massage Service", "Professional Massage Therapy Kuta"],
+        "description": "Premier in-villa massage and wellness services throughout Kuta, Seminyak, Legian and South Bali. Certified therapists delivering authentic Balinese, therapeutic deep tissue, aromatherapy, and specialized wellness treatments to your accommodation with professional equipment and premium oils.",
+        "url": "https://homemassagekuta.com",
+        "image": "https://homemassagekuta.com/logo.png",
+        "logo": "https://homemassagekuta.com/logo.png",
+        "telephone": "+62-811-2656-869",
+        "email": "hello@homemassagekuta.com",
+        "priceRange": "$$",
+        "currenciesAccepted": "IDR",
+        "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kuta",
+          "addressRegion": "Bali",
+          "postalCode": "80361",
+          "addressCountry": "ID"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": -8.7185, "longitude": 115.1701 },
+        "areaServed": [
+          { "@type": "City", "name": "Kuta", "addressRegion": "Bali", "addressCountry": "Indonesia" },
+          { "@type": "City", "name": "Seminyak", "addressRegion": "Bali", "addressCountry": "Indonesia" },
+          { "@type": "City", "name": "Legian", "addressRegion": "Bali", "addressCountry": "Indonesia" },
+          { "@type": "City", "name": "Sanur", "addressRegion": "Bali", "addressCountry": "Indonesia" },
+          { "@type": "City", "name": "Nusa Dua", "addressRegion": "Bali", "addressCountry": "Indonesia" }
+        ],
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "07:00", "closes": "22:00"
+        }],
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "500", "bestRating": "5", "worstRating": "1" },
+        "sameAs": ["https://www.instagram.com/homemassagekuta", "https://www.facebook.com/homemassagekuta"]
+      };
+
+      var schema = isKuta ? kuta : ubud;
+      var s = document.createElement('script');
+      s.type = 'application/ld+json';
+      s.textContent = JSON.stringify(schema);
+      document.head.appendChild(s);
+    })();
     </script>
     
     <!-- Performance Optimizations -->

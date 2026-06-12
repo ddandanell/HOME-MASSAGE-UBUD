@@ -1,8 +1,9 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemaps — both domains share this file; each crawler follows its own domain
 Sitemap: https://homemassageubud.com/sitemap.xml
+Sitemap: https://homemassagekuta.com/sitemap-kuta.xml
 
 # Block admin/sensitive areas
 Disallow: /admin/
@@ -13,6 +14,3 @@ Disallow: /*.json$
 Allow: /images/
 Allow: /assets/
 Allow: /static/
-
-# Crawl delay (optional - removes if causing issues)
-Crawl-delay: 1
