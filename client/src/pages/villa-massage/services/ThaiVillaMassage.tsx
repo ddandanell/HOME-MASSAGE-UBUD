@@ -52,7 +52,7 @@ export default function ThaiVillaMassage() {
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg text-muted-foreground mb-6">
-                    Thai villa massage is a dynamic, energizing bodywork practice that combines assisted yoga stretches, acupressure, and rhythmic compressions to create a unique therapeutic experience. This ancient villa massage tradition, sometimes called "Thai yoga massage," differs dramatically from Western massage styles—you remain fully clothed in comfortable attire while the therapist uses their hands, thumbs, elbows, knees, and feet to apply pressure and guide your body through various stretches. Our professional therapists bring this transformative practice directly to your villa, performing the treatment on a comfortable floor mat rather than a massage table, which allows for the full range of movement this villa massage requires.
+                    Thai villa massage is a dynamic, energizing bodywork practice that combines assisted yoga stretches, acupressure, and rhythmic compressions to create a unique therapeutic experience. This ancient villa massage tradition, sometimes called "Thai yoga massage," differs dramatically from Western massage styles—you remain fully clothed in comfortable attire while the therapist uses their hands, thumbs, elbows, knees, and feet to apply pressure and guide your body through various stretches. Our professional therapists bring this transformative practice directly to your villa, performing the treatment on a comfortable floor mat, which allows for the full range of movement this villa massage requires.
                   </p>
                   <p className="text-lg text-muted-foreground mb-6">
                     The foundation of Thai villa massage lies in the concept of energy lines or "sen" that run throughout the body, similar to meridians in Chinese medicine. This villa massage technique works systematically along these energy pathways, using thumb pressure and palms to release blockages and stimulate energy flow. The therapist moves your body into yoga-like positions, providing gentle stretches that you couldn't achieve on your own while simultaneously applying pressure to specific points. This combination makes Thai villa massage particularly effective for increasing flexibility, relieving muscle tension, and promoting an overall sense of energized well-being rather than the sedated relaxation of other massage styles.
@@ -264,7 +264,7 @@ export default function ThaiVillaMassage() {
             },
             {
               question: "How does Thai villa massage differ from oil-based massage?",
-              answer: "Thai villa massage uses no oil, focuses on stretching and acupressure, and is performed on a floor mat rather than massage table. Villa massage therapists use body weight and leverage for deep stretches. Thai villa massage is often called 'lazy yoga' because therapists move your body through yoga-like positions."
+              answer: "Thai villa massage uses no oil, focuses on stretching and acupressure, and is performed on a floor mat. Villa massage therapists use body weight and leverage for deep stretches. Thai villa massage is often called 'lazy yoga' because therapists move your body through yoga-like positions."
             },
             {
               question: "Will Thai villa massage hurt if I'm not flexible?",

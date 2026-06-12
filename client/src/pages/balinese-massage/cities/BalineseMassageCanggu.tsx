@@ -194,7 +194,7 @@ export default function BalineseMassageCanggu() {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-heading text-xl mb-2 text-neutral-900">Can you come to smaller guesthouses or budget accommodations?</h3>
-                <p className="text-neutral-700">Absolutely! We serve all types of accommodations from luxury villas to budget guesthouses. As long as you have a private room with space for a massage table, we can provide our services.</p>
+                <p className="text-neutral-700">Absolutely! We serve all types of accommodations from luxury villas to budget guesthouses. As long as you have a private room with a comfortable surface — a bed or floor mat — we can provide our services.</p>
               </CardContent>
             </Card>
           </div>
@@ -225,7 +225,7 @@ export default function BalineseMassageCanggu() {
         },
         {
           question: "Can I book Balinese massage at my Canggu guesthouse or villa?",
-          answer: "Yes, our mobile Balinese massage service comes to any Canggu accommodation—from budget guesthouses to luxury villas. We bring professional massage tables, organic oils, and everything needed for authentic Balinese massage in your space. Canggu's diverse lodging options all work perfectly for in-room treatments. Many guests prefer villa Balinese massage because you can relax by your pool afterward, shower immediately, or even nap without navigating Canggu's traffic. The convenience enhances the Balinese massage healing experience significantly."
+          answer: "Yes, our mobile Balinese massage service comes to any Canggu accommodation—from budget guesthouses to luxury villas. We bring organic oils, fresh linens, and everything needed for authentic Balinese massage in your space. Canggu's diverse lodging options all work perfectly for in-room treatments. Many guests prefer villa Balinese massage because you can relax by your pool afterward, shower immediately, or even nap without navigating Canggu's traffic. The convenience enhances the Balinese massage healing experience significantly."
         },
         {
           question: "How does Balinese massage incorporate traditional Balinese healing wisdom?",

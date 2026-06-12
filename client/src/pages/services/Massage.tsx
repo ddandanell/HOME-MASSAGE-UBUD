@@ -17,7 +17,7 @@ const serviceData: ServiceLandingPageData = {
   introduction: [
     'Welcome to Home Massage Ubud, your premier destination for professional massage in Ubud, Bali. We specialize in delivering exceptional massage therapy directly to your villa, hotel, or guesthouse, eliminating the need to travel to a spa. Our massage services combine traditional Balinese healing techniques with modern therapeutic approaches, creating an unforgettable wellness experience in the comfort of your own space.',
     'Our team of over 100 certified massage therapists brings years of training and expertise to every session. Each therapist is fluent in both English and Indonesian, ensuring clear communication throughout your treatment. Whether you are seeking relief from muscle tension, stress reduction, or simply wish to indulge in relaxation, our massage services cater to all needs and preferences.',
-    'The massage experience in Ubud holds special significance, as this region is renowned worldwide as a center for wellness and healing arts. By choosing our mobile massage service, you gain access to this rich therapeutic tradition without leaving your accommodation. We bring professional massage tables, premium organic oils, fresh linens, and all necessary equipment directly to you.',
+    'The massage experience in Ubud holds special significance, as this region is renowned worldwide as a center for wellness and healing arts. By choosing our mobile massage service, you gain access to this rich therapeutic tradition without leaving your accommodation. We bring premium organic oils, fresh linens, and all necessary supplies directly to you — you provide a comfortable surface like your bed.',
     'Our massage services operate from 8 AM to 10 PM daily, accommodating early morning sessions before your day begins or evening treatments to help you unwind. With same-day booking available through WhatsApp, arranging your massage in Ubud has never been more convenient. Trust the largest massage team in Bali to deliver an exceptional experience every time.'
   ],
   
@@ -168,7 +168,7 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       question: 'Do you bring all massage equipment to my villa?',
-      answer: 'Yes, our therapists arrive with everything needed for a professional massage experience. This includes a portable massage table, premium organic oils, fresh linens, towels, and any additional items specific to your chosen treatment. You simply need to provide a suitable space.'
+      answer: 'Yes, our therapists arrive with everything needed for a professional massage experience. This includes premium organic oils, fresh linens, towels, and any additional items specific to your chosen treatment. You provide a comfortable surface — your bed or a floor mat. You simply need to provide a quiet space.'
     },
     {
       question: 'Are your massage therapists certified and experienced?',
@@ -184,7 +184,7 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       question: 'What should I prepare before my massage appointment?',
-      answer: 'Simply ensure you have a quiet, comfortable space for the massage table. The area should be at least 2m x 2.5m with access to electricity for any heating equipment. Taking a shower beforehand is recommended but not required. Avoid heavy meals 1-2 hours before your massage.'
+      answer: 'Simply ensure you have a quiet, comfortable surface — your bed or a floor mat works great. Have access to electricity nearby for any heating equipment. Taking a shower beforehand is recommended but not required. Avoid heavy meals 1-2 hours before your massage.'
     },
     {
       question: 'What payment methods do you accept for massage services?',

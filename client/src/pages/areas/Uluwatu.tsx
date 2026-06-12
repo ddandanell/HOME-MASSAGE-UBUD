@@ -53,7 +53,7 @@ export default function Uluwatu() {
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: 'Rp 380,000',
+        priceFrom: 'Rp 320,000',
         duration: '60-120 min'
       },
       {
@@ -65,7 +65,7 @@ export default function Uluwatu() {
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: 'Rp 390,000',
+        priceFrom: 'Rp 420,000',
         duration: '60-120 min'
       },
       {
@@ -77,7 +77,7 @@ export default function Uluwatu() {
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 350,000',
         duration: '60-120 min'
       },
       {
@@ -130,7 +130,7 @@ export default function Uluwatu() {
       },
       {
         question: 'What should I arrange before therapist arrival at my cliff villa?',
-        answer: 'Very little! We bring all equipment including massage tables, premium oils, fresh towels, and anything needed for treatment. You just need a suitable space (bedroom, terrace, or covered outdoor area) of about 2x3 meters and nearby bathroom access. If you\'re at a gated villa or resort, inform security that you\'re expecting a massage therapist. For outdoor setups, ensure there\'s shade. If you have any health conditions or preferences, mention when booking.'
+        answer: 'Very little! We bring all supplies including premium oils, fresh towels, and anything needed for treatment. You just need a comfortable surface — your bed or a floor mat — in a quiet space (bedroom, terrace, or covered outdoor area) and nearby bathroom access. If you\'re at a gated villa or resort, inform security that you\'re expecting a massage therapist. For outdoor setups, ensure there\'s shade. If you have any health conditions or preferences, mention when booking.'
       },
       {
         question: 'How far in advance should I book during peak season in Uluwatu?',

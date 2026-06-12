@@ -63,7 +63,7 @@ export default function HomeMassageGuideBali() {
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg text-muted-foreground mb-4">
-                    Home massage is professional massage therapy delivered by licensed therapists at your chosen location. Instead of traveling to a spa, the therapist brings all necessary equipment—massage table, oils, towels, and music—directly to you. The service offers the same quality and professionalism as traditional spa massage, with added convenience and privacy.
+                    Home massage is professional massage therapy delivered by licensed therapists at your chosen location. Instead of traveling to a spa, the therapist brings oils, towels, linens, and music directly to you. You provide a comfortable surface — your bed or a floor mat works perfectly. The service offers the same quality and professionalism as traditional spa massage, with added convenience and privacy.
                   </p>
 
                   <h3 className="text-2xl font-bold mb-4 mt-8">How Home Massage Works</h3>
@@ -306,7 +306,7 @@ export default function HomeMassageGuideBali() {
                     <CardContent className="p-6">
                       <h3 className="text-2xl font-bold mb-4">Step 4: Prepare Your Space</h3>
                       <p className="text-muted-foreground mb-4">
-                        Clear a flat area approximately 2 meters by 3 meters for the massage table. Bedrooms work perfectly, but balconies, living rooms, or garden pavilions are also great options. The therapist brings everything needed—table, linens, oils, and music.
+                        Clear a comfortable space approximately 2 meters by 3 meters. Bedrooms work perfectly, but balconies, living rooms, or garden pavilions are also great options. The therapist brings everything needed—linens, oils, and music.
                       </p>
                       <p className="text-muted-foreground">
                         You simply need space and perhaps dimmed lighting. Many guests enjoy opening balcony doors for fresh air or setting up in garden areas. Your therapist will adapt to whatever comfortable space you provide.
@@ -389,12 +389,12 @@ export default function HomeMassageGuideBali() {
                 <div className="space-y-6">
                   <h3 className="text-2xl font-bold mb-4">Therapist Arrival & Setup</h3>
                   <p className="text-lg text-muted-foreground mb-6">
-                    Your therapist arrives punctually with a portable massage table, fresh linens, massage oils, and calming music. Setup takes 5-10 minutes. They'll ask about your preferred music volume, room temperature, and massage pressure. This is your opportunity to communicate any injuries, sensitive areas, or special requests.
+                    Your therapist arrives punctually with fresh linens, massage oils, and calming music. Setup takes 5-10 minutes. They'll ask about your preferred music volume, room temperature, and massage pressure. This is your opportunity to communicate any injuries, sensitive areas, or special requests.
                   </p>
 
                   <h3 className="text-2xl font-bold mb-4">The Treatment Experience</h3>
                   <p className="text-lg text-muted-foreground mb-6">
-                    You'll undress to your comfort level (typically to underwear) and lie on the massage table under a sheet. The therapist maintains professional draping throughout, exposing only the area being worked on. They use techniques appropriate to your chosen massage style—flowing strokes for Balinese, firmer pressure for deep tissue, gentle touch for aromatherapy. Feel free to request pressure adjustments or ask questions during the session.
+                    You'll undress to your comfort level (typically to underwear) and lie comfortably under a sheet. The therapist maintains professional draping throughout, exposing only the area being worked on. They use techniques appropriate to your chosen massage style—flowing strokes for Balinese, firmer pressure for deep tissue, gentle touch for aromatherapy. Feel free to request pressure adjustments or ask questions during the session.
                   </p>
 
                   <h3 className="text-2xl font-bold mb-4">After Your Massage</h3>
@@ -417,7 +417,7 @@ export default function HomeMassageGuideBali() {
                 <div className="space-y-6">
                   <h3 className="text-2xl font-bold mb-4">Space Requirements</h3>
                   <p className="text-lg text-muted-foreground mb-6">
-                    You need approximately 2 meters by 3 meters of flat, obstacle-free space for a massage table. Bedrooms work perfectly, but consider other options: balconies with privacy, pavilions, covered outdoor areas, or spacious living rooms. Ensure the floor is level and there's enough room for the therapist to move around the table comfortably.
+                    You need approximately 2 meters by 3 meters of flat, obstacle-free space. Your bed or a floor mat serves as the treatment surface. Bedrooms work perfectly, but consider other options: balconies with privacy, pavilions, covered outdoor areas, or spacious living rooms. Ensure there's enough room for the therapist to move comfortably.
                   </p>
 
                   <h3 className="text-2xl font-bold mb-4">What to Have Ready</h3>
@@ -447,7 +447,7 @@ export default function HomeMassageGuideBali() {
                     <CardContent className="p-6">
                       <h3 className="text-xl font-bold mb-3">Do I need to provide anything?</h3>
                       <p className="text-muted-foreground">
-                        No. Professional home massage services bring everything: massage table, fresh linens, quality oils, towels, and music. You simply provide space. Some guests enjoy providing their own music playlist, but this is optional. The therapist arrives fully equipped for your session.
+                        Just provide a comfortable surface — your bed or a floor mat works perfectly. Professional home massage services bring everything else: fresh linens, quality oils, towels, and music. Some guests enjoy providing their own music playlist, but this is optional. The therapist arrives fully equipped for your session.
                       </p>
                     </CardContent>
                   </Card>

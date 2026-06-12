@@ -87,7 +87,7 @@ export default function VillaMassageVsSpa() {
 
                   <h2 className="text-3xl font-bold mt-12 mb-6">Understanding the Villa Massage Experience</h2>
                   <p className="mb-6">
-                    Villa massage represents a modern evolution in wellness tourism, bringing professional massage therapy directly to your private accommodation. When you book villa massage services in Bali, licensed therapists travel to your villa with all necessary equipment including massage tables, fresh linens, oils, and aromatherapy accessories. The entire treatment occurs in your private space, whether that's your bedroom, outdoor pavilion, or poolside area.
+                    Villa massage represents a modern evolution in wellness tourism, bringing professional massage therapy directly to your private accommodation. When you book villa massage services in Bali, licensed therapists travel to your villa with fresh linens, oils, and aromatherapy accessories — you provide a comfortable surface like your bed or a floor mat. The entire treatment occurs in your private space, whether that's your bedroom, outdoor pavilion, or poolside area.
                   </p>
                   <p className="mb-6">
                     The villa massage model prioritizes convenience, privacy, and personalization. You don't leave your accommodation, eliminating travel logistics entirely. Instead, professional therapists arrive at your scheduled time, set up their equipment efficiently, deliver exceptional treatments, and leave your space immaculate. This approach transforms massage from an outing requiring planning and travel into a seamless wellness experience integrated naturally into your vacation routine.

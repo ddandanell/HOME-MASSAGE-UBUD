@@ -176,7 +176,7 @@ export default function BalineseMassageSeminyak() {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-heading text-xl mb-2 text-neutral-900">Can you accommodate couples massage in our villa?</h3>
-                <p className="text-neutral-700">Absolutely! Seminyak villas are perfect for couples massage. We bring two therapists and two massage tables for simultaneous treatments. This is one of our most popular Seminyak services, especially for romantic getaways and honeymoons.</p>
+                <p className="text-neutral-700">Absolutely! Seminyak villas are perfect for couples massage. We bring two therapists for simultaneous treatments — your villa beds or floor mats work perfectly. This is one of our most popular Seminyak services, especially for romantic getaways and honeymoons.</p>
               </CardContent>
             </Card>
             <Card>

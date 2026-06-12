@@ -1,6 +1,10 @@
 import { Instagram, Facebook } from "lucide-react";
 import { Link } from "wouter";
 
+// ─── COMPREHENSIVE FOOTER NAVIGATION ───
+// Every page on the site is reachable from the footer — this is the
+// backbone of our internal linking architecture for SEO.
+
 const footerSections = [
   {
     title: 'Massage Services',
@@ -16,49 +20,90 @@ const footerSections = [
   {
     title: 'Popular Treatments',
     links: [
-      { name: 'Traditional Balinese Massage', href: '/ubud/traditional-balinese-massage' },
-      { name: 'Deep Tissue Massage', href: '/ubud/deep-tissue-massage' },
-      { name: 'Aromatherapy Massage', href: '/ubud/aromatherapy-massage' },
-      { name: 'Hot Stone Massage', href: '/ubud/hot-stone-massage' },
-      { name: 'Couples Massage', href: '/ubud/couples-wellness-ritual' }
+      { name: 'Traditional Balinese', href: '/ubud/traditional-balinese-massage' },
+      { name: 'Deep Tissue', href: '/ubud/deep-tissue-massage' },
+      { name: 'Aromatherapy', href: '/ubud/aromatherapy-massage' },
+      { name: 'Hot Stone', href: '/ubud/hot-stone-massage' },
+      { name: 'Thai Massage', href: '/ubud/thai-massage' },
+      { name: 'Couples Ritual', href: '/ubud/couples-wellness-ritual' },
+      { name: 'Lymphatic Drainage', href: '/ubud/lymphatic-drainage-massage' },
+      { name: 'Pregnancy Massage', href: '/ubud/pregnancy-massage' }
     ]
   },
   {
-    title: 'Service Areas',
+    title: 'Service Areas — Ubud',
     links: [
-      { name: 'View All Service Areas', href: '/service-areas' },
-      { name: 'Massage in Ubud Centre', href: '/ubud-centre' },
-      { name: 'Massage in Seminyak', href: '/seminyak' },
-      { name: 'Massage in Canggu', href: '/canggu' },
-      { name: 'Massage in Sanur', href: '/sanur' }
+      { name: 'Ubud Centre', href: '/ubud-centre' },
+      { name: 'Ubud North', href: '/ubud-north' },
+      { name: 'Ubud East', href: '/ubud-east' },
+      { name: 'Ubud South', href: '/ubud-south' },
+      { name: 'Luxury Villas', href: '/ubud-luxury-villas' },
+      { name: 'Sidemen Valley', href: '/sidemen' }
     ]
   },
   {
-    title: 'Other Locations',
+    title: 'Service Areas — South Bali',
     links: [
-      { name: 'In-villa massage in Kuta', href: 'https://www.homemassagekuta.com/', external: true },
-      { name: 'Massage service in South Bali', href: 'https://www.homemassagekuta.com/', external: true },
-      { name: 'Home massage Seminyak area', href: 'https://www.homemassagekuta.com/seminyak', external: true }
+      { name: 'Seminyak', href: '/seminyak' },
+      { name: 'Canggu', href: '/canggu' },
+      { name: 'Berawa', href: '/berawa' },
+      { name: 'Pererenan', href: '/pererenan' },
+      { name: 'Petitenget', href: '/petitenget' },
+      { name: 'Umalas', href: '/umalas' },
+      { name: 'Kerobokan', href: '/kerobokan' },
+      { name: 'Legian', href: '/legian' }
     ]
   },
   {
-    title: 'Company',
+    title: 'Service Areas — All Bali',
+    links: [
+      { name: 'Kuta', href: '/kuta' },
+      { name: 'Sanur', href: '/sanur' },
+      { name: 'Nusa Dua', href: '/nusa-dua' },
+      { name: 'Jimbaran', href: '/jimbaran' },
+      { name: 'Uluwatu', href: '/uluwatu' },
+      { name: 'Ungasan', href: '/ungasan' },
+      { name: 'Lovina', href: '/lovina' },
+      { name: 'Amed', href: '/amed' },
+      { name: 'Candidasa', href: '/candidasa' },
+      { name: 'View All Areas', href: '/service-areas' }
+    ]
+  },
+  {
+    title: 'Service Landing Pages',
+    links: [
+      { name: 'Massage', href: '/services/massage' },
+      { name: 'Spa Massage', href: '/services/spa-massage' },
+      { name: 'Full Body Massage', href: '/services/full-body-massage' },
+      { name: 'Traditional Massage', href: '/services/traditional-massage' },
+      { name: 'Relaxing Massage', href: '/services/relaxing-massage' },
+      { name: 'Sports Massage', href: '/services/sports-massage' },
+      { name: 'Foot Massage', href: '/services/foot-massage' },
+      { name: 'Reflexology', href: '/services/reflexology' }
+    ]
+  },
+  {
+    title: 'Company & Info',
     links: [
       { name: 'About Us', href: '/about' },
       { name: 'Testimonials', href: '/testimonials' },
       { name: 'Blog', href: '/blog' },
+      { name: 'Digital Nomad Wellness', href: '/digital-nomad-wellness' },
       { name: 'Sustainability', href: '/sustainability' },
-      { name: 'Contact Us', href: '/contact' }
+      { name: 'Villa Partnerships', href: '/villa-partnerships' },
+      { name: 'Contact Us', href: '/contact' },
+      { name: 'Sitemap', href: '/sitemap' }
     ]
   },
   {
-    title: 'Book Now',
+    title: 'Book & Legal',
     links: [
       { name: 'View Pricing', href: '/pricing' },
-      { name: 'Villa Partnerships', href: '/villa-partnerships' },
       { name: 'WhatsApp Booking', href: 'https://wa.me/628112656869', external: true },
+      { name: 'Recommended Services', href: '/recommended-services' },
       { name: 'Privacy Policy', href: '/privacy-policy' },
-      { name: 'Terms & Conditions', href: '/terms-and-conditions' }
+      { name: 'Terms & Conditions', href: '/terms-and-conditions' },
+      { name: 'Kuta Site', href: 'https://www.homemassagekuta.com/', external: true }
     ]
   }
 ];
@@ -165,15 +210,37 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-border mt-8 md:mt-12 pt-6 md:pt-8 text-center text-muted-foreground">
-          <div className="mb-4">
-            <Link href="/sitemap">
-              <span className="text-primary hover:underline text-sm">View Sitemap</span>
-            </Link>
+        {/* ─── BOTTOM BAR ─── */}
+        <div className="border-t border-border mt-8 md:mt-12 pt-6 md:pt-8">
+          {/* Quick-link pills for crawlability */}
+          <div className="flex flex-wrap justify-center gap-2 mb-6">
+            {[
+              { label: 'Home', href: '/' },
+              { label: 'Services', href: '/services' },
+              { label: 'Treatments', href: '/treatments' },
+              { label: 'Areas', href: '/service-areas' },
+              { label: 'Pricing', href: '/pricing' },
+              { label: 'Blog', href: '/blog' },
+              { label: 'About', href: '/about' },
+              { label: 'Contact', href: '/contact' },
+              { label: 'Sitemap', href: '/sitemap' }
+            ].map((item) => (
+              <Link key={item.href} href={item.href}>
+                <span className="inline-block px-3 py-1 text-xs bg-secondary/50 hover:bg-secondary rounded-full transition-colors text-muted-foreground hover:text-foreground">
+                  {item.label}
+                </span>
+              </Link>
+            ))}
           </div>
-          <p className="text-xs md:text-sm" data-testid="footer-copyright">
-            &copy; 2024 Home Massage Ubud | homemassageubud.com | Licensed Spa Services Ubud, Bali
-          </p>
+
+          <div className="text-center text-muted-foreground">
+            <p className="text-xs md:text-sm" data-testid="footer-copyright">
+              &copy; 2026 Home Massage Ubud | homemassageubud.com | Licensed Spa Services Ubud, Bali
+            </p>
+            <p className="text-xs text-muted-foreground/60 mt-2">
+              Premium in-villa massage throughout Ubud, Seminyak, Canggu, Sanur, Nusa Dua & all Bali
+            </p>
+          </div>
         </div>
       </div>
     </footer>

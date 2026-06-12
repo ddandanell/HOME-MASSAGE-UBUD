@@ -161,7 +161,7 @@ export default function HomeMassageSeminyakCanggu() {
                   Finding the perfect massage experience in Bali shouldn't mean battling traffic, navigating unfamiliar streets, or leaving the comfort of your beautiful accommodation. Our <strong>home massage service</strong> brings professional, licensed therapists directly to your location across Bali's most visited areas—Seminyak, Canggu, and Ubud.
                 </p>
                 <p className="text-lg text-neutral-700 leading-relaxed mt-4">
-                  Whether you're staying in a luxury Seminyak villa, a beachside Canggu rental, or a jungle retreat in Ubud, we provide the same high-quality treatments you'd find in Bali's top spas, delivered to your doorstep. Our therapists arrive with professional massage tables, premium organic oils, and everything needed for an authentic Balinese spa experience—all you need to provide is the space.
+                  Whether you're staying in a luxury Seminyak villa, a beachside Canggu rental, or a jungle retreat in Ubud, we provide the same high-quality treatments you'd find in Bali's top spas, delivered to your doorstep. Our therapists arrive with premium organic oils and everything needed for an authentic Balinese spa experience—all you need to provide is a comfortable surface, such as your bed or a floor mat.
                 </p>
                 <p className="text-lg text-neutral-700 leading-relaxed mt-4">
                   With same-day availability, flexible scheduling, and transparent pricing, we've made <strong>mobile massage in Bali</strong> simple, reliable, and accessible. From post-surf recovery in Canggu to romantic couples treatments in Ubud, we cater to the unique needs of each location and clientele.

@@ -176,7 +176,7 @@ export default function BalineseMassageKuta() {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-heading text-xl mb-2 text-neutral-900">Do you serve budget hostels and guesthouses?</h3>
-                <p className="text-neutral-700">Absolutely! We serve all accommodation types in Kuta from hostels to luxury hotels. As long as you have a private room with space for a massage table, we can provide service.</p>
+                <p className="text-neutral-700">Absolutely! We serve all accommodation types in Kuta from hostels to luxury hotels. As long as you have a private room with a comfortable surface — a bed or floor mat — we can provide service.</p>
               </CardContent>
             </Card>
             <Card>

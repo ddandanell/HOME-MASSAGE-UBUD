@@ -81,7 +81,7 @@ export default function SeminyakMassage() {
     },
     {
       question: "Can couples book synchronized massage in our hotel room near Seminyak Beach?",
-      answer: "Yes, and it's one of our most popular services for Seminyak hotel guests. We send two therapists with dual massage tables for synchronized couples treatments. Perfect for hotel rooms at beachfront properties throughout Seminyak. We coordinate with hotel staff for smooth room access. For special touches like flowers or candles, we recommend coordinating directly with your hotel's concierge service."
+      answer: "Yes, and it's one of our most popular services for Seminyak hotel guests. We send two therapists for synchronized couples treatments — your beds or floor mats provide the perfect surface. Perfect for hotel rooms at beachfront properties throughout Seminyak. We coordinate with hotel staff for smooth room access. For special touches like flowers or candles, we recommend coordinating directly with your hotel's concierge service."
     },
     {
       question: "How do you handle Seminyak's notorious traffic when getting to my villa?",
@@ -305,7 +305,7 @@ export default function SeminyakMassage() {
             </div>
 
             <div className="text-center">
-              <p className="text-gray-600 mb-4">All treatments include: Professional therapist, massage table, premium oils, fresh linens, post-treatment herbal tea</p>
+              <p className="text-gray-600 mb-4">All treatments include: Professional therapist, premium oils, fresh linens, post-treatment herbal tea</p>
               <Button 
                 variant="outline" 
                 size="lg"

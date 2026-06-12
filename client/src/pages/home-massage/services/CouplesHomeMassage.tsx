@@ -64,7 +64,7 @@ export default function CouplesHomeMassage() {
                 your accommodation.
               </p>
               <p className="text-lg text-muted-foreground mb-4">
-                Our couples <Link href="/home-massage/services" className="text-primary hover:underline">home massage services</Link> include two massage tables, coordinated aromatherapy, and calming music to create 
+                Our couples <Link href="/home-massage/services" className="text-primary hover:underline">home massage services</Link> include coordinated aromatherapy and calming music to create 
                 spa ambiance. Both therapists work in harmony, matching rhythm and pressure so you experience relaxation 
                 together. This format strengthens connection while delivering professional therapeutic benefits.
               </p>
@@ -279,7 +279,7 @@ export default function CouplesHomeMassage() {
             },
             {
               question: "How much space do we need for couples home massage?",
-              answer: "You need a room large enough for two massage tables side-by-side with space for therapists to work around them. Most hotel rooms or villa bedrooms work perfectly. Our team can assess your space when you book your couples home massage."
+              answer: "You need a comfortable space for two people side-by-side with room for therapists to work. Most hotel rooms or villa bedrooms work perfectly. Your bed or floor mats work great. Our team can assess your space when you book your couples home massage."
             },
             {
               question: "Can we book couples home massage for different durations?",

@@ -31,7 +31,7 @@ export default function DetoxWellnessMassage() {
       'Combination of lymphatic drainage and massage techniques',
       'Detoxifying essential oil blends',
       'Body brushing for circulation enhancement',
-      'Portable massage table and organic linens',
+      'Fresh organic linens',
       'Detox herbal tea and wellness consultation',
       'Hydration and nutrition guidance',
       'Therapist travel throughout Ubud area'

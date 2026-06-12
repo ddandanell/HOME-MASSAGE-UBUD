@@ -203,7 +203,7 @@ export default function BalineseMassageHub() {
             </h2>
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground">
-                Your Balinese massage experience begins the moment our therapist arrives at your villa or hotel. They'll bring all necessary equipment including a professional massage table, fresh linens, premium oils, and traditional aromatherapy blends.
+                Your Balinese massage experience begins the moment our therapist arrives at your villa or hotel. They'll bring fresh linens, premium oils, and traditional aromatherapy blends — you provide a comfortable surface like your bed or a floor mat.
               </p>
               <div className="bg-background p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Session Timeline:</h3>
@@ -505,7 +505,7 @@ export default function BalineseMassageHub() {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex gap-2">
                       <Check className="w-5 h-5 flex-shrink-0 text-primary" />
-                      <span>Clear a quiet room with space for the massage table</span>
+                      <span>Clear a quiet room with a comfortable surface (bed or floor mat)</span>
                     </li>
                     <li className="flex gap-2">
                       <Check className="w-5 h-5 flex-shrink-0 text-primary" />

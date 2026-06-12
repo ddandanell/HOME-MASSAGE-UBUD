@@ -69,7 +69,7 @@ const bookingSteps = [
       'Receive confirmation message with therapist name and arrival time',
       'Prepare a quiet, private space in your accommodation',
       'Ensure access to nearby shower or bathroom facility',
-      'Clear comfortable area for massage table setup',
+      'Clear comfortable area for the treatment',
       'Have loose, comfortable clothing available for post-treatment'
     ],
     timeframe: '1-2 hours before scheduled appointment'
@@ -81,7 +81,7 @@ const bookingSteps = [
     description: 'Enjoy your transformative therapeutic experience and receive post-treatment care guidance and follow-up support.',
     details: [
       'Professional therapist arrives with all necessary equipment and supplies',
-      'Complete setup and breakdown of therapeutic table and equipment',
+      'Professional treatment delivery with personal care and attention',
       'Personalized treatment delivery based on your specific needs',
       'Post-treatment wellness guidance and aftercare recommendations',
       'Follow-up support and scheduling assistance for future appointments'

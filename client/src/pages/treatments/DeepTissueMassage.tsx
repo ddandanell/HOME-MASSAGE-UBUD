@@ -29,7 +29,7 @@ export default function DeepTissueMassage() {
     includes: [
       'Certified deep tissue massage therapist',
       'Professional-grade massage oils',
-      'Portable massage table and premium linens',
+      'Fresh premium linens',
       'Hot towel treatment for muscle preparation',
       'Post-massage stretching guidance',
       'Personalized pressure adjustment',

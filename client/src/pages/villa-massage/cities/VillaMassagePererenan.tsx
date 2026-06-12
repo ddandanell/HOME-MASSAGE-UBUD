@@ -10,15 +10,15 @@ import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassagePererenan() {
   const services = [
-    { name: 'Balinese Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Traditional long-stroke technique' },
-    { name: 'Deep Tissue Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Intensive muscle therapy' },
-    { name: 'Couples Massage', price: 'Rp 550,000', duration: '90 minutes', description: 'Side-by-side treatment' },
-    { name: 'Relaxation Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Gentle stress relief' },
-    { name: 'Aromatherapy Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Essential oils therapy' },
-    { name: 'Hot Stone Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Heated stone treatment' },
-    { name: 'Prenatal Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Safe pregnancy massage' },
-    { name: 'Thai Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Stretching and pressure points' },
-    { name: 'Sports Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Athletic recovery therapy' },
+    { name: 'Balinese Massage', price: 'Rp 450,000', duration: '90 minutes', description: 'Traditional long-stroke technique' },
+    { name: 'Deep Tissue Massage', price: 'Rp 540,000', duration: '90 minutes', description: 'Intensive muscle therapy' },
+    { name: 'Couples Massage', price: 'Rp 900,000', duration: '90 minutes', description: 'Side-by-side treatment' },
+    { name: 'Relaxation Massage', price: 'Rp 450,000', duration: '90 minutes', description: 'Gentle stress relief' },
+    { name: 'Aromatherapy Massage', price: 'Rp 490,000', duration: '90 minutes', description: 'Essential oils therapy' },
+    { name: 'Hot Stone Massage', price: 'Rp 590,000', duration: '90 minutes', description: 'Heated stone treatment' },
+    { name: 'Prenatal Massage', price: 'Rp 490,000', duration: '90 minutes', description: 'Safe pregnancy massage' },
+    { name: 'Thai Massage', price: 'Rp 550,000', duration: '90 minutes', description: 'Stretching and pressure points' },
+    { name: 'Sports Massage', price: 'Rp 540,000', duration: '90 minutes', description: 'Athletic recovery therapy' },
     { name: 'Reflexology', price: 'Rp 380,000', duration: '60 minutes', description: 'Foot pressure point therapy' }
   ];
 

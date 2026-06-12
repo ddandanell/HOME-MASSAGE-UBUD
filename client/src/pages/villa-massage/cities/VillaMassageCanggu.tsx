@@ -10,15 +10,15 @@ import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageCanggu() {
   const services = [
-    { name: 'Balinese Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Traditional long-stroke technique' },
-    { name: 'Deep Tissue Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Intensive muscle therapy' },
-    { name: 'Couples Massage', price: 'Rp 550,000', duration: '90 minutes', description: 'Side-by-side treatment' },
-    { name: 'Relaxation Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Gentle stress relief' },
-    { name: 'Aromatherapy Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Essential oils therapy' },
-    { name: 'Hot Stone Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Heated stone treatment' },
-    { name: 'Prenatal Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Safe pregnancy massage' },
-    { name: 'Thai Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Stretching and pressure points' },
-    { name: 'Sports Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Athletic recovery therapy' },
+    { name: 'Balinese Massage', price: 'Rp 450,000', duration: '90 minutes', description: 'Traditional long-stroke technique' },
+    { name: 'Deep Tissue Massage', price: 'Rp 540,000', duration: '90 minutes', description: 'Intensive muscle therapy' },
+    { name: 'Couples Massage', price: 'Rp 900,000', duration: '90 minutes', description: 'Side-by-side treatment' },
+    { name: 'Relaxation Massage', price: 'Rp 450,000', duration: '90 minutes', description: 'Gentle stress relief' },
+    { name: 'Aromatherapy Massage', price: 'Rp 490,000', duration: '90 minutes', description: 'Essential oils therapy' },
+    { name: 'Hot Stone Massage', price: 'Rp 590,000', duration: '90 minutes', description: 'Heated stone treatment' },
+    { name: 'Prenatal Massage', price: 'Rp 490,000', duration: '90 minutes', description: 'Safe pregnancy massage' },
+    { name: 'Thai Massage', price: 'Rp 550,000', duration: '90 minutes', description: 'Stretching and pressure points' },
+    { name: 'Sports Massage', price: 'Rp 540,000', duration: '90 minutes', description: 'Athletic recovery therapy' },
     { name: 'Reflexology', price: 'Rp 380,000', duration: '60 minutes', description: 'Foot pressure point therapy' }
   ];
 
@@ -70,7 +70,7 @@ export default function VillaMassageCanggu() {
                     The villa massage experience in Canggu is particularly valuable for surfers dealing with shoulder tension, back strain, and muscle fatigue from hours in the water. Our therapists specialize in sports massage and deep tissue work that targets the specific muscle groups used in surfing. Whether you need pre-surf preparation to warm up muscles or post-session recovery to prevent soreness, villa massage in Canggu can be scheduled around the tides and swell conditions that dictate daily routines. This flexibility makes villa massage the ideal wellness solution for the active Canggu lifestyle.
                   </p>
                   <p className="text-muted-foreground mb-4">
-                    Villa massage in Canggu serves all neighborhoods in this rapidly growing area, from the coastal strip along Echo Beach and Batu Bolong to the inland rice field communities of Tumbak Bayuh and Padonan. Many villas in Canggu feature beautiful outdoor spaces with garden views, rooftop terraces, or poolside pavilions where villa massage takes on an extra dimension of relaxation. Our therapists arrive with professional massage tables, organic aromatherapy oils, and all necessary equipment, transforming your chosen space into a private wellness sanctuary. Same-day booking is available throughout Canggu.
+                    Villa massage in Canggu serves all neighborhoods in this rapidly growing area, from the coastal strip along Echo Beach and Batu Bolong to the inland rice field communities of Tumbak Bayuh and Padonan. Many villas in Canggu feature beautiful outdoor spaces with garden views, rooftop terraces, or poolside pavilions where villa massage takes on an extra dimension of relaxation. Our therapists arrive with organic aromatherapy oils and all necessary supplies, transforming your chosen space into a private wellness sanctuary. Same-day booking is available throughout Canggu.
                   </p>
                   <p className="text-muted-foreground mb-4">
                     The digital nomad community in Canggu particularly appreciates villa massage for addressing the physical challenges of laptop work combined with an active lifestyle. Many remote workers spend mornings surfing or practicing yoga, afternoons working from cafes or co-working spaces, and evenings exploring the social scene. Villa massage provides essential relief from this combination of physical activity and desk work, helping prevent the chronic tension that can develop from repetitive movements and poor posture. Evening villa massage sessions are especially popular for unwinding after busy days.

@@ -435,7 +435,7 @@ export default function HomeMassageVsSpa() {
             </h2>
             <div className="prose prose-lg max-w-none mb-8">
               <p className="text-lg text-muted-foreground mb-4">
-                Many travelers assume spa facilities automatically provide superior equipment. Reality differs dramatically. Professional home massage therapists bring complete, high-quality equipment to every appointment. Portable massage tables, fresh linens, premium oils, and all necessary supplies arrive with your therapist.
+                Many travelers assume spa facilities automatically provide superior equipment. Reality differs dramatically. Professional home massage therapists bring everything needed to every appointment. Fresh linens, premium oils, and all necessary supplies arrive with your therapist — you provide a comfortable surface like your own bed.
               </p>
               <p className="text-lg text-muted-foreground mb-4">
                 The home massage vs spa equipment quality difference comes down to maintenance and freshness. Home massage therapists control their equipment directly—they own it, maintain it, and stake their reputation on it. Spa equipment gets used repeatedly throughout the day by multiple therapists, with variable maintenance standards. Your <Link href="/home-massage/services/balinese"><span className="text-primary hover:underline">Balinese home massage</span></Link> or <Link href="/home-massage/services/deep-tissue"><span className="text-primary hover:underline">deep tissue home massage</span></Link> therapist brings equipment they personally guarantee.
@@ -450,7 +450,6 @@ export default function HomeMassageVsSpa() {
                     <div>
                       <p className="font-semibold mb-3 text-primary">Essential Equipment:</p>
                       <ul className="space-y-2 text-muted-foreground">
-                        <li>• Professional portable massage table</li>
                         <li>• Fresh, clean linens and towels</li>
                         <li>• Premium massage oils and lotions</li>
                         <li>• Adjustable face cradles and cushions</li>

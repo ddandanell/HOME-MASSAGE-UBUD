@@ -11,9 +11,9 @@ import CrossSiloLinks from '@/components/CrossSiloLinks';
 
 export default function VillaMassageHub() {
   const faqData = [
-    { question: "What is villa massage?", answer: "Villa massage is a premium in-villa spa service where licensed therapists bring a complete spa setup to your private villa, including massage table, premium oils, aromatherapy, and fresh linens." },
+    { question: "What is villa massage?", answer: "Villa massage is a premium in-villa spa service where licensed therapists bring premium oils, aromatherapy, and fresh linens to your private villa." },
     { question: "How much does villa massage cost in Bali?", answer: "Our villa massage treatments start from IDR 320,000 for a 60-minute Traditional Balinese Massage. Deep Tissue starts at IDR 380,000 and Aromatherapy at IDR 350,000. Four-hands and couples packages are also available." },
-    { question: "Do I need to provide anything for the massage?", answer: "No, our therapists bring everything needed: professional massage table, premium organic oils, fresh towels and linens, aromatherapy diffuser, and relaxing music. You just need to provide the space." },
+    { question: "Do I need to provide anything for the massage?", answer: "Just provide a quiet space with a comfortable surface — a bed or floor mat works perfectly. Our therapists bring premium organic oils, fresh towels and linens, aromatherapy diffuser, and relaxing music." },
     { question: "Which villa areas do you serve in Bali?", answer: "We serve all major villa areas including Ubud, Seminyak, Canggu, Sanur, Nusa Dua, Uluwatu, Jimbaran, Kuta, Legian, and Pererenan. Same-day booking is often available in central areas." }
   ];
 
@@ -47,7 +47,7 @@ export default function VillaMassageHub() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 text-sm font-semibold">
-              ⭐ From Rp 380,000 | Licensed Therapists | Same-Day Booking
+              ⭐ From Rp 320,000 | Licensed Therapists | Same-Day Booking
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Villa Massage in Bali
@@ -83,8 +83,7 @@ export default function VillaMassageHub() {
               <p className="text-lg text-muted-foreground mb-4">
                 Villa massage represents the pinnacle of convenience and luxury in Bali's wellness industry. Rather than traveling to a crowded spa, 
                 villa massage brings certified professional therapists with full spa equipment directly to your private villa accommodation. Each villa 
-                massage session transforms your personal space into a premium spa environment, complete with massage table, premium oils, fresh linens, 
-                and soothing ambiance.
+                massage session transforms your personal space into a premium spa environment, complete with premium oils, fresh linens, and soothing ambiance.
               </p>
               <p className="text-lg text-muted-foreground mb-4">
                 The villa massage experience eliminates all the hassles of traditional spa visits. No traffic jams through Bali's busy streets, no 
@@ -94,7 +93,7 @@ export default function VillaMassageHub() {
               </p>
               <p className="text-lg text-muted-foreground mb-4">
                 Every villa massage we provide maintains the same professional standards as Bali's finest luxury spas. Our therapists arrive 30 minutes 
-                early to set up a complete spa environment in your villa. This includes positioning the professional massage table, arranging aromatherapy 
+                early to set up a complete spa environment in your villa. This includes arranging aromatherapy
                 elements, preparing warm oil, and creating the perfect atmosphere for your villa massage experience.
               </p>
               <p className="text-lg text-muted-foreground">
@@ -254,7 +253,7 @@ export default function VillaMassageHub() {
                     <h3 className="text-xl font-semibold mb-2">Therapist Arrival & Setup</h3>
                     <p className="text-muted-foreground">
                       Your villa massage therapist arrives 30 minutes before your scheduled treatment time. They bring professional equipment including 
-                      a portable massage table, fresh linens, premium aromatherapy oils, and all necessary accessories. Setup transforms your villa 
+                      fresh linens, premium aromatherapy oils, and all necessary accessories. Setup transforms your villa
                       space into a professional spa environment.
                     </p>
                   </div>
@@ -312,13 +311,13 @@ export default function VillaMassageHub() {
             Available Villa Massage Services
           </h2>
           <p className="text-center text-muted-foreground mb-12">
-            Professional villa massage from <span className="font-bold text-primary">Rp 380,000</span> | <Link href="/pricing" className="text-primary hover:underline">View All Pricing</Link>
+            Professional villa massage from <span className="font-bold text-primary">Rp 320,000</span> | <Link href="/pricing" className="text-primary hover:underline">View All Pricing</Link>
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
             <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Balinese Villa Massage</h3>
-                <p className="text-lg font-bold text-primary mb-3">From Rp 380,000</p>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 320,000</p>
                 <p className="text-muted-foreground mb-4">
                   Traditional Balinese techniques with long flowing strokes and gentle stretching.
                 </p>
@@ -348,7 +347,7 @@ export default function VillaMassageHub() {
             <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Couples Villa Massage</h3>
-                <p className="text-lg font-bold text-primary mb-3">From Rp 550,000</p>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 640,000</p>
                 <p className="text-muted-foreground mb-4">
                   Romantic massage for two with simultaneous treatments.
                 </p>
@@ -363,7 +362,7 @@ export default function VillaMassageHub() {
             <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Relaxation Villa Massage</h3>
-                <p className="text-lg font-bold text-primary mb-3">From Rp 380,000</p>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 320,000</p>
                 <p className="text-muted-foreground mb-4">
                   Gentle, soothing massage focusing on stress relief.
                 </p>
@@ -460,7 +459,7 @@ export default function VillaMassageHub() {
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-4">
                 Villa massage pricing reflects fair compensation for professional therapists while remaining accessible to various budgets. Standard 
-                60-minute villa massage treatments start from Rp 380,000, with 90-minute extended sessions from Rp 450,000. Specialized treatments 
+                60-minute villa massage treatments start from Rp 320,000, with 90-minute extended sessions from Rp 450,000. Specialized treatments 
                 like hot stone villa massage or prenatal villa massage carry slightly higher rates due to additional equipment and specialized training 
                 requirements.
               </p>

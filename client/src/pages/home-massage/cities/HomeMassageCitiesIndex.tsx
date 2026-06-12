@@ -322,9 +322,9 @@ export default function HomeMassageCitiesIndex() {
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold mb-2">Complete Equipment</h3>
+                  <h3 className="font-semibold mb-2">All Supplies Included</h3>
                   <p className="text-muted-foreground text-sm">
-                    Professional massage table, linens, oils, and towels included in every home massage
+                    Fresh linens, oils, and towels included in every home massage
                   </p>
                 </div>
               </div>

@@ -246,7 +246,7 @@ export default function HomeMassageBenefits() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-4">Optimal Recovery Environment After Home Massage</h3>
                   <p className="text-muted-foreground mb-3">
-                    Home massage allows immediate rest in your own bed after treatment. This home massage advantage maximizes therapeutic benefits—you transition from massage table to your comfortable bed within minutes, maintaining the relaxed state.
+                    Home massage allows immediate rest in your own bed after treatment. This home massage advantage maximizes therapeutic benefits—you stay in your comfortable environment throughout, maintaining the relaxed state.
                   </p>
                   <p className="text-muted-foreground">
                     Traditional spa visits force you to dress, travel, and navigate public spaces while your body craves rest. Home massage eliminates this disruption, allowing your body to continue healing undisturbed.

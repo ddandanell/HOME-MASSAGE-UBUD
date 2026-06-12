@@ -32,7 +32,7 @@ export default function HerbalBambooMassage() {
       'Bamboo sticks for massage therapy',
       'Traditional Balinese massage techniques',
       'Premium massage oils with herbal infusions',
-      'Portable massage table and traditional linens',
+      'Fresh traditional linens',
       'Post-treatment traditional herbal tea',
       'Therapist travel throughout Ubud'
     ],

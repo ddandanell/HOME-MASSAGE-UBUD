@@ -87,7 +87,7 @@ export default function MobileMassageAftercare() {
                     </li>
                     <li className="flex gap-2">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">Roll slowly to your side before sitting up from your mobile massage table</span>
+                      <span className="text-muted-foreground">Roll slowly to your side before sitting up after your mobile massage</span>
                     </li>
                     <li className="flex gap-2">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -174,7 +174,7 @@ export default function MobileMassageAftercare() {
                   </CardContent>
                 </Card>
                 <p className="text-muted-foreground">
-                  This rest requirement highlights a major advantage of mobile massage over traditional spa visits. When you receive <Link href="/mobile-massage/services/balinese"><span className="text-primary hover:underline">Balinese mobile massage</span></Link> or <Link href="/mobile-massage/services/couples"><span className="text-primary hover:underline">couples mobile massage</span></Link> in your <Link href="/mobile-massage/cities/ubud"><span className="text-primary hover:underline">Ubud</span></Link>, <Link href="/mobile-massage/cities/canggu"><span className="text-primary hover:underline">Canggu</span></Link>, <Link href="/mobile-massage/cities/seminyak"><span className="text-primary hover:underline">Seminyak</span></Link>, or <Link href="/mobile-massage/cities/sanur"><span className="text-primary hover:underline">Sanur</span></Link> accommodation, you're already in your ideal rest environment when treatment ends. No travel disrupts your recovery—you simply transition from massage table to your comfortable bed, maximizing the therapeutic benefits.
+                  This rest requirement highlights a major advantage of mobile massage over traditional spa visits. When you receive <Link href="/mobile-massage/services/balinese"><span className="text-primary hover:underline">Balinese mobile massage</span></Link> or <Link href="/mobile-massage/services/couples"><span className="text-primary hover:underline">couples mobile massage</span></Link> in your <Link href="/mobile-massage/cities/ubud"><span className="text-primary hover:underline">Ubud</span></Link>, <Link href="/mobile-massage/cities/canggu"><span className="text-primary hover:underline">Canggu</span></Link>, <Link href="/mobile-massage/cities/seminyak"><span className="text-primary hover:underline">Seminyak</span></Link>, or <Link href="/mobile-massage/cities/sanur"><span className="text-primary hover:underline">Sanur</span></Link> accommodation, you're already in your ideal rest environment when treatment ends. No travel disrupts your recovery—you can simply rest in your own bed right after the treatment, maximizing the therapeutic benefits.
                 </p>
               </div>
             </div>

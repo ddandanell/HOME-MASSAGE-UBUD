@@ -11,10 +11,10 @@ import CrossSiloLinks from '@/components/CrossSiloLinks';
 
 export default function MobileMassageHub() {
   const faqData = [
-    { question: "What is mobile massage?", answer: "Mobile massage is a professional massage service where therapists travel to your location — villa, hotel, or guesthouse — bringing all equipment including massage table, oils, and linens." },
+    { question: "What is mobile massage?", answer: "Mobile massage is a professional massage service where therapists travel to your location — villa, hotel, or guesthouse — bringing oils, linens, and all supplies needed." },
     { question: "How quickly can a mobile massage therapist arrive?", answer: "In central Ubud, Seminyak, and Canggu areas, we can often have a therapist at your door within 60-90 minutes. For other areas, we recommend booking 2-4 hours in advance." },
     { question: "Is mobile massage available everywhere in Bali?", answer: "We cover all major tourist areas including Ubud, Seminyak, Canggu, Sanur, Nusa Dua, Uluwatu, Jimbaran, Kuta, and Legian. Remote areas may require advance booking and travel fees." },
-    { question: "What should I prepare for a mobile massage?", answer: "Just provide a quiet, private space approximately 2x3 meters. Our therapists bring the massage table, oils, towels, and everything else needed. Wear comfortable clothing." }
+    { question: "What should I prepare for a mobile massage?", answer: "Provide a quiet, private space with a comfortable surface — a bed or floor mat works well. Our therapists bring oils, towels, and everything else needed. Wear comfortable clothing." }
   ];
 
   return (
@@ -464,8 +464,8 @@ export default function MobileMassageHub() {
                   What do I need to prepare for mobile massage?
                 </h3>
                 <p className="text-muted-foreground">
-                  Nothing! Our mobile massage therapists bring everything: professional table, oils, linens, and music. 
-                  You just need a space of about 2x3 meters and a power outlet.
+                  Just provide a comfortable surface — your bed or a floor mat works great. Our mobile massage therapists bring oils, linens, and music.
+                  You just need a quiet private space and a power outlet.
                 </p>
               </div>
 

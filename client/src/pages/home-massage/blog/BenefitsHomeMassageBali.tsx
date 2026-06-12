@@ -425,7 +425,7 @@ export default function BenefitsHomeMassageBali() {
                     <CardContent className="p-6">
                       <h3 className="text-xl font-bold mb-3">"What if I don't have space?"</h3>
                       <p className="text-muted-foreground">
-                        You need surprisingly little room—just a 2m x 3m flat area. Most hotel rooms and all villas easily accommodate a massage table. Bedrooms, balconies, living rooms, or covered outdoor spaces all work perfectly. The therapist adapts to whatever space you have available.
+                        You need surprisingly little room—just a 2m x 3m flat area with a comfortable surface (your bed works perfectly). Most hotel rooms and all villas work great. Bedrooms, balconies, living rooms, or covered outdoor spaces all work perfectly. The therapist adapts to whatever space you have available.
                       </p>
                     </CardContent>
                   </Card>

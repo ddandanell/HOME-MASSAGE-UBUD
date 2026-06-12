@@ -53,7 +53,7 @@ export default function Seminyak() {
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: 'Rp 380,000',
+        priceFrom: 'Rp 320,000',
         duration: '60-120 min'
       },
       {
@@ -65,13 +65,13 @@ export default function Seminyak() {
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 350,000',
         duration: '60-120 min'
       },
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: 'Rp 390,000',
+        priceFrom: 'Rp 420,000',
         duration: '60-120 min'
       },
       {
@@ -122,7 +122,7 @@ export default function Seminyak() {
       },
       {
         question: 'Can couples book simultaneous massages in our Seminyak villa?',
-        answer: 'Yes! Couples massage is very popular in Seminyak. We send two therapists to your villa, each bringing their own massage table and equipment. This is perfect for romantic stays, honeymoons, or simply enjoying spa time together. The Couples Wellness Ritual includes 90-150 minutes of synchronized treatment. Book at least 24-48 hours ahead for couples sessions to ensure therapist availability.'
+        answer: 'Yes! Couples massage is very popular in Seminyak. We send two therapists to your villa for a synchronized side-by-side experience. This is perfect for romantic stays, honeymoons, or simply enjoying spa time together. The Couples Wellness Ritual includes 90-150 minutes of synchronized treatment. Book at least 24-48 hours ahead for couples sessions to ensure therapist availability.'
       },
       {
         question: 'Is there a travel fee for Seminyak bookings?',
@@ -130,7 +130,7 @@ export default function Seminyak() {
       },
       {
         question: 'What should I prepare before the therapist arrives at my Seminyak accommodation?',
-        answer: 'Very little! We bring everything needed: massage table, premium oils, fresh towels, and equipment. You just need a space of about 2x3 meters (bedroom, terrace, or garden area works well) and access to a bathroom nearby. Some guests like to set ambiance with their own music, but we can also create a peaceful environment. If you have specific oil preferences or any health conditions, mention these when booking via WhatsApp.'
+        answer: 'Very little! We bring everything needed: premium oils, fresh towels, and all supplies. You just need a comfortable surface — your bed or a floor mat works great — in a quiet space of about 2x3 meters and access to a bathroom nearby. Some guests like to set ambiance with their own music, but we can also create a peaceful environment. If you have specific oil preferences or any health conditions, mention these when booking via WhatsApp.'
       },
       {
         question: 'Can I book same-day massage service in Seminyak?',

@@ -229,7 +229,7 @@ export default function NearMeMassageHub() {
                 <ul className="text-lg text-muted-foreground mb-6 space-y-2">
                   <li className="flex items-start gap-2">
                     <Check className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                    <span>A professional massage table</span>
+                    <span>Premium massage oils and aromatherapy</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
@@ -1005,7 +1005,7 @@ export default function NearMeMassageHub() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">
-                        No. The therapist brings everything needed: professional massage table, linens, towels, oils, and hygiene supplies.
+                        No. The therapist brings all supplies needed: linens, towels, oils, and hygiene supplies. You provide a comfortable surface — your bed or a floor mat works perfectly.
                       </p>
                     </CardContent>
                   </Card>

@@ -16,7 +16,7 @@ const serviceData: ServiceLandingPageData = {
   
   introduction: [
     'Mobile massage represents the future of spa services in Bali. Rather than being tied to fixed spa locations with limited hours, our mobile massage service brings professional treatments to you on your schedule, at your location. Whether you are staying in a secluded rice terrace villa, a beachside hotel, or anywhere across the island, our therapists mobilize to serve you.',
-    'The mobile massage concept answers the practical challenges tourists face. After a day exploring temples or rice terraces, the last thing you want is to travel somewhere for relaxation. Our mobile massage therapists navigate Bali roads so you do not have to. They arrive equipped with everything needed for a professional spa experience - massage table, premium oils, fresh linens, and any specialty items.',
+    'The mobile massage concept answers the practical challenges tourists face. After a day exploring temples or rice terraces, the last thing you want is to travel somewhere for relaxation. Our mobile massage therapists navigate Bali roads so you do not have to. They arrive equipped with everything needed for a professional spa experience — premium oils, fresh linens, and any specialty supplies. You provide a comfortable surface like your bed or a floor mat.',
     'Our mobile massage coverage extends across all of Bali, not just Ubud. From the cultural heart of Ubud to the beaches of Seminyak and Canggu, from the cliffs of Uluwatu to the quiet bays of Sanur and Nusa Dua, our team reaches you. This island-wide mobility means consistent quality service no matter where your Bali journey takes you.',
     'Mobile massage bookings work through our responsive WhatsApp service. Simply send your location, preferred treatment, and desired time. We confirm availability and dispatch an appropriate therapist. Operating from 8 AM to 10 PM daily with same-day booking often available, mobile massage adapts to your needs rather than forcing you to adapt to ours.'
   ],
@@ -181,7 +181,7 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       question: 'What equipment do your mobile therapists bring?',
-      answer: 'Our mobile therapists arrive with professional portable massage tables, premium organic oils, fresh linens and towels, aromatherapy supplies if requested, and any specialty items for your chosen treatment. Everything needed for a complete spa experience travels with them.'
+      answer: 'Our mobile therapists arrive with premium organic oils, fresh linens and towels, aromatherapy supplies if requested, and any specialty items for your chosen treatment. You provide a comfortable surface — your bed or a floor mat. Everything else needed for a complete spa experience travels with them.'
     },
     {
       question: 'Do you offer mobile massage for events or groups?',

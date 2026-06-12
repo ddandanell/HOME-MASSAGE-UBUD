@@ -399,7 +399,7 @@ export default function DigitalNomadWellnessHub() {
               We Come to Your Workspace or Accommodation
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Mobile massage service to all major digital nomad hubs in Bali. We bring professional equipment, massage table, oils, and towels directly to you—no need to interrupt your productive day to commute to a spa.
+              Mobile massage service to all major digital nomad hubs in Bali. We bring premium oils, linens, and towels directly to you—no need to interrupt your productive day to commute to a spa.
             </p>
             
             <div className="grid md:grid-cols-3 gap-6">
@@ -491,7 +491,7 @@ export default function DigitalNomadWellnessHub() {
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Setup & Preparation (5 minutes)</h3>
                   <p className="text-muted-foreground">
-                    We set up our professional massage table in your space (bedroom, living room, or quiet area). You'll undress to your comfort level and lie on the table with towel draping for modesty. We use high-quality massage oils suitable for tropical climate.
+                    We set up in your space (bedroom, living room, or quiet area). You'll use your bed or a floor mat, and undress to your comfort level with towel draping for modesty. We use high-quality massage oils suitable for tropical climate.
                   </p>
                 </div>
               </div>
@@ -757,9 +757,9 @@ export default function DigitalNomadWellnessHub() {
               </div>
 
               <div className="border-b pb-6">
-                <h3 className="font-bold text-lg mb-3">Do you provide equipment or do I need a massage table?</h3>
+                <h3 className="font-bold text-lg mb-3">What do you bring and what do I need to provide?</h3>
                 <p className="text-muted-foreground">
-                  We bring everything: professional massage table, linens, towels, premium massage oils, and any additional equipment needed. You don't need to provide anything except a quiet space (bedroom, living room, or enclosed balcony works well) with enough room for our table setup (about 2m x 3m).
+                  We bring linens, towels, premium massage oils, and everything needed for the treatment. You provide the surface — your bed or a floor mat works perfectly. Just have a quiet space available (bedroom, living room, or enclosed balcony works well).
                 </p>
               </div>
 

@@ -2,18 +2,18 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { Heart, Sparkles } from 'lucide-react';
+import { Heart, Sparkles, MessageCircle } from 'lucide-react';
 import { Link } from 'wouter';
 import SEOHead from '@/components/SEOHead';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
 
 const treatments = [
-  { 
-    name: 'Traditional Balinese Massage', 
+  {
+    name: 'Traditional Balinese Massage',
     url: '/ubud/traditional-balinese-massage',
     description: 'Authentic palm pressure, acupressure & aromatherapy',
-    priceFrom: 'Rp 380,000',
+    priceFrom: 'Rp 320,000',
     duration: '60-120 min',
     category: 'Traditional & Relaxation'
   },
@@ -25,19 +25,19 @@ const treatments = [
     duration: '60-120 min',
     category: 'Therapeutic & Sports'
   },
-  { 
-    name: 'Aromatherapy Massage', 
+  {
+    name: 'Aromatherapy Massage',
     url: '/ubud/aromatherapy-massage',
     description: 'Essential oils for relaxation & healing',
-    priceFrom: 'Rp 320,000',
+    priceFrom: 'Rp 350,000',
     duration: '60-120 min',
     category: 'Traditional & Relaxation'
   },
-  { 
-    name: 'Hot Stone Massage', 
+  {
+    name: 'Hot Stone Massage',
     url: '/ubud/hot-stone-massage',
     description: 'Heated volcanic stones for deep relaxation',
-    priceFrom: 'Rp 390,000',
+    priceFrom: 'Rp 420,000',
     duration: '60-120 min',
     category: 'Luxury & Special'
   },
@@ -141,10 +141,10 @@ export default function Treatments() {
           url: "https://homemassageubud.com/treatments",
           areaServed: ["Ubud", "Seminyak", "Canggu", "Sanur", "Nusa Dua"],
           offers: [
-            { name: "Traditional Balinese Massage", price: "Rp 380,000", description: "Authentic palm pressure, acupressure & aromatherapy" },
+            { name: "Traditional Balinese Massage", price: "Rp 320,000", description: "Authentic palm pressure, acupressure & aromatherapy" },
             { name: "Deep Tissue Massage", price: "Rp 380,000", description: "Intense pressure for muscle tension & knots" },
-            { name: "Aromatherapy Massage", price: "Rp 320,000", description: "Essential oils for relaxation & healing" },
-            { name: "Hot Stone Massage", price: "Rp 390,000", description: "Heated volcanic stones for deep relaxation" },
+            { name: "Aromatherapy Massage", price: "Rp 350,000", description: "Essential oils for relaxation & healing" },
+            { name: "Hot Stone Massage", price: "Rp 420,000", description: "Heated volcanic stones for deep relaxation" },
             { name: "Thai Massage", price: "Rp 390,000", description: "Assisted stretching & pressure point work" },
             { name: "Lymphatic Drainage Massage", price: "Rp 450,000", description: "Gentle technique for detox & de-bloating" },
             { name: "Pregnancy Massage", price: "Rp 390,000", description: "Safe, specialized care for expecting mothers" },
@@ -177,9 +177,9 @@ export default function Treatments() {
               </h1>
               
               <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
-                Massage treatments Ubud delivered to your villa with our complete range of professional therapies. 
-                Traditional Balinese, deep tissue, hot stone & 13+ treatments. Licensed therapists bring everything 
-                needed for an exceptional spa experience at your accommodation.
+                Massage treatments Ubud delivered to your villa with our complete range of professional therapies.
+                Traditional Balinese, deep tissue, hot stone & 13+ treatments. Licensed therapists deliver
+                an exceptional spa experience at your accommodation.
               </p>
               
               <div className="flex flex-wrap justify-center gap-6">
@@ -255,7 +255,7 @@ export default function Treatments() {
               Contact us for personalized recommendations.
             </p>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              All massage treatments Ubud are available at your villa with professional therapists and complete equipment. 
+              All massage treatments Ubud are available at your villa with professional therapists.
               Check our <a href="/pricing" className="text-amber-600 hover:text-amber-700 font-semibold underline">massage pricing</a> or 
               view <a href="/services" className="text-amber-600 hover:text-amber-700 font-semibold underline">all massage services</a> we offer. 
               We serve <a href="/service-areas" className="text-amber-600 hover:text-amber-700 font-semibold underline">all areas of Bali</a> including 

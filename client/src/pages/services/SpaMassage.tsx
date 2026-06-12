@@ -173,7 +173,7 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       question: 'How long does it take to set up before my spa massage?',
-      answer: 'Therapists typically arrive 15-20 minutes before your scheduled appointment time to set up. This includes arranging the massage table, setting up aromatherapy, preparing oils, and creating the ambient atmosphere. You can relax while we prepare everything.'
+      answer: 'Therapists typically arrive 15-20 minutes before your scheduled appointment time to set up. This includes setting up aromatherapy, preparing oils, and creating the ambient atmosphere. You can relax while we prepare everything.'
     },
     {
       question: 'What spa massage package is best for first-timers?',

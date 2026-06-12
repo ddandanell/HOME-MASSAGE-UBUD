@@ -179,7 +179,7 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       question: 'How much space do you need for couples massage?',
-      answer: 'We need enough room for two massage tables set side by side, approximately 4m x 3m minimum. Most villa living rooms, spacious bedrooms, or covered garden areas work well. We can assess your space via photos sent through WhatsApp before arrival.'
+      answer: 'We need enough room for two people side by side with space for therapists to work comfortably. Most villa living rooms, spacious bedrooms, or covered garden areas work well. We can assess your space via photos sent through WhatsApp before arrival.'
     },
     {
       question: 'Do you offer couples massage packages for honeymoons?',

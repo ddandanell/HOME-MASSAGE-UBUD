@@ -49,7 +49,7 @@ export default function BalineseCouplesMassage() {
                     Both partners receive complete traditional Balinese treatment including aromatic oil massage, acupressure, gentle stretching, and energy balancing. The therapists coordinate their movements to create harmonious flow throughout your session. You can choose matching techniques for shared experience or different styles based on individual needs—perhaps one partner prefers deep tissue while the other enjoys gentler relaxation massage.
                   </p>
                   <p className="text-lg text-muted-foreground">
-                    Each Balinese couples massage transforms your villa into a private spa sanctuary with two massage tables positioned side-by-side. The shared experience creates lasting memories while delivering authentic therapeutic benefits. Perfect for honeymoons, anniversaries, or simply reconnecting through the healing power of traditional Balinese touch therapy enjoyed together.
+                    Each Balinese couples massage transforms your villa into a private spa sanctuary, with both partners treated side-by-side on your own comfortable surfaces. The shared experience creates lasting memories while delivering authentic therapeutic benefits. Perfect for honeymoons, anniversaries, or simply reconnecting through the healing power of traditional Balinese touch therapy enjoyed together.
                   </p>
                 </div>
               </div>
@@ -195,7 +195,7 @@ export default function BalineseCouplesMassage() {
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-lg mb-2">How much space is needed for Balinese couples massage?</h3>
                       <p className="text-muted-foreground">
-                        We need space for two massage tables side-by-side, approximately 12 feet by 8 feet. Most villa bedrooms, living areas, or covered outdoor pavilions work perfectly.
+                        We need comfortable space for two people side-by-side with room for therapists to move. Most villa bedrooms, living areas, or covered outdoor pavilions work perfectly.
                       </p>
                     </CardContent>
                   </Card>

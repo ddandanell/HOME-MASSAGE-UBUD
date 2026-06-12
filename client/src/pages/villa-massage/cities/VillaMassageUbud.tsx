@@ -10,15 +10,15 @@ import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageUbud() {
   const services = [
-    { name: 'Balinese Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Traditional long-stroke technique' },
-    { name: 'Deep Tissue Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Intensive muscle therapy' },
-    { name: 'Couples Massage', price: 'Rp 550,000', duration: '90 minutes', description: 'Side-by-side treatment' },
-    { name: 'Relaxation Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Gentle stress relief' },
-    { name: 'Aromatherapy Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Essential oils therapy' },
-    { name: 'Hot Stone Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Heated stone treatment' },
-    { name: 'Prenatal Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Safe pregnancy massage' },
-    { name: 'Thai Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Stretching and pressure points' },
-    { name: 'Sports Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Athletic recovery therapy' },
+    { name: 'Balinese Massage', price: 'Rp 450,000', duration: '90 minutes', description: 'Traditional long-stroke technique' },
+    { name: 'Deep Tissue Massage', price: 'Rp 540,000', duration: '90 minutes', description: 'Intensive muscle therapy' },
+    { name: 'Couples Massage', price: 'Rp 900,000', duration: '90 minutes', description: 'Side-by-side treatment' },
+    { name: 'Relaxation Massage', price: 'Rp 450,000', duration: '90 minutes', description: 'Gentle stress relief' },
+    { name: 'Aromatherapy Massage', price: 'Rp 490,000', duration: '90 minutes', description: 'Essential oils therapy' },
+    { name: 'Hot Stone Massage', price: 'Rp 590,000', duration: '90 minutes', description: 'Heated stone treatment' },
+    { name: 'Prenatal Massage', price: 'Rp 490,000', duration: '90 minutes', description: 'Safe pregnancy massage' },
+    { name: 'Thai Massage', price: 'Rp 550,000', duration: '90 minutes', description: 'Stretching and pressure points' },
+    { name: 'Sports Massage', price: 'Rp 540,000', duration: '90 minutes', description: 'Athletic recovery therapy' },
     { name: 'Reflexology', price: 'Rp 380,000', duration: '60 minutes', description: 'Foot pressure point therapy' }
   ];
 
@@ -70,7 +70,7 @@ export default function VillaMassageUbud() {
                     Ubud is renowned worldwide as a center for yoga, meditation, and holistic healing. Our villa massage service complements this wellness-focused atmosphere by bringing traditional Balinese techniques directly to where you're staying. Whether your villa overlooks the Campuhan Ridge, sits among the rice paddies of Tegallalang, or nestles in the jungle near the Monkey Forest, villa massage in Ubud allows you to enjoy professional treatments in harmony with the natural surroundings that make this area so special.
                   </p>
                   <p className="text-muted-foreground mb-4">
-                    The villa massage experience in Ubud is particularly magical when enjoyed on an open-air pavilion or poolside terrace. The sound of tropical birdsong, the rustle of palm fronds, and the distant chanting from nearby temples create an ambiance that no spa can replicate. Our therapists arrive with professional massage tables, organic aromatherapy oils, and fresh linens, setting up your treatment space to maximize the natural beauty of your villa environment. Villa massage in Ubud isn't just a convenience—it's an immersive experience that connects you to the island's healing traditions.
+                    The villa massage experience in Ubud is particularly magical when enjoyed on an open-air pavilion or poolside terrace. The sound of tropical birdsong, the rustle of palm fronds, and the distant chanting from nearby temples create an ambiance that no spa can replicate. Our therapists arrive with organic aromatherapy oils and fresh linens, setting up your treatment space to maximize the natural beauty of your villa environment. Villa massage in Ubud isn't just a convenience—it's an immersive experience that connects you to the island's healing traditions.
                   </p>
                   <p className="text-muted-foreground mb-4">
                     Many visitors choose villa massage in Ubud after active days of exploring temples, hiking through rice terraces, or practicing yoga. The flexibility of villa massage means you can schedule treatments around your activities rather than being constrained by spa operating hours. Early morning villa massage can prepare your body for a day of adventure, while evening sessions help you unwind and process the day's experiences. Our therapists understand the physical demands of Ubud's hilly terrain and tailor treatments accordingly.

@@ -17,7 +17,7 @@ const serviceData: ServiceLandingPageData = {
   introduction: [
     'In a destination saturated with massage services of varying quality, professional massage stands apart through genuine credentials, proper training, and consistent excellence. Our professional massage service in Ubud employs only licensed therapists who have completed recognized training programs and maintain current certifications. When you book with us, you receive care from verified professionals.',
     'Professional massage means more than technical skill - it encompasses ethical conduct, hygiene standards, client communication, and continuous education. Our therapists understand anatomy, recognize contraindications, adapt techniques appropriately, and maintain the highest standards of professional conduct. This professionalism creates both safety and superior results.',
-    'The equipment and products used in professional massage also matter significantly. Our therapists arrive with commercial-grade portable massage tables, premium organic oils meeting professional standards, sanitized linens for each client, and specialty items appropriate for chosen treatments. Professional massage requires professional tools.',
+    'The equipment and products used in professional massage also matter significantly. Our therapists arrive with premium organic oils meeting professional standards, sanitized linens for each client, and specialty items appropriate for chosen treatments. You provide a comfortable surface — your bed or a floor mat. Professional massage requires professional care.',
     'We verify therapist credentials thoroughly before they join our team. References are checked, certifications confirmed, and skills assessed through supervised sessions. This rigorous selection ensures that every professional massage delivered through our service meets the standards discerning clients expect. Book via WhatsApp for genuine professional care.'
   ],
   
@@ -178,7 +178,7 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       question: 'What professional equipment do therapists bring?',
-      answer: 'Therapists arrive with commercial-grade portable massage tables meeting professional standards, premium professional massage oils, sanitized linens changed between clients, proper draping materials, and any specialty items for chosen treatments. All equipment meets professional-use standards.'
+      answer: 'Therapists arrive with premium professional massage oils, sanitized linens changed between clients, proper draping materials, and any specialty items for chosen treatments. You provide a comfortable surface — your bed or a floor mat. All supplies meet professional-use standards.'
     },
     {
       question: 'How does professional massage differ from spa treatments?',

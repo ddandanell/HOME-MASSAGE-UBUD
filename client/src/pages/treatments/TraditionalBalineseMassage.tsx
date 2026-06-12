@@ -29,7 +29,7 @@ export default function TraditionalBalineseMassage() {
     includes: [
       'Professional certified Balinese massage therapist',
       'Premium massage oils and lotions',
-      'Portable massage table and fresh linens',
+      'Fresh professional linens',
       'Aromatherapy enhancement',
       'Post-massage herbal tea',
       'Complimentary consultation',
@@ -83,7 +83,7 @@ export default function TraditionalBalineseMassage() {
       },
       {
         question: 'What should I prepare for the in-villa massage?',
-        answer: 'We bring everything needed including massage table, linens, oils, and aromatherapy. You just need to provide a quiet space (bedroom, terrace, or garden) with enough room for the massage table. We handle all setup and cleanup.'
+        answer: 'We bring everything needed including linens, oils, and aromatherapy. You just need to provide a quiet space with a comfortable surface — your bed or a floor mat works perfectly. We handle all setup and cleanup.'
       },
       {
         question: 'Is traditional Balinese massage suitable for beginners?',

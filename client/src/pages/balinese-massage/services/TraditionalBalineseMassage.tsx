@@ -222,7 +222,7 @@ export default function TraditionalBalineseMassage() {
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-lg mb-2">Do I need to prepare anything before my traditional Balinese massage?</h3>
                       <p className="text-muted-foreground">
-                        Arrive hydrated and avoid heavy meals before your session. Our therapists bring all necessary equipment including massage table, oils, and linens. Just provide a comfortable space with room for the table setup.
+                        Arrive hydrated and avoid heavy meals before your session. Our therapists bring oils and linens. Just provide a comfortable surface — your bed or a floor mat — and a quiet space.
                       </p>
                     </CardContent>
                   </Card>

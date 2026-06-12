@@ -50,7 +50,7 @@ export default function CouplesMobileMassage() {
                 your accommodation.
               </p>
               <p className="text-lg text-muted-foreground mb-4">
-                Our couples mobile massage includes two massage tables, coordinated aromatherapy, and calming music to create 
+                Our couples mobile massage includes coordinated aromatherapy and calming music to create
                 spa ambiance. Both therapists work in harmony, matching rhythm and pressure so you experience relaxation 
                 together. This mobile massage format strengthens connection while delivering professional therapeutic benefits.
               </p>
@@ -234,7 +234,7 @@ export default function CouplesMobileMassage() {
       <MobileMassageFAQ items={[
         {
           question: "How does couples mobile massage work with two therapists?",
-          answer: "Couples mobile massage sends two professional therapists to your location with two complete massage tables and equipment setups. The therapists work simultaneously in synchronized rhythm, creating shared relaxation experience. Each partner receives full attention from their own dedicated mobile massage therapist while enjoying the experience together in your private villa space."
+          answer: "Couples mobile massage sends two professional therapists to your location. The therapists work simultaneously in synchronized rhythm, creating a shared relaxation experience. Each partner receives full attention from their own dedicated mobile massage therapist while enjoying the experience together in your private villa space."
         },
         {
           question: "Can we customize pressure and styles for each partner during couples mobile massage?",
@@ -242,7 +242,7 @@ export default function CouplesMobileMassage() {
         },
         {
           question: "What space is needed for couples mobile massage setup?",
-          answer: "Couples mobile massage requires space for two massage tables side-by-side (approximately 2m x 3m total). Most villa bedrooms, living rooms, or covered outdoor areas work perfectly for couples mobile massage. Our therapists can assess your space via photos before arrival if you're unsure whether it accommodates couples mobile massage setup."
+          answer: "Couples mobile massage requires a comfortable space for two people side-by-side (approximately 2m x 3m total). Most villa bedrooms, living rooms, or covered outdoor areas work perfectly for couples mobile massage. Our therapists can assess your space via photos before arrival if you're unsure."
         },
         {
           question: "Is couples mobile massage suitable for honeymoons and anniversaries?",

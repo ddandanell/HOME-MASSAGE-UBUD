@@ -325,8 +325,8 @@ export default function Pricing() {
                 <div className="flex items-start space-x-3">
                   <Check className="h-4 w-4 sm:h-5 sm:w-5 text-gray-900 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-gray-900 text-sm sm:text-base">Equipment Included</h4>
-                    <p className="text-xs sm:text-sm text-gray-600">Massage table, oils, towels - all provided.</p>
+                    <h4 className="font-semibold text-gray-900 text-sm sm:text-base">Supplies Included</h4>
+                    <p className="text-xs sm:text-sm text-gray-600">Premium oils and towels brought to you.</p>
                   </div>
                 </div>
                 

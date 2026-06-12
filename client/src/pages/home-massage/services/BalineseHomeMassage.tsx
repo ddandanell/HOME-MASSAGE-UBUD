@@ -150,7 +150,7 @@ export default function BalineseHomeMassage() {
                   </div>
                   <div className="flex items-center gap-2 mb-4">
                     <DollarSign className="w-5 h-5 text-primary" />
-                    <span className="text-2xl font-bold">Rp 380,000</span>
+                    <span className="text-2xl font-bold">Rp 320,000</span>
                   </div>
                   <p className="text-sm text-muted-foreground">
                     Essential Balinese home massage with full traditional techniques
@@ -167,7 +167,7 @@ export default function BalineseHomeMassage() {
                   </div>
                   <div className="flex items-center gap-2 mb-4">
                     <DollarSign className="w-5 h-5 text-primary" />
-                    <span className="text-2xl font-bold">Rp 390,000</span>
+                    <span className="text-2xl font-bold">Rp 450,000</span>
                   </div>
                   <p className="text-sm text-muted-foreground">
                     Extended Balinese home massage for deeper relaxation and healing
@@ -183,7 +183,7 @@ export default function BalineseHomeMassage() {
                   </div>
                   <div className="flex items-center gap-2 mb-4">
                     <DollarSign className="w-5 h-5 text-primary" />
-                    <span className="text-2xl font-bold">Rp 450,000</span>
+                    <span className="text-2xl font-bold">Rp 590,000</span>
                   </div>
                   <p className="text-sm text-muted-foreground">
                     Complete Balinese home massage ritual with extended techniques
@@ -282,7 +282,7 @@ export default function BalineseHomeMassage() {
             },
             {
               question: "What should I prepare for my Balinese home massage?",
-              answer: "Simply provide a quiet space with room for a massage table. Our therapists bring all equipment including the table, linens, oils, and music. You just need to ensure access to your villa and a comfortable room temperature."
+              answer: "Simply provide a quiet space — your bed or a floor mat works perfectly. Our therapists bring linens, oils, and music. You just need to ensure access to your villa and a comfortable room temperature."
             },
             {
               question: "Is Balinese home massage suitable for first-time massage recipients?",

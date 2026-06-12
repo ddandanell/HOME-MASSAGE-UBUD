@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import InternalLinkNetwork from '@/components/InternalLinkNetwork';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Clock, Users, Star, CheckCircle, MessageCircle, Heart, MapPin } from 'lucide-react';
@@ -440,8 +441,17 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
         </section>
       </main>
 
+      {/* Internal Link Network — connects this treatment to all other pages */}
+      <InternalLinkNetwork
+        pageType="treatment"
+        currentPage={`/ubud/${treatment.slug}`}
+        hubPath="/treatments"
+        hubName="All Treatments"
+        siblings={treatment.relatedTreatments?.map(r => ({ name: r.name, href: `/ubud/${r.slug}` }))}
+      />
+
       <Footer />
-      
+
       {/* Floating WhatsApp Button */}
       <WhatsAppButton message={generateTreatmentInquiryMessage(treatment.name)} />
     </div>

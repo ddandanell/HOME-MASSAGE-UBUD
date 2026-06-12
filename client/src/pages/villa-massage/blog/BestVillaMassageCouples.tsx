@@ -117,7 +117,7 @@ export default function BestVillaMassageCouples() {
 
                   <h2 className="text-3xl font-bold mt-12 mb-6">Understanding Couples Villa Massage Treatments</h2>
                   <p className="mb-6">
-                    Couples villa massage involves two therapists providing simultaneous treatments to both partners on side-by-side massage tables. This synchronized approach allows couples to share the wellness experience together, creating shared moments of relaxation and rejuvenation. Professional villa massage services bring two complete setups including separate tables, fresh linens, and all necessary equipment to your accommodation.
+                    Couples villa massage involves two therapists providing simultaneous treatments to both partners side-by-side. This synchronized approach allows couples to share the wellness experience together, creating shared moments of relaxation and rejuvenation. Professional villa massage services bring fresh linens, oils, and all necessary supplies to your accommodation — you provide a comfortable surface for each person.
                   </p>
                   <p className="mb-6">
                     The beauty of couples villa massage lies in its flexibility regarding treatment selection. Partners can choose identical massage styles to share the exact same experience, or each person can select different treatments based on individual preferences and needs. One partner might prefer gentle <Link href="/villa-massage/services/aromatherapy-massage" className="text-primary hover:underline">aromatherapy massage</Link> while the other wants therapeutic <Link href="/villa-massage/services/deep-tissue-massage" className="text-primary hover:underline">deep tissue massage</Link> – villa massage services accommodate both simultaneously.
@@ -154,7 +154,7 @@ export default function BestVillaMassageCouples() {
                     For couples staying in villas with private pools, poolside villa massage offers unique romance. Some couples arrange treatments timed with sunset, creating breathtaking backdrops for their wellness experience. The combination of professional massage, stunning natural beauty, and complete privacy makes poolside villa massage unforgettable for special occasions like honeymoons or anniversaries.
                   </p>
                   <p className="mb-6">
-                    When preparing your space for couples villa massage, ensure adequate room for two side-by-side massage tables with comfortable space around each for therapists to work effectively. Clear approximately 12 feet by 8 feet of floor space to accommodate both tables comfortably. This preparation allows therapists to set up efficiently and ensures you both receive treatments without feeling cramped.
+                    When preparing your space for couples villa massage, ensure adequate room for two people side-by-side with comfortable space around each for therapists to work effectively. Your villa bed or two floor mats placed side-by-side work perfectly. This preparation allows therapists to set up efficiently and ensures you both receive treatments without feeling cramped.
                   </p>
 
                   <h2 className="text-3xl font-bold mt-12 mb-6">Timing Your Couples Villa Massage</h2>

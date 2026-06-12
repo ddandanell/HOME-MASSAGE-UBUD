@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import InternalLinkNetwork from '@/components/InternalLinkNetwork';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Clock, MapPin, Star, CheckCircle, MessageCircle, Phone, Sparkles } from 'lucide-react';
@@ -478,8 +479,16 @@ export default function AreaPageTemplate({ area, additionalContent, showNailCare
         {additionalContent}
       </main>
 
+      {/* Internal Link Network — connects this area to all other pages */}
+      <InternalLinkNetwork
+        pageType="area"
+        currentPage={`/${area.slug}`}
+        hubPath="/service-areas"
+        hubName="All Service Areas"
+      />
+
       <Footer />
-      
+
       {/* Floating WhatsApp Button */}
       <WhatsAppButton message={generateAreaInquiryMessage(area.name)} />
     </div>

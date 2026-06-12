@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import InternalLinkNetwork from '@/components/InternalLinkNetwork';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Clock, Users, Star, CheckCircle, MessageCircle, MapPin, Heart, Shield, Award, Phone, Sparkles, Leaf } from 'lucide-react';
@@ -1098,6 +1099,14 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
           </div>
         </section>
       </main>
+
+      {/* Internal Link Network — connects this service page to all other pages */}
+      <InternalLinkNetwork
+        pageType="service"
+        currentPage={`/services/${service.slug}`}
+        hubPath="/services"
+        hubName="All Services"
+      />
 
       <Footer />
     </div>

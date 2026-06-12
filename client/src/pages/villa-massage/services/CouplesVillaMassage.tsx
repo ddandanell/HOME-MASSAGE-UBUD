@@ -52,7 +52,7 @@ export default function CouplesVillaMassage() {
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg text-muted-foreground mb-6">
-                    Couples villa massage is a shared wellness experience where you and your partner receive simultaneous massages from two professional therapists in the comfort of your private villa. This intimate villa massage service allows couples to relax together, creating a memorable bonding experience while enjoying the therapeutic benefits of professional massage. Our therapists bring everything needed to your villa, setting up side-by-side massage tables so you can hold hands and share the experience while each receiving individualized attention and treatment tailored to your personal preferences.
+                    Couples villa massage is a shared wellness experience where you and your partner receive simultaneous massages from two professional therapists in the comfort of your private villa. This intimate villa massage service allows couples to relax together, creating a memorable bonding experience while enjoying the therapeutic benefits of professional massage. Our therapists bring everything needed to your villa so you and your partner can share the experience while each receiving individualized attention and treatment tailored to your personal preferences.
                   </p>
                   <p className="text-lg text-muted-foreground mb-6">
                     The beauty of couples villa massage lies in the shared intimacy and convenience. Unlike visiting a spa where you might be separated or feel rushed, our villa massage service creates a private sanctuary within your own accommodation. You choose the ambiance—whether that's your villa's open-air pavilion with garden views, your bedroom with soft music, or your poolside deck under the stars. The flexibility of couples villa massage means you schedule it around your day, whether that's a morning treatment before exploring Bali, an afternoon session between activities, or a romantic evening villa massage as the sun sets.
@@ -158,7 +158,7 @@ export default function CouplesVillaMassage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                        <span>Side-by-side massage table setup</span>
+                        <span>Side-by-side treatment for two</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" />
@@ -280,7 +280,7 @@ export default function CouplesVillaMassage() {
             },
             {
               question: "How much space is needed for couples villa massage at our villa?",
-              answer: "Couples villa massage requires a room or outdoor area large enough for two massage tables side-by-side with therapist movement space. Most villa bedrooms, living rooms, or poolside pavilions work perfectly for couples villa massage. Villa massage therapists help determine the best villa space during booking."
+              answer: "Couples villa massage requires a comfortable space for two people side-by-side with therapist movement space. Most villa bedrooms, living rooms, or poolside pavilions work perfectly for couples villa massage. Villa massage therapists help determine the best villa space during booking."
             }
           ]} />
 

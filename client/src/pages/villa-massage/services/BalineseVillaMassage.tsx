@@ -162,7 +162,7 @@ export default function BalineseVillaMassage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                        <span>Professional massage table and linens</span>
+                        <span>Fresh professional linens</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" />
@@ -204,7 +204,7 @@ export default function BalineseVillaMassage() {
                     <CardContent className="pt-6">
                       <h3 className="text-xl font-semibold mb-3">2. Therapist Arrival</h3>
                       <p className="text-muted-foreground">
-                        Our professional therapist arrives at your villa with all necessary equipment including massage table, oils, and linens.
+                        Our professional therapist arrives at your villa with all necessary supplies including oils and linens.
                       </p>
                     </CardContent>
                   </Card>

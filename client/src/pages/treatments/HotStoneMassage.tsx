@@ -30,7 +30,7 @@ export default function HotStoneMassage() {
       'Certified hot stone massage therapist',
       'Set of volcanic massage stones heated to optimal temperature',
       'Premium massage oils and aromatherapy',
-      'Portable massage table and luxury linens',
+      'Fresh luxury linens',
       'Stone warmer equipment',
       'Post-massage herbal tea',
       'Therapist travel throughout Ubud',

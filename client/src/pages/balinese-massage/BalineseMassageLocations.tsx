@@ -108,7 +108,7 @@ export default function BalineseMassageLocations() {
 
             <h3 className="font-heading text-2xl mt-8 mb-4 text-neutral-900">Professional Service at Your Villa or Hotel</h3>
             <p className="text-neutral-700 leading-relaxed mb-6">
-              Our mobile massage service transforms your private accommodation into a professional spa environment. We arrive with everything needed: professional massage table, premium oils and lotions, fresh linens, and aromatic elements to create the perfect ambiance. This eliminates the need to travel to a spa, find parking, or interrupt your relaxation schedule. You simply prepare your space, and we handle the rest.
+              Our mobile massage service transforms your private accommodation into a professional spa environment. We arrive with everything needed: premium oils and lotions, fresh linens, and aromatic elements to create the perfect ambiance. This eliminates the need to travel to a spa, find parking, or interrupt your relaxation schedule. You simply prepare your space, and we handle the rest.
             </p>
 
             <p className="text-neutral-700 leading-relaxed mb-6">

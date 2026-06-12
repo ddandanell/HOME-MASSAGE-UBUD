@@ -22,7 +22,7 @@ export default function Services() {
       id: 1,
       name: 'Traditional Balinese Massage',
       duration: '60-90 minutes',
-      price: 'From Rp 380,000',
+      price: 'From Rp 320,000',
       image: balineseImage,
       description: 'A traditional healing practice that combines gentle stretches, acupressure, and aromatherapy oils to stimulate blood circulation and ease tension.',
       benefits: [
@@ -37,7 +37,7 @@ export default function Services() {
       id: 2,
       name: 'Aromatherapy Massage',
       duration: '60-90 minutes',
-      price: 'From Rp 320,000',
+      price: 'From Rp 350,000',
       image: aromatherapyImage,
       description: 'Relaxing massage using premium essential oils that penetrate deep into the skin, promoting healing and emotional balance.',
       benefits: [
@@ -65,7 +65,7 @@ export default function Services() {
       id: 4,
       name: 'Four Hands Massage',
       duration: '60-90 minutes',
-      price: 'From Rp 550,000',
+      price: 'From Rp 620,000',
       image: fourHandsImage,
       description: 'Luxurious massage performed by two therapists simultaneously, creating a deeply relaxing and unique experience.',
       benefits: [
@@ -254,8 +254,8 @@ export default function Services() {
               <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="h-8 w-8 text-gray-900" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Complete Setup</h3>
-              <p className="text-gray-600">Professional massage table, linens, oils, and all equipment included</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Professional Service</h3>
+              <p className="text-gray-600">Premium oils, fresh linens, and all supplies brought to you</p>
             </div>
 
             <div className="text-center p-6 bg-white rounded-lg shadow-sm">
@@ -276,7 +276,7 @@ export default function Services() {
             Ready to Book Your Massage Services Ubud?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Our massage services Ubud bring professional therapists directly to your villa with all equipment included. 
+            Our massage services Ubud bring professional therapists directly to your villa. 
             View our <a href="/pricing" className="text-amber-600 hover:text-amber-700 font-semibold underline">transparent Ubud massage pricing</a> or 
             explore <a href="/treatments" className="text-amber-600 hover:text-amber-700 font-semibold underline">all massage treatments</a> available. 
             We serve <a href="/service-areas" className="text-amber-600 hover:text-amber-700 font-semibold underline">23+ locations across Bali</a> including 

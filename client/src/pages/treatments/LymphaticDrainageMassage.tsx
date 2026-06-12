@@ -29,7 +29,7 @@ export default function LymphaticDrainageMassage() {
     includes: [
       'Certified lymphatic drainage therapist',
       'Specialized lymphatic massage techniques',
-      'Portable massage table and fresh linens',
+      'Fresh professional linens',
       'Herbal tea for continued detoxification',
       'Post-treatment wellness consultation',
       'Hydration guidance for optimal results',

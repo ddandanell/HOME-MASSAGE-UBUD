@@ -13,7 +13,7 @@ export default function PrepareVillaForMassage() {
     {
       icon: Sun,
       title: "Choose Your Space",
-      description: "Select a quiet area with enough room for a massage table"
+      description: "Select a quiet area with a comfortable surface — bed or floor mat"
     },
     {
       icon: Wind,
@@ -76,7 +76,7 @@ export default function PrepareVillaForMassage() {
 
                   <h2 className="text-3xl font-bold mt-12 mb-6">Understanding What Villa Massage Services Provide</h2>
                   <p className="mb-6">
-                    Before discussing villa preparation, it's helpful to understand what professional villa massage services bring to your accommodation. Reputable providers arrive with portable massage tables, fresh linens, high-quality massage oils, aromatherapy accessories, and any specialized equipment needed for your chosen treatment. Therapists come fully prepared to deliver complete massage experiences without requiring you to provide equipment or supplies.
+                    Before discussing villa preparation, it's helpful to understand what professional villa massage services bring to your accommodation. Reputable providers arrive with fresh linens, high-quality massage oils, aromatherapy accessories, and any specialized equipment needed for your chosen treatment. You provide a comfortable surface — your bed or a floor mat works perfectly. Therapists come fully prepared to deliver complete massage experiences without requiring you to provide oils, linens, or supplies.
                   </p>
                   <p className="mb-6">
                     This self-contained approach means villa massage preparation focuses primarily on optimizing your environment rather than gathering equipment. Your role involves creating a peaceful, comfortable space where treatments can occur without interruption, ensuring therapists can work effectively, and setting conditions that support your relaxation. Understanding this division of responsibilities helps you prepare appropriately without unnecessary stress or confusion.
@@ -84,10 +84,10 @@ export default function PrepareVillaForMassage() {
 
                   <h2 className="text-3xl font-bold mt-12 mb-6">Choosing the Best Location in Your Villa</h2>
                   <p className="mb-6">
-                    Selecting the right location within your villa significantly impacts your massage experience. The ideal space offers adequate room for a massage table (approximately 6 feet long and 3 feet wide), allows comfortable movement around the table for therapists, and provides privacy from other areas of your villa. Consider these factors when choosing where to receive your villa massage treatment.
+                    Selecting the right location within your villa significantly impacts your massage experience. The ideal space offers a comfortable surface (your bed or a floor mat works great), room for the therapist to move around you, and privacy from other areas of your villa. Consider these factors when choosing where to receive your villa massage treatment.
                   </p>
                   <p className="mb-6">
-                    Many villa massage recipients prefer bedrooms because they offer natural privacy, controlled environments, and convenient post-treatment rest opportunities. Master bedrooms typically provide ample space for massage tables while maintaining quiet, intimate atmospheres. If your bedroom connects to ensuite bathrooms, you can easily shower after treatments without leaving private areas.
+                    Many villa massage recipients prefer bedrooms because they offer natural privacy, controlled environments, and convenient post-treatment rest opportunities. Master bedrooms typically offer comfortable beds and quiet, intimate atmospheres ideal for treatments. If your bedroom connects to ensuite bathrooms, you can easily shower after treatments without leaving private areas.
                   </p>
                   <p className="mb-6">
                     Outdoor pavilions or covered terraces represent another excellent option for villa massage in Bali. These spaces allow you to enjoy tropical breezes, natural sounds, and connection with nature while receiving treatments. If selecting outdoor locations for your villa massage, ensure they offer sufficient shade, protection from direct sunlight, and privacy from neighboring properties or public areas.
@@ -101,7 +101,7 @@ export default function PrepareVillaForMassage() {
 
                   <h2 className="text-3xl font-bold mt-12 mb-6">Preparing the Physical Space</h2>
                   <p className="mb-6">
-                    Once you've chosen your villa massage location, preparing the physical space ensures therapists can work efficiently and you can relax comfortably. Begin by clearing adequate floor space for the massage table. Remove unnecessary furniture, decorative items, or obstacles that might interfere with table placement or therapist movement. A clear perimeter of at least two feet around all sides of the massage table provides optimal working conditions.
+                    Once you've chosen your villa massage location, preparing the physical space ensures therapists can work efficiently and you can relax comfortably. Begin by clearing the treatment area. Remove unnecessary furniture, decorative items, or obstacles that might interfere with therapist movement. A clear perimeter of at least two feet around your bed or treatment surface provides optimal working conditions.
                   </p>
                   <p className="mb-6">
                     Clean your chosen space thoroughly before your villa massage appointment. While therapists bring fresh linens to protect you from direct contact with surfaces, a clean environment contributes to overall comfort and peace of mind. Ensure floors are swept or vacuumed, surfaces are dust-free, and the area feels fresh and inviting.
@@ -110,7 +110,7 @@ export default function PrepareVillaForMassage() {
                     Check that electrical outlets are accessible if your villa massage treatment involves heated stones, aromatherapy diffusers, or other equipment requiring power. Inform your villa massage service in advance if your chosen location lacks nearby outlets so they can plan accordingly or suggest alternative arrangements.
                   </p>
                   <p className="mb-6">
-                    If receiving villa massage outdoors, verify that your chosen area offers level, stable ground for safe massage table placement. Uneven surfaces can make treatments uncomfortable or even unsafe. Also confirm that outdoor spaces provide adequate coverage from weather elements – sudden rain showers are common in Bali, so covered pavilions work better than completely open areas.
+                    If receiving villa massage outdoors on a floor mat, verify that your chosen area offers level, stable ground. Uneven surfaces can make treatments uncomfortable or even unsafe. Also confirm that outdoor spaces provide adequate coverage from weather elements – sudden rain showers are common in Bali, so covered pavilions work better than completely open areas.
                   </p>
 
                   <h2 className="text-3xl font-bold mt-12 mb-6">Temperature and Ventilation Considerations</h2>
@@ -132,7 +132,7 @@ export default function PrepareVillaForMassage() {
                     Ambiance preparation transforms basic spaces into serene wellness sanctuaries that enhance villa massage benefits. Lighting plays a crucial role in creating relaxing atmospheres. Harsh overhead lights disrupt relaxation, so adjust lighting to soft, indirect sources. Natural daylight filtered through curtains works beautifully for daytime villa massage appointments. For evening sessions, dim lamps or candles create peaceful illumination that supports relaxation.
                   </p>
                   <p className="mb-6">
-                    Many villa massage enthusiasts light aromatherapy candles or incense before treatments begin, adding pleasant scents that complement massage oils. Popular choices include lavender for relaxation, eucalyptus for clarity, or traditional Balinese incense for authentic cultural ambiance. If using candles during your villa massage, place them safely away from massage tables, linens, and any flammable materials.
+                    Many villa massage enthusiasts light aromatherapy candles or incense before treatments begin, adding pleasant scents that complement massage oils. Popular choices include lavender for relaxation, eucalyptus for clarity, or traditional Balinese incense for authentic cultural ambiance. If using candles during your villa massage, place them safely away from linens and any flammable materials.
                   </p>
                   <p className="mb-6">
                     Sound environment significantly impacts villa massage experiences. Some people prefer complete silence, allowing them to focus entirely on physical sensations and internal awareness. Others find soft background music or nature sounds enhance relaxation. Discuss your preferences with your villa massage therapist – many bring curated playlists suitable for treatments but can also accommodate requests for specific music or silence.
@@ -149,7 +149,7 @@ export default function PrepareVillaForMassage() {
                     If your villa massage location has windows facing public areas, neighboring properties, or pools where others might be present, close curtains or blinds before treatments begin. Even though therapists use proper draping techniques, knowing you have complete visual privacy allows deeper relaxation without self-consciousness concerns.
                   </p>
                   <p className="mb-6">
-                    For <Link href="/villa-massage/services/couples-massage" className="text-primary hover:underline">couples massage</Link> in villas, ensure your chosen space accommodates two massage tables comfortably with adequate room for both therapists to work effectively. Couples villa massage requires roughly double the space of individual treatments, so select locations accordingly. The intimate privacy of couples villa massage represents one of its most romantic benefits, so creating secluded environments enhances the shared experience.
+                    For <Link href="/villa-massage/services/couples-massage" className="text-primary hover:underline">couples massage</Link> in villas, ensure your chosen space accommodates two people comfortably side-by-side with room for both therapists to work. Couples villa massage requires roughly double the space of individual treatments, so select locations accordingly. The intimate privacy of couples villa massage represents one of its most romantic benefits, so creating secluded environments enhances the shared experience.
                   </p>
 
                   <h2 className="text-3xl font-bold mt-12 mb-6">Practical Amenities to Have Ready</h2>
@@ -160,7 +160,7 @@ export default function PrepareVillaForMassage() {
                     Prepare drinking water for both before and after your villa massage treatment. Massage stimulates circulation and can trigger detoxification processes that increase thirst. Having room-temperature water nearby means you can hydrate immediately after treatments without needing to walk to kitchens or navigate your villa while still in post-massage tranquility.
                   </p>
                   <p className="mb-6">
-                    If you wear contact lenses, remove them before your villa massage, especially for treatments including facial massage or aromatherapy that might cause eye watering. Have a lens case and solution conveniently located so you can handle this detail without stress. Similarly, remove jewelry that might interfere with massage techniques or cause discomfort when lying on massage tables.
+                    If you wear contact lenses, remove them before your villa massage, especially for treatments including facial massage or aromatherapy that might cause eye watering. Have a lens case and solution conveniently located so you can handle this detail without stress. Similarly, remove jewelry that might interfere with massage techniques or cause discomfort during treatment.
                   </p>
                   <p className="mb-6">
                     Keep a robe or comfortable clothing nearby for after your villa massage. While you'll likely feel deeply relaxed and possibly sleepy post-treatment, having appropriate clothing easily accessible means you can cover yourself comfortably once therapists have completed their work and packed their equipment.
@@ -185,7 +185,7 @@ export default function PrepareVillaForMassage() {
                     Choosing the right time for your villa massage influences both enjoyment and therapeutic effectiveness. Consider scheduling treatments during quieter parts of your day when you can fully relax without feeling rushed by subsequent plans. Morning villa massage sessions can energize you for active days ahead, while evening treatments promote better sleep and help you decompress from busy vacation activities.
                   </p>
                   <p className="mb-6">
-                    Avoid booking villa massage immediately before or after large meals. Eating heavily before treatments can cause discomfort when lying face-down on massage tables. Similarly, scheduling villa massage right before dinner means you might feel too relaxed to leave your accommodation. Plan timing that allows you to fully enjoy the post-treatment peaceful state without external pressures.
+                    Avoid booking villa massage immediately before or after large meals. Eating heavily before treatments can cause discomfort when lying face-down during your massage. Similarly, scheduling villa massage right before dinner means you might feel too relaxed to leave your accommodation. Plan timing that allows you to fully enjoy the post-treatment peaceful state without external pressures.
                   </p>
                   <p className="mb-6">
                     If staying in <Link href="/villa-massage/cities/ubud" className="text-primary hover:underline">Ubud</Link>, many travelers find afternoon villa massage perfectly timed after morning temple visits or rice terrace walks, allowing you to release muscle tension from activities while still leaving evenings free for dinner and entertainment. In beachside locations like <Link href="/villa-massage/cities/seminyak" className="text-primary hover:underline">Seminyak</Link>, post-beach villa massage helps soothe sun-kissed skin and tired muscles after active beach days.
@@ -341,7 +341,7 @@ export default function PrepareVillaForMassage() {
                 <VillaMassageFAQ items={[
                   {
                     question: "How much space do I need to prepare for villa massage?",
-                    answer: "Villa massage requires a flat area approximately 7 feet by 3 feet for the massage table plus therapist movement space. Most villa bedrooms, living rooms, or covered terraces work perfectly for villa massage. Villa massage therapists help identify ideal setup locations during booking."
+                    answer: "You need a comfortable surface — your villa bed or a floor mat — plus enough room for the therapist to move around you. Most villa bedrooms, living rooms, or covered terraces work perfectly. Villa massage therapists help identify ideal setup locations during booking."
                   },
                   {
                     question: "Should I clean my villa before the massage therapist arrives?",

@@ -87,7 +87,7 @@ export default function BalineseMassageUluwatu() {
       <BalineseMassageFAQ items={[
         {
           question: "Can clifftop villa Balinese massage incorporate Uluwatu's dramatic ocean views?",
-          answer: "Yes! Uluwatu's spectacular clifftop settings enhance Balinese massage through powerful natural energy. Traditional Balinese healing philosophy recognizes that dramatic landscapes amplify treatment effectiveness—the meeting of earth, sky, and ocean creates potent spiritual energy. Our therapists position massage tables to capture views when possible, allowing the Balinese massage relaxation to merge with Uluwatu's breathtaking beauty. Many guests report that Balinese massage with crashing wave sounds and endless horizons creates transcendent experiences, connecting ancient Balinese healing wisdom with the raw power of nature in ways that enclosed spa rooms simply cannot achieve."
+          answer: "Yes! Uluwatu's spectacular clifftop settings enhance Balinese massage through powerful natural energy. Traditional Balinese healing philosophy recognizes that dramatic landscapes amplify treatment effectiveness—the meeting of earth, sky, and ocean creates potent spiritual energy. Our therapists position the treatment area to capture views when possible, allowing the Balinese massage relaxation to merge with Uluwatu's breathtaking beauty. Many guests report that Balinese massage with crashing wave sounds and endless horizons creates transcendent experiences, connecting ancient Balinese healing wisdom with the raw power of nature in ways that enclosed spa rooms simply cannot achieve."
         },
         {
           question: "Do Uluwatu surfers need specialized Balinese massage for intense wave riding?",

@@ -10,15 +10,15 @@ import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageLegian() {
   const services = [
-    { name: 'Balinese Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Traditional long-stroke technique' },
-    { name: 'Deep Tissue Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Intensive muscle therapy' },
-    { name: 'Couples Massage', price: 'Rp 550,000', duration: '90 minutes', description: 'Side-by-side treatment' },
-    { name: 'Relaxation Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Gentle stress relief' },
-    { name: 'Aromatherapy Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Essential oils therapy' },
-    { name: 'Hot Stone Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Heated stone treatment' },
-    { name: 'Prenatal Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Safe pregnancy massage' },
-    { name: 'Thai Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Stretching and pressure points' },
-    { name: 'Sports Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Athletic recovery therapy' },
+    { name: 'Balinese Massage', price: 'Rp 450,000', duration: '90 minutes', description: 'Traditional long-stroke technique' },
+    { name: 'Deep Tissue Massage', price: 'Rp 540,000', duration: '90 minutes', description: 'Intensive muscle therapy' },
+    { name: 'Couples Massage', price: 'Rp 900,000', duration: '90 minutes', description: 'Side-by-side treatment' },
+    { name: 'Relaxation Massage', price: 'Rp 450,000', duration: '90 minutes', description: 'Gentle stress relief' },
+    { name: 'Aromatherapy Massage', price: 'Rp 490,000', duration: '90 minutes', description: 'Essential oils therapy' },
+    { name: 'Hot Stone Massage', price: 'Rp 590,000', duration: '90 minutes', description: 'Heated stone treatment' },
+    { name: 'Prenatal Massage', price: 'Rp 490,000', duration: '90 minutes', description: 'Safe pregnancy massage' },
+    { name: 'Thai Massage', price: 'Rp 550,000', duration: '90 minutes', description: 'Stretching and pressure points' },
+    { name: 'Sports Massage', price: 'Rp 540,000', duration: '90 minutes', description: 'Athletic recovery therapy' },
     { name: 'Reflexology', price: 'Rp 380,000', duration: '60 minutes', description: 'Foot pressure point therapy' }
   ];
 
@@ -70,7 +70,7 @@ export default function VillaMassageLegian() {
                     The villa massage experience in Legian is particularly suited to active beach holidays. This area attracts surfers drawn to consistent waves, sunbathers enjoying the wide sandy beach, and sunset watchers gathering at beachfront bars each evening. After days spent in the sun and surf, villa massage offers essential recovery and relaxation. Many guests schedule treatments for late afternoon, allowing time to shower off salt and sand before therapists arrive. Villa massage in Legian transforms hotel rooms, guesthouses, and villa accommodations into personal wellness retreats where tired muscles receive professional attention without cutting into precious beach time.
                   </p>
                   <p className="text-muted-foreground mb-4">
-                    Villa massage in Legian serves diverse travelers, from young couples in boutique hotels to families in beachfront resorts and groups of friends sharing villa accommodations. Our service maintains consistent professional standards across all property types—every villa massage includes licensed therapists, professional massage tables, organic aromatherapy oils, and expert techniques developed through years of experience. This consistency makes villa massage in Legian reliable and trustworthy, with quality that matches or exceeds many fixed-location spas. First-time massage recipients and experienced spa enthusiasts alike appreciate the convenience and professionalism.
+                    Villa massage in Legian serves diverse travelers, from young couples in boutique hotels to families in beachfront resorts and groups of friends sharing villa accommodations. Our service maintains consistent professional standards across all property types—every villa massage includes licensed therapists, organic aromatherapy oils, and expert techniques developed through years of experience. This consistency makes villa massage in Legian reliable and trustworthy, with quality that matches or exceeds many fixed-location spas. First-time massage recipients and experienced spa enthusiasts alike appreciate the convenience and professionalism.
                   </p>
                   <p className="text-muted-foreground mb-4">
                     Our villa massage service covers all areas of Legian, from the southern sections near Kuta border to the northern neighborhoods transitioning into Seminyak, and from the beachfront properties to inland residential streets. We work with guests staying in international chain hotels, local guesthouses, serviced apartments, and private villas throughout the area. Legian's central location makes it convenient for therapists to reach, often allowing for short notice bookings. Same-day villa massage appointments are regularly available in Legian, making it easy to add treatments spontaneously when the mood strikes or muscle soreness demands attention.

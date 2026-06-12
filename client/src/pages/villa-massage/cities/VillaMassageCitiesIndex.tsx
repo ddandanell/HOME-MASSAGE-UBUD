@@ -119,7 +119,7 @@ export default function VillaMassageCitiesIndex() {
                     Our villa massage service covers every major destination across Bali, bringing professional spa treatments directly to your accommodation. Whether you're staying in a luxury villa in Seminyak, a peaceful retreat in Ubud, or a beachfront property in Uluwatu, our licensed therapists travel to you with everything needed for an authentic Balinese spa experience.
                   </p>
                   <p className="text-muted-foreground mb-4">
-                    Villa massage has become the preferred choice for travelers who value convenience, privacy, and personalized service. Instead of traveling to a spa, you can enjoy treatments in the comfort of your own space, whether that's your villa's outdoor pavilion, bedroom, or poolside area. Our therapists arrive with professional massage tables, premium oils, and all necessary equipment.
+                    Villa massage has become the preferred choice for travelers who value convenience, privacy, and personalized service. Instead of traveling to a spa, you can enjoy treatments in the comfort of your own space, whether that's your villa's outdoor pavilion, bedroom, or poolside area. Our therapists arrive with premium oils, fresh linens, and all necessary supplies.
                   </p>
                   <p className="text-muted-foreground mb-4">
                     We serve all ten major areas of Bali, from the cultural highland of Ubud to the southern beach destinations of Seminyak, Canggu, Sanur, Nusa Dua, Uluwatu, Jimbaran, Kuta, Legian, and Pererenan. Each location has its unique character, and our villa massage service adapts to suit the atmosphere of your chosen destination.
@@ -217,7 +217,7 @@ export default function VillaMassageCitiesIndex() {
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 text-left mb-8">
                   <div className="bg-background p-4 rounded-lg">
-                    <h3 className="font-semibold mb-2">Balinese Massage - Rp 380,000</h3>
+                    <h3 className="font-semibold mb-2">Balinese Massage - Rp 320,000</h3>
                     <p className="text-sm text-muted-foreground">Traditional long-stroke technique</p>
                   </div>
                   <div className="bg-background p-4 rounded-lg">
@@ -225,15 +225,15 @@ export default function VillaMassageCitiesIndex() {
                     <p className="text-sm text-muted-foreground">Targeted muscle therapy</p>
                   </div>
                   <div className="bg-background p-4 rounded-lg">
-                    <h3 className="font-semibold mb-2">Couples Massage - Rp 550,000</h3>
+                    <h3 className="font-semibold mb-2">Couples Massage - Rp 640,000</h3>
                     <p className="text-sm text-muted-foreground">Side-by-side treatment</p>
                   </div>
                   <div className="bg-background p-4 rounded-lg">
-                    <h3 className="font-semibold mb-2">Aromatherapy - Rp 390,000</h3>
+                    <h3 className="font-semibold mb-2">Aromatherapy - Rp 350,000</h3>
                     <p className="text-sm text-muted-foreground">Essential oils therapy</p>
                   </div>
                   <div className="bg-background p-4 rounded-lg">
-                    <h3 className="font-semibold mb-2">Hot Stone - Rp 390,000</h3>
+                    <h3 className="font-semibold mb-2">Hot Stone - Rp 420,000</h3>
                     <p className="text-sm text-muted-foreground">Heated stone therapy</p>
                   </div>
                   <div className="bg-background p-4 rounded-lg">

@@ -16,7 +16,7 @@ import CrossSiloLinks from '@/components/CrossSiloLinks';
 
 export default function HomeMassageHub() {
   const faqData = [
-    { question: "What is home massage?", answer: "Home massage is a professional massage service where licensed therapists travel to your accommodation — villa, hotel, or guesthouse — bringing all necessary equipment including massage table, premium oils, towels, and linens." },
+    { question: "What is home massage?", answer: "Home massage is a professional massage service where licensed therapists travel to your accommodation — villa, hotel, or guesthouse — bringing premium oils, towels, and linens. You provide a comfortable surface such as your bed or a floor mat." },
     { question: "How do I book a home massage in Bali?", answer: "Simply message us on WhatsApp at +62 811-2656-869 with your location, preferred treatment, and preferred time. We confirm availability within minutes and can often accommodate same-day bookings." },
     { question: "What areas in Bali do you serve?", answer: "We provide home massage throughout Ubud, Seminyak, Canggu, Sanur, Nusa Dua, Uluwatu, Jimbaran, Kuta, Legian, and surrounding areas. Travel fees may apply for locations outside central areas." },
     { question: "Is home massage safe?", answer: "Yes, all our therapists are licensed, background-checked, and follow strict hygiene protocols. We use fresh linens for every client and sanitize all equipment between sessions." }
@@ -51,7 +51,7 @@ export default function HomeMassageHub() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 text-sm font-semibold">
-              ⭐ From Rp 380,000 | Licensed Therapists | Same-Day Booking
+              ⭐ From Rp 320,000 | Licensed Therapists | Same-Day Booking
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Home Massage in Bali
@@ -139,13 +139,13 @@ export default function HomeMassageHub() {
             Home Massage Services
           </h2>
           <p className="text-center text-muted-foreground mb-12">
-            Professional home massage from <span className="font-bold text-primary">Rp 380,000</span> | <Link href="/pricing" className="text-primary hover:underline">View All Pricing</Link>
+            Professional home massage from <span className="font-bold text-primary">Rp 320,000</span> | <Link href="/pricing" className="text-primary hover:underline">View All Pricing</Link>
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Balinese Home Massage</h3>
-                <p className="text-lg font-bold text-primary mb-3">From Rp 380,000</p>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 320,000</p>
                 <p className="text-muted-foreground mb-4">
                   Traditional techniques for deep relaxation
                 </p>
@@ -175,7 +175,7 @@ export default function HomeMassageHub() {
             <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Couples Home Massage</h3>
-                <p className="text-lg font-bold text-primary mb-3">From Rp 550,000</p>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 640,000</p>
                 <p className="text-muted-foreground mb-4">
                   Side-by-side relaxation for two
                 </p>
@@ -495,7 +495,7 @@ export default function HomeMassageHub() {
             <HomeMassageFAQ items={[
               {
                 question: "What is home massage in Bali?",
-                answer: "Home massage in Bali is a professional spa service delivered directly to your villa, hotel, or accommodation. Licensed therapists bring all necessary equipment including massage table, premium oils, fresh linens, and music to provide a complete spa experience in the comfort and privacy of your own space."
+                answer: "Home massage in Bali is a professional spa service delivered directly to your villa, hotel, or accommodation. Licensed therapists bring premium oils, fresh linens, and music to provide a complete spa experience in the comfort and privacy of your own space. You provide a comfortable surface — your bed or a floor mat works perfectly."
               },
               {
                 question: "How do I book a home massage?",

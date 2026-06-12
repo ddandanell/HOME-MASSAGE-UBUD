@@ -18,7 +18,7 @@ const serviceData: ServiceLandingPageData = {
     'Discover the ultimate in relaxation with our full body massage service, delivered directly to your Ubud accommodation. A full body massage addresses all major muscle groups from head to toe, providing comprehensive relief from tension, stress, and fatigue. Unlike targeted treatments, this complete approach ensures no area is neglected, resulting in total body wellness.',
     'Our full body massage combines various techniques tailored to your needs. The session typically begins with your back and shoulders, progressing systematically to cover arms, hands, legs, feet, neck, scalp, and face. Throughout the treatment, your therapist maintains a rhythmic flow that promotes deep relaxation while addressing specific areas of tension.',
     'The benefits of full body massage extend far beyond the treatment room. Regular sessions improve circulation, boost immune function, enhance flexibility, and promote better sleep patterns. Many of our clients in Ubud report feeling the positive effects for days after their treatment, making it an essential part of their wellness routine during their Bali stay.',
-    'Our certified therapists bring extensive experience in delivering full body massage treatments. They arrive at your villa with professional massage tables, premium organic oils, fresh linens, and all necessary equipment. Sessions are available from 8 AM to 10 PM daily, with same-day booking often available through our responsive WhatsApp service.'
+    'Our certified therapists bring extensive experience in delivering full body massage treatments. They arrive at your villa with premium organic oils, fresh linens, and all necessary supplies. Sessions are available from 8 AM to 10 PM daily, with same-day booking often available through our responsive WhatsApp service.'
   ],
   
   whyChooseAngle: 'certified-staff',
@@ -180,7 +180,7 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       question: 'Do you offer full body massage for couples side by side?',
-      answer: 'Yes! Couples full body massage is one of our most popular services. Two therapists work simultaneously, delivering synchronized treatments. Its perfect for sharing a relaxing experience together. We bring two massage tables and all equipment needed.'
+      answer: 'Yes! Couples full body massage is one of our most popular services. Two therapists work simultaneously, delivering synchronized treatments. Perfect for sharing a relaxing experience together. You provide a comfortable surface for each person — your villa beds work perfectly.'
     },
     {
       question: 'How is full body massage different from targeted treatments?',

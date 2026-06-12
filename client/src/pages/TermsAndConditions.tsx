@@ -146,7 +146,7 @@ export default function TermsAndConditions() {
               
               <h3 className="text-xl font-semibold mb-3">6.3 Massage Space</h3>
               <p className="text-muted-foreground">
-                You are responsible for providing a suitable space for the massage (quiet area with adequate lighting, temperature control, and privacy). Our therapists bring all necessary equipment including massage table, linens, and oils.
+                You are responsible for providing a suitable space for the massage (quiet area with adequate lighting, temperature control, and privacy). Our therapists bring all necessary supplies including linens and oils.
               </p>
             </section>
             

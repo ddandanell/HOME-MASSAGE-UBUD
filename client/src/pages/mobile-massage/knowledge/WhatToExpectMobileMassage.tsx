@@ -114,7 +114,7 @@ export default function MobileMassageWhatToExpect() {
                   </li>
                   <li className="flex gap-2">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Ensure firm, clean surface for your mobile massage bed setup</span>
+                    <span>Ensure a firm, clean surface — your bed or a floor mat works well</span>
                   </li>
                 </ul>
               </div>
@@ -663,7 +663,7 @@ export default function MobileMassageWhatToExpect() {
         },
         {
           question: "How should I prepare my space before mobile massage arrival?",
-          answer: "Mobile massage preparation requires clearing a clean area for the massage table, ensuring adequate room temperature, having clean towels available, and notifying reception about the appointment. The mobile massage therapist brings all professional equipment and oils. Minimal mobile massage preparation on your part creates an optimal treatment environment."
+          answer: "Mobile massage preparation requires clearing a clean, comfortable space, ensuring adequate room temperature, having clean towels available, and notifying reception about the appointment. The mobile massage therapist brings all professional supplies and oils. Minimal preparation on your part creates an optimal treatment environment."
         },
         {
           question: "What happens during a typical mobile massage session?",

@@ -173,7 +173,7 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       question: 'Do you bring equipment for home massage Bali?',
-      answer: 'Yes. Every therapist arrives with a sanitized massage table, premium oils, fresh linens, and optional add-ons like hot stones or herbal compresses.'
+      answer: 'Yes. Every therapist arrives with premium oils, fresh linens, and optional add-ons like hot stones or herbal compresses. You provide a comfortable surface — your bed works perfectly.'
     }
   ],
 

@@ -21,7 +21,7 @@ const serviceData: ServiceLandingPageData = {
   
   introduction: [
     'The concept of home massage revolutionizes how travelers experience spa services in Bali. Rather than navigating to unfamiliar spa locations, dealing with transportation, or scheduling around business hours, home massage brings the entire professional spa experience directly to your accommodation. Our home massage service in Ubud delivers this convenience without compromising quality or professionalism.',
-    'Home massage eliminates the barriers that often prevent travelers from enjoying massage services. After a long day of sightseeing, the thought of dressing up and traveling to a spa can be overwhelming. With home massage, you simply message us, and within hours a licensed therapist arrives at your door with professional massage table, premium oils, fresh linens, and everything needed for your treatment.',
+    'Home massage eliminates the barriers that often prevent travelers from enjoying massage services. After a long day of sightseeing, the thought of dressing up and traveling to a spa can be overwhelming. With home massage, you simply message us, and within hours a licensed therapist arrives at your door with premium oils, fresh linens, and everything needed for your treatment — you provide a comfortable surface like your bed.',
     'The home environment actually enhances your massage experience in many ways. You are in a familiar, comfortable space. You can shower immediately afterward, change into pajamas, and continue relaxing without any journey home. Many guests report deeper relaxation knowing they are already where they want to be. Your home massage fits your vacation exactly as you want it.',
     'Our home massage therapists serve all types of accommodation throughout Ubud and Bali: private villas, boutique hotels, resorts, guesthouses, Airbnb properties, and homestays. We communicate in English and Indonesian for clear coordination. Available daily from 8 AM to 10 PM with same-day booking through WhatsApp, home massage is always within reach.'
   ],
@@ -171,7 +171,7 @@ const serviceData: ServiceLandingPageData = {
   faqs: [
     {
       question: 'What do I need to provide for home massage?',
-      answer: 'Simply provide enough floor space for our portable massage table (approximately 2m x 2.5m). We bring everything else: massage table, oils, linens, towels, and any specialty equipment. An electrical outlet nearby helps for heating products. Otherwise, you just need to be ready to relax!'
+      answer: 'Simply provide a comfortable surface — your bed or a floor mat works perfectly. We bring everything else: oils, linens, towels, and any specialty supplies. An electrical outlet nearby helps for heating products. Otherwise, you just need to be ready to relax!'
     },
     {
       question: 'Do you serve all types of accommodation?',
@@ -191,7 +191,7 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       question: 'What if I am staying in a hotel room - is home massage possible?',
-      answer: 'Yes, home massage works well in hotel rooms. We bring compact equipment that fits standard room sizes. Simply clear a space for the massage table. Many hotels welcome our professional service. We can coordinate with front desk if needed.'
+      answer: 'Yes, home massage works well in hotel rooms. Simply clear a comfortable space — your hotel bed works perfectly. Many hotels welcome our professional service. We can coordinate with front desk if needed.'
     },
     {
       question: 'How does payment work for home massage?',

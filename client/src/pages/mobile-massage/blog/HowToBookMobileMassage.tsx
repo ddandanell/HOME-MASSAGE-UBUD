@@ -799,7 +799,7 @@ export default function HowToBookHomeMassage() {
         },
         {
           question: "How do I prepare my space for mobile massage arrival?",
-          answer: "Mobile massage preparation requires minimal effort—clear a space for the massage table, ensure a firm surface, have clean towels ready, and adjust room temperature comfortably. The mobile massage therapist brings all equipment and supplies. Simply notify hotel reception about the incoming mobile massage appointment, and your space is ready."
+          answer: "Mobile massage preparation requires minimal effort—clear a comfortable space (your bed or a floor mat works well), have clean towels ready, and adjust room temperature comfortably. The mobile massage therapist brings all supplies. Simply notify hotel reception about the incoming mobile massage appointment, and your space is ready."
         }
       ]} />
 

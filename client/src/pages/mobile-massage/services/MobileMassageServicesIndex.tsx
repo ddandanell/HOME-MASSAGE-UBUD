@@ -270,7 +270,7 @@ export default function MobileMassageServicesIndex() {
                 <div>
                   <h3 className="font-semibold mb-2">Professional Setup</h3>
                   <p className="text-muted-foreground text-sm">
-                    Licensed therapist arrives with massage table, fresh linens, towels, and premium oils for complete mobile massage
+                    Licensed therapist arrives with fresh linens, towels, and premium oils for complete mobile massage
                   </p>
                 </div>
               </div>

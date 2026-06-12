@@ -32,7 +32,7 @@ export default function CouplesWellnessRitual() {
       'Premium aromatherapy and essential oils',
       'Fresh flower petal decoration',
       'Romantic ambiance setup with candles',
-      'Two portable massage tables and luxury linens',
+      'Fresh luxury linens for two',
       'Herbal tea and light refreshments for two',
       'Therapist travel and complete setup in your villa'
     ],
@@ -67,7 +67,7 @@ export default function CouplesWellnessRitual() {
     faqs: [
       {
         question: 'What\'s included in the Couples Wellness Ritual?',
-        answer: 'We bring two therapists and complete spa setup to your villa including massage tables, linens, aromatherapy oils, fresh flowers, candles, and all necessary equipment. You\'ll receive synchronized massage treatments in the same room, creating a romantic shared experience.'
+        answer: 'We bring two therapists and complete spa setup to your villa including linens, aromatherapy oils, fresh flowers, candles, and all necessary supplies. You\'ll receive synchronized massage treatments in the same room, creating a romantic shared experience.'
       },
       {
         question: 'Is couples massage good for honeymooners in Ubud?',

@@ -10,15 +10,15 @@ import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageJimbaran() {
   const services = [
-    { name: 'Balinese Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Traditional long-stroke technique' },
-    { name: 'Deep Tissue Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Intensive muscle therapy' },
-    { name: 'Couples Massage', price: 'Rp 550,000', duration: '90 minutes', description: 'Side-by-side treatment' },
-    { name: 'Relaxation Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Gentle stress relief' },
-    { name: 'Aromatherapy Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Essential oils therapy' },
-    { name: 'Hot Stone Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Heated stone treatment' },
-    { name: 'Prenatal Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Safe pregnancy massage' },
-    { name: 'Thai Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Stretching and pressure points' },
-    { name: 'Sports Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Athletic recovery therapy' },
+    { name: 'Balinese Massage', price: 'Rp 450,000', duration: '90 minutes', description: 'Traditional long-stroke technique' },
+    { name: 'Deep Tissue Massage', price: 'Rp 540,000', duration: '90 minutes', description: 'Intensive muscle therapy' },
+    { name: 'Couples Massage', price: 'Rp 900,000', duration: '90 minutes', description: 'Side-by-side treatment' },
+    { name: 'Relaxation Massage', price: 'Rp 450,000', duration: '90 minutes', description: 'Gentle stress relief' },
+    { name: 'Aromatherapy Massage', price: 'Rp 490,000', duration: '90 minutes', description: 'Essential oils therapy' },
+    { name: 'Hot Stone Massage', price: 'Rp 590,000', duration: '90 minutes', description: 'Heated stone treatment' },
+    { name: 'Prenatal Massage', price: 'Rp 490,000', duration: '90 minutes', description: 'Safe pregnancy massage' },
+    { name: 'Thai Massage', price: 'Rp 550,000', duration: '90 minutes', description: 'Stretching and pressure points' },
+    { name: 'Sports Massage', price: 'Rp 540,000', duration: '90 minutes', description: 'Athletic recovery therapy' },
     { name: 'Reflexology', price: 'Rp 380,000', duration: '60 minutes', description: 'Foot pressure point therapy' }
   ];
 
@@ -67,7 +67,7 @@ export default function VillaMassageJimbaran() {
                     Villa massage in Jimbaran brings professional spa treatments to one of Bali's most charming beachside communities, famous for its curved bay, fresh seafood dining, and spectacular sunsets. This former fishing village has evolved into a sophisticated yet relaxed destination that attracts families, couples, and travelers seeking a quieter alternative to busier beach areas. Our professional therapists deliver villa massage services throughout Jimbaran, from beachfront properties along the golden sand to hillside villas with ocean views and residential neighborhoods near the airport. Villa massage in Jimbaran combines convenience with the peaceful atmosphere this special area provides.
                   </p>
                   <p className="text-muted-foreground mb-4">
-                    The villa massage experience in Jimbaran is enhanced by this location's natural tranquility and beauty. Many properties feature gardens filled with frangipani and bougainvillea, outdoor living spaces with sea breezes, and pools where the sound of waves provides a soothing backdrop. Villa massage treatments enjoyed on open-air pavilions or beachfront terraces connect guests to Jimbaran's essence—unhurried, authentic, and naturally healing. Our therapists arrive with professional massage tables, luxury linens, and organic aromatherapy oils, creating spa-quality experiences without requiring travel to commercial facilities.
+                    The villa massage experience in Jimbaran is enhanced by this location's natural tranquility and beauty. Many properties feature gardens filled with frangipani and bougainvillea, outdoor living spaces with sea breezes, and pools where the sound of waves provides a soothing backdrop. Villa massage treatments enjoyed on open-air pavilions or beachfront terraces connect guests to Jimbaran's essence—unhurried, authentic, and naturally healing. Our therapists arrive with luxury linens and organic aromatherapy oils, creating spa-quality experiences without requiring travel to commercial facilities.
                   </p>
                   <p className="text-muted-foreground mb-4">
                     Villa massage in Jimbaran is particularly popular in the evening hours, with many guests scheduling treatments after watching the sunset from the beach or enjoying early dinners at the famous seafood restaurants that line the shore. The combination of fresh ocean air, the day's accumulated warmth, and professional massage creates profound relaxation. Couples massage is especially sought-after in Jimbaran, where the romantic atmosphere of candlelit beach dining extends naturally to shared villa massage experiences. Many couples celebrate anniversaries and special occasions with villa massage followed by sunset seafood dinners.

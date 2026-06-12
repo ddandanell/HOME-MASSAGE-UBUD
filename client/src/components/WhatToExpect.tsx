@@ -22,7 +22,7 @@ const expectationPhases = [
     activities: [
       'Professional therapist arrives punctually with all necessary equipment and supplies',
       'Brief introduction and verification of appointment details and treatment preferences',
-      'Professional setup of portable massage table, fresh linens, and therapeutic equipment',
+      'Professional setup with fresh linens and therapeutic equipment',
       'Arrangement of premium oils, aromatherapy supplies, and relaxation enhancements',
       'Final consultation regarding pressure preferences, focus areas, and any special requests'
     ],

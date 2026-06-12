@@ -10,15 +10,15 @@ import VillaMassageFAQ from '@/components/villa-massage/VillaMassageFAQ';
 
 export default function VillaMassageNusaDua() {
   const services = [
-    { name: 'Balinese Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Traditional long-stroke technique' },
-    { name: 'Deep Tissue Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Intensive muscle therapy' },
-    { name: 'Couples Massage', price: 'Rp 550,000', duration: '90 minutes', description: 'Side-by-side treatment' },
-    { name: 'Relaxation Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Gentle stress relief' },
-    { name: 'Aromatherapy Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Essential oils therapy' },
-    { name: 'Hot Stone Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Heated stone treatment' },
-    { name: 'Prenatal Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Safe pregnancy massage' },
-    { name: 'Thai Massage', price: 'Rp 390,000', duration: '90 minutes', description: 'Stretching and pressure points' },
-    { name: 'Sports Massage', price: 'Rp 380,000', duration: '90 minutes', description: 'Athletic recovery therapy' },
+    { name: 'Balinese Massage', price: 'Rp 450,000', duration: '90 minutes', description: 'Traditional long-stroke technique' },
+    { name: 'Deep Tissue Massage', price: 'Rp 540,000', duration: '90 minutes', description: 'Intensive muscle therapy' },
+    { name: 'Couples Massage', price: 'Rp 900,000', duration: '90 minutes', description: 'Side-by-side treatment' },
+    { name: 'Relaxation Massage', price: 'Rp 450,000', duration: '90 minutes', description: 'Gentle stress relief' },
+    { name: 'Aromatherapy Massage', price: 'Rp 490,000', duration: '90 minutes', description: 'Essential oils therapy' },
+    { name: 'Hot Stone Massage', price: 'Rp 590,000', duration: '90 minutes', description: 'Heated stone treatment' },
+    { name: 'Prenatal Massage', price: 'Rp 490,000', duration: '90 minutes', description: 'Safe pregnancy massage' },
+    { name: 'Thai Massage', price: 'Rp 550,000', duration: '90 minutes', description: 'Stretching and pressure points' },
+    { name: 'Sports Massage', price: 'Rp 540,000', duration: '90 minutes', description: 'Athletic recovery therapy' },
     { name: 'Reflexology', price: 'Rp 380,000', duration: '60 minutes', description: 'Foot pressure point therapy' }
   ];
 
@@ -67,7 +67,7 @@ export default function VillaMassageNusaDua() {
                     Villa massage in Nusa Dua caters to Bali's most exclusive resort enclave, where pristine white-sand beaches, championship golf courses, and five-star hotels define the landscape. This purpose-built tourism area attracts discerning travelers who expect the highest levels of service and luxury. Our professional therapists bring spa-quality treatments directly to private villas throughout Nusa Dua, maintaining the premium standards this prestigious destination demands. Villa massage in Nusa Dua offers convenience without compromising on quality, allowing guests to enjoy world-class treatments in the privacy of their own accommodation.
                   </p>
                   <p className="text-muted-foreground mb-4">
-                    The villa massage experience in Nusa Dua is characterized by attention to detail and premium service delivery. Many properties in this area feature magnificent outdoor spaces with ocean views, manicured gardens, and resort-style amenities. Our therapists arrive punctually with professional-grade massage tables, luxury linens, and organic aromatherapy oils, setting up treatment spaces that rival the area's renowned hotel spas. Villa massage in Nusa Dua provides the ultimate in convenience for guests who prefer privacy over communal spa facilities, whether staying in a beachfront villa, a golf course residence, or a luxury property near the convention center.
+                    The villa massage experience in Nusa Dua is characterized by attention to detail and premium service delivery. Many properties in this area feature magnificent outdoor spaces with ocean views, manicured gardens, and resort-style amenities. Our therapists arrive punctually with luxury linens and organic aromatherapy oils, setting up treatment spaces that rival the area's renowned hotel spas. Villa massage in Nusa Dua provides the ultimate in convenience for guests who prefer privacy over communal spa facilities, whether staying in a beachfront villa, a golf course residence, or a luxury property near the convention center.
                   </p>
                   <p className="text-muted-foreground mb-4">
                     Villa massage in Nusa Dua is particularly popular with couples celebrating special occasions, families seeking coordinated treatments, and business travelers recovering from conferences at the Bali International Convention Centre. The flexibility of villa massage allows treatments to be scheduled around golf tee times, beach activities, and dining reservations at the area's numerous upscale restaurants. Evening villa massage sessions are especially sought-after, providing relaxation after days spent enjoying Nusa Dua's protected beaches, water sports facilities, and cultural attractions like the Museum Pasifika.
@@ -141,7 +141,7 @@ export default function VillaMassageNusaDua() {
                     <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-2">Premium Equipment</h3>
-                      <p className="text-muted-foreground">Professional-grade massage tables and organic luxury oils for every villa massage.</p>
+                      <p className="text-muted-foreground">Premium organic luxury oils and fresh linens for every villa massage.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">

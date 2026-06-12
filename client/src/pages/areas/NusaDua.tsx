@@ -53,7 +53,7 @@ export default function NusaDua() {
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: 'Rp 380,000',
+        priceFrom: 'Rp 320,000',
         duration: '60-120 min'
       },
       {
@@ -65,13 +65,13 @@ export default function NusaDua() {
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 350,000',
         duration: '60-120 min'
       },
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: 'Rp 390,000',
+        priceFrom: 'Rp 420,000',
         duration: '60-120 min'
       },
       {

@@ -251,7 +251,7 @@ export default function BalineseMobileMassage() {
         },
         {
           question: "What should I prepare before my Balinese mobile massage arrives?",
-          answer: "Simply ensure a quiet, private space with room for the mobile massage table. Our therapists bring everything needed for Balinese mobile massage: professional table, organic oils, aromatherapy, fresh linens, and relaxation music. Having shower access nearby enhances the post-mobile massage experience, but isn't required. We handle all mobile massage setup and cleanup."
+          answer: "Simply ensure a quiet, private space with a comfortable surface — your bed or a floor mat works well. Our therapists bring everything needed for Balinese mobile massage: organic oils, aromatherapy, fresh linens, and relaxation music. Having shower access nearby enhances the post-mobile massage experience, but isn't required."
         },
         {
           question: "Is Balinese mobile massage suitable for first-time massage recipients?",
