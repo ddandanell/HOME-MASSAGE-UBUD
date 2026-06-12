@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'sports-massage',
   keyword: 'sports massage',
   
-  metaTitle: 'Sports Massage Ubud | Athletic Recovery Treatment | Villa Service END',
-  metaDescription: 'Professional sports massage for athletic recovery in Ubud. Expert therapists treat muscle strain, improve performance. Perfect after surfing, hiking. Book WhatsApp. END',
+  metaTitle: 'Sports Massage Ubud | Athletic Recovery Treatment | Villa Service',
+  metaDescription: 'Professional sports massage for athletic recovery in Ubud. Expert therapists treat muscle strain, improve performance. Perfect after surfing, hiking. Book WhatsApp.',
   
   h1Title: 'Sports Massage – Athletic Recovery in Ubud',
   heroSubtitle: 'Optimize your athletic performance and accelerate recovery with our professional sports massage service. Expert therapists trained in sports therapy techniques address muscle strain, improve flexibility, and help you perform at your best.',

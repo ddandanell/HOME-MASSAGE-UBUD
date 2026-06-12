@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'prenatal-massage',
   keyword: 'prenatal massage',
   
-  metaTitle: 'Prenatal Massage Ubud | Safe Pregnancy Massage | Certified Therapists END',
-  metaDescription: 'Safe, gentle prenatal massage for expecting mothers in Ubud. Certified pregnancy massage therapists deliver comfort to your villa. Specialized positioning. Book now. END',
+  metaTitle: 'Prenatal Massage Ubud | Safe Pregnancy Massage | Certified Therapists',
+  metaDescription: 'Safe, gentle prenatal massage for expecting mothers in Ubud. Certified pregnancy massage therapists deliver comfort to your villa. Specialized positioning. Book now.',
   
   h1Title: 'Prenatal Massage – Safe Care for Expecting Mothers',
   heroSubtitle: 'Nurture yourself and your baby with our specialized prenatal massage service. Certified pregnancy massage therapists deliver safe, gentle treatments using specialized positioning and techniques designed for the unique needs of expectant mothers.',

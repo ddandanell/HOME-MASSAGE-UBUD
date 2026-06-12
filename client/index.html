@@ -2,6 +2,120 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Performance: Preconnect to critical third-party domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://wa.me">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+
+    <!-- Critical CSS: prevent FOUC and provide loading spinner -->
+    <style>
+      /* Prevent FOUC */
+      html { background-color: #0f172a; }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Loading spinner for initial render */
+      #root:empty::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 40vh auto 0;
+        border: 3px solid rgba(245, 158, 11, 0.2);
+        border-top-color: #f59e0b;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      /* Ensure content is hidden until React hydrates */
+      #root:empty { min-height: 100vh; }
+      /* Font display swap for all custom fonts */
+      @font-face {
+        font-family: 'Playfair Display';
+        font-display: swap;
+        src: local('Playfair Display'), local('PlayfairDisplay-Regular');
+      }
+      @font-face {
+        font-family: 'Inter';
+        font-display: swap;
+        src: local('Inter'), local('Inter-Regular');
+      }
+    </style>
+
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap">
+    <!-- NOTE: For best performance, consider self-hosting these fonts using fontsource or google-webfonts-helper -->
+
+    <!-- SEO Meta Tags -->
+    <title>Professional Ubud Massage Services | Premium In-Villa Therapy | Book Now</title>
+    <meta name="description" content="Discover Ubud's finest in-villa massage experience with certified Balinese therapists. Premium in-villa massage with certified Balinese therapists. Traditional, deep tissue & aromatherapy from IDR 320K. Available daily 7AM-10PM throughout Ubud." />
+    <meta name="keywords" content="professional ubud massage, premium villa massage ubud, certified massage therapist ubud, authentic balinese massage, therapeutic deep tissue ubud, luxury aromatherapy massage, expert couples massage ubud, mobile spa services ubud, private massage therapy ubud, wellness treatments ubud bali, healing massage sessions ubud, traditional balinese therapy, hot stone massage therapy, specialized thai massage, prenatal massage care, lymphatic drainage therapy, reflexology treatment ubud, post-trek recovery massage, yoga therapy massage, ubud center wellness, penestanan spa services, sayan valley massage, campuhan ridge therapy, tegallalang massage services, sanggingan wellness treatments" />
+    <meta name="author" content="Home Massage Ubud" />
+    <meta name="google-site-verification" content="REPLACE_WITH_YOUR_VERIFICATION_CODE" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://homemassageubud.com" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Premium Ubud Massage | Luxury In-Villa Wellness Services Bali" />
+    <meta property="og:description" content="⭐ Award-winning Ubud massage therapy delivered to your villa. Expert Balinese therapists offering traditional, deep tissue & aromatherapy treatments. Instant WhatsApp booking available!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://homemassageubud.com" />
+    <meta property="og:site_name" content="Home Massage Ubud" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://homemassageubud.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Professional Balinese massage therapy session in luxury villa setting" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Premium Ubud Massage | Expert In-Villa Therapy Services" />
+    <meta name="twitter:description" content="⭐ Professional massage therapy in Ubud, delivered to your villa doorstep. Certified therapists, authentic Balinese treatments. Quick booking via WhatsApp!" />
+    <meta name="twitter:image" content="https://homemassageubud.com/twitter-image.jpg" />
+    <meta name="twitter:image:alt" content="Professional Balinese massage therapy in villa" />
+
+    <!-- Mobile & App Meta Tags -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Home Massage Ubud" />
+    <meta name="application-name" content="Home Massage Ubud" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="msapplication-TileColor" content="#f59e0b" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="theme-color" content="#f59e0b" />
+
+    <!-- Language and Region -->
+    <meta name="language" content="English">
+    <meta name="geo.region" content="ID-BA">
+    <meta name="geo.placename" content="Ubud, Bali">
+    <meta name="geo.position" content="-8.5069;115.2625">
+    <meta name="ICBM" content="-8.5069, 115.2625">
+
+    <!-- Favicon: inline SVG (amber lotus/hands) + fallbacks -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23f59e0b' d='M50 10 C35 25 20 40 20 55 C20 72 33 85 50 85 C67 85 80 72 80 55 C80 40 65 25 50 10 Z M50 20 C60 32 70 44 70 55 C70 67 61 76 50 76 C39 76 30 67 30 55 C30 44 40 32 50 20 Z M35 55 C35 48 42 42 50 42 C58 42 65 48 65 55 C65 62 58 68 50 68 C42 68 35 62 35 55 Z'/%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- Performance Preloads -->
+    <link rel="modulepreload" href="/src/main.tsx">
+
     <!-- Google tag (gtag.js) - homemassageubud.com only -->
     <script>
       (function() {
@@ -36,61 +150,22 @@
         }
       })();
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Performance: Preconnect to critical third-party domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://wa.me">
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-    <!-- Preload critical fonts -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
-
-    <!-- SEO Meta Tags -->
-    <title>Professional Ubud Massage Services | Premium In-Villa Therapy | Book Now</title>
-    <meta name="description" content="Discover Ubud's finest in-villa massage experience with certified Balinese therapists. Premium in-villa massage with certified Balinese therapists. Traditional, deep tissue & aromatherapy from IDR 320K. Available daily 7AM-10PM throughout Ubud." />
-    <meta name="keywords" content="professional ubud massage, premium villa massage ubud, certified massage therapist ubud, authentic balinese massage, therapeutic deep tissue ubud, luxury aromatherapy massage, expert couples massage ubud, mobile spa services ubud, private massage therapy ubud, wellness treatments ubud bali, healing massage sessions ubud, traditional balinese therapy, hot stone massage therapy, specialized thai massage, prenatal massage care, lymphatic drainage therapy, reflexology treatment ubud, post-trek recovery massage, yoga therapy massage, ubud center wellness, penestanan spa services, sayan valley massage, campuhan ridge therapy, tegallalang massage services, sanggingan wellness treatments" />
-    <meta name="author" content="Home Massage Ubud" />
-    <meta name="google-site-verification" content="REPLACE_WITH_YOUR_VERIFICATION_CODE" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow" />
-    <link rel="canonical" href="https://homemassageubud.com" />
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Premium Ubud Massage | Luxury In-Villa Wellness Services Bali" />
-    <meta property="og:description" content="⭐ Award-winning Ubud massage therapy delivered to your villa. Expert Balinese therapists offering traditional, deep tissue & aromatherapy treatments. Instant WhatsApp booking available!" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://homemassageubud.com" />
-    <meta property="og:site_name" content="Home Massage Ubud" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:image" content="https://homemassageubud.com/og-image.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Professional Balinese massage therapy session in luxury villa setting" />
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Premium Ubud Massage | Expert In-Villa Therapy Services" />
-    <meta name="twitter:description" content="⭐ Professional massage therapy in Ubud, delivered to your villa doorstep. Certified therapists, authentic Balinese treatments. Quick booking via WhatsApp!" />
-    <meta name="twitter:image" content="https://homemassageubud.com/twitter-image.jpg" />
-    <meta name="twitter:image:alt" content="Professional Balinese massage therapy in villa" />
-    
-    <!-- 
+    <!--
       ========================================
       SCHEMA.ORG STRUCTURED DATA - HOMEPAGE
       ========================================
-      
+
       This JSON-LD structured data helps Google understand your business
       and enables rich results in search (business cards, maps, reviews).
-      
+
       IMPORTANT: This schema is loaded on EVERY page via index.html.
       All other page-specific schemas reference this using @id.
-      
+
       SCHEMA PROPERTY EXPLANATIONS:
       - @type: "HealthAndBeautyBusiness" - More specific than "LocalBusiness" for spa/wellness
       - @id: Unique identifier that other schemas reference via "provider": { "@id": "..." }
-      - name: Business name shown in search results  
+      - name: Business name shown in search results
       - alternateName: Alternative names customers search for
       - description: Brief service overview (max 250 chars) for business cards
       - url: Your primary website address
@@ -197,34 +272,9 @@
       document.head.appendChild(s);
     })();
     </script>
-    
-    <!-- Performance Optimizations -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://wa.me">
-    <link rel="dns-prefetch" href="https://images.unsplash.com">
-    
-    <!-- Critical Fonts Preload -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"></noscript>
-    
-    <!-- Language and Region -->
-    <meta name="language" content="English">
-    <meta name="geo.region" content="ID-BA">
-    <meta name="geo.placename" content="Ubud, Bali">
-    <meta name="geo.position" content="-8.5069;115.2625">
-    <meta name="ICBM" content="-8.5069, 115.2625">
-    
-    <!-- Additional SEO -->
-    <meta name="theme-color" content="#f59e0b">
-    <meta name="msapplication-TileColor" content="#f59e0b">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
   </body>
 </html>

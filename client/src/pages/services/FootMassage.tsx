@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'foot-massage',
   keyword: 'foot massage',
   
-  metaTitle: 'Foot Massage Ubud | Professional Reflexology Service | Villa Delivery END',
-  metaDescription: 'Revive tired feet with expert foot massage in your Ubud villa. Reflexology techniques, pressure point therapy. Perfect after hiking. Book via WhatsApp now. END',
+  metaTitle: 'Foot Massage Ubud | Professional Reflexology Service | Villa Delivery',
+  metaDescription: 'Revive tired feet with expert foot massage in your Ubud villa. Reflexology techniques, pressure point therapy. Perfect after hiking. Book via WhatsApp now.',
   
   h1Title: 'Foot Massage – Revitalize Your Feet in Ubud',
   heroSubtitle: 'Give your hardworking feet the attention they deserve with our professional foot massage service. Expert reflexology techniques combined with soothing massage relieve tired feet and promote whole-body wellness in your villa.',

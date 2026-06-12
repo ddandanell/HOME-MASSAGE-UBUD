@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'body-massage',
   keyword: 'body massage',
   
-  metaTitle: 'Body Massage Ubud | Professional Full Treatment | Villa Delivery END',
-  metaDescription: 'Complete body massage delivered to your Ubud villa. Professional therapists, premium oils, full coverage treatment. All areas covered expertly. Book WhatsApp today. END',
+  metaTitle: 'Body Massage Ubud | Professional Full Treatment | Villa Delivery',
+  metaDescription: 'Complete body massage delivered to your Ubud villa. Professional therapists, premium oils, full coverage treatment. All areas covered expertly. Book WhatsApp today.',
   
   h1Title: 'Body Massage – Professional Treatment in Ubud',
   heroSubtitle: 'Treat your entire body to expert care with our professional body massage service. Comprehensive treatment covering all major muscle groups, delivered by certified therapists in the comfort of your Ubud accommodation.',

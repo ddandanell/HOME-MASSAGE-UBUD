@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'mobile-massage',
   keyword: 'mobile massage',
   
-  metaTitle: 'Mobile Massage Ubud | On-Demand Spa Service Bali | Book WhatsApp END',
-  metaDescription: 'Professional mobile massage coming to your location in Ubud and Bali. On-demand spa service with licensed therapists. We travel to you. Book via WhatsApp anytime. END',
+  metaTitle: 'Mobile Massage Ubud | On-Demand Spa Service Bali | Book WhatsApp',
+  metaDescription: 'Professional mobile massage coming to your location in Ubud and Bali. On-demand spa service with licensed therapists. We travel to you. Book via WhatsApp anytime.',
   
   h1Title: 'Mobile Massage – We Come to Your Location',
   heroSubtitle: 'Experience the freedom of on-demand wellness with our professional mobile massage service. Our licensed therapists travel throughout Ubud and Bali, bringing complete spa setups directly to wherever you are staying or wherever you need treatment.',

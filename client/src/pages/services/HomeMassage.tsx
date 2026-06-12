@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'home-massage',
   keyword: 'home massage',
   
-  metaTitle: 'Home Massage Ubud | In-Villa Massage Service Bali | Book Now END',
-  metaDescription: 'Professional home massage delivered to your Ubud accommodation. Licensed therapists bring spa experience to your villa, hotel or guesthouse. Book via WhatsApp today. END',
+  metaTitle: 'Home Massage Ubud | In-Villa Massage Service Bali | Book Now',
+  metaDescription: 'Professional home massage delivered to your Ubud accommodation. Licensed therapists bring spa experience to your villa, hotel or guesthouse. Book via WhatsApp today.',
   
   h1Title: 'Home Massage – Spa Experience at Your Door',
   heroSubtitle: 'Transform your accommodation into a private spa with our professional home massage service. Expert therapists bring everything needed for a complete massage experience directly to your villa, hotel, or guesthouse throughout Ubud and Bali.',

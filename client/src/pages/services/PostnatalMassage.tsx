@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'postnatal-massage',
   keyword: 'postnatal massage',
   
-  metaTitle: 'Postnatal Massage Ubud | Post-Birth Recovery Treatment | Safe Care END',
-  metaDescription: 'Specialized postnatal massage supporting new mothers in Ubud. Safe post-birth recovery, gentle techniques, certified practitioners. Villa delivery available. Book now. END',
+  metaTitle: 'Postnatal Massage Ubud | Post-Birth Recovery Treatment | Safe Care',
+  metaDescription: 'Specialized postnatal massage supporting new mothers in Ubud. Safe post-birth recovery, gentle techniques, certified practitioners. Villa delivery available. Book now.',
   
   h1Title: 'Postnatal Massage – Recovery for New Mothers',
   heroSubtitle: 'Support your post-birth recovery with specialized postnatal massage designed for new mothers. Gentle techniques promote healing, ease tension from nursing and carrying, and provide nurturing self-care during this precious but demanding time.',

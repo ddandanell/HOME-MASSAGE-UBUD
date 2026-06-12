@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'reflexology',
   keyword: 'reflexology',
   
-  metaTitle: 'Reflexology Ubud | Pressure Point Therapy | Villa Service Bali END',
-  metaDescription: 'Professional reflexology in your Ubud villa. Expert pressure point therapy connecting feet to whole-body wellness. Certified therapists, proven techniques. Book now. END',
+  metaTitle: 'Reflexology Ubud | Pressure Point Therapy | Villa Service Bali',
+  metaDescription: 'Professional reflexology in your Ubud villa. Expert pressure point therapy connecting feet to whole-body wellness. Certified therapists, proven techniques. Book now.',
   
   h1Title: 'Reflexology – Pressure Point Wellness in Ubud',
   heroSubtitle: 'Unlock whole-body wellness through the ancient art of reflexology. Our certified practitioners apply precise pressure to foot zones that connect to organs and systems throughout your body, delivered in the comfort of your villa.',

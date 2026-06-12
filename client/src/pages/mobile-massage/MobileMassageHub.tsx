@@ -3,18 +3,41 @@ import { Link } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
+import SchemaMarkup from '@/components/SchemaMarkup';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Shield, MapPin, Calendar, Star } from 'lucide-react';
 import CrossSiloLinks from '@/components/CrossSiloLinks';
 
 export default function MobileMassageHub() {
+  const faqData = [
+    { question: "What is mobile massage?", answer: "Mobile massage is a professional massage service where therapists travel to your location — villa, hotel, or guesthouse — bringing all equipment including massage table, oils, and linens." },
+    { question: "How quickly can a mobile massage therapist arrive?", answer: "In central Ubud, Seminyak, and Canggu areas, we can often have a therapist at your door within 60-90 minutes. For other areas, we recommend booking 2-4 hours in advance." },
+    { question: "Is mobile massage available everywhere in Bali?", answer: "We cover all major tourist areas including Ubud, Seminyak, Canggu, Sanur, Nusa Dua, Uluwatu, Jimbaran, Kuta, and Legian. Remote areas may require advance booking and travel fees." },
+    { question: "What should I prepare for a mobile massage?", answer: "Just provide a quiet, private space approximately 2x3 meters. Our therapists bring the massage table, oils, towels, and everything else needed. Wear comfortable clothing." }
+  ];
+
   return (
     <>
       <SEOHead 
         title="Mobile Massage in Bali | Professional Massage at Your Villa"
         description="Professional mobile massage service delivered to your villa or hotel in Bali. Licensed therapists bring spa-quality treatments to your accommodation. Same-day booking available."
       />
+      <SchemaMarkup
+        type="service"
+        data={{
+          name: "Mobile Massage Bali",
+          description: "Professional mobile massage service delivered to your villa or hotel anywhere in Bali. Licensed therapists travel to your accommodation with complete spa setup.",
+          url: "https://homemassageubud.com/mobile-massage",
+          areaServed: ["Ubud", "Seminyak", "Canggu", "Sanur", "Nusa Dua", "Uluwatu", "Jimbaran", "Kuta", "Legian"],
+          offers: [
+            { name: "Mobile Balinese Massage 60min", price: "320000", description: "Traditional massage at your location" },
+            { name: "Mobile Deep Tissue 60min", price: "380000", description: "Therapeutic mobile massage" },
+            { name: "Mobile Aromatherapy 60min", price: "350000", description: "Relaxing mobile aromatherapy" }
+          ]
+        }}
+      />
+      <SchemaMarkup type="faq" data={faqData} />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
         <main className="flex-grow">

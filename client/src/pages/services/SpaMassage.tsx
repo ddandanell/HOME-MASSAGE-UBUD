@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'spa-massage',
   keyword: 'spa massage',
   
-  metaTitle: 'Spa Massage Ubud | Luxury In-Villa Spa Experience Bali | Book Now END',
-  metaDescription: 'Indulge in luxury spa massage delivered to your Ubud villa. Professional therapists bring the complete spa experience to you. Premium oils, serene ambiance. Book today. END',
+  metaTitle: 'Spa Massage Ubud | Luxury In-Villa Spa Experience Bali | Book Now',
+  metaDescription: 'Indulge in luxury spa massage delivered to your Ubud villa. Professional therapists bring the complete spa experience to you. Premium oils, serene ambiance. Book today.',
   
   h1Title: 'Spa Massage – Luxury Villa Experience in Ubud',
   heroSubtitle: 'Transform your villa into a private sanctuary with our premium spa massage service. Experience authentic Balinese spa treatments delivered by expert therapists, complete with aromatherapy, premium oils, and tranquil ambiance.',

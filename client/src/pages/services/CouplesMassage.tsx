@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'couples-massage',
   keyword: 'couples massage',
   
-  metaTitle: 'Couples Massage Ubud | Romantic Villa Spa Experience | Book Now END',
-  metaDescription: 'Share a romantic couples massage experience in your Ubud villa. Two synchronized therapists, candlelit ambiance, premium service. Perfect for honeymoons. Book WhatsApp. END',
+  metaTitle: 'Couples Massage Ubud | Romantic Villa Spa Experience | Book Now',
+  metaDescription: 'Share a romantic couples massage experience in your Ubud villa. Two synchronized therapists, candlelit ambiance, premium service. Perfect for honeymoons. Book WhatsApp.',
   
   h1Title: 'Couples Massage – Romantic Villa Experience in Ubud',
   heroSubtitle: 'Create unforgettable memories with our romantic couples massage service. Two expert therapists deliver synchronized treatments in your private villa, complete with aromatherapy, candles, and premium Balinese oils.',

@@ -3,6 +3,7 @@ import TopBanner from "@/components/TopBanner";
 import VillaPartnerships from "@/components/VillaPartnerships";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import SchemaMarkup from "@/components/SchemaMarkup";
 
 export default function VillaPartnershipsPage() {
   return (
@@ -12,6 +13,22 @@ export default function VillaPartnershipsPage() {
         description="Partner your villa/hotel with Home Massage Ubud. Premium in-villa spa for guests. Enhance experience with professional massage. Join 50+ Ubud villa partners."
         canonical="https://homemassageubud.com/villa-partnerships"
         keywords="villa partnerships ubud, hotel massage service, resort spa collaboration, guest wellness ubud, villa amenities bali"
+      />
+      <SchemaMarkup
+        type="service"
+        data={{
+          name: "Villa Partnerships",
+          description: "Partner your villa/hotel with Home Massage Ubud. Premium in-villa spa for guests. Enhance experience with professional massage. Join 50+ Ubud villa partners.",
+          url: "https://homemassageubud.com/villa-partnerships",
+          areaServed: ["Ubud", "Seminyak", "Canggu", "Sanur", "Nusa Dua"],
+          offers: [
+            {
+              name: "Villa Partnership Program",
+              price: "Custom",
+              description: "Premium in-villa massage and spa services for villa and hotel guests, with dedicated therapist allocation and booking integration."
+            }
+          ]
+        }}
       />
       <TopBanner />
       <Header />

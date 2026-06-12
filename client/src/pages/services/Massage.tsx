@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'massage',
   keyword: 'massage',
   
-  metaTitle: 'Massage in Ubud Bali | Professional Villa Massage Service | Home Massage Ubud END',
-  metaDescription: 'Experience the finest massage in Ubud Bali delivered to your villa. Over 100 certified therapists, premium oils, 10+ years experience. Book via WhatsApp today. END',
+  metaTitle: 'Massage in Ubud Bali | Professional Villa Massage Service | Home Massage Ubud',
+  metaDescription: 'Experience the finest massage in Ubud Bali delivered to your villa. Over 100 certified therapists, premium oils, 10+ years experience. Book via WhatsApp today.',
   
   h1Title: 'Massage in Ubud – Premium Villa Service',
   heroSubtitle: 'Discover authentic Balinese massage therapy brought directly to your accommodation. Our certified therapists deliver spa-quality treatments to villas, hotels, and guesthouses throughout Ubud and Bali.',

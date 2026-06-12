@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Heart, Sparkles } from 'lucide-react';
 import { Link } from 'wouter';
 import SEOHead from '@/components/SEOHead';
+import SchemaMarkup from '@/components/SchemaMarkup';
 import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
 
 const treatments = [
@@ -131,6 +132,30 @@ export default function Treatments() {
         description="Massage treatments Ubud delivered to your villa. Traditional Balinese, deep tissue, hot stone, Thai, aromatherapy & more. Licensed therapists. Book today."
         canonical="https://homemassageubud.com/treatments"
         keywords="massage treatments ubud, balinese massage, deep tissue massage, spa menu ubud, massage types bali, in-villa treatments"
+      />
+      <SchemaMarkup
+        type="service"
+        data={{
+          name: "Massage Treatments Ubud",
+          description: "Massage treatments Ubud delivered to your villa. Traditional Balinese, deep tissue, hot stone, Thai, aromatherapy & more. Licensed therapists. Book today.",
+          url: "https://homemassageubud.com/treatments",
+          areaServed: ["Ubud", "Seminyak", "Canggu", "Sanur", "Nusa Dua"],
+          offers: [
+            { name: "Traditional Balinese Massage", price: "Rp 380,000", description: "Authentic palm pressure, acupressure & aromatherapy" },
+            { name: "Deep Tissue Massage", price: "Rp 380,000", description: "Intense pressure for muscle tension & knots" },
+            { name: "Aromatherapy Massage", price: "Rp 320,000", description: "Essential oils for relaxation & healing" },
+            { name: "Hot Stone Massage", price: "Rp 390,000", description: "Heated volcanic stones for deep relaxation" },
+            { name: "Thai Massage", price: "Rp 390,000", description: "Assisted stretching & pressure point work" },
+            { name: "Lymphatic Drainage Massage", price: "Rp 450,000", description: "Gentle technique for detox & de-bloating" },
+            { name: "Pregnancy Massage", price: "Rp 390,000", description: "Safe, specialized care for expecting mothers" },
+            { name: "Foot Reflexology", price: "Rp 380,000", description: "Pressure points on feet for whole-body benefits" },
+            { name: "Post-Hike Recovery Massage", price: "Rp 380,000", description: "Relief for tired muscles after trekking" },
+            { name: "Yoga Stretch & Massage", price: "Rp 380,000", description: "Assisted stretching combined with massage" },
+            { name: "Detox & Wellness Massage", price: "Rp 420,000", description: "Full-body detoxification & rejuvenation" },
+            { name: "Couples Wellness Ritual", price: "Rp 620,000", description: "Romantic synchronized massage for two" },
+            { name: "Herbal & Bamboo Massage", price: "Rp 450,000", description: "Traditional herbs & bamboo stick techniques" }
+          ]
+        }}
       />
       
       <Header />

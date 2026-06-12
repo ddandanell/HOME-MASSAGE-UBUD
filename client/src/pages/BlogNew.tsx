@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Calendar, Clock, User, ArrowRight, Heart, Leaf, Zap } from 'lucide-react';
-import SchemaMarkup from '../components/SchemaMarkup';
+import SchemaMarkup from '@/components/SchemaMarkup';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
@@ -108,10 +108,34 @@ export default function BlogNew() {
         canonical="https://homemassageubud.com/blog"
         keywords="massage blog ubud, wellness tips bali, balinese healing, spa guides ubud, therapeutic massage advice, wellness insights"
       />
+      <SchemaMarkup
+        type="service"
+        data={{
+          name: 'Home Massage Ubud Blog & Wellness Resources',
+          description: 'Expert massage & wellness insights from Ubud therapists. Learn Balinese healing techniques, spa tips & treatments. Professional advice from licensed experts.',
+          url: 'https://homemassageubud.com/blog',
+          areaServed: ['Ubud', 'Seminyak', 'Canggu', 'Sanur', 'Nusa Dua'],
+          offers: [
+            {
+              name: 'Balinese Massage',
+              price: '350000',
+              description: 'Traditional Balinese massage therapy with aromatic oils'
+            },
+            {
+              name: 'Deep Tissue Massage',
+              price: '400000',
+              description: 'Therapeutic deep tissue massage for pain relief and recovery'
+            },
+            {
+              name: 'Aromatherapy Massage',
+              price: '380000',
+              description: 'Relaxing aromatherapy massage with premium essential oils'
+            }
+          ]
+        }}
+      />
       <Header />
       <div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-emerald-50">
-      <SchemaMarkup type="organization" data={blogSchema} />
-      
       {/* Hero Section - Mobile Optimized */}
       <section className="pt-20 pb-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">

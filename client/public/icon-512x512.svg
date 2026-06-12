@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="64" fill="#ffffff"/>
+  <g fill="none" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Lotus petals -->
+    <path d="M256 128 C256 128 192 192 192 256 C192 320 256 384 256 384" stroke-width="16"/>
+    <path d="M256 128 C256 128 320 192 320 256 C320 320 256 384 256 384" stroke-width="16"/>
+    <path d="M256 160 C256 160 213 213 213 267 C213 320 256 363 256 363" stroke-width="13"/>
+    <path d="M256 160 C256 160 299 213 299 267 C299 320 256 363 256 363" stroke-width="13"/>
+    <!-- Center stem -->
+    <line x1="256" y1="384" x2="256" y2="427" stroke-width="14"/>
+    <!-- Leaves -->
+    <path d="M256 405 C256 405 192 395 171 363" stroke-width="11"/>
+    <path d="M256 405 C256 405 320 395 341 363" stroke-width="11"/>
+  </g>
+  <!-- Center dot -->
+  <circle cx="256" cy="256" r="11" fill="#f59e0b"/>
+</svg>

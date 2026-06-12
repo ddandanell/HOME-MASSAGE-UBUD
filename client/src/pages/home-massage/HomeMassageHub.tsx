@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
+import SchemaMarkup from '@/components/SchemaMarkup';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Shield, MapPin, Calendar, Star } from 'lucide-react';
@@ -14,12 +15,34 @@ import BookingCTA from '@/components/home-massage/BookingCTA';
 import CrossSiloLinks from '@/components/CrossSiloLinks';
 
 export default function HomeMassageHub() {
+  const faqData = [
+    { question: "What is home massage?", answer: "Home massage is a professional massage service where licensed therapists travel to your accommodation — villa, hotel, or guesthouse — bringing all necessary equipment including massage table, premium oils, towels, and linens." },
+    { question: "How do I book a home massage in Bali?", answer: "Simply message us on WhatsApp at +62 811-2656-869 with your location, preferred treatment, and preferred time. We confirm availability within minutes and can often accommodate same-day bookings." },
+    { question: "What areas in Bali do you serve?", answer: "We provide home massage throughout Ubud, Seminyak, Canggu, Sanur, Nusa Dua, Uluwatu, Jimbaran, Kuta, Legian, and surrounding areas. Travel fees may apply for locations outside central areas." },
+    { question: "Is home massage safe?", answer: "Yes, all our therapists are licensed, background-checked, and follow strict hygiene protocols. We use fresh linens for every client and sanitize all equipment between sessions." }
+  ];
+
   return (
     <>
       <SEOHead 
         title="Home Massage in Bali | Ubud Luxury Villas"
         description="Book home massage in Bali today! Licensed therapists deliver professional home massage to your villa. Call +62 811-2656-869 or WhatsApp for same-day home massage availability."
       />
+      <SchemaMarkup
+        type="service"
+        data={{
+          name: "Home Massage Bali",
+          description: "Professional home massage service delivered to your villa or hotel in Bali. Licensed therapists bring spa-quality treatments to your accommodation.",
+          url: "https://homemassageubud.com/home-massage",
+          areaServed: ["Ubud", "Seminyak", "Canggu", "Sanur", "Nusa Dua", "Uluwatu", "Jimbaran", "Kuta", "Legian"],
+          offers: [
+            { name: "Traditional Balinese Massage 60min", price: "320000", description: "Authentic Balinese massage at your villa" },
+            { name: "Deep Tissue Massage 60min", price: "380000", description: "Therapeutic deep tissue treatment" },
+            { name: "Aromatherapy Massage 60min", price: "350000", description: "Relaxing aromatherapy massage" }
+          ]
+        }}
+      />
+      <SchemaMarkup type="faq" data={faqData} />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
         <main className="flex-grow">

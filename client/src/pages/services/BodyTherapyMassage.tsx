@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'body-therapy-massage',
   keyword: 'body therapy massage',
   
-  metaTitle: 'Body Therapy Massage Ubud | Therapeutic Bodywork Bali | Book Now END',
-  metaDescription: 'Specialized body therapy massage addressing physical issues in Ubud. Expert bodywork treating muscle tension, alignment, recovery. Villa delivery. Book WhatsApp. END',
+  metaTitle: 'Body Therapy Massage Ubud | Therapeutic Bodywork Bali | Book Now',
+  metaDescription: 'Specialized body therapy massage addressing physical issues in Ubud. Expert bodywork treating muscle tension, alignment, recovery. Villa delivery. Book WhatsApp.',
   
   h1Title: 'Body Therapy Massage – Therapeutic Bodywork in Ubud',
   heroSubtitle: 'Address your bodys specific needs with our specialized body therapy massage. Expert therapists combine multiple techniques to treat muscle issues, improve alignment, and support physical recovery in the comfort of your accommodation.',

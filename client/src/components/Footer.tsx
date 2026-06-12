@@ -86,8 +86,8 @@ export default function Footer() {
   return (
     <footer className="bg-secondary py-12 md:py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-8">
-          <div data-testid="footer-brand">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-8">
+          <div className="col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-1" data-testid="footer-brand">
             <div className="serif text-xl md:text-2xl font-bold text-primary mb-4" data-testid="footer-logo">
               Home Massage Ubud
             </div>
@@ -99,47 +99,61 @@ export default function Footer() {
               <p>hello@homemassageubud.com</p>
             </div>
             <div className="flex space-x-3 md:space-x-4">
-              <button className="text-muted-foreground hover:text-primary transition-colors" data-testid="footer-instagram">
+              <button
+                className="text-muted-foreground hover:text-primary transition-colors w-11 h-11 flex items-center justify-center"
+                data-testid="footer-instagram"
+                style={{ touchAction: 'manipulation' }}
+              >
                 <Instagram size={20} />
               </button>
-              <button className="text-muted-foreground hover:text-primary transition-colors" data-testid="footer-facebook">
+              <button
+                className="text-muted-foreground hover:text-primary transition-colors w-11 h-11 flex items-center justify-center"
+                data-testid="footer-facebook"
+                style={{ touchAction: 'manipulation' }}
+              >
                 <Facebook size={20} />
               </button>
-              <button className="text-muted-foreground hover:text-primary transition-colors" data-testid="footer-tripadvisor">
+              <button
+                className="text-muted-foreground hover:text-primary transition-colors w-11 h-11 flex items-center justify-center"
+                data-testid="footer-tripadvisor"
+                style={{ touchAction: 'manipulation' }}
+              >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
                 </svg>
               </button>
             </div>
           </div>
-          
+
           {footerSections.map((section, sectionIndex) => (
             <div key={sectionIndex} data-testid={`footer-section-${sectionIndex}`}>
               <h4 className="text-sm md:text-base font-semibold mb-3 md:mb-4" data-testid={`footer-section-title-${sectionIndex}`}>
                 {section.title}
               </h4>
-              <ul className="space-y-1 md:space-y-2 text-muted-foreground">
+              <ul className="space-y-2 md:space-y-3 text-muted-foreground">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
                     {link.external ? (
-                      <button 
+                      <button
                         onClick={() => handleLinkClick(link)}
-                        className="hover:text-primary transition-colors text-left text-sm md:text-base"
+                        className="hover:text-primary transition-colors text-left text-sm md:text-base py-1"
                         data-testid={`footer-link-${sectionIndex}-${linkIndex}`}
+                        style={{ touchAction: 'manipulation', minHeight: '32px' }}
                       >
                         {link.name}
                       </button>
                     ) : link.href.startsWith('/#') ? (
-                      <button 
+                      <button
                         onClick={() => handleLinkClick(link)}
-                        className="hover:text-primary transition-colors text-left text-sm md:text-base"
+                        className="hover:text-primary transition-colors text-left text-sm md:text-base py-1"
                         data-testid={`footer-link-${sectionIndex}-${linkIndex}`}
+                        style={{ touchAction: 'manipulation', minHeight: '32px' }}
                       >
                         {link.name}
                       </button>
                     ) : (
                       <Link href={link.href}>
-                        <span className="hover:text-primary transition-colors text-sm md:text-base">
+                        <span className="hover:text-primary transition-colors text-sm md:text-base block py-1" style={{ minHeight: '32px' }}>
                           {link.name}
                         </span>
                       </Link>
@@ -150,7 +164,7 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        
+
         <div className="border-t border-border mt-8 md:mt-12 pt-6 md:pt-8 text-center text-muted-foreground">
           <div className="mb-4">
             <Link href="/sitemap">

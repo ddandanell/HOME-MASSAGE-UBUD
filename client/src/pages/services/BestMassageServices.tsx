@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'best-massage-services',
   keyword: 'best massage services',
   
-  metaTitle: 'Best Massage Services Ubud | Top-Rated Villa Spa Bali | Book Now END',
-  metaDescription: 'Discover the best massage services in Ubud with our top-rated villa spa delivery. Over 100 therapists, 10+ years experience, 5-star reviews. Book via WhatsApp today. END',
+  metaTitle: 'Best Massage Services Ubud | Top-Rated Villa Spa Bali | Book Now',
+  metaDescription: 'Discover the best massage services in Ubud with our top-rated villa spa delivery. Over 100 therapists, 10+ years experience, 5-star reviews. Book via WhatsApp today.',
   
   h1Title: 'Best Massage Services in Ubud – Top-Rated Villa Spa',
   heroSubtitle: 'Experience why thousands choose us as the best massage services in Ubud. Our combination of over 100 certified therapists, 10+ years of experience, and consistent 5-star reviews has established us as the premier choice for villa massage delivery throughout Bali.',

@@ -3,12 +3,20 @@ import { Link } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
+import SchemaMarkup from '@/components/SchemaMarkup';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Shield, MapPin, Calendar, Star, Home, Sparkles, Users, Heart } from 'lucide-react';
 import CrossSiloLinks from '@/components/CrossSiloLinks';
 
 export default function VillaMassageHub() {
+  const faqData = [
+    { question: "What is villa massage?", answer: "Villa massage is a premium in-villa spa service where licensed therapists bring a complete spa setup to your private villa, including massage table, premium oils, aromatherapy, and fresh linens." },
+    { question: "How much does villa massage cost in Bali?", answer: "Our villa massage treatments start from IDR 320,000 for a 60-minute Traditional Balinese Massage. Deep Tissue starts at IDR 380,000 and Aromatherapy at IDR 350,000. Four-hands and couples packages are also available." },
+    { question: "Do I need to provide anything for the massage?", answer: "No, our therapists bring everything needed: professional massage table, premium organic oils, fresh towels and linens, aromatherapy diffuser, and relaxing music. You just need to provide the space." },
+    { question: "Which villa areas do you serve in Bali?", answer: "We serve all major villa areas including Ubud, Seminyak, Canggu, Sanur, Nusa Dua, Uluwatu, Jimbaran, Kuta, Legian, and Pererenan. Same-day booking is often available in central areas." }
+  ];
+
   return (
     <>
       <SEOHead 
@@ -16,6 +24,21 @@ export default function VillaMassageHub() {
         description="Professional villa massage service in Bali. Licensed therapists deliver luxury spa treatments directly to your private villa. Book same-day villa massage now."
         keywords="villa massage, villa massage bali, massage at villa, private villa massage, luxury villa massage, villa spa service"
       />
+      <SchemaMarkup
+        type="service"
+        data={{
+          name: "Villa Massage Bali",
+          description: "Premium villa massage service delivered to your private accommodation in Bali. Licensed therapists bring luxury spa treatments, premium oils, and complete setup to your villa.",
+          url: "https://homemassageubud.com/villa-massage",
+          areaServed: ["Ubud", "Seminyak", "Canggu", "Sanur", "Nusa Dua", "Uluwatu", "Jimbaran", "Kuta", "Legian", "Pererenan"],
+          offers: [
+            { name: "Traditional Balinese Villa Massage 60min", price: "320000", description: "Authentic Balinese massage in your villa" },
+            { name: "Deep Tissue Villa Massage 60min", price: "380000", description: "Intensive therapeutic villa massage" },
+            { name: "Couples Villa Massage 90min", price: "850000", description: "Romantic couples massage at your villa" }
+          ]
+        }}
+      />
+      <SchemaMarkup type="faq" data={faqData} />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />
         <main className="flex-grow">

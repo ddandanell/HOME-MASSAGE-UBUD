@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
+import SchemaMarkup from '@/components/SchemaMarkup';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Clock, Shield, MapPin, Heart, Star, Users, Sparkles, Laptop, Coffee, Wifi, Zap } from 'lucide-react';
@@ -10,10 +11,36 @@ import { Check, Clock, Shield, MapPin, Heart, Star, Users, Sparkles, Laptop, Cof
 export default function DigitalNomadWellnessHub() {
   return (
     <>
-      <SEOHead 
+      <SEOHead
         title="Digital Nomad Wellness Bali | Desk Pain Relief & Tech Neck Massage"
         description="Expert massage therapy for digital nomads in Bali. Relieve desk pain, tech neck, and work-related tension. Mobile service to coworking spaces and villas across Canggu, Ubud & Seminyak."
         keywords="digital nomad wellness, desk pain massage Bali, tech neck treatment, coworking massage, laptop posture relief, remote worker massage, Canggu wellness, Ubud digital nomad"
+      />
+      <SchemaMarkup
+        type="service"
+        data={{
+          name: "Digital Nomad Wellness Bali",
+          description: "Expert massage therapy for digital nomads in Bali. Relieve desk pain, tech neck, and work-related tension. Mobile service to coworking spaces and villas across Canggu, Ubud & Seminyak.",
+          url: "https://luxumassae.com/digital-nomad-wellness",
+          areaServed: ["Ubud", "Seminyak", "Canggu", "Sanur", "Nusa Dua"],
+          offers: [
+            {
+              name: "Quick Relief (60 minutes)",
+              price: "280000",
+              description: "Focused neck & shoulder work, tech neck relief, upper back tension release. Perfect for lunch breaks."
+            },
+            {
+              name: "Full Body Reset (90 minutes)",
+              price: "360000",
+              description: "Complete upper & lower body deep tissue massage for chronic pain, hip flexor & back relief, stress reduction techniques."
+            },
+            {
+              name: "Deep Repair (120 minutes)",
+              price: "480000",
+              description: "Extended deep tissue work for multiple problem areas, stretching & mobility work. Perfect for chronic issues."
+            }
+          ]
+        }}
       />
       <div className="min-h-screen bg-background flex flex-col">
         <Header />

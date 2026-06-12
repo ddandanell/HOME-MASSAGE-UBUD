@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'relaxing-massage',
   keyword: 'relaxing massage',
   
-  metaTitle: 'Relaxing Massage Ubud | Stress Relief Villa Service | Book Now END',
-  metaDescription: 'Unwind with a deeply relaxing massage in your Ubud villa. Gentle techniques, calming aromatherapy, peaceful atmosphere. Professional stress relief. WhatsApp booking. END',
+  metaTitle: 'Relaxing Massage Ubud | Stress Relief Villa Service | Book Now',
+  metaDescription: 'Unwind with a deeply relaxing massage in your Ubud villa. Gentle techniques, calming aromatherapy, peaceful atmosphere. Professional stress relief. WhatsApp booking.',
   
   h1Title: 'Relaxing Massage – Ultimate Stress Relief in Ubud',
   heroSubtitle: 'Let go of all tension and stress with our signature relaxing massage service. Gentle, flowing techniques combined with calming aromatherapy create the perfect environment for complete mental and physical unwinding in your private villa.',

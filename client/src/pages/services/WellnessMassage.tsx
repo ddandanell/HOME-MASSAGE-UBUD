@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'wellness-massage',
   keyword: 'wellness massage',
   
-  metaTitle: 'Wellness Massage Ubud | Holistic Mind-Body Treatment | Book Now END',
-  metaDescription: 'Experience holistic wellness massage in Ubud supporting mind, body and spirit. Integrative approach combining multiple modalities. Villa delivery available. Book WhatsApp. END',
+  metaTitle: 'Wellness Massage Ubud | Holistic Mind-Body Treatment | Book Now',
+  metaDescription: 'Experience holistic wellness massage in Ubud supporting mind, body and spirit. Integrative approach combining multiple modalities. Villa delivery available. Book WhatsApp.',
   
   h1Title: 'Wellness Massage – Holistic Mind-Body Care in Ubud',
   heroSubtitle: 'Nurture your complete wellbeing with our holistic wellness massage service. This integrative approach addresses not just muscle tension but your overall state of being - physical, mental, and emotional - creating balance and harmony throughout your system.',

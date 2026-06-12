@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'full-body-massage',
   keyword: 'full body massage',
   
-  metaTitle: 'Full Body Massage Ubud | Complete Head-to-Toe Treatment | Villa Service END',
-  metaDescription: 'Enjoy comprehensive full body massage in your Ubud villa. Expert therapists deliver complete head-to-toe relaxation. Premium oils, certified staff. Book WhatsApp now. END',
+  metaTitle: 'Full Body Massage Ubud | Complete Head-to-Toe Treatment | Villa Service',
+  metaDescription: 'Enjoy comprehensive full body massage in your Ubud villa. Expert therapists deliver complete head-to-toe relaxation. Premium oils, certified staff. Book WhatsApp now.',
   
   h1Title: 'Full Body Massage – Complete Relaxation in Ubud',
   heroSubtitle: 'Experience complete head-to-toe relaxation with our professional full body massage service. Our skilled therapists address every muscle group, delivering comprehensive treatment that leaves you feeling renewed and rejuvenated.',

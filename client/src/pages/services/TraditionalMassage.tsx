@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'traditional-massage',
   keyword: 'traditional massage',
   
-  metaTitle: 'Traditional Massage Ubud | Authentic Balinese Healing | Villa Service END',
-  metaDescription: 'Experience authentic traditional massage in Ubud. Ancient Balinese healing techniques delivered to your villa by certified local therapists. Book via WhatsApp today. END',
+  metaTitle: 'Traditional Massage Ubud | Authentic Balinese Healing | Villa Service',
+  metaDescription: 'Experience authentic traditional massage in Ubud. Ancient Balinese healing techniques delivered to your villa by certified local therapists. Book via WhatsApp today.',
   
   h1Title: 'Traditional Massage – Authentic Balinese Healing',
   heroSubtitle: 'Immerse yourself in centuries-old healing traditions with our authentic traditional massage service. Local Balinese therapists bring ancient techniques perfected over generations directly to your Ubud accommodation.',

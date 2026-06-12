@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'therapeutic-massage',
   keyword: 'therapeutic massage',
   
-  metaTitle: 'Therapeutic Massage Ubud | Treatment-Focused Bodywork | Book Now END',
-  metaDescription: 'Professional therapeutic massage targeting specific conditions in Ubud. Pain relief, injury recovery, chronic tension treatment. Licensed specialists. Book WhatsApp. END',
+  metaTitle: 'Therapeutic Massage Ubud | Treatment-Focused Bodywork | Book Now',
+  metaDescription: 'Professional therapeutic massage targeting specific conditions in Ubud. Pain relief, injury recovery, chronic tension treatment. Licensed specialists. Book WhatsApp.',
   
   h1Title: 'Therapeutic Massage – Treatment-Focused Care in Ubud',
   heroSubtitle: 'Move beyond relaxation to genuine healing with our therapeutic massage service. Licensed specialists deliver targeted treatments for pain relief, injury recovery, and chronic condition management in your Ubud accommodation.',

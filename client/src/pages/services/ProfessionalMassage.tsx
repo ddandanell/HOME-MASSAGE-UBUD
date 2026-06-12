@@ -6,8 +6,8 @@ const serviceData: ServiceLandingPageData = {
   slug: 'professional-massage',
   keyword: 'professional massage',
   
-  metaTitle: 'Professional Massage Ubud | Licensed Therapists Bali | Book Now END',
-  metaDescription: 'Experience professional massage from licensed, certified therapists in Ubud. High standards, proper techniques, premium equipment. Villa delivery. Book WhatsApp. END',
+  metaTitle: 'Professional Massage Ubud | Licensed Therapists Bali | Book Now',
+  metaDescription: 'Experience professional massage from licensed, certified therapists in Ubud. High standards, proper techniques, premium equipment. Villa delivery. Book WhatsApp.',
   
   h1Title: 'Professional Massage – Licensed Therapists in Ubud',
   heroSubtitle: 'Trust your body to genuine professionals. Our licensed massage therapists deliver treatments meeting the highest standards of training, technique, and safety. Experience the difference that true professionalism makes in every session.',

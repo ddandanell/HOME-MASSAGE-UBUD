@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
 # Sitemaps — both domains share this file; each crawler follows its own domain
 Sitemap: https://homemassageubud.com/sitemap.xml
@@ -8,9 +9,42 @@ Sitemap: https://homemassagekuta.com/sitemap-kuta.xml
 # Block admin/sensitive areas
 Disallow: /admin/
 Disallow: /api/
+Disallow: /preview/
 Disallow: /*.json$
 
 # Allow important crawling
 Allow: /images/
 Allow: /assets/
 Allow: /static/
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 2
+
+# Common AI crawlers
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 5
+
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 5

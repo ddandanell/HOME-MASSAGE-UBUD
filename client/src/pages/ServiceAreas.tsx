@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { MapPin, Heart } from 'lucide-react';
 import { Link } from 'wouter';
 import SEOHead from '@/components/SEOHead';
+import SchemaMarkup from '@/components/SchemaMarkup';
 import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
 
 const serviceAreas = [
@@ -174,6 +175,22 @@ export default function ServiceAreas() {
         description="Service areas for Ubud massage across 23+ Bali locations: Ubud, Seminyak, Canggu, Sanur, Uluwatu & more. Professional in-villa massage delivered to your location."
         canonical="https://homemassageubud.com/service-areas"
         keywords="massage service areas bali, ubud massage locations, seminyak massage, canggu massage, mobile spa bali, in-villa massage areas"
+      />
+      <SchemaMarkup
+        type="service"
+        data={{
+          name: "Service Areas Ubud Massage",
+          description: "Service areas for Ubud massage across 23+ Bali locations: Ubud, Seminyak, Canggu, Sanur, Uluwatu & more. Professional in-villa massage delivered to your location.",
+          url: "https://homemassageubud.com/service-areas",
+          areaServed: ["Ubud", "Seminyak", "Canggu", "Sanur", "Nusa Dua"],
+          offers: [
+            {
+              name: "In-Villa Massage Service",
+              price: "350000",
+              description: "Professional massage delivered to your villa or hotel across Bali"
+            }
+          ]
+        }}
       />
       
       <Header />

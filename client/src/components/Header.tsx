@@ -13,10 +13,27 @@ export default function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Close menu on route change
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location]);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMenuOpen]);
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -30,8 +47,8 @@ export default function Header() {
   return (
     <>
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100' 
+        isScrolled
+          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100'
           : 'bg-white/90 backdrop-blur-sm'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,7 +62,7 @@ export default function Header() {
                 <div className="font-bold text-lg sm:text-xl">
                   <span className="hidden sm:inline text-gray-900">Home Massage </span>
                   <span className="text-black md:text-amber-600">
-                    <span className="sm:hidden">HomeMassage</span>
+                    <span className="sm:hidden">Home Massage</span>
                     <span className="hidden sm:inline">Ubud</span>
                   </span>
                 </div>
@@ -56,7 +73,7 @@ export default function Header() {
               {navigation.map((item) => {
                 if (item.primary) {
                   return (
-                    <Button 
+                    <Button
                       key={item.name}
                       onClick={() => openWhatsApp(generateGeneralInquiryMessage())}
                       className="px-4 py-2 text-sm"
@@ -65,7 +82,7 @@ export default function Header() {
                     </Button>
                   );
                 }
-                
+
                 if (item.href.startsWith('#')) {
                   return (
                     <button
@@ -84,7 +101,7 @@ export default function Header() {
                     </button>
                   );
                 }
-                
+
                 return (
                   <Link key={item.name} href={item.href}>
                     <span className={`text-sm font-medium transition-colors hover:text-amber-600 ${
@@ -102,10 +119,11 @@ export default function Header() {
                 variant="ghost"
                 size="sm"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="p-1 hover:bg-gray-100"
+                className="p-0 w-11 h-11 min-w-[44px] min-h-[44px] hover:bg-gray-100"
+                style={{ touchAction: 'manipulation' }}
               >
-                {isMenuOpen ? 
-                  <X className="h-5 w-5 text-black" /> : 
+                {isMenuOpen ?
+                  <X className="h-5 w-5 text-black" /> :
                   <Menu className="h-5 w-5 text-black" />
                 }
               </Button>
@@ -114,84 +132,89 @@ export default function Header() {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t-2 border-gray-200 shadow-xl">
-            <div className="px-4 py-4 space-y-2">
-              {navigation.map((item) => {
-                if (item.primary) {
+          <>
+            {/* Backdrop */}
+            <div
+              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[-1] md:hidden"
+              onClick={() => setIsMenuOpen(false)}
+            />
+            <div className="md:hidden bg-white/95 backdrop-blur-lg border-t-2 border-gray-200 shadow-xl animate-in slide-in-from-top-5 duration-300">
+              <div className="px-4 py-4 space-y-2">
+                {navigation.map((item) => {
+                  if (item.primary) {
+                    return (
+                      <Button
+                        key={item.name}
+                        onClick={() => {
+                          openWhatsApp(generateGeneralInquiryMessage());
+                          setIsMenuOpen(false);
+                        }}
+                        className="w-full py-3 text-sm font-semibold rounded-lg"
+                      >
+                        {item.name}
+                      </Button>
+                    );
+                  }
+
+                  if (item.href.startsWith('#')) {
+                    return (
+                      <button
+                        key={item.name}
+                        onClick={() => {
+                          const element = document.querySelector(item.href);
+                          if (element) {
+                            element.scrollIntoView({ behavior: 'smooth' });
+                          }
+                          setIsMenuOpen(false);
+                        }}
+                        className="block w-full text-left px-4 py-3 text-base font-medium text-gray-900 hover:text-amber-600 hover:bg-amber-50 rounded-lg transition-colors"
+                      >
+                        {item.name}
+                      </button>
+                    );
+                  }
+
                   return (
-                    <Button
-                      key={item.name}
+                    <Link key={item.name} href={item.href}>
+                      <span
+                        className={`block px-4 py-3 text-base font-medium transition-colors hover:text-amber-600 rounded-lg ${
+                          location === item.href ? 'text-amber-600 bg-amber-50' : 'text-gray-900 hover:bg-gray-50'
+                        }`}
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {item.name}
+                      </span>
+                    </Link>
+                  );
+                })}
+
+                <div className="border-t-2 border-gray-100 pt-3 mt-3">
+                  <div className="flex items-center justify-center space-x-8 px-4 py-2">
+                    <a
+                      href={`tel:${WHATSAPP_NUMBER_FORMATTED.replace(/[^0-9+]/g, '')}`}
+                      className="flex items-center text-gray-700 hover:text-amber-600 transition-colors"
+                    >
+                      <Phone className="h-4 w-4 mr-2" />
+                      <span className="text-sm font-medium">{CTA_TEXT.CALL}</span>
+                    </a>
+
+                    <button
                       onClick={() => {
                         openWhatsApp(generateGeneralInquiryMessage());
                         setIsMenuOpen(false);
                       }}
-                      className="w-full py-3 text-sm font-semibold rounded-lg"
+                      className="flex items-center text-gray-900 hover:text-gray-900 transition-colors"
                     >
-                      {item.name}
-                    </Button>
-                  );
-                }
-                
-                if (item.href.startsWith('#')) {
-                  return (
-                    <button
-                      key={item.name}
-                      onClick={() => {
-                        const element = document.querySelector(item.href);
-                        if (element) {
-                          element.scrollIntoView({ behavior: 'smooth' });
-                        }
-                        setIsMenuOpen(false);
-                      }}
-                      className="block w-full text-left px-4 py-3 text-base font-medium text-gray-900 hover:text-amber-600 hover:bg-amber-50 rounded-lg transition-colors"
-                    >
-                      {item.name}
+                      <MessageCircle className="h-4 w-4 mr-2" />
+                      <span className="text-sm font-medium">WhatsApp</span>
                     </button>
-                  );
-                }
-                
-                return (
-                  <Link key={item.name} href={item.href}>
-                    <span 
-                      className={`block px-4 py-3 text-base font-medium transition-colors hover:text-amber-600 rounded-lg ${
-                        location === item.href ? 'text-amber-600 bg-amber-50' : 'text-gray-900 hover:bg-gray-50'
-                      }`}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {item.name}
-                    </span>
-                  </Link>
-                );
-              })}
-              
-              <div className="border-t-2 border-gray-100 pt-3 mt-3">
-                <div className="flex items-center justify-center space-x-8 px-4 py-2">
-                  <a 
-                    href={`tel:${WHATSAPP_NUMBER_FORMATTED.replace(/[^0-9+]/g, '')}`}
-                    className="flex items-center text-gray-700 hover:text-amber-600 transition-colors"
-                  >
-                    <Phone className="h-4 w-4 mr-2" />
-                    <span className="text-sm font-medium">{CTA_TEXT.CALL}</span>
-                  </a>
-                  
-                  <button
-                    onClick={() => {
-                      openWhatsApp(generateGeneralInquiryMessage());
-                      setIsMenuOpen(false);
-                    }}
-                    className="flex items-center text-gray-900 hover:text-gray-900 transition-colors"
-                  >
-                    <MessageCircle className="h-4 w-4 mr-2" />
-                    <span className="text-sm font-medium">WhatsApp</span>
-                  </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </>
         )}
       </header>
-
-
     </>
   );
 }
