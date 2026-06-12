@@ -43,12 +43,28 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground antialiased">
       {/* SEO Meta Tags */}
       <SEOHead
-        title="Ubud Massage | #1 In-Villa Spa Service Bali"
-        description="Ubud massage delivered to your villa. Professional Balinese therapists, traditional treatments from 320k IDR. Licensed, premium service. Book now +62 811-2656-869"
+        title="Premium Ubud Massage | In-Villa Spa Bali | Certified Therapists"
+        description="Premium in-villa massage in Ubud, Bali. Certified Balinese therapists deliver traditional, deep tissue & aromatherapy treatments to your villa. From IDR 320K. Same-day booking via WhatsApp."
         canonical="https://homemassageubud.com"
-        keywords="ubud massage, massage ubud, in villa massage ubud, balinese massage ubud, home massage ubud, spa ubud, massage ubud bali"
+        keywords="ubud massage, premium massage ubud, in villa massage ubud, balinese massage ubud, home massage ubud, spa ubud, massage ubud bali, certified massage therapist ubud, luxury massage ubud"
       />
       
+      {/* WebSite Schema with SearchAction */}
+      <SchemaMarkup
+        type="service"
+        data={{
+          name: "Home Massage Ubud",
+          description: "Premium in-villa massage services throughout Ubud, Bali. Certified therapists delivering traditional Balinese, deep tissue, aromatherapy, and specialized wellness treatments.",
+          url: "https://homemassageubud.com",
+          areaServed: ["Ubud", "Tegallalang", "Sanggingan", "Penestanan", "Campuhan", "Sayan"],
+          offers: [
+            { name: "60-Minute Massage", price: "320000", description: "Traditional Balinese Massage" },
+            { name: "90-Minute Massage", price: "450000", description: "Extended Relaxation Session" },
+            { name: "120-Minute Massage", price: "590000", description: "Full Wellness Experience" }
+          ]
+        }}
+      />
+
       {/* FAQ Schema for homepage */}
       <SchemaMarkup 
         type="faq" 
