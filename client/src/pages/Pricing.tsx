@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Check, Star, Users, Clock, MapPin, Shield, Award, Heart, MessageCircle, Phone } from 'lucide-react';
+import { Check, Star, Users, Clock, MapPin, Shield, Award, Heart, MessageCircle, Phone, Sparkles } from 'lucide-react';
 import { generateGeneralInquiryMessage, openWhatsApp } from '@/lib/whatsapp';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
