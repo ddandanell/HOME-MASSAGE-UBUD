@@ -70,8 +70,8 @@ const massageTypes = [
     description: 'Gentle therapeutic technique to boost immune system and reduce swelling',
     duration: '60-75 minutes',
     price: {
-      single: 384000,
-      couple: 720000
+      single: 480000,
+      couple: 900000
     },
     benefits: ['Detoxification', 'Reduced swelling', 'Immune boost', 'Improved circulation'],
     popular: false

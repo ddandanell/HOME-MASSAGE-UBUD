@@ -52,7 +52,7 @@ const treatments = [
     name: 'Lymphatic Drainage Massage', 
     url: '/ubud/lymphatic-drainage-massage',
     description: 'Gentle technique for detox & de-bloating',
-    priceFrom: 'Rp 384,000',
+    priceFrom: 'Rp 480,000',
     duration: '60-90 min',
     category: 'Therapeutic & Sports'
   },

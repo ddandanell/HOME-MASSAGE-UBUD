@@ -95,7 +95,7 @@ export default function Legian() {
       {
         name: 'Lymphatic Drainage Massage',
         slug: 'lymphatic-drainage-massage',
-        priceFrom: 'Rp 384,000',
+        priceFrom: 'Rp 480,000',
         duration: '60-90 min'
       }
     ],

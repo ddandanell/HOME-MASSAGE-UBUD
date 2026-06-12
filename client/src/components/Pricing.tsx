@@ -11,7 +11,7 @@ const pricingPackages = [
       { name: 'Aroma Therapy Massage (60 min)', price: 'Rp 304,000' },
       { name: 'Deep Tissue Reset (60 min)', price: 'Rp 320,000' },
       { name: 'Thai Massage (60 min)', price: 'Rp 360,000' },
-      { name: 'Lymphatic Drainage (60 min)', price: 'Rp 384,000' },
+      { name: 'Lymphatic Drainage (60 min)', price: 'Rp 480,000' },
       { name: 'Hot Stone Ritual (60 min)', price: 'Rp 360,000' }
     ],
     buttonText: 'Book 60 Min',
@@ -27,7 +27,7 @@ const pricingPackages = [
       { name: 'Deep Tissue Reset (90 min)', price: 'Rp 460,000' },
       { name: 'Thai Massage (90 min)', price: 'Rp 520,000' },
       { name: 'Bali Glow (Massage + Scrub) (90 min)', price: 'Rp 480,000' },
-      { name: 'Lymphatic Drainage (90 min)', price: 'Rp 550,000' },
+      { name: 'Lymphatic Drainage (90 min)', price: 'Rp 688,000' },
       { name: 'Hot Stone Ritual (90 min)', price: 'Rp 520,000' }
     ],
     note: 'Extended sessions for deeper relaxation and complete rejuvenation',

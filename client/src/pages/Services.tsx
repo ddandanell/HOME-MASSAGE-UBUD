@@ -94,7 +94,7 @@ export default function Services() {
       id: 6,
       name: 'Lymphatic Drainage',
       duration: '60-90 minutes',
-      price: 'From Rp 384,000',
+      price: 'From Rp 480,000',
       image: lymphaticImage,
       description: 'Gentle massage technique designed to stimulate lymphatic system and promote natural detoxification.',
       benefits: [
