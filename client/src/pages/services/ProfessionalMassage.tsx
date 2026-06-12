@@ -40,27 +40,27 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 240,000',
-      priceIDR: 'Rp 240,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Professional massage treatment from licensed therapist'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 360,000',
-      priceIDR: 'Rp 360,000',
+      price: 'Rp 390,000',
+      priceIDR: 'Rp 390,000',
       description: 'Extended professional session with comprehensive treatment',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 480,000',
-      priceIDR: 'Rp 480,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Full professional massage experience with multiple modalities'
     }
   ],
   couplesPricing: {
     duration: '90 Minutes',
-    price: 'Rp 800,000'
+    price: 'Rp 820,000'
   },
   addOns: [
     { name: 'Senior Therapist Request', price: 'Rp 50,000' },

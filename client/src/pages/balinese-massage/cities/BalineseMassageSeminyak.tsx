@@ -140,7 +140,7 @@ export default function BalineseMassageSeminyak() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-3xl mb-6 text-neutral-900">Pricing for Balinese Massage in Seminyak</h2>
           <p className="text-neutral-700 mb-6">
-            Our Seminyak massage pricing is transparent and competitive: 60-minute sessions start at 350,000 IDR, 90-minute treatments at 500,000 IDR, and 120-minute luxury experiences at 650,000 IDR. These rates include all equipment, premium oils, and travel to your location throughout Seminyak. No hidden fees, no surprises. For detailed pricing on specialty treatments and package options, visit our <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">pricing page</Link>.
+            Our Seminyak massage pricing is transparent and competitive: 60-minute sessions start at 320,000 IDR, 90-minute treatments at 450,000 IDR, and 120-minute luxury experiences at 590,000 IDR. These rates include all equipment, premium oils, and travel to your location throughout Seminyak. No hidden fees, no surprises. For detailed pricing on specialty treatments and package options, visit our <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">pricing page</Link>.
           </p>
         </div>
       </section>

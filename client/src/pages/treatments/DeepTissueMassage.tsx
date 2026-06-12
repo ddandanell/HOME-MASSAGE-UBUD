@@ -8,11 +8,11 @@ export default function DeepTissueMassage() {
     slug: 'deep-tissue-massage',
     h1Title: 'Deep Tissue Massage in Ubud – Villa Spa Delivered',
     metaTitle: 'Deep Tissue Massage Ubud | Villa Spa Treatment',
-    metaDescription: 'Deep tissue massage Ubud delivered to your villa. Expert therapists target chronic tension & muscle knots. From 320k IDR. Book professional treatment 7am-10pm.',
+    metaDescription: 'Deep tissue massage Ubud delivered to your villa. Expert therapists target chronic tension & muscle knots. From 380k IDR. Book professional treatment 7am-10pm.',
     heroSubtitle: 'Professional therapeutic deep tissue massage targeting chronic tension and muscle knots, delivered to your Ubud villa',
     duration: '60-120 minutes',
-    priceFrom: 'Rp 320,000',
-    priceFromIDR: 'Rp 320,000',
+    priceFrom: 'Rp 380,000',
+    priceFromIDR: 'Rp 380,000',
     image: deepTissueImage,
     description: 'Professional deep tissue massage Ubud - intensive therapeutic bodywork targeting chronic tension and muscle knots in your accommodation',
     longDescription: 'Our deep tissue massage in Ubud focuses on the deeper layers of muscle tissue to release chronic tension, break down adhesions, and restore mobility. Ideal for active travelers, hikers, and those with persistent muscle pain, this intensive therapeutic treatment uses slow, deliberate strokes and deep finger pressure to reach problem areas. Our certified therapists bring professional deep tissue techniques directly to your villa anywhere in Ubud.',
@@ -47,20 +47,20 @@ export default function DeepTissueMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: 'Rp 320,000',
-        priceIDR: 'Rp 320,000',
+        price: 'Rp 380,000',
+        priceIDR: 'Rp 380,000',
         description: 'Targeted deep tissue work on major problem areas - back, shoulders, or legs'
       },
       {
         duration: '90 Minutes',
-        price: 'Rp 460,000',
-        priceIDR: 'Rp 460,000',
+        price: 'Rp 540,000',
+        priceIDR: 'Rp 540,000',
         description: 'Full body deep tissue massage with extended focus on multiple tension areas'
       },
       {
         duration: '120 Minutes',
-        price: 'Rp 600,000',
-        priceIDR: 'Rp 600,000',
+        price: 'Rp 700,000',
+        priceIDR: 'Rp 700,000',
         description: 'Comprehensive therapeutic session with hot stone enhancement and stretching'
       }
     ],

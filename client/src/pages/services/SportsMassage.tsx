@@ -40,30 +40,30 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 320,000',
-      priceIDR: 'Rp 320,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Focused sports treatment targeting primary problem areas'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 480,000',
-      priceIDR: 'Rp 480,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Comprehensive sports massage addressing full-body athletic needs',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 640,000',
-      priceIDR: 'Rp 640,000',
+      price: 'Rp 700,000',
+      priceIDR: 'Rp 700,000',
       description: 'Full sports recovery session with stretching and trigger point release'
     }
   ],
   couplesPricing: {
     duration: '90 Minutes',
-    price: 'Rp 920,000'
+    price: 'Rp 1,100,000'
   },
   addOns: [
-    { name: 'Kinesiology Taping', price: 'Rp 100,000' },
+    { name: 'Kinesiology Taping', price: 'Rp 120,000' },
     { name: 'Ice/Heat Therapy', price: 'Rp 50,000' },
     { name: 'Extended Stretching', price: 'Rp 75,000' }
   ],

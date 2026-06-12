@@ -61,7 +61,7 @@ export default function BalineseMassageCandidasa() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-3xl mb-6">Pricing</h2>
           <p className="text-neutral-700">
-            60min 350K, 90min 500K, 120min 650K. <Link href="/pricing" className="text-amber-600 hover:text-amber-700">Details</Link>.
+            60min 320K, 90min 450K, 120min 590K. <Link href="/pricing" className="text-amber-600 hover:text-amber-700">Details</Link>.
           </p>
         </div>
       </section>

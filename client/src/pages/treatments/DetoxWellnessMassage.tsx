@@ -8,11 +8,11 @@ export default function DetoxWellnessMassage() {
     slug: 'detox-wellness-massage',
     h1Title: 'Detox & Wellness Massage in Ubud – Villa Spa Service',
     metaTitle: 'Detox Massage Ubud | Wellness & Cleansing Therapy',
-    metaDescription: 'Detox wellness massage Ubud for natural cleansing & rejuvenation to your villa. Holistic wellness treatment with herbal oils. From 360k IDR. Book 7am-10pm.',
+    metaDescription: 'Detox wellness massage Ubud for natural cleansing & rejuvenation to your villa. Holistic wellness treatment with herbal oils. From 350k IDR. Book 7am-10pm.',
     heroSubtitle: 'Comprehensive detoxification and wellness massage therapy in Ubud\'s premier wellness destination',
     duration: '90-120 minutes',
-    priceFrom: 'Rp 440,000',
-    priceFromIDR: 'Rp 440,000',
+    priceFrom: 'Rp 490,000',
+    priceFromIDR: 'Rp 490,000',
     image: detoxImage,
     description: 'Detox wellness massage Ubud - comprehensive cleansing treatment for body purification and renewal',
     longDescription: 'Embrace Ubud\'s renowned wellness culture with our Detox & Wellness Massage, designed to support your body\'s natural cleansing processes. This comprehensive treatment combines lymphatic drainage, deep tissue work, and energy balancing techniques to promote detoxification, boost immunity, and restore vitality. Perfect for guests on wellness retreats or seeking deeper healing, our certified therapists bring this transformative treatment to your villa in Ubud, allowing you to experience authentic Balinese wellness traditions in complete privacy.',
@@ -47,20 +47,20 @@ export default function DetoxWellnessMassage() {
     packages: [
       {
         duration: '90 Minutes',
-        price: 'Rp 440,000',
-        priceIDR: 'Rp 440,000',
+        price: 'Rp 490,000',
+        priceIDR: 'Rp 490,000',
         description: 'Comprehensive detox massage with lymphatic drainage and energy balancing'
       },
       {
         duration: '120 Minutes',
-        price: 'Rp 600,000',
-        priceIDR: 'Rp 600,000',
+        price: 'Rp 640,000',
+        priceIDR: 'Rp 640,000',
         description: 'Extended wellness ritual with body scrub, detox massage, and aromatherapy'
       },
       {
         duration: '150 Minutes',
-        price: 'Rp 760,000',
-        priceIDR: 'Rp 760,000',
+        price: 'Rp 820,000',
+        priceIDR: 'Rp 820,000',
         description: 'Complete detox experience with body treatment, massage, and guided meditation'
       }
     ],

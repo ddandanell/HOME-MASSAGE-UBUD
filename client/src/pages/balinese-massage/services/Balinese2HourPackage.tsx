@@ -72,7 +72,7 @@ export default function Balinese2HourPackage() {
                       </div>
                       <div className="flex items-center justify-center gap-2 mb-6">
                         <DollarSign className="w-6 h-6 text-primary" />
-                        <span className="text-3xl font-bold">Rp 650,000</span>
+                        <span className="text-3xl font-bold">Rp 590,000</span>
                       </div>
                       <p className="text-muted-foreground mb-6">
                         Complete traditional ritual with comprehensive techniques, extended bodywork, and additional healing modalities

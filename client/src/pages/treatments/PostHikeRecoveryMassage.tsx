@@ -8,11 +8,11 @@ export default function PostHikeRecoveryMassage() {
     slug: 'post-hike-recovery-massage',
     h1Title: 'Post-Hike Recovery Massage in Ubud – Villa Service',
     metaTitle: 'Post-Hike Massage Ubud | Recovery After Trekking',
-    metaDescription: 'Post-hike massage Ubud after Campuhan or Tegallalang trek to your villa. Relieve sore muscles & tired legs. From 320k IDR. Expert therapists 7am-10pm daily.',
+    metaDescription: 'Post-hike massage Ubud after Campuhan or Tegallalang trek to your villa. Relieve sore muscles & tired legs. From 380k IDR. Expert therapists 7am-10pm daily.',
     heroSubtitle: 'Specialized recovery massage for hikers and trekkers, delivered to your Ubud villa after your adventures',
     duration: '60-90 minutes',
-    priceFrom: 'Rp 320,000',
-    priceFromIDR: 'Rp 320,000',
+    priceFrom: 'Rp 380,000',
+    priceFromIDR: 'Rp 380,000',
     image: postHikeImage,
     description: 'Post-hike recovery massage Ubud - specialized treatment for muscle recovery after trekking',
     longDescription: 'After exploring Ubud\'s stunning rice terraces, ridge walks, and jungle trails, your body deserves expert care. Our post-hike recovery massage combines deep tissue techniques, stretching, and targeted muscle work to help your body recover from trekking adventures. Whether you\'ve hiked Campuhan Ridge, climbed through Tegallalang rice terraces, or trekked to waterfalls, our certified therapists bring specialized recovery treatment directly to your villa, helping you feel refreshed and ready for your next Ubud adventure.',
@@ -47,20 +47,20 @@ export default function PostHikeRecoveryMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: 'Rp 320,000',
-        priceIDR: 'Rp 320,000',
+        price: 'Rp 380,000',
+        priceIDR: 'Rp 380,000',
         description: 'Focused recovery massage on legs, feet, back, and shoulders after hiking'
       },
       {
         duration: '90 Minutes',
-        price: 'Rp 480,000',
-        priceIDR: 'Rp 480,000',
+        price: 'Rp 540,000',
+        priceIDR: 'Rp 540,000',
         description: 'Full body recovery session with deep tissue, stretching, and hot stone therapy'
       },
       {
         duration: '120 Minutes',
-        price: 'Rp 600,000',
-        priceIDR: 'Rp 600,000',
+        price: 'Rp 700,000',
+        priceIDR: 'Rp 700,000',
         description: 'Complete recovery package with body treatment, massage, and ice therapy for inflammation'
       }
     ],

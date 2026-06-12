@@ -299,12 +299,12 @@ export default function SanurMassageGuide() {
             <div className="bg-white rounded-lg p-6 text-center shadow-md">
               <div className="text-blue-600 font-bold text-xl mb-2">Mid-Range</div>
               <div className="text-3xl font-bold text-gray-900 mb-2">$8-$17</div>
-              <div className="text-sm text-gray-600">IDR 120k-250k / 60 min</div>
+              <div className="text-sm text-gray-600">IDR 150k-320k / 60 min</div>
             </div>
             <div className="bg-white rounded-lg p-6 text-center shadow-md">
               <div className="text-amber-600 font-bold text-xl mb-2">Luxury Spas</div>
               <div className="text-3xl font-bold text-gray-900 mb-2">$20-$50+</div>
-              <div className="text-sm text-gray-600">IDR 300k-700k+ / 60 min</div>
+              <div className="text-sm text-gray-600">IDR 320k-760k+ / 60 min</div>
             </div>
           </div>
 

@@ -117,8 +117,8 @@ export default function Pricing() {
   return (
     <>
       <SEOHead
-        title="Ubud Massage Pricing | Transparent Rates from 280k"
-        description="Ubud massage pricing from 280k IDR per session. In-villa service with licensed therapists, all equipment included. Traditional Balinese, deep tissue & more. Book now."
+        title="Ubud Massage Pricing | Transparent Rates from 320k"
+        description="Ubud massage pricing from 320k IDR per session. In-villa service with licensed therapists, all equipment included. Traditional Balinese, deep tissue & more. Book now."
         canonical="https://homemassageubud.com/pricing"
         keywords="ubud massage price, massage ubud cost, ubud massage rates, villa massage pricing, spa prices ubud, massage therapy cost ubud bali"
       />
@@ -137,7 +137,7 @@ export default function Pricing() {
           </h1>
           
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-10 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-            Ubud massage pricing from 280k IDR. Premium therapeutic treatments delivered to your villa. 
+            Ubud massage pricing from 320k IDR. Premium therapeutic treatments delivered to your villa. 
             All prices include transportation, setup, and professional equipment.
           </p>
 

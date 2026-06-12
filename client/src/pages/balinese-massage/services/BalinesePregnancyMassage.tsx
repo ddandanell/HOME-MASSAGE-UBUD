@@ -71,7 +71,7 @@ export default function BalinesePregnancyMassage() {
                       </div>
                       <div className="flex items-center gap-2 mb-4">
                         <DollarSign className="w-5 h-5 text-primary" />
-                        <span className="text-2xl font-bold">Rp 350,000</span>
+                        <span className="text-2xl font-bold">Rp 320,000</span>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Complete prenatal treatment with safe positioning
@@ -88,7 +88,7 @@ export default function BalinesePregnancyMassage() {
                       </div>
                       <div className="flex items-center gap-2 mb-4">
                         <DollarSign className="w-5 h-5 text-primary" />
-                        <span className="text-2xl font-bold">Rp 500,000</span>
+                        <span className="text-2xl font-bold">Rp 450,000</span>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Extended prenatal session for maximum comfort
@@ -104,7 +104,7 @@ export default function BalinesePregnancyMassage() {
                       </div>
                       <div className="flex items-center gap-2 mb-4">
                         <DollarSign className="w-5 h-5 text-primary" />
-                        <span className="text-2xl font-bold">Rp 650,000</span>
+                        <span className="text-2xl font-bold">Rp 590,000</span>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Comprehensive pregnancy wellness treatment

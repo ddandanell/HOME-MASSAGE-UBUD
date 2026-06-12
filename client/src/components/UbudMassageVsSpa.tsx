@@ -37,8 +37,8 @@ const comparisonData: ComparisonFeature[] = [
   },
   {
     feature: "Cost per Session",
-    inVilla: "From IDR 300K",
-    traditionalSpa: "From IDR 400K+",
+    inVilla: "From IDR 320K",
+    traditionalSpa: "From IDR 450K+",
     icon: DollarSign
   },
   {

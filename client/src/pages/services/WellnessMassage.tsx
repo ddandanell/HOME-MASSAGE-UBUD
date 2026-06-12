@@ -45,21 +45,21 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 280,000',
-      priceIDR: 'Rp 280,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Essential wellness massage balancing body and mind'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 400,000',
-      priceIDR: 'Rp 400,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Extended wellness session with comprehensive integrative approach',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 520,000',
-      priceIDR: 'Rp 520,000',
+      price: 'Rp 550,000',
+      priceIDR: 'Rp 550,000',
       description: 'Complete wellness ritual including meditation and energy work'
     }
   ],
@@ -69,7 +69,7 @@ const serviceData: ServiceLandingPageData = {
   },
   addOns: [
     { name: 'Guided Meditation', price: 'Rp 75,000' },
-    { name: 'Energy Balancing', price: 'Rp 100,000' },
+    { name: 'Energy Balancing', price: 'Rp 120,000' },
     { name: 'Sound Healing Element', price: 'Rp 75,000' }
   ],
   

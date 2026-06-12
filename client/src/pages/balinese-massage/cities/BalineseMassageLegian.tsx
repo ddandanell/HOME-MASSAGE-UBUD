@@ -94,7 +94,7 @@ export default function BalineseMassageLegian() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-3xl mb-6 text-neutral-900">Pricing for Balinese Massage in Legian</h2>
           <p className="text-neutral-700 mb-6">
-            Legian massage pricing: 60min 350K IDR, 90min 500K IDR, 120min 650K IDR. Includes travel, equipment, quality oils throughout Legian. Better value than hotel spas. <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">Full pricing</Link>.
+            Legian massage pricing: 60min 320K IDR, 90min 450K IDR, 120min 590K IDR. Includes travel, equipment, quality oils throughout Legian. Better value than hotel spas. <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">Full pricing</Link>.
           </p>
         </div>
       </section>

@@ -40,21 +40,21 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 240,000',
-      priceIDR: 'Rp 240,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Private at-home treatment in your personal space'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 360,000',
-      priceIDR: 'Rp 360,000',
+      price: 'Rp 390,000',
+      priceIDR: 'Rp 390,000',
       description: 'Extended at-home session with enhanced privacy and comfort',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 480,000',
-      priceIDR: 'Rp 480,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Comprehensive at-home spa experience in complete privacy'
     }
   ],

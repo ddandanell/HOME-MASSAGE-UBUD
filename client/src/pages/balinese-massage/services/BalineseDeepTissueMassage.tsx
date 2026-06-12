@@ -71,7 +71,7 @@ export default function BalineseDeepTissueMassage() {
                       </div>
                       <div className="flex items-center gap-2 mb-4">
                         <DollarSign className="w-5 h-5 text-primary" />
-                        <span className="text-2xl font-bold">Rp 350,000</span>
+                        <span className="text-2xl font-bold">Rp 320,000</span>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Focused deep tissue work on primary problem areas
@@ -88,7 +88,7 @@ export default function BalineseDeepTissueMassage() {
                       </div>
                       <div className="flex items-center gap-2 mb-4">
                         <DollarSign className="w-5 h-5 text-primary" />
-                        <span className="text-2xl font-bold">Rp 500,000</span>
+                        <span className="text-2xl font-bold">Rp 450,000</span>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Comprehensive full body deep tissue treatment
@@ -104,7 +104,7 @@ export default function BalineseDeepTissueMassage() {
                       </div>
                       <div className="flex items-center gap-2 mb-4">
                         <DollarSign className="w-5 h-5 text-primary" />
-                        <span className="text-2xl font-bold">Rp 650,000</span>
+                        <span className="text-2xl font-bold">Rp 590,000</span>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Extended session for chronic pain and multiple areas

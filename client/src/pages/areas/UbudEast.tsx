@@ -7,7 +7,7 @@ export default function UbudEast() {
     slug: 'ubud-east',
     h1Title: 'Villa Massage in Ubud East – Campuhan Ridge Area Spa',
     metaTitle: 'Massage Ubud East | Campuhan Ridge Area Service',
-    metaDescription: 'Villa massage Ubud East & Campuhan Ridge area. Perfect post-hike spa for wellness seekers. Professional treatment from 280k IDR. Book experts 7am-10pm daily.',
+    metaDescription: 'Villa massage Ubud East & Campuhan Ridge area. Perfect post-hike spa for wellness seekers. Professional treatment from 380k IDR. Book experts 7am-10pm daily.',
     heroSubtitle: 'Professional massage therapy delivered to your accommodation in Ubud East, near Campuhan Ridge Walk and wellness centers',
     areaDescription: 'Mobile massage service in Ubud East - gateway to Campuhan Ridge and wellness retreats',
     longDescription: 'Ubud East, including the Campuhan Ridge area, is known for its iconic ridge walk, wellness centers, and peaceful atmosphere. This area offers easy access to one of Bali\'s most beautiful hiking trails while maintaining proximity to central Ubud. Home to yoga studios, healing centers, and boutique accommodations, Ubud East attracts wellness-focused travelers. Our mobile massage service brings professional treatments directly to your hotel or villa, perfect for post-hike recovery or enhancing your wellness journey in this special part of Ubud.',
@@ -42,37 +42,37 @@ export default function UbudEast() {
       {
         name: 'Post-Hike Recovery Massage',
         slug: 'post-hike-recovery-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-90 min'
       },
       {
         name: 'Deep Tissue Massage',
         slug: 'deep-tissue-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-120 min'
       },
       {
         name: 'Yoga Stretch & Massage',
         slug: 'yoga-stretch-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-90 min'
       },
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: 'Rp 280,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-120 min'
       },
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: 'Rp 304,000',
+        priceFrom: 'Rp 350,000',
         duration: '60-120 min'
       },
       {
         name: 'Detox & Wellness Massage',
         slug: 'detox-wellness-massage',
-        priceFrom: 'Rp 384,000',
+        priceFrom: 'Rp 420,000',
         duration: '90-120 min'
       }
     ],

@@ -71,7 +71,7 @@ export default function BalineseRelaxationMassage() {
                       </div>
                       <div className="flex items-center gap-2 mb-4">
                         <DollarSign className="w-5 h-5 text-primary" />
-                        <span className="text-2xl font-bold">Rp 350,000</span>
+                        <span className="text-2xl font-bold">Rp 320,000</span>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Complete gentle treatment for stress relief
@@ -88,7 +88,7 @@ export default function BalineseRelaxationMassage() {
                       </div>
                       <div className="flex items-center gap-2 mb-4">
                         <DollarSign className="w-5 h-5 text-primary" />
-                        <span className="text-2xl font-bold">Rp 500,000</span>
+                        <span className="text-2xl font-bold">Rp 450,000</span>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Extended session for profound relaxation
@@ -104,7 +104,7 @@ export default function BalineseRelaxationMassage() {
                       </div>
                       <div className="flex items-center gap-2 mb-4">
                         <DollarSign className="w-5 h-5 text-primary" />
-                        <span className="text-2xl font-bold">Rp 650,000</span>
+                        <span className="text-2xl font-bold">Rp 590,000</span>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Ultimate relaxation ritual for complete peace

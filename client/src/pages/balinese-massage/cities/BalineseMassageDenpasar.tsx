@@ -60,7 +60,7 @@ export default function BalineseMassageDenpasar() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-3xl mb-6">Pricing</h2>
           <p className="text-neutral-700">
-            60min 350K, 90min 500K, 120min 650K IDR. <Link href="/pricing" className="text-amber-600 hover:text-amber-700">Full pricing</Link>.
+            60min 320K, 90min 450K, 120min 590K IDR. <Link href="/pricing" className="text-amber-600 hover:text-amber-700">Full pricing</Link>.
           </p>
         </div>
       </section>

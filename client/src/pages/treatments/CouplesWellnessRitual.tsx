@@ -8,11 +8,11 @@ export default function CouplesWellnessRitual() {
     slug: 'couples-wellness-ritual',
     h1Title: 'Couples Wellness Ritual in Ubud – Romantic Villa Spa',
     metaTitle: 'Couples Massage Ubud | Romantic Wellness Ritual',
-    metaDescription: 'Couples massage Ubud with romantic spa ritual to your villa. Perfect for honeymooners. Synchronized treatment from 850k IDR. Book romantic experience 7am-10pm.',
+    metaDescription: 'Couples massage Ubud with romantic spa ritual to your villa. Perfect for honeymooners. Synchronized treatment from 860k IDR. Book romantic experience 7am-10pm.',
     heroSubtitle: 'Romantic synchronized massage experience for couples, delivered to your private villa in Ubud paradise',
     duration: '90-150 minutes',
-    priceFrom: 'Rp 680,000',
-    priceFromIDR: 'Rp 680,000',
+    priceFrom: 'Rp 620,000',
+    priceFromIDR: 'Rp 620,000',
     image: couplesImage,
     description: 'Couples wellness ritual Ubud - romantic synchronized massage for two in your private villa',
     longDescription: 'Create unforgettable memories with our Couples Wellness Ritual in your Ubud villa. This romantic spa experience brings two certified therapists to provide synchronized massage treatments for you and your partner, creating harmony and deep connection. Perfect for honeymooners, anniversaries, or romantic getaways in Ubud, this luxurious treatment includes aromatherapy, essential oils, flower petals, and a serene ambiance. Experience authentic Balinese healing together in the privacy of your own villa, surrounded by Ubud\'s natural beauty.',
@@ -47,20 +47,20 @@ export default function CouplesWellnessRitual() {
     packages: [
       {
         duration: '90 Minutes',
-        price: 'Rp 680,000',
-        priceIDR: 'Rp 680,000',
+        price: 'Rp 620,000',
+        priceIDR: 'Rp 620,000',
         description: 'Synchronized couples massage with aromatherapy and romantic villa setup'
       },
       {
         duration: '120 Minutes',
-        price: 'Rp 880,000',
-        priceIDR: 'Rp 880,000',
+        price: 'Rp 860,000',
+        priceIDR: 'Rp 860,000',
         description: 'Extended romantic ritual with foot bath, body scrub, and couples massage'
       },
       {
         duration: '150 Minutes',
-        price: 'Rp 1,120,000',
-        priceIDR: 'Rp 1,120,000',
+        price: 'Rp 1,100,000',
+        priceIDR: 'Rp 1,100,000',
         description: 'Ultimate couples experience with full spa ritual, massage, and private relaxation time'
       }
     ],

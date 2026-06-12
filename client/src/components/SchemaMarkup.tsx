@@ -119,7 +119,7 @@ export default function SchemaMarkup({ type, data }: SchemaMarkupProps) {
          * Specifies pricing packages and availability
          * 
          * IMPORTANT: Prices must match what's displayed on the page
-         * Format: Numeric string without currency symbols (e.g., "450000" for IDR 450,000)
+         * Format: Numeric string without currency symbols (e.g., "450000" for IDR 320,000)
          * 
          * Multiple offers = different durations or packages
          * Single offer = one standard price

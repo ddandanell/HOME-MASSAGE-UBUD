@@ -140,7 +140,7 @@ export default function BalineseMassageUbud() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-3xl mb-6 text-neutral-900">Pricing for Balinese Massage in Ubud</h2>
           <p className="text-neutral-700 mb-6">
-            Our Ubud pricing reflects the authentic healing traditions of this sacred area: 60-minute sessions at 350,000 IDR, 90-minute treatments at 500,000 IDR, and 120-minute immersive experiences at 650,000 IDR. These rates include travel throughout Ubud's various neighborhoods, from town center to outlying rice field villas. No additional charges for distance. Complete pricing on our <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">pricing page</Link>.
+            Our Ubud pricing reflects the authentic healing traditions of this sacred area: 60-minute sessions at 320,000 IDR, 90-minute treatments at 450,000 IDR, and 120-minute immersive experiences at 590,000 IDR. These rates include travel throughout Ubud's various neighborhoods, from town center to outlying rice field villas. No additional charges for distance. Complete pricing on our <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">pricing page</Link>.
           </p>
         </div>
       </section>

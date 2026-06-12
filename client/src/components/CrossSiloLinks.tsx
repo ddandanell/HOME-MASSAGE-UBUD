@@ -16,7 +16,7 @@ export default function CrossSiloLinks({ currentSilo }: CrossSiloLinksProps) {
       href: '/home-massage',
       icon: Home,
       description: 'Professional massage delivered to your accommodation',
-      priceFrom: 'From Rp 280,000',
+      priceFrom: 'From Rp 320,000',
       color: 'bg-blue-50 border-blue-200 hover:border-blue-400'
     },
     {
@@ -25,7 +25,7 @@ export default function CrossSiloLinks({ currentSilo }: CrossSiloLinksProps) {
       href: '/mobile-massage',
       icon: Smartphone,
       description: 'On-demand massage service throughout Bali',
-      priceFrom: 'From Rp 280,000',
+      priceFrom: 'From Rp 320,000',
       color: 'bg-green-50 border-green-200 hover:border-green-400'
     },
     {
@@ -34,7 +34,7 @@ export default function CrossSiloLinks({ currentSilo }: CrossSiloLinksProps) {
       href: '/villa-massage',
       icon: Building,
       description: 'Luxury spa experience at your private villa',
-      priceFrom: 'From Rp 280,000',
+      priceFrom: 'From Rp 320,000',
       color: 'bg-purple-50 border-purple-200 hover:border-purple-400'
     }
   ];

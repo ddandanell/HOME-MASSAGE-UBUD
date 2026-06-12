@@ -140,7 +140,7 @@ export default function BalineseMassageJimbaran() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-3xl mb-6 text-neutral-900">Pricing for Balinese Massage in Jimbaran</h2>
           <p className="text-neutral-700 mb-6">
-            Jimbaran massage pricing: 60-minute sessions at 350,000 IDR, 90-minute at 500,000 IDR, 120-minute at 650,000 IDR. All prices include travel throughout Jimbaran, professional setup, and premium oils. Sunset-timed massages especially popular—book your session to end as the sun sets over the bay. Details at <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">pricing page</Link>.
+            Jimbaran massage pricing: 60-minute sessions at 320,000 IDR, 90-minute at 450,000 IDR, 120-minute at 590,000 IDR. All prices include travel throughout Jimbaran, professional setup, and premium oils. Sunset-timed massages especially popular—book your session to end as the sun sets over the bay. Details at <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">pricing page</Link>.
           </p>
         </div>
       </section>

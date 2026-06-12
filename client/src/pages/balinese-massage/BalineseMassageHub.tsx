@@ -403,15 +403,15 @@ export default function BalineseMassageHub() {
             <div className="bg-secondary/20 p-8 rounded-lg mb-6">
               <div className="grid md:grid-cols-3 gap-6 mb-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">350K IDR</div>
+                  <div className="text-3xl font-bold mb-2">320K IDR</div>
                   <div className="text-muted-foreground">60 Minutes</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">500K IDR</div>
+                  <div className="text-3xl font-bold mb-2">450K IDR</div>
                   <div className="text-muted-foreground">90 Minutes</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">650K IDR</div>
+                  <div className="text-3xl font-bold mb-2">590K IDR</div>
                   <div className="text-muted-foreground">120 Minutes</div>
                 </div>
               </div>

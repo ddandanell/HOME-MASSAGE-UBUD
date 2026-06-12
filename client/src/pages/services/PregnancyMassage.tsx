@@ -40,21 +40,21 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 320,000',
-      priceIDR: 'Rp 320,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Focused pregnancy massage addressing primary comfort needs'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 480,000',
-      priceIDR: 'Rp 480,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Extended maternal treatment with comprehensive body care',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 640,000',
-      priceIDR: 'Rp 640,000',
+      price: 'Rp 700,000',
+      priceIDR: 'Rp 700,000',
       description: 'Complete pregnancy wellness session including gentle facial and scalp'
     }
   ],

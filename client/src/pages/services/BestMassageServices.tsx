@@ -40,21 +40,21 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 240,000',
-      priceIDR: 'Rp 240,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Best-quality massage service with certified therapist'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 360,000',
-      priceIDR: 'Rp 360,000',
+      price: 'Rp 390,000',
+      priceIDR: 'Rp 390,000',
       description: 'Extended treatment with our top-rated service',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 480,000',
-      priceIDR: 'Rp 480,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Comprehensive best-in-class massage experience'
     }
   ],

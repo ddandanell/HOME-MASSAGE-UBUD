@@ -40,32 +40,32 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 280,000',
-      priceIDR: 'Rp 280,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Traditional Balinese massage covering major energy pathways'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 400,000',
-      priceIDR: 'Rp 400,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Extended traditional treatment with full body energy work',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 520,000',
-      priceIDR: 'Rp 520,000',
+      price: 'Rp 550,000',
+      priceIDR: 'Rp 550,000',
       description: 'Complete traditional ritual including prayer and herbal applications'
     }
   ],
   couplesPricing: {
     duration: '90 Minutes',
-    price: 'Rp 680,000'
+    price: 'Rp 620,000'
   },
   addOns: [
-    { name: 'Traditional Herbal Compress', price: 'Rp 100,000' },
-    { name: 'Boreh Body Mask', price: 'Rp 150,000' },
-    { name: 'Traditional Lulur Scrub', price: 'Rp 125,000' }
+    { name: 'Traditional Herbal Compress', price: 'Rp 120,000' },
+    { name: 'Boreh Body Mask', price: 'Rp 180,000' },
+    { name: 'Traditional Lulur Scrub', price: 'Rp 180,000' }
   ],
   
   servicesOverview: [

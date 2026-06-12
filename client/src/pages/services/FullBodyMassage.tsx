@@ -40,21 +40,21 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 240,000',
-      priceIDR: 'Rp 240,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Essential full body treatment covering all major areas efficiently'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 360,000',
-      priceIDR: 'Rp 360,000',
+      price: 'Rp 390,000',
+      priceIDR: 'Rp 390,000',
       description: 'Thorough full body massage with extra attention to problem zones',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 480,000',
-      priceIDR: 'Rp 480,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Luxurious extended session for ultimate full body relaxation'
     }
   ],
@@ -64,7 +64,7 @@ const serviceData: ServiceLandingPageData = {
   },
   addOns: [
     { name: 'Extended Foot Focus', price: 'Rp 75,000' },
-    { name: 'Back Intensive Add-on', price: 'Rp 100,000' },
+    { name: 'Back Intensive Add-on', price: 'Rp 120,000' },
     { name: 'Facial Massage', price: 'Rp 80,000' }
   ],
   

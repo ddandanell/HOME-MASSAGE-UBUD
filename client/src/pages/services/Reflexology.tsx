@@ -45,32 +45,32 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '45 Minutes',
-      price: 'Rp 200,000',
-      priceIDR: 'Rp 200,000',
+      price: 'Rp 250,000',
+      priceIDR: 'Rp 250,000',
       description: 'Focused reflexology session targeting specific zones'
     },
     {
       duration: '60 Minutes',
-      price: 'Rp 280,000',
-      priceIDR: 'Rp 280,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Complete reflexology treatment covering all foot zones',
       popular: true
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 400,000',
-      priceIDR: 'Rp 400,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Extended session with hand reflexology and detailed zone work'
     }
   ],
   couplesPricing: {
     duration: '60 Minutes',
-    price: 'Rp 520,000'
+    price: 'Rp 550,000'
   },
   addOns: [
     { name: 'Hand Reflexology', price: 'Rp 75,000' },
     { name: 'Ear Reflexology', price: 'Rp 50,000' },
-    { name: 'Facial Reflexology', price: 'Rp 100,000' }
+    { name: 'Facial Reflexology', price: 'Rp 120,000' }
   ],
   
   servicesOverview: [

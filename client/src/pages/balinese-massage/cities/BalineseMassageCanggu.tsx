@@ -140,7 +140,7 @@ export default function BalineseMassageCanggu() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-3xl mb-6 text-neutral-900">Pricing for Balinese Massage in Canggu</h2>
           <p className="text-neutral-700 mb-6">
-            Canggu massage pricing remains affordable: 60-minute treatments at 350,000 IDR, 90-minute sessions at 500,000 IDR, and 120-minute luxury experiences at 650,000 IDR. All prices include transportation throughout Canggu, professional equipment, and premium oils. For digital nomads and long-term visitors, ask about package discounts. Full pricing details available on our <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">pricing page</Link>.
+            Canggu massage pricing remains affordable: 60-minute treatments at 320,000 IDR, 90-minute sessions at 450,000 IDR, and 120-minute luxury experiences at 590,000 IDR. All prices include transportation throughout Canggu, professional equipment, and premium oils. For digital nomads and long-term visitors, ask about package discounts. Full pricing details available on our <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">pricing page</Link>.
           </p>
         </div>
       </section>

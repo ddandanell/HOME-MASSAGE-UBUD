@@ -8,11 +8,11 @@ export default function YogaStretchMassage() {
     slug: 'yoga-stretch-massage',
     h1Title: 'Yoga Stretch & Massage in Ubud – Villa Wellness Service',
     metaTitle: 'Yoga Massage Ubud | Stretch & Flexibility Therapy',
-    metaDescription: 'Yoga massage Ubud combining assisted stretching & bodywork to your villa. Perfect for practitioners. Boost flexibility from 300k IDR. Book today 7am-10pm.',
+    metaDescription: 'Yoga massage Ubud combining assisted stretching & bodywork to your villa. Perfect for practitioners. Boost flexibility from 380k IDR. Book today 7am-10pm.',
     heroSubtitle: 'Specialized massage combining yoga stretching and therapeutic bodywork, perfect for Ubud\'s yoga community',
     duration: '60-90 minutes',
-    priceFrom: 'Rp 320,000',
-    priceFromIDR: 'Rp 320,000',
+    priceFrom: 'Rp 380,000',
+    priceFromIDR: 'Rp 380,000',
     image: yogaImage,
     description: 'Yoga stretch massage Ubud - combining therapeutic massage with assisted yoga stretches',
     longDescription: 'Designed specifically for Ubud\'s thriving yoga community, our Yoga Stretch & Massage service combines therapeutic massage techniques with assisted yoga stretches to enhance flexibility, release deep tension, and support your yoga practice. Whether you\'re attending yoga retreats, daily classes, or simply maintaining your personal practice in Ubud, this treatment helps deepen your flexibility, prevent injuries, and accelerate recovery. Our therapists, trained in both massage therapy and yoga principles, bring this specialized wellness service directly to your villa.',
@@ -47,20 +47,20 @@ export default function YogaStretchMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: 'Rp 320,000',
-        priceIDR: 'Rp 320,000',
+        price: 'Rp 380,000',
+        priceIDR: 'Rp 380,000',
         description: 'Yoga-focused massage with assisted stretches targeting key muscle groups'
       },
       {
         duration: '90 Minutes',
-        price: 'Rp 480,000',
-        priceIDR: 'Rp 480,000',
+        price: 'Rp 540,000',
+        priceIDR: 'Rp 540,000',
         description: 'Extended session with deep stretching, massage, and fascial release work'
       },
       {
         duration: '120 Minutes',
-        price: 'Rp 600,000',
-        priceIDR: 'Rp 600,000',
+        price: 'Rp 700,000',
+        priceIDR: 'Rp 700,000',
         description: 'Complete yoga wellness package with bodywork, stretching, and meditation guidance'
       }
     ],

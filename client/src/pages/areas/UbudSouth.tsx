@@ -7,7 +7,7 @@ export default function UbudSouth() {
     slug: 'ubud-south',
     h1Title: 'Villa Massage in Ubud South – Lodtunduh & Nyuh Kuning Spa',
     metaTitle: 'Massage Ubud South | Lodtunduh & Nyuh Kuning',
-    metaDescription: 'Villa massage Ubud South - Lodtunduh & Nyuh Kuning. Peaceful village spa to your accommodation near Monkey Forest area. From 280k IDR. Professional therapists.',
+    metaDescription: 'Villa massage Ubud South - Lodtunduh & Nyuh Kuning. Peaceful village spa to your accommodation near Monkey Forest area. From 380k IDR. Professional therapists.',
     heroSubtitle: 'Professional massage therapy delivered to your villa in Ubud South, serving Lodtunduh, Nyuh Kuning, and Monkey Forest areas',
     areaDescription: 'Mobile massage service in Ubud South - peaceful villages and Monkey Forest surroundings',
     longDescription: 'Ubud South encompasses charming villages including Lodtunduh and Nyuh Kuning, the artistic village at the edge of the Sacred Monkey Forest. This area offers authentic Balinese village life combined with easy access to Ubud\'s attractions. Nyuh Kuning is known for its wood carving artists and peaceful atmosphere, while Lodtunduh offers rice field views and traditional homestays. Our mobile massage service brings professional spa treatments to your accommodation in these southern areas, letting you experience wellness while staying in authentic Balinese village settings.',
@@ -42,37 +42,37 @@ export default function UbudSouth() {
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: 'Rp 240,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-120 min'
       },
       {
         name: 'Deep Tissue Massage',
         slug: 'deep-tissue-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-120 min'
       },
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: 'Rp 280,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-120 min'
       },
       {
         name: 'Herbal & Bamboo Massage',
         slug: 'herbal-bamboo-massage',
-        priceFrom: 'Rp 400,000',
+        priceFrom: 'Rp 450,000',
         duration: '90-120 min'
       },
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: 'Rp 360,000',
+        priceFrom: 'Rp 390,000',
         duration: '60-120 min'
       },
       {
         name: 'Thai Massage',
         slug: 'thai-massage',
-        priceFrom: 'Rp 360,000',
+        priceFrom: 'Rp 390,000',
         duration: '60-120 min'
       }
     ],

@@ -53,49 +53,49 @@ export default function NusaDua() {
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: 'Rp 280,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-120 min'
       },
       {
         name: 'Deep Tissue Massage',
         slug: 'deep-tissue-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-120 min'
       },
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: 'Rp 304,000',
+        priceFrom: 'Rp 350,000',
         duration: '60-120 min'
       },
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: 'Rp 360,000',
+        priceFrom: 'Rp 390,000',
         duration: '60-120 min'
       },
       {
         name: 'Couples Wellness Ritual',
         slug: 'couples-wellness-ritual',
-        priceFrom: 'Rp 680,000',
+        priceFrom: 'Rp 620,000',
         duration: '90-150 min'
       },
       {
         name: 'Pregnancy Massage',
         slug: 'pregnancy-massage',
-        priceFrom: 'Rp 336,000',
+        priceFrom: 'Rp 390,000',
         duration: '60-75 min'
       },
       {
         name: 'Lymphatic Drainage Massage',
         slug: 'lymphatic-drainage-massage',
-        priceFrom: 'Rp 480,000',
+        priceFrom: 'Rp 450,000',
         duration: '60-90 min'
       },
       {
         name: 'Thai Massage',
         slug: 'thai-massage',
-        priceFrom: 'Rp 360,000',
+        priceFrom: 'Rp 390,000',
         duration: '60-120 min'
       }
     ],
@@ -114,7 +114,7 @@ export default function NusaDua() {
       },
       {
         question: 'What are your prices compared to Nusa Dua resort spas?',
-        answer: 'Our pricing is significantly more affordable than most Nusa Dua resort spas while maintaining professional quality. Resort spas typically charge premium prices due to facility overhead. We offer the same (or higher) quality of licensed therapists, premium oils, and professional equipment, but with more transparent, accessible pricing. For example, where a resort might charge 800,000-1,200,000 IDR for treatments, ours range from 280,000-400,000 IDR for similar services.'
+        answer: 'Our pricing is significantly more affordable than most Nusa Dua resort spas while maintaining professional quality. Resort spas typically charge premium prices due to facility overhead. We offer the same (or higher) quality of licensed therapists, premium oils, and professional equipment, but with more transparent, accessible pricing. For example, where a resort might charge 820,000-1,200,000 IDR for treatments, ours range from 380,000-450,000 IDR for similar services.'
       },
       {
         question: 'Can I book massage for early morning or late evening at my resort?',

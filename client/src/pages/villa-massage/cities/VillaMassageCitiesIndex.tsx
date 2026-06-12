@@ -217,27 +217,27 @@ export default function VillaMassageCitiesIndex() {
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 text-left mb-8">
                   <div className="bg-background p-4 rounded-lg">
-                    <h3 className="font-semibold mb-2">Balinese Massage - Rp 280,000</h3>
+                    <h3 className="font-semibold mb-2">Balinese Massage - Rp 380,000</h3>
                     <p className="text-sm text-muted-foreground">Traditional long-stroke technique</p>
                   </div>
                   <div className="bg-background p-4 rounded-lg">
-                    <h3 className="font-semibold mb-2">Deep Tissue - Rp 320,000</h3>
+                    <h3 className="font-semibold mb-2">Deep Tissue - Rp 380,000</h3>
                     <p className="text-sm text-muted-foreground">Targeted muscle therapy</p>
                   </div>
                   <div className="bg-background p-4 rounded-lg">
-                    <h3 className="font-semibold mb-2">Couples Massage - Rp 520,000</h3>
+                    <h3 className="font-semibold mb-2">Couples Massage - Rp 550,000</h3>
                     <p className="text-sm text-muted-foreground">Side-by-side treatment</p>
                   </div>
                   <div className="bg-background p-4 rounded-lg">
-                    <h3 className="font-semibold mb-2">Aromatherapy - Rp 304,000</h3>
+                    <h3 className="font-semibold mb-2">Aromatherapy - Rp 350,000</h3>
                     <p className="text-sm text-muted-foreground">Essential oils therapy</p>
                   </div>
                   <div className="bg-background p-4 rounded-lg">
-                    <h3 className="font-semibold mb-2">Hot Stone - Rp 360,000</h3>
+                    <h3 className="font-semibold mb-2">Hot Stone - Rp 390,000</h3>
                     <p className="text-sm text-muted-foreground">Heated stone therapy</p>
                   </div>
                   <div className="bg-background p-4 rounded-lg">
-                    <h3 className="font-semibold mb-2">Prenatal Massage - Rp 336,000</h3>
+                    <h3 className="font-semibold mb-2">Prenatal Massage - Rp 390,000</h3>
                     <p className="text-sm text-muted-foreground">Safe pregnancy treatment</p>
                   </div>
                 </div>

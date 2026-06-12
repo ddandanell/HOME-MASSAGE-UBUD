@@ -12,7 +12,7 @@ const treatments = [
     name: 'Traditional Balinese Massage', 
     url: '/ubud/traditional-balinese-massage',
     description: 'Authentic palm pressure, acupressure & aromatherapy',
-    priceFrom: 'Rp 280,000',
+    priceFrom: 'Rp 380,000',
     duration: '60-120 min',
     category: 'Traditional & Relaxation'
   },
@@ -20,7 +20,7 @@ const treatments = [
     name: 'Deep Tissue Massage', 
     url: '/ubud/deep-tissue-massage',
     description: 'Intense pressure for muscle tension & knots',
-    priceFrom: 'Rp 320,000',
+    priceFrom: 'Rp 380,000',
     duration: '60-120 min',
     category: 'Therapeutic & Sports'
   },
@@ -28,7 +28,7 @@ const treatments = [
     name: 'Aromatherapy Massage', 
     url: '/ubud/aromatherapy-massage',
     description: 'Essential oils for relaxation & healing',
-    priceFrom: 'Rp 304,000',
+    priceFrom: 'Rp 350,000',
     duration: '60-120 min',
     category: 'Traditional & Relaxation'
   },
@@ -36,7 +36,7 @@ const treatments = [
     name: 'Hot Stone Massage', 
     url: '/ubud/hot-stone-massage',
     description: 'Heated volcanic stones for deep relaxation',
-    priceFrom: 'Rp 360,000',
+    priceFrom: 'Rp 390,000',
     duration: '60-120 min',
     category: 'Luxury & Special'
   },
@@ -44,7 +44,7 @@ const treatments = [
     name: 'Thai Massage', 
     url: '/ubud/thai-massage',
     description: 'Assisted stretching & pressure point work',
-    priceFrom: 'Rp 360,000',
+    priceFrom: 'Rp 390,000',
     duration: '60-120 min',
     category: 'Traditional & Relaxation'
   },
@@ -52,7 +52,7 @@ const treatments = [
     name: 'Lymphatic Drainage Massage', 
     url: '/ubud/lymphatic-drainage-massage',
     description: 'Gentle technique for detox & de-bloating',
-    priceFrom: 'Rp 480,000',
+    priceFrom: 'Rp 450,000',
     duration: '60-90 min',
     category: 'Therapeutic & Sports'
   },
@@ -60,7 +60,7 @@ const treatments = [
     name: 'Pregnancy Massage', 
     url: '/ubud/pregnancy-massage',
     description: 'Safe, specialized care for expecting mothers',
-    priceFrom: 'Rp 336,000',
+    priceFrom: 'Rp 390,000',
     duration: '60-90 min',
     category: 'Specialized'
   },
@@ -68,7 +68,7 @@ const treatments = [
     name: 'Foot Reflexology', 
     url: '/ubud/foot-reflexology',
     description: 'Pressure points on feet for whole-body benefits',
-    priceFrom: 'Rp 240,000',
+    priceFrom: 'Rp 380,000',
     duration: '45-60 min',
     category: 'Traditional & Relaxation'
   },
@@ -76,7 +76,7 @@ const treatments = [
     name: 'Post-Hike Recovery Massage', 
     url: '/ubud/post-hike-recovery-massage',
     description: 'Relief for tired muscles after trekking',
-    priceFrom: 'Rp 320,000',
+    priceFrom: 'Rp 380,000',
     duration: '60-90 min',
     category: 'Therapeutic & Sports'
   },
@@ -84,7 +84,7 @@ const treatments = [
     name: 'Yoga Stretch & Massage', 
     url: '/ubud/yoga-stretch-massage',
     description: 'Assisted stretching combined with massage',
-    priceFrom: 'Rp 320,000',
+    priceFrom: 'Rp 380,000',
     duration: '60-90 min',
     category: 'Therapeutic & Sports'
   },
@@ -92,7 +92,7 @@ const treatments = [
     name: 'Detox & Wellness Massage', 
     url: '/ubud/detox-wellness-massage',
     description: 'Full-body detoxification & rejuvenation',
-    priceFrom: 'Rp 384,000',
+    priceFrom: 'Rp 420,000',
     duration: '90 min',
     category: 'Therapeutic & Sports'
   },
@@ -100,7 +100,7 @@ const treatments = [
     name: 'Couples Wellness Ritual', 
     url: '/ubud/couples-wellness-ritual',
     description: 'Romantic synchronized massage for two',
-    priceFrom: 'Rp 680,000',
+    priceFrom: 'Rp 620,000',
     duration: '90-150 min',
     category: 'Luxury & Special'
   },
@@ -108,7 +108,7 @@ const treatments = [
     name: 'Herbal & Bamboo Massage', 
     url: '/ubud/herbal-bamboo-massage',
     description: 'Traditional herbs & bamboo stick techniques',
-    priceFrom: 'Rp 400,000',
+    priceFrom: 'Rp 450,000',
     duration: '90 min',
     category: 'Luxury & Special'
   },

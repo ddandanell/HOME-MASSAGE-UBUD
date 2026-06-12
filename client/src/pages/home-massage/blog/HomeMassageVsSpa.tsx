@@ -233,7 +233,7 @@ export default function HomeMassageVsSpa() {
                     <div className="space-y-2 text-muted-foreground ml-4">
                       <div className="flex justify-between">
                         <span>Massage service:</span>
-                        <span>Rp 400,000</span>
+                        <span>Rp 450,000</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Transportation:</span>
@@ -249,7 +249,7 @@ export default function HomeMassageVsSpa() {
                       </div>
                       <div className="flex justify-between font-bold text-primary border-t pt-2 mt-2">
                         <span>Total Cost:</span>
-                        <span>Rp 400,000</span>
+                        <span>Rp 450,000</span>
                       </div>
                     </div>
                   </div>
@@ -259,29 +259,29 @@ export default function HomeMassageVsSpa() {
                     <div className="space-y-2 text-muted-foreground ml-4">
                       <div className="flex justify-between">
                         <span>Base massage price:</span>
-                        <span>Rp 750,000</span>
+                        <span>Rp 760,000</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Transportation (roundtrip):</span>
-                        <span>Rp 100,000</span>
+                        <span>Rp 120,000</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Upgrade suggestions:</span>
-                        <span>Rp 150,000+</span>
+                        <span>Rp 180,000+</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Expected gratuity (15%):</span>
-                        <span>Rp 112,500</span>
+                        <span>Rp 160,000</span>
                       </div>
                       <div className="flex justify-between font-bold border-t pt-2 mt-2">
                         <span>Total Cost:</span>
-                        <span>Rp 1,112,500</span>
+                        <span>Rp 1,160,000</span>
                       </div>
                     </div>
                   </div>
 
                   <div className="bg-primary text-white p-4 rounded-lg text-center">
-                    <p className="font-semibold text-lg">Home Massage Savings: Rp 712,500 (64% less)</p>
+                    <p className="font-semibold text-lg">Home Massage Savings: Rp 700,000 (64% less)</p>
                   </div>
                 </div>
               </CardContent>
@@ -703,7 +703,7 @@ export default function HomeMassageVsSpa() {
         },
         {
           question: "Is home massage cheaper than spa massage?",
-          answer: "Yes. Home massage typically costs 40-60% less than equivalent spa massage. A 90-minute home massage costs approximately Rp 400,000-600,000 versus Rp 750,000-1,112,500 for comparable spa massage (including transportation and expected upgrades). Home massage eliminates facility overhead, passing savings directly to you."
+          answer: "Yes. Home massage typically costs 40-60% less than equivalent spa massage. A 90-minute home massage costs approximately Rp 450,000-700,000 versus Rp 760,000-1,160,000 for comparable spa massage (including transportation and expected upgrades). Home massage eliminates facility overhead, passing savings directly to you."
         },
         {
           question: "Is home massage as professional as spa massage?",

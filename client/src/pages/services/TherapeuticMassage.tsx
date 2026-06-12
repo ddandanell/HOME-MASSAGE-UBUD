@@ -40,31 +40,31 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 320,000',
-      priceIDR: 'Rp 320,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Focused therapeutic treatment for specific conditions'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 480,000',
-      priceIDR: 'Rp 480,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Comprehensive therapeutic session with full assessment',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 640,000',
-      priceIDR: 'Rp 640,000',
+      price: 'Rp 700,000',
+      priceIDR: 'Rp 700,000',
       description: 'Extended therapeutic treatment for complex conditions'
     }
   ],
   couplesPricing: {
     duration: '90 Minutes',
-    price: 'Rp 920,000'
+    price: 'Rp 1,100,000'
   },
   addOns: [
     { name: 'Clinical Assessment', price: 'Rp 75,000' },
-    { name: 'Home Exercise Program', price: 'Rp 100,000' },
+    { name: 'Home Exercise Program', price: 'Rp 120,000' },
     { name: 'Follow-up Consultation', price: 'Rp 50,000' }
   ],
   

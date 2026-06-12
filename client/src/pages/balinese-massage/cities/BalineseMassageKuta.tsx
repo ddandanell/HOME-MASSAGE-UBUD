@@ -140,7 +140,7 @@ export default function BalineseMassageKuta() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-3xl mb-6 text-neutral-900">Pricing for Balinese Massage in Kuta</h2>
           <p className="text-neutral-700 mb-6">
-            Kuta pricing: 60-minute 350,000 IDR, 90-minute 500,000 IDR, 120-minute 650,000 IDR. All include travel throughout Kuta and Tuban, professional equipment, quality oils. Great value compared to hotel spa prices. See <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">pricing page</Link> for packages.
+            Kuta pricing: 60-minute 320,000 IDR, 90-minute 450,000 IDR, 120-minute 590,000 IDR. All include travel throughout Kuta and Tuban, professional equipment, quality oils. Great value compared to hotel spa prices. See <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">pricing page</Link> for packages.
           </p>
         </div>
       </section>

@@ -45,32 +45,32 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 320,000',
-      priceIDR: 'Rp 320,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Complete spa massage experience with aromatherapy and premium oils'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 480,000',
-      priceIDR: 'Rp 480,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Extended spa session with scalp treatment and enhanced relaxation',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 640,000',
-      priceIDR: 'Rp 640,000',
+      price: 'Rp 700,000',
+      priceIDR: 'Rp 700,000',
       description: 'Luxury spa ritual including body scrub, massage, and refreshments'
     }
   ],
   couplesPricing: {
     duration: '90 Minutes',
-    price: 'Rp 850,000'
+    price: 'Rp 860,000'
   },
   addOns: [
-    { name: 'Balinese Body Scrub', price: 'Rp 150,000' },
-    { name: 'Facial Treatment', price: 'Rp 200,000' },
-    { name: 'Hair Cream Bath', price: 'Rp 100,000' }
+    { name: 'Balinese Body Scrub', price: 'Rp 180,000' },
+    { name: 'Facial Treatment', price: 'Rp 250,000' },
+    { name: 'Hair Cream Bath', price: 'Rp 120,000' }
   ],
   
   servicesOverview: [

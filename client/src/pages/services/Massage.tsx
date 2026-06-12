@@ -40,21 +40,21 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 240,000',
-      priceIDR: 'Rp 240,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Perfect introduction to massage therapy with full body relaxation treatment'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 360,000',
-      priceIDR: 'Rp 360,000',
+      price: 'Rp 390,000',
+      priceIDR: 'Rp 390,000',
       description: 'Extended session allowing deeper work on problem areas and enhanced relaxation',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 480,000',
-      priceIDR: 'Rp 480,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Comprehensive treatment with additional focus areas and ultimate relaxation time'
     }
   ],
@@ -63,7 +63,7 @@ const serviceData: ServiceLandingPageData = {
     price: 'Rp 760,000'
   },
   addOns: [
-    { name: 'Hot Stone Enhancement', price: 'Rp 100,000' },
+    { name: 'Hot Stone Enhancement', price: 'Rp 120,000' },
     { name: 'Aromatherapy Upgrade', price: 'Rp 50,000' },
     { name: 'Scalp Massage', price: 'Rp 75,000' }
   ],

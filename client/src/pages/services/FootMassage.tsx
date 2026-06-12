@@ -46,26 +46,26 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       duration: '60 Minutes',
-      price: 'Rp 240,000',
-      priceIDR: 'Rp 240,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Full foot treatment including lower legs and warm soak',
       popular: true
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 360,000',
-      priceIDR: 'Rp 360,000',
+      price: 'Rp 390,000',
+      priceIDR: 'Rp 390,000',
       description: 'Comprehensive foot care with extended leg massage and moisturizing treatment'
     }
   ],
   couplesPricing: {
     duration: '60 Minutes',
-    price: 'Rp 440,000'
+    price: 'Rp 490,000'
   },
   addOns: [
     { name: 'Herbal Foot Soak', price: 'Rp 50,000' },
     { name: 'Foot Scrub Treatment', price: 'Rp 75,000' },
-    { name: 'Paraffin Wax Treatment', price: 'Rp 100,000' }
+    { name: 'Paraffin Wax Treatment', price: 'Rp 120,000' }
   ],
   
   servicesOverview: [

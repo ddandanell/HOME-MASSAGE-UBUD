@@ -457,7 +457,7 @@ export default function NearMeMassageHub() {
                       <p className="text-muted-foreground mb-3">
                         Gentle, soothing massage for stress relief and deep relaxation
                       </p>
-                      <p className="text-sm font-semibold">From IDR 280,000</p>
+                      <p className="text-sm font-semibold">From IDR 380,000</p>
                     </CardContent>
                   </Card>
                   
@@ -469,7 +469,7 @@ export default function NearMeMassageHub() {
                       <p className="text-muted-foreground mb-3">
                         Intensive therapeutic massage targeting chronic muscle tension
                       </p>
-                      <p className="text-sm font-semibold">From IDR 320,000</p>
+                      <p className="text-sm font-semibold">From IDR 380,000</p>
                     </CardContent>
                   </Card>
                   
@@ -481,7 +481,7 @@ export default function NearMeMassageHub() {
                       <p className="text-muted-foreground mb-3">
                         Balinese healing techniques with acupressure and stretching
                       </p>
-                      <p className="text-sm font-semibold">From IDR 280,000</p>
+                      <p className="text-sm font-semibold">From IDR 380,000</p>
                     </CardContent>
                   </Card>
                   
@@ -493,7 +493,7 @@ export default function NearMeMassageHub() {
                       <p className="text-muted-foreground mb-3">
                         Smooth, flowing massage with aromatherapy oils
                       </p>
-                      <p className="text-sm font-semibold">From IDR 304,000</p>
+                      <p className="text-sm font-semibold">From IDR 350,000</p>
                     </CardContent>
                   </Card>
                   
@@ -505,7 +505,7 @@ export default function NearMeMassageHub() {
                       <p className="text-muted-foreground mb-3">
                         Two therapists provide simultaneous massage treatments
                       </p>
-                      <p className="text-sm font-semibold">From IDR 520,000</p>
+                      <p className="text-sm font-semibold">From IDR 550,000</p>
                     </CardContent>
                   </Card>
                   
@@ -517,7 +517,7 @@ export default function NearMeMassageHub() {
                       <p className="text-muted-foreground mb-3">
                         Sports and stress-relief massage for active individuals
                       </p>
-                      <p className="text-sm font-semibold">From IDR 320,000</p>
+                      <p className="text-sm font-semibold">From IDR 380,000</p>
                     </CardContent>
                   </Card>
                 </div>

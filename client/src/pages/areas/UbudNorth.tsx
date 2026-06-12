@@ -7,7 +7,7 @@ export default function UbudNorth() {
     slug: 'ubud-north',
     h1Title: 'Villa Massage in Penestanan & Sayan – Ubud North Spa',
     metaTitle: 'Massage Penestanan & Sayan | Ubud North Villas',
-    metaDescription: 'Villa massage Penestanan & Sayan Valley, Ubud North. Jungle spa with rice field views & natural ambiance. From 280k IDR. Expert therapists available 7am-10pm.',
+    metaDescription: 'Villa massage Penestanan & Sayan Valley, Ubud North. Jungle spa with rice field views & natural ambiance. From 380k IDR. Expert therapists available 7am-10pm.',
     heroSubtitle: 'Professional massage therapy delivered to your jungle villa in Penestanan, Sayan Valley, and north Ubud areas',
     areaDescription: 'Mobile massage service in Penestanan and Sayan - Ubud\'s peaceful jungle and rice field areas',
     longDescription: 'Penestanan and Sayan Valley represent the peaceful, artistic side of Ubud. These northern areas are known for stunning rice terraces, jungle villas, and tranquil atmosphere. Penestanan is an artist village with boutique accommodations overlooking rice fields, while Sayan Valley offers luxury resorts with dramatic gorge views. Our mobile massage service brings professional spa treatments to your jungle retreat, villa terrace, or poolside, allowing you to enjoy therapeutic healing while surrounded by Ubud\'s natural beauty.',
@@ -42,37 +42,37 @@ export default function UbudNorth() {
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: 'Rp 240,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-120 min'
       },
       {
         name: 'Post-Hike Recovery Massage',
         slug: 'post-hike-recovery-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-90 min'
       },
       {
         name: 'Yoga Stretch & Massage',
         slug: 'yoga-stretch-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-90 min'
       },
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: 'Rp 360,000',
+        priceFrom: 'Rp 390,000',
         duration: '60-120 min'
       },
       {
         name: 'Couples Wellness Ritual',
         slug: 'couples-wellness-ritual',
-        priceFrom: 'Rp 680,000',
+        priceFrom: 'Rp 620,000',
         duration: '90-150 min'
       },
       {
         name: 'Detox & Wellness Massage',
         slug: 'detox-wellness-massage',
-        priceFrom: 'Rp 440,000',
+        priceFrom: 'Rp 490,000',
         duration: '90-120 min'
       }
     ],

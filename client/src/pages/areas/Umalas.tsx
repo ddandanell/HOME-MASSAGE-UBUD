@@ -53,49 +53,49 @@ export default function Umalas() {
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: 'Rp 280,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-120 min'
       },
       {
         name: 'Deep Tissue Massage',
         slug: 'deep-tissue-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-120 min'
       },
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: 'Rp 304,000',
+        priceFrom: 'Rp 350,000',
         duration: '60-120 min'
       },
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: 'Rp 360,000',
+        priceFrom: 'Rp 390,000',
         duration: '60-120 min'
       },
       {
         name: 'Thai Massage',
         slug: 'thai-massage',
-        priceFrom: 'Rp 360,000',
+        priceFrom: 'Rp 390,000',
         duration: '60-120 min'
       },
       {
         name: 'Yoga Stretch & Massage',
         slug: 'yoga-stretch-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-90 min'
       },
       {
         name: 'Pregnancy Massage',
         slug: 'pregnancy-massage',
-        priceFrom: 'Rp 336,000',
+        priceFrom: 'Rp 390,000',
         duration: '60-75 min'
       },
       {
         name: 'Couples Wellness Ritual',
         slug: 'couples-wellness-ritual',
-        priceFrom: 'Rp 680,000',
+        priceFrom: 'Rp 620,000',
         duration: '90-150 min'
       }
     ],

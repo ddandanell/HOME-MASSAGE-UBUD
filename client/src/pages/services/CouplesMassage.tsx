@@ -40,8 +40,8 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 480,000',
-      priceIDR: 'Rp 480,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Essential couples massage for two with synchronized treatments'
     },
     {
@@ -53,16 +53,16 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 960,000',
-      priceIDR: 'Rp 960,000',
+      price: 'Rp 1,100,000',
+      priceIDR: 'Rp 1,100,000',
       description: 'Luxury couples ritual with body scrub, massage, and foot treatment'
     }
   ],
   addOns: [
-    { name: 'Rose Petal Setup', price: 'Rp 150,000' },
-    { name: 'Champagne Service', price: 'Rp 350,000' },
-    { name: 'Photo Package', price: 'Rp 200,000' },
-    { name: 'Couples Body Scrub', price: 'Rp 300,000' }
+    { name: 'Rose Petal Setup', price: 'Rp 180,000' },
+    { name: 'Champagne Service', price: 'Rp 320,000' },
+    { name: 'Photo Package', price: 'Rp 250,000' },
+    { name: 'Couples Body Scrub', price: 'Rp 380,000' }
   ],
   
   servicesOverview: [

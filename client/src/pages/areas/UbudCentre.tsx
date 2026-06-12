@@ -7,7 +7,7 @@ export default function UbudCentre() {
     slug: 'ubud-centre',
     h1Title: 'Villa Massage in Ubud Centre – In-Villa Spa Service',
     metaTitle: 'Villa Massage Ubud Centre | Near Palace & Market',
-    metaDescription: 'Villa massage Ubud Centre near Palace & Monkey Forest. Professional spa service to hotels & villas in heart of cultural hub. From 280k IDR. Licensed therapists.',
+    metaDescription: 'Villa massage Ubud Centre near Palace & Monkey Forest. Professional spa service to hotels & villas in heart of cultural hub. From 380k IDR. Licensed therapists.',
     heroSubtitle: 'Professional massage therapy delivered to your villa or hotel in central Ubud, near Ubud Palace and main attractions',
     areaDescription: 'Mobile massage service in Ubud Centre - heart of Bali\'s cultural and wellness hub',
     longDescription: 'Ubud Centre is the vibrant heart of Bali\'s cultural and wellness scene. Home to Ubud Palace, traditional markets, art galleries, and countless restaurants, the centre is where culture meets wellness. Our mobile massage service brings professional spa treatments directly to your villa, hotel, or guesthouse in central Ubud. Whether you\'re staying near Ubud Palace, along Jalan Raya Ubud, or close to Monkey Forest, we provide premium in-villa massage services that let you enjoy Ubud\'s healing energy without leaving your accommodation.',
@@ -42,37 +42,37 @@ export default function UbudCentre() {
       {
         name: 'Traditional Balinese Massage',
         slug: 'traditional-balinese-massage',
-        priceFrom: 'Rp 280,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-120 min'
       },
       {
         name: 'Deep Tissue Massage',
         slug: 'deep-tissue-massage',
-        priceFrom: 'Rp 320,000',
+        priceFrom: 'Rp 380,000',
         duration: '60-120 min'
       },
       {
         name: 'Aromatherapy Massage',
         slug: 'aromatherapy-massage',
-        priceFrom: 'Rp 304,000',
+        priceFrom: 'Rp 350,000',
         duration: '60-120 min'
       },
       {
         name: 'Thai Massage',
         slug: 'thai-massage',
-        priceFrom: 'Rp 360,000',
+        priceFrom: 'Rp 390,000',
         duration: '60-120 min'
       },
       {
         name: 'Hot Stone Massage',
         slug: 'hot-stone-massage',
-        priceFrom: 'Rp 360,000',
+        priceFrom: 'Rp 390,000',
         duration: '60-120 min'
       },
       {
         name: 'Couples Wellness Ritual',
         slug: 'couples-wellness-ritual',
-        priceFrom: 'Rp 680,000',
+        priceFrom: 'Rp 620,000',
         duration: '90-150 min'
       }
     ],

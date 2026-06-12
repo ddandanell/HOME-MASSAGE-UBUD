@@ -40,8 +40,8 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '90 Minutes',
-      price: 'Rp 600,000',
-      priceIDR: 'Rp 600,000',
+      price: 'Rp 700,000',
+      priceIDR: 'Rp 700,000',
       description: 'Premium luxury massage with senior therapist and finest products'
     },
     {
@@ -60,13 +60,13 @@ const serviceData: ServiceLandingPageData = {
   ],
   couplesPricing: {
     duration: '120 Minutes',
-    price: 'Rp 1,480,000'
+    price: 'Rp 1,450,000'
   },
   addOns: [
-    { name: 'Champagne Service', price: 'Rp 400,000' },
-    { name: 'Rose Gold Body Treatment', price: 'Rp 300,000' },
-    { name: 'Caviar Facial', price: 'Rp 350,000' },
-    { name: 'Floral Bath Preparation', price: 'Rp 200,000' }
+    { name: 'Champagne Service', price: 'Rp 450,000' },
+    { name: 'Rose Gold Body Treatment', price: 'Rp 380,000' },
+    { name: 'Caviar Facial', price: 'Rp 320,000' },
+    { name: 'Floral Bath Preparation', price: 'Rp 250,000' }
   ],
   
   servicesOverview: [

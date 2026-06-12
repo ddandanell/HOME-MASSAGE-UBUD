@@ -140,7 +140,7 @@ export default function BalineseMassageNusaDua() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-3xl mb-6 text-neutral-900">Pricing for Balinese Massage in Nusa Dua</h2>
           <p className="text-neutral-700 mb-6">
-            Our Nusa Dua pricing delivers exceptional value for luxury resort guests: 60-minute sessions at 350,000 IDR, 90-minute treatments at 500,000 IDR, and 120-minute experiences at 650,000 IDR. These rates include transportation throughout Nusa Dua and Tanjung Benoa, professional equipment, and premium products—often at a fraction of resort spa prices. No hidden fees. Detailed pricing at <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">our pricing page</Link>.
+            Our Nusa Dua pricing delivers exceptional value for luxury resort guests: 60-minute sessions at 320,000 IDR, 90-minute treatments at 450,000 IDR, and 120-minute experiences at 590,000 IDR. These rates include transportation throughout Nusa Dua and Tanjung Benoa, professional equipment, and premium products—often at a fraction of resort spa prices. No hidden fees. Detailed pricing at <Link href="/pricing" className="text-amber-600 hover:text-amber-700 font-medium">our pricing page</Link>.
           </p>
         </div>
       </section>

@@ -357,15 +357,15 @@ export default function IsHomeMassageSafe() {
                   <div className="space-y-3">
                     <div className="flex justify-between items-center pb-2 border-b">
                       <span className="text-muted-foreground">60-minute home massage</span>
-                      <span className="font-semibold">Rp 300,000-400,000</span>
+                      <span className="font-semibold">Rp 320,000-450,000</span>
                     </div>
                     <div className="flex justify-between items-center pb-2 border-b">
                       <span className="text-muted-foreground">90-minute home massage</span>
-                      <span className="font-semibold">Rp 450,000-600,000</span>
+                      <span className="font-semibold">Rp 450,000-700,000</span>
                     </div>
                     <div className="flex justify-between items-center pb-2 border-b">
                       <span className="text-muted-foreground">Couples home massage (60 min)</span>
-                      <span className="font-semibold">Rp 550,000-750,000</span>
+                      <span className="font-semibold">Rp 550,000-760,000</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-muted-foreground">Early morning home massage (7am)</span>

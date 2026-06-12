@@ -90,17 +90,17 @@ export default function HomeMassageSeminyakCanggu() {
   const pricingByArea = [
     {
       area: 'Seminyak',
-      rate: 'From 350K IDR',
+      rate: 'From 320K IDR',
       note: 'Standard rates apply for central Seminyak locations'
     },
     {
       area: 'Canggu',
-      rate: 'From 350K IDR',
+      rate: 'From 320K IDR',
       note: 'Competitive pricing for all Canggu neighborhoods'
     },
     {
       area: 'Ubud',
-      rate: 'From 400K IDR',
+      rate: 'From 450K IDR',
       note: 'Slightly higher rates due to travel time and location'
     }
   ];
@@ -495,17 +495,17 @@ export default function HomeMassageSeminyakCanggu() {
                 <div className="bg-neutral-50 rounded-lg p-8">
                   <h3 className="text-2xl font-bold text-neutral-900 mb-4">Seminyak Rates</h3>
                   <p className="text-neutral-700 mb-4">
-                    Standard 60-minute massage sessions in Seminyak start at 350,000 IDR for traditional Balinese or aromatherapy massage. Deep tissue, sports massage, and prenatal treatments are 400,000 IDR. 90-minute extended sessions add 150,000 IDR to base rates. Couples packages (two therapists, simultaneous treatment) start at 650,000 IDR for 60 minutes.
+                    Standard 60-minute massage sessions in Seminyak start at 320,000 IDR for traditional Balinese or aromatherapy massage. Deep tissue, sports massage, and prenatal treatments are 450,000 IDR. 90-minute extended sessions add 180,000 IDR to base rates. Couples packages (two therapists, simultaneous treatment) start at 590,000 IDR for 60 minutes.
                   </p>
 
                   <h3 className="text-2xl font-bold text-neutral-900 mb-4 mt-8">Canggu Pricing</h3>
                   <p className="text-neutral-700 mb-4">
-                    Canggu rates mirror Seminyak pricing at 350,000 IDR for standard 60-minute sessions and 400,000 IDR for specialized treatments. No travel surcharges apply to Echo Beach, Batu Bolong, Berawa, or Pererenan. Remote Canggu locations like Seseh or Padonan may incur small travel fees (50,000-100,000 IDR) depending on distance from main areas.
+                    Canggu rates mirror Seminyak pricing at 320,000 IDR for standard 60-minute sessions and 450,000 IDR for specialized treatments. No travel surcharges apply to Echo Beach, Batu Bolong, Berawa, or Pererenan. Remote Canggu locations like Seseh or Padonan may incur small travel fees (50,000-120,000 IDR) depending on distance from main areas.
                   </p>
 
                   <h3 className="text-2xl font-bold text-neutral-900 mb-4 mt-8">Ubud & Other Areas</h3>
                   <p className="text-neutral-700">
-                    Ubud pricing starts at 400,000 IDR for 60-minute sessions, reflecting longer therapist travel time from coastal areas. Central Ubud locations near the market and palace area have no additional fees, while outlying areas like Tegallalang, Payangan, or Sayan may include modest travel surcharges. Sanur, Nusa Dua, and Jimbaran follow standard 350,000 IDR rates, while Uluwatu and Pecatu start at 400,000 IDR.
+                    Ubud pricing starts at 450,000 IDR for 60-minute sessions, reflecting longer therapist travel time from coastal areas. Central Ubud locations near the market and palace area have no additional fees, while outlying areas like Tegallalang, Payangan, or Sayan may include modest travel surcharges. Sanur, Nusa Dua, and Jimbaran follow standard 320,000 IDR rates, while Uluwatu and Pecatu start at 450,000 IDR.
                   </p>
                 </div>
               </div>

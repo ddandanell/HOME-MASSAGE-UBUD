@@ -150,7 +150,7 @@ export default function BalineseHomeMassage() {
                   </div>
                   <div className="flex items-center gap-2 mb-4">
                     <DollarSign className="w-5 h-5 text-primary" />
-                    <span className="text-2xl font-bold">Rp 240,000</span>
+                    <span className="text-2xl font-bold">Rp 380,000</span>
                   </div>
                   <p className="text-sm text-muted-foreground">
                     Essential Balinese home massage with full traditional techniques
@@ -167,7 +167,7 @@ export default function BalineseHomeMassage() {
                   </div>
                   <div className="flex items-center gap-2 mb-4">
                     <DollarSign className="w-5 h-5 text-primary" />
-                    <span className="text-2xl font-bold">Rp 360,000</span>
+                    <span className="text-2xl font-bold">Rp 390,000</span>
                   </div>
                   <p className="text-sm text-muted-foreground">
                     Extended Balinese home massage for deeper relaxation and healing
@@ -183,7 +183,7 @@ export default function BalineseHomeMassage() {
                   </div>
                   <div className="flex items-center gap-2 mb-4">
                     <DollarSign className="w-5 h-5 text-primary" />
-                    <span className="text-2xl font-bold">Rp 480,000</span>
+                    <span className="text-2xl font-bold">Rp 450,000</span>
                   </div>
                   <p className="text-sm text-muted-foreground">
                     Complete Balinese home massage ritual with extended techniques

@@ -54,8 +54,8 @@ const serviceData: ServiceLandingPageData = {
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 520,000',
-      priceIDR: 'Rp 520,000',
+      price: 'Rp 550,000',
+      priceIDR: 'Rp 550,000',
       description: 'Full reset: Balinese massage warm-up, deep tissue massage Bali focus, and calming aromatherapy finish'
     }
   ],

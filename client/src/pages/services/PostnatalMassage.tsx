@@ -40,27 +40,27 @@ const serviceData: ServiceLandingPageData = {
   packages: [
     {
       duration: '60 Minutes',
-      price: 'Rp 320,000',
-      priceIDR: 'Rp 320,000',
+      price: 'Rp 380,000',
+      priceIDR: 'Rp 380,000',
       description: 'Essential postnatal massage addressing primary recovery areas'
     },
     {
       duration: '90 Minutes',
-      price: 'Rp 480,000',
-      priceIDR: 'Rp 480,000',
+      price: 'Rp 450,000',
+      priceIDR: 'Rp 450,000',
       description: 'Comprehensive postnatal treatment with extended focus on problem zones',
       popular: true
     },
     {
       duration: '120 Minutes',
-      price: 'Rp 640,000',
-      priceIDR: 'Rp 640,000',
+      price: 'Rp 700,000',
+      priceIDR: 'Rp 700,000',
       description: 'Full postnatal recovery session including abdominal work and gentle stretching'
     }
   ],
   addOns: [
     { name: 'Abdominal Binding', price: 'Rp 50,000' },
-    { name: 'Hot Stone Back Relief', price: 'Rp 100,000' },
+    { name: 'Hot Stone Back Relief', price: 'Rp 120,000' },
     { name: 'Soothing Scalp Treatment', price: 'Rp 50,000' }
   ],
   

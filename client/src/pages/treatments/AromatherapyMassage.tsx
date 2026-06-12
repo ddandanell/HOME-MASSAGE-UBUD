@@ -8,11 +8,11 @@ export default function AromatherapyMassage() {
     slug: 'aromatherapy-massage',
     h1Title: 'Aromatherapy Massage in Ubud – Villa Spa Delivered',
     metaTitle: 'Aromatherapy Massage Ubud | Essential Oil Therapy',
-    metaDescription: 'Aromatherapy massage Ubud with premium essential oils to your villa. Relaxing, healing treatment for mind & body. From 304k IDR. Licensed therapists 7am-10pm.',
+    metaDescription: 'Aromatherapy massage Ubud with premium essential oils to your villa. Relaxing, healing treatment for mind & body. From 350k IDR. Licensed therapists 7am-10pm.',
     heroSubtitle: 'Relaxing aromatherapy massage with premium essential oils delivered to your villa in the heart of Ubud wellness area',
     duration: '60-120 minutes',
-    priceFrom: 'Rp 304,000',
-    priceFromIDR: 'Rp 304,000',
+    priceFrom: 'Rp 350,000',
+    priceFromIDR: 'Rp 350,000',
     image: aromatherapyImage,
     description: 'Relaxing aromatherapy massage Ubud - full-body treatment with premium essential oils at your villa',
     longDescription: 'Immerse yourself in the healing power of aromatherapy massage in Ubud. This sensory wellness experience combines therapeutic massage techniques with carefully selected essential oils to promote physical and emotional healing. Our certified therapists bring premium essential oils including lavender, frangipani, lemongrass, and Balinese botanicals directly to your villa, creating a spa sanctuary in your own space.',
@@ -47,20 +47,20 @@ export default function AromatherapyMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: 'Rp 304,000',
-        priceIDR: 'Rp 304,000',
+        price: 'Rp 350,000',
+        priceIDR: 'Rp 350,000',
         description: 'Full body aromatherapy massage with essential oil selection tailored to your needs'
       },
       {
         duration: '90 Minutes',
-        price: 'Rp 440,000',
-        priceIDR: 'Rp 440,000',
+        price: 'Rp 490,000',
+        priceIDR: 'Rp 490,000',
         description: 'Extended session with scalp massage and hot towel aromatherapy treatment'
       },
       {
         duration: '120 Minutes',
-        price: 'Rp 560,000',
-        priceIDR: 'Rp 560,000',
+        price: 'Rp 640,000',
+        priceIDR: 'Rp 640,000',
         description: 'Luxury aromatherapy ritual with body scrub, massage, and extended relaxation time'
       }
     ],

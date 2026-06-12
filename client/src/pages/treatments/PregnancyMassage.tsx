@@ -8,11 +8,11 @@ export default function PregnancyMassage() {
     slug: 'pregnancy-massage',
     h1Title: 'Pregnancy Massage in Ubud – Safe In-Villa Spa',
     metaTitle: 'Pregnancy Massage Ubud | Safe Prenatal Treatment',
-    metaDescription: 'Pregnancy massage Ubud by certified maternity therapists to your villa. Safe prenatal care for expecting mothers. Relieve discomfort from 336k IDR. Book today.',
+    metaDescription: 'Pregnancy massage Ubud by certified maternity therapists to your villa. Safe prenatal care for expecting mothers. Relieve discomfort from 390k IDR. Book today.',
     heroSubtitle: 'Safe, comfortable prenatal massage for expecting mothers, delivered to your Ubud villa by certified maternity therapists',
     duration: '60-90 minutes',
-    priceFrom: 'Rp 360,000',
-    priceFromIDR: 'Rp 360,000',
+    priceFrom: 'Rp 390,000',
+    priceFromIDR: 'Rp 390,000',
     image: pregnancyImage,
     description: 'Safe pregnancy massage Ubud - specialized prenatal care delivered to your villa by certified maternity therapists',
     longDescription: 'Experience safe, nurturing pregnancy massage in the comfort of your Ubud villa. Our certified prenatal massage therapists specialize in techniques specifically designed for expecting mothers, providing relief from pregnancy discomforts while ensuring complete safety for you and your baby. Using side-lying positions and specially designed cushions, we bring this gentle, therapeutic treatment to your accommodation throughout Ubud, allowing you to relax and prepare for motherhood in paradise.',
@@ -47,20 +47,20 @@ export default function PregnancyMassage() {
     packages: [
       {
         duration: '60 Minutes',
-        price: 'Rp 360,000',
-        priceIDR: 'Rp 360,000',
+        price: 'Rp 390,000',
+        priceIDR: 'Rp 390,000',
         description: 'Safe prenatal massage focusing on back, legs, and common pregnancy discomfort areas'
       },
       {
         duration: '90 Minutes',
-        price: 'Rp 520,000',
-        priceIDR: 'Rp 520,000',
+        price: 'Rp 550,000',
+        priceIDR: 'Rp 550,000',
         description: 'Extended session with foot reflexology and gentle stretching for expecting mothers'
       },
       {
         duration: '120 Minutes',
-        price: 'Rp 680,000',
-        priceIDR: 'Rp 680,000',
+        price: 'Rp 720,000',
+        priceIDR: 'Rp 720,000',
         description: 'Luxury babymoon package with gentle body massage, scalp treatment, and relaxation'
       }
     ],

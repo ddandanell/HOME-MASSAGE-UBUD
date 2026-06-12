@@ -112,7 +112,7 @@ export default function VillaMassageServicesIndex() {
                   </div>
                   <div className="border-t pt-4">
                     <p className="text-sm text-muted-foreground mb-2">Villa Massage Pricing:</p>
-                    <p className="font-semibold text-lg">Rp 280,000 (60 min) | Rp 400,000 (90 min)</p>
+                    <p className="font-semibold text-lg">Rp 380,000 (60 min) | Rp 450,000 (90 min)</p>
                   </div>
                   <Button className="w-full mt-4" asChild>
                     <Link href="/villa-massage/services/balinese">
@@ -160,7 +160,7 @@ export default function VillaMassageServicesIndex() {
                   </div>
                   <div className="border-t pt-4">
                     <p className="text-sm text-muted-foreground mb-2">Villa Massage Pricing:</p>
-                    <p className="font-semibold text-lg">Rp 320,000 (60 min) | Rp 440,000 (90 min)</p>
+                    <p className="font-semibold text-lg">Rp 380,000 (60 min) | Rp 490,000 (90 min)</p>
                   </div>
                   <Button className="w-full mt-4" asChild>
                     <Link href="/villa-massage/services/deep-tissue">
@@ -208,7 +208,7 @@ export default function VillaMassageServicesIndex() {
                   </div>
                   <div className="border-t pt-4">
                     <p className="text-sm text-muted-foreground mb-2">Villa Massage Pricing:</p>
-                    <p className="font-semibold text-lg">Rp 520,000 (60 min) | Rp 760,000 (90 min)</p>
+                    <p className="font-semibold text-lg">Rp 550,000 (60 min) | Rp 760,000 (90 min)</p>
                   </div>
                   <Button className="w-full mt-4" asChild>
                     <Link href="/villa-massage/services/couples">
@@ -256,7 +256,7 @@ export default function VillaMassageServicesIndex() {
                   </div>
                   <div className="border-t pt-4">
                     <p className="text-sm text-muted-foreground mb-2">Villa Massage Pricing:</p>
-                    <p className="font-semibold text-lg">Rp 280,000 (60 min) | Rp 400,000 (90 min)</p>
+                    <p className="font-semibold text-lg">Rp 380,000 (60 min) | Rp 450,000 (90 min)</p>
                   </div>
                   <Button className="w-full mt-4" asChild>
                     <Link href="/villa-massage/services/relaxation">
@@ -304,7 +304,7 @@ export default function VillaMassageServicesIndex() {
                   </div>
                   <div className="border-t pt-4">
                     <p className="text-sm text-muted-foreground mb-2">Villa Massage Pricing:</p>
-                    <p className="font-semibold text-lg">Rp 304,000 (60 min) | Rp 424,000 (90 min)</p>
+                    <p className="font-semibold text-lg">Rp 350,000 (60 min) | Rp 424,000 (90 min)</p>
                   </div>
                   <Button className="w-full mt-4" asChild>
                     <Link href="/villa-massage/services/aromatherapy">
@@ -352,7 +352,7 @@ export default function VillaMassageServicesIndex() {
                   </div>
                   <div className="border-t pt-4">
                     <p className="text-sm text-muted-foreground mb-2">Villa Massage Pricing:</p>
-                    <p className="font-semibold text-lg">Rp 360,000 (75 min) | Rp 480,000 (90 min)</p>
+                    <p className="font-semibold text-lg">Rp 390,000 (75 min) | Rp 450,000 (90 min)</p>
                   </div>
                   <Button className="w-full mt-4" asChild>
                     <Link href="/villa-massage/services/hot-stone">
@@ -400,7 +400,7 @@ export default function VillaMassageServicesIndex() {
                   </div>
                   <div className="border-t pt-4">
                     <p className="text-sm text-muted-foreground mb-2">Villa Massage Pricing:</p>
-                    <p className="font-semibold text-lg">Rp 336,000 (60 min) | Rp 456,000 (75 min)</p>
+                    <p className="font-semibold text-lg">Rp 390,000 (60 min) | Rp 490,000 (75 min)</p>
                   </div>
                   <Button className="w-full mt-4" asChild>
                     <Link href="/villa-massage/services/prenatal">
@@ -448,7 +448,7 @@ export default function VillaMassageServicesIndex() {
                   </div>
                   <div className="border-t pt-4">
                     <p className="text-sm text-muted-foreground mb-2">Villa Massage Pricing:</p>
-                    <p className="font-semibold text-lg">Rp 304,000 (60 min) | Rp 424,000 (90 min)</p>
+                    <p className="font-semibold text-lg">Rp 350,000 (60 min) | Rp 424,000 (90 min)</p>
                   </div>
                   <Button className="w-full mt-4" asChild>
                     <Link href="/villa-massage/services/thai">
@@ -496,7 +496,7 @@ export default function VillaMassageServicesIndex() {
                   </div>
                   <div className="border-t pt-4">
                     <p className="text-sm text-muted-foreground mb-2">Villa Massage Pricing:</p>
-                    <p className="font-semibold text-lg">Rp 320,000 (60 min) | Rp 440,000 (90 min)</p>
+                    <p className="font-semibold text-lg">Rp 380,000 (60 min) | Rp 490,000 (90 min)</p>
                   </div>
                   <Button className="w-full mt-4" asChild>
                     <Link href="/villa-massage/services/sports">
@@ -544,7 +544,7 @@ export default function VillaMassageServicesIndex() {
                   </div>
                   <div className="border-t pt-4">
                     <p className="text-sm text-muted-foreground mb-2">Villa Massage Pricing:</p>
-                    <p className="font-semibold text-lg">Rp 240,000 (45 min) | Rp 304,000 (60 min)</p>
+                    <p className="font-semibold text-lg">Rp 380,000 (45 min) | Rp 350,000 (60 min)</p>
                   </div>
                   <Button className="w-full mt-4" asChild>
                     <Link href="/villa-massage/services/reflexology">

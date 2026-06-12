@@ -71,7 +71,7 @@ export default function Balinese60MinuteMassage() {
                       </div>
                       <div className="flex items-center justify-center gap-2 mb-6">
                         <DollarSign className="w-6 h-6 text-primary" />
-                        <span className="text-3xl font-bold">Rp 350,000</span>
+                        <span className="text-3xl font-bold">Rp 320,000</span>
                       </div>
                       <p className="text-muted-foreground mb-6">
                         Complete traditional Balinese massage with all authentic techniques

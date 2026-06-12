@@ -22,7 +22,7 @@ export default function Services() {
       id: 1,
       name: 'Traditional Balinese Massage',
       duration: '60-90 minutes',
-      price: 'From Rp 280,000',
+      price: 'From Rp 380,000',
       image: balineseImage,
       description: 'A traditional healing practice that combines gentle stretches, acupressure, and aromatherapy oils to stimulate blood circulation and ease tension.',
       benefits: [
@@ -37,7 +37,7 @@ export default function Services() {
       id: 2,
       name: 'Aromatherapy Massage',
       duration: '60-90 minutes',
-      price: 'From Rp 304,000',
+      price: 'From Rp 350,000',
       image: aromatherapyImage,
       description: 'Relaxing massage using premium essential oils that penetrate deep into the skin, promoting healing and emotional balance.',
       benefits: [
@@ -51,7 +51,7 @@ export default function Services() {
       id: 3,
       name: 'Deep Tissue Massage',
       duration: '60-90 minutes',
-      price: 'From Rp 320,000',
+      price: 'From Rp 380,000',
       image: deepTissueImage,
       description: 'Therapeutic massage targeting deep layers of muscle tissue to release chronic tension and knots.',
       benefits: [
@@ -65,7 +65,7 @@ export default function Services() {
       id: 4,
       name: 'Four Hands Massage',
       duration: '60-90 minutes',
-      price: 'From Rp 520,000',
+      price: 'From Rp 550,000',
       image: fourHandsImage,
       description: 'Luxurious massage performed by two therapists simultaneously, creating a deeply relaxing and unique experience.',
       benefits: [
@@ -80,7 +80,7 @@ export default function Services() {
       id: 5,
       name: 'Thai Massage',
       duration: '60-90 minutes',
-      price: 'From Rp 360,000',
+      price: 'From Rp 390,000',
       image: thaiImage,
       description: 'Ancient healing art combining acupressure, assisted yoga postures, and stretching techniques.',
       benefits: [
@@ -94,7 +94,7 @@ export default function Services() {
       id: 6,
       name: 'Lymphatic Drainage',
       duration: '60-90 minutes',
-      price: 'From Rp 480,000',
+      price: 'From Rp 450,000',
       image: lymphaticImage,
       description: 'Gentle massage technique designed to stimulate lymphatic system and promote natural detoxification.',
       benefits: [
@@ -110,7 +110,7 @@ export default function Services() {
     <>
       <SEOHead
         title="Massage Services Ubud | Professional Treatments"
-        description="Massage services Ubud delivered to your villa. Traditional Balinese, deep tissue, hot stone & 12+ treatments. Licensed therapists from 280k IDR. Book today."
+        description="Massage services Ubud delivered to your villa. Traditional Balinese, deep tissue, hot stone & 12+ treatments. Licensed therapists from 320k IDR. Book today."
         canonical="https://homemassageubud.com/services"
         keywords="massage services ubud, spa services ubud, balinese massage, deep tissue massage ubud, hot stone massage, thai massage ubud, pregnancy massage"
       />

@@ -24,7 +24,7 @@ export default function VillaMassageHub() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 text-sm font-semibold">
-              ⭐ From Rp 280,000 | Licensed Therapists | Same-Day Booking
+              ⭐ From Rp 380,000 | Licensed Therapists | Same-Day Booking
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Villa Massage in Bali
@@ -289,13 +289,13 @@ export default function VillaMassageHub() {
             Available Villa Massage Services
           </h2>
           <p className="text-center text-muted-foreground mb-12">
-            Professional villa massage from <span className="font-bold text-primary">Rp 280,000</span> | <Link href="/pricing" className="text-primary hover:underline">View All Pricing</Link>
+            Professional villa massage from <span className="font-bold text-primary">Rp 380,000</span> | <Link href="/pricing" className="text-primary hover:underline">View All Pricing</Link>
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
             <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Balinese Villa Massage</h3>
-                <p className="text-lg font-bold text-primary mb-3">From Rp 280,000</p>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 380,000</p>
                 <p className="text-muted-foreground mb-4">
                   Traditional Balinese techniques with long flowing strokes and gentle stretching.
                 </p>
@@ -310,7 +310,7 @@ export default function VillaMassageHub() {
             <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Deep Tissue Villa Massage</h3>
-                <p className="text-lg font-bold text-primary mb-3">From Rp 320,000</p>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 380,000</p>
                 <p className="text-muted-foreground mb-4">
                   Therapeutic massage targeting chronic tension and muscle knots.
                 </p>
@@ -325,7 +325,7 @@ export default function VillaMassageHub() {
             <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Couples Villa Massage</h3>
-                <p className="text-lg font-bold text-primary mb-3">From Rp 520,000</p>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 550,000</p>
                 <p className="text-muted-foreground mb-4">
                   Romantic massage for two with simultaneous treatments.
                 </p>
@@ -340,7 +340,7 @@ export default function VillaMassageHub() {
             <Card className="border-2 hover:border-primary transition-colors">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Relaxation Villa Massage</h3>
-                <p className="text-lg font-bold text-primary mb-3">From Rp 280,000</p>
+                <p className="text-lg font-bold text-primary mb-3">From Rp 380,000</p>
                 <p className="text-muted-foreground mb-4">
                   Gentle, soothing massage focusing on stress relief.
                 </p>
@@ -437,7 +437,7 @@ export default function VillaMassageHub() {
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-4">
                 Villa massage pricing reflects fair compensation for professional therapists while remaining accessible to various budgets. Standard 
-                60-minute villa massage treatments start from Rp 280,000, with 90-minute extended sessions from Rp 400,000. Specialized treatments 
+                60-minute villa massage treatments start from Rp 380,000, with 90-minute extended sessions from Rp 450,000. Specialized treatments 
                 like hot stone villa massage or prenatal villa massage carry slightly higher rates due to additional equipment and specialized training 
                 requirements.
               </p>

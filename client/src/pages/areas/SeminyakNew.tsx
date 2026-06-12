@@ -54,7 +54,7 @@ export default function SeminyakMassage() {
     },
     "url": "https://homemassageubud.com/seminyak",
     "telephone": "+62-811-2656-869",
-    "priceRange": "Rp 280,000 - Rp 680,000",
+    "priceRange": "Rp 380,000 - Rp 620,000",
     "openingHours": "Mo-Su 07:00-22:00"
   };
 
@@ -233,7 +233,7 @@ export default function SeminyakMassage() {
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">Beach Club Recovery</h3>
                     <p className="text-blue-600 font-semibold">Lymphatic Drainage + Aromatherapy</p>
                   </div>
-                  <span className="text-lg font-bold text-amber-600">Rp 384k</span>
+                  <span className="text-lg font-bold text-amber-600">Rp 420k</span>
                 </div>
                 <p className="text-gray-700 mb-4">
                   Seminyak's signature treatment. Helps with post-sun relaxation, promotes circulation after tropical humidity and pool time, and supports skin vitality. Guests often book this after full days at beach clubs to feel refreshed for evening plans.
@@ -252,7 +252,7 @@ export default function SeminyakMassage() {
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">Couples Villa Ritual</h3>
                     <p className="text-amber-600 font-semibold">Synchronized Balinese Massage</p>
                   </div>
-                  <span className="text-lg font-bold text-amber-600">Rp 680k</span>
+                  <span className="text-lg font-bold text-amber-600">Rp 620k</span>
                 </div>
                 <p className="text-gray-700 mb-4">
                   Perfect for honeymoons or romantic stays in Seminyak. Two therapists, synchronized techniques, your villa's master bedroom or terrace. We work with your villa staff to coordinate timing and can help arrange special touches for your experience. A popular couples choice in Seminyak.
@@ -271,7 +271,7 @@ export default function SeminyakMassage() {
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">Deep Tissue Restoration</h3>
                     <p className="text-gray-900 font-semibold">Therapeutic Muscle Work</p>
                   </div>
-                  <span className="text-lg font-bold text-amber-600">Rp 320k</span>
+                  <span className="text-lg font-bold text-amber-600">Rp 380k</span>
                 </div>
                 <p className="text-gray-700 mb-4">
                   For surfers hitting Berawa at dawn, yogis flowing at The Practice, or bodies carrying tension from long-haul flights. Targets deep muscle knots, releases fascial restrictions, improves mobility. Popular with digital nomads working from Seminyak's coworking spaces who develop tech neck and shoulder strain.
@@ -290,7 +290,7 @@ export default function SeminyakMassage() {
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">Sunset Wind-Down</h3>
                     <p className="text-purple-600 font-semibold">Aromatherapy Massage</p>
                   </div>
-                  <span className="text-lg font-bold text-amber-600">Rp 304k</span>
+                  <span className="text-lg font-bold text-amber-600">Rp 350k</span>
                 </div>
                 <p className="text-gray-700 mb-4">
                   Timed perfectly for that golden hour transition. Book for 5:30 PM, and as Seminyak's sky turns orange and pink, essential oils ease you from day to evening mode. Lavender for calm, frangipani for tropical luxury, bergamot for mood lift. Ready for dinner reservations feeling centered and glowing.
