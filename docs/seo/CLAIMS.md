@@ -15,7 +15,10 @@ Observed on the live site and in `client/src` on 2026-11-01. "Rendered" means ve
 | C-06 | Prices, e.g. `From IDR 450K`, `Rp 380,000` / 60 min | `/pricing`, service pages, pricing tables | Owner-attested (business sets its own price) | **KEPT** | Prices untouched by PR #88 by instruction. Any price change needs David. |
 | C-07 | `7am–10pm Daily`, `Same-day Available` | Hero strips, footer, meta descriptions | Owner-attested | **KEPT** | Operating hours; no conflict found on the site. |
 
-## What PR #88 changed and what it did not
+| C-08 | `100+ Therapists`, `10+ Years`, `10,000+ Happy Clients` | `/services/mobile-massage` service template trust strip | Unverifiable, no source on file | **OPEN — with David** | Same decision as C-02/C-03. Not touched: owner-attested-type claims about team size and volume. |
+| C-09 | Medical efficacy language (`removes toxins`, `boosts immune function`, `accelerates post-surgery recovery`, `detoxification`) | Body, FAQ and hydrated `Service.description`, 20+ components; `/ubud/lymphatic-drainage-massage` named by QA | Prohibited by the site brief — a compliance problem, not a sourcing one | **FIXED on the named page** 2026-11-01 (PR #89) | Rewritten as mechanism plus a medical disclaimer, prices unchanged. The rest of the site is a content sweep in the week-2 rebuild. |
+
+## What PR #88 and PR #89 changed and what they did not
 
 - Removed: C-01 in three templates. Deleted `client/src/components/SEOContent.tsx` — hidden (`sr-only`, `aria-hidden`) keyword-stuffed block on the homepage containing a second `<h1>`.
 - Not removed: C-02, C-03, C-04 — these are owner-attested-type claims about David's own business. Deleting them unasked destroys a trust signal if they are true; keeping them silently is what this register exists to stop. David decides.

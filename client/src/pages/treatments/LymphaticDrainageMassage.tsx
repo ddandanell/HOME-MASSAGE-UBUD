@@ -2,92 +2,98 @@ import React from 'react';
 import TreatmentPageTemplate from '@/components/TreatmentPageTemplate';
 import lymphaticImage from '@/assets/lymphatic-drainage-massage_1757317131192.jpg';
 
+/**
+ * Copy rule (2026-11-01): no medical or efficacy claims. Independent QA found
+ * "removes toxins", "boosts immune function", "accelerates post-surgery recovery"
+ * in the body, the FAQ and the hydrated Service schema. Those are replaced with
+ * what the treatment physically is — light pressure, slow strokes, in your villa —
+ * and a medical disclaimer. Nothing about price, duration or availability changed.
+ */
 export default function LymphaticDrainageMassage() {
   const treatment = {
     name: 'Lymphatic Drainage Massage',
     slug: 'lymphatic-drainage-massage',
     h1Title: 'Lymphatic Drainage Massage in Ubud – Villa Spa Delivered',
-    metaTitle: 'Lymphatic Drainage Ubud | Detox Massage Therapy',
-    metaDescription: 'Lymphatic drainage massage Ubud for detox & wellness to your villa. Reduce swelling, boost immunity & improve circulation. From 450k IDR. Certified therapists.',
-    heroSubtitle: 'Gentle lymphatic drainage massage for detoxification and wellness, delivered to your Ubud villa by certified therapists',
+    metaTitle: 'Lymphatic Drainage Massage Ubud | Light Pressure, Villa Visit',
+    metaDescription: 'Gentle lymphatic drainage massage in Ubud, delivered to your villa. Slow, light-pressure technique, 60-120 minutes. From Rp 450,000. Book on WhatsApp.',
+    heroSubtitle: 'Slow, light-pressure lymphatic drainage massage delivered to your villa in Ubud by trained therapists',
     duration: '60-90 minutes',
     priceFrom: 'Rp 450,000',
     priceFromIDR: 'Rp 450,000',
     image: lymphaticImage,
-    description: 'Gentle lymphatic drainage massage Ubud - therapeutic detoxification treatment promoting natural cleansing',
-    longDescription: 'Experience the therapeutic benefits of lymphatic drainage massage in Ubud. This specialized, gentle massage technique stimulates your lymphatic system to remove toxins, reduce swelling, and boost your immune function. Ideal for detoxification, post-travel recovery, and wellness enhancement, our certified therapists bring this healing treatment directly to your villa in Ubud and surrounding areas.',
+    description: 'Gentle lymphatic drainage massage in Ubud, delivered to your villa using slow, light-pressure strokes',
+    longDescription: 'Lymphatic drainage is a light-pressure massage technique. The therapist works slowly in the direction lymph travels, using flat hands and gentle rhythmic strokes instead of the deep pressure of a deep tissue or Balinese massage. Guests usually book it after a long flight, after a week of hiking or yoga, or when they want something calmer than a deep tissue session. Sessions run 60 to 120 minutes at your villa, hotel or guesthouse anywhere in Ubud and the surrounding villages. This is a relaxation treatment, not a medical one: if you have a medical condition, are pregnant, or have had recent surgery, please speak to your doctor first and tell your therapist before the session.',
     benefits: [
-      'Reduces swelling, bloating, and water retention',
-      'Promotes natural detoxification and cleansing',
-      'Boosts immune system function',
-      'Improves skin tone and reduces cellulite appearance',
-      'Relieves sinus congestion and allergies',
-      'Accelerates post-surgery or injury recovery',
-      'Reduces inflammation throughout the body',
-      'Enhances overall energy and vitality'
+      'Very light pressure — suits guests who find deep massage too much',
+      'Slow, rhythmic strokes rather than deep tissue work',
+      'A quiet session in your own villa, with no travel afterwards',
+      'Often booked after a long-haul flight into Denpasar',
+      'Pairs well with aromatherapy massage in the same visit',
+      'Therapist brings the table, linens and oils',
+      'Available 7am–10pm daily, including same-day booking'
     ],
     includes: [
-      'Certified lymphatic drainage therapist',
-      'Specialized lymphatic massage techniques',
+      'Trained lymphatic drainage therapist',
+      'Light-pressure lymphatic drainage techniques',
       'Fresh professional linens',
-      'Herbal tea for continued detoxification',
-      'Post-treatment wellness consultation',
-      'Hydration guidance for optimal results',
+      'Herbal tea after your session',
+      'Post-treatment guidance from your therapist',
+      'Hydration guidance for after the session',
       'Therapist travel to your Ubud location',
       'Professional equipment setup and cleanup'
     ],
     idealFor: [
-      'Travelers seeking detoxification and wellness',
-      'Those experiencing bloating or water retention',
-      'Post-surgery or injury recovery patients',
-      'People with sluggish lymphatic systems',
-      'Guests on wellness retreats in Ubud',
-      'Anyone wanting to boost immune function naturally'
+      'Guests who prefer a very light touch',
+      'Travellers arriving after a long flight',
+      'Anyone who finds deep tissue work too intense',
+      'Guests on wellness or yoga retreats in Ubud',
+      'Couples wanting a quiet evening session',
+      'Guests staying in Ubud villas, hotels and guesthouses'
     ],
     packages: [
       {
         duration: '60 Minutes',
         price: 'Rp 450,000',
         priceIDR: 'Rp 450,000',
-        description: 'Full body lymphatic drainage focusing on major lymph node areas and circulation'
+        description: 'Full body lymphatic drainage with slow, light-pressure strokes'
       },
       {
         duration: '90 Minutes',
         price: 'Rp 630,000',
         priceIDR: 'Rp 630,000',
-        description: 'Extended detox session with facial lymphatic drainage and body work'
+        description: 'Longer session including facial lymphatic work and body work'
       },
       {
         duration: '120 Minutes',
         price: 'Rp 820,000',
         priceIDR: 'Rp 820,000',
-        description: 'Complete wellness ritual with body brushing, lymphatic massage, and aromatherapy'
+        description: 'Complete session with body brushing, lymphatic massage and aromatherapy'
       }
     ],
     faqs: [
       {
         question: 'What is lymphatic drainage massage and how does it work?',
-        answer: 'Lymphatic drainage is a gentle massage technique that stimulates your lymphatic system to move lymph fluid throughout the body. This helps eliminate toxins, reduce swelling, and boost immune function. The gentle, rhythmic movements encourage natural drainage and detoxification.'
+        answer: 'It is a light-pressure massage technique. The therapist uses flat hands and slow, rhythmic strokes, working in the direction lymph travels through the body. Pressure is much lighter than deep tissue or Balinese massage — you feel a gentle, continuous movement rather than a deep stretch. It is a relaxation treatment, not a medical one.'
       },
       {
         question: 'Is lymphatic drainage massage painful?',
-        answer: 'No! Lymphatic drainage uses very gentle, light pressure - much lighter than traditional massage. The technique is soothing and relaxing. Many clients find it incredibly calming and even fall asleep during the session.'
+        answer: 'No. Lymphatic drainage uses very gentle, light pressure — much lighter than a traditional massage. The technique is slow and soothing, and many guests find it calming enough to fall asleep during the session.'
       },
       {
-        question: 'Can lymphatic drainage help with post-flight swelling in Ubud?',
-        answer: 'Absolutely! Lymphatic drainage is excellent for reducing swelling and fluid retention after long flights. Many travelers to Ubud book this treatment shortly after arrival to help their body recover from travel and adjust to the new environment.'
+        question: 'Can I book it after a long flight to Bali?',
+        answer: 'Yes, and many guests do. The session is slow and light, it happens in your villa, and there is no travel afterwards. If you are dealing with a medical condition rather than travel fatigue, please speak to your doctor before booking.'
       },
       {
         question: 'Do you offer lymphatic drainage in all Ubud areas?',
-        answer: 'Yes, we provide lymphatic drainage massage throughout Ubud centre, Penestanan, Sayan, Campuhan, Tegallalang, and all surrounding areas. We bring our specialized equipment to your villa, hotel, or guesthouse anywhere in the Ubud region.'
+        answer: 'Yes. We provide lymphatic drainage massage across Ubud centre, Penestanan, Sayan, Campuhan, Tegallalang and the surrounding villages. We bring the table, linens and oils to your villa, hotel or guesthouse anywhere in the Ubud region.'
       },
       {
-        question: 'How often should I get lymphatic drainage massage?',
-        answer: 'For general wellness and detoxification, once per week or bi-weekly is beneficial. For specific conditions like post-surgery recovery or chronic swelling, more frequent sessions may be recommended. Your therapist can provide personalized guidance.'
+        question: 'How often should I book a lymphatic drainage massage?',
+        answer: 'There is no fixed rule. Some guests book a single session during their stay, others book weekly while they are in Ubud. Your therapist will suggest an interval that feels comfortable. If you have a medical condition or recent surgery, ask your doctor first.'
       },
       {
         question: 'Can I combine lymphatic drainage with other treatments?',
-        answer: 'Yes! Lymphatic drainage pairs wonderfully with aromatherapy massage, body scrubs, and detox treatments. We can create a custom wellness package for your stay in Ubud. Contact us via WhatsApp to design your personalized healing experience.'
+        answer: 'Yes. It pairs well with aromatherapy massage and a body scrub in the same visit. Tell us what you have in mind on WhatsApp and we will build the session around your schedule.'
       }
     ],
     relatedTreatments: [
