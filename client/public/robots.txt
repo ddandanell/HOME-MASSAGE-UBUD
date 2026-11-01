@@ -2,9 +2,8 @@ User-agent: *
 Allow: /
 Crawl-delay: 1
 
-# Sitemaps — both domains share this file; each crawler follows its own domain
+# Sitemap: homemassageubud.com only. Kuta is a separate property on its own host.
 Sitemap: https://homemassageubud.com/sitemap.xml
-Sitemap: https://homemassagekuta.com/sitemap-kuta.xml
 
 # Block admin/sensitive areas
 Disallow: /admin/
