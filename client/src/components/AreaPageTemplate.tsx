@@ -111,10 +111,6 @@ export default function AreaPageTemplate({ area, additionalContent, showNailCare
                   <span className="text-gray-700 font-medium">7am - 10pm Daily</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Star className="w-6 h-6 text-amber-600" />
-                  <span className="text-gray-700 font-medium">5.0 Rating (500+ Reviews)</span>
-                </div>
-                <div className="flex items-center gap-3">
                   <Phone className="w-6 h-6 text-amber-600" />
                   <span className="text-gray-700 font-medium">Same-day Available</span>
                 </div>
@@ -467,7 +463,7 @@ export default function AreaPageTemplate({ area, additionalContent, showNailCare
             <Button 
               size="lg" 
               onClick={handleBookNow}
-              className="bg-white text-amber-600 hover:bg-gray-100 min-w-[300px] text-lg"
+              className="bg-white text-amber-600 hover:bg-gray-100 w-full sm:w-auto sm:min-w-[300px] max-w-full whitespace-normal break-words h-auto py-3 text-lg"
             >
               <MessageCircle className="mr-2 h-6 w-6" />
               Book via WhatsApp: {WHATSAPP_NUMBER_FORMATTED}

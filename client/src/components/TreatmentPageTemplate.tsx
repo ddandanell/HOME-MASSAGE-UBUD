@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import InternalLinkNetwork from '@/components/InternalLinkNetwork';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Clock, Users, Star, CheckCircle, MessageCircle, Heart, MapPin } from 'lucide-react';
+import { Clock, Users, CheckCircle, MessageCircle, Heart, MapPin } from 'lucide-react';
 import { generateTreatmentInquiryMessage, openWhatsApp, CTA_TEXT } from '@/lib/whatsapp';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import SEOHead from '@/components/SEOHead';
@@ -112,10 +112,6 @@ export default function TreatmentPageTemplate({ treatment }: TreatmentPageProps)
                   <div className="flex items-center gap-3">
                     <Clock className="w-6 h-6 text-amber-600" />
                     <span className="text-gray-700 font-medium">{treatment.duration}</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Star className="w-6 h-6 text-amber-600" />
-                    <span className="text-gray-700 font-medium">5.0 Rating</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="w-6 h-6 text-amber-600" />

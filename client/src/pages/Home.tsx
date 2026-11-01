@@ -4,7 +4,6 @@ import TrustBadges from "@/components/TrustBadges";
 import Services from "@/components/Services";
 import HealthBenefits from "@/components/HealthBenefits";
 import ServiceAreas from "@/components/ServiceAreas";
-import SEOContent from "@/components/SEOContent";
 import UbudAreas from "@/components/UbudAreas";
 import AllTreatmentsAndAreas from "@/components/AllTreatmentsAndAreas";
 import About from "@/components/About";
@@ -115,7 +114,6 @@ export default function Home() {
         <ServiceAreas />
         <UbudAreas />
         <AllTreatmentsAndAreas />
-        <SEOContent />
         <Contact />
       </main>
 
