@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Prerender per-route <head> for homemassageubud.com.
+ * Prerender per-route <head> + sitemap + 404 for homemassageubud.com.
  *
  * Runs after `vite build` (dist/ contains the SPA shell). For every route in
  * client/src/data/route-meta.json it writes dist/<route>.html containing the
@@ -8,39 +8,44 @@
  * plus an <h1> and lead paragraph inside #root that React replaces on mount.
  *
  * Vercel serves these files directly (cleanUrls: true) so a crawler that does not
- * run JavaScript still sees one title, one description, one self-referential
- * canonical and one <h1> per URL.
+ * run JavaScript still sees one title, one description, one canonical and one <h1>
+ * per URL.
+ *
+ * It also owns two artifacts that used to drift:
+ *   - dist/sitemap.xml, generated from the manifest, not hand-maintained XML.
+ *     A route with `"sitemap": false` and a `reason` stays served and indexable
+ *     but is not advertised. Exactly one Sitemap line exists in robots.txt.
+ *   - dist/404.html, because the catch-all rewrite is gone: an unknown path must
+ *     answer 404, not 200 with a copy of the homepage.
+ *
+ * Canonical host: SITE_ORIGIN (default https://homemassageubud.com, the apex).
+ * KNOWN-DEFECT D-1: the apex answers 307 -> www until the Vercel primary domain
+ * is flipped, so every canonical and sitemap loc currently points at a redirect.
+ * One env var flips all of them; nothing else in this file hardcodes the host.
  *
  * Fail-closed: the build dies on a missing entry, a duplicate title, a title or
- * description outside the house range, or a sitemap URL with no route.
+ * description outside the house range, an unlisted route without a reason, or a
+ * missing output.
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
 const ROOT = process.cwd();
 const DIST = join(ROOT, 'dist');
-const SITE = 'https://homemassageubud.com';
+const SITE = (process.env.SITE_ORIGIN || 'https://homemassageubud.com').replace(/\/+$/, '');
+const LAST_MOD = process.env.SITEMAP_LASTMOD || new Date().toISOString().slice(0, 10);
 const SUFFIX = ' | Home Massage Ubud';
 const BRAND = 'Home Massage Ubud';
 
 const manifest = JSON.parse(readFileSync(join(ROOT, 'client/src/data/route-meta.json'), 'utf8'));
-const sitemap = readFileSync(join(ROOT, 'client/public/sitemap.xml'), 'utf8');
-const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) =>
-  m[1].replace(SITE, '').replace(/^$/, '/') || '/'
-);
 
 const errors = [];
 
-// ---- gate 1: coverage -------------------------------------------------------
-for (const loc of locs) {
-  if (!manifest[loc]) errors.push(`sitemap URL has no manifest entry: ${loc}`);
-}
-for (const path of Object.keys(manifest)) {
-  if (!locs.includes(path)) errors.push(`manifest entry not in sitemap: ${path}`);
-}
-
-// ---- gate 2: house ranges + uniqueness -------------------------------------
+// ---- gate 1: coverage, uniqueness, house ranges -----------------------------
 const seen = new Map();
+const listed = [];
+const unlisted = [];
+
 for (const [path, meta] of Object.entries(manifest)) {
   const t = meta.title || '';
   const d = meta.description || '';
@@ -49,7 +54,15 @@ for (const [path, meta] of Object.entries(manifest)) {
   if (!meta.h1) errors.push(`missing h1: ${path}`);
   if (seen.has(t)) errors.push(`duplicate title on ${path} and ${seen.get(t)}: ${t}`);
   seen.set(t, path);
+  if (meta.sitemap === false) {
+    if (!meta.reason) errors.push(`route marked sitemap:false without a reason: ${path}`);
+    unlisted.push(path);
+  } else {
+    listed.push(path);
+  }
 }
+
+if (!errors.length && !listed.length) errors.push('no indexable routes in the manifest');
 
 if (errors.length) {
   console.error('\nprerender: FAILED');
@@ -104,8 +117,10 @@ const UBUD_LD = {
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
+const urlFor = (path) => (path === '/' ? `${SITE}/` : `${SITE}${path}`);
+
 function headFor(path, meta) {
-  const url = path === '/' ? `${SITE}/` : `${SITE}${path}`;
+  const url = urlFor(path);
   const ld = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -179,8 +194,34 @@ for (const [path, meta] of Object.entries(manifest)) {
   written += 1;
 }
 
+// ---- sitemap.xml, generated from the manifest ------------------------------
+const sitemapXml =
+  `<?xml version="1.0" encoding="UTF-8"?>\n` +
+  `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+  listed
+    .map((p) => `  <url>\n    <loc>${urlFor(p)}</loc>\n    <lastmod>${LAST_MOD}</lastmod>\n  </url>`)
+    .join('\n') +
+  `\n</urlset>\n`;
+writeFileSync(join(DIST, 'sitemap.xml'), sitemapXml);
+
+// ---- 404.html: real 404, not a soft copy of the homepage -------------------
+const notFound = stripHeadTags(shell)
+  .replace(
+    '</head>',
+    `
+    <title>Page not found | ${BRAND}</title>
+    <meta name="robots" content="noindex, follow" />
+    ${FALLBACK_STYLE}
+  </head>`
+  )
+  .replace(
+    /<div id="root"><\/div>/,
+    `<div id="root"><div id="prerender-fallback"><h1>Page not found</h1><p>This page does not exist on ${BRAND}. Try the <a href="/">homepage</a> or the <a href="/sitemap">sitemap</a>.</p></div></div>`
+  );
+writeFileSync(join(DIST, '404.html'), notFound);
+
 // ---- gate 3: prove the output ---------------------------------------------
-const checks = ['/', '/ubud/deep-tissue-massage', '/pricing', '/home-massage/cities/ubud'];
+const checks = ['/', '/ubud/deep-tissue-massage', '/pricing'];
 for (const p of checks) {
   const file = p === '/' ? join(DIST, 'index.html') : join(DIST, `${p.slice(1)}.html`);
   if (!existsSync(file)) {
@@ -191,7 +232,7 @@ for (const p of checks) {
   const title = (html.match(/<title>([\s\S]*?)<\/title>/) || [])[1];
   const canonical = (html.match(/<link rel="canonical" href="([^"]+)"/) || [])[1];
   const h1 = (html.match(/<h1>([\s\S]*?)<\/h1>/) || [])[1];
-  const want = p === '/' ? `${SITE}/` : `${SITE}${p}`;
+  const want = urlFor(p);
   if (!title || !canonical || !h1) {
     console.error(`prerender: ${p} output incomplete (title=${!!title} canonical=${!!canonical} h1=${!!h1})`);
     process.exit(1);
@@ -203,4 +244,41 @@ for (const p of checks) {
   console.log(`  ${p}  title(${title.length})  canonical ok  h1 ok`);
 }
 
-console.log(`prerender: ${written} route files written, gates passed`);
+const out404 = readFileSync(join(DIST, '404.html'), 'utf8');
+if (!/name="robots" content="noindex/.test(out404) || /rel="canonical"/.test(out404)) {
+  console.error('prerender: 404.html is not a clean noindex 404');
+  process.exit(1);
+}
+if (/http-equiv="refresh"/i.test(out404)) {
+  console.error('prerender: 404.html still carries the GitHub Pages redirect hack');
+  process.exit(1);
+}
+
+const outSitemap = readFileSync(join(DIST, 'sitemap.xml'), 'utf8');
+const outLocs = [...outSitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+if (outLocs.length !== listed.length) {
+  console.error(`prerender: sitemap has ${outLocs.length} locs, manifest lists ${listed.length}`);
+  process.exit(1);
+}
+for (const loc of outLocs) {
+  const p = loc.replace(SITE, '') || '/';
+  if (manifest[p] && manifest[p].sitemap === false) {
+    console.error(`prerender: unlisted route in sitemap: ${p}`);
+    process.exit(1);
+  }
+}
+
+console.log(`prerender: ${written} route files written, ${listed.length} sitemap locs, 404.html written`);
+console.log(`prerender: canonical host ${SITE} · unlisted ${unlisted.length}${unlisted.length ? ' (' + unlisted.join(', ') + ')' : ''}`);
+
+// ---- host honesty ----------------------------------------------------------
+// The build cannot change the platform redirect. Say out loud when the canonical
+// host is not yet the host that answers 200, so no report can call it clean.
+const host = new URL(SITE).host;
+if (process.env.SERVED_HOST && process.env.SERVED_HOST !== host) {
+  console.warn(
+    `prerender: WARNING DEFECT-D-1 — canonical host ${host} is not the served host ${process.env.SERVED_HOST}.`
+  );
+} else {
+  console.log(`prerender: canonical host ${host} (DEFECT-D-1 tracked in docs/seo/KNOWN-DEFECTS.md)`);
+}

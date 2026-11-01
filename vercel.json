@@ -233,10 +233,6 @@
     {
       "source": "/massage-ubud-price",
       "destination": "/massage-ubud-price.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/"
     }
   ]
 }
