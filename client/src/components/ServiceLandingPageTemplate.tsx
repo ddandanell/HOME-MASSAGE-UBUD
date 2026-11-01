@@ -9,6 +9,7 @@ import { generateWhatsAppURL, WHATSAPP_NUMBER_FORMATTED, CTA_TEXT } from '@/lib/
 import SchemaMarkup from '@/components/SchemaMarkup';
 import SEOHead from '@/components/SEOHead';
 import { Link } from 'wouter';
+import heroImage from '@/assets/massage-therapy-hero.jpg';
 
 // Service pages data for internal linking
 const servicePages = [
@@ -189,7 +190,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="order-2 md:order-1">
                   <img 
-                    src="/attached_assets/massage-therapy-hero.jpg" 
+                    src={heroImage} 
                     alt={service.name}
                     className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
                   />
@@ -211,7 +212,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                 </div>
                 <div className="relative">
                   <img 
-                    src="/attached_assets/massage-therapy-hero.jpg" 
+                    src={heroImage} 
                     alt={service.name}
                     className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
                   />
@@ -265,7 +266,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                 </div>
                 <div className="relative">
                   <img 
-                    src="/attached_assets/massage-therapy-hero.jpg" 
+                    src={heroImage} 
                     alt={service.name}
                     className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
                   />
@@ -326,7 +327,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
                 </div>
                 <div className="relative">
                   <img 
-                    src="/attached_assets/massage-therapy-hero.jpg" 
+                    src={heroImage} 
                     alt={service.name}
                     className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
                   />
@@ -1005,7 +1006,7 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
               </div>
               <div>
                 <img 
-                  src="/attached_assets/massage-therapy-hero.jpg" 
+                  src={heroImage} 
                   alt="Home Massage Ubud Team"
                   className="rounded-2xl shadow-xl w-full h-[400px] object-cover"
                 />

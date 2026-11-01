@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'wouter';
 import { generateCanonicalUrl, normaliseSiteUrl, getSiteConfig } from '@/lib/seoUtils';
@@ -14,6 +14,18 @@ function manifestMeta(location: string): RouteMeta | undefined {
   const trimmed = location.replace(/\/+$/, '') || '/';
   return META[trimmed];
 }
+
+/**
+ * Every route is prerendered with its own canonical, robots, description and
+ * Open Graph / Twitter tags. react-helmet-async does not merge with those tags —
+ * it appends its own copies, so after hydration every page carried two
+ * canonical links (independent QA, 2026-11-01). On first mount we remove the
+ * prerendered copies that helmet does not own (no data-rh attribute); helmet's
+ * tags take over and keep managing them on client-side navigation. If JavaScript
+ * never runs, the prerendered tags are all a crawler sees, which is the point.
+ */
+const PRERENDERED_HEAD_SELECTOR =
+  'link[rel="canonical"], meta[name="robots"], meta[name="description"], meta[property^="og:"], meta[name^="twitter:"]';
 
 interface SEOHeadProps {
   title: string;
@@ -35,6 +47,14 @@ export default function SEOHead({
   noindex = false
 }: SEOHeadProps) {
   const [location] = useLocation();
+
+  // Drop the prerendered copies of the head tags helmet is about to manage.
+  // Runs once: the static tags exist only in the initially loaded document.
+  useEffect(() => {
+    document.querySelectorAll(PRERENDERED_HEAD_SELECTOR).forEach((el) => {
+      if (!el.hasAttribute('data-rh')) el.remove();
+    });
+  }, []);
 
   // Detect current site at runtime — works correctly on both homemassageubud.com
   // and homemassagekuta.com even though they share the same source code.
