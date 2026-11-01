@@ -112,3 +112,28 @@ Nothing else moved:
 - **Rikke's independent rendered pass** — requested on merged head `bbfa942` (the Chief of Staff's
   finding that PR #85 merged 8 seconds after it opened with no independent verdict). Not a
   substitute for this record; it is a separate input and her verdict stands or falls on its own.
+
+## Record corrections — Chief of Staff review, 2026-11-01 15:03–15:09 (+08)
+
+The release itself stands; three statements around it were corrected. Recorded here rather than
+edited into the sections above, so the first version and the correction both remain readable.
+
+1. **The proof quoted a stale `checkedAt`.** `07:02:44.741Z` was the verdict of deployment
+   `4Rhev4jqnpRQgAem1kUu6wXgmjvn`. PR #87's merge (`4436588`, 07:05:03Z) triggered a second production
+   build, so the served file then read `07:05:33.334Z`; PR #88 and PR #89 triggered two more. Served
+   2026-11-01 15:33 (+08), twice three seconds apart, it reads
+   `"checkedAt": "2026-11-01T07:29:41.997Z"` on deployment `Ssb7Ka1chUbpoadG7iyh6DzMpKEt`. The
+   stationarity across two requests is the proof the file is build-time, not per-request; the
+   timestamp itself identifies a build, so a verdict is cited with its deployment id.
+2. **Fail-closed cannot fire in production.** `VERCEL_URL` is always set on a Vercel build, so the
+   host always resolves and `process.exit(1)` is unreachable there; that branch is proven by local
+   simulation only. The branch observed firing with real inputs is `matches: false` / `defect: "D-1"`.
+   This is the §15 rule applied to itself.
+3. **"Public" was the wrong word.** `robots.txt` carries `Disallow: /*.json$` for `User-agent: *`, so
+   `/seo-host-check.json` is readable by curl and by a human and is not offered to crawlers. It is an
+   operator and reviewer artifact, not a crawlable page. Nothing on the site depends on a crawler
+   reading it.
+
+One consequence worth recording: a docs-only merge is a production build on this project, so every
+documentation merge moves `checkedAt`. That is not a defect, but it is why the deployed-verdict file
+must never be quoted as "what the site currently says" without naming the deployment.
