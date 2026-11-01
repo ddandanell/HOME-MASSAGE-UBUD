@@ -46,3 +46,15 @@ All 157 URLs returned the same 16,255-byte React shell: one title, one descripti
 ## Cost
 
 $0. No image requests, no paid APIs, no subagents.
+
+## Correction, 2026-11-01 15:05 (+08)
+
+Two corrections to this record, both from the Chief of Staff review at 14:52 (+08):
+
+1. **Deployment id.** The Vercel production deployment on `3940296` is `6Qa8cnsCx4qR3dg11Zh2Uvzt98SK`
+   (`READY`, 05:39:47Z). The id cited above, `7469124316`, is not the deployment on the commit.
+2. **"Self-referential canonical" is wrong as of this record.** The canonicals and sitemap locs are on the
+   apex, and the apex answers `307` to www, so each one names a redirect. The defect, its evidence and its
+   single closing action are in `docs/seo/KNOWN-DEFECTS.md` as DEFECT-D-1, and the remediation is in
+   `2026-11-01-truth-pass-canonicals-404.md`. Nothing in this record's per-route head work is retracted:
+   the title/description/h1/canonical-per-route fix is real and still live.

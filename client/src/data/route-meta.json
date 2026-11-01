@@ -1,8 +1,8 @@
 {
   "/": {
-    "description": "Licensed Balinese therapists bring massage to your villa or hotel in Ubud, 7am–10pm daily. Balinese, deep tissue, hot stone and couples treatments.",
-    "h1": "In-Villa Massage Ubud | 7am–10pm Daily",
-    "title": "In-Villa Massage Ubud | 7am–10pm Daily | Home Massage Ubud"
+    "description": "Licensed Balinese therapists bring massage to your villa or hotel in Ubud, 7am\u201310pm daily. Balinese, deep tissue, hot stone and couples treatments.",
+    "h1": "In-Villa Massage Ubud | 7am\u201310pm Daily",
+    "title": "In-Villa Massage Ubud | 7am\u201310pm Daily | Home Massage Ubud"
   },
   "/about": {
     "description": "Home Massage Ubud sends licensed Balinese therapists to villas, hotels and guesthouses around Ubud. Same team, same oils, same linen standard every visit.",
@@ -11,12 +11,12 @@
   },
   "/amed": {
     "description": "Massage in Amed for divers and snorkellers: shoulders, back and legs after long days in the water, delivered to your guesthouse or villa.",
-    "h1": "Home Massage in Amed – Professional In-Villa Spa Service",
+    "h1": "Home Massage in Amed \u2013 Professional In-Villa Spa Service",
     "title": "Massage in Amed | Dive Recovery | Home Massage Ubud"
   },
   "/berawa": {
     "description": "Luxury home massage in Berawa delivered to your villa or hotel. Canggu's upscale neighborhood with beach clubs and fine dining.",
-    "h1": "Home Massage in Berawa – Professional In-Villa Spa Service",
+    "h1": "Home Massage in Berawa \u2013 Professional In-Villa Spa Service",
     "title": "Home Massage in Berawa, Bali | Villas | Home Massage Ubud"
   },
   "/blog": {
@@ -26,21 +26,23 @@
   },
   "/blog/premium-home-massage-kuta": {
     "description": "Why Kuta residents and tourists book professional home massage services: certified therapists, hygiene standards and in-villa convenience.",
-    "h1": "Premium Home Massage in Kuta – Professional Therapists at Your Door",
-    "title": "Home Massage Kuta Blog Post | Ubud Site | Home Massage Ubud"
+    "h1": "Premium Home Massage in Kuta \u2013 Professional Therapists at Your Door",
+    "title": "Home Massage Kuta Blog Post | Ubud Site | Home Massage Ubud",
+    "sitemap": false,
+    "reason": "Kuta is site-002's market under the binding geo split; GSC 2026-08-03..2026-11-01 shows 0 impressions and 0 clicks for this URL. Kept served and indexable, not advertised in the sitemap. 301/delete needs David's cross-domain call."
   },
   "/candidasa": {
-    "description": "Massage in Candidasa at your hotel or villa on the east coast: Balinese and deep tissue treatments, booked on WhatsApp, 7am–10pm daily.",
-    "h1": "Home Massage in Candidasa – Professional In-Villa Spa Service",
+    "description": "Massage in Candidasa at your hotel or villa on the east coast: Balinese and deep tissue treatments, booked on WhatsApp, 7am\u201310pm daily.",
+    "h1": "Home Massage in Candidasa \u2013 Professional In-Villa Spa Service",
     "title": "Massage in Candidasa | Villa Visits | Home Massage Ubud"
   },
   "/canggu": {
-    "description": "Massage in Canggu delivered to your villa around Batu Bolong, Berawa and Pererenan: licensed therapists, 7am–10pm daily, book on WhatsApp.",
-    "h1": "Home Massage in Canggu – Professional In-Villa Spa Service",
+    "description": "Massage in Canggu delivered to your villa around Batu Bolong, Berawa and Pererenan: licensed therapists, 7am\u201310pm daily, book on WhatsApp.",
+    "h1": "Home Massage in Canggu \u2013 Professional In-Villa Spa Service",
     "title": "Massage in Canggu | Villa Delivery | Home Massage Ubud"
   },
   "/contact": {
-    "description": "Book a massage in Ubud on WhatsApp, 7am–10pm daily. Send your villa name and preferred time; we confirm the therapist and the price before we travel.",
+    "description": "Book a massage in Ubud on WhatsApp, 7am\u201310pm daily. Send your villa name and preferred time; we confirm the therapist and the price before we travel.",
     "h1": "Contact Ubud Massage Service Book Your Treatment Today",
     "title": "Contact Home Massage Ubud | WhatsApp | Home Massage Ubud"
   },
@@ -85,7 +87,7 @@
     "title": "Home Massage vs Spa in Bali | Compared | Home Massage Ubud"
   },
   "/home-massage/blog/how-to-book-home-massage": {
-    "description": "Step-by-step guide to booking home massage. Call or WhatsApp to book professional home massage in Bali today.Book on WhatsApp, 7am–10pm daily.",
+    "description": "Step-by-step guide to booking home massage. Call or WhatsApp to book professional home massage in Bali today.Book on WhatsApp, 7am\u201310pm daily.",
     "h1": "How to Book Home Massage",
     "title": "How to Book Home Massage | At Your Villa | Home Massage Ubud"
   },
@@ -100,7 +102,7 @@
     "title": "What is Home Massage | Ubud Therapists | Home Massage Ubud"
   },
   "/home-massage/blog/why-tourists-prefer-home-massage": {
-    "description": "Discover why tourists choose home massage. Call or WhatsApp to book convenient, private home massage in Bali today.Book on WhatsApp, 7am–10pm daily.",
+    "description": "Discover why tourists choose home massage. Call or WhatsApp to book convenient, private home massage in Bali today.Book on WhatsApp, 7am\u201310pm daily.",
     "h1": "Why Tourists Prefer Home Massage",
     "title": "Why Tourists Prefer Home Massage | Home Massage Ubud"
   },
@@ -182,37 +184,39 @@
   "/home-massage/services/relaxation": {
     "description": "Gentle relaxation home massage at your villa. Call or WhatsApp for same-day booking. Stress relief delivered to your accommodation by licensed therapists.",
     "h1": "Relaxation Home Massage",
-    "title": "Relaxation Home Massage | 7am–10pm Daily | Home Massage Ubud"
+    "title": "Relaxation Home Massage | 7am\u201310pm Daily | Home Massage Ubud"
   },
   "/jimbaran": {
     "description": "Massage in Jimbaran delivered to your villa or hotel near the bay: licensed therapists, table and linen included, daily from 7am to 10pm.",
-    "h1": "Home Massage in Jimbaran – Professional In-Villa Spa Service",
+    "h1": "Home Massage in Jimbaran \u2013 Professional In-Villa Spa Service",
     "title": "Massage in Jimbaran | Villa Delivery | Home Massage Ubud"
   },
   "/kerobokan": {
     "description": "Premium home massage in Kerobokan delivered to your luxury villa. Between Seminyak and Canggu, residential elegance. Book via WhatsApp. 7am-10pm daily.",
-    "h1": "Home Massage in Kerobokan – Professional In-Villa Spa Service",
+    "h1": "Home Massage in Kerobokan \u2013 Professional In-Villa Spa Service",
     "title": "Home Massage in Kerobokan, Bali | Home Massage Ubud"
   },
   "/kuta": {
     "description": "Affordable home massage in Kuta, Bali delivered to your hotel or resort. Professional mobile spa near airport, beach, and shopping.",
-    "h1": "Home Massage in Kuta – Professional In-Villa Spa Service",
-    "title": "Home Massage in Kuta, Bali | Villa Visit | Home Massage Ubud"
+    "h1": "Home Massage in Kuta \u2013 Professional In-Villa Spa Service",
+    "title": "Home Massage in Kuta, Bali | Villa Visit | Home Massage Ubud",
+    "sitemap": false,
+    "reason": "Kuta is site-002's market under the binding geo split; GSC 2026-08-03..2026-11-01 shows 0 impressions and 0 clicks for this URL. Kept served and indexable, not advertised in the sitemap. 301/delete needs David's cross-domain call."
   },
   "/legian": {
-    "description": "Massage in Legian delivered to your hotel or villa: licensed therapists, table and oils brought to you, 7am–10pm daily. Book on WhatsApp.",
-    "h1": "Home Massage in Legian – Professional In-Villa Spa Service",
+    "description": "Massage in Legian delivered to your hotel or villa: licensed therapists, table and oils brought to you, 7am\u201310pm daily. Book on WhatsApp.",
+    "h1": "Home Massage in Legian \u2013 Professional In-Villa Spa Service",
     "title": "Massage in Legian | Villa Delivery | Home Massage Ubud"
   },
   "/lovina": {
     "description": "Massage in Lovina, north Bali, delivered to your hotel or villa: Balinese and deep tissue treatments, therapist and equipment travelling to you.",
-    "h1": "Home Massage in Lovina – Professional In-Villa Spa Service",
+    "h1": "Home Massage in Lovina \u2013 Professional In-Villa Spa Service",
     "title": "Massage in Lovina | Villa Delivery | Home Massage Ubud"
   },
   "/mobile-massage": {
     "description": "Professional mobile massage service delivered to your villa or hotel in Bali. Licensed therapists bring spa-quality treatments to your accommodation.",
     "h1": "Mobile Massage in Bali",
-    "title": "Mobile Massage in Bali | 7am–10pm Daily | Home Massage Ubud"
+    "title": "Mobile Massage in Bali | 7am\u201310pm Daily | Home Massage Ubud"
   },
   "/mobile-massage/blog": {
     "description": "Complete guides about mobile massage in Bali. Learn everything about booking, benefits, safety, and choosing the right mobile massage service.",
@@ -235,7 +239,7 @@
     "title": "Mobile Massage vs Spa Massage | Compared | Home Massage Ubud"
   },
   "/mobile-massage/blog/what-is-mobile-massage": {
-    "description": "Discover what mobile massage really is. Learn the definition, benefits, and how mobile massage compares to spa massage.Book on WhatsApp, 7am–10pm daily.",
+    "description": "Discover what mobile massage really is. Learn the definition, benefits, and how mobile massage compares to spa massage.Book on WhatsApp, 7am\u201310pm daily.",
     "h1": "What is Mobile Massage?",
     "title": "What Is Mobile Massage? Bali Guide | Home Massage Ubud"
   },
@@ -257,7 +261,7 @@
   "/mobile-massage/cities/sanur": {
     "description": "Professional mobile massage service throughout Sanur. Licensed therapists deliver spa-quality treatments to your villa, hotel, or apartment.",
     "h1": "Mobile Massage in Sanur",
-    "title": "Mobile Massage in Sanur | 7am–10pm Daily | Home Massage Ubud"
+    "title": "Mobile Massage in Sanur | 7am\u201310pm Daily | Home Massage Ubud"
   },
   "/mobile-massage/cities/seminyak": {
     "description": "Professional mobile massage service throughout Seminyak. Licensed therapists deliver spa-quality treatments to your villa, resort, or apartment.",
@@ -297,12 +301,12 @@
   "/mobile-massage/services": {
     "description": "Browse all mobile massage services available at your villa or hotel in Bali. Balinese, deep tissue, relaxation, and couples mobile massage.",
     "h1": "Mobile Massage Services",
-    "title": "Mobile Massage Services | 7am–10pm Daily | Home Massage Ubud"
+    "title": "Mobile Massage Services | 7am\u201310pm Daily | Home Massage Ubud"
   },
   "/mobile-massage/services/balinese-mobile-massage": {
     "description": "Experience authentic Balinese mobile massage at your villa or hotel. Traditional techniques delivered by licensed therapists.",
     "h1": "Balinese Mobile Massage",
-    "title": "Balinese Mobile Massage | 7am–10pm Daily | Home Massage Ubud"
+    "title": "Balinese Mobile Massage | 7am\u201310pm Daily | Home Massage Ubud"
   },
   "/mobile-massage/services/couples-mobile-massage": {
     "description": "Romantic couples mobile massage experience at your accommodation. Two therapists deliver synchronized treatments. Perfect for honeymoons and romantic.",
@@ -326,22 +330,22 @@
   },
   "/nusa-dua": {
     "description": "Premium home massage in Nusa Dua delivered to your resort or villa. Professional mobile spa service in Bali's luxury resort enclave.",
-    "h1": "Home Massage in Nusa Dua – Professional In-Villa Spa Service",
+    "h1": "Home Massage in Nusa Dua \u2013 Professional In-Villa Spa Service",
     "title": "Home Massage in Nusa Dua, Bali | Home Massage Ubud"
   },
   "/pererenan": {
     "description": "Relaxing home massage in Pererenan delivered to your rice field villa or hotel. Tranquil Canggu neighbor with surf and nature.",
-    "h1": "Home Massage in Pererenan – Professional In-Villa Spa Service",
+    "h1": "Home Massage in Pererenan \u2013 Professional In-Villa Spa Service",
     "title": "Home Massage in Pererenan, Bali | Home Massage Ubud"
   },
   "/petitenget": {
     "description": "Luxury home massage in Petitenget delivered to your villa. Northern Seminyak with upscale dining and Petitenget Beach. Book via WhatsApp. 7am-10pm daily.",
-    "h1": "Home Massage in Petitenget – Professional In-Villa Spa Service",
+    "h1": "Home Massage in Petitenget \u2013 Professional In-Villa Spa Service",
     "title": "Home Massage in Petitenget, Bali | Home Massage Ubud"
   },
   "/pricing": {
     "description": "Massage prices in Ubud for in-villa service: 60-minute Balinese from 320k IDR, 90-minute from 450k. No travel fee inside Ubud. Pay after treatment.",
-    "h1": "Ubud Massage Pricing – Transparent Rates",
+    "h1": "Ubud Massage Pricing \u2013 Transparent Rates",
     "title": "Ubud Massage Prices | What You Pay | Home Massage Ubud"
   },
   "/privacy-policy": {
@@ -355,13 +359,13 @@
     "title": "Villa Services We Recommend in Bali | Home Massage Ubud"
   },
   "/sanur": {
-    "description": "Massage in Sanur at your hotel or villa: Balinese and deep tissue treatments with a therapist who brings table, linen and oils. Daily 7am–10pm.",
-    "h1": "Home Massage in Sanur – Professional In-Villa Spa Service",
+    "description": "Massage in Sanur at your hotel or villa: Balinese and deep tissue treatments with a therapist who brings table, linen and oils. Daily 7am\u201310pm.",
+    "h1": "Home Massage in Sanur \u2013 Professional In-Villa Spa Service",
     "title": "Massage in Sanur | Hotel and Villa | Home Massage Ubud"
   },
   "/seminyak": {
     "description": "Massage in Seminyak at your villa or hotel: Balinese, deep tissue and couples treatments with equipment and linen we bring ourselves.",
-    "h1": "Home Massage in Seminyak – Professional In-Villa Spa Service",
+    "h1": "Home Massage in Seminyak \u2013 Professional In-Villa Spa Service",
     "title": "Massage in Seminyak | Villa Delivery | Home Massage Ubud"
   },
   "/service-areas": {
@@ -376,137 +380,137 @@
   },
   "/services/aromatherapy-massage": {
     "description": "Aromatherapy massage in Ubud with essential-oil blends chosen for relaxation or muscle recovery, delivered to your villa by a licensed therapist.",
-    "h1": "Aromatherapy Massage in Ubud – Villa Spa Delivered",
+    "h1": "Aromatherapy Massage in Ubud \u2013 Villa Spa Delivered",
     "title": "Aromatherapy Massage Ubud | Oil Blends | Home Massage Ubud"
   },
   "/services/at-home-massage": {
     "description": "At-home massage in Ubud, booked the same day on WhatsApp when a therapist is free. Table, linen and oils included; you only need a quiet room.",
-    "h1": "At-Home Massage – Private Treatment in Your Space",
+    "h1": "At-Home Massage \u2013 Private Treatment in Your Space",
     "title": "At Home Massage Ubud | Same Day | Home Massage Ubud"
   },
   "/services/best-massage-services": {
     "description": "What separates a good Ubud massage service from a cheap one: licensed therapists, priced before travel, own equipment, and a confirmed arrival window.",
-    "h1": "Best Massage Services in Ubud – Top-Rated Villa Spa",
+    "h1": "Best Massage Services in Ubud \u2013 Top-Rated Villa Spa",
     "title": "Best Massage in Ubud | How to Choose | Home Massage Ubud"
   },
   "/services/body-massage": {
-    "description": "Body massage in Ubud delivered at your villa, hotel or guesthouse: back, shoulders, legs and arms with oil, pressure chosen by you, daily 7am–10pm.",
-    "h1": "Body Massage – Professional Treatment in Ubud",
+    "description": "Body massage in Ubud delivered at your villa, hotel or guesthouse: back, shoulders, legs and arms with oil, pressure chosen by you, daily 7am\u201310pm.",
+    "h1": "Body Massage \u2013 Professional Treatment in Ubud",
     "title": "Body Massage Ubud | At Your Villa | Home Massage Ubud"
   },
   "/services/body-therapy-massage": {
     "description": "Body therapy massage in Ubud combining deep tissue and stretching for tight hips, backs and shoulders. Delivered at your villa by a licensed therapist.",
-    "h1": "Body Therapy Massage – Therapeutic Bodywork in Ubud",
+    "h1": "Body Therapy Massage \u2013 Therapeutic Bodywork in Ubud",
     "title": "Body Therapy Massage Ubud | Targeted | Home Massage Ubud"
   },
   "/services/couples-massage": {
     "description": "Couples massage in your Ubud villa with two therapists working at the same time. Side-by-side tables, 60 or 90 minutes, booked for one arrival window.",
-    "h1": "Couples Massage – Romantic Villa Experience in Ubud",
+    "h1": "Couples Massage \u2013 Romantic Villa Experience in Ubud",
     "title": "Couples Massage Ubud | Two Therapists | Home Massage Ubud"
   },
   "/services/deep-tissue-massage": {
     "description": "Deep tissue massage in Ubud for knots and long-standing tension. Slower, firmer pressure on back, shoulders and legs, delivered at your villa.",
-    "h1": "Deep Tissue Massage in Ubud – Villa Spa Delivered",
+    "h1": "Deep Tissue Massage in Ubud \u2013 Villa Spa Delivered",
     "title": "Deep Tissue Massage Ubud | Firm Pressure | Home Massage Ubud"
   },
   "/services/foot-massage": {
     "description": "Foot massage and reflexology in Ubud without leaving your villa. Forty-five to sixty minutes on feet and lower legs, pressure to your preference.",
-    "h1": "Foot Massage – Revitalize Your Feet in Ubud",
+    "h1": "Foot Massage \u2013 Revitalize Your Feet in Ubud",
     "title": "Foot Massage Ubud | Reflexology at Villa | Home Massage Ubud"
   },
   "/services/full-body-massage": {
     "description": "Full body massage in Ubud covering back, legs, arms, shoulders and head. 60 or 90 minutes, at your villa, with pressure adjusted to what you ask for.",
-    "h1": "Full Body Massage – Complete Relaxation in Ubud",
+    "h1": "Full Body Massage \u2013 Complete Relaxation in Ubud",
     "title": "Full Body Massage Ubud | 60 or 90 Min | Home Massage Ubud"
   },
   "/services/home-massage": {
     "description": "Home massage in Ubud means we bring the setup: massage table, fresh linen, oils and a licensed therapist. You provide the room; we handle the rest.",
-    "h1": "Home Massage – Spa Experience at Your Door",
+    "h1": "Home Massage \u2013 Spa Experience at Your Door",
     "title": "Home Massage Ubud | Table, Linen, Oils | Home Massage Ubud"
   },
   "/services/hot-stone-massage": {
     "description": "Hot stone massage in Ubud using heated volcanic stones on the back and shoulders with oil massage. A therapist brings the kit to your villa.",
-    "h1": "Hot Stone Massage in Ubud – Villa Spa Delivered",
+    "h1": "Hot Stone Massage in Ubud \u2013 Villa Spa Delivered",
     "title": "Hot Stone Massage Ubud | Warm Stones | Home Massage Ubud"
   },
   "/services/luxury-massage": {
     "description": "Luxury massage at your Ubud villa: two therapists for couples, premium oils, hot stones and a setup that leaves the room as it was found.",
-    "h1": "Luxury Massage – Five-Star Villa Experience in Ubud",
+    "h1": "Luxury Massage \u2013 Five-Star Villa Experience in Ubud",
     "title": "Luxury Massage Ubud | Villa Standard | Home Massage Ubud"
   },
   "/services/massage": {
-    "description": "Book a massage in Ubud without leaving your villa. Licensed therapists, 7am–10pm, Balinese and deep tissue from 320k IDR. Confirm on WhatsApp in minutes.",
-    "h1": "Massage in Ubud – Premium Villa Service",
+    "description": "Book a massage in Ubud without leaving your villa. Licensed therapists, 7am\u201310pm, Balinese and deep tissue from 320k IDR. Confirm on WhatsApp in minutes.",
+    "h1": "Massage in Ubud \u2013 Premium Villa Service",
     "title": "Massage in Ubud | Villa Service Daily | Home Massage Ubud"
   },
   "/services/massage-bali": {
-    "description": "Massage in Bali delivered to your villa in Ubud, with licensed Balinese therapists and equipment we bring ourselves. Book by WhatsApp, 7am–10pm daily.",
-    "h1": "Massage Bali – Mobile Balinese Massage Near Me in Ubud, Seminyak & Kuta",
+    "description": "Massage in Bali delivered to your villa in Ubud, with licensed Balinese therapists and equipment we bring ourselves. Book by WhatsApp, 7am\u201310pm daily.",
+    "h1": "Massage Bali \u2013 Mobile Balinese Massage Near Me in Ubud, Seminyak & Kuta",
     "title": "Massage Bali | Ubud Villa Delivery | Home Massage Ubud"
   },
   "/services/mobile-massage": {
-    "description": "Mobile massage in Ubud: a licensed therapist travels to your villa, hotel or guesthouse with table, linen and oils. 7am–10pm daily, same-day slots.",
-    "h1": "Mobile Massage – We Come to Your Location",
+    "description": "Mobile massage in Ubud: a licensed therapist travels to your villa, hotel or guesthouse with table, linen and oils. 7am\u201310pm daily, same-day slots.",
+    "h1": "Mobile Massage \u2013 We Come to Your Location",
     "title": "Mobile Massage Ubud | We Come to You | Home Massage Ubud"
   },
   "/services/postnatal-massage": {
     "description": "Postnatal massage in Ubud for recovery after birth, at your villa. Gentle pressure, side-lying or seated positions, and no abdominal work. Ask first.",
-    "h1": "Postnatal Massage – Recovery for New Mothers",
+    "h1": "Postnatal Massage \u2013 Recovery for New Mothers",
     "title": "Postnatal Massage Ubud | After Birth | Home Massage Ubud"
   },
   "/services/pregnancy-massage": {
     "description": "Pregnancy massage in Ubud with side-lying positioning and bolsters, from the second trimester. A trained therapist comes to your villa; tell us your week.",
-    "h1": "Pregnancy Massage – Maternal Care in Ubud",
+    "h1": "Pregnancy Massage \u2013 Maternal Care in Ubud",
     "title": "Pregnancy Massage Ubud | Villa Visit | Home Massage Ubud"
   },
   "/services/prenatal-massage": {
-    "description": "Prenatal massage at your Ubud villa: side-lying setup, no pressure on the abdomen, therapist trained in pregnancy positioning. Book 7am–10pm on WhatsApp.",
-    "h1": "Prenatal Massage – Safe Care for Expecting Mothers",
+    "description": "Prenatal massage at your Ubud villa: side-lying setup, no pressure on the abdomen, therapist trained in pregnancy positioning. Book 7am\u201310pm on WhatsApp.",
+    "h1": "Prenatal Massage \u2013 Safe Care for Expecting Mothers",
     "title": "Prenatal Massage Ubud | Side-Lying | Home Massage Ubud"
   },
   "/services/professional-massage": {
     "description": "Professional massage in Ubud from licensed therapists: confirmed arrival window, hygiene protocol, fresh linen and a price agreed before we travel.",
-    "h1": "Professional Massage – Licensed Therapists in Ubud",
+    "h1": "Professional Massage \u2013 Licensed Therapists in Ubud",
     "title": "Professional Massage Ubud | Licensed | Home Massage Ubud"
   },
   "/services/reflexology": {
     "description": "Reflexology at your Ubud villa: pressure points on the feet mapped to the body, used for relaxation and circulation. Book a 45 or 60-minute session.",
-    "h1": "Reflexology – Pressure Point Wellness in Ubud",
+    "h1": "Reflexology \u2013 Pressure Point Wellness in Ubud",
     "title": "Reflexology Ubud | Foot Pressure Points | Home Massage Ubud"
   },
   "/services/relaxing-massage": {
     "description": "Relaxing massage in Ubud with slow, gentle strokes and warm oil, at your villa. Choose 60 or 90 minutes; the point is to fall asleep, not to wince.",
-    "h1": "Relaxing Massage – Ultimate Stress Relief in Ubud",
+    "h1": "Relaxing Massage \u2013 Ultimate Stress Relief in Ubud",
     "title": "Relaxing Massage Ubud | Slow and Gentle | Home Massage Ubud"
   },
   "/services/spa-massage": {
-    "description": "Spa massage in Ubud without the spa: table, linen, oils and a therapist at your villa. Balinese, hot stone or aromatherapy, 7am–10pm daily.",
-    "h1": "Spa Massage – Luxury Villa Experience in Ubud",
+    "description": "Spa massage in Ubud without the spa: table, linen, oils and a therapist at your villa. Balinese, hot stone or aromatherapy, 7am\u201310pm daily.",
+    "h1": "Spa Massage \u2013 Luxury Villa Experience in Ubud",
     "title": "Spa Massage Ubud | Brought to Villa | Home Massage Ubud"
   },
   "/services/sports-massage": {
     "description": "Sports massage in Ubud for runners, cyclists and surfers. Deeper pressure on calves, hamstrings and back, delivered at your villa after training.",
-    "h1": "Sports Massage – Athletic Recovery in Ubud",
+    "h1": "Sports Massage \u2013 Athletic Recovery in Ubud",
     "title": "Sports Massage Ubud | Recovery at Villa | Home Massage Ubud"
   },
   "/services/therapeutic-massage": {
     "description": "Therapeutic massage in Ubud aimed at a specific problem: lower back, neck, shoulders or post-hike legs. Assessment first, then targeted pressure.",
-    "h1": "Therapeutic Massage – Treatment-Focused Care in Ubud",
+    "h1": "Therapeutic Massage \u2013 Treatment-Focused Care in Ubud",
     "title": "Therapeutic Massage Ubud | Pain Focus | Home Massage Ubud"
   },
   "/services/traditional-massage": {
-    "description": "Traditional Balinese massage at your Ubud villa: palm pressure, acupressure and aromatic oils over 60 or 90 minutes. Licensed therapists, daily 7am–10pm.",
-    "h1": "Traditional Massage – Authentic Balinese Healing",
+    "description": "Traditional Balinese massage at your Ubud villa: palm pressure, acupressure and aromatic oils over 60 or 90 minutes. Licensed therapists, daily 7am\u201310pm.",
+    "h1": "Traditional Massage \u2013 Authentic Balinese Healing",
     "title": "Traditional Massage Ubud | Balinese | Home Massage Ubud"
   },
   "/services/wellness-massage": {
     "description": "Wellness massage in Ubud for guests who want a reset rather than a fix: circulation, sleep and stress, in your villa, at a time that suits you.",
-    "h1": "Wellness Massage – Holistic Mind-Body Care in Ubud",
+    "h1": "Wellness Massage \u2013 Holistic Mind-Body Care in Ubud",
     "title": "Wellness Massage Ubud | Reset at Villa | Home Massage Ubud"
   },
   "/sidemen": {
     "description": "Massage in Sidemen delivered to your valley villa: Balinese and deep tissue treatments with a therapist who travels from Ubud with full equipment.",
-    "h1": "Home Massage in Sidemen – Professional In-Villa Spa Service",
+    "h1": "Home Massage in Sidemen \u2013 Professional In-Villa Spa Service",
     "title": "Massage in Sidemen | Valley Villas | Home Massage Ubud"
   },
   "/sitemap": {
@@ -536,111 +540,111 @@
   },
   "/ubud-centre": {
     "description": "Massage in Ubud centre, delivered to your villa, hotel or guesthouse around Jalan Raya Ubud, Monkey Forest and Campuhan. Same-day slots on WhatsApp.",
-    "h1": "Villa Massage in Ubud Centre – In-Villa Spa Service",
+    "h1": "Villa Massage in Ubud Centre \u2013 In-Villa Spa Service",
     "title": "Massage in Ubud Centre | Villa Visits | Home Massage Ubud"
   },
   "/ubud-east": {
     "description": "Massage in east Ubud around Penestanan, Sayan and the Campuhan ridge, at your villa. Book a 60 or 90-minute treatment on WhatsApp, daily.",
-    "h1": "Villa Massage in Ubud East – Campuhan Ridge Area Spa",
+    "h1": "Villa Massage in Ubud East \u2013 Campuhan Ridge Area Spa",
     "title": "Massage in East Ubud | Villa Visits | Home Massage Ubud"
   },
   "/ubud-luxury-villas": {
-    "description": "Massage for luxury villas in Ubud: two therapists, discreet setup, premium oils and an arrival window agreed with your villa manager. Daily 7am–10pm.",
-    "h1": "Luxury Villa Massage in Ubud – Premium In-Villa Spa",
+    "description": "Massage for luxury villas in Ubud: two therapists, discreet setup, premium oils and an arrival window agreed with your villa manager. Daily 7am\u201310pm.",
+    "h1": "Luxury Villa Massage in Ubud \u2013 Premium In-Villa Spa",
     "title": "Massage for Luxury Villas in Ubud | Home Massage Ubud"
   },
   "/ubud-north": {
-    "description": "Massage in north Ubud: Tegallalang, Payangan and the rice-terrace villas above town. Therapists travel with table and linen, 7am–10pm daily.",
-    "h1": "Villa Massage in Penestanan & Sayan – Ubud North Spa",
+    "description": "Massage in north Ubud: Tegallalang, Payangan and the rice-terrace villas above town. Therapists travel with table and linen, 7am\u201310pm daily.",
+    "h1": "Villa Massage in Penestanan & Sayan \u2013 Ubud North Spa",
     "title": "Massage in North Ubud | Villa Visits | Home Massage Ubud"
   },
   "/ubud-south": {
     "description": "Massage in south Ubud around Peliatan, Lodtunduh and Nyuh Kuning, delivered to your villa. Licensed therapists, table and oils included.",
-    "h1": "Villa Massage in Ubud South – Lodtunduh & Nyuh Kuning Spa",
+    "h1": "Villa Massage in Ubud South \u2013 Lodtunduh & Nyuh Kuning Spa",
     "title": "Massage in South Ubud | Villa Visits | Home Massage Ubud"
   },
   "/ubud/aromatherapy-massage": {
     "description": "Aromatherapy massage at your Ubud villa with essential-oil blends for sleep, stress or sore muscles. A licensed therapist brings everything needed.",
-    "h1": "Aromatherapy Massage in Ubud – Villa Spa Delivered",
+    "h1": "Aromatherapy Massage in Ubud \u2013 Villa Spa Delivered",
     "title": "Aromatherapy Massage Ubud | Oils | Home Massage Ubud"
   },
   "/ubud/couples-wellness-ritual": {
     "description": "Couples wellness ritual at your Ubud villa: two therapists, side-by-side tables, Balinese massage and a foot ritual in one ninety-minute booking.",
-    "h1": "Couples Wellness Ritual in Ubud – Romantic Villa Spa",
+    "h1": "Couples Wellness Ritual in Ubud \u2013 Romantic Villa Spa",
     "title": "Couples Wellness Ritual in Ubud | Home Massage Ubud"
   },
   "/ubud/deep-tissue-massage": {
     "description": "Deep tissue massage at your Ubud villa for knots and chronic tension. Firmer, slower pressure on back, shoulders and legs; tell the therapist where it.",
-    "h1": "Deep Tissue Massage in Ubud – Villa Spa Delivered",
+    "h1": "Deep Tissue Massage in Ubud \u2013 Villa Spa Delivered",
     "title": "Deep Tissue Massage Ubud | Firm, Slow | Home Massage Ubud"
   },
   "/ubud/detox-wellness-massage": {
     "description": "Detox wellness massage in Ubud with lymphatic strokes and gentle abdominal work at your villa. A supportive treatment, not a medical one.",
-    "h1": "Detox & Wellness Massage in Ubud – Villa Spa Service",
+    "h1": "Detox & Wellness Massage in Ubud \u2013 Villa Spa Service",
     "title": "Detox Wellness Massage in Ubud | Home Massage Ubud"
   },
   "/ubud/foot-reflexology": {
     "description": "Foot reflexology in Ubud: pressure points on the feet and lower legs for tired legs and circulation, at your villa. Forty-five or sixty minutes.",
-    "h1": "Foot Reflexology in Ubud – Jet-lag Recovery Villa Service",
+    "h1": "Foot Reflexology in Ubud \u2013 Jet-lag Recovery Villa Service",
     "title": "Foot Reflexology Ubud | At Your Villa | Home Massage Ubud"
   },
   "/ubud/herbal-bamboo-massage": {
     "description": "Herbal bamboo massage in Ubud using warmed bamboo rollers with herbal compresses, at your villa. Deeper than it sounds; good for backs and legs.",
-    "h1": "Herbal & Bamboo Massage in Ubud – Traditional Villa Spa",
+    "h1": "Herbal & Bamboo Massage in Ubud \u2013 Traditional Villa Spa",
     "title": "Herbal Bamboo Massage Ubud | Warm | Home Massage Ubud"
   },
   "/ubud/hot-stone-massage": {
     "description": "Hot stone massage in Ubud using heated volcanic stones with oil massage on the back and shoulders, at your villa. Ninety minutes is the usual booking.",
-    "h1": "Hot Stone Massage in Ubud – Villa Spa Delivered",
+    "h1": "Hot Stone Massage in Ubud \u2013 Villa Spa Delivered",
     "title": "Hot Stone Massage Ubud | Volcanic | Home Massage Ubud"
   },
   "/ubud/lymphatic-drainage-massage": {
     "description": "Lymphatic drainage massage in Ubud: light, rhythmic strokes for swelling and post-travel heaviness, at your villa. Tell us about any medical condition.",
-    "h1": "Lymphatic Drainage Massage in Ubud – Villa Spa Delivered",
+    "h1": "Lymphatic Drainage Massage in Ubud \u2013 Villa Spa Delivered",
     "title": "Lymphatic Drainage Massage Ubud | Home Massage Ubud"
   },
   "/ubud/post-hike-recovery-massage": {
     "description": "Post-hike recovery massage in Ubud for legs and hips after Mount Batur or the Campuhan ridge walk. Firmer pressure, at your villa, the same afternoon.",
-    "h1": "Post-Hike Recovery Massage in Ubud – Villa Service",
+    "h1": "Post-Hike Recovery Massage in Ubud \u2013 Villa Service",
     "title": "Post-Hike Recovery Massage in Ubud | Home Massage Ubud"
   },
   "/ubud/pregnancy-massage": {
     "description": "Pregnancy massage at your Ubud villa with side-lying positioning and bolsters, from the second trimester. Tell us your week so the therapist can prepare.",
-    "h1": "Pregnancy Massage in Ubud – Safe In-Villa Spa",
+    "h1": "Pregnancy Massage in Ubud \u2013 Safe In-Villa Spa",
     "title": "Pregnancy Massage Ubud | Side-Lying | Home Massage Ubud"
   },
   "/ubud/thai-massage": {
     "description": "Thai massage in Ubud with assisted stretching and pressure along the body, done on a floor mat at your villa. Loose clothing provided or wear your own.",
-    "h1": "Thai Massage in Ubud – Villa Spa Delivered",
+    "h1": "Thai Massage in Ubud \u2013 Villa Spa Delivered",
     "title": "Thai Massage Ubud | Stretch and Pressure | Home Massage Ubud"
   },
   "/ubud/traditional-balinese-massage": {
-    "description": "Traditional Balinese massage at your Ubud villa: palm pressure, acupressure and aromatic oil over 60 or 90 minutes. Licensed therapists, 7am–10pm daily.",
-    "h1": "Traditional Balinese Massage in Ubud – Villa Spa Delivered",
+    "description": "Traditional Balinese massage at your Ubud villa: palm pressure, acupressure and aromatic oil over 60 or 90 minutes. Licensed therapists, 7am\u201310pm daily.",
+    "h1": "Traditional Balinese Massage in Ubud \u2013 Villa Spa Delivered",
     "title": "Balinese Massage Ubud | Villa Service | Home Massage Ubud"
   },
   "/ubud/yoga-stretch-massage": {
     "description": "Yoga stretch massage in Ubud combining assisted stretching with oil massage for hips, hamstrings and shoulders after a week of yoga classes.",
-    "h1": "Yoga Stretch & Massage in Ubud – Villa Wellness Service",
+    "h1": "Yoga Stretch & Massage in Ubud \u2013 Villa Wellness Service",
     "title": "Yoga Stretch Massage Ubud | Hips | Home Massage Ubud"
   },
   "/uluwatu": {
-    "description": "Massage in Uluwatu at your clifftop villa: deep tissue and Balinese treatments with equipment brought to you. Book on WhatsApp, 7am–10pm daily.",
-    "h1": "Home Massage in Uluwatu – Professional In-Villa Spa Service",
+    "description": "Massage in Uluwatu at your clifftop villa: deep tissue and Balinese treatments with equipment brought to you. Book on WhatsApp, 7am\u201310pm daily.",
+    "h1": "Home Massage in Uluwatu \u2013 Professional In-Villa Spa Service",
     "title": "Massage in Uluwatu | Villa Delivery | Home Massage Ubud"
   },
   "/umalas": {
     "description": "Tranquil home massage in Umalas delivered to your residential villa. Quiet area between Seminyak and Canggu with rice fields.",
-    "h1": "Home Massage in Umalas – Professional In-Villa Spa Service",
+    "h1": "Home Massage in Umalas \u2013 Professional In-Villa Spa Service",
     "title": "Home Massage in Umalas, Bali | Villas | Home Massage Ubud"
   },
   "/ungasan": {
     "description": "Luxury home massage in Ungasan delivered to your cliffside villa or resort. Premium Bukit Peninsula location with ocean views.",
-    "h1": "Home Massage in Ungasan – Professional In-Villa Spa Service",
+    "h1": "Home Massage in Ungasan \u2013 Professional In-Villa Spa Service",
     "title": "Home Massage in Ungasan, Bali | Villas | Home Massage Ubud"
   },
   "/villa-massage": {
-    "description": "Massage in your own villa in Ubud: table, linen, oils and a licensed therapist arrive at your booked time. Couples and groups welcome, 7am–10pm daily.",
+    "description": "Massage in your own villa in Ubud: table, linen, oils and a licensed therapist arrive at your booked time. Couples and groups welcome, 7am\u201310pm daily.",
     "h1": "Villa Massage in Bali",
     "title": "Villa Massage Ubud | Therapists to You | Home Massage Ubud"
   },
@@ -672,7 +676,7 @@
   "/villa-massage/cities": {
     "description": "Villa massage service available across all major Bali destinations. Professional therapists deliver treatments to your private villa in Ubud, Seminyak.",
     "h1": "Villa Massage Across All Bali Locations",
-    "title": "Villa Massage Locations | 7am–10pm Daily | Home Massage Ubud"
+    "title": "Villa Massage Locations | 7am\u201310pm Daily | Home Massage Ubud"
   },
   "/villa-massage/cities/canggu": {
     "description": "Professional villa massage in Canggu. Licensed therapists deliver spa treatments to your private villa. Same-day booking available.",
@@ -687,7 +691,9 @@
   "/villa-massage/cities/kuta": {
     "description": "Professional villa massage in Kuta. Licensed therapists deliver spa treatments to your private villa. Same-day booking available.",
     "h1": "Villa Massage in Kuta",
-    "title": "Villa Massage Kuta | Bali Villa Massage | Home Massage Ubud"
+    "title": "Villa Massage Kuta | Bali Villa Massage | Home Massage Ubud",
+    "sitemap": false,
+    "reason": "Kuta is site-002's market under the binding geo split; GSC 2026-08-03..2026-11-01 shows 0 impressions and 0 clicks for this URL. Kept served and indexable, not advertised in the sitemap. 301/delete needs David's cross-domain call."
   },
   "/villa-massage/cities/legian": {
     "description": "Professional villa massage in Legian. Licensed therapists deliver spa treatments to your private villa. Same-day booking available.",
@@ -702,7 +708,7 @@
   "/villa-massage/cities/pererenan": {
     "description": "Professional villa massage in Pererenan. Licensed therapists deliver spa treatments to your private villa. Same-day booking available.",
     "h1": "Villa Massage in Pererenan",
-    "title": "Villa Massage Pererenan | 7am–10pm Daily | Home Massage Ubud"
+    "title": "Villa Massage Pererenan | 7am\u201310pm Daily | Home Massage Ubud"
   },
   "/villa-massage/cities/sanur": {
     "description": "Professional villa massage in Sanur. Licensed therapists deliver spa treatments to your private villa. Same-day booking available.",
@@ -752,7 +758,7 @@
   "/villa-massage/services/hot-stone": {
     "description": "Professional hot stone villa massage delivered to your private villa in Bali. Experience therapeutic heated basalt stones for deep muscle relaxation.",
     "h1": "Hot Stone Villa Massage in Bali",
-    "title": "Hot Stone Villa Massage | 7am–10pm Daily | Home Massage Ubud"
+    "title": "Hot Stone Villa Massage | 7am\u201310pm Daily | Home Massage Ubud"
   },
   "/villa-massage/services/prenatal": {
     "description": "Professional prenatal villa massage delivered to your private villa in Bali. Safe, specialized pregnancy massage for expectant mothers.",
