@@ -210,6 +210,21 @@
       "source": "/Home-Messedage",
       "destination": "/home-massage",
       "permanent": true
+    },
+    {
+      "source": "/sitemap-kuta.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap-kuta-index.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap-kuta-pages.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
     }
   ],
   "trailingSlash": false,
