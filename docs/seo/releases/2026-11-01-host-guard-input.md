@@ -1,11 +1,13 @@
 # Release — host honesty guard gets an input (DEFECT-D-3)
 
-- **Date:** 2026-11-01, 15:0x (+08) / 07:0xZ
+- **Date:** 2026-11-01, 15:02 (+08) / 07:02Z
 - **Site:** site-007 `homemassageubud.com`
 - **Operator:** Home Massage Ubud SEO
 - **Trigger:** Chief of Staff review of merge `e899eb0`, 2026-11-01, finding that the DEFECT-D-1
   warning at `scripts/prerender.mjs:278` had no input and had never fired.
 - **Preceding merge:** `e899eb0` (PR #85)
+- **PR:** #86 · **branch head:** `11ae2b9` · **merge commit:** `bbfa942` (merged 2026-11-01T07:02:18Z)
+- **Vercel production deployment:** `4Rhev4jqnpRQgAem1kUu6wXgmjvn`, state `success`, 2026-11-01T07:02:46Z
 - **Scope:** one script, one doc. No copy, no routes, no titles, no canonicals, no redirects.
 
 ## The finding, restated
@@ -67,3 +69,46 @@ It does not close DEFECT-D-1. The apex still answers 307 → www. That needs the
 flipped, which is David's action and was already logged in D-1 with the acceptance test.
 
 Cost 0.00. No image, no paid API.
+
+## Verified live after the deploy — 2026-11-01 15:05 (+08), host www
+
+The point of the release is that the guard now speaks in production, and it does:
+
+```
+GET https://www.homemassageubud.com/seo-host-check.json   200, 308 B, application/json
+{
+  "canonicalHost": "homemassageubud.com",
+  "canonicalOrigin": "https://homemassageubud.com",
+  "servedHost": "www.homemassageubud.com",
+  "servedHostSource": "VERCEL_PROJECT_PRODUCTION_URL",
+  "matches": false,
+  "defect": "D-1",
+  "environment": "production",
+  "checkedAt": "2026-11-01T07:02:44.741Z"
+}
+```
+
+`servedHostSource` is the proof that the fix is real: the host was resolved from Vercel's own build
+environment, not from a variable nobody sets. `matches: false` and `defect: "D-1"` are the defect,
+stated by the deployment about itself, on the public web, on every production build.
+
+Nothing else moved:
+
+| Probe | Result |
+|---|---|
+| `/` | 200, 13,669 B, `In-Villa Massage Ubud \| 7am–10pm Daily \| Home Massage Ubud` |
+| `/pricing` | 200, `Ubud Massage Prices \| What You Pay \| Home Massage Ubud` |
+| `/services/mobile-massage` | 200, `Mobile Massage Ubud \| We Come to You \| Home Massage Ubud` |
+| `/ubud/lymphatic-drainage-massage` | 200, own title, canonical on apex, one `<h1>` |
+| `/lovina` | 200, `Massage in Lovina \| Villa Delivery \| Home Massage Ubud` |
+| `/nonexistent-xyz-123`, `/sitemap-foobar.xml` | 404, 9,767 B, `Page not found \| Home Massage Ubud` |
+| `/sitemap.xml` | 154 locs, hosts `['homemassageubud.com']`, Kuta locs `[]` |
+| `/robots.txt` | one line: `Sitemap: https://homemassageubud.com/sitemap.xml` |
+| apex `/` | 307 → `https://www.homemassageubud.com/` — DEFECT-D-1 unchanged, still with David |
+
+## Open after this release
+
+- **DEFECT-D-1** — unchanged. Needs the Vercel primary domain flipped to the apex.
+- **Rikke's independent rendered pass** — requested on merged head `bbfa942` (the Chief of Staff's
+  finding that PR #85 merged 8 seconds after it opened with no independent verdict). Not a
+  substitute for this record; it is a separate input and her verdict stands or falls on its own.
