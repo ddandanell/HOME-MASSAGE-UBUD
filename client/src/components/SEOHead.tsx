@@ -2,6 +2,18 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'wouter';
 import { generateCanonicalUrl, normaliseSiteUrl, getSiteConfig } from '@/lib/seoUtils';
+import ROUTE_META from '@/data/route-meta.json';
+
+type RouteMeta = { title: string; description: string; h1?: string };
+const META = ROUTE_META as Record<string, RouteMeta>;
+
+/** Per-route copy from the shared manifest, so the prerendered HTML and the
+ *  client-rendered head can never disagree. */
+function manifestMeta(location: string): RouteMeta | undefined {
+  if (META[location]) return META[location];
+  const trimmed = location.replace(/\/+$/, '') || '/';
+  return META[trimmed];
+}
 
 interface SEOHeadProps {
   title: string;
@@ -28,12 +40,18 @@ export default function SEOHead({
   // and homemassagekuta.com even though they share the same source code.
   const { siteName, titleSuffix, ogImage: defaultOgImage } = getSiteConfig();
 
+  // Manifest copy wins (prerendered HTML uses the same strings).
+  const route = manifestMeta(location);
+  const baseTitle = route?.title ?? title;
+  const baseDescription = route?.description ?? description;
+
   // Build title — if it already contains the site suffix don't double-append
-  const fullTitle = title.includes(titleSuffix) ? title : `${title} | ${titleSuffix}`;
+  const fullTitle =
+    route?.title ?? (title.includes(titleSuffix) ? title : `${title} | ${titleSuffix}`);
 
   // Resolve canonical: if the page passes an explicit one (possibly Ubud-hardcoded)
   // normaliseSiteUrl rewrites it to the current domain automatically.
-  const canonicalUrl = canonical
+  const canonicalUrl = route ? generateCanonicalUrl(location) : canonical
     ? normaliseSiteUrl(canonical)
     : generateCanonicalUrl(location);
 
@@ -43,7 +61,7 @@ export default function SEOHead({
     <Helmet>
       {/* Basic Meta Tags */}
       <title>{fullTitle}</title>
-      <meta name="description" content={description} />
+      <meta name="description" content={baseDescription} />
       {keywords && <meta name="keywords" content={keywords} />}
 
       {/* Canonical — always self-referential for the current domain */}
@@ -58,22 +76,22 @@ export default function SEOHead({
 
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={baseDescription} />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:site_name" content={siteName} />
       <meta property="og:image" content={resolvedOgImage} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content={`${title} - Professional massage services in Bali`} />
+      <meta property="og:image:alt" content={`${baseTitle} - Professional massage services in Bali`} />
       <meta property="og:locale" content="en_US" />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:description" content={baseDescription} />
       <meta name="twitter:image" content={resolvedOgImage} />
-      <meta name="twitter:image:alt" content={`${title} - Professional massage services in Bali`} />
+      <meta name="twitter:image:alt" content={`${baseTitle} - Professional massage services in Bali`} />
     </Helmet>
   );
 }
