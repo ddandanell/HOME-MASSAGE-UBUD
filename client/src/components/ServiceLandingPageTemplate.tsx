@@ -361,10 +361,6 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
           <span className="text-gray-700">60-120 min</span>
         </div>
         <div className="flex items-center gap-2">
-          <Star className="w-5 h-5 text-amber-600" />
-          <span className="text-gray-700">5.0 Rating</span>
-        </div>
-        <div className="flex items-center gap-2">
           <Award className="w-5 h-5 text-amber-600" />
           <span className="text-gray-700">10+ Years</span>
         </div>
