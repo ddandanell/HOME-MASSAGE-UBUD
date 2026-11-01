@@ -273,12 +273,66 @@ console.log(`prerender: canonical host ${SITE} · unlisted ${unlisted.length}${u
 
 // ---- host honesty ----------------------------------------------------------
 // The build cannot change the platform redirect. Say out loud when the canonical
-// host is not yet the host that answers 200, so no report can call it clean.
+// host is not the host that answers 200, so no report can call it clean.
+//
+// This guard used to read SERVED_HOST and nothing else. SERVED_HOST is set
+// nowhere in this repo, so the branch never fired and the guard was decoration
+// (found by the Chief of Staff 2026-11-01 against merge e899eb0). It now learns
+// the served host from Vercel's own build environment, FAILS CLOSED on a Vercel
+// build when it cannot learn it, and writes its verdict to
+// dist/seo-host-check.json so the verdict survives to something that can be
+// curled — the build log alone is not readable from the SEO workstation.
 const host = new URL(SITE).host;
-if (process.env.SERVED_HOST && process.env.SERVED_HOST !== host) {
-  console.warn(
-    `prerender: WARNING DEFECT-D-1 — canonical host ${host} is not the served host ${process.env.SERVED_HOST}.`
+
+function normaliseHost(value) {
+  if (!value) return undefined;
+  const withScheme = /^https?:\/\//i.test(value) ? value : `https://${value}`;
+  try {
+    return new URL(withScheme).host.toLowerCase();
+  } catch {
+    return undefined;
+  }
+}
+
+const servedCandidates = [
+  ['SERVED_HOST', normaliseHost(process.env.SERVED_HOST)],
+  ['VERCEL_PROJECT_PRODUCTION_URL', normaliseHost(process.env.VERCEL_PROJECT_PRODUCTION_URL)],
+  ['VERCEL_URL', normaliseHost(process.env.VERCEL_URL)],
+];
+const [servedSource, servedHost] = servedCandidates.find(([, v]) => v) || [null, undefined];
+
+const onVercel =
+  process.env.VERCEL === '1' || Boolean(process.env.VERCEL_ENV) || Boolean(process.env.VERCEL_PROJECT_PRODUCTION_URL);
+
+if (onVercel && !servedHost) {
+  console.error(
+    'prerender: FAIL — host honesty guard could not resolve the served host from SERVED_HOST, ' +
+      'VERCEL_PROJECT_PRODUCTION_URL or VERCEL_URL. A guard with no input is decoration; refusing to build green.'
   );
+  process.exit(1);
+}
+
+const matches = servedHost ? servedHost === host : null;
+const hostCheck = {
+  canonicalHost: host,
+  canonicalOrigin: SITE,
+  servedHost: servedHost || null,
+  servedHostSource: servedSource,
+  matches,
+  defect: matches === false ? 'D-1' : null,
+  environment: process.env.VERCEL_ENV || (onVercel ? 'vercel-unknown' : 'local'),
+  checkedAt: new Date().toISOString(),
+};
+writeFileSync(join(DIST, 'seo-host-check.json'), JSON.stringify(hostCheck, null, 2) + '\n');
+
+if (matches === false) {
+  console.warn(
+    `prerender: WARNING DEFECT-D-1 — canonical host ${host} is NOT the served host ${servedHost} ` +
+      `(source ${servedSource}). Every canonical and sitemap loc points at a redirect until the ` +
+      'platform primary domain is flipped. docs/seo/KNOWN-DEFECTS.md'
+  );
+} else if (matches === true) {
+  console.log(`prerender: host check OK — canonical host ${host} is the served host (source ${servedSource}).`);
 } else {
-  console.log(`prerender: canonical host ${host} (DEFECT-D-1 tracked in docs/seo/KNOWN-DEFECTS.md)`);
+  console.log(`prerender: host check UNARMED — no served host known from env (SITE_ORIGIN=${SITE}). Local build.`);
 }

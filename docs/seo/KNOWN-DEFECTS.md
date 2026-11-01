@@ -35,6 +35,16 @@ build; no other file hardcodes it.
 single permanent 308. Then the apex answers 200, the 157 canonicals and 154 sitemap locs are already
 correct, and nothing else needs to change.
 
+**The guard that watches it, and why it now works:** `scripts/prerender.mjs` resolves the served
+host from `SERVED_HOST`, then Vercel's own `VERCEL_PROJECT_PRODUCTION_URL`, then `VERCEL_URL`; on a
+Vercel build it **fails the build** if it cannot resolve one; and it publishes its verdict at
+`https://www.homemassageubud.com/seo-host-check.json` so the verdict can be curled instead of
+asserted. On the release of 2026-11-01 15:0x (+08) that file reads
+`matches: false, defect: "D-1", servedHostSource: "VERCEL_PROJECT_PRODUCTION_URL"` — the defect is
+now visible from the outside, on every production build, with no human in the loop.
+Previously the guard read `SERVED_HOST` only, and `SERVED_HOST` is set nowhere in this repo: it had
+never fired and could not fire. See DEFECT-D-3.
+
 **Acceptance test:** `curl -sI https://homemassageubud.com/` returns `200`, `curl -sI
 https://www.homemassageubud.com/` returns `308` with `location: https://homemassageubud.com/...`.
 
@@ -48,3 +58,31 @@ Was: nine stale sitemap files (`sitemap-index.xml` and eight `sitemap-*.xml`, al
 homepage. Closed by: generating `sitemap.xml` from the manifest, deleting the stale files, deleting
 the GitHub-Pages redirect stub at `404.html`, and removing the catch-all rewrite so Vercel serves a
 real `noindex` 404.
+
+---
+
+## DEFECT-D-3 — the DEFECT-D-1 guard had no input and could not fire (CLOSED 2026-11-01)
+
+**Found by:** Chief of Staff, 2026-11-01, reviewing merge `e899eb0`.
+
+**Was:** `scripts/prerender.mjs:278` warned only when `process.env.SERVED_HOST` was set, and
+`SERVED_HOST` is set nowhere — not `vercel.json`, not `package.json` (`build` is
+`vite build && node scripts/prerender.mjs`), not any workflow. So the `else` branch always ran and
+printed `canonical host … (DEFECT-D-1 tracked in docs/seo/KNOWN-DEFECTS.md)`, which read like a
+pass. The claim that the host problem "cannot be reported green again" was therefore not true.
+
+**Closed by:** the served host is now resolved from `SERVED_HOST` → `VERCEL_PROJECT_PRODUCTION_URL`
+→ `VERCEL_URL`; a Vercel build with none of the three **fails closed** (`process.exit(1)`); the
+verdict is written to `dist/seo-host-check.json`. Tested four ways locally on 2026-11-01 15:01 (+08):
+
+| Environment | Result |
+|---|---|
+| no env vars, local build | `UNARMED`, `matches: null`, build succeeds |
+| `VERCEL=1 VERCEL_ENV=production`, no host | `FAIL — … refusing to build green`, exit 1 |
+| `VERCEL_PROJECT_PRODUCTION_URL=www.homemassageubud.com` | `WARNING DEFECT-D-1`, `matches: false`, `defect: "D-1"` |
+| `SERVED_HOST=homemassageubud.com` | `host check OK`, `matches: true` |
+
+**Residual limit, stated plainly:** the mismatch itself is still a warning, not a build failure.
+Failing the build on a mismatch would block every deploy until David flips the primary domain, which
+would make the defect worse, not better. The warning is now loud, unavoidable in the log, and
+machine-readable at `/seo-host-check.json`.
