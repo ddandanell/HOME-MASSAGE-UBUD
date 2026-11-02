@@ -4,7 +4,20 @@ import { Badge } from '@/components/ui/badge';
 import { Star, Clock, Users, MessageCircle, Phone, CheckCircle, MapPin } from 'lucide-react';
 import { generateGeneralInquiryMessage, openWhatsApp, CTA_TEXT, WHATSAPP_NUMBER_FORMATTED } from '@/lib/whatsapp';
 import TrustBadges from './TrustBadges';
+import { Link } from 'wouter';
+import ROUTE_META from '@/data/route-meta.json';
 import massageHeroImage from '../assets/massage-therapy-hero.jpg';
+
+const HOME_META = (ROUTE_META as Record<string, { answer?: string }>)['/'];
+
+/** Internal links to the pages that replace the retired keyword farms, directly
+ *  under the answer block rather than 5,000px down the page. */
+const ANSWER_LINKS = [
+  { href: '/pricing', label: 'Massage prices in Ubud' },
+  { href: '/ubud/traditional-balinese-massage', label: 'Traditional Balinese massage' },
+  { href: '/ubud-luxury-villas', label: 'Luxury villa massage' },
+  { href: '/service-areas', label: 'Areas we cover' }
+];
 
 export default function EnhancedHero() {
 
@@ -56,10 +69,24 @@ export default function EnhancedHero() {
               <span className="text-gray-700 text-xl sm:text-3xl md:text-4xl lg:text-5xl">Traditional Balinese Healing at Your Villa</span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="text-base sm:text-xl text-gray-600 mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Experience authentic Ubud massage services with traditional Balinese healing arts delivered to your private accommodation. Best massage in Ubud by licensed therapists with premium equipment, complete setup included at your villa.
+            {/* Answer block — 40-60 words, straight after the h1 (CONT-003).
+                Same string as the prerendered lead paragraph, from route-meta.json. */}
+            <p className="text-base sm:text-xl text-gray-600 mb-4 sm:mb-5 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              {HOME_META.answer}
             </p>
+
+            {/* Links to the replacement pages, high on the page */}
+            <div className="flex flex-wrap gap-x-4 gap-y-2 justify-center lg:justify-start mb-6 sm:mb-8 text-sm">
+              {ANSWER_LINKS.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-amber-700 underline underline-offset-4 hover:text-amber-800"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
 
             {/* Benefits List */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6 sm:mb-8 text-left">
