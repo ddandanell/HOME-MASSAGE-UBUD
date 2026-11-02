@@ -52,6 +52,12 @@ for (const [path, meta] of Object.entries(manifest)) {
   if (t.length < 50 || t.length > 60) errors.push(`title ${t.length} chars (need 50-60): ${path}`);
   if (d.length < 120 || d.length > 155) errors.push(`description ${d.length} chars (need 120-155): ${path}`);
   if (!meta.h1) errors.push(`missing h1: ${path}`);
+  if (meta.answer) {
+    // CONT-003: an answer block is 40-60 words and sits directly after the h1.
+    const words = meta.answer.trim().split(/\s+/).filter(Boolean).length;
+    if (words < 40 || words > 60) errors.push(`answer ${words} words (need 40-60): ${path}`);
+    if (meta.answer.length > 420) errors.push(`answer ${meta.answer.length} chars (max 420): ${path}`);
+  }
   if (seen.has(t)) errors.push(`duplicate title on ${path} and ${seen.get(t)}: ${t}`);
   seen.set(t, path);
   if (meta.sitemap === false) {
@@ -180,7 +186,10 @@ const FALLBACK_STYLE = `<style id="prerender-style">
 </style>`;
 
 function bodyFor(meta) {
-  return `<div id="root"><div id="prerender-fallback"><h1>${esc(meta.h1)}</h1><p>${esc(meta.description)}</p></div></div>`;
+  // The answer block, where a route has one, is the lead paragraph a crawler reads
+  // after the h1 without JavaScript; otherwise the description stands in for it.
+  const lead = meta.answer || meta.description;
+  return `<div id="root"><div id="prerender-fallback"><h1>${esc(meta.h1)}</h1><p>${esc(lead)}</p></div></div>`;
 }
 
 let written = 0;
