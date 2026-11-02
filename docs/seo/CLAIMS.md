@@ -17,6 +17,7 @@ Observed on the live site and in `client/src` on 2026-11-01. "Rendered" means ve
 
 | C-08 | `100+ Therapists`, `10+ Years`, `10,000+ Happy Clients` | `/services/mobile-massage` service template trust strip | Unverifiable, no source on file | **OPEN — with David** | Same decision as C-02/C-03. Not touched: owner-attested-type claims about team size and volume. |
 | C-09 | Medical efficacy language (`removes toxins`, `boosts immune function`, `accelerates post-surgery recovery`, `detoxification`) | Body, FAQ and hydrated `Service.description`, 20+ components; `/ubud/lymphatic-drainage-massage` named by QA | Prohibited by the site brief — a compliance problem, not a sourcing one | **FIXED on the named page** 2026-11-01 (PR #89) | Rewritten as mechanism plus a medical disclaimer, prices unchanged. The rest of the site is a content sweep in the week-2 rebuild. |
+| C-10 | `#1 Rated In-Villa Massage Service` | Homepage hero badge (`EnhancedHero.tsx`, above the `h1`, renders at 390x844) | Superlative with no source; same class as C-02/C-03 and prohibited by the site brief ("no best in Ubud") | **OPEN — with David, logged 2026-11-03 06:38 +08, not touched** | Not deleted unasked: one line from David with the ranking's source, date and scope keeps it with a citation; otherwise it goes. |
 
 ## What PR #88 and PR #89 changed and what they did not
 
