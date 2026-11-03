@@ -39,9 +39,12 @@ correct, and nothing else needs to change.
 host from `SERVED_HOST`, then Vercel's own `VERCEL_PROJECT_PRODUCTION_URL`, then `VERCEL_URL`; on a
 Vercel build it **fails the build** if it cannot resolve one; and it publishes its verdict at
 `https://www.homemassageubud.com/seo-host-check.json` so the verdict can be curled instead of
-asserted. On the release of 2026-11-01 15:0x (+08) that file reads
-`matches: false, defect: "D-1", servedHostSource: "VERCEL_PROJECT_PRODUCTION_URL"` — the defect is
-now visible from the outside, on every production build, with no human in the loop.
+asserted. Served 2026-11-01 15:33 (+08) on deployment `Ssb7Ka1chUbpoadG7iyh6DzMpKEt` it reads
+`matches: false`, `defect: "D-1"`, `servedHostSource: "VERCEL_PROJECT_PRODUCTION_URL"`,
+`checkedAt: "2026-11-01T07:29:41.997Z"` — so the defect is stated by the deployment itself on every
+production build, with no human in the loop. Readable externally by curl; **not** offered to crawlers,
+because `robots.txt` disallows `/*.json$` (see the correction note under DEFECT-D-3). A verdict is
+always cited with its deployment id: `checkedAt` moves on every build, including a docs-only merge.
 Previously the guard read `SERVED_HOST` only, and `SERVED_HOST` is set nowhere in this repo: it had
 never fired and could not fire. See DEFECT-D-3.
 
@@ -85,4 +88,26 @@ verdict is written to `dist/seo-host-check.json`. Tested four ways locally on 20
 **Residual limit, stated plainly:** the mismatch itself is still a warning, not a build failure.
 Failing the build on a mismatch would block every deploy until David flips the primary domain, which
 would make the defect worse, not better. The warning is now loud, unavoidable in the log, and
-machine-readable at `/seo-host-check.json`.
+machine-readable at `/seo-host-check.json` — readable externally, not crawlable.
+
+**Record corrections — Chief of Staff review, 2026-11-01 15:03–15:09 (+08).** Three statements in
+the first version of this entry were wrong or imprecise. Corrected here, not rewritten in place:
+
+1. **`checkedAt` belongs to a build, not to the site.** The entry quoted `07:02:44.741Z`, the verdict
+   of deployment `4Rhev4jqnpRQgAem1kUu6wXgmjvn`. A later merge (PR #87, `4436588`, 07:05:03Z)
+   triggered a second production build, so the file then read `07:05:33.334Z`; PR #88 and PR #89
+   triggered two more. Served 2026-11-01 15:33 (+08), twice three seconds apart, it reads
+   `"checkedAt": "2026-11-01T07:29:41.997Z"` — identical both times, which is the useful proof that the
+   file is written at build time and is not per-request. A verdict is cited with its deployment id,
+   never with a bare timestamp.
+2. **The fail-closed branch cannot fire in production, by construction.** `VERCEL_URL` is always set
+   on a Vercel build, so `servedHost` always resolves and `process.exit(1)` is unreachable there. That
+   branch is proven by local simulation only. The branch actually observed firing with real inputs is
+   `matches: false` / `defect: "D-1"`. Under the §15 rule the honest wording is: fail-closed is coded
+   and tested; the mismatch path is observed in production.
+3. **`/seo-host-check.json` is not public in the crawl sense.** `robots.txt` carries
+   `Disallow: /*.json$` in the `User-agent: *` group, so the file is readable by curl and by a human
+   and is not offered to crawlers. It is an operator and reviewer artifact. The named user-agent
+   groups (`Googlebot`, `Bingbot`, `GPTBot`, …) carry only `Allow: /` and do not repeat that rule; no
+   claim is made either way about those crawlers, and nothing on the site depends on a crawler
+   reading this file.
