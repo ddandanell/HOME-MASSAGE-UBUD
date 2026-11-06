@@ -1,8 +1,11 @@
 import React from 'react';
+import routeMeta from '@/data/route-meta.json';
 import ServiceLandingPageTemplate, { ServiceLandingPageData } from '@/components/ServiceLandingPageTemplate';
 
 const serviceData: ServiceLandingPageData = {
   name: 'Mobile Massage',
+  answer: routeMeta['/services/mobile-massage'].answer,
+  answerLinks: routeMeta['/services/mobile-massage'].answerLinks,
   slug: 'mobile-massage',
   keyword: 'mobile massage',
   

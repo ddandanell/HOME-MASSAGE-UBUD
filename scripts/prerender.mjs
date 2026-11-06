@@ -189,7 +189,8 @@ function bodyFor(meta) {
   // The answer block, where a route has one, is the lead paragraph a crawler reads
   // after the h1 without JavaScript; otherwise the description stands in for it.
   const lead = meta.answer || meta.description;
-  return `<div id="root"><div id="prerender-fallback"><h1>${esc(meta.h1)}</h1><p>${esc(lead)}</p></div></div>`;
+  const links = (meta.answerLinks || []).map(link => `<a href="${esc(link.href)}">${esc(link.label)}</a>`).join(' · ');
+  return `<div id="root"><div id="prerender-fallback"><h1>${esc(meta.h1)}</h1><p>${esc(lead)}</p>${links ? `<nav aria-label="Explore Ubud massage">${links}</nav>` : ''}</div></div>`;
 }
 
 let written = 0;

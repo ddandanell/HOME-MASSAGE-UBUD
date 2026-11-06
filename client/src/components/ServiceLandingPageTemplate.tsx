@@ -95,6 +95,8 @@ export interface ServiceLandingPageData {
   
   // Hero section
   h1Title: string;
+  answer?: string;
+  answerLinks?: { href: string; label: string }[];
   heroSubtitle: string;
   heroLayout: HeroLayout;
   heroImage?: string;
@@ -353,9 +355,17 @@ export default function ServiceLandingPageTemplate({ service }: ServiceLandingPa
         {service.h1Title}
       </h1>
       <p className="text-xl text-gray-600 mb-8">
-        {service.heroSubtitle}
+        {service.answer || service.heroSubtitle}
       </p>
       
+      {service.answerLinks && (
+        <nav aria-label="Explore Ubud massage" className="flex flex-wrap gap-4 mb-8">
+          {service.answerLinks.map(link => (
+            <Link key={link.href} href={link.href} className="text-amber-800 underline">{link.label}</Link>
+          ))}
+        </nav>
+      )}
+
       <div className={`flex flex-wrap ${centered ? 'justify-center' : ''} gap-6 mb-8`}>
         <div className="flex items-center gap-2">
           <Clock className="w-5 h-5 text-amber-600" />
