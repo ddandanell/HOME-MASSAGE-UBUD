@@ -452,7 +452,22 @@
   "/services/mobile-massage": {
     "description": "Mobile massage in Ubud: a licensed therapist travels to your villa, hotel or guesthouse with table, linen and oils. 7am\u201310pm daily, same-day slots.",
     "h1": "Mobile Massage \u2013 We Come to Your Location",
-    "title": "Home Massage Service Ubud | Mobile Massage to Your Villa"
+    "title": "Home Massage Service Ubud | Mobile Massage to Your Villa",
+    "answer": "Mobile massage in Ubud means having your treatment at your villa rather than travelling to a spa. Choose a massage style, then share your location and preferred time when enquiring. Explore Balinese massage for a traditional option, compare the treatment pages, and check the service areas before arranging your visit.",
+    "answerLinks": [
+      {
+        "href": "/ubud/traditional-balinese-massage",
+        "label": "Balinese massage in Ubud"
+      },
+      {
+        "href": "/treatments",
+        "label": "Compare Ubud treatments"
+      },
+      {
+        "href": "/service-areas",
+        "label": "Ubud service areas"
+      }
+    ]
   },
   "/services/postnatal-massage": {
     "description": "Postnatal massage in Ubud for recovery after birth, at your villa. Gentle pressure, side-lying or seated positions, and no abdominal work. Ask first.",
